@@ -1,0 +1,41 @@
+   get_coordinates       
+   divide_by_16384       
+   034                    2
+   033                    1
+   divide_by_16384       
+   034                    3
+   033                    2
+   033                    3
+   if_icmpge              1
+   jump                   LABEL36
+   033                    2
+   033                    3
+   load_int               128
+   iadd                  
+   if_icmplt              1
+   jump                   LABEL36
+   get_coordinates       
+   and_16384             
+   033                    1
+   and_16384             
+   034                    3
+   034                    2
+   033                    2
+   033                    3
+   if_icmpge              1
+   jump                   LABEL36
+   033                    2
+   033                    3
+   load_int               128
+   iadd                  
+   if_icmplt              1
+   jump                   LABEL36
+   load_int               0
+   033                   
+   widget_put_hidden_widget
+   return                
+LABEL36:
+   load_int               1
+   033                   
+   widget_put_hidden_widget
+   return                

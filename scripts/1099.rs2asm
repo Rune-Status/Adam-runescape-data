@@ -1,0 +1,71 @@
+   035                   
+   4111                  
+   036                   
+   035                   
+   string_length         
+   034                   
+   load_int               0
+   034                    1
+   033                   
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL25
+   035                   
+   033                   
+   load_int               1
+   isub                  
+   033                   
+   string_substring      
+   load_string            "|"
+   4107                  
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL25
+   load_int               1
+   034                    1
+LABEL25:
+   load_string            ""
+   036                    1
+   load_string            ""
+   036                    2
+LABEL29:
+   035                   
+   string_length         
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL53
+   035                   
+   040                    632
+   036                   
+   036                    2
+   035                    1
+   string_length         
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL50
+   035                    1
+   load_string            "<br>"
+   035                    2
+   concat_string         
+   concat_string         
+   036                    1
+   jump                   LABEL52
+LABEL50:
+   035                    2
+   036                    1
+LABEL52:
+   jump                   LABEL29
+LABEL53:
+   033                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL61
+   035                    1
+   load_string            "<br>"
+   concat_string         
+   return                
+LABEL61:
+   035                    1
+   return                
+   load_string            ""
+   return                

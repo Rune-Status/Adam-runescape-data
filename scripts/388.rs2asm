@@ -1,0 +1,58 @@
+   040                    384
+   034                    1
+   040                    1138
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL34
+   025                    4965
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL14
+   load_string            "Protection"
+   033                   
+   2112                  
+   jump                   LABEL33
+LABEL14:
+   042                    78
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL22
+   load_string            "Guarded"
+   033                   
+   2112                  
+   jump                   LABEL33
+LABEL22:
+   042                    78
+   load_int               2
+   if_icmpeq              1
+   jump                   LABEL30
+   load_string            "No PvP"
+   033                   
+   2112                  
+   jump                   LABEL33
+LABEL30:
+   load_string            "Deadman"
+   033                   
+   2112                  
+LABEL33:
+   jump                   LABEL48
+LABEL34:
+   033                    1
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL45
+   load_string            "Level: "
+   033                    1
+   int_to_string         
+   037                    2
+   033                   
+   2112                  
+   jump                   LABEL48
+LABEL45:
+   load_string            ""
+   033                   
+   2112                  
+LABEL48:
+   033                    1
+   040                    387
+   return                

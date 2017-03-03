@@ -1,0 +1,61 @@
+   033                    6
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL30
+   033                    5
+   033                    6
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL30
+   033                   
+   033                    1
+   widget_get_rotationx  
+   033                    2
+   iadd                  
+   load_int               2048
+   modulo                
+   widget_get_rotationz  
+   033                    3
+   iadd                  
+   load_int               2048
+   modulo                
+   widget_get_rotationy  
+   033                    4
+   iadd                  
+   load_int               2048
+   modulo                
+   1605                  
+   1109                  
+   jump                   LABEL58
+LABEL30:
+   033                    6
+   load_int               -1
+   if_icmpeq              1
+   jump                   LABEL58
+   033                   
+   033                    1
+   033                    5
+   widget_get_rotationx_widget
+   033                    2
+   iadd                  
+   load_int               2048
+   modulo                
+   033                    5
+   widget_get_rotationz_widget
+   033                    3
+   iadd                  
+   load_int               2048
+   modulo                
+   033                    5
+   widget_get_rotationy_widget
+   033                    4
+   iadd                  
+   load_int               2048
+   modulo                
+   033                    5
+   2605                  
+   033                    5
+   2109                  
+LABEL58:
+   return                

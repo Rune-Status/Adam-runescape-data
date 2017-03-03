@@ -1,0 +1,77 @@
+   033                    2
+   033                    1
+   isub                  
+   034                    4
+   033                    4
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL16
+   load_int               -1
+   load_string            ""
+   033                   
+   2408                  
+   033                   
+   033                    2
+   040                    262
+   return                
+LABEL16:
+   get_gamecycle         
+   033                    3
+   if_icmplt              1
+   jump                   LABEL37
+   033                    4
+   load_int               -2
+   if_icmple              1
+   jump                   LABEL29
+   033                    4
+   load_int               2
+   idiv                  
+   034                    4
+   jump                   LABEL37
+LABEL29:
+   033                    4
+   load_int               2
+   if_icmpge              1
+   jump                   LABEL37
+   033                    4
+   load_int               2
+   idiv                  
+   034                    4
+LABEL37:
+   033                    1
+   033                    4
+   iadd                  
+   034                    1
+   load_int               261
+   033                   
+   033                    1
+   033                    2
+   033                    3
+   load_string            "Iiii"
+   033                   
+   2408                  
+   033                   
+   033                    1
+   040                    262
+   033                    4
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL71
+   get_gamecycle         
+   load_int               2
+   modulo                
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL67
+   load_int               2157
+   load_int               1
+   load_int               0
+   3200                  
+   jump                   LABEL71
+LABEL67:
+   load_int               2156
+   load_int               1
+   load_int               0
+   3200                  
+LABEL71:
+   return                

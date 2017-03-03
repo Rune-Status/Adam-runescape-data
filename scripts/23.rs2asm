@@ -1,0 +1,132 @@
+   033                   
+   102                   
+   033                    1
+   102                   
+   load_int               0
+   034                    2
+   load_int               0
+   034                    3
+   load_int               105
+   load_int               79
+   load_int               878
+   033                    3
+   3408                  
+   034                    4
+LABEL14:
+   033                    4
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL90
+   033                   
+   load_int               5
+   033                    3
+   100                   
+   load_int               36
+   load_int               32
+   load_int               0
+   load_int               0
+   1001                  
+   033                    3
+   load_int               8
+   idiv                  
+   load_int               50
+   imul                  
+   034                    2
+   033                    3
+   load_int               8
+   modulo                
+   load_int               46
+   imul                  
+   033                    2
+   load_int               0
+   load_int               0
+   1000                  
+   get_settings           1137
+   get_settings           1138
+   if_icmpgt              1
+   jump                   LABEL52
+   033                    4
+   load_int               12855
+   if_icmpeq              1
+   jump                   LABEL52
+   load_int               12856
+   034                    4
+LABEL52:
+   033                    4
+   load_int               1
+   1200                  
+   load_string            "<col=ff9040>"
+   033                    4
+   get_item_name         
+   037                    2
+   widget_put_name       
+   load_int               1
+   load_string            "Value"
+   1300                  
+   load_int               2
+   load_string            "Buy-1"
+   1300                  
+   load_int               8
+   load_string            "Buy-5"
+   1300                  
+   load_int               9
+   load_string            "Buy-10"
+   1300                  
+   load_int               10
+   load_string            "Examine"
+   1300                  
+   load_int               3355443
+   1117                  
+   load_int               1
+   widget_put_borderthickness
+   033                    3
+   load_int               1
+   iadd                  
+   034                    3
+   load_int               105
+   load_int               79
+   load_int               878
+   033                    3
+   3408                  
+   034                    4
+   jump                   LABEL14
+LABEL90:
+   033                    2
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL98
+   033                    2
+   load_int               32
+   iadd                  
+   034                    2
+LABEL98:
+   load_int               0
+   load_int               0
+   033                   
+   widget_put_scroll_widget
+   033                    2
+   033                   
+   widget_get_height_widget
+   if_icmpgt              1
+   jump                   LABEL121
+   load_int               0
+   033                    2
+   033                   
+   widget_put_scrollwidthheight_widget
+   033                    1
+   033                   
+   load_int               792
+   load_int               789
+   load_int               790
+   load_int               791
+   load_int               773
+   load_int               788
+   040                    31
+   jump                   LABEL125
+LABEL121:
+   load_int               0
+   load_int               0
+   033                   
+   widget_put_scrollwidthheight_widget
+LABEL125:
+   return                

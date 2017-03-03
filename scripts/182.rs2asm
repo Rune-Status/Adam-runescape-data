@@ -1,0 +1,45 @@
+   033                   
+   040                    179
+   034                    1
+   load_int               0
+   034                    2
+   033                    1
+   load_int               25
+   modulo                
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL35
+   040                    178
+   033                    1
+   load_int               25
+   idiv                  
+   034                    2
+   033                    2
+   load_int               1
+   if_icmple              1
+   jump                   LABEL29
+   load_int               -1
+   load_string            ""
+   load_int               105
+   load_int               73
+   load_int               683
+   033                   
+   3408                  
+   2408                  
+   jump                   LABEL34
+LABEL29:
+   033                   
+   033                    1
+   load_int               1
+   isub                  
+   040                    183
+LABEL34:
+   jump                   LABEL40
+LABEL35:
+   033                   
+   033                    1
+   load_int               1
+   isub                  
+   040                    183
+LABEL40:
+   return                

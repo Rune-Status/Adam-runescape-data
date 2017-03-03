@@ -1,0 +1,202 @@
+   load_int               0
+   034                    6
+   load_int               0
+   034                    7
+   load_int               0
+   034                    8
+   load_int               105
+   load_int               105
+   load_int               273
+   033                    8
+   3408                  
+   034                    9
+LABEL12:
+   033                    9
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL49
+   033                    9
+   load_int               30
+   if_icmple              1
+   jump                   LABEL49
+   get_settings           1076
+   033                    9
+   test_bit              
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL38
+   033                    6
+   load_int               1
+   iadd                  
+   033                    7
+   load_int               105
+   load_int               105
+   load_int               836
+   033                    9
+   3408                  
+   iadd                  
+   034                    7
+   034                    6
+LABEL38:
+   033                    8
+   load_int               1
+   iadd                  
+   034                    8
+   load_int               105
+   load_int               105
+   load_int               273
+   033                    8
+   3408                  
+   034                    9
+   jump                   LABEL12
+LABEL49:
+   033                   
+   102                   
+   033                   
+   load_int               0
+   040                    835
+   034                    10
+   033                   
+   load_int               4
+   033                    10
+   100                   
+   033                    10
+   load_int               1
+   iadd                  
+   034                    10
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   1000                  
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   1001                  
+   load_int               494
+   widget_put_fontid     
+   load_int               1
+   1115                  
+   load_int               1
+   load_int               1
+   load_int               0
+   1114                  
+   load_string            "Nothing more to extend"
+   036                   
+   033                    6
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL161
+   033                    7
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL161
+   033                    6
+   load_int               1
+   if_icmpgt              1
+   jump                   LABEL119
+   load_int               0
+   load_int               95
+   load_int               0
+   load_int               100
+   033                    7
+   4006                  
+   034                    7
+   033                    7
+   load_int               2
+   if_icmplt              1
+   jump                   LABEL108
+   load_int               2
+   034                    7
+LABEL108:
+   load_string            "Extend remaining "
+   033                    6
+   int_to_string         
+   load_string            " tasks: "
+   033                    7
+   load_string            ","
+   040                    46
+   load_string            " points"
+   037                    5
+   036                   
+   jump                   LABEL126
+LABEL119:
+   load_string            "Extend remaining task: "
+   033                    7
+   load_string            ","
+   040                    46
+   load_string            " points"
+   037                    3
+   036                   
+LABEL126:
+   load_int               16750623
+   widget_put_textcolor  
+   035                   
+   1112                  
+   load_int               1083
+   load_int               -2147483645
+   load_int               0
+   load_string            "Ii"
+   033                   
+   2412                  
+   load_int               1082
+   load_int               -2147483645
+   load_int               0
+   load_string            "Ii"
+   033                   
+   2404                  
+   load_int               1
+   load_string            "Etcetera"
+   033                   
+   2300                  
+   load_int               414
+   load_int               -1
+   load_int               30
+   load_int               8
+   iadd                  
+   033                    1
+   033                    2
+   033                    3
+   033                    4
+   033                    5
+   033                    7
+   load_string            "1iIIIIIi"
+   033                   
+   2409                  
+   jump                   LABEL179
+LABEL161:
+   load_int               8342543
+   widget_put_textcolor  
+   035                   
+   1112                  
+   load_int               -1
+   load_string            ""
+   033                   
+   2412                  
+   load_int               -1
+   load_string            ""
+   033                   
+   2404                  
+   033                   
+   widget_put_actions_null_widget
+   load_int               -1
+   load_string            ""
+   033                   
+   2409                  
+LABEL179:
+   035                   
+   033                   
+   widget_get_parentid_widget
+   widget_get_width_widget
+   load_int               494
+   4109                  
+   load_int               20
+   iadd                  
+   033                   
+   widget_get_height_widget
+   load_int               0
+   load_int               0
+   033                   
+   2001                  
+   return                

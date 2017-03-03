@@ -1,0 +1,110 @@
+   033                   
+   load_int               7
+   if_icmpeq              1
+   jump                   LABEL20
+   033                    1
+   042                    175
+   if_icmplt              1
+   jump                   LABEL10
+   load_int               0
+   return                
+LABEL10:
+   035                   
+   string_remove_html    
+   3623                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL18
+   load_int               0
+   return                
+LABEL18:
+   load_int               1
+   return                
+LABEL20:
+   033                   
+   load_int               3
+   if_icmpeq              1
+   jump                   LABEL57
+   033                    1
+   042                    175
+   if_icmplt              1
+   jump                   LABEL30
+   load_int               0
+   return                
+LABEL30:
+   035                   
+   string_remove_html    
+   3623                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL38
+   load_int               0
+   return                
+LABEL38:
+   5005                  
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL44
+   load_int               1
+   return                
+LABEL44:
+   5005                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL55
+   035                   
+   3609                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL55
+   load_int               1
+   return                
+LABEL55:
+   load_int               0
+   return                
+LABEL57:
+   033                   
+   load_int               5
+   if_icmpeq              4
+   033                   
+   load_int               6
+   if_icmpeq              1
+   jump                   LABEL94
+   033                    1
+   042                    175
+   if_icmplt              1
+   jump                   LABEL70
+   load_int               0
+   return                
+LABEL70:
+   033                   
+   load_int               5
+   if_icmpeq              1
+   jump                   LABEL86
+   025                    1627
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL86
+   get_gamecycle         
+   033                    1
+   isub                  
+   load_int               500
+   if_icmpge              1
+   jump                   LABEL86
+   load_int               0
+   return                
+LABEL86:
+   5005                  
+   load_int               2
+   if_icmpne              1
+   jump                   LABEL92
+   load_int               1
+   return                
+LABEL92:
+   load_int               0
+   return                
+LABEL94:
+   load_int               0
+   return                
+   load_int               -1
+   return                

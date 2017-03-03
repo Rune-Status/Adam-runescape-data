@@ -1,0 +1,51 @@
+   033                   
+   widget_get_width_widget
+   034                    2
+   033                    2
+   load_int               5
+   iadd                  
+   034                    2
+   033                    2
+   load_int               240
+   if_icmpgt              1
+   jump                   LABEL13
+   load_int               240
+   034                    2
+LABEL13:
+   033                   
+   widget_get_height_widget
+   034                    3
+   033                    3
+   load_int               2
+   iadd                  
+   034                    3
+   033                    3
+   load_int               100
+   if_icmpgt              1
+   jump                   LABEL26
+   load_int               100
+   034                    3
+LABEL26:
+   033                    2
+   033                    3
+   load_int               0
+   load_int               0
+   033                   
+   2001                  
+   033                    2
+   load_int               240
+   if_icmpeq              1
+   jump                   LABEL47
+   033                    3
+   load_int               100
+   if_icmpeq              1
+   jump                   LABEL47
+   load_int               -1
+   load_string            ""
+   033                   
+   2408                  
+   load_int               0
+   033                    1
+   widget_put_hidden_widget
+LABEL47:
+   return                

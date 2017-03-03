@@ -1,0 +1,60 @@
+   033                    1
+   widget_get_scrollheight_widget
+   034                    3
+   033                    3
+   load_int               0
+   if_icmple              1
+   jump                   LABEL10
+   033                    1
+   widget_get_height_widget
+   034                    3
+LABEL10:
+   load_int               0
+   034                    4
+   033                    3
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL27
+   033                   
+   widget_get_height_widget
+   load_int               32
+   isub                  
+   033                    1
+   widget_get_height_widget
+   imul                  
+   033                    3
+   idiv                  
+   034                    4
+   jump                   LABEL32
+LABEL27:
+   033                   
+   widget_get_height_widget
+   load_int               32
+   isub                  
+   034                    4
+LABEL32:
+   033                    4
+   load_int               10
+   if_icmplt              1
+   jump                   LABEL38
+   load_int               10
+   034                    4
+LABEL38:
+   033                   
+   load_int               1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL54
+   load_int               0
+   033                    4
+   load_int               1
+   load_int               0
+   1001                  
+   033                   
+   033                    1
+   033                    2
+   load_int               1
+   040                    37
+LABEL54:
+   return                

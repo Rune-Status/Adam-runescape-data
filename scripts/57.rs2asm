@@ -1,0 +1,103 @@
+   get_gamecycle         
+   033                    6
+   if_icmplt              1
+   jump                   LABEL5
+   return                
+LABEL5:
+   load_int               0
+   034                    7
+   033                   
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL18
+   033                   
+   033                    4
+   if_icmpeq              1
+   jump                   LABEL18
+   load_int               1
+   034                    7
+   jump                   LABEL32
+LABEL18:
+   033                    1
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL31
+   035                   
+   033                    1
+   string_indexof        
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL31
+   load_int               1
+   034                    7
+   jump                   LABEL32
+LABEL31:
+   return                
+LABEL32:
+   033                    3
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL66
+   033                    2
+   033                    3
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL66
+   widget_get_text       
+   string_length         
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL52
+   1121                  
+   load_string            "Please wait..."
+   1112                  
+   033                    5
+   widget_put_textcolor  
+LABEL52:
+   load_int               57
+   load_int               -2147483640
+   load_int               -2147483639
+   load_int               -2147483645
+   load_int               -2147483643
+   033                    4
+   035                   
+   033                    5
+   get_gamecycle         
+   load_int               20
+   iadd                  
+   load_string            "izIiisii"
+   1419                  
+   jump                   LABEL94
+LABEL66:
+   033                    2
+   widget_get_text_widget
+   string_length         
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL80
+   033                    2
+   2121                  
+   load_string            "Please wait..."
+   033                    2
+   2112                  
+   033                    5
+   033                    2
+   widget_put_textcolor_widget
+LABEL80:
+   load_int               57
+   load_int               -2147483640
+   load_int               -2147483639
+   load_int               -2147483645
+   load_int               -1
+   033                    4
+   035                   
+   033                    5
+   get_gamecycle         
+   load_int               20
+   iadd                  
+   load_string            "izIiisii"
+   033                    2
+   2419                  
+LABEL94:
+   return                

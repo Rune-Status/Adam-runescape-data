@@ -1,0 +1,45 @@
+   033                   
+   load_int               1
+   if_icmpne              1
+   jump                   LABEL5
+   return                
+LABEL5:
+   033                    2
+   load_int               1
+   isub                  
+   034                    2
+   load_int               105
+   load_int               115
+   load_int               1246
+   033                    2
+   3408                  
+   string_length         
+   load_int               0
+   if_icmple              1
+   jump                   LABEL19
+   return                
+LABEL19:
+   033                    1
+   033                    6
+   if_icmpeq              1
+   jump                   LABEL26
+   033                    2
+   put_settings           1107
+   jump                   LABEL32
+LABEL26:
+   033                    1
+   033                    8
+   if_icmpeq              1
+   jump                   LABEL32
+   033                    2
+   put_settings           1306
+LABEL32:
+   033                    5
+   033                    7
+   040                    1131
+   033                    3
+   033                    4
+   033                    5
+   033                    7
+   040                    1129
+   return                

@@ -1,0 +1,184 @@
+   load_int               0
+   034                   
+LABEL2:
+   033                   
+   load_int               5
+   if_icmple              1
+   jump                   LABEL75
+   042                    42
+   033                   
+   if_icmpeq              1
+   jump                   LABEL22
+   042                    41
+   033                   
+   if_icmpeq              1
+   jump                   LABEL22
+   load_int               1023
+   load_int               105
+   load_int               73
+   load_int               683
+   033                   
+   3408                  
+   widget_put_textureid_widget
+   jump                   LABEL70
+LABEL22:
+   042                    42
+   033                   
+   if_icmpeq              1
+   jump                   LABEL34
+   load_int               1020
+   load_int               105
+   load_int               73
+   load_int               683
+   033                   
+   3408                  
+   widget_put_textureid_widget
+   jump                   LABEL70
+LABEL34:
+   042                    41
+   033                   
+   if_icmpeq              1
+   jump                   LABEL46
+   load_int               1022
+   load_int               105
+   load_int               73
+   load_int               683
+   033                   
+   3408                  
+   widget_put_textureid_widget
+   jump                   LABEL70
+LABEL46:
+   033                   
+   040                    179
+   load_int               25
+   idiv                  
+   load_int               2
+   modulo                
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL63
+   load_int               1021
+   load_int               105
+   load_int               73
+   load_int               683
+   033                   
+   3408                  
+   widget_put_textureid_widget
+   jump                   LABEL70
+LABEL63:
+   load_int               1019
+   load_int               105
+   load_int               73
+   load_int               683
+   033                   
+   3408                  
+   widget_put_textureid_widget
+LABEL70:
+   033                   
+   load_int               1
+   iadd                  
+   034                   
+   jump                   LABEL2
+LABEL75:
+   load_int               2
+   034                   
+   025                    26
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL87
+   load_string            "<col=ffff00>"
+   load_string            "Filtered"
+   037                    2
+   load_int               10616841
+   2112                  
+   jump                   LABEL90
+LABEL87:
+   load_string            "On"
+   load_int               10616841
+   2112                  
+LABEL90:
+   load_int               0
+   034                    1
+LABEL92:
+   033                   
+   load_int               5
+   if_icmple              1
+   jump                   LABEL167
+   033                   
+   040                    185
+   034                    1
+   033                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL113
+   load_string            "<col=ffff00>"
+   load_string            "Friends"
+   037                    2
+   load_int               105
+   load_int               73
+   load_int               684
+   033                   
+   3408                  
+   2112                  
+   jump                   LABEL162
+LABEL113:
+   033                    1
+   load_int               2
+   if_icmpeq              1
+   jump                   LABEL127
+   load_string            "<col=ff0000>"
+   load_string            "Off"
+   037                    2
+   load_int               105
+   load_int               73
+   load_int               684
+   033                   
+   3408                  
+   2112                  
+   jump                   LABEL162
+LABEL127:
+   033                    1
+   load_int               3
+   if_icmpeq              1
+   jump                   LABEL141
+   load_string            "<col=00ffff>"
+   load_string            "Hide"
+   037                    2
+   load_int               105
+   load_int               73
+   load_int               684
+   033                   
+   3408                  
+   2112                  
+   jump                   LABEL162
+LABEL141:
+   033                    1
+   load_int               4
+   if_icmpeq              1
+   jump                   LABEL155
+   load_string            "<col=00afff>"
+   load_string            "Autochat"
+   037                    2
+   load_int               105
+   load_int               73
+   load_int               684
+   033                   
+   3408                  
+   2112                  
+   jump                   LABEL162
+LABEL155:
+   load_string            "On"
+   load_int               105
+   load_int               73
+   load_int               684
+   033                   
+   3408                  
+   2112                  
+LABEL162:
+   033                   
+   load_int               1
+   iadd                  
+   034                   
+   jump                   LABEL92
+LABEL167:
+   return                

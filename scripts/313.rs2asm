@@ -1,0 +1,135 @@
+   load_int               17
+   044                    105
+   load_int               1
+   get_settings           20
+   046                   
+   load_int               2
+   get_settings           21
+   046                   
+   load_int               3
+   get_settings           22
+   046                   
+   load_int               4
+   get_settings           23
+   046                   
+   load_int               5
+   get_settings           24
+   046                   
+   load_int               6
+   get_settings           25
+   046                   
+   load_int               7
+   get_settings           298
+   046                   
+   load_int               8
+   get_settings           311
+   046                   
+   load_int               9
+   get_settings           346
+   046                   
+   load_int               10
+   get_settings           414
+   046                   
+   load_int               11
+   get_settings           464
+   046                   
+   load_int               12
+   get_settings           598
+   046                   
+   load_int               13
+   get_settings           662
+   046                   
+   load_int               14
+   get_settings           721
+   046                   
+   load_int               15
+   get_settings           906
+   046                   
+   load_int               16
+   get_settings           1009
+   046                   
+   load_int               0
+   034                    1
+   load_int               0
+   034                    2
+   load_int               -1
+   034                    3
+   load_int               -1
+   034                    4
+   load_int               -1
+   034                    5
+LABEL60:
+   033                    1
+   load_int               516
+   if_icmple              1
+   jump                   LABEL127
+   load_int               105
+   load_int               105
+   load_int               818
+   033                    1
+   3408                  
+   034                    2
+   033                    2
+   load_int               0
+   if_icmpne              1
+   jump                   LABEL122
+   033                   
+   033                    2
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL122
+   load_int               105
+   load_int               99
+   load_int               819
+   033                    2
+   3408                  
+   034                    3
+   033                    3
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL120
+   033                    3
+   divide_by_16384       
+   033                    3
+   and_16384             
+   034                    5
+   034                    4
+   033                    4
+   045                   
+   033                    5
+   test_bit              
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL106
+   load_int               65280
+   040                    314
+   jump                   LABEL119
+LABEL106:
+   033                    2
+   load_int               331
+   if_icmpeq              1
+   jump                   LABEL117
+   025                    1028
+   load_int               35
+   if_icmpgt              1
+   jump                   LABEL117
+   load_int               65280
+   040                    314
+   jump                   LABEL119
+LABEL117:
+   load_int               16711680
+   040                    314
+LABEL119:
+   jump                   LABEL122
+LABEL120:
+   load_int               65280
+   040                    314
+LABEL122:
+   033                    1
+   load_int               1
+   iadd                  
+   034                    1
+   jump                   LABEL60
+LABEL127:
+   return                

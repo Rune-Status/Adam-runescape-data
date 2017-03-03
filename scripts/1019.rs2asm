@@ -1,0 +1,29 @@
+   033                   
+   load_int               1
+   if_icmpne              1
+   jump                   LABEL5
+   return                
+LABEL5:
+   load_int               2266
+   load_int               1
+   load_int               0
+   3200                  
+   033                    1
+   033                    2
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL26
+   load_int               16777215
+   widget_put_textcolor  
+   load_int               1020
+   load_int               -2147483645
+   load_int               -2147483643
+   033                    3
+   get_gamecycle         
+   load_int               30
+   iadd                  
+   load_string            "Iiii"
+   1408                  
+LABEL26:
+   return                

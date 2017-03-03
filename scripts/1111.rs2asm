@@ -1,0 +1,92 @@
+   load_string            "Hide private chat when the chatbox is hidden"
+   load_string            "<br>"
+   load_string            "(not applicable)"
+   037                    3
+   036                   
+   get_settings           287
+   load_int               0
+   if_icmpeq              4
+   get_isresized         
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL23
+   load_int               761
+   033                   
+   widget_put_textureid_widget
+   load_int               100
+   033                    1
+   widget_put_opacity_widget
+   load_int               -1
+   load_string            ""
+   033                   
+   2409                  
+   jump                   LABEL68
+LABEL23:
+   025                    4089
+   load_int               0
+   if_icmple              1
+   jump                   LABEL48
+   load_string            "Hide private chat when the chatbox is hidden"
+   load_string            "<br>"
+   load_string            "(currently off)"
+   037                    3
+   036                   
+   load_int               761
+   033                   
+   widget_put_textureid_widget
+   load_int               0
+   033                    1
+   widget_put_opacity_widget
+   load_int               1109
+   load_int               -2147483644
+   033                   
+   033                    1
+   033                    2
+   load_int               1
+   load_string            "iIIIi"
+   033                   
+   2409                  
+   jump                   LABEL68
+LABEL48:
+   load_string            "Hide private chat when the chatbox is hidden"
+   load_string            "<br>"
+   load_string            "(currently on)"
+   037                    3
+   036                   
+   load_int               762
+   033                   
+   widget_put_textureid_widget
+   load_int               0
+   033                    1
+   widget_put_opacity_widget
+   load_int               1109
+   load_int               -2147483644
+   033                   
+   033                    1
+   033                    2
+   load_int               0
+   load_string            "iIIIi"
+   033                   
+   2409                  
+LABEL68:
+   load_int               526
+   033                   
+   load_int               -1
+   033                    2
+   035                   
+   load_int               25
+   load_int               190
+   load_string            "IiIsii"
+   033                   
+   2412                  
+   load_int               0
+   043                    2
+   load_int               1110
+   033                    3
+   033                   
+   033                    1
+   033                    2
+   load_string            "iIII"
+   033                   
+   2408                  
+   return                

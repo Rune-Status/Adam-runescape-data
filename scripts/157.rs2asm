@@ -1,0 +1,83 @@
+   033                    1
+   widget_get_scrollheight_widget
+   033                    1
+   widget_get_height_widget
+   isub                  
+   034                    4
+   033                    2
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL12
+   load_int               0
+   034                    2
+LABEL12:
+   033                    2
+   033                    4
+   if_icmpgt              1
+   jump                   LABEL18
+   033                    4
+   034                    2
+LABEL18:
+   load_int               0
+   033                    2
+   033                    1
+   widget_put_scroll_widget
+   load_int               0
+   034                    5
+   033                   
+   load_int               1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL78
+   033                   
+   widget_get_height_widget
+   load_int               32
+   isub                  
+   widget_get_height     
+   isub                  
+   034                    5
+   033                    3
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL78
+   load_int               0
+   load_int               16
+   033                    5
+   033                    2
+   imul                  
+   033                    4
+   idiv                  
+   iadd                  
+   load_int               1
+   load_int               0
+   1000                  
+   033                   
+   load_int               2
+   200                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL63
+   load_int               0
+   widget_get_relativey  
+   load_int               1
+   load_int               0
+   1000                   1
+LABEL63:
+   033                   
+   load_int               3
+   200                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL78
+   load_int               0
+   widget_get_relativey  
+   widget_get_height     
+   iadd                  
+   load_int               5
+   isub                  
+   load_int               1
+   load_int               0
+   1000                   1
+LABEL78:
+   return                

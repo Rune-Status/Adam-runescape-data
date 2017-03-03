@@ -1,0 +1,89 @@
+   load_int               5
+   get_realskilllevels   
+   load_int               105
+   load_int               105
+   load_int               861
+   033                   
+   3408                  
+   if_icmplt              1
+   jump                   LABEL11
+   load_int               0
+   return                
+LABEL11:
+   033                   
+   load_int               25
+   if_icmpeq              1
+   jump                   LABEL29
+   get_ismembers         
+   load_int               0
+   if_icmpeq              8
+   load_int               1
+   get_realskilllevels   
+   load_int               65
+   if_icmplt              4
+   025                    3909
+   load_int               8
+   if_icmplt              1
+   jump                   LABEL28
+   load_int               0
+   return                
+LABEL28:
+   jump                   LABEL77
+LABEL29:
+   033                   
+   load_int               26
+   if_icmpeq              1
+   jump                   LABEL47
+   get_ismembers         
+   load_int               0
+   if_icmpeq              8
+   load_int               1
+   get_realskilllevels   
+   load_int               70
+   if_icmplt              4
+   025                    3909
+   load_int               8
+   if_icmplt              1
+   jump                   LABEL46
+   load_int               0
+   return                
+LABEL46:
+   jump                   LABEL77
+LABEL47:
+   033                   
+   load_int               15
+   if_icmpeq              7
+   033                   
+   load_int               16
+   if_icmpeq              4
+   033                   
+   load_int               17
+   if_icmpeq              1
+   jump                   LABEL64
+   get_ismembers         
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL63
+   load_int               0
+   return                
+LABEL63:
+   jump                   LABEL77
+LABEL64:
+   033                   
+   load_int               8
+   if_icmpeq              1
+   jump                   LABEL77
+   040                    451
+   load_int               1
+   if_icmpeq              4
+   040                    1138
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL77
+   load_int               0
+   return                
+LABEL77:
+   load_int               1
+   return                
+   load_int               -1
+   return                

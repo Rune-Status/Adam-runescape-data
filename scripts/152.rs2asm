@@ -1,0 +1,124 @@
+   033                   
+   102                   
+   load_int               0
+   034                    6
+   load_int               0
+   034                    7
+   033                   
+   widget_get_scrollwidth_widget
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL23
+   033                   
+   widget_get_scrollwidth_widget
+   load_int               36
+   033                    2
+   imul                  
+   isub                  
+   033                    2
+   load_int               1
+   isub                  
+   idiv                  
+   034                    6
+   jump                   LABEL34
+LABEL23:
+   033                   
+   widget_get_width_widget
+   load_int               36
+   033                    2
+   imul                  
+   isub                  
+   033                    2
+   load_int               1
+   isub                  
+   idiv                  
+   034                    6
+LABEL34:
+   033                   
+   widget_get_scrollheight_widget
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL51
+   033                   
+   widget_get_scrollheight_widget
+   load_int               32
+   033                    3
+   imul                  
+   isub                  
+   033                    3
+   load_int               1
+   isub                  
+   idiv                  
+   034                    7
+   jump                   LABEL62
+LABEL51:
+   033                   
+   widget_get_height_widget
+   load_int               32
+   033                    3
+   imul                  
+   isub                  
+   033                    3
+   load_int               1
+   isub                  
+   idiv                  
+   034                    7
+LABEL62:
+   load_int               0
+   034                    8
+LABEL64:
+   033                    8
+   033                    2
+   033                    3
+   imul                  
+   if_icmple              1
+   jump                   LABEL117
+   033                   
+   load_int               5
+   033                    8
+   100                   
+   load_int               36
+   load_int               32
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               36
+   033                    6
+   iadd                  
+   033                    8
+   033                    2
+   modulo                
+   imul                  
+   033                    8
+   033                    2
+   idiv                  
+   load_int               32
+   033                    7
+   iadd                  
+   imul                  
+   load_int               0
+   load_int               0
+   1000                  
+   033                    1
+   033                    8
+   033                   
+   033                    8
+   033                    4
+   033                    5
+   035                   
+   035                    1
+   035                    2
+   035                    3
+   035                    4
+   load_string            "null"
+   load_string            "null"
+   load_string            "null"
+   load_string            "null"
+   040                    154
+   033                    8
+   load_int               1
+   iadd                  
+   034                    8
+   jump                   LABEL64
+LABEL117:
+   return                

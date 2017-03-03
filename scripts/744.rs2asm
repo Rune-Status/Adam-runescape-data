@@ -1,0 +1,75 @@
+   033                   
+   load_int               180000
+   idiv                  
+   034                    1
+   033                   
+   load_int               180000
+   modulo                
+   load_int               3000
+   idiv                  
+   034                    2
+   033                   
+   load_int               3000
+   modulo                
+   load_int               50
+   idiv                  
+   034                    3
+   033                    1
+   int_to_string         
+   036                   
+   033                    2
+   load_int               10
+   if_icmpge              1
+   jump                   LABEL31
+   035                   
+   load_string            ":"
+   033                    2
+   int_to_string         
+   037                    2
+   concat_string         
+   036                   
+   jump                   LABEL38
+LABEL31:
+   035                   
+   load_string            ":0"
+   033                    2
+   int_to_string         
+   037                    2
+   concat_string         
+   036                   
+LABEL38:
+   033                    3
+   load_int               10
+   if_icmpge              1
+   jump                   LABEL50
+   035                   
+   load_string            ":"
+   033                    3
+   int_to_string         
+   037                    2
+   concat_string         
+   036                   
+   jump                   LABEL57
+LABEL50:
+   035                   
+   load_string            ":0"
+   033                    3
+   int_to_string         
+   037                    2
+   concat_string         
+   036                   
+LABEL57:
+   033                   
+   load_int               3000
+   if_icmple              1
+   jump                   LABEL66
+   load_string            "<col=ff0000>"
+   035                   
+   load_string            "</col>"
+   037                    3
+   036                   
+LABEL66:
+   035                   
+   return                
+   load_string            ""
+   return                

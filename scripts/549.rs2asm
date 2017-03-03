@@ -1,0 +1,25 @@
+   047                    22
+   string_length         
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL15
+   load_string            "Filter public chat: "
+   load_string            "<col=0000ff>"
+   047                    22
+   tolowercase           
+   4111                  
+   load_string            "</col>"
+   037                    4
+   load_int               10616864
+   2112                  
+   jump                   LABEL22
+LABEL15:
+   load_string            "Filter public chat: "
+   load_string            "<col=7f0000>"
+   load_string            "[no filter]"
+   load_string            "</col>"
+   037                    4
+   load_int               10616864
+   2112                  
+LABEL22:
+   return                

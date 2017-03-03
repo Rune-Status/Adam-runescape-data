@@ -1,0 +1,70 @@
+   load_int               15
+   034                    1
+   042                    53
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL10
+   033                    1
+   033                   
+   iadd                  
+   034                    1
+LABEL10:
+   042                    52
+   033                    1
+   isub                  
+   034                    2
+   042                    52
+   033                    1
+   iadd                  
+   034                    3
+   040                    1138
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL43
+   025                    4965
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL30
+   load_int               1
+   load_int               5898266
+   widget_put_hidden_widget
+   return                
+LABEL30:
+   load_int               3
+   034                    2
+   load_int               126
+   034                    3
+   042                    78
+   load_int               2
+   if_icmpeq              1
+   jump                   LABEL42
+   load_string            ""
+   load_int               5898266
+   2112                  
+   return                
+LABEL42:
+   jump                   LABEL55
+LABEL43:
+   033                    2
+   load_int               3
+   if_icmplt              1
+   jump                   LABEL49
+   load_int               3
+   034                    2
+LABEL49:
+   033                    3
+   load_int               126
+   if_icmpgt              1
+   jump                   LABEL55
+   load_int               126
+   034                    3
+LABEL55:
+   033                    2
+   int_to_string         
+   load_string            "-"
+   033                    3
+   int_to_string         
+   037                    3
+   load_int               5898266
+   2112                  
+   return                

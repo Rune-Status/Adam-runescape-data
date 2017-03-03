@@ -1,0 +1,16 @@
+   get_gamecycle         
+   load_int               20
+   modulo                
+   load_int               10
+   if_icmplt              1
+   jump                   LABEL10
+   load_int               0
+   033                   
+   widget_put_hidden_widget
+   jump                   LABEL13
+LABEL10:
+   load_int               1
+   033                   
+   widget_put_hidden_widget
+LABEL13:
+   return                

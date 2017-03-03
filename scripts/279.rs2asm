@@ -1,0 +1,41 @@
+   load_string            ""
+   036                   
+   load_string            ""
+   036                    1
+   040                    514
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL34
+   040                    280
+   036                    1
+   035                    1
+   string_length         
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL34
+   033                   
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL23
+   033                   
+   get_item_name         
+   tolowercase           
+   036                   
+LABEL23:
+   035                   
+   035                    1
+   load_int               0
+   string_indexof_from   
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL32
+   load_int               1
+   return                
+LABEL32:
+   load_int               0
+   return                
+LABEL34:
+   load_int               1
+   return                
+   load_int               -1
+   return                

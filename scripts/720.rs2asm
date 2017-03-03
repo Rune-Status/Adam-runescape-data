@@ -1,0 +1,49 @@
+   033                    4
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL5
+   return                
+LABEL5:
+   033                    3
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL12
+   load_int               0
+   034                    3
+   jump                   LABEL18
+LABEL12:
+   033                    3
+   load_int               255
+   if_icmpgt              1
+   jump                   LABEL18
+   load_int               255
+   034                    3
+LABEL18:
+   033                    1
+   034                    5
+LABEL20:
+   033                    5
+   033                    2
+   if_icmple              1
+   jump                   LABEL42
+   033                   
+   033                    5
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL37
+   load_int               721
+   load_int               -2147483645
+   load_int               -2147483643
+   033                    3
+   033                    4
+   load_string            "Iiii"
+   1408                  
+LABEL37:
+   033                    5
+   load_int               1
+   iadd                  
+   034                    5
+   jump                   LABEL20
+LABEL42:
+   return                

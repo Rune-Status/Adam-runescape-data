@@ -1,0 +1,20 @@
+   035                   
+   string_length         
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL17
+   get_clanchatowner     
+   string_length         
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL11
+   3620                  
+LABEL11:
+   040                    680
+   035                   
+   string_remove_html    
+   048                    129
+   035                   
+   3619                  
+LABEL17:
+   return                

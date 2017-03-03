@@ -1,0 +1,67 @@
+   load_int               9
+   034                    1
+   load_int               13565952
+   widget_get_text_widget
+   036                   
+   load_string            ""
+   036                    1
+   load_int               0
+   034                    2
+LABEL9:
+   033                    1
+   load_int               13
+   if_icmple              1
+   jump                   LABEL60
+   035                   
+   load_string            "|"
+   load_int               0
+   string_indexof_from   
+   034                    2
+   033                    2
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL36
+   035                   
+   load_int               0
+   033                    2
+   string_substring      
+   036                    1
+   035                   
+   033                    2
+   load_int               1
+   iadd                  
+   035                   
+   string_length         
+   string_substring      
+   036                   
+   jump                   LABEL40
+LABEL36:
+   035                   
+   036                    1
+   load_string            ""
+   036                   
+LABEL40:
+   035                    1
+   string_length         
+   load_int               0
+   if_icmple              1
+   jump                   LABEL47
+   load_string            "-"
+   036                    1
+LABEL47:
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL55
+   035                    1
+   1112                  
+LABEL55:
+   033                    1
+   load_int               1
+   iadd                  
+   034                    1
+   jump                   LABEL9
+LABEL60:
+   return                

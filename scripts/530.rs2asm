@@ -1,0 +1,100 @@
+   033                    1
+   033                    4
+   if_icmpeq              1
+   jump                   LABEL17
+   load_int               1
+   033                    3
+   widget_put_hidden_widget
+   load_int               0
+   033                    4
+   widget_put_hidden_widget
+   load_int               1
+   033                    5
+   widget_put_hidden_widget
+   load_int               1
+   033                    6
+   widget_put_hidden_widget
+   jump                   LABEL63
+LABEL17:
+   033                    1
+   033                    5
+   if_icmpeq              1
+   jump                   LABEL34
+   load_int               1
+   033                    3
+   widget_put_hidden_widget
+   load_int               1
+   033                    4
+   widget_put_hidden_widget
+   load_int               0
+   033                    5
+   widget_put_hidden_widget
+   load_int               1
+   033                    6
+   widget_put_hidden_widget
+   jump                   LABEL63
+LABEL34:
+   033                    1
+   033                    6
+   if_icmpeq              1
+   jump                   LABEL51
+   load_int               1
+   033                    3
+   widget_put_hidden_widget
+   load_int               1
+   033                    4
+   widget_put_hidden_widget
+   load_int               1
+   033                    5
+   widget_put_hidden_widget
+   load_int               0
+   033                    6
+   widget_put_hidden_widget
+   jump                   LABEL63
+LABEL51:
+   load_int               0
+   033                    3
+   widget_put_hidden_widget
+   load_int               1
+   033                    4
+   widget_put_hidden_widget
+   load_int               1
+   033                    5
+   widget_put_hidden_widget
+   load_int               1
+   033                    6
+   widget_put_hidden_widget
+LABEL63:
+   load_int               0
+   034                    7
+LABEL65:
+   033                    7
+   load_int               4
+   if_icmplt              1
+   jump                   LABEL91
+   033                    2
+   033                    7
+   load_int               2
+   imul                  
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL86
+   033                    7
+   033                   
+   if_icmpeq              1
+   jump                   LABEL84
+   load_int               762
+   widget_put_textureid  
+   jump                   LABEL86
+LABEL84:
+   load_int               761
+   widget_put_textureid  
+LABEL86:
+   033                    7
+   load_int               1
+   iadd                  
+   034                    7
+   jump                   LABEL65
+LABEL91:
+   return                

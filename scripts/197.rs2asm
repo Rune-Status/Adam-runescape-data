@@ -1,0 +1,417 @@
+   033                   
+   102                   
+   get_clanchatcount     
+   034                    1
+   load_int               0
+   034                    2
+   3616                  
+   034                    3
+   3618                  
+   034                    4
+   load_int               0
+   034                    5
+   load_string            ""
+   036                   
+   load_int               -1
+   034                    6
+   load_int               -1
+   034                    7
+LABEL18:
+   033                    2
+   033                    1
+   if_icmplt              1
+   jump                   LABEL301
+   033                    2
+   033                    2
+   iadd                  
+   033                    2
+   iadd                  
+   034                    5
+   033                    2
+   get_clan_member_name  
+   036                   
+   033                    2
+   get_clan_member_world 
+   034                    6
+   033                    2
+   get_clan_member_rank  
+   034                    7
+   033                   
+   load_int               4
+   033                    5
+   100                   
+   load_int               494
+   widget_put_fontid     
+   load_int               0
+   load_int               1
+   load_int               0
+   1114                  
+   035                   
+   1112                  
+   load_int               15
+   033                    2
+   load_int               15
+   imul                  
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               85
+   load_int               15
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               16777215
+   widget_put_textcolor  
+   load_int               0
+   1115                  
+   load_int               214
+   035                   
+   load_int               -2147483644
+   load_string            "si"
+   1409                  
+   033                    2
+   clanmember_isme       
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL107
+   035                   
+   3609                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL86
+   load_int               9
+   load_string            "Remove friend "
+   035                   
+   037                    2
+   1300                  
+   jump                   LABEL107
+LABEL86:
+   035                   
+   3623                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL97
+   load_int               10
+   load_string            "Remove ignore "
+   035                   
+   037                    2
+   1300                  
+   jump                   LABEL107
+LABEL97:
+   load_int               7
+   load_string            "Add friend "
+   035                   
+   037                    2
+   1300                  
+   load_int               8
+   load_string            "Add ignore "
+   035                   
+   037                    2
+   1300                  
+LABEL107:
+   033                    4
+   033                    3
+   if_icmpge              1
+   jump                   LABEL120
+   033                    4
+   033                    7
+   if_icmpgt              1
+   jump                   LABEL120
+   load_int               6
+   load_string            "Kick user "
+   035                   
+   037                    2
+   1300                  
+LABEL120:
+   033                   
+   load_int               4
+   033                    5
+   load_int               1
+   iadd                  
+   100                   
+   load_int               494
+   widget_put_fontid     
+   load_int               2
+   load_int               1
+   load_int               0
+   1114                  
+   load_string            "World "
+   033                    6
+   int_to_string         
+   037                    2
+   1112                  
+   load_int               98
+   033                    2
+   load_int               15
+   imul                  
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               50
+   load_int               15
+   load_int               0
+   load_int               0
+   1001                  
+   033                    6
+   get_world             
+   if_icmpeq              1
+   jump                   LABEL156
+   load_int               65280
+   widget_put_textcolor  
+   jump                   LABEL158
+LABEL156:
+   load_int               16777060
+   widget_put_textcolor  
+LABEL158:
+   load_int               0
+   1115                  
+   load_int               214
+   035                   
+   load_int               -2147483644
+   load_string            "si"
+   1409                  
+   033                    2
+   clanmember_isme       
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL202
+   035                   
+   3609                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL181
+   load_int               9
+   load_string            "Remove friend "
+   035                   
+   037                    2
+   1300                  
+   jump                   LABEL202
+LABEL181:
+   035                   
+   3623                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL192
+   load_int               10
+   load_string            "Remove ignore "
+   035                   
+   037                    2
+   1300                  
+   jump                   LABEL202
+LABEL192:
+   load_int               7
+   load_string            "Add friend "
+   035                   
+   037                    2
+   1300                  
+   load_int               8
+   load_string            "Add ignore "
+   035                   
+   037                    2
+   1300                  
+LABEL202:
+   033                    4
+   033                    3
+   if_icmpge              1
+   jump                   LABEL215
+   033                    4
+   033                    7
+   if_icmpgt              1
+   jump                   LABEL215
+   load_int               6
+   load_string            "Kick user "
+   035                   
+   037                    2
+   1300                  
+LABEL215:
+   033                   
+   load_int               5
+   033                    5
+   load_int               2
+   iadd                  
+   100                   
+   load_int               3
+   033                    2
+   load_int               15
+   imul                  
+   load_int               2
+   iadd                  
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               9
+   load_int               9
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               105
+   load_int               100
+   load_int               706
+   033                    7
+   3408                  
+   widget_put_textureid  
+   load_int               214
+   035                   
+   load_int               -2147483644
+   load_string            "si"
+   1409                  
+   033                    2
+   clanmember_isme       
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL283
+   035                   
+   3609                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL262
+   load_int               9
+   load_string            "Remove friend "
+   035                   
+   037                    2
+   1300                  
+   jump                   LABEL283
+LABEL262:
+   035                   
+   3623                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL273
+   load_int               10
+   load_string            "Remove ignore "
+   035                   
+   037                    2
+   1300                  
+   jump                   LABEL283
+LABEL273:
+   load_int               7
+   load_string            "Add friend "
+   035                   
+   037                    2
+   1300                  
+   load_int               8
+   load_string            "Add ignore "
+   035                   
+   037                    2
+   1300                  
+LABEL283:
+   033                    4
+   033                    3
+   if_icmpge              1
+   jump                   LABEL296
+   033                    4
+   033                    7
+   if_icmpgt              1
+   jump                   LABEL296
+   load_int               6
+   load_string            "Kick user "
+   035                   
+   037                    2
+   1300                  
+LABEL296:
+   033                    2
+   load_int               1
+   iadd                  
+   034                    2
+   jump                   LABEL18
+LABEL301:
+   033                    1
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL327
+   load_string            "<col=ff9b00>"
+   load_string            "Talking in: "
+   load_string            "<col=ffff64>"
+   3611                  
+   037                    4
+   load_int               38600704
+   2112                  
+   load_string            "<col=ff9b00>"
+   load_string            "Owner: "
+   load_string            "<col=ffffff>"
+   get_clanchatowner     
+   037                    4
+   load_int               38600705
+   2112                  
+   load_string            "Leave Chat"
+   load_int               38600712
+   2112                  
+   load_int               1
+   load_string            "Leave Chat"
+   load_int               38600712
+   2300                  
+   jump                   LABEL344
+LABEL327:
+   load_string            "<col=ff9b00>"
+   load_string            "Talking in: Not in chat"
+   037                    2
+   load_int               38600704
+   2112                  
+   load_string            "<col=ff9b00>"
+   load_string            "Owner: None"
+   037                    2
+   load_int               38600705
+   2112                  
+   load_string            "Join Chat"
+   load_int               38600712
+   2112                  
+   load_int               1
+   load_string            "Join Chat"
+   load_int               38600712
+   2300                  
+LABEL344:
+   load_int               15
+   033                    1
+   imul                  
+   034                    8
+   load_int               38600709
+   widget_get_height_widget
+   034                    9
+   033                    8
+   load_int               15
+   if_icmplt              1
+   jump                   LABEL357
+   load_int               15
+   034                    8
+LABEL357:
+   033                    8
+   033                    9
+   isub                  
+   034                    10
+   033                    10
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL367
+   load_int               0
+   034                    10
+LABEL367:
+   load_int               38600709
+   widget_get_scrolly_widget
+   034                    11
+   033                    11
+   033                    10
+   if_icmpgt              1
+   jump                   LABEL376
+   033                    10
+   034                    11
+LABEL376:
+   033                    1
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL385
+   load_int               0
+   033                    8
+   load_int               38600709
+   widget_put_scrollwidthheight_widget
+   jump                   LABEL389
+LABEL385:
+   load_int               0
+   load_int               15
+   load_int               38600709
+   widget_put_scrollwidthheight_widget
+LABEL389:
+   load_int               38600710
+   load_int               38600709
+   033                    11
+   040                    72
+   return                

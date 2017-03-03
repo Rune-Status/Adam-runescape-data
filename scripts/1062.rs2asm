@@ -1,0 +1,72 @@
+   load_int               0
+   034                    2
+   load_int               -1
+   034                    3
+   033                    1
+   040                    1064
+   034                    3
+   034                    2
+   load_int               8331264
+   034                    4
+   033                    2
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL16
+   load_int               2154272
+   034                    4
+LABEL16:
+   033                    1
+   load_int               6797
+   if_icmpeq              1
+   jump                   LABEL29
+   033                    3
+   load_int               -1
+   if_icmpeq              1
+   jump                   LABEL26
+   load_int               6797
+   034                    3
+LABEL26:
+   033                    3
+   get_item_name         
+   036                   
+LABEL29:
+   033                   
+   load_int               0
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL50
+   033                   
+   load_int               1
+   200                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL50
+   035                   
+   1112                  
+   033                    4
+   widget_put_textcolor  
+   033                    4
+   widget_put_textcolor   1
+   033                    2
+   int_to_string         
+   1112                   1
+LABEL50:
+   033                   
+   load_int               2
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL59
+   033                    3
+   033                    2
+   1205                  
+LABEL59:
+   load_string            "<col=ff9040>"
+   033                    3
+   get_item_name         
+   load_string            "</col>"
+   037                    3
+   033                   
+   widget_put_name_widget
+   return                

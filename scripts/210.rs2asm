@@ -1,0 +1,89 @@
+   042                    41
+   load_int               5
+   if_icmpne              1
+   jump                   LABEL6
+   load_int               0
+   return                
+LABEL6:
+   047                    25
+   string_length         
+   load_int               0
+   if_icmple              1
+   jump                   LABEL13
+   load_int               0
+   return                
+LABEL13:
+   load_string            ""
+   036                    1
+   033                   
+   load_int               2
+   if_icmpeq              16
+   033                   
+   load_int               1
+   if_icmpeq              13
+   033                   
+   load_int               3
+   if_icmpeq              10
+   033                   
+   load_int               6
+   if_icmpeq              7
+   033                   
+   load_int               7
+   if_icmpeq              4
+   033                   
+   load_int               9
+   if_icmpeq              1
+   jump                   LABEL79
+   035                   
+   string_remove_html    
+   036                    1
+   035                    1
+   get_localplayer_name  
+   string_remove_html    
+   4107                  
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL46
+   load_int               1
+   return                
+LABEL46:
+   035                    1
+   047                    25
+   string_remove_html    
+   4107                  
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL79
+   033                   
+   load_int               1
+   if_icmpeq              4
+   033                   
+   load_int               7
+   if_icmpeq              1
+   jump                   LABEL62
+   load_int               1
+   return                
+LABEL62:
+   5016                  
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL68
+   load_int               1
+   return                
+LABEL68:
+   5016                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL79
+   035                   
+   3609                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL79
+   load_int               1
+   return                
+LABEL79:
+   load_int               0
+   return                
+   load_int               -1
+   return                

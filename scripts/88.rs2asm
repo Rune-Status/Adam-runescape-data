@@ -1,0 +1,44 @@
+   035                   
+   string_remove_html    
+   036                    1
+   033                   
+   load_int               10
+   if_icmpeq              1
+   jump                   LABEL10
+   035                    1
+   048                    24
+   jump                   LABEL38
+LABEL10:
+   035                    1
+   3609                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL25
+   033                   
+   load_int               8
+   if_icmpeq              4
+   033                   
+   load_int               9
+   if_icmpeq              1
+   jump                   LABEL24
+   035                    1
+   040                    107
+LABEL24:
+   jump                   LABEL38
+LABEL25:
+   033                   
+   load_int               8
+   if_icmpeq              1
+   jump                   LABEL32
+   035                    1
+   add_friend            
+   jump                   LABEL38
+LABEL32:
+   033                   
+   load_int               9
+   if_icmpeq              1
+   jump                   LABEL38
+   035                    1
+   add_ignore            
+LABEL38:
+   return                

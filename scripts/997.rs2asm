@@ -1,0 +1,61 @@
+   load_int               0
+   033                    1
+   widget_put_hidden_widget
+   load_int               0
+   033                    2
+   widget_put_hidden_widget
+   load_int               0
+   033                    3
+   widget_put_hidden_widget
+   load_int               0
+   034                    4
+   load_int               0
+   034                    5
+   load_int               105
+   load_int               105
+   load_int               1167
+   025                    4694
+   3408                  
+   034                    6
+   033                    6
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL53
+   042                    71
+   load_int               105
+   load_int               105
+   load_int               1171
+   025                    4722
+   3408                  
+   iadd                  
+   034                    4
+   033                    4
+   get_gamecycle         
+   if_icmpgt              1
+   jump                   LABEL39
+   033                    4
+   get_gamecycle         
+   isub                  
+   034                    5
+LABEL39:
+   load_int               998
+   033                   
+   033                    1
+   033                    2
+   033                    3
+   get_gamecycle         
+   033                    5
+   iadd                  
+   033                    6
+   iadd                  
+   load_string            "IIIIi"
+   033                   
+   2408                  
+   jump                   LABEL57
+LABEL53:
+   load_int               -1
+   load_string            ""
+   033                   
+   2408                  
+LABEL57:
+   return                

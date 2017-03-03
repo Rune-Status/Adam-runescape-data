@@ -1,0 +1,46 @@
+   047                    28
+   string_length         
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL33
+   042                    62
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL21
+   load_int               10
+   load_string            "<col=00afff>"
+   load_string            "Resume autochat"
+   load_string            "</col>"
+   037                    3
+   load_int               105
+   load_int               73
+   load_int               683
+   load_int               2
+   3408                  
+   2300                  
+   jump                   LABEL32
+LABEL21:
+   load_int               10
+   load_string            "<col=00afff>"
+   load_string            "Pause autochat"
+   load_string            "</col>"
+   037                    3
+   load_int               105
+   load_int               73
+   load_int               683
+   load_int               2
+   3408                  
+   2300                  
+LABEL32:
+   jump                   LABEL41
+LABEL33:
+   load_int               10
+   load_string            ""
+   load_int               105
+   load_int               73
+   load_int               683
+   load_int               2
+   3408                  
+   2300                  
+LABEL41:
+   return                

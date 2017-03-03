@@ -1,0 +1,66 @@
+   033                   
+   load_int               1
+   if_icmpne              1
+   jump                   LABEL5
+   return                
+LABEL5:
+   033                    2
+   033                    3
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL60
+   033                    2
+   033                    4
+   200                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL60
+   025                    4101
+   033                    1
+   test_bit              
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL31
+   025                    4101
+   033                    1
+   clear_bit             
+   027                    4101
+   033                    1
+   033                    2
+   040                    463
+   return                
+LABEL31:
+   033                    1
+   040                    464
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL41
+   load_int               2673
+   load_int               1
+   load_int               0
+   3200                  
+   return                
+LABEL41:
+   load_int               5
+   get_boostedskilllevels
+   load_int               0
+   if_icmple              1
+   jump                   LABEL53
+   load_int               2673
+   load_int               1
+   load_int               0
+   3200                  
+   load_string            "You need to recharge your Prayer at an altar."
+   send_game_message     
+   return                
+LABEL53:
+   025                    4101
+   033                    1
+   set_bit               
+   027                    4101
+   033                    1
+   033                    2
+   040                    463
+LABEL60:
+   return                

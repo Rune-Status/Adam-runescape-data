@@ -1,0 +1,80 @@
+   load_int               93
+   3304                  
+   034                    6
+   033                    1
+   load_int               0
+   if_icmplt              4
+   033                    1
+   033                    6
+   if_icmpge              1
+   jump                   LABEL11
+   return                
+LABEL11:
+   033                    2
+   load_int               0
+   if_icmplt              4
+   033                    2
+   033                    6
+   if_icmpge              1
+   jump                   LABEL19
+   return                
+LABEL19:
+   load_int               93
+   033                    1
+   3301                  
+   034                    7
+   033                    7
+   load_int               -1
+   if_icmpeq              1
+   jump                   LABEL28
+   return                
+LABEL28:
+   load_int               93
+   033                    2
+   3301                  
+   034                    8
+   033                   
+   033                    2
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL48
+   033                    7
+   load_int               93
+   033                    1
+   3302                  
+   033                   
+   033                    3
+   load_int               0
+   033                    4
+   033                    5
+   040                    297
+LABEL48:
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL64
+   033                    8
+   load_int               93
+   033                    2
+   3302                  
+   033                   
+   033                    3
+   load_int               0
+   033                    4
+   033                    5
+   040                    297
+LABEL64:
+   033                    7
+   load_int               11941
+   if_icmpeq              4
+   033                    8
+   load_int               11941
+   if_icmpeq              1
+   jump                   LABEL73
+   033                    3
+   102                   
+LABEL73:
+   return                

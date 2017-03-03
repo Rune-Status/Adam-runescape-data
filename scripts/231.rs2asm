@@ -1,0 +1,150 @@
+   033                   
+   load_int               0
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL16
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   1000                  
+   load_int               0
+   load_int               32
+   load_int               1
+   load_int               1
+   1001                  
+LABEL16:
+   load_int               0
+   034                    2
+   load_int               0
+   034                    3
+   033                   
+   load_int               1
+   200                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL108
+   load_int               0
+   load_int               16
+   load_int               1
+   load_int               0
+   1000                   1
+   033                    1
+   widget_get_scrollheight_widget
+   034                    2
+   033                    2
+   load_int               0
+   if_icmple              1
+   jump                   LABEL41
+   033                    1
+   widget_get_height_widget
+   034                    2
+LABEL41:
+   033                    2
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL56
+   033                   
+   widget_get_height_widget
+   load_int               32
+   isub                  
+   033                    1
+   widget_get_height_widget
+   imul                  
+   033                    2
+   idiv                  
+   034                    3
+   jump                   LABEL61
+LABEL56:
+   033                   
+   widget_get_height_widget
+   load_int               32
+   isub                  
+   034                    3
+LABEL61:
+   033                    3
+   load_int               10
+   if_icmplt              1
+   jump                   LABEL67
+   load_int               10
+   034                    3
+LABEL67:
+   load_int               0
+   033                    3
+   load_int               1
+   load_int               0
+   1001                   1
+   033                   
+   load_int               2
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL88
+   load_int               0
+   widget_get_relativey   1
+   load_int               1
+   load_int               0
+   1000                  
+   load_int               0
+   load_int               5
+   load_int               1
+   load_int               0
+   1001                  
+LABEL88:
+   033                   
+   load_int               3
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL108
+   load_int               0
+   widget_get_relativey   1
+   widget_get_height      1
+   iadd                  
+   load_int               5
+   isub                  
+   load_int               1
+   load_int               0
+   1000                  
+   load_int               0
+   load_int               5
+   load_int               1
+   load_int               0
+   1001                  
+LABEL108:
+   033                   
+   load_int               4
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL124
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               0
+   1000                  
+   load_int               0
+   load_int               16
+   load_int               1
+   load_int               0
+   1001                  
+LABEL124:
+   033                   
+   load_int               5
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL140
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               2
+   1000                  
+   load_int               0
+   load_int               16
+   load_int               1
+   load_int               0
+   1001                  
+LABEL140:
+   return                

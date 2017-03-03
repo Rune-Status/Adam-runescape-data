@@ -1,0 +1,16 @@
+   025                    999
+   load_int               9000
+   if_icmpge              1
+   jump                   LABEL8
+   load_string            "Damage: Over 9000!"
+   033                   
+   2112                  
+   return                
+LABEL8:
+   load_string            "Damage: "
+   025                    999
+   int_to_string         
+   037                    2
+   033                   
+   2112                  
+   return                

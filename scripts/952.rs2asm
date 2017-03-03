@@ -1,0 +1,56 @@
+   load_int               0
+   load_int               11403265
+   widget_put_textcolor_widget
+   get_gamecycle         
+   033                   
+   isub                  
+   034                    1
+   033                    1
+   load_int               50
+   if_icmplt              1
+   jump                   LABEL22
+   load_int               255
+   load_int               0
+   033                    1
+   load_int               0
+   load_int               50
+   load_int               255
+   4006                  
+   isub                  
+   load_int               11403265
+   widget_put_opacity_widget
+   jump                   LABEL51
+LABEL22:
+   033                    1
+   load_int               800
+   if_icmplt              1
+   jump                   LABEL30
+   load_int               0
+   load_int               11403265
+   widget_put_opacity_widget
+   jump                   LABEL51
+LABEL30:
+   033                    1
+   load_int               850
+   if_icmplt              1
+   jump                   LABEL47
+   033                    1
+   load_int               800
+   isub                  
+   034                    1
+   load_int               0
+   033                    1
+   load_int               0
+   load_int               50
+   load_int               255
+   4006                  
+   load_int               11403265
+   widget_put_opacity_widget
+   jump                   LABEL51
+LABEL47:
+   load_int               -1
+   load_string            ""
+   load_int               11403264
+   2408                  
+LABEL51:
+   return                

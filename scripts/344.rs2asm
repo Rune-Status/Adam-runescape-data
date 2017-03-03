@@ -1,0 +1,55 @@
+   get_gamecycle         
+   033                    1
+   isub                  
+   034                    2
+   033                    2
+   load_int               90
+   if_icmplt              1
+   jump                   LABEL19
+   load_int               255
+   load_int               0
+   033                    2
+   load_int               0
+   load_int               90
+   load_int               255
+   4006                  
+   isub                  
+   033                   
+   widget_put_opacity_widget
+   return                
+LABEL19:
+   033                    2
+   load_int               195
+   if_icmplt              1
+   jump                   LABEL27
+   load_int               0
+   033                   
+   widget_put_opacity_widget
+   return                
+LABEL27:
+   033                    2
+   load_int               255
+   if_icmplt              1
+   jump                   LABEL44
+   load_int               255
+   load_int               0
+   load_int               255
+   033                    2
+   isub                  
+   load_int               0
+   load_int               60
+   load_int               255
+   4006                  
+   isub                  
+   033                   
+   widget_put_opacity_widget
+   return                
+LABEL44:
+   load_int               255
+   033                   
+   widget_put_opacity_widget
+   load_int               -1
+   load_string            ""
+   033                   
+   2408                  
+   return                

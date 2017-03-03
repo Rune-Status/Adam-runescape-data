@@ -1,0 +1,47 @@
+   load_int               0
+   034                    2
+   load_int               0
+   034                    3
+   load_int               0
+   034                    4
+   033                   
+   201                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL43
+   get_gamecycle         
+   034                    3
+   033                    3
+   033                    1
+   isub                  
+   034                    4
+   033                    4
+   load_int               750
+   if_icmpge              1
+   jump                   LABEL27
+   load_int               255
+   widget_put_opacity    
+   load_int               -1
+   load_string            ""
+   1408                  
+   return                
+LABEL27:
+   033                    3
+   load_int               40
+   modulo                
+   load_int               20
+   if_icmpge              1
+   jump                   LABEL36
+   load_int               255
+   widget_put_opacity    
+   return                
+LABEL36:
+   load_int               0
+   033                    4
+   load_int               0
+   load_int               750
+   load_int               255
+   4006                  
+   widget_put_opacity    
+LABEL43:
+   return                

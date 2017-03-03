@@ -1,0 +1,40 @@
+   042                    3
+   034                   
+   load_string            "null"
+   036                   
+   033                   
+   load_int               -1
+   if_icmpeq              1
+   jump                   LABEL10
+   042                    4
+   034                   
+LABEL10:
+   042                    3
+   042                    4
+   if_icmpne              1
+   jump                   LABEL36
+   033                   
+   load_int               1
+   isub                  
+   034                   
+   033                   
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL24
+   load_int               19
+   034                   
+LABEL24:
+   033                   
+   040                    79
+   036                   
+   035                   
+   string_length         
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL36
+   035                   
+   048                    1
+   033                   
+   043                    3
+LABEL36:
+   return                

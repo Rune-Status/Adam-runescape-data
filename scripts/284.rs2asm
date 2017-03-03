@@ -1,0 +1,151 @@
+   033                    2
+   033                   
+   widget_get_relativey_widget
+   isub                  
+   034                    2
+   load_int               5
+   034                    5
+   load_int               0
+   034                    6
+   033                   
+   widget_get_scrolly_widget
+   034                    7
+   033                    2
+   load_int               15
+   if_icmplt              1
+   jump                   LABEL105
+   033                    2
+   load_int               -8
+   if_icmplt              1
+   jump                   LABEL21
+   return                
+LABEL21:
+   033                    4
+   get_gamecycle         
+   if_icmple              1
+   jump                   LABEL43
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL42
+   load_int               284
+   load_int               -2147483645
+   load_int               -2147483643
+   load_int               -2147483646
+   033                    3
+   get_gamecycle         
+   load_int               2
+   iadd                  
+   load_string            "IiiIi"
+   1405                  
+   return                
+LABEL42:
+   jump                   LABEL83
+LABEL43:
+   033                    4
+   get_gamecycle         
+   isub                  
+   load_int               5
+   if_icmplt              1
+   jump                   LABEL67
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL66
+   load_int               284
+   load_int               -2147483645
+   load_int               -2147483643
+   load_int               -2147483646
+   033                    3
+   033                    4
+   load_int               2
+   iadd                  
+   load_string            "IiiIi"
+   1405                  
+   return                
+LABEL66:
+   jump                   LABEL83
+LABEL67:
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL83
+   load_int               284
+   load_int               -2147483645
+   load_int               -2147483643
+   load_int               -2147483646
+   033                    3
+   033                    4
+   load_int               1
+   iadd                  
+   load_string            "IiiIi"
+   1405                  
+LABEL83:
+   033                    2
+   load_int               5
+   if_icmplt              1
+   jump                   LABEL89
+   load_int               8
+   034                    5
+LABEL89:
+   033                    7
+   033                    5
+   if_icmpgt              1
+   jump                   LABEL98
+   033                    7
+   033                    5
+   isub                  
+   034                    7
+   jump                   LABEL100
+LABEL98:
+   load_int               0
+   034                    7
+LABEL100:
+   033                    3
+   033                   
+   033                    7
+   040                    72
+   jump                   LABEL137
+LABEL105:
+   033                   
+   widget_get_height_widget
+   load_int               32
+   isub                  
+   033                    2
+   isub                  
+   034                    6
+   033                    6
+   load_int               20
+   if_icmplt              1
+   jump                   LABEL137
+   033                    6
+   load_int               -5
+   if_icmplt              1
+   jump                   LABEL123
+   load_int               10
+   034                    5
+   jump                   LABEL129
+LABEL123:
+   033                    6
+   load_int               5
+   if_icmplt              1
+   jump                   LABEL129
+   load_int               8
+   034                    5
+LABEL129:
+   033                    7
+   033                    5
+   iadd                  
+   034                    7
+   033                    3
+   033                   
+   033                    7
+   040                    72
+LABEL137:
+   return                

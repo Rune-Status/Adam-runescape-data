@@ -1,0 +1,75 @@
+   load_int               3
+   034                   
+   load_int               5
+   034                    1
+   load_int               0
+   034                    2
+LABEL6:
+   033                   
+   load_int               255
+   if_icmplt              1
+   jump                   LABEL69
+LABEL10:
+   033                    1
+   load_int               235
+   if_icmplt              1
+   jump                   LABEL62
+   load_int               17039402
+   load_int               5
+   033                    2
+   100                   
+   load_int               36
+   load_int               32
+   load_int               0
+   load_int               0
+   1001                  
+   033                    1
+   033                   
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               514
+   033                    2
+   3301                  
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL53
+   load_int               514
+   033                    2
+   3301                  
+   load_int               514
+   033                    2
+   3302                  
+   1200                  
+   load_int               514
+   033                    2
+   3301                  
+   get_item_name         
+   widget_put_name       
+   load_int               1
+   load_string            "Withdraw"
+   1300                  
+   load_int               1118481
+   1117                  
+   load_int               1
+   widget_put_borderthickness
+LABEL53:
+   033                    1
+   load_int               40
+   iadd                  
+   034                    1
+   033                    2
+   load_int               1
+   iadd                  
+   034                    2
+   jump                   LABEL10
+LABEL62:
+   033                   
+   load_int               44
+   iadd                  
+   034                   
+   load_int               5
+   034                    1
+   jump                   LABEL6
+LABEL69:
+   return                

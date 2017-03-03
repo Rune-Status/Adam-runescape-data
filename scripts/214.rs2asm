@@ -1,0 +1,40 @@
+   033                   
+   load_int               6
+   if_icmpeq              1
+   jump                   LABEL7
+   035                   
+   040                    215
+   jump                   LABEL34
+LABEL7:
+   033                   
+   load_int               7
+   if_icmpeq              1
+   jump                   LABEL14
+   035                   
+   add_friend            
+   jump                   LABEL34
+LABEL14:
+   033                   
+   load_int               8
+   if_icmpeq              1
+   jump                   LABEL21
+   035                   
+   add_ignore            
+   jump                   LABEL34
+LABEL21:
+   033                   
+   load_int               9
+   if_icmpeq              1
+   jump                   LABEL28
+   035                   
+   remove_friend         
+   jump                   LABEL34
+LABEL28:
+   033                   
+   load_int               10
+   if_icmpeq              1
+   jump                   LABEL34
+   035                   
+   remove_ignore         
+LABEL34:
+   return                

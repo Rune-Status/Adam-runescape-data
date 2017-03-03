@@ -1,0 +1,56 @@
+   033                    2
+   033                   
+   if_icmpne              1
+   jump                   LABEL5
+   return                
+LABEL5:
+   033                    1
+   load_int               9
+   load_int               1
+   iadd                  
+   isub                  
+   034                    6
+   033                    3
+   load_int               9
+   load_int               1
+   iadd                  
+   isub                  
+   034                    7
+   033                    6
+   load_int               0
+   if_icmpeq              14
+   033                    7
+   load_int               0
+   if_icmpeq              11
+   033                    4
+   033                    6
+   test_bit              
+   load_int               0
+   if_icmpeq              6
+   033                    4
+   033                    7
+   test_bit              
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL35
+   return                
+LABEL35:
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL52
+   load_int               200
+   widget_put_opacity    
+   load_int               488
+   load_int               -2147483645
+   load_int               -2147483643
+   033                    5
+   get_gamecycle         
+   load_int               10
+   iadd                  
+   load_string            "Iiii"
+   1408                  
+LABEL52:
+   return                

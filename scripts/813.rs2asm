@@ -1,0 +1,71 @@
+   load_int               93
+   get_settings           1151
+   3303                  
+   034                   
+   load_int               0
+   034                    1
+   get_settings           1151
+   get_item_note_1       
+   034                    2
+   033                    2
+   get_settings           1151
+   if_icmpne              1
+   jump                   LABEL31
+   load_int               93
+   033                    2
+   3303                  
+   034                    1
+   load_int               2147483647
+   033                    1
+   isub                  
+   033                   
+   if_icmplt              1
+   jump                   LABEL26
+   load_int               2147483647
+   034                   
+   jump                   LABEL30
+LABEL26:
+   033                   
+   033                    1
+   iadd                  
+   034                   
+LABEL30:
+   jump                   LABEL55
+LABEL31:
+   get_settings           1151
+   get_item_note_2       
+   034                    2
+   033                    2
+   get_settings           1151
+   if_icmpne              1
+   jump                   LABEL55
+   load_int               93
+   033                    2
+   3303                  
+   034                    1
+   load_int               2147483647
+   033                    1
+   isub                  
+   033                   
+   if_icmplt              1
+   jump                   LABEL51
+   load_int               2147483647
+   034                   
+   jump                   LABEL55
+LABEL51:
+   033                   
+   033                    1
+   iadd                  
+   034                   
+LABEL55:
+   033                   
+   load_int               0
+   if_icmple              1
+   jump                   LABEL61
+   load_int               1
+   034                   
+LABEL61:
+   033                   
+   return                
+   load_int               0
+   return                

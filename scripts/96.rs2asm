@@ -1,0 +1,34 @@
+   025                    4394
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL24
+   033                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL16
+   get_localplayer_name  
+   load_string            ": "
+   load_string            "<col=2020ef>"
+   035                   
+   load_string            "</col>"
+   037                    5
+   send_game_message     
+   jump                   LABEL23
+LABEL16:
+   get_localplayer_name  
+   load_string            ": "
+   load_string            "<col=0000ff>"
+   035                   
+   load_string            "</col>"
+   037                    5
+   send_game_message     
+LABEL23:
+   jump                   LABEL27
+LABEL24:
+   035                   
+   033                   
+   5008                  
+LABEL27:
+   get_gamecycle         
+   043                    61
+   return                

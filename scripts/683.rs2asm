@@ -1,0 +1,20 @@
+   get_gamecycle         
+   033                    3
+   if_icmplt              1
+   jump                   LABEL5
+   return                
+LABEL5:
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL17
+   033                    2
+   int_to_string         
+   1112                  
+   load_int               -1
+   load_string            ""
+   1408                  
+LABEL17:
+   return                

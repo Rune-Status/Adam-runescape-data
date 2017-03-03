@@ -1,0 +1,83 @@
+   load_int               0
+   034                    4
+   load_int               0
+   034                    5
+   load_int               0
+   034                    6
+   load_int               0
+   034                    7
+   load_int               0
+   034                    8
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL79
+   load_int               105
+   load_int               105
+   load_int               1279
+   033                    2
+   3408                  
+   033                    3
+   get_gamecycle         
+   isub                  
+   034                    5
+   034                    4
+   033                    5
+   load_int               0
+   if_icmple              1
+   jump                   LABEL36
+   033                    4
+   widget_put_textcolor  
+   load_int               -1
+   load_string            ""
+   1408                  
+   return                
+LABEL36:
+   033                    5
+   load_int               30
+   if_icmpgt              1
+   jump                   LABEL42
+   load_int               30
+   034                    5
+LABEL42:
+   033                    4
+   040                    2
+   034                    8
+   034                    7
+   034                    6
+   033                    6
+   load_int               0
+   033                    5
+   load_int               0
+   load_int               30
+   load_int               255
+   033                    6
+   isub                  
+   4006                  
+   iadd                  
+   033                    7
+   load_int               0
+   033                    5
+   load_int               0
+   load_int               30
+   load_int               255
+   033                    7
+   isub                  
+   4006                  
+   iadd                  
+   033                    8
+   load_int               0
+   033                    5
+   load_int               0
+   load_int               30
+   load_int               255
+   033                    8
+   isub                  
+   4006                  
+   iadd                  
+   040                    246
+   widget_put_textcolor  
+LABEL79:
+   return                

@@ -1,0 +1,125 @@
+   load_int               105
+   load_int               83
+   load_int               681
+   033                   
+   3408                  
+   034                    1
+   033                    1
+   get_realskilllevels   
+   034                    2
+   get_settings           1295
+   033                   
+   load_int               1
+   isub                  
+   test_bit              
+   034                    3
+   load_int               50
+   034                    4
+   033                    3
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL32
+   042                    139
+   load_int               3
+   if_icmplt              1
+   jump                   LABEL29
+   033                    2
+   033                    2
+   load_int               0
+   return                
+LABEL29:
+   load_int               90
+   034                    4
+   jump                   LABEL46
+LABEL32:
+   042                    139
+   load_int               0
+   if_icmple              1
+   jump                   LABEL40
+   033                    2
+   033                    2
+   load_int               0
+   return                
+LABEL40:
+   042                    139
+   load_int               1
+   if_icmple              1
+   jump                   LABEL46
+   load_int               75
+   034                    4
+LABEL46:
+   033                    1
+   get_skillexperiences  
+   034                    5
+   033                    4
+   load_int               100
+   033                    5
+   4018                  
+   034                    6
+   033                    2
+   034                    7
+LABEL56:
+   load_int               105
+   load_int               105
+   load_int               256
+   033                    7
+   3408                  
+   033                    6
+   if_icmpgt              1
+   jump                   LABEL69
+   033                    7
+   load_int               1
+   isub                  
+   034                    7
+   jump                   LABEL56
+LABEL69:
+   load_int               105
+   load_int               105
+   load_int               1240
+   033                   
+   3408                  
+   034                    8
+   033                    2
+   033                    8
+   if_icmplt              1
+   jump                   LABEL81
+   033                    2
+   034                    8
+LABEL81:
+   033                    8
+   033                    7
+   if_icmpgt              1
+   jump                   LABEL87
+   033                    8
+   034                    7
+LABEL87:
+   load_int               105
+   load_int               105
+   load_int               256
+   033                    8
+   3408                  
+   034                    9
+   033                    5
+   033                    9
+   if_icmplt              1
+   jump                   LABEL99
+   033                    5
+   034                    9
+LABEL99:
+   033                    9
+   033                    6
+   if_icmpgt              1
+   jump                   LABEL105
+   033                    9
+   034                    6
+LABEL105:
+   033                    2
+   033                    7
+   033                    5
+   033                    6
+   isub                  
+   return                
+   load_int               0
+   load_int               0
+   load_int               0
+   return                

@@ -1,0 +1,35 @@
+   load_string            "Enable a head-up display that shows your house favour while you're in Kourend. It is automatically hidden while other head-up displays are active."
+   036                   
+   025                    619
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL15
+   load_int               699
+   widget_put_textureid  
+   load_int               1
+   load_string            "Disable"
+   033                   
+   2300                  
+   load_string            "Disable the head-up display that shows your house favour while you're in Kourend. It is automatically hidden while other head-up displays are active."
+   036                   
+   jump                   LABEL21
+LABEL15:
+   load_int               698
+   widget_put_textureid  
+   load_int               1
+   load_string            "Enable"
+   033                   
+   2300                  
+LABEL21:
+   load_int               526
+   load_int               -2147483645
+   load_int               -2147483643
+   033                    1
+   035                   
+   load_int               25
+   load_int               190
+   load_string            "IiIsii"
+   1412                   1
+   load_int               0
+   043                    2
+   return                

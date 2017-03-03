@@ -1,0 +1,180 @@
+   025                    146
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL12
+   load_string            "Health "
+   025                    146
+   int_to_string         
+   load_string            "%"
+   037                    3
+   033                   
+   2112                  
+   jump                   LABEL21
+LABEL12:
+   load_string            "<col=ff0000>"
+   load_string            "Health "
+   025                    146
+   int_to_string         
+   load_string            "%"
+   load_string            "</col>"
+   037                    5
+   033                   
+   2112                  
+LABEL21:
+   025                    147
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL32
+   load_string            "<col=ff0000>"
+   load_string            "Unlocked"
+   load_string            "</col>"
+   037                    3
+   033                    1
+   2112                  
+   jump                   LABEL35
+LABEL32:
+   load_string            "Locked"
+   033                    1
+   2112                  
+LABEL35:
+   025                    148
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL46
+   load_string            "<col=ff0000>"
+   load_string            "Cleared"
+   load_string            "</col>"
+   037                    3
+   033                    2
+   2112                  
+   jump                   LABEL49
+LABEL46:
+   load_string            "Collapsed"
+   033                    2
+   2112                  
+LABEL49:
+   025                    149
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL60
+   load_string            "<col=ff0000>"
+   load_string            "Cleared"
+   load_string            "</col>"
+   037                    3
+   033                    3
+   2112                  
+   jump                   LABEL63
+LABEL60:
+   load_string            "Collapsed"
+   033                    3
+   2112                  
+LABEL63:
+   025                    150
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL74
+   load_string            "<col=ff0000>"
+   load_string            "Destroyed"
+   load_string            "</col>"
+   037                    3
+   033                    4
+   2112                  
+   jump                   LABEL77
+LABEL74:
+   load_string            "Operational"
+   033                    4
+   2112                  
+LABEL77:
+   025                    143
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL85
+   load_string            "Safe"
+   033                    5
+   2112                  
+   jump                   LABEL110
+LABEL85:
+   025                    143
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL96
+   load_string            "<col=ff0000>"
+   load_string            "Taken"
+   load_string            "</col>"
+   037                    3
+   033                    5
+   2112                  
+   jump                   LABEL110
+LABEL96:
+   025                    143
+   load_int               2
+   if_icmpeq              1
+   jump                   LABEL107
+   load_string            "<col=ffff00>"
+   load_string            "Dropped"
+   load_string            "</col>"
+   037                    3
+   033                    5
+   2112                  
+   jump                   LABEL110
+LABEL107:
+   load_string            ""
+   033                    5
+   2112                  
+LABEL110:
+   025                    153
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL118
+   load_string            "Safe"
+   033                    6
+   2112                  
+   jump                   LABEL143
+LABEL118:
+   025                    153
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL129
+   load_string            "<col=ff0000>"
+   load_string            "Taken"
+   load_string            "</col>"
+   037                    3
+   033                    6
+   2112                  
+   jump                   LABEL143
+LABEL129:
+   025                    153
+   load_int               2
+   if_icmpeq              1
+   jump                   LABEL140
+   load_string            "<col=ffff00>"
+   load_string            "Dropped"
+   load_string            "</col>"
+   037                    3
+   033                    6
+   2112                  
+   jump                   LABEL143
+LABEL140:
+   load_string            ""
+   033                    6
+   2112                  
+LABEL143:
+   025                    145
+   int_to_string         
+   load_string            " = Saradomin"
+   037                    2
+   033                    7
+   2112                  
+   load_string            "Zamorak = "
+   025                    155
+   int_to_string         
+   037                    2
+   033                    8
+   2112                  
+   get_settings           380
+   int_to_string         
+   load_string            " Min"
+   037                    2
+   033                    9
+   2112                  
+   return                

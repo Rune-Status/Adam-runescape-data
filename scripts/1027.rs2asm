@@ -1,0 +1,83 @@
+   load_int               0
+   034                    1
+   load_int               0
+   034                    2
+   033                   
+   040                    1002
+   034                    2
+   034                    1
+   033                    2
+   load_int               -1
+   if_icmpeq              1
+   jump                   LABEL35
+   033                   
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL26
+   load_string            "Tracking XP since "
+   load_string            "<col=ffffff>"
+   033                    1
+   load_int               0
+   040                    1028
+   load_string            "</col>"
+   load_string            "."
+   037                    5
+   1112                  
+   jump                   LABEL34
+LABEL26:
+   load_string            "Tracking XP since "
+   load_string            "<col=ffffff>"
+   033                    1
+   040                    1029
+   load_string            "</col>"
+   load_string            "."
+   037                    5
+   1112                  
+LABEL34:
+   jump                   LABEL75
+LABEL35:
+   033                    2
+   033                    1
+   if_icmpgt              1
+   jump                   LABEL73
+   033                   
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL59
+   load_string            "Goal is "
+   load_string            "<col=ffffff>"
+   033                    2
+   load_int               0
+   040                    1028
+   load_string            "</col>"
+   load_string            ", starting from "
+   load_string            "<col=ffffff>"
+   033                    1
+   load_int               0
+   040                    1028
+   load_string            "</col>"
+   load_string            "."
+   037                    9
+   1112                  
+   jump                   LABEL72
+LABEL59:
+   load_string            "Goal is "
+   load_string            "<col=ffffff>"
+   033                    2
+   040                    1029
+   load_string            "</col>"
+   load_string            ", starting from "
+   load_string            "<col=ffffff>"
+   033                    1
+   040                    1029
+   load_string            "</col>"
+   load_string            "."
+   037                    9
+   1112                  
+LABEL72:
+   jump                   LABEL75
+LABEL73:
+   load_string            "No tracker or goal set."
+   1112                  
+LABEL75:
+   return                

@@ -1,0 +1,76 @@
+   load_int               0
+   034                    3
+   load_int               -1
+   034                    4
+   033                    1
+   040                    1063
+   034                    4
+   034                    3
+   load_int               8331264
+   034                    5
+   033                    3
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL16
+   load_int               2154272
+   034                    5
+LABEL16:
+   033                    1
+   load_int               6797
+   if_icmpeq              1
+   jump                   LABEL29
+   033                    4
+   load_int               -1
+   if_icmpeq              1
+   jump                   LABEL26
+   load_int               6797
+   034                    4
+LABEL26:
+   033                    4
+   get_item_name         
+   036                   
+LABEL29:
+   033                   
+   load_int               0
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL54
+   033                   
+   load_int               1
+   200                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL54
+   035                   
+   1112                  
+   033                    5
+   widget_put_textcolor  
+   033                    5
+   widget_put_textcolor   1
+   033                    3
+   int_to_string         
+   load_string            "/"
+   033                    2
+   int_to_string         
+   037                    3
+   1112                   1
+LABEL54:
+   033                   
+   load_int               2
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL63
+   033                    4
+   033                    3
+   1205                  
+LABEL63:
+   load_string            "<col=ff9040>"
+   033                    4
+   get_item_name         
+   load_string            "</col>"
+   037                    3
+   033                   
+   widget_put_name_widget
+   return                

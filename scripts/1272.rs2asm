@@ -1,0 +1,180 @@
+   load_int               -1
+   034                    2
+   load_int               0
+   034                    3
+   load_int               0
+   034                    4
+   033                    1
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL32
+LABEL10:
+   033                    4
+   load_int               800
+   if_icmplt              1
+   jump                   LABEL32
+   load_int               95
+   033                    4
+   3301                  
+   034                    2
+   033                    2
+   4209                  
+   033                    2
+   if_icmpne              1
+   jump                   LABEL27
+   033                    3
+   load_int               1
+   iadd                  
+   034                    3
+LABEL27:
+   033                    4
+   load_int               1
+   iadd                  
+   034                    4
+   jump                   LABEL10
+LABEL32:
+   033                   
+   102                   
+   load_int               0
+   034                    5
+   033                    3
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL45
+   033                   
+   033                    5
+   040                    836
+   034                    5
+   jump                   LABEL49
+LABEL45:
+   033                   
+   033                    5
+   040                    835
+   034                    5
+LABEL49:
+   033                   
+   load_int               5
+   033                    5
+   100                   
+   033                    5
+   load_int               1
+   iadd                  
+   034                    5
+   load_int               29
+   load_int               22
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               3
+   load_int               0
+   load_int               0
+   load_int               1
+   1000                  
+   load_int               1342
+   widget_put_textureid  
+   load_string            "Release all placeholders"
+   036                   
+   033                    3
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL84
+   035                   
+   load_string            " ("
+   033                    3
+   load_string            ","
+   040                    46
+   load_string            ")"
+   037                    3
+   concat_string         
+   036                   
+LABEL84:
+   load_int               1
+   035                   
+   033                   
+   2300                  
+   035                   
+   033                   
+   widget_get_parentid_widget
+   widget_get_width_widget
+   load_int               40
+   isub                  
+   load_int               495
+   4109                  
+   034                    6
+   033                   
+   load_int               4
+   033                    5
+   100                   
+   033                    6
+   load_int               0
+   load_int               0
+   load_int               1
+   1001                  
+   load_int               8
+   load_int               0
+   load_int               2
+   load_int               1
+   1000                  
+   load_int               1
+   1115                  
+   load_int               1
+   load_int               1
+   load_int               0
+   1114                  
+   load_int               495
+   widget_put_fontid     
+   035                   
+   1112                  
+   033                    3
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL148
+   load_int               16750623
+   widget_put_textcolor  
+   load_int               85
+   load_int               -2147483645
+   033                    5
+   load_int               16777215
+   load_string            "Iii"
+   033                   
+   2403                  
+   load_int               85
+   load_int               -2147483645
+   033                    5
+   load_int               16750623
+   load_string            "Iii"
+   033                   
+   2404                  
+   load_int               1273
+   load_int               -2147483644
+   033                   
+   load_string            "iI"
+   033                   
+   2409                  
+   jump                   LABEL162
+LABEL148:
+   load_int               9408399
+   widget_put_textcolor  
+   load_int               -1
+   load_string            ""
+   033                   
+   2403                  
+   load_int               -1
+   load_string            ""
+   033                   
+   2404                  
+   load_int               -1
+   load_string            ""
+   033                   
+   2409                  
+LABEL162:
+   033                    6
+   load_int               40
+   iadd                  
+   033                   
+   widget_get_height_widget
+   load_int               0
+   load_int               0
+   033                   
+   2001                  
+   return                

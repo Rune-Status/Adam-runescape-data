@@ -1,0 +1,49 @@
+   033                    2
+   divide_by_16384       
+   034                    3
+   033                    3
+   033                   
+   divide_by_16384       
+   if_icmplt              5
+   033                    3
+   033                    1
+   divide_by_16384       
+   if_icmpgt              1
+   jump                   LABEL14
+   load_int               0
+   return                
+LABEL14:
+   033                    2
+   right_shift_28        
+   034                    3
+   033                    3
+   033                   
+   right_shift_28        
+   if_icmplt              5
+   033                    3
+   033                    1
+   right_shift_28        
+   if_icmpgt              1
+   jump                   LABEL28
+   load_int               0
+   return                
+LABEL28:
+   033                    2
+   and_16384             
+   034                    3
+   033                    3
+   033                   
+   and_16384             
+   if_icmplt              5
+   033                    3
+   033                    1
+   and_16384             
+   if_icmpgt              1
+   jump                   LABEL42
+   load_int               0
+   return                
+LABEL42:
+   load_int               1
+   return                
+   load_int               -1
+   return                

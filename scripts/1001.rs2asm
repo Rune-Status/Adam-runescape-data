@@ -1,0 +1,32 @@
+   033                   
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL6
+   load_string            ""
+   return                
+LABEL6:
+   033                   
+   load_int               1000
+   if_icmpge              1
+   jump                   LABEL16
+   load_string            "- "
+   load_string            "<col=ff0000>"
+   load_string            "COMPLETE!"
+   load_string            "</col>"
+   037                    4
+   return                
+LABEL16:
+   033                   
+   load_int               10
+   idiv                  
+   int_to_string         
+   load_string            "."
+   033                   
+   load_int               10
+   modulo                
+   int_to_string         
+   load_string            "%"
+   037                    4
+   return                
+   load_string            ""
+   return                

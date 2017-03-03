@@ -1,0 +1,86 @@
+   load_int               0
+   034                    1
+   get_ismembers         
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL14
+   load_int               111
+   load_int               105
+   load_int               906
+   load_int               94
+   load_int               3
+   3301                  
+   3408                  
+   034                    1
+LABEL14:
+   033                    1
+   load_int               0
+   if_icmple              1
+   jump                   LABEL22
+   load_int               1
+   load_int               38862877
+   widget_put_hidden_widget
+   return                
+LABEL22:
+   load_int               0
+   034                    2
+   load_int               38862877
+   widget_get_hidden_widget
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL31
+   load_int               1
+   034                    2
+LABEL31:
+   load_int               0
+   load_int               38862877
+   widget_put_hidden_widget
+   get_settings           301
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL42
+   load_int               16776960
+   load_int               38862882
+   widget_put_textcolor_widget
+   jump                   LABEL45
+LABEL42:
+   load_int               16
+   load_int               38862882
+   widget_put_textcolor_widget
+LABEL45:
+   get_settings           300
+   034                    3
+   033                    3
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL53
+   load_int               0
+   034                    3
+LABEL53:
+   load_string            "Special Attack: "
+   033                    3
+   load_int               10
+   idiv                  
+   int_to_string         
+   load_string            "%"
+   037                    3
+   load_int               38862882
+   2112                  
+   033                   
+   033                    3
+   033                    2
+   040                    189
+   033                    3
+   033                    1
+   if_icmpge              1
+   jump                   LABEL74
+   load_int               18552
+   load_int               38862881
+   widget_put_modelid_1_widget
+   jump                   LABEL77
+LABEL74:
+   load_int               28478
+   load_int               38862881
+   widget_put_modelid_1_widget
+LABEL77:
+   return                

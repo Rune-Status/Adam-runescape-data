@@ -1,0 +1,42 @@
+   025                    4101
+   033                   
+   test_bit              
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL13
+   load_int               1
+   load_string            "Deactivate"
+   033                    1
+   2300                  
+   load_int               0
+   widget_put_hidden     
+   jump                   LABEL19
+LABEL13:
+   load_int               1
+   load_string            "Activate"
+   033                    1
+   2300                  
+   load_int               1
+   widget_put_hidden     
+LABEL19:
+   033                   
+   040                    464
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL31
+   load_int               105
+   load_int               100
+   load_int               865
+   033                   
+   3408                  
+   widget_put_textureid   1
+   jump                   LABEL37
+LABEL31:
+   load_int               105
+   load_int               100
+   load_int               864
+   033                   
+   3408                  
+   widget_put_textureid   1
+LABEL37:
+   return                

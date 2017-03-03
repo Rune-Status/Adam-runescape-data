@@ -1,0 +1,62 @@
+   get_settings           211
+   033                    2
+   if_icmpeq              1
+   jump                   LABEL25
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL12
+   load_int               175
+   widget_put_opacity    
+LABEL12:
+   load_int               -1
+   load_string            ""
+   033                   
+   2412                  
+   load_int               -1
+   load_string            ""
+   033                   
+   2404                  
+   load_int               -1
+   load_string            ""
+   033                   
+   2409                  
+   jump                   LABEL57
+LABEL25:
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL33
+   load_int               255
+   widget_put_opacity    
+LABEL33:
+   load_int               244
+   load_int               -2147483645
+   033                    1
+   load_int               200
+   load_int               -1
+   load_string            "IiiI"
+   033                   
+   2412                  
+   load_int               244
+   load_int               -2147483645
+   033                    1
+   load_int               255
+   load_int               -1
+   load_string            "IiiI"
+   033                   
+   2404                  
+   load_int               972
+   load_int               -2147483644
+   033                   
+   033                    1
+   033                    2
+   load_string            "iIii"
+   033                   
+   2409                  
+LABEL57:
+   return                

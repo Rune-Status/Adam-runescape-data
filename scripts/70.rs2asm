@@ -1,0 +1,17 @@
+   get_settings           560
+   load_int               1
+   if_icmplt              1
+   jump                   LABEL8
+   load_string            "You're the Winner!"
+   load_int               24444929
+   2112                  
+   jump                   LABEL14
+LABEL8:
+   load_string            "Foes Remaining: "
+   get_settings           560
+   int_to_string         
+   037                    2
+   load_int               24444929
+   2112                  
+LABEL14:
+   return                

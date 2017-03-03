@@ -1,0 +1,57 @@
+   load_int               93
+   load_int               13192
+   3303                  
+   load_string            ","
+   040                    46
+   load_int               4194310
+   2112                  
+   load_int               93
+   load_int               995
+   3303                  
+   load_string            ","
+   040                    46
+   load_int               4194317
+   2112                  
+   042                    67
+   int_to_string         
+   load_int               4194330
+   2112                  
+   042                    68
+   load_string            ","
+   040                    46
+   load_int               4194336
+   2112                  
+   042                    67
+   042                    68
+   imul                  
+   load_string            ","
+   040                    46
+   load_int               4194341
+   2112                  
+   042                    67
+   042                    68
+   imul                  
+   load_int               93
+   load_int               995
+   3303                  
+   if_icmpgt              1
+   jump                   LABEL43
+   load_string            "You do not have enough coins for this transaction."
+   load_int               4194331
+   2112                  
+   040                    730
+   jump                   LABEL53
+LABEL43:
+   load_string            ""
+   load_int               4194331
+   2112                  
+   042                    67
+   load_int               0
+   if_icmple              1
+   jump                   LABEL52
+   040                    730
+   jump                   LABEL53
+LABEL52:
+   040                    731
+LABEL53:
+   return                

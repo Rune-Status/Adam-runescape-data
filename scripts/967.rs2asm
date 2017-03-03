@@ -1,0 +1,128 @@
+   load_int               1
+   034                    4
+   035                   
+   string_length         
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL9
+   load_int               0
+   034                    4
+LABEL9:
+   load_int               0
+   034                    5
+   load_int               0
+   034                    6
+   load_int               0
+   034                    7
+   load_int               105
+   load_int               79
+   load_int               1124
+   033                    7
+   3408                  
+   034                    8
+LABEL21:
+   033                    8
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL80
+   033                   
+   033                    7
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL69
+   033                    4
+   load_int               1
+   if_icmpeq              9
+   033                    8
+   get_item_name         
+   tolowercase           
+   035                   
+   load_int               0
+   string_indexof_from   
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL67
+   load_int               0
+   widget_put_hidden     
+   033                    5
+   load_int               10
+   idiv                  
+   033                    3
+   imul                  
+   034                    6
+   033                    5
+   load_int               10
+   modulo                
+   load_int               36
+   033                    2
+   iadd                  
+   imul                  
+   033                    6
+   load_int               0
+   load_int               0
+   1000                  
+   033                    5
+   load_int               1
+   iadd                  
+   034                    5
+   jump                   LABEL69
+LABEL67:
+   load_int               1
+   widget_put_hidden     
+LABEL69:
+   033                    7
+   load_int               1
+   iadd                  
+   034                    7
+   load_int               105
+   load_int               79
+   load_int               1124
+   033                    7
+   3408                  
+   034                    8
+   jump                   LABEL21
+LABEL80:
+   033                   
+   033                    7
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL95
+   033                    5
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL93
+   load_int               1
+   widget_put_hidden     
+   jump                   LABEL95
+LABEL93:
+   load_int               0
+   widget_put_hidden     
+LABEL95:
+   033                    6
+   load_int               32
+   iadd                  
+   034                    6
+   033                    6
+   033                   
+   widget_get_height_widget
+   if_icmpgt              1
+   jump                   LABEL109
+   load_int               0
+   033                    6
+   033                   
+   widget_put_scrollwidthheight_widget
+   jump                   LABEL113
+LABEL109:
+   load_int               0
+   load_int               0
+   033                   
+   widget_put_scrollwidthheight_widget
+LABEL113:
+   033                    1
+   033                   
+   033                   
+   widget_get_scrolly_widget
+   040                    72
+   return                

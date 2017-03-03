@@ -1,0 +1,208 @@
+   033                   
+   102                   
+   033                    1
+   load_int               -1
+   if_icmpeq              1
+   jump                   LABEL10
+   load_int               1
+   033                   
+   widget_put_hidden_widget
+   return                
+LABEL10:
+   load_int               0
+   033                   
+   widget_put_hidden_widget
+   load_int               50341120
+   load_int               51373375
+   get_coordinates       
+   040                    247
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL26
+   033                    1
+   load_int               1205
+   if_icmpne              1
+   jump                   LABEL26
+   load_int               1
+   034                    2
+LABEL26:
+   033                   
+   widget_get_width_widget
+   034                    4
+   033                   
+   load_int               4
+   load_int               0
+   100                   
+   033                    4
+   load_int               13
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               0
+   load_int               32
+   load_int               1
+   isub                  
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               494
+   widget_put_fontid     
+   load_int               0
+   load_int               0
+   load_int               0
+   1114                  
+   033                    2
+   load_int               1
+   if_icmpeq              9
+   load_int               13
+   get_boostedskilllevels
+   load_int               111
+   load_int               105
+   load_int               846
+   033                    1
+   3408                  
+   if_icmplt              1
+   jump                   LABEL68
+   load_int               0
+   widget_put_textcolor  
+   load_int               0
+   1115                  
+   jump                   LABEL72
+LABEL68:
+   load_int               16777215
+   widget_put_textcolor  
+   load_int               1
+   1115                  
+LABEL72:
+   035                   
+   1112                  
+   load_int               111
+   load_int               105
+   load_int               845
+   033                    1
+   3408                  
+   034                    5
+   033                   
+   load_int               4
+   load_int               1
+   100                   
+   033                    4
+   load_int               13
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               0
+   load_int               32
+   load_int               11
+   iadd                  
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               494
+   widget_put_fontid     
+   load_int               0
+   load_int               0
+   load_int               0
+   1114                  
+   load_int               1
+   1115                  
+   load_int               93
+   033                    3
+   3303                  
+   033                    5
+   if_icmplt              1
+   jump                   LABEL113
+   load_int               16750623
+   widget_put_textcolor  
+   jump                   LABEL115
+LABEL113:
+   load_int               65280
+   widget_put_textcolor  
+LABEL115:
+   033                    5
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL122
+   load_string            "1 bar"
+   1112                  
+   jump                   LABEL127
+LABEL122:
+   033                    5
+   int_to_string         
+   load_string            " bars"
+   037                    2
+   1112                  
+LABEL127:
+   033                   
+   load_int               5
+   load_int               2
+   100                   
+   load_int               36
+   load_int               32
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               6
+   load_int               0
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               3355443
+   1117                  
+   load_int               1
+   widget_put_borderthickness
+   load_int               111
+   load_int               105
+   load_int               844
+   033                    1
+   3408                  
+   034                    6
+   033                    1
+   033                    6
+   1200                  
+   033                    6
+   load_int               1
+   if_icmpgt              1
+   jump                   LABEL175
+   load_int               1
+   load_string            "Smith 1 set"
+   033                   
+   2300                  
+   load_int               2
+   load_string            "Smith 5 sets"
+   033                   
+   2300                  
+   load_int               3
+   load_string            "Smith 10 sets"
+   033                   
+   2300                  
+   load_int               4
+   load_string            "Smith X sets"
+   033                   
+   2300                  
+   jump                   LABEL191
+LABEL175:
+   load_int               1
+   load_string            "Smith 1"
+   033                   
+   2300                  
+   load_int               2
+   load_string            "Smith 5"
+   033                   
+   2300                  
+   load_int               3
+   load_string            "Smith 10"
+   033                   
+   2300                  
+   load_int               4
+   load_string            "Smith X"
+   033                   
+   2300                  
+LABEL191:
+   load_string            "<col=ff9040>"
+   033                    1
+   get_item_name         
+   037                    2
+   033                   
+   widget_put_name_widget
+   return                

@@ -1,0 +1,33 @@
+   033                   
+   load_int               99
+   if_icmpgt              1
+   jump                   LABEL7
+   033                   
+   int_to_string         
+   return                
+LABEL7:
+   033                   
+   load_int               9
+   if_icmpgt              1
+   jump                   LABEL16
+   load_string            "0"
+   033                   
+   int_to_string         
+   037                    2
+   return                
+LABEL16:
+   033                   
+   load_int               0
+   if_icmpge              1
+   jump                   LABEL25
+   load_string            "00"
+   033                   
+   int_to_string         
+   037                    2
+   return                
+LABEL25:
+   033                   
+   int_to_string         
+   return                
+   load_string            ""
+   return                

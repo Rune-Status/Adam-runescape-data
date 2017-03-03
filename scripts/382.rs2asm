@@ -1,0 +1,46 @@
+   load_string            ""
+   036                   
+   get_settings           173
+   load_int               0
+   if_icmple              1
+   jump                   LABEL16
+   load_string            "Run (currently off) Energy "
+   get_energy            
+   int_to_string         
+   load_string            "%"
+   037                    3
+   036                   
+   load_int               761
+   033                   
+   widget_put_textureid_widget
+   jump                   LABEL25
+LABEL16:
+   load_string            "Run (currently on) Energy "
+   get_energy            
+   int_to_string         
+   load_string            "%"
+   037                    3
+   036                   
+   load_int               762
+   033                   
+   widget_put_textureid_widget
+LABEL25:
+   load_int               526
+   033                   
+   load_int               -1
+   033                    2
+   035                   
+   load_int               25
+   load_int               190
+   load_string            "IiIsii"
+   033                   
+   2412                  
+   get_energy            
+   int_to_string         
+   load_string            "%"
+   037                    2
+   033                    1
+   2112                  
+   load_int               0
+   043                    2
+   return                

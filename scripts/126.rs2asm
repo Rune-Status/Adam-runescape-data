@@ -1,0 +1,26 @@
+   033                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL8
+   035                   
+   string_remove_html    
+   040                    107
+   jump                   LABEL22
+LABEL8:
+   033                   
+   load_int               2
+   if_icmpeq              1
+   jump                   LABEL15
+   load_string            "That player is currently offline."
+   send_game_message     
+   jump                   LABEL22
+LABEL15:
+   033                   
+   load_int               3
+   if_icmpeq              1
+   jump                   LABEL22
+   035                   
+   string_remove_html    
+   remove_friend         
+LABEL22:
+   return                

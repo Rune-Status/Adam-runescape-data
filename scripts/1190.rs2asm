@@ -1,0 +1,37 @@
+   033                    1
+   033                   
+   load_int               792
+   load_int               789
+   load_int               790
+   load_int               791
+   load_int               773
+   load_int               788
+   040                    31
+   033                    1
+   load_int               1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL31
+   042                    80
+   load_int               0
+   if_icmplt              5
+   042                    80
+   033                   
+   widget_get_scrollheight_widget
+   if_icmpge              1
+   jump                   LABEL25
+   load_int               0
+   043                    80
+LABEL25:
+   033                    1
+   033                   
+   042                    80
+   load_int               1
+   040                    37
+   jump                   LABEL33
+LABEL31:
+   load_int               0
+   043                    80
+LABEL33:
+   return                

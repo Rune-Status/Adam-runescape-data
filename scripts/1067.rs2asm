@@ -1,0 +1,150 @@
+   033                   
+   102                   
+   load_int               32
+   load_int               10
+   iadd                  
+   034                    2
+   load_int               0
+   034                    3
+   load_int               0
+   034                    4
+   load_int               -1
+   034                    5
+   load_int               0
+   034                    6
+LABEL14:
+   033                    6
+   033                    1
+   if_icmplt              1
+   jump                   LABEL138
+   033                   
+   load_int               5
+   033                    6
+   100                   
+   load_int               141
+   033                    6
+   3301                  
+   034                    5
+   033                    5
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL131
+   load_int               0
+   widget_put_hidden     
+   load_int               36
+   load_int               32
+   load_int               0
+   load_int               0
+   1001                  
+   033                    6
+   load_int               3
+   idiv                  
+   033                    6
+   load_int               3
+   modulo                
+   034                    3
+   034                    4
+   033                    4
+   load_int               2
+   if_icmplt              1
+   jump                   LABEL81
+   033                    3
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL61
+   load_int               0
+   033                    4
+   033                    2
+   imul                  
+   load_int               0
+   load_int               0
+   1000                  
+   jump                   LABEL80
+LABEL61:
+   033                    3
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL73
+   load_int               0
+   033                    4
+   033                    2
+   imul                  
+   load_int               1
+   load_int               0
+   1000                  
+   jump                   LABEL80
+LABEL73:
+   load_int               0
+   033                    4
+   033                    2
+   imul                  
+   load_int               2
+   load_int               0
+   1000                  
+LABEL80:
+   jump                   LABEL112
+LABEL81:
+   033                    3
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL93
+   load_int               0
+   033                    4
+   033                    2
+   imul                  
+   load_int               2
+   load_int               0
+   1000                  
+   jump                   LABEL112
+LABEL93:
+   033                    3
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL105
+   load_int               0
+   033                    4
+   033                    2
+   imul                  
+   load_int               1
+   load_int               0
+   1000                  
+   jump                   LABEL112
+LABEL105:
+   load_int               0
+   033                    4
+   033                    2
+   imul                  
+   load_int               0
+   load_int               0
+   1000                  
+LABEL112:
+   load_int               3355443
+   1117                  
+   load_int               1
+   widget_put_borderthickness
+   033                    5
+   load_int               141
+   033                    6
+   3302                  
+   1200                  
+   load_int               10
+   load_string            "Examine"
+   1300                  
+   load_string            "<col=ff9040>"
+   033                    5
+   get_item_name         
+   load_string            "</col>"
+   037                    3
+   widget_put_name       
+   jump                   LABEL133
+LABEL131:
+   load_int               1
+   widget_put_hidden     
+LABEL133:
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   jump                   LABEL14
+LABEL138:
+   return                

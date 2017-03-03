@@ -1,0 +1,93 @@
+   load_int               0
+   034                    5
+   033                    3
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL76
+   033                    1
+   load_int               0
+   if_icmple              1
+   jump                   LABEL12
+   load_int               1
+   034                    1
+LABEL12:
+   033                    1
+   033                    2
+   if_icmplt              1
+   jump                   LABEL18
+   033                    2
+   034                    1
+LABEL18:
+   033                   
+   3912                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL38
+   033                    4
+   widget_get_height     
+   load_int               0
+   load_int               0
+   1001                  
+   033                    2
+   033                    1
+   if_icmplt              1
+   jump                   LABEL35
+   load_int               9371648
+   widget_put_textcolor  
+   jump                   LABEL37
+LABEL35:
+   load_int               24320
+   widget_put_textcolor  
+LABEL37:
+   jump                   LABEL75
+LABEL38:
+   load_int               14188576
+   widget_put_textcolor  
+   033                    1
+   load_int               2
+   load_int               15
+   pow                   
+   if_icmplt              1
+   jump                   LABEL57
+   load_int               0
+   033                    2
+   load_int               0
+   033                    1
+   033                    4
+   4006                  
+   widget_get_height     
+   load_int               0
+   load_int               0
+   1001                  
+   jump                   LABEL75
+LABEL57:
+   033                    1
+   load_int               100
+   idiv                  
+   034                    5
+   load_int               0
+   033                    2
+   033                    5
+   idiv                  
+   load_int               0
+   033                    1
+   033                    5
+   idiv                  
+   033                    4
+   4006                  
+   widget_get_height     
+   load_int               0
+   load_int               0
+   1001                  
+LABEL75:
+   jump                   LABEL83
+LABEL76:
+   load_int               9371648
+   widget_put_textcolor  
+   033                    4
+   widget_get_height     
+   load_int               0
+   load_int               0
+   1001                  
+LABEL83:
+   return                

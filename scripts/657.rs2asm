@@ -1,0 +1,128 @@
+   033                    2
+   load_int               4
+   033                    6
+   load_int               2
+   imul                  
+   100                   
+   load_int               26
+   load_int               32
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               0
+   033                    7
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               2
+   load_int               0
+   load_int               0
+   1114                  
+   load_int               4600330
+   widget_put_textcolor  
+   load_int               497
+   widget_put_fontid     
+   load_int               0
+   1115                  
+   033                   
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL34
+   033                   
+   int_to_string         
+   1112                  
+   jump                   LABEL36
+LABEL34:
+   load_string            ""
+   1112                  
+LABEL36:
+   033                    3
+   load_int               5
+   033                    6
+   100                   
+   load_int               36
+   load_int               32
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               28
+   033                    7
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               1
+   widget_put_borderthickness
+   load_int               6311474
+   1117                  
+   033                    1
+   load_int               -1
+   1200                  
+   025                    4371
+   load_int               22
+   if_icmpeq              1
+   jump                   LABEL72
+   033                    5
+   load_int               1
+   if_icmpge              1
+   jump                   LABEL72
+   033                    5
+   load_int               11
+   if_icmple              1
+   jump                   LABEL72
+   load_int               1
+   load_string            "Check materials"
+   1300                  
+LABEL72:
+   033                    2
+   load_int               4
+   033                    6
+   load_int               2
+   imul                  
+   load_int               1
+   iadd                  
+   100                   
+   035                   
+   033                    4
+   load_int               495
+   4108                  
+   load_int               15
+   imul                  
+   034                    8
+   033                    8
+   load_int               32
+   if_icmplt              1
+   jump                   LABEL93
+   load_int               32
+   034                    8
+LABEL93:
+   033                    4
+   033                    8
+   load_int               0
+   load_int               0
+   1001                  
+   033                    2
+   widget_get_width_widget
+   033                    4
+   isub                  
+   033                    7
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               0
+   load_int               0
+   load_int               0
+   1114                  
+   load_int               4600330
+   widget_put_textcolor  
+   load_int               495
+   widget_put_fontid     
+   load_int               0
+   1115                  
+   035                   
+   1112                  
+   033                    7
+   033                    8
+   iadd                  
+   return                
+   load_int               0
+   return                

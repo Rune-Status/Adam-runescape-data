@@ -1,0 +1,167 @@
+   load_int               73
+   load_int               73
+   040                    900
+   load_int               10551308
+   3408                  
+   2702                  
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL10
+   return                
+LABEL10:
+   033                    6
+   widget_get_width_widget
+   034                    7
+   load_int               0
+   034                    8
+   load_int               0
+   034                    9
+   load_int               0
+   034                    10
+   load_int               0
+   034                    11
+   load_int               0
+   034                    12
+   033                   
+   040                    2
+   034                    12
+   034                    11
+   034                    10
+   033                    10
+   load_int               64
+   if_icmpgt              1
+   jump                   LABEL37
+   033                    10
+   load_int               32
+   isub                  
+   034                    10
+   jump                   LABEL41
+LABEL37:
+   033                    10
+   load_int               2
+   idiv                  
+   034                    10
+LABEL41:
+   033                    11
+   load_int               64
+   if_icmpgt              1
+   jump                   LABEL50
+   033                    11
+   load_int               32
+   isub                  
+   034                    11
+   jump                   LABEL54
+LABEL50:
+   033                    11
+   load_int               2
+   idiv                  
+   034                    11
+LABEL54:
+   033                    12
+   load_int               64
+   if_icmpgt              1
+   jump                   LABEL63
+   033                    12
+   load_int               32
+   isub                  
+   034                    12
+   jump                   LABEL67
+LABEL63:
+   033                    12
+   load_int               2
+   idiv                  
+   034                    12
+LABEL67:
+   033                    10
+   033                    11
+   033                    12
+   040                    246
+   034                    13
+   load_string            ""
+   036                    1
+   035                   
+   040                    632
+   036                   
+   036                    1
+LABEL78:
+   035                    1
+   string_length         
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL146
+   035                    1
+   033                    7
+   033                    3
+   4108                  
+   033                    4
+   imul                  
+   033                    5
+   iadd                  
+   034                    8
+   033                    6
+   load_int               4
+   042                    43
+   100                   
+   042                    43
+   load_int               1
+   iadd                  
+   043                    43
+   load_int               0
+   042                    49
+   load_int               0
+   load_int               0
+   1000                  
+   033                    7
+   033                    8
+   load_int               0
+   load_int               0
+   1001                  
+   033                    9
+   load_int               2
+   modulo                
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL119
+   033                   
+   widget_put_textcolor  
+   jump                   LABEL121
+LABEL119:
+   033                    13
+   widget_put_textcolor  
+LABEL121:
+   033                    2
+   widget_put_fontid     
+   033                    1
+   load_int               0
+   load_int               0
+   1114                  
+   load_int               1
+   1115                  
+   035                    1
+   1112                  
+   042                    49
+   033                    8
+   iadd                  
+   load_int               3
+   iadd                  
+   033                    9
+   load_int               1
+   iadd                  
+   034                    9
+   043                    49
+   035                   
+   040                    632
+   036                   
+   036                    1
+   jump                   LABEL78
+LABEL146:
+   033                    9
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL154
+   042                    49
+   load_int               3
+   iadd                  
+   043                    49
+LABEL154:
+   return                

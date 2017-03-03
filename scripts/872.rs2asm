@@ -1,0 +1,66 @@
+   033                   
+   widget_get_height_widget
+   034                    10
+   033                    10
+   load_int               334
+   if_icmplt              1
+   jump                   LABEL10
+   load_int               334
+   034                    10
+   jump                   LABEL16
+LABEL10:
+   033                    10
+   load_int               1500
+   if_icmpgt              1
+   jump                   LABEL16
+   load_int               1500
+   034                    10
+LABEL16:
+   033                    10
+   033                    1
+   if_icmpeq              1
+   jump                   LABEL21
+   return                
+LABEL21:
+   033                    3
+   load_int               0
+   033                    10
+   load_int               334
+   isub                  
+   load_int               2
+   4013                  
+   load_int               0
+   load_int               1500
+   load_int               334
+   isub                  
+   load_int               2
+   4013                  
+   033                    3
+   033                    4
+   isub                  
+   4006                  
+   isub                  
+   034                    11
+   033                    5
+   033                    6
+   033                    7
+   033                    8
+   033                    9
+   033                    11
+   033                    2
+   2109                  
+   load_int               871
+   033                   
+   033                    10
+   033                    2
+   033                    3
+   033                    4
+   033                    5
+   033                    6
+   033                    7
+   033                    8
+   033                    9
+   load_string            "IiIiiiiiii"
+   033                   
+   2408                  
+   return                

@@ -1,0 +1,59 @@
+   load_int               0
+   034                   
+   load_int               0
+   034                    1
+   load_int               10
+   load_int               9
+   pow                   
+   034                    2
+   load_int               1
+   034                    3
+   load_int               105
+   load_int               83
+   load_int               681
+   033                    3
+   3408                  
+   034                    4
+LABEL16:
+   033                    4
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL49
+   033                   
+   033                    4
+   get_skillexperiences  
+   iadd                  
+   034                   
+LABEL25:
+   033                   
+   033                    2
+   if_icmpge              1
+   jump                   LABEL38
+   033                   
+   033                    2
+   isub                  
+   034                   
+   033                    1
+   load_int               1
+   iadd                  
+   034                    1
+   jump                   LABEL25
+LABEL38:
+   033                    3
+   load_int               1
+   iadd                  
+   034                    3
+   load_int               105
+   load_int               83
+   load_int               681
+   033                    3
+   3408                  
+   034                    4
+   jump                   LABEL16
+LABEL49:
+   033                    1
+   033                   
+   return                
+   load_int               0
+   load_int               0
+   return                

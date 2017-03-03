@@ -1,0 +1,102 @@
+   load_int               1120
+   034                    4
+   load_int               1121
+   034                    5
+   033                    2
+   033                    3
+   200                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL12
+   033                    4
+   widget_put_textureid   1
+LABEL12:
+   033                    1
+   033                   
+   3301                  
+   034                    6
+   load_int               0
+   034                    7
+   033                    6
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL85
+   033                    1
+   033                   
+   3302                  
+   034                    7
+   load_int               0
+   widget_put_hidden     
+   widget_put_actions_null
+   load_int               229
+   load_int               -2147483645
+   033                    3
+   033                    5
+   load_int               -1
+   load_string            "IidI"
+   1412                  
+   load_int               229
+   load_int               -2147483645
+   033                    3
+   033                    4
+   load_int               -1
+   load_string            "IidI"
+   1404                  
+   033                    6
+   get_item_note_1       
+   033                    6
+   if_icmpne              1
+   jump                   LABEL66
+   033                    7
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL59
+   load_int               1
+   load_string            "Collect-item"
+   1300                  
+   load_int               2
+   load_string            "Collect-note"
+   1300                  
+   jump                   LABEL65
+LABEL59:
+   load_int               1
+   load_string            "Collect-notes"
+   1300                  
+   load_int               2
+   load_string            "Collect-items"
+   1300                  
+LABEL65:
+   jump                   LABEL69
+LABEL66:
+   load_int               2
+   load_string            "Collect"
+   1300                  
+LABEL69:
+   load_int               3
+   load_string            "Bank"
+   1300                  
+   load_int               10
+   load_string            "Examine"
+   1300                  
+   033                    6
+   033                    7
+   1200                  
+   load_string            "<col=ff9040>"
+   033                    6
+   get_item_name         
+   load_string            "</col>"
+   037                    3
+   widget_put_name       
+   jump                   LABEL94
+LABEL85:
+   load_int               1
+   widget_put_hidden     
+   widget_put_actions_null
+   load_int               -1
+   load_string            ""
+   1412                  
+   load_int               -1
+   load_string            ""
+   1404                  
+LABEL94:
+   return                

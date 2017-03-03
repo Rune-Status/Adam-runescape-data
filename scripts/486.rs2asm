@@ -1,0 +1,47 @@
+   load_int               6
+   get_boostedskilllevels
+   033                    1
+   if_icmpge              1
+   jump                   LABEL25
+   load_int               65280
+   widget_put_textcolor   1
+   load_int               93
+   033                    2
+   3303                  
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL20
+   load_int               65280
+   widget_put_textcolor  
+   load_int               1
+   load_string            "Enchant Bolts"
+   033                   
+   2300                  
+   jump                   LABEL24
+LABEL20:
+   load_int               16750623
+   widget_put_textcolor  
+   033                   
+   widget_put_actions_null_widget
+LABEL24:
+   jump                   LABEL40
+LABEL25:
+   load_int               16750623
+   widget_put_textcolor   1
+   load_int               93
+   033                    2
+   3303                  
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL36
+   load_int               65280
+   widget_put_textcolor  
+   jump                   LABEL38
+LABEL36:
+   load_int               16750623
+   widget_put_textcolor  
+LABEL38:
+   033                   
+   widget_put_actions_null_widget
+LABEL40:
+   return                

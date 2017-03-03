@@ -1,0 +1,48 @@
+   033                   
+   widget_get_width_widget
+   034                    1
+   033                    1
+   load_int               5
+   isub                  
+   034                    1
+   033                    1
+   load_int               120
+   if_icmplt              1
+   jump                   LABEL13
+   load_int               120
+   034                    1
+LABEL13:
+   033                   
+   widget_get_height_widget
+   034                    2
+   033                    2
+   load_int               2
+   isub                  
+   034                    2
+   033                    2
+   load_int               60
+   if_icmplt              1
+   jump                   LABEL26
+   load_int               60
+   034                    2
+LABEL26:
+   033                    1
+   033                    2
+   load_int               0
+   load_int               0
+   033                   
+   2001                  
+   033                    1
+   load_int               120
+   if_icmpeq              1
+   jump                   LABEL44
+   033                    2
+   load_int               60
+   if_icmpeq              1
+   jump                   LABEL44
+   load_int               -1
+   load_string            ""
+   033                   
+   2408                  
+LABEL44:
+   return                

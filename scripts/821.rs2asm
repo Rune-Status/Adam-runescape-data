@@ -1,0 +1,527 @@
+   025                    4439
+   load_int               1
+   isub                  
+   034                    13
+   load_int               105
+   load_int               118
+   load_int               150
+   033                    13
+   3408                  
+   034                    14
+   033                    14
+   load_int               -1
+   if_icmpeq              5
+   033                    13
+   3910                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL104
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL26
+   load_string            "No offer"
+   1112                  
+LABEL26:
+   033                   
+   033                    2
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL34
+   load_int               1
+   widget_put_hidden     
+LABEL34:
+   033                   
+   033                    3
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL43
+   load_int               6512
+   load_int               1
+   1205                  
+LABEL43:
+   033                   
+   033                    4
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL51
+   load_string            "No offer"
+   1112                  
+LABEL51:
+   033                   
+   033                    5
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL59
+   load_string            ""
+   1112                  
+LABEL59:
+   033                   
+   033                    6
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL67
+   load_string            ""
+   1112                  
+LABEL67:
+   033                   
+   033                    7
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL75
+   load_string            ""
+   1112                  
+LABEL75:
+   033                    8
+   033                    9
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL83
+   load_int               1
+   widget_put_hidden     
+LABEL83:
+   033                    8
+   033                    10
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL91
+   load_string            "No offer found for this slot."
+   1112                  
+LABEL91:
+   033                    8
+   033                    11
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL103
+   load_int               -1
+   load_int               -1
+   load_int               -1
+   load_int               1
+   033                    12
+   040                    812
+LABEL103:
+   return                
+LABEL104:
+   033                    13
+   3903                  
+   034                    15
+   033                    13
+   get_grandexchange_offer_itemid
+   034                    16
+   033                    16
+   load_int               -1
+   if_icmpeq              1
+   jump                   LABEL116
+   load_int               6512
+   034                    16
+LABEL116:
+   033                    13
+   get_grandexchange_offer_totalquantity
+   034                    17
+   033                    17
+   load_int               0
+   if_icmple              1
+   jump                   LABEL125
+   load_int               1
+   034                    17
+LABEL125:
+   033                    13
+   get_grandexchange_offer_quantitysold
+   034                    18
+   033                    13
+   get_grandexchange_offer_price
+   034                    19
+   033                    13
+   get_grandexchange_offer_spent
+   034                    20
+   033                    13
+   3912                  
+   034                    21
+   load_string            ","
+   036                   
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL166
+   033                   
+   033                    2
+   200                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL166
+   load_int               0
+   widget_put_hidden      1
+   033                    15
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL162
+   load_string            "Sell offer"
+   1112                  
+   load_int               1119
+   widget_put_textureid   1
+   jump                   LABEL166
+LABEL162:
+   load_string            "Buy offer"
+   1112                  
+   load_int               1118
+   widget_put_textureid   1
+LABEL166:
+   033                   
+   033                    3
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL175
+   033                    16
+   033                    17
+   1205                  
+LABEL175:
+   033                   
+   033                    4
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL184
+   033                    16
+   get_item_name         
+   1112                  
+LABEL184:
+   033                   
+   033                    5
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL194
+   033                    17
+   035                   
+   040                    46
+   1112                  
+LABEL194:
+   033                   
+   033                    6
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL213
+   033                    19
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL207
+   load_string            "1 coin"
+   1112                  
+   jump                   LABEL213
+LABEL207:
+   033                    19
+   035                   
+   040                    46
+   load_string            " coins"
+   037                    2
+   1112                  
+LABEL213:
+   load_int               0
+   034                    22
+   033                   
+   033                    7
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL247
+   load_int               2147483647
+   033                    17
+   idiv                  
+   033                    19
+   if_icmplt              1
+   jump                   LABEL230
+   load_string            "Lots of money"
+   1112                  
+   jump                   LABEL247
+LABEL230:
+   033                    17
+   033                    19
+   imul                  
+   034                    22
+   033                    22
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL241
+   load_string            "1 coin"
+   1112                  
+   jump                   LABEL247
+LABEL241:
+   033                    22
+   035                   
+   040                    46
+   load_string            " coins"
+   037                    2
+   1112                  
+LABEL247:
+   load_int               1126
+   034                    23
+   load_int               1127
+   034                    24
+   033                    8
+   033                    10
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL474
+   033                    21
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL345
+   033                    15
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL301
+   033                    20
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL284
+   load_string            "You sold a total of "
+   load_string            "<col=ffb83f>"
+   033                    18
+   035                   
+   040                    46
+   load_string            "</col>"
+   load_string            "<br>"
+   load_string            "for a total price of "
+   load_string            "<col=ffb83f>"
+   load_string            "one"
+   load_string            "</col>"
+   load_string            " coin."
+   037                    10
+   1112                  
+   jump                   LABEL300
+LABEL284:
+   load_string            "You sold a total of "
+   load_string            "<col=ffb83f>"
+   033                    18
+   035                   
+   040                    46
+   load_string            "</col>"
+   load_string            "<br>"
+   load_string            "for a total price of "
+   load_string            "<col=ffb83f>"
+   033                    20
+   035                   
+   040                    46
+   load_string            "</col>"
+   load_string            " coins."
+   037                    10
+   1112                  
+LABEL300:
+   jump                   LABEL336
+LABEL301:
+   033                    20
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL320
+   load_string            "You bought a total of "
+   load_string            "<col=ffb83f>"
+   033                    18
+   035                   
+   040                    46
+   load_string            "</col>"
+   load_string            "<br>"
+   load_string            "for a total price of "
+   load_string            "<col=ffb83f>"
+   load_string            "one"
+   load_string            "</col>"
+   load_string            " coin."
+   037                    10
+   1112                  
+   jump                   LABEL336
+LABEL320:
+   load_string            "You bought a total of "
+   load_string            "<col=ffb83f>"
+   033                    18
+   035                   
+   040                    46
+   load_string            "</col>"
+   load_string            "<br>"
+   load_string            "for a total price of "
+   load_string            "<col=ffb83f>"
+   033                    20
+   035                   
+   040                    46
+   load_string            "</col>"
+   load_string            " coins."
+   037                    10
+   1112                  
+LABEL336:
+   033                    8
+   033                    9
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL344
+   load_int               1
+   widget_put_hidden     
+LABEL344:
+   jump                   LABEL474
+LABEL345:
+   033                    15
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL387
+   033                    20
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL369
+   load_string            "You have sold a total of "
+   load_string            "<col=ffb83f>"
+   033                    18
+   035                   
+   040                    46
+   load_string            "</col>"
+   load_string            " so far"
+   load_string            "<br>"
+   load_string            "for a total price of "
+   load_string            "<col=ffb83f>"
+   load_string            "one"
+   load_string            "</col>"
+   load_string            " coin."
+   037                    11
+   1112                  
+   jump                   LABEL386
+LABEL369:
+   load_string            "You have sold a total of "
+   load_string            "<col=ffb83f>"
+   033                    18
+   035                   
+   040                    46
+   load_string            "</col>"
+   load_string            " so far"
+   load_string            "<br>"
+   load_string            "for a total price of "
+   load_string            "<col=ffb83f>"
+   033                    20
+   035                   
+   040                    46
+   load_string            "</col>"
+   load_string            " coins."
+   037                    11
+   1112                  
+LABEL386:
+   jump                   LABEL424
+LABEL387:
+   033                    20
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL407
+   load_string            "You have bought a total of "
+   load_string            "<col=ffb83f>"
+   033                    18
+   035                   
+   040                    46
+   load_string            "</col>"
+   load_string            " so far"
+   load_string            "<br>"
+   load_string            "for a total price of "
+   load_string            "<col=ffb83f>"
+   load_string            "one"
+   load_string            "</col>"
+   load_string            " coin."
+   037                    11
+   1112                  
+   jump                   LABEL424
+LABEL407:
+   load_string            "You have bought a total of "
+   load_string            "<col=ffb83f>"
+   033                    18
+   035                   
+   040                    46
+   load_string            "</col>"
+   load_string            " so far"
+   load_string            "<br>"
+   load_string            "for a total price of "
+   load_string            "<col=ffb83f>"
+   033                    20
+   035                   
+   040                    46
+   load_string            "</col>"
+   load_string            " coins."
+   037                    11
+   1112                  
+LABEL424:
+   033                    8
+   033                    9
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL474
+   load_int               0
+   widget_put_hidden     
+   033                    13
+   3911                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL461
+   load_int               0
+   widget_put_opacity    
+   033                    23
+   widget_put_textureid  
+   load_int               229
+   load_int               -2147483645
+   load_int               -2147483643
+   033                    24
+   load_int               -1
+   load_string            "IidI"
+   1412                  
+   load_int               229
+   load_int               -2147483645
+   load_int               -2147483643
+   033                    23
+   load_int               -1
+   load_string            "IidI"
+   1404                  
+   load_int               489
+   load_int               -2147483644
+   load_int               2
+   load_string            "ii"
+   1409                  
+   jump                   LABEL474
+LABEL461:
+   load_int               120
+   widget_put_opacity    
+   033                    24
+   widget_put_textureid  
+   load_int               -1
+   load_string            ""
+   1412                  
+   load_int               -1
+   load_string            ""
+   1404                  
+   load_int               -1
+   load_string            ""
+   1409                  
+LABEL474:
+   033                    8
+   033                    11
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL488
+   load_int               0
+   widget_put_hidden     
+   033                    13
+   033                    17
+   033                    18
+   load_int               0
+   033                    12
+   040                    812
+LABEL488:
+   return                

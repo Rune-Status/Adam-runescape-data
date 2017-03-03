@@ -1,0 +1,108 @@
+   load_string            "Loading..."
+   033                    1
+   2112                  
+   load_int               0
+   load_int               0
+   033                    2
+   widget_put_scroll_widget
+   load_int               1
+   033                    2
+   widget_put_hidden_widget
+   033                    3
+   102                   
+   033                    3
+   033                    2
+   load_int               792
+   load_int               789
+   load_int               790
+   load_int               791
+   load_int               773
+   load_int               788
+   040                    31
+   load_int               1
+   033                    5
+   widget_put_hidden_widget
+   load_int               1
+   033                    6
+   widget_put_hidden_widget
+   load_int               1
+   033                    7
+   widget_put_hidden_widget
+   load_int               1
+   033                    8
+   widget_put_hidden_widget
+   load_int               1
+   033                    9
+   widget_put_hidden_widget
+   033                    4
+   102                   
+   load_int               0
+   034                    14
+LABEL40:
+   033                    14
+   load_int               420
+   if_icmple              1
+   jump                   LABEL85
+   033                    4
+   load_int               5
+   033                    14
+   100                   
+   load_int               0
+   load_int               16
+   load_int               1
+   load_int               0
+   1001                  
+   load_int               1
+   load_string            "Switch"
+   1300                  
+   load_int               2
+   load_string            "Favourite"
+   1300                  
+   033                    14
+   load_int               300
+   if_icmpgt              1
+   jump                   LABEL72
+   load_string            "<col=ff9040>"
+   033                    14
+   load_int               300
+   isub                  
+   int_to_string         
+   load_string            "</col>"
+   037                    3
+   widget_put_name       
+   jump                   LABEL78
+LABEL72:
+   load_string            "<col=ff9040>"
+   033                    14
+   int_to_string         
+   load_string            "</col>"
+   037                    3
+   widget_put_name       
+LABEL78:
+   load_int               1
+   widget_put_hidden     
+   033                    14
+   load_int               1
+   iadd                  
+   034                    14
+   jump                   LABEL40
+LABEL85:
+   load_int               841
+   033                   
+   033                    1
+   033                    2
+   033                    3
+   033                    4
+   033                    5
+   033                    6
+   033                    7
+   033                    8
+   033                    9
+   033                    10
+   033                    11
+   033                    12
+   033                    13
+   load_string            "IIIIIIIIIIIIII"
+   033                   
+   2408                  
+   return                

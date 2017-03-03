@@ -1,0 +1,41 @@
+   033                   
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL6
+   load_string            ""
+   return                
+LABEL6:
+   load_int               105
+   load_int               105
+   load_int               1162
+   033                   
+   3408                  
+   034                    2
+   033                    2
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL30
+   033                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL25
+   load_string            "Level?"
+   033                    2
+   int_to_string         
+   037                    2
+   return                
+LABEL25:
+   load_string            "level?"
+   033                    2
+   int_to_string         
+   037                    2
+   return                
+LABEL30:
+   033                   
+   load_string            ","
+   040                    46
+   load_string            "?XP"
+   037                    2
+   return                
+   load_string            ""
+   return                

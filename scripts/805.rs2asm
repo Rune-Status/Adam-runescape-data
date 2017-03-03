@@ -1,0 +1,77 @@
+   033                   
+   load_int               1
+   if_icmpne              1
+   jump                   LABEL9
+   033                   
+   load_int               2
+   if_icmpne              1
+   jump                   LABEL9
+   return                
+LABEL9:
+   load_int               2266
+   load_int               1
+   load_int               0
+   3200                  
+   033                   
+   load_int               1
+   if_icmpne              1
+   jump                   LABEL18
+   return                
+LABEL18:
+   load_int               105
+   load_int               118
+   load_int               150
+   033                    1
+   3408                  
+   034                    10
+   033                    10
+   load_int               -1
+   if_icmpeq              1
+   jump                   LABEL31
+   load_int               0
+   027                    4439
+   jump                   LABEL63
+LABEL31:
+   033                    1
+   3910                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL48
+   033                    10
+   load_int               0
+   3301                  
+   load_int               -1
+   if_icmpne              6
+   033                    10
+   load_int               1
+   3301                  
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL48
+   return                
+LABEL48:
+   033                    1
+   load_int               1
+   iadd                  
+   027                    4439
+   033                    2
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL63
+   033                    1
+   3910                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL63
+   033                    2
+   027                    4397
+LABEL63:
+   033                    3
+   033                    4
+   033                    5
+   033                    6
+   033                    7
+   033                    8
+   033                    9
+   040                    806
+   return                

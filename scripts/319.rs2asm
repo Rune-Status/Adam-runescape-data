@@ -1,0 +1,46 @@
+   033                    1
+   load_int               1
+   if_icmpne              1
+   jump                   LABEL5
+   return                
+LABEL5:
+   load_int               2266
+   load_int               1
+   load_int               0
+   3200                  
+   033                    5
+   102                   
+   load_int               -1
+   load_string            ""
+   033                    6
+   2409                  
+   033                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL34
+   load_string            "Requesting..."
+   033                    4
+   2112                  
+   load_int               320
+   get_gamecycle         
+   load_int               45
+   iadd                  
+   033                    2
+   033                    3
+   033                    5
+   033                    6
+   load_string            "iIIII"
+   033                    5
+   2408                  
+   return                
+LABEL34:
+   load_string            ""
+   033                    4
+   2112                  
+   load_int               0
+   033                    2
+   widget_put_hidden_widget
+   load_int               1
+   033                    3
+   widget_put_hidden_widget
+   return                

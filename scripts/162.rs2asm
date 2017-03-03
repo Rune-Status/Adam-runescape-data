@@ -1,0 +1,43 @@
+   033                    1
+   033                   
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL40
+   033                    3
+   033                    1
+   widget_get_scrolly_widget
+   isub                  
+   034                    3
+   033                    3
+   load_int               10
+   if_icmplt              1
+   jump                   LABEL23
+   033                    2
+   033                    1
+   033                    1
+   widget_get_scrolly_widget
+   load_int               4
+   isub                  
+   load_int               1
+   040                    157
+LABEL23:
+   033                    3
+   widget_get_height     
+   iadd                  
+   033                    1
+   widget_get_height_widget
+   load_int               10
+   isub                  
+   if_icmpgt              1
+   jump                   LABEL40
+   033                    2
+   033                    1
+   033                    1
+   widget_get_scrolly_widget
+   load_int               4
+   iadd                  
+   load_int               1
+   040                    157
+LABEL40:
+   return                

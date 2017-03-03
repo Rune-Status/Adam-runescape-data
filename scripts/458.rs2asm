@@ -1,0 +1,96 @@
+   load_int               26
+   load_int               1
+   iadd                  
+   044                    105
+   load_int               0
+   034                    3
+   load_int               0
+   034                    4
+   load_int               -1
+   034                    5
+LABEL10:
+   033                    4
+   load_int               26
+   if_icmple              1
+   jump                   LABEL40
+   load_int               105
+   load_int               73
+   load_int               859
+   033                    4
+   3408                  
+   034                    5
+   033                    5
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL35
+   033                    3
+   033                    4
+   046                   
+   033                    3
+   load_int               1
+   iadd                  
+   034                    3
+   033                    4
+   033                    5
+   033                    2
+   040                    460
+LABEL35:
+   033                    4
+   load_int               1
+   iadd                  
+   034                    4
+   jump                   LABEL10
+LABEL40:
+   033                    3
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL50
+   load_int               0
+   load_int               0
+   033                    3
+   load_int               1
+   isub                  
+   040                    465
+LABEL50:
+   load_int               0
+   034                    6
+LABEL52:
+   033                    6
+   033                    3
+   if_icmplt              1
+   jump                   LABEL80
+   033                    6
+   load_int               5
+   modulo                
+   load_int               37
+   imul                  
+   033                    6
+   load_int               5
+   idiv                  
+   load_int               37
+   imul                  
+   load_int               0
+   load_int               0
+   load_int               105
+   load_int               73
+   load_int               859
+   033                    6
+   045                   
+   3408                  
+   2000                  
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   jump                   LABEL52
+LABEL80:
+   033                    1
+   040                    459
+   load_int               53
+   033                    1
+   load_int               5
+   load_int               1
+   load_string            "IY"
+   033                    1
+   2415                  
+   return                

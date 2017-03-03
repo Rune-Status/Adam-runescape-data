@@ -1,0 +1,46 @@
+   033                    1
+   load_int               1
+   1200                  
+   033                    1
+   040                    19
+   034                    3
+   033                    3
+   033                    2
+   if_icmpge              1
+   jump                   LABEL32
+   load_int               65280
+   widget_put_textcolor   1
+   033                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL24
+   033                    2
+   int_to_string         
+   load_string            "/"
+   033                    2
+   int_to_string         
+   037                    3
+   1112                   1
+   jump                   LABEL31
+LABEL24:
+   033                    3
+   040                    20
+   load_string            "/"
+   033                    2
+   int_to_string         
+   037                    3
+   1112                   1
+LABEL31:
+   jump                   LABEL41
+LABEL32:
+   load_int               16711680
+   widget_put_textcolor   1
+   033                    3
+   040                    20
+   load_string            "/"
+   033                    2
+   int_to_string         
+   037                    3
+   1112                   1
+LABEL41:
+   return                

@@ -1,0 +1,35 @@
+   033                    3
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL20
+   load_int               489
+   load_int               -2147483644
+   load_int               2
+   load_string            "ii"
+   033                   
+   2409                  
+   load_int               694
+   033                   
+   033                    1
+   033                    2
+   load_int               0
+   load_int               261
+   load_int               1
+   load_string            "IIi1Y"
+   033                   
+   2407                  
+LABEL20:
+   get_settings           261
+   033                    2
+   if_icmpeq              1
+   jump                   LABEL28
+   load_int               65280
+   033                    1
+   widget_put_textcolor_widget
+   jump                   LABEL31
+LABEL28:
+   load_int               0
+   033                    1
+   widget_put_textcolor_widget
+LABEL31:
+   return                

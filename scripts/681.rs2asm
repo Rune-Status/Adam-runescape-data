@@ -1,0 +1,235 @@
+   042                    5
+   load_int               14
+   if_icmpeq              1
+   jump                   LABEL7
+   load_int               1
+   043                    66
+   return                
+LABEL7:
+   load_int               -1
+   034                   
+   load_string            ""
+   036                   
+   047                    22
+   string_length         
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL195
+   042                    5
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL21
+   return                
+LABEL21:
+   042                    5
+   load_int               4
+   if_icmpeq              4
+   042                    5
+   load_int               5
+   if_icmpeq              1
+   jump                   LABEL49
+   get_ignorecount       
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL35
+   load_string            "Unable to update ignore list - system busy."
+   send_game_message     
+   jump                   LABEL48
+LABEL35:
+   042                    5
+   load_int               4
+   if_icmpeq              1
+   jump                   LABEL42
+   047                    22
+   add_ignore            
+   jump                   LABEL48
+LABEL42:
+   042                    5
+   load_int               5
+   if_icmpeq              1
+   jump                   LABEL48
+   047                    22
+   remove_ignore         
+LABEL48:
+   jump                   LABEL194
+LABEL49:
+   042                    5
+   load_int               2
+   if_icmpeq              7
+   042                    5
+   load_int               3
+   if_icmpeq              4
+   042                    5
+   load_int               6
+   if_icmpeq              1
+   jump                   LABEL112
+   get_friendcount       
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL66
+   load_string            "Unable to complete action - system busy."
+   send_game_message     
+   jump                   LABEL111
+LABEL66:
+   042                    5
+   load_int               2
+   if_icmpeq              1
+   jump                   LABEL73
+   047                    22
+   add_friend            
+   jump                   LABEL111
+LABEL73:
+   042                    5
+   load_int               3
+   if_icmpeq              1
+   jump                   LABEL80
+   047                    22
+   remove_friend         
+   jump                   LABEL111
+LABEL80:
+   042                    5
+   load_int               6
+   if_icmpeq              1
+   jump                   LABEL111
+   5005                  
+   load_int               2
+   if_icmpeq              1
+   jump                   LABEL99
+   5000                  
+   load_int               1
+   5016                  
+   5001                  
+   040                    178
+   040                    553
+   034                   
+   033                   
+   040                    84
+   033                   
+   040                    89
+LABEL99:
+   025                    4394
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL106
+   047                    23
+   remove_friend         
+   jump                   LABEL109
+LABEL106:
+   047                    23
+   047                    22
+   5009                  
+LABEL109:
+   get_gamecycle         
+   043                    61
+LABEL111:
+   jump                   LABEL194
+LABEL112:
+   042                    5
+   load_int               7
+   if_icmpeq              1
+   jump                   LABEL120
+   047                    22
+   040                    212
+   3104                  
+   jump                   LABEL194
+LABEL120:
+   042                    5
+   load_int               8
+   if_icmpeq              1
+   jump                   LABEL130
+   047                    22
+   string_remove_html    
+   048                    128
+   047                    22
+   3105                  
+   jump                   LABEL194
+LABEL130:
+   042                    5
+   load_int               9
+   if_icmpeq              1
+   jump                   LABEL137
+   047                    22
+   3106                  
+   jump                   LABEL194
+LABEL137:
+   042                    5
+   load_int               10
+   if_icmpeq              1
+   jump                   LABEL147
+   047                    22
+   string_remove_html    
+   048                    129
+   047                    22
+   3619                  
+   jump                   LABEL194
+LABEL147:
+   042                    5
+   load_int               12
+   if_icmpeq              1
+   jump                   LABEL170
+   047                    22
+   string_length         
+   load_int               10
+   if_icmpgt              1
+   jump                   LABEL162
+   047                    22
+   load_int               0
+   load_int               9
+   string_substring      
+   036                   
+   jump                   LABEL164
+LABEL162:
+   047                    22
+   036                   
+LABEL164:
+   035                   
+   tolowercase           
+   5021                  
+   040                    553
+   040                    84
+   jump                   LABEL194
+LABEL170:
+   042                    5
+   load_int               13
+   if_icmpeq              1
+   jump                   LABEL186
+   047                    22
+   load_int               0
+   043                    62
+   048                    28
+   040                    95
+   load_int               552
+   load_int               -2147483645
+   load_int               1
+   load_string            "I1"
+   load_int               10616842
+   2408                  
+   jump                   LABEL194
+LABEL186:
+   042                    5
+   load_int               11
+   if_icmpeq              1
+   jump                   LABEL194
+   load_int               0
+   load_int               1
+   040                    299
+   return                
+LABEL194:
+   jump                   LABEL206
+LABEL195:
+   042                    5
+   load_int               7
+   if_icmpeq              7
+   042                    5
+   load_int               8
+   if_icmpeq              4
+   042                    5
+   load_int               9
+   if_icmpeq              1
+   jump                   LABEL206
+   return                
+LABEL206:
+   load_int               1
+   load_int               1
+   040                    299
+   return                

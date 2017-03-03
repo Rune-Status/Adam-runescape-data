@@ -1,0 +1,55 @@
+   025                    4854
+   load_int               0
+   if_icmple              1
+   jump                   LABEL6
+   load_string            ""
+   return                
+LABEL6:
+   025                    4854
+   load_int               255
+   if_icmpge              1
+   jump                   LABEL18
+   load_int               105
+   load_int               115
+   load_int               1245
+   025                    4855
+   3408                  
+   load_string            " Ages!"
+   037                    2
+   return                
+LABEL18:
+   025                    4854
+   load_int               2
+   modulo                
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL37
+   load_int               105
+   load_int               115
+   load_int               1245
+   025                    4855
+   3408                  
+   load_string            " "
+   025                    4854
+   load_int               2
+   idiv                  
+   int_to_string         
+   load_string            ":30"
+   037                    4
+   return                
+LABEL37:
+   load_int               105
+   load_int               115
+   load_int               1245
+   025                    4855
+   3408                  
+   load_string            " "
+   025                    4854
+   load_int               2
+   idiv                  
+   int_to_string         
+   load_string            ":00"
+   037                    4
+   return                
+   load_string            ""
+   return                

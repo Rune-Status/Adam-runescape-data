@@ -1,0 +1,149 @@
+   load_int               50
+   load_int               2
+   pow                   
+   034                    4
+   load_int               50
+   load_int               2
+   imul                  
+   034                    5
+   get_gamecycle         
+   033                    3
+   isub                  
+   034                    6
+   033                    6
+   load_int               50
+   if_icmplt              1
+   jump                   LABEL67
+   033                    6
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL23
+   load_int               0
+   034                    6
+   jump                   LABEL31
+LABEL23:
+   033                    6
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL31
+   load_int               2201
+   load_int               1
+   load_int               0
+   3200                  
+LABEL31:
+   load_int               50
+   033                    6
+   isub                  
+   034                    6
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL48
+   load_int               0
+   033                    6
+   load_int               0
+   load_int               50
+   load_int               255
+   4006                  
+   widget_put_opacity    
+LABEL48:
+   033                   
+   033                    2
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL66
+   load_int               0
+   033                    6
+   load_int               2
+   pow                   
+   load_int               0
+   033                    4
+   load_int               16384
+   4006                  
+   widget_get_relativey  
+   load_int               3
+   load_int               0
+   1000                  
+LABEL66:
+   return                
+LABEL67:
+   033                    6
+   033                    5
+   if_icmplt              1
+   jump                   LABEL72
+   return                
+LABEL72:
+   033                    6
+   load_int               50
+   load_int               3
+   imul                  
+   if_icmplt              1
+   jump                   LABEL122
+   033                    6
+   033                    5
+   if_icmpeq              1
+   jump                   LABEL86
+   load_int               2201
+   load_int               1
+   load_int               0
+   3200                  
+LABEL86:
+   033                    6
+   033                    5
+   isub                  
+   034                    6
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL103
+   load_int               0
+   033                    6
+   load_int               0
+   load_int               50
+   load_int               255
+   4006                  
+   widget_put_opacity    
+LABEL103:
+   033                   
+   033                    2
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL121
+   load_int               0
+   033                    6
+   load_int               2
+   pow                   
+   load_int               0
+   033                    4
+   load_int               16384
+   4006                  
+   widget_get_relativey  
+   load_int               5
+   load_int               0
+   1000                  
+LABEL121:
+   return                
+LABEL122:
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL129
+   101                   
+LABEL129:
+   033                   
+   033                    2
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL136
+   101                   
+LABEL136:
+   return                

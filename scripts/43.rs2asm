@@ -1,0 +1,48 @@
+   load_string            "Click here to enable zooming using the mouse scroll wheel."
+   036                   
+   033                    2
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL36
+   042                    75
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL13
+   load_int               0
+   043                    75
+   jump                   LABEL17
+LABEL13:
+   load_int               1
+   043                    75
+   load_string            "Click here to disable zooming using the mouse scroll wheel."
+   036                   
+LABEL17:
+   042                    75
+   033                    1
+   widget_put_hidden_widget
+   load_int               526
+   033                   
+   load_int               -1
+   033                    3
+   035                   
+   load_int               25
+   load_int               190
+   load_string            "IiIsii"
+   033                   
+   2412                  
+   load_int               40
+   033                    3
+   load_string            "I"
+   033                   
+   2404                  
+   jump                   LABEL43
+LABEL36:
+   033                    2
+   load_int               2
+   if_icmpeq              1
+   jump                   LABEL43
+   load_int               256
+   load_int               320
+   040                    42
+LABEL43:
+   return                

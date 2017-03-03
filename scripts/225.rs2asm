@@ -1,0 +1,119 @@
+   load_int               0
+   034                    2
+   035                   
+   string_length         
+   034                    3
+   load_string            ""
+   036                    1
+   load_int               0
+   034                    4
+   load_int               0
+   034                    5
+   033                    3
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL64
+   033                    3
+   load_int               4
+   if_icmpgt              1
+   jump                   LABEL21
+   load_int               4
+   034                    3
+LABEL21:
+   033                    5
+   033                    3
+   if_icmplt              1
+   jump                   LABEL63
+   035                   
+   033                    5
+   033                    5
+   load_int               1
+   iadd                  
+   string_substring      
+   036                    1
+   load_string            "0123456789"
+   035                    1
+   load_int               0
+   string_indexof_from   
+   034                    4
+   033                    4
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL54
+   033                    2
+   033                    4
+   load_int               10
+   033                    3
+   load_int               1
+   isub                  
+   033                    5
+   isub                  
+   pow                   
+   imul                  
+   iadd                  
+   034                    2
+   jump                   LABEL58
+LABEL54:
+   033                    2
+   load_int               10
+   idiv                  
+   034                    2
+LABEL58:
+   033                    5
+   load_int               1
+   iadd                  
+   034                    5
+   jump                   LABEL21
+LABEL63:
+   jump                   LABEL66
+LABEL64:
+   load_int               1
+   034                    2
+LABEL66:
+   load_string            "Calculating teleport: "
+   033                    2
+   int_to_string         
+   037                    2
+   send_game_message     
+   get_coordinates       
+   divide_by_16384       
+   033                    2
+   033                   
+   imul                  
+   iadd                  
+   034                    6
+   get_coordinates       
+   and_16384             
+   033                    2
+   033                    1
+   imul                  
+   iadd                  
+   034                    7
+   load_string            "::tele "
+   get_coordinates       
+   right_shift_28        
+   int_to_string         
+   load_string            ","
+   033                    6
+   load_int               64
+   idiv                  
+   int_to_string         
+   load_string            ","
+   033                    7
+   load_int               64
+   idiv                  
+   int_to_string         
+   load_string            ","
+   033                    6
+   load_int               64
+   modulo                
+   int_to_string         
+   load_string            ","
+   033                    7
+   load_int               64
+   modulo                
+   int_to_string         
+   037                    10
+   return                
+   load_string            ""
+   return                

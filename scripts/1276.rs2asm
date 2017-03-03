@@ -1,0 +1,162 @@
+   load_int               0
+   034                    1
+LABEL2:
+   load_int               14811140
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL15
+   load_int               1345
+   widget_put_textureid  
+   033                    1
+   load_int               2
+   iadd                  
+   034                    1
+   jump                   LABEL2
+LABEL15:
+   load_int               14811140
+   033                   
+   load_int               2
+   imul                  
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL25
+   load_int               1344
+   widget_put_textureid  
+LABEL25:
+   033                   
+   043                    139
+   040                    1277
+   040                    1280
+   load_string            ""
+   036                   
+   033                   
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL57
+   load_string            "In Deadman mode, when you die "
+   load_string            "<col=ffffff>"
+   load_string            "unskulled"
+   load_string            "</col>"
+   load_string            " from "
+   load_string            "<col=ffffff>"
+   load_string            "PvM combat"
+   load_string            "</col>"
+   load_string            ", you only lose the items you are carrying at the time. Your 3 most valuable items are protected. You do not lose any experience."
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "You may lose more if you die from "
+   load_string            "<col=ffffff>"
+   load_string            "PvP combat"
+   load_string            "</col>"
+   load_string            " or if you are "
+   load_string            "<col=ffffff>"
+   load_string            "skulled"
+   load_string            "</col>"
+   load_string            " at the time."
+   037                    20
+   036                   
+LABEL57:
+   033                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL87
+   load_string            "In Deadman mode, when you die from "
+   load_string            "<col=ffffff>"
+   load_string            "PvP combat"
+   load_string            "</col>"
+   load_string            ", you lose the "
+   load_string            "<col=ffffff>"
+   load_string            "10"
+   load_string            "</col>"
+   load_string            " most valuable stacks of items in your bank, as well as "
+   load_string            "<col=ffffff>"
+   load_string            "all"
+   load_string            "</col>"
+   load_string            " of the items you are carrying at the time."
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Dependent on level difference, you may also lose "
+   load_string            "<col=ffffff>"
+   load_string            "up to 25%"
+   load_string            "</col>"
+   load_string            " of your experience in any unprotected skills. You may lose even more if you are "
+   load_string            "<col=ffffff>"
+   load_string            "skulled"
+   load_string            "</col>"
+   load_string            "."
+   037                    24
+   036                   
+LABEL87:
+   033                   
+   load_int               2
+   if_icmpeq              1
+   jump                   LABEL117
+   load_string            "In Deadman mode, if you die whilst "
+   load_string            "<col=ffffff>"
+   load_string            "skulled"
+   load_string            "</col>"
+   load_string            ", you lose the "
+   load_string            "<col=ffffff>"
+   load_string            "10"
+   load_string            "</col>"
+   load_string            " most valuable stacks of items in your bank, as well as "
+   load_string            "<col=ffffff>"
+   load_string            "all"
+   load_string            "</col>"
+   load_string            " of the items you are carrying at the time."
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Dependent on level difference, you may also lose "
+   load_string            "<col=ffffff>"
+   load_string            "up to 50%"
+   load_string            "</col>"
+   load_string            " of your experience in any unprotected skills. You may lose even more in a "
+   load_string            "<col=ffffff>"
+   load_string            "guarded"
+   load_string            "</col>"
+   load_string            " area."
+   037                    24
+   036                   
+LABEL117:
+   033                   
+   load_int               3
+   if_icmpeq              1
+   jump                   LABEL151
+   load_string            "In Deadman mode, if you die in a "
+   load_string            "<col=ffffff>"
+   load_string            "guarded"
+   load_string            "</col>"
+   load_string            " area whilst "
+   load_string            "<col=ffffff>"
+   load_string            "skulled"
+   load_string            "</col>"
+   load_string            ", you lose the "
+   load_string            "<col=ffffff>"
+   load_string            "10"
+   load_string            "</col>"
+   load_string            " most valuable stacks of items in your bank, as well as "
+   load_string            "<col=ffffff>"
+   load_string            "all"
+   load_string            "</col>"
+   load_string            " of the items you are carrying at the time."
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Dependent on level difference, you may also lose "
+   load_string            "<col=ffffff>"
+   load_string            "up to 10%"
+   load_string            "</col>"
+   load_string            " of your experience in any protected skills, and "
+   load_string            "<col=ffffff>"
+   load_string            "up to 50%"
+   load_string            "</col>"
+   load_string            " in any unprotected skills."
+   037                    28
+   036                   
+LABEL151:
+   035                   
+   load_int               14811141
+   2112                  
+   return                

@@ -1,0 +1,317 @@
+   load_int               0
+   043                    66
+   load_int               10616870
+   102                   
+   load_int               10616870
+   widget_get_width_widget
+   034                    2
+   load_int               10616870
+   widget_get_height_widget
+   034                    3
+   047                    22
+   string_length         
+   load_int               0
+   if_icmple              1
+   jump                   LABEL20
+   033                    2
+   033                    3
+   load_string            "Start typing the name of an item to search for it."
+   040                    753
+   return                
+LABEL20:
+   047                    22
+   033                   
+   4210                  
+   034                    4
+   033                    4
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL33
+   033                    2
+   033                    3
+   load_string            "Too many matches found. Please refine your search."
+   040                    753
+   return                
+LABEL33:
+   033                    4
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL42
+   033                    2
+   033                    3
+   load_string            "No matches found."
+   040                    753
+   return                
+LABEL42:
+   033                    2
+   load_int               3
+   idiv                  
+   034                    5
+   load_int               0
+   034                    6
+   033                    2
+   033                    5
+   isub                  
+   034                    7
+   033                    7
+   033                    5
+   isub                  
+   034                    8
+   033                    8
+   033                    5
+   isub                  
+   034                    9
+   033                    5
+   load_int               40
+   isub                  
+   034                    10
+   033                    7
+   load_int               40
+   iadd                  
+   034                    11
+   033                    8
+   load_int               40
+   iadd                  
+   034                    12
+   033                    9
+   load_int               40
+   iadd                  
+   034                    13
+   load_int               0
+   034                    14
+   load_int               0
+   034                    15
+   load_int               0
+   034                    16
+   load_int               0
+   034                    17
+   load_int               0
+   034                    18
+   4211                  
+   034                    19
+LABEL88:
+   033                    19
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL261
+   033                    1
+   load_int               -1
+   if_icmpeq              8
+   load_int               111
+   load_int               49
+   033                    1
+   033                    19
+   3408                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL258
+   033                    18
+   load_int               3
+   modulo                
+   034                    14
+   033                    14
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL116
+   033                    9
+   033                    13
+   034                    16
+   034                    15
+   jump                   LABEL129
+LABEL116:
+   033                    14
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL125
+   033                    8
+   033                    12
+   034                    16
+   034                    15
+   jump                   LABEL129
+LABEL125:
+   033                    7
+   033                    11
+   034                    16
+   034                    15
+LABEL129:
+   load_int               10616870
+   load_int               3
+   033                    6
+   100                   
+   033                    6
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL142
+   load_int               754
+   033                    19
+   load_int               -2147483640
+   load_string            "oi"
+   1419                  
+LABEL142:
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   033                    5
+   load_int               32
+   load_int               0
+   load_int               0
+   1001                  
+   033                    15
+   033                    17
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               16777215
+   widget_put_textcolor  
+   load_int               1
+   1102                  
+   load_int               255
+   widget_put_opacity    
+   load_int               244
+   load_int               -2147483645
+   load_int               -2147483643
+   load_int               200
+   load_int               -1
+   load_string            "IiiI"
+   1403                  
+   load_int               244
+   load_int               -2147483645
+   load_int               -2147483643
+   load_int               255
+   load_int               -1
+   load_string            "IiiI"
+   1404                  
+   load_int               754
+   033                    19
+   load_int               84
+   load_string            "oi"
+   1400                  
+   load_int               10616870
+   load_int               4
+   033                    6
+   100                   
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   033                    10
+   load_int               32
+   load_int               0
+   load_int               0
+   1001                  
+   033                    16
+   033                    17
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               495
+   widget_put_fontid     
+   load_int               0
+   1115                  
+   load_int               0
+   load_int               1
+   load_int               0
+   1114                  
+   load_int               0
+   widget_put_textcolor  
+   033                    19
+   get_item_name         
+   1112                  
+   load_int               10616870
+   load_int               5
+   033                    6
+   100                   
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   load_int               36
+   load_int               32
+   load_int               0
+   load_int               0
+   1001                  
+   033                    15
+   033                    17
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               1
+   widget_put_borderthickness
+   load_int               5592405
+   1117                  
+   033                    19
+   get_item_stackable    
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL243
+   033                    19
+   load_int               100
+   1205                  
+   jump                   LABEL246
+LABEL243:
+   033                    19
+   load_int               1
+   1205                  
+LABEL246:
+   033                    18
+   load_int               1
+   iadd                  
+   034                    18
+   033                    14
+   load_int               2
+   if_icmpge              1
+   jump                   LABEL258
+   033                    17
+   load_int               32
+   iadd                  
+   034                    17
+LABEL258:
+   4211                  
+   034                    19
+   jump                   LABEL88
+LABEL261:
+   033                    18
+   load_int               0
+   if_icmple              1
+   jump                   LABEL270
+   033                    2
+   033                    3
+   load_string            "No matches found."
+   040                    753
+   return                
+LABEL270:
+   033                    14
+   load_int               2
+   if_icmplt              1
+   jump                   LABEL278
+   033                    17
+   load_int               32
+   iadd                  
+   034                    17
+LABEL278:
+   033                    17
+   033                    3
+   if_icmpgt              1
+   jump                   LABEL287
+   load_int               0
+   033                    17
+   load_int               10616870
+   widget_put_scrollwidthheight_widget
+   jump                   LABEL295
+LABEL287:
+   load_int               0
+   load_int               0
+   load_int               10616870
+   widget_put_scroll_widget
+   load_int               0
+   load_int               0
+   load_int               10616870
+   widget_put_scrollwidthheight_widget
+LABEL295:
+   load_int               10616871
+   load_int               10616870
+   load_int               10616870
+   widget_get_scrolly_widget
+   040                    72
+   return                

@@ -1,0 +1,46 @@
+   033                    1
+   2121                  
+   load_int               2266
+   load_int               1
+   load_int               0
+   3200                  
+   033                   
+   033                    2
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL34
+   033                   
+   033                    3
+   200                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL34
+   load_int               813
+   widget_put_textureid  
+   load_int               16777215
+   widget_put_textcolor   1
+   load_string            "Loading..."
+   1112                   1
+   widget_put_actions_null
+   load_int               -1
+   load_string            ""
+   1403                  
+   load_int               -1
+   load_string            ""
+   1404                  
+   load_int               -1
+   load_string            ""
+   1409                  
+LABEL34:
+   load_int               605
+   033                   
+   033                    1
+   035                   
+   get_gamecycle         
+   load_int               30
+   iadd                  
+   load_string            "IIsi"
+   033                   
+   2408                  
+   return                

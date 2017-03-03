@@ -1,0 +1,105 @@
+   025                    4901
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL9
+   load_int               13426
+   load_int               1
+   033                   
+   2205                  
+   jump                   LABEL31
+LABEL9:
+   025                    4901
+   load_int               2
+   if_icmpeq              1
+   jump                   LABEL18
+   load_int               13427
+   load_int               1
+   033                   
+   2205                  
+   jump                   LABEL31
+LABEL18:
+   025                    4901
+   load_int               3
+   if_icmpeq              1
+   jump                   LABEL27
+   load_int               13428
+   load_int               1
+   033                   
+   2205                  
+   jump                   LABEL31
+LABEL27:
+   load_int               1965
+   load_int               1
+   033                   
+   2205                  
+LABEL31:
+   load_int               100
+   034                    3
+   025                    4900
+   load_int               100
+   if_icmple              1
+   jump                   LABEL39
+   025                    4900
+   034                    3
+LABEL39:
+   033                    3
+   int_to_string         
+   033                    1
+   2112                  
+   load_int               0
+   load_int               75
+   load_int               0
+   load_int               100
+   load_int               100
+   4006                  
+   034                    4
+   load_int               210
+   034                    5
+   load_int               0
+   034                    6
+   033                    3
+   033                    4
+   if_icmplt              1
+   jump                   LABEL72
+   load_int               0
+   033                    3
+   load_int               0
+   033                    4
+   load_int               152
+   4006                  
+   034                    5
+   load_int               0
+   033                    3
+   load_int               0
+   033                    4
+   load_int               31
+   4006                  
+   034                    6
+LABEL72:
+   load_int               255
+   033                    5
+   033                    6
+   040                    246
+   033                    1
+   widget_put_textcolor_widget
+   load_string            "Points: "
+   025                    4893
+   load_string            ","
+   040                    46
+   037                    2
+   033                    2
+   2112                  
+   025                    4893
+   load_int               1000
+   if_icmpge              1
+   jump                   LABEL93
+   load_int               16711680
+   033                    2
+   widget_put_textcolor_widget
+   jump                   LABEL96
+LABEL93:
+   load_int               16750623
+   033                    2
+   widget_put_textcolor_widget
+LABEL96:
+   return                

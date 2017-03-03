@@ -1,0 +1,73 @@
+   033                    3
+   033                    2
+   isub                  
+   034                    5
+   033                    5
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL21
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL17
+   load_int               -1
+   load_string            ""
+   1408                  
+LABEL17:
+   033                   
+   033                    3
+   040                    259
+   return                
+LABEL21:
+   get_gamecycle         
+   033                    4
+   if_icmplt              1
+   jump                   LABEL42
+   033                    5
+   load_int               -2
+   if_icmple              1
+   jump                   LABEL34
+   033                    5
+   load_int               2
+   idiv                  
+   034                    5
+   jump                   LABEL42
+LABEL34:
+   033                    5
+   load_int               2
+   if_icmpge              1
+   jump                   LABEL42
+   033                    5
+   load_int               2
+   idiv                  
+   034                    5
+LABEL42:
+   033                    2
+   033                    5
+   iadd                  
+   034                    2
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL67
+   load_int               258
+   033                   
+   033                    1
+   033                    2
+   033                    3
+   033                    4
+   load_string            "Iiiii"
+   1408                  
+   033                   
+   033                    2
+   040                    259
+   load_int               2304
+   load_int               1
+   load_int               0
+   3200                  
+LABEL67:
+   return                

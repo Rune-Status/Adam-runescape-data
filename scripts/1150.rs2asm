@@ -1,0 +1,51 @@
+   033                    2
+   get_gamecycle         
+   033                    1
+   isub                  
+   isub                  
+   034                    4
+   load_int               49
+   033                    4
+   iadd                  
+   load_int               50
+   idiv                  
+   034                    5
+   033                    4
+   load_int               0
+   if_icmple              1
+   jump                   LABEL28
+   load_int               -1
+   load_string            ""
+   033                   
+   2408                  
+   033                    3
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL25
+   5630                  
+LABEL25:
+   load_int               14942212
+   2121                  
+   jump                   LABEL46
+LABEL28:
+   033                    5
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL38
+   load_string            "There is 1 second remaining "
+   035                   
+   037                    2
+   load_int               14942210
+   2112                  
+   jump                   LABEL46
+LABEL38:
+   load_string            "There are "
+   033                    5
+   int_to_string         
+   load_string            " seconds remaining "
+   035                   
+   037                    4
+   load_int               14942210
+   2112                  
+LABEL46:
+   return                

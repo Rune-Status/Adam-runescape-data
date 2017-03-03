@@ -1,0 +1,66 @@
+   033                    1
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL7
+   load_int               0
+   034                    1
+   jump                   LABEL13
+LABEL7:
+   033                    1
+   load_int               255
+   if_icmpgt              1
+   jump                   LABEL13
+   load_int               255
+   034                    1
+LABEL13:
+   033                    3
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL20
+   load_int               0
+   034                    3
+   jump                   LABEL26
+LABEL20:
+   033                    3
+   load_int               255
+   if_icmpgt              1
+   jump                   LABEL26
+   load_int               255
+   034                    3
+LABEL26:
+   033                    4
+   load_int               0
+   if_icmple              1
+   jump                   LABEL41
+   033                    2
+   load_int               11403265
+   widget_put_textcolor_widget
+   033                    3
+   load_int               11403265
+   widget_put_opacity_widget
+   load_int               -1
+   load_string            ""
+   load_int               11403264
+   2408                  
+   return                
+LABEL41:
+   033                   
+   033                    1
+   033                    2
+   033                    3
+   033                    4
+   033                    4
+   040                    950
+   load_int               949
+   033                   
+   033                    1
+   033                    2
+   033                    3
+   033                    4
+   get_gamecycle         
+   033                    4
+   iadd                  
+   load_string            "iiiiii"
+   load_int               11403264
+   2408                  
+   return                

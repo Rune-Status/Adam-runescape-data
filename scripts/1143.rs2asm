@@ -1,0 +1,60 @@
+   load_int               0
+   034                    2
+   load_int               0
+   034                    3
+   040                    1147
+   034                    3
+   034                    2
+   load_int               105
+   load_int               105
+   load_int               1239
+   033                    1
+   3408                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL23
+   033                    2
+   load_int               2
+   if_icmpge              1
+   jump                   LABEL22
+   load_string            "You already have the maximum number of combat skills protected."
+   send_game_message     
+   return                
+LABEL22:
+   jump                   LABEL30
+LABEL23:
+   033                    3
+   load_int               3
+   if_icmpge              1
+   jump                   LABEL30
+   load_string            "You already have the maximum number of non-combat skills protected."
+   send_game_message     
+   return                
+LABEL30:
+   get_settings           1295
+   033                    1
+   load_int               1
+   isub                  
+   set_bit               
+   put_settings           1295
+   033                   
+   033                    1
+   040                    1145
+   040                    1147
+   034                    3
+   034                    2
+   load_string            "Combat "
+   033                    2
+   int_to_string         
+   load_string            "/2"
+   037                    3
+   load_int               14811184
+   2112                  
+   load_string            "Other "
+   033                    3
+   int_to_string         
+   load_string            "/3"
+   037                    3
+   load_int               14811185
+   2112                  
+   return                

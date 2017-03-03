@@ -1,0 +1,52 @@
+   get_gamecycle         
+   034                    1
+   load_int               -1
+   034                    2
+   033                   
+   load_int               1
+   if_icmpeq              9
+   033                    1
+   042                    65
+   if_icmpeq              6
+   033                    1
+   load_int               25
+   modulo                
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL48
+   040                    553
+   034                    2
+   033                    1
+   042                    65
+   if_icmpeq              1
+   jump                   LABEL24
+   033                    2
+   040                    84
+LABEL24:
+   033                    2
+   040                    89
+   042                    65
+   033                    1
+   if_icmpgt              9
+   3317                  
+   load_int               0
+   if_icmpgt              6
+   042                    55
+   033                    1
+   load_int               3000
+   isub                  
+   if_icmpgt              1
+   jump                   LABEL44
+   load_int               664
+   load_int               0
+   load_string            "1"
+   load_int               10616832
+   2408                  
+   jump                   LABEL48
+LABEL44:
+   load_int               -1
+   load_string            ""
+   load_int               10616832
+   2408                  
+LABEL48:
+   return                

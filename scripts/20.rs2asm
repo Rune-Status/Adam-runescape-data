@@ -1,0 +1,36 @@
+   033                   
+   load_int               2147483647
+   if_icmpge              1
+   jump                   LABEL6
+   load_string            "*"
+   return                
+LABEL6:
+   033                   
+   load_int               10000000
+   if_icmpge              1
+   jump                   LABEL17
+   033                   
+   load_int               1000000
+   idiv                  
+   int_to_string         
+   load_string            "M"
+   concat_string         
+   return                
+LABEL17:
+   033                   
+   load_int               10000
+   if_icmpge              1
+   jump                   LABEL28
+   033                   
+   load_int               1000
+   idiv                  
+   int_to_string         
+   load_string            "K"
+   concat_string         
+   return                
+LABEL28:
+   033                   
+   int_to_string         
+   return                
+   load_string            ""
+   return                

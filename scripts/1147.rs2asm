@@ -1,0 +1,50 @@
+   load_int               0
+   034                   
+   load_int               0
+   034                    1
+   load_int               0
+   034                    2
+LABEL6:
+   033                   
+   load_int               23
+   if_icmplt              1
+   jump                   LABEL40
+   get_settings           1295
+   033                   
+   test_bit              
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL35
+   load_int               105
+   load_int               105
+   load_int               1239
+   033                   
+   load_int               1
+   iadd                  
+   3408                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL31
+   033                    1
+   load_int               1
+   iadd                  
+   034                    1
+   jump                   LABEL35
+LABEL31:
+   033                    2
+   load_int               1
+   iadd                  
+   034                    2
+LABEL35:
+   033                   
+   load_int               1
+   iadd                  
+   034                   
+   jump                   LABEL6
+LABEL40:
+   033                    1
+   033                    2
+   return                
+   load_int               0
+   load_int               0
+   return                

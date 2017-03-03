@@ -1,0 +1,23 @@
+   load_int               0
+   034                    1
+   get_gamecycle         
+   load_int               100
+   modulo                
+   034                    1
+   033                    1
+   load_int               50
+   if_icmpgt              1
+   jump                   LABEL14
+   load_int               100
+   033                    1
+   isub                  
+   034                    1
+LABEL14:
+   load_int               255
+   033                    1
+   isub                  
+   034                    1
+   033                    1
+   033                   
+   widget_put_opacity_widget
+   return                

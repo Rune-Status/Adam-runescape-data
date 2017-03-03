@@ -1,0 +1,35 @@
+   033                    2
+   load_int               30
+   if_icmplt              1
+   jump                   LABEL14
+   033                   
+   033                    2
+   test_bit              
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL12
+   load_int               1
+   return                
+LABEL12:
+   load_int               0
+   return                
+LABEL14:
+   033                    2
+   load_int               60
+   if_icmplt              1
+   jump                   LABEL28
+   033                    1
+   033                    2
+   load_int               30
+   isub                  
+   test_bit              
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL28
+   load_int               1
+   return                
+LABEL28:
+   load_int               0
+   return                
+   load_int               -1
+   return                

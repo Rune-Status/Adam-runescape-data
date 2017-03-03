@@ -1,0 +1,62 @@
+   035                   
+   string_length         
+   034                   
+   033                   
+   load_int               0
+   if_icmple              1
+   jump                   LABEL10
+   load_string            ""
+   load_string            ""
+   return                
+LABEL10:
+   035                   
+   load_string            "|"
+   load_int               0
+   string_indexof_from   
+   034                    1
+   033                    1
+   load_int               -1
+   if_icmpeq              1
+   jump                   LABEL22
+   035                   
+   load_string            ""
+   return                
+LABEL22:
+   033                    1
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL32
+   load_string            ""
+   035                   
+   load_int               1
+   033                   
+   string_substring      
+   return                
+LABEL32:
+   033                    1
+   load_int               1
+   iadd                  
+   033                   
+   if_icmpge              1
+   jump                   LABEL44
+   035                   
+   load_int               0
+   033                    1
+   string_substring      
+   load_string            ""
+   return                
+LABEL44:
+   035                   
+   load_int               0
+   033                    1
+   string_substring      
+   035                   
+   033                    1
+   load_int               1
+   iadd                  
+   033                   
+   string_substring      
+   return                
+   load_string            ""
+   load_string            ""
+   return                

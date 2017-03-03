@@ -1,0 +1,203 @@
+   load_int               2147483647
+   int_to_string         
+   036                    1
+   035                   
+   string_length         
+   034                   
+   033                   
+   load_int               0
+   if_icmple              1
+   jump                   LABEL12
+   load_string            "0"
+   return                
+LABEL12:
+   033                   
+   load_int               10
+   if_icmpgt              1
+   jump                   LABEL18
+   035                    1
+   return                
+LABEL18:
+   035                   
+   tolowercase           
+   036                   
+   load_int               0
+   034                    1
+   load_string            ""
+   036                    2
+   load_string            ""
+   036                    3
+   load_string            ""
+   036                    4
+LABEL29:
+   033                    1
+   033                   
+   if_icmplt              1
+   jump                   LABEL136
+   035                   
+   033                    1
+   033                    1
+   load_int               1
+   iadd                  
+   string_substring      
+   036                    2
+   035                    2
+   load_string            "k"
+   4107                  
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL86
+   033                   
+   load_int               8
+   if_icmpgt              1
+   jump                   LABEL52
+   035                    1
+   return                
+LABEL52:
+   035                   
+   load_int               0
+   033                    1
+   string_substring      
+   036                    3
+   033                   
+   033                    1
+   load_int               1
+   iadd                  
+   if_icmpgt              1
+   jump                   LABEL71
+   035                   
+   033                    1
+   load_int               1
+   iadd                  
+   033                   
+   string_substring      
+   036                    4
+   jump                   LABEL73
+LABEL71:
+   load_string            ""
+   036                    4
+LABEL73:
+   035                    3
+   load_string            "000"
+   concat_string         
+   035                    4
+   concat_string         
+   036                   
+   033                   
+   load_int               2
+   iadd                  
+   034                   
+   load_string            "0"
+   036                    2
+   jump                   LABEL131
+LABEL86:
+   035                    2
+   load_string            "m"
+   4107                  
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL131
+   033                   
+   load_int               5
+   if_icmpgt              1
+   jump                   LABEL98
+   035                    1
+   return                
+LABEL98:
+   035                   
+   load_int               0
+   033                    1
+   string_substring      
+   036                    3
+   033                   
+   033                    1
+   load_int               1
+   iadd                  
+   if_icmpgt              1
+   jump                   LABEL117
+   035                   
+   033                    1
+   load_int               1
+   iadd                  
+   033                   
+   string_substring      
+   036                    4
+   jump                   LABEL119
+LABEL117:
+   load_string            ""
+   036                    4
+LABEL119:
+   035                    3
+   load_string            "000000"
+   concat_string         
+   035                    4
+   concat_string         
+   036                   
+   033                   
+   load_int               5
+   iadd                  
+   034                   
+   load_string            "0"
+   036                    2
+LABEL131:
+   033                    1
+   load_int               1
+   iadd                  
+   034                    1
+   jump                   LABEL29
+LABEL136:
+   033                   
+   load_int               10
+   if_icmplt              1
+   jump                   LABEL142
+   035                   
+   return                
+LABEL142:
+   load_int               0
+   034                    2
+   load_int               0
+   034                    1
+LABEL146:
+   033                    1
+   033                   
+   if_icmplt              1
+   jump                   LABEL182
+   035                   
+   033                    1
+   033                    1
+   load_int               1
+   iadd                  
+   string_substring      
+   035                    1
+   033                    1
+   033                    1
+   load_int               1
+   iadd                  
+   string_substring      
+   4107                  
+   034                    2
+   033                    2
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL171
+   035                    1
+   return                
+   jump                   LABEL177
+LABEL171:
+   033                    2
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL177
+   035                   
+   return                
+LABEL177:
+   033                    1
+   load_int               1
+   iadd                  
+   034                    1
+   jump                   LABEL146
+LABEL182:
+   035                   
+   return                
+   load_string            ""
+   return                

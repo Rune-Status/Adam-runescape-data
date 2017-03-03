@@ -1,0 +1,21 @@
+   033                   
+   load_int               1
+   if_icmpne              1
+   jump                   LABEL5
+   return                
+LABEL5:
+   get_settings           173
+   load_int               0
+   if_icmple              1
+   jump                   LABEL12
+   load_int               1
+   put_settings           173
+   jump                   LABEL14
+LABEL12:
+   load_int               0
+   put_settings           173
+LABEL14:
+   033                    1
+   033                    2
+   040                    454
+   return                

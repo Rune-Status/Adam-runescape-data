@@ -1,0 +1,110 @@
+   load_int               -1
+   034                    3
+   load_int               -1
+   034                    4
+   load_int               0
+   034                    5
+LABEL6:
+   033                    5
+   033                    1
+   if_icmplt              1
+   jump                   LABEL57
+   033                   
+   033                    5
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL52
+   033                    2
+   033                    5
+   3301                  
+   034                    3
+   033                    3
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL40
+   load_int               0
+   widget_put_hidden     
+   033                    3
+   033                    2
+   033                    5
+   3302                  
+   1200                  
+   load_string            "<col=ff9040>"
+   033                    3
+   get_item_name         
+   load_string            "</col>"
+   037                    3
+   widget_put_name       
+   widget_get_relativey  
+   034                    4
+   jump                   LABEL52
+LABEL40:
+   load_int               1
+   widget_put_hidden     
+   load_int               6512
+   load_int               1
+   1205                  
+   load_string            ""
+   widget_put_name       
+   load_int               0
+   widget_put_opacity    
+   load_int               -1
+   load_string            ""
+   1408                  
+LABEL52:
+   033                    5
+   load_int               1
+   iadd                  
+   034                    5
+   jump                   LABEL6
+LABEL57:
+   033                    4
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL66
+   033                    4
+   load_int               32
+   iadd                  
+   034                    4
+   jump                   LABEL68
+LABEL66:
+   load_int               0
+   034                    4
+LABEL68:
+   033                    4
+   033                   
+   widget_get_height_widget
+   if_icmpgt              1
+   jump                   LABEL86
+   load_int               0
+   033                    4
+   033                   
+   widget_put_scrollwidthheight_widget
+   load_int               19660803
+   033                   
+   033                   
+   widget_get_scrolly_widget
+   040                    72
+   load_int               0
+   load_int               19660803
+   widget_put_hidden_widget
+   jump                   LABEL101
+LABEL86:
+   load_int               0
+   load_int               0
+   load_int               19660802
+   widget_put_scroll_widget
+   load_int               0
+   load_int               0
+   load_int               19660802
+   widget_put_scrollwidthheight_widget
+   load_int               19660803
+   033                   
+   load_int               0
+   040                    72
+   load_int               1
+   load_int               19660803
+   widget_put_hidden_widget
+LABEL101:
+   return                

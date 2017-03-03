@@ -1,0 +1,57 @@
+   033                   
+   load_int               255
+   if_icmpgt              1
+   jump                   LABEL7
+   load_int               255
+   034                   
+   jump                   LABEL13
+LABEL7:
+   033                   
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL13
+   load_int               0
+   034                   
+LABEL13:
+   033                    1
+   load_int               255
+   if_icmpgt              1
+   jump                   LABEL20
+   load_int               255
+   034                    1
+   jump                   LABEL26
+LABEL20:
+   033                    1
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL26
+   load_int               0
+   034                    1
+LABEL26:
+   033                    2
+   load_int               255
+   if_icmpgt              1
+   jump                   LABEL33
+   load_int               255
+   034                    2
+   jump                   LABEL39
+LABEL33:
+   033                    2
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL39
+   load_int               0
+   034                    2
+LABEL39:
+   033                   
+   load_int               65536
+   imul                  
+   033                    1
+   load_int               256
+   imul                  
+   or                    
+   033                    2
+   or                    
+   return                
+   load_int               0
+   return                

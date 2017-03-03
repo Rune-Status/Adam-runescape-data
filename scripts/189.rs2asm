@@ -1,0 +1,86 @@
+   load_int               38862880
+   widget_get_width_widget
+   034                    3
+   load_int               0
+   033                    1
+   load_int               0
+   load_int               1000
+   load_int               146
+   4006                  
+   033                    3
+   isub                  
+   034                    4
+   033                    4
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL41
+   033                    2
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL30
+   033                    4
+   load_int               2
+   idiv                  
+   034                    4
+   033                    4
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL30
+   load_int               1
+   034                    4
+LABEL30:
+   033                    3
+   033                    4
+   iadd                  
+   034                    3
+   load_int               188
+   033                   
+   033                    1
+   load_string            "Ii"
+   033                   
+   2408                  
+   jump                   LABEL74
+LABEL41:
+   033                    4
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL70
+   033                    2
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL59
+   033                    4
+   load_int               2
+   idiv                  
+   034                    4
+   033                    4
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL59
+   load_int               -1
+   034                    4
+LABEL59:
+   033                    3
+   033                    4
+   iadd                  
+   034                    3
+   load_int               188
+   033                   
+   033                    1
+   load_string            "Ii"
+   033                   
+   2408                  
+   jump                   LABEL74
+LABEL70:
+   load_int               -1
+   load_string            ""
+   033                   
+   2408                  
+LABEL74:
+   033                    3
+   load_int               12
+   load_int               0
+   load_int               0
+   load_int               38862880
+   2001                  
+   return                

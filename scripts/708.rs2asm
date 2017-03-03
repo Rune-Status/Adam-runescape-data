@@ -1,0 +1,43 @@
+   load_int               0
+   034                   
+   load_int               105
+   load_int               118
+   load_int               150
+   033                   
+   3408                  
+   034                    1
+LABEL8:
+   033                    1
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL36
+   033                    1
+   load_int               0
+   3302                  
+   load_int               0
+   if_icmpgt              6
+   033                    1
+   load_int               1
+   3302                  
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL25
+   load_int               1
+   return                
+LABEL25:
+   033                   
+   load_int               1
+   iadd                  
+   034                   
+   load_int               105
+   load_int               118
+   load_int               150
+   033                   
+   3408                  
+   034                    1
+   jump                   LABEL8
+LABEL36:
+   load_int               0
+   return                
+   load_int               -1
+   return                

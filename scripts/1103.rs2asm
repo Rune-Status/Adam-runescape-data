@@ -1,0 +1,32 @@
+   047                    27
+   string_length         
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL23
+   load_int               2266
+   load_int               1
+   load_int               0
+   3200                  
+   025                    4931
+   load_int               10
+   if_icmplt              1
+   jump                   LABEL19
+   load_int               0
+   047                    27
+   040                    1099
+   047                    130
+   040                    1099
+   3116                  
+LABEL19:
+   3103                  
+   load_string            "Your bug report has been submitted. Thank you."
+   send_game_message     
+   return                
+LABEL23:
+   load_int               2277
+   load_int               1
+   load_int               0
+   3200                  
+   load_string            "Please describe the bug."
+   send_game_message     
+   return                

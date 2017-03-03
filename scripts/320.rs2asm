@@ -1,0 +1,23 @@
+   get_gamecycle         
+   033                   
+   if_icmplt              1
+   jump                   LABEL5
+   return                
+LABEL5:
+   load_int               -1
+   load_string            ""
+   033                    3
+   2408                  
+   033                    3
+   102                   
+   load_int               -1
+   load_string            ""
+   033                    4
+   2409                  
+   load_int               0
+   033                    1
+   widget_put_hidden_widget
+   load_int               1
+   033                    2
+   widget_put_hidden_widget
+   return                

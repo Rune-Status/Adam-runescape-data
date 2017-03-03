@@ -1,0 +1,37 @@
+   033                   
+   load_int               1
+   if_icmpne              1
+   jump                   LABEL5
+   return                
+LABEL5:
+   load_int               2266
+   load_int               1
+   load_int               0
+   3200                  
+   033                    2
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL33
+   033                    2
+   033                    3
+   200                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL32
+   load_string            "---"
+   1112                   1
+   load_int               1259
+   get_gamecycle         
+   load_int               60
+   iadd                  
+   033                    2
+   033                    3
+   035                   
+   load_string            "iIis"
+   1408                   1
+LABEL32:
+   1121                  
+LABEL33:
+   return                

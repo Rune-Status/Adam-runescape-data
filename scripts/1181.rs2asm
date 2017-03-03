@@ -1,0 +1,106 @@
+   load_int               4
+   044                    73
+   load_int               0
+   load_int               34209797
+   046                   
+   load_int               1
+   load_int               34209800
+   046                   
+   load_int               2
+   load_int               34209803
+   046                   
+   load_int               3
+   load_int               34209806
+   046                   
+   load_int               4
+   044                    65609
+   load_int               0
+   load_int               34209811
+   046                    1
+   load_int               1
+   load_int               34209813
+   046                    1
+   load_int               2
+   load_int               34209815
+   046                    1
+   load_int               3
+   load_int               34209817
+   046                    1
+   load_int               4
+   044                    131145
+   load_int               0
+   load_int               34209798
+   046                    2
+   load_int               1
+   load_int               34209801
+   046                    2
+   load_int               2
+   load_int               34209804
+   046                    2
+   load_int               3
+   load_int               34209807
+   046                    2
+   load_int               0
+   034                    1
+LABEL44:
+   033                    1
+   load_int               4
+   if_icmplt              1
+   jump                   LABEL99
+   033                    1
+   045                   
+   033                   
+   if_icmpeq              1
+   jump                   LABEL86
+   load_int               0
+   033                    1
+   045                    1
+   widget_put_hidden_widget
+   load_int               1079
+   033                    1
+   045                    2
+   widget_put_textureid_widget
+   033                    1
+   045                    1
+   widget_get_height_widget
+   load_int               34209810
+   widget_get_height_widget
+   if_icmpgt              1
+   jump                   LABEL82
+   load_int               0
+   load_int               34209819
+   widget_put_hidden_widget
+   load_int               34209819
+   033                    1
+   045                    1
+   load_int               792
+   load_int               789
+   load_int               790
+   load_int               791
+   load_int               773
+   load_int               788
+   040                    31
+   jump                   LABEL85
+LABEL82:
+   load_int               1
+   load_int               34209819
+   widget_put_hidden_widget
+LABEL85:
+   jump                   LABEL94
+LABEL86:
+   load_int               1
+   033                    1
+   045                    1
+   widget_put_hidden_widget
+   load_int               1077
+   033                    1
+   045                    2
+   widget_put_textureid_widget
+LABEL94:
+   033                    1
+   load_int               1
+   iadd                  
+   034                    1
+   jump                   LABEL44
+LABEL99:
+   return                

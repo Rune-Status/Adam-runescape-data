@@ -1,0 +1,33 @@
+   get_settings           18
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL11
+   load_int               186
+   033                   
+   widget_put_textureid_widget
+   load_int               185
+   033                    1
+   widget_put_textureid_widget
+   jump                   LABEL17
+LABEL11:
+   load_int               185
+   033                   
+   widget_put_textureid_widget
+   load_int               186
+   033                    1
+   widget_put_textureid_widget
+LABEL17:
+   025                    4137
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL25
+   load_int               186
+   033                    2
+   widget_put_textureid_widget
+   jump                   LABEL28
+LABEL25:
+   load_int               185
+   033                    2
+   widget_put_textureid_widget
+LABEL28:
+   return                

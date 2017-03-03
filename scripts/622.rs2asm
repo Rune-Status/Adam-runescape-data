@@ -1,0 +1,43 @@
+   033                   
+   102                   
+   load_int               0
+   034                    1
+   load_int               0
+   034                    2
+   load_int               0
+   034                    3
+LABEL8:
+   033                    2
+   load_int               100
+   if_icmplt              1
+   jump                   LABEL38
+LABEL12:
+   033                    3
+   load_int               32
+   if_icmplt              1
+   jump                   LABEL31
+   033                   
+   load_int               3
+   033                    1
+   100                   
+   load_int               1
+   widget_put_hidden     
+   033                    3
+   load_int               1
+   iadd                  
+   033                    1
+   load_int               1
+   iadd                  
+   034                    1
+   034                    3
+   jump                   LABEL12
+LABEL31:
+   033                    2
+   load_int               1
+   iadd                  
+   load_int               0
+   034                    3
+   034                    2
+   jump                   LABEL8
+LABEL38:
+   return                

@@ -1,0 +1,40 @@
+   load_int               0
+   034                    1
+LABEL2:
+   033                    1
+   load_int               43
+   if_icmple              1
+   jump                   LABEL35
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL30
+   033                    1
+   040                    702
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL24
+   load_int               105
+   load_int               100
+   load_int               1001
+   033                    1
+   3408                  
+   widget_put_textureid  
+   jump                   LABEL30
+LABEL24:
+   load_int               105
+   load_int               100
+   load_int               1002
+   033                    1
+   3408                  
+   widget_put_textureid  
+LABEL30:
+   033                    1
+   load_int               1
+   iadd                  
+   034                    1
+   jump                   LABEL2
+LABEL35:
+   return                

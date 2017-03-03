@@ -1,0 +1,30 @@
+   get_gamecycle         
+   load_int               10
+   modulo                
+   load_int               0
+   if_icmpne              1
+   jump                   LABEL7
+   return                
+LABEL7:
+   3111                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL17
+   033                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL16
+   return                
+LABEL16:
+   jump                   LABEL22
+LABEL17:
+   033                   
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL22
+   return                
+LABEL22:
+   033                    1
+   033                    2
+   040                    534
+   return                

@@ -1,0 +1,29 @@
+   033                   
+   033                    1
+   200                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL26
+   033                   
+   033                    2
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL26
+   033                    3
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL24
+   widget_get_relativex   1
+   widget_get_relativey   1
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               0
+   widget_put_hidden     
+   jump                   LABEL26
+LABEL24:
+   load_int               1
+   widget_put_hidden     
+LABEL26:
+   return                

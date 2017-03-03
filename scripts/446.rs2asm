@@ -1,0 +1,162 @@
+   033                   
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL48
+   load_int               1
+   033                    6
+   2005                  
+   load_int               446
+   load_int               -1
+   033                    1
+   033                    2
+   033                    3
+   033                    4
+   033                    5
+   033                    6
+   033                    7
+   load_int               3
+   load_int               1
+   load_string            "IIIIIIIIY"
+   033                   
+   2415                  
+   load_int               446
+   load_int               -1
+   033                    1
+   033                    2
+   033                    3
+   033                    4
+   033                    5
+   033                    6
+   033                    7
+   load_int               102
+   load_int               456
+   load_int               2
+   load_string            "IIIIIIIIY"
+   033                   
+   2407                  
+   load_int               446
+   load_int               -1
+   033                    1
+   033                    2
+   033                    3
+   033                    4
+   033                    5
+   033                    6
+   033                    7
+   load_string            "IIIIIIII"
+   033                   
+   2424                  
+LABEL48:
+   033                    1
+   033                    2
+   load_int               3
+   get_boostedskilllevels
+   load_int               3
+   get_realskilllevels   
+   040                    449
+   get_settings           456
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL63
+   load_int               1062
+   033                    3
+   widget_put_textureid_widget
+   jump                   LABEL82
+LABEL63:
+   get_settings           102
+   load_int               1000000
+   if_icmpge              1
+   jump                   LABEL71
+   load_int               1102
+   033                    3
+   widget_put_textureid_widget
+   jump                   LABEL82
+LABEL71:
+   get_settings           102
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL79
+   load_int               1061
+   033                    3
+   widget_put_textureid_widget
+   jump                   LABEL82
+LABEL79:
+   load_int               1060
+   033                    3
+   widget_put_textureid_widget
+LABEL82:
+   get_settings           102
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL101
+   get_settings           102
+   load_int               1000000
+   if_icmpge              1
+   jump                   LABEL94
+   load_int               1102
+   033                    5
+   widget_put_textureid_widget
+   jump                   LABEL97
+LABEL94:
+   load_int               1061
+   033                    5
+   widget_put_textureid_widget
+LABEL97:
+   load_int               0
+   033                    4
+   widget_put_hidden_widget
+   jump                   LABEL104
+LABEL101:
+   load_int               1
+   033                    4
+   widget_put_hidden_widget
+LABEL104:
+   load_int               1072
+   034                    8
+   get_settings           102
+   load_int               0
+   if_icmpgt              4
+   get_settings           456
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL136
+   load_int               3
+   040                    918
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL136
+   load_int               44
+   033                    6
+   033                    8
+   load_string            "Id"
+   033                    7
+   2412                  
+   load_int               1071
+   034                    8
+   load_int               44
+   033                    6
+   033                    8
+   load_string            "Id"
+   033                    7
+   2404                  
+   load_int               0
+   033                    7
+   widget_put_hidden_widget
+   jump                   LABEL150
+LABEL136:
+   load_int               1071
+   033                    6
+   widget_put_textureid_widget
+   load_int               -1
+   load_string            ""
+   033                    7
+   2412                  
+   load_int               -1
+   load_string            ""
+   033                    7
+   2404                  
+   load_int               1
+   033                    7
+   widget_put_hidden_widget
+LABEL150:
+   return                

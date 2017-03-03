@@ -1,0 +1,223 @@
+   033                   
+   033                    7
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL11
+   load_int               0
+   033                    4
+   033                   
+   033                    5
+   040                    792
+LABEL11:
+   033                   
+   033                    8
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL22
+   load_int               1
+   033                    4
+   033                   
+   033                    6
+   040                    792
+LABEL22:
+   load_int               -1
+   034                    12
+   load_int               0
+   034                    13
+   load_int               0
+   034                    14
+   load_string            ""
+   036                   
+   load_string            ","
+   036                    1
+   033                    1
+   3910                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL71
+   033                   
+   033                    10
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL45
+   load_int               1
+   widget_put_hidden     
+LABEL45:
+   033                   
+   033                    11
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL53
+   load_int               1
+   widget_put_hidden     
+LABEL53:
+   033                   
+   033                    9
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL66
+   load_int               1
+   widget_put_hidden     
+   load_int               0
+   widget_get_height     
+   load_int               0
+   load_int               0
+   1001                  
+LABEL66:
+   load_int               -1
+   load_string            ""
+   033                   
+   2412                  
+   jump                   LABEL205
+LABEL71:
+   033                    1
+   get_grandexchange_offer_itemid
+   033                    1
+   get_grandexchange_offer_totalquantity
+   034                    13
+   034                    12
+   033                    1
+   get_grandexchange_offer_quantitysold
+   034                    14
+   033                    1
+   3903                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL128
+   033                   
+   033                    10
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL95
+   load_int               0
+   widget_put_hidden     
+   load_int               1119
+   widget_put_textureid  
+LABEL95:
+   033                    1
+   3912                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL114
+   load_string            "Sold: "
+   033                    12
+   get_item_name         
+   load_string            "<br>"
+   033                    14
+   035                    1
+   040                    46
+   load_string            " / "
+   033                    13
+   035                    1
+   040                    46
+   037                    6
+   036                   
+   jump                   LABEL127
+LABEL114:
+   load_string            "Selling: "
+   033                    12
+   get_item_name         
+   load_string            "<br>"
+   033                    14
+   035                    1
+   040                    46
+   load_string            " / "
+   033                    13
+   035                    1
+   040                    46
+   037                    6
+   036                   
+LABEL127:
+   jump                   LABEL170
+LABEL128:
+   033                   
+   033                    10
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL138
+   load_int               0
+   widget_put_hidden     
+   load_int               1118
+   widget_put_textureid  
+LABEL138:
+   033                    1
+   3912                  
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL157
+   load_string            "Bought: "
+   033                    12
+   get_item_name         
+   load_string            "<br>"
+   033                    14
+   035                    1
+   040                    46
+   load_string            " / "
+   033                    13
+   035                    1
+   040                    46
+   037                    6
+   036                   
+   jump                   LABEL170
+LABEL157:
+   load_string            "Buying: "
+   033                    12
+   get_item_name         
+   load_string            "<br>"
+   033                    14
+   035                    1
+   040                    46
+   load_string            " / "
+   033                    13
+   035                    1
+   040                    46
+   037                    6
+   036                   
+LABEL170:
+   load_int               526
+   033                   
+   load_int               -1
+   033                    2
+   035                   
+   load_int               25
+   load_int               512
+   load_string            "IiIsii"
+   033                   
+   2412                  
+   033                   
+   033                    11
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL191
+   load_int               0
+   widget_put_hidden     
+   033                    12
+   033                    13
+   1200                  
+LABEL191:
+   033                   
+   033                    9
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL205
+   load_int               0
+   widget_put_hidden     
+   033                    1
+   033                    13
+   033                    14
+   load_int               0
+   033                    3
+   040                    812
+LABEL205:
+   033                    2
+   040                    41
+   return                

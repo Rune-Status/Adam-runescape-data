@@ -1,0 +1,26 @@
+   033                   
+   load_int               0
+   if_icmplt              1
+   jump                   LABEL6
+   load_string            ""
+   return                
+LABEL6:
+   033                   
+   load_int               0
+   if_icmple              1
+   jump                   LABEL13
+   load_int               0
+   int_to_string         
+   return                
+LABEL13:
+   load_string            ","
+   036                   
+   033                   
+   035                   
+   040                    46
+   035                   
+   load_string            "000"
+   037                    3
+   return                
+   load_string            ""
+   return                

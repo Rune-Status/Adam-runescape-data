@@ -1,0 +1,83 @@
+   load_int               105
+   load_int               73
+   load_int               1302
+   033                   
+   3408                  
+   034                    1
+   load_int               0
+   034                    2
+   load_int               0
+   034                    3
+   load_int               0
+   034                    4
+   033                   
+   040                    1279
+   034                    4
+   034                    3
+   034                    2
+   033                    4
+   load_int               0
+   if_icmple              1
+   jump                   LABEL47
+   033                    1
+   load_int               3
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL29
+   load_int               1
+   widget_put_hidden     
+LABEL29:
+   033                    1
+   load_int               6
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL38
+   033                    2
+   int_to_string         
+   1112                  
+LABEL38:
+   033                    1
+   load_int               7
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL46
+   load_int               1
+   widget_put_hidden     
+LABEL46:
+   jump                   LABEL75
+LABEL47:
+   033                    1
+   load_int               3
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL58
+   load_int               0
+   widget_put_hidden     
+   033                    2
+   int_to_string         
+   1112                  
+LABEL58:
+   033                    1
+   load_int               6
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL67
+   033                    3
+   int_to_string         
+   1112                  
+LABEL67:
+   033                    1
+   load_int               7
+   200                   
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL75
+   load_int               0
+   widget_put_hidden     
+LABEL75:
+   return                

@@ -1,0 +1,440 @@
+   load_string            "Points: "
+   025                    4893
+   load_string            ","
+   040                    46
+   037                    2
+   033                   
+   2112                  
+   load_int               0
+   034                    19
+   get_settings           262
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL33
+   load_int               20
+   load_int               0
+   get_settings           261
+   load_int               0
+   load_int               1000
+   load_int               20
+   4006                  
+   isub                  
+   034                    19
+   load_string            "Recharge can: "
+   033                    19
+   int_to_string         
+   037                    2
+   033                    2
+   2112                  
+   load_int               1
+   load_string            "Recharge"
+   033                    1
+   2300                  
+   jump                   LABEL45
+LABEL33:
+   load_int               200
+   034                    19
+   load_string            "Buy can: "
+   033                    19
+   int_to_string         
+   037                    2
+   033                    2
+   2112                  
+   load_int               1
+   load_string            "Buy"
+   033                    1
+   2300                  
+LABEL45:
+   025                    4893
+   033                    19
+   if_icmplt              1
+   jump                   LABEL53
+   load_int               16711680
+   033                    2
+   widget_put_textcolor_widget
+   jump                   LABEL56
+LABEL53:
+   load_int               16750623
+   033                    2
+   widget_put_textcolor_widget
+LABEL56:
+   get_settings           263
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL68
+   load_int               1
+   load_string            "Buy"
+   033                    5
+   2300                  
+   load_string            "Already owned"
+   033                    6
+   2112                  
+   jump                   LABEL80
+LABEL68:
+   load_int               250
+   034                    19
+   load_int               1
+   load_string            "Buy"
+   033                    5
+   2300                  
+   load_string            "Buy seedbox: "
+   033                    19
+   int_to_string         
+   037                    2
+   033                    6
+   2112                  
+LABEL80:
+   025                    4893
+   033                    19
+   if_icmplt              4
+   get_settings           263
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL91
+   load_int               16711680
+   033                    6
+   widget_put_textcolor_widget
+   jump                   LABEL94
+LABEL91:
+   load_int               16750623
+   033                    6
+   widget_put_textcolor_widget
+LABEL94:
+   get_settings           264
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL115
+   load_int               13647
+   load_int               1
+   033                    9
+   2200                  
+   load_int               13643
+   load_int               1
+   033                    12
+   2200                  
+   load_int               13641
+   load_int               1
+   033                    15
+   2200                  
+   load_int               13645
+   load_int               1
+   033                    18
+   2200                  
+   jump                   LABEL131
+LABEL115:
+   load_int               13646
+   load_int               1
+   033                    9
+   2200                  
+   load_int               13642
+   load_int               1
+   033                    12
+   2200                  
+   load_int               13640
+   load_int               1
+   033                    15
+   2200                  
+   load_int               13644
+   load_int               1
+   033                    18
+   2200                  
+LABEL131:
+   load_int               75
+   034                    19
+   load_string            "Buy hat: "
+   033                    19
+   int_to_string         
+   037                    2
+   033                    8
+   2112                  
+   load_int               1
+   load_string            "Buy"
+   033                    7
+   2300                  
+   025                    4893
+   033                    19
+   if_icmplt              1
+   jump                   LABEL151
+   load_int               16711680
+   033                    8
+   widget_put_textcolor_widget
+   jump                   LABEL154
+LABEL151:
+   load_int               16750623
+   033                    8
+   widget_put_textcolor_widget
+LABEL154:
+   load_int               150
+   034                    19
+   load_string            "Buy jacket: "
+   033                    19
+   int_to_string         
+   037                    2
+   033                    11
+   2112                  
+   load_int               1
+   load_string            "Buy"
+   033                    10
+   2300                  
+   025                    4893
+   033                    19
+   if_icmplt              1
+   jump                   LABEL174
+   load_int               16711680
+   033                    11
+   widget_put_textcolor_widget
+   jump                   LABEL177
+LABEL174:
+   load_int               16750623
+   033                    11
+   widget_put_textcolor_widget
+LABEL177:
+   load_int               125
+   034                    19
+   load_string            "Buy legs: "
+   033                    19
+   int_to_string         
+   037                    2
+   033                    14
+   2112                  
+   load_int               1
+   load_string            "Buy"
+   033                    13
+   2300                  
+   025                    4893
+   033                    19
+   if_icmplt              1
+   jump                   LABEL197
+   load_int               16711680
+   033                    14
+   widget_put_textcolor_widget
+   jump                   LABEL200
+LABEL197:
+   load_int               16750623
+   033                    14
+   widget_put_textcolor_widget
+LABEL200:
+   load_int               50
+   034                    19
+   load_string            "Buy boots: "
+   033                    19
+   int_to_string         
+   037                    2
+   033                    17
+   2112                  
+   load_int               1
+   load_string            "Buy"
+   033                    16
+   2300                  
+   025                    4893
+   033                    19
+   if_icmplt              1
+   jump                   LABEL220
+   load_int               16711680
+   033                    17
+   widget_put_textcolor_widget
+   jump                   LABEL223
+LABEL220:
+   load_int               16750623
+   033                    17
+   widget_put_textcolor_widget
+LABEL223:
+   033                    3
+   widget_get_width_widget
+   load_int               3
+   idiv                  
+   034                    20
+   033                    3
+   widget_get_height_widget
+   load_int               2
+   idiv                  
+   034                    21
+   033                    20
+   load_int               36
+   isub                  
+   load_int               2
+   idiv                  
+   034                    22
+   load_int               0
+   034                    23
+   033                    3
+   102                   
+   033                    4
+   102                   
+   load_int               0
+   034                    24
+   load_int               105
+   load_int               79
+   load_int               1261
+   033                    24
+   3408                  
+   034                    25
+LABEL253:
+   033                    25
+   load_int               -1
+   if_icmpne              1
+   jump                   LABEL414
+   033                    3
+   load_int               5
+   033                    24
+   100                   
+   load_int               36
+   load_int               32
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               3355443
+   1117                  
+   load_int               1
+   widget_put_borderthickness
+   033                    25
+   get_item_note_2       
+   load_int               1
+   1205                  
+   load_string            "<col=ff9040>"
+   033                    25
+   get_item_name         
+   load_string            "</col>"
+   037                    3
+   widget_put_name       
+   load_int               1
+   load_string            "Value"
+   1300                  
+   load_int               2
+   load_string            "Buy-1"
+   1300                  
+   load_int               3
+   load_string            "Buy-5"
+   1300                  
+   load_int               4
+   load_string            "Buy-X"
+   1300                  
+   load_int               10
+   load_string            "Examine"
+   1300                  
+   load_int               487
+   load_int               -2147483645
+   load_int               -2147483643
+   load_int               120
+   load_int               0
+   load_string            "Iiii"
+   1409                  
+   033                    4
+   load_int               4
+   033                    24
+   100                    1
+   033                    20
+   033                    21
+   load_int               32
+   load_int               2
+   iadd                  
+   isub                  
+   load_int               0
+   load_int               0
+   1001                   1
+   load_int               16750623
+   widget_put_textcolor   1
+   load_int               494
+   widget_put_fontid      1
+   load_int               1
+   1115                   1
+   load_int               1
+   load_int               0
+   load_int               0
+   1114                   1
+   load_int               111
+   load_int               105
+   load_int               1262
+   033                    25
+   3408                  
+   034                    19
+   033                    19
+   int_to_string         
+   1112                   1
+   025                    4893
+   033                    19
+   if_icmplt              1
+   jump                   LABEL341
+   load_int               16711680
+   widget_put_textcolor   1
+   jump                   LABEL343
+LABEL341:
+   load_int               16750623
+   widget_put_textcolor   1
+LABEL343:
+   033                    24
+   load_int               3
+   modulo                
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL364
+   033                    22
+   033                    23
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               0
+   033                    23
+   load_int               32
+   iadd                  
+   load_int               2
+   iadd                  
+   load_int               0
+   load_int               0
+   1000                   1
+   jump                   LABEL403
+LABEL364:
+   033                    24
+   load_int               3
+   modulo                
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL385
+   load_int               0
+   033                    23
+   load_int               1
+   load_int               0
+   1000                  
+   load_int               0
+   033                    23
+   load_int               32
+   iadd                  
+   load_int               2
+   iadd                  
+   load_int               1
+   load_int               0
+   1000                   1
+   jump                   LABEL403
+LABEL385:
+   033                    22
+   033                    23
+   load_int               2
+   load_int               0
+   1000                  
+   load_int               0
+   033                    23
+   load_int               32
+   iadd                  
+   load_int               2
+   iadd                  
+   load_int               2
+   load_int               0
+   1000                   1
+   033                    23
+   033                    21
+   iadd                  
+   034                    23
+LABEL403:
+   033                    24
+   load_int               1
+   iadd                  
+   034                    24
+   load_int               105
+   load_int               79
+   load_int               1261
+   033                    24
+   3408                  
+   034                    25
+   jump                   LABEL253
+LABEL414:
+   return                

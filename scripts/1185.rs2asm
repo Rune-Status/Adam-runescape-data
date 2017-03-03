@@ -1,0 +1,142 @@
+   load_string            ""
+   036                   
+   025                    4820
+   025                    4821
+   if_icmpgt              1
+   jump                   LABEL18
+   load_string            "<col=ffffff>"
+   025                    4820
+   load_string            ","
+   040                    46
+   load_string            "</col>"
+   load_string            "<br>"
+   025                    4821
+   load_string            ","
+   040                    46
+   037                    5
+   036                   
+   jump                   LABEL43
+LABEL18:
+   025                    4820
+   025                    4821
+   if_icmplt              1
+   jump                   LABEL34
+   025                    4820
+   load_string            ","
+   040                    46
+   load_string            "<br>"
+   load_string            "<col=ffffff>"
+   025                    4821
+   load_string            ","
+   040                    46
+   load_string            "</col>"
+   037                    5
+   036                   
+   jump                   LABEL43
+LABEL34:
+   025                    4820
+   load_string            ","
+   040                    46
+   load_string            "<br>"
+   025                    4821
+   load_string            ","
+   040                    46
+   037                    3
+   036                   
+LABEL43:
+   025                    4822
+   load_int               2147483647
+   if_icmpge              1
+   jump                   LABEL60
+   load_string            "Your clan:"
+   load_string            "<br>"
+   load_string            "Opponents:"
+   load_string            "<br>"
+   load_string            "Starting soon..."
+   037                    5
+   033                   
+   2112                  
+   035                   
+   load_string            "<br>"
+   concat_string         
+   036                   
+   jump                   LABEL130
+LABEL60:
+   025                    4822
+   load_int               1
+   if_icmpgt              1
+   jump                   LABEL81
+   load_string            "Your clan:"
+   load_string            "<br>"
+   load_string            "Opponents:"
+   load_string            "<br>"
+   load_string            "Time:"
+   037                    5
+   033                   
+   2112                  
+   035                   
+   load_string            "<br>"
+   025                    4822
+   int_to_string         
+   load_string            " mins"
+   037                    3
+   concat_string         
+   036                   
+   jump                   LABEL130
+LABEL81:
+   025                    4822
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL100
+   load_string            "Your clan:"
+   load_string            "<br>"
+   load_string            "Opponents:"
+   load_string            "<br>"
+   load_string            "Time:"
+   037                    5
+   033                   
+   2112                  
+   035                   
+   load_string            "<br>"
+   load_string            "1 min"
+   037                    2
+   concat_string         
+   036                   
+   jump                   LABEL130
+LABEL100:
+   025                    4820
+   025                    4821
+   if_icmpeq              1
+   jump                   LABEL118
+   load_string            "Your clan:"
+   load_string            "<br>"
+   load_string            "Opponents:"
+   load_string            "<br>"
+   037                    4
+   033                   
+   2112                  
+   035                   
+   load_string            "<br>"
+   load_string            "Next kill wins!"
+   037                    2
+   concat_string         
+   036                   
+   jump                   LABEL130
+LABEL118:
+   load_string            "Your clan:"
+   load_string            "<br>"
+   load_string            "Opponents:"
+   load_string            "<br>"
+   load_string            "Ending..."
+   037                    5
+   033                   
+   2112                  
+   035                   
+   load_string            "<br>"
+   concat_string         
+   036                   
+LABEL130:
+   035                   
+   033                    1
+   2112                  
+   return                

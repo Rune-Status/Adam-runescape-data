@@ -1,0 +1,88 @@
+   033                   
+   load_int               1000000000
+   idiv                  
+   034                    1
+   033                   
+   033                    1
+   load_int               1000000000
+   imul                  
+   isub                  
+   load_int               1000000
+   idiv                  
+   034                    2
+   033                   
+   033                    1
+   load_int               1000000000
+   imul                  
+   033                    2
+   load_int               1000000
+   imul                  
+   iadd                  
+   isub                  
+   load_int               1000
+   idiv                  
+   034                    3
+   033                   
+   033                    1
+   load_int               1000000000
+   imul                  
+   033                    2
+   load_int               1000000
+   imul                  
+   iadd                  
+   033                    3
+   load_int               1000
+   imul                  
+   iadd                  
+   isub                  
+   034                    4
+   033                    1
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL55
+   033                    1
+   int_to_string         
+   035                   
+   033                    2
+   040                    47
+   035                   
+   033                    3
+   040                    47
+   035                   
+   033                    4
+   040                    47
+   037                    7
+   return                
+LABEL55:
+   033                    2
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL69
+   033                    2
+   int_to_string         
+   035                   
+   033                    3
+   040                    47
+   035                   
+   033                    4
+   040                    47
+   037                    5
+   return                
+LABEL69:
+   033                    3
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL80
+   033                    3
+   int_to_string         
+   035                   
+   033                    4
+   040                    47
+   037                    3
+   return                
+LABEL80:
+   033                   
+   int_to_string         
+   return                
+   load_string            ""
+   return                

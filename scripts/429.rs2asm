@@ -1,0 +1,72 @@
+   033                    4
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL15
+   load_int               429
+   033                   
+   033                    1
+   033                    2
+   load_int               -2147483645
+   load_int               0
+   load_int               93
+   load_int               1
+   load_string            "oooI1Y"
+   033                    3
+   2414                  
+LABEL15:
+   033                   
+   load_int               -1
+   if_icmpeq              6
+   load_int               93
+   033                   
+   3303                  
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL62
+   load_int               93
+   load_int               2357
+   3303                  
+   load_int               0
+   if_icmpgt              6
+   load_int               93
+   load_int               2365
+   3303                  
+   load_int               0
+   if_icmpgt              1
+   jump                   LABEL62
+   033                    1
+   load_int               1
+   033                    3
+   2200                  
+   load_string            "<col=ff9040>"
+   033                    1
+   get_item_name         
+   037                    2
+   033                    3
+   widget_put_name_widget
+   load_int               1
+   load_string            "Make-1"
+   033                    3
+   2300                  
+   load_int               2
+   load_string            "Make-5"
+   033                    3
+   2300                  
+   load_int               3
+   load_string            "Make-10"
+   033                    3
+   2300                  
+   load_int               4
+   load_string            "Make-X"
+   033                    3
+   2300                  
+   jump                   LABEL68
+LABEL62:
+   033                    2
+   load_int               1
+   033                    3
+   2200                  
+   033                    3
+   widget_put_actions_null_widget
+LABEL68:
+   return                

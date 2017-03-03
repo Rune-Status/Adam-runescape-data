@@ -1,0 +1,57 @@
+   047                    28
+   string_length         
+   load_int               0
+   if_icmple              1
+   jump                   LABEL13
+   load_int               -1
+   load_string            ""
+   033                   
+   2408                  
+   load_int               0
+   043                    62
+   040                    95
+   return                
+LABEL13:
+   033                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL23
+   load_int               552
+   load_int               -2147483645
+   load_int               0
+   load_string            "I1"
+   033                   
+   2408                  
+LABEL23:
+   042                    62
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL28
+   return                
+LABEL28:
+   5000                  
+   load_int               4
+   if_icmpne              1
+   jump                   LABEL39
+   load_int               4
+   5005                  
+   5016                  
+   5001                  
+   040                    178
+   040                    553
+   040                    84
+LABEL39:
+   get_gamecycle         
+   042                    61
+   isub                  
+   load_int               150
+   if_icmpge              4
+   033                    1
+   load_int               1
+   if_icmpeq              1
+   jump                   LABEL51
+   047                    28
+   load_int               1
+   040                    96
+LABEL51:
+   return                

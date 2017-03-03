@@ -1,0 +1,25 @@
+   033                   
+   load_int               -1
+   if_icmpeq              1
+   jump                   LABEL7
+   load_string            "Your coffer is protected by your Bank PIN. You can unlock it at the eastern side of the enclosure."
+   send_game_message     
+   jump                   LABEL21
+LABEL7:
+   033                   
+   load_int               0
+   if_icmpeq              1
+   jump                   LABEL14
+   load_string            "Your coffer is empty. You can deposit money into the pouch at the eastern side of the enclosure."
+   send_game_message     
+   jump                   LABEL21
+LABEL14:
+   load_string            "You have "
+   033                   
+   load_string            ","
+   040                    46
+   load_string            " coins in the coffer."
+   037                    3
+   send_game_message     
+LABEL21:
+   return                
