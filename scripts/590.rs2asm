@@ -20,12 +20,14 @@
    034                    4
    025                    4285
    033                    3
-   if_icmpne              1
+   if_icmpne              LABEL24
    jump                   LABEL113
+LABEL24:
    025                    4285
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL28
    jump                   LABEL68
+LABEL28:
    033                    2
    040                    198
    034                    4
@@ -115,22 +117,26 @@ LABEL68:
 LABEL113:
    025                    4271
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL117
    jump                   LABEL159
+LABEL117:
    025                    4272
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL121
    jump                   LABEL159
+LABEL121:
    025                    4273
    load_int               3
-   if_icmpeq              1
+   if_icmpeq              LABEL125
    jump                   LABEL140
+LABEL125:
    033                   
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL131
    jump                   LABEL136
+LABEL131:
    load_string            "<col=ff0000>"
    load_string            "If you turn off all forms of combat, your battle will be mighty peculiar."
    load_string            "</col>"
@@ -144,14 +150,16 @@ LABEL136:
 LABEL140:
    025                    4273
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL144
    jump                   LABEL159
+LABEL144:
    033                   
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL150
    jump                   LABEL155
+LABEL150:
    load_string            "<col=ff0000>"
    load_string            "You can't have a proper battle with only the Bind, Snare and Entangle spells."
    load_string            "</col>"
@@ -165,18 +173,21 @@ LABEL155:
 LABEL159:
    025                    4273
    load_int               2
-   if_icmpge              1
+   if_icmpge              LABEL163
    jump                   LABEL182
+LABEL163:
    025                    4281
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL167
    jump                   LABEL182
+LABEL167:
    033                   
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL173
    jump                   LABEL178
+LABEL173:
    load_string            "<col=ff0000>"
    load_string            "The Trident of the Seas is enabled against players, yet its spell is forbidden by the Magic restrictions."
    load_string            "</col>"
@@ -190,18 +201,21 @@ LABEL178:
 LABEL182:
    025                    4279
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL186
    jump                   LABEL205
+LABEL186:
    025                    4273
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL190
    jump                   LABEL205
+LABEL190:
    033                   
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL196
    jump                   LABEL201
+LABEL196:
    load_string            "<col=ff0000>"
    load_string            "It seems odd to restrict Magic to just the binding spells when you've disabled their binding effects."
    load_string            "</col>"
@@ -215,22 +229,25 @@ LABEL201:
 LABEL205:
    get_ismembers         
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL209
    jump                   LABEL232
+LABEL209:
    load_int               105
    load_int               49
    load_int               935
    025                    4283
    3408                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL217
    jump                   LABEL232
+LABEL217:
    033                   
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL223
    jump                   LABEL228
+LABEL223:
    load_string            "<col=ff0000>"
    load_string            "That's a members-only arena."
    load_string            "</col>"
@@ -246,26 +263,30 @@ LABEL232:
    034                    5
    042                    59
    load_int               0
-   if_icmpge              1
+   if_icmpge              LABEL238
    jump                   LABEL272
+LABEL238:
    get_gamecycle         
    042                    59
    isub                  
    034                    5
    033                    5
    load_int               250
-   if_icmplt              1
+   if_icmplt              LABEL246
    jump                   LABEL272
+LABEL246:
    033                    5
    load_int               0
-   if_icmpge              1
+   if_icmpge              LABEL250
    jump                   LABEL272
+LABEL250:
    033                   
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL256
    jump                   LABEL268
+LABEL256:
    load_string            "Your opponent has made changes!"
    load_string            "<br>"
    load_int               250
@@ -288,8 +309,9 @@ LABEL272:
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL278
    jump                   LABEL280
+LABEL278:
    load_string            ""
    1112                  
 LABEL280:

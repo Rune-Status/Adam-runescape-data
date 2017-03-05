@@ -8,12 +8,14 @@
    034                    1
    033                    2
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL12
    jump                   LABEL35
+LABEL12:
    033                   
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL16
    jump                   LABEL26
+LABEL16:
    load_string            "Tracking XP since "
    load_string            "<col=ffffff>"
    033                    1
@@ -38,12 +40,14 @@ LABEL34:
 LABEL35:
    033                    2
    033                    1
-   if_icmpgt              1
+   if_icmpgt              LABEL39
    jump                   LABEL73
+LABEL39:
    033                   
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL43
    jump                   LABEL59
+LABEL43:
    load_string            "Goal is "
    load_string            "<col=ffffff>"
    033                    2

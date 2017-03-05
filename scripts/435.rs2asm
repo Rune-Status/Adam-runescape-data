@@ -2,12 +2,14 @@
    036                   
    042                    64
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL6
    jump                   LABEL20
+LABEL6:
    042                    64
    load_int               17
-   if_icmple              1
+   if_icmple              LABEL10
    jump                   LABEL20
+LABEL10:
    load_int               105
    load_int               115
    load_int               848
@@ -33,8 +35,9 @@ LABEL25:
    034                   
    033                   
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL35
    jump                   LABEL42
+LABEL35:
    load_string            "---"
    load_int               4980761
    2112                  
@@ -49,8 +52,9 @@ LABEL42:
    2112                  
    get_world             
    033                   
-   if_icmpeq              1
+   if_icmpeq              LABEL50
    jump                   LABEL54
+LABEL50:
    load_int               65280
    load_int               4980761
    widget_put_textcolor_widget
@@ -67,8 +71,9 @@ LABEL57:
 LABEL61:
    033                    1
    042                    64
-   if_icmplt              1
+   if_icmplt              LABEL65
    jump                   LABEL76
+LABEL65:
    load_int               4980765
    load_int               3
    033                    1
@@ -103,8 +108,9 @@ LABEL76:
    widget_put_opacity    
    042                    64
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL100
    jump                   LABEL104
+LABEL100:
    load_int               1
    load_string            "Teleport"
    1300                  
@@ -135,14 +141,16 @@ LABEL124:
    035                    2
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL129
    jump                   LABEL148
+LABEL129:
    035                    1
    035                    2
    4107                  
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL135
    jump                   LABEL137
+LABEL135:
    033                    3
    034                    2
 LABEL137:
@@ -160,8 +168,9 @@ LABEL137:
 LABEL148:
    042                    64
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL152
    jump                   LABEL162
+LABEL152:
    load_string            "---"
    load_int               4980764
    2112                  
@@ -175,8 +184,9 @@ LABEL148:
 LABEL162:
    033                    2
    042                    64
-   if_icmpne              1
+   if_icmpne              LABEL166
    jump                   LABEL184
+LABEL166:
    load_string            "Join"
    load_int               4980764
    2112                  
@@ -239,8 +249,9 @@ LABEL201:
    load_int               4980753
    widget_get_hidden_widget
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL228
    jump                   LABEL613
+LABEL228:
    load_int               788
    load_int               4980759
    widget_put_textureid_widget
@@ -264,11 +275,12 @@ LABEL201:
    widget_put_hidden_widget
    033                    2
    load_int               0
-   if_icmpeq              4
+   if_icmpeq              LABEL256
    042                    64
    033                    2
-   if_icmpne              1
+   if_icmpne              LABEL256
    jump                   LABEL354
+LABEL256:
    load_int               0
    load_int               0
    load_int               4980751
@@ -297,8 +309,9 @@ LABEL201:
    1115                  
    033                    2
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL286
    jump                   LABEL300
+LABEL286:
    load_string            "You are not currently in a minigame chat-channel."
    1112                  
    033                    5
@@ -378,8 +391,9 @@ LABEL354:
 LABEL360:
    033                    9
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL364
    jump                   LABEL557
+LABEL364:
    033                    9
    load_int               1
    isub                  
@@ -439,8 +453,9 @@ LABEL360:
    widget_put_textcolor  
    033                   
    get_world             
-   if_icmpeq              1
+   if_icmpeq              LABEL425
    jump                   LABEL428
+LABEL425:
    load_int               65280
    widget_put_textcolor   1
    jump                   LABEL430
@@ -523,13 +538,15 @@ LABEL430:
    033                    9
    clanmember_isme       
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL507
    jump                   LABEL539
+LABEL507:
    035                    3
    3609                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL512
    jump                   LABEL518
+LABEL512:
    load_int               9
    load_string            "Remove friend "
    035                    3
@@ -540,8 +557,9 @@ LABEL518:
    035                    3
    3623                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL523
    jump                   LABEL529
+LABEL523:
    load_int               10
    load_string            "Remove ignore "
    035                    3
@@ -562,12 +580,14 @@ LABEL529:
 LABEL539:
    033                    8
    033                    7
-   if_icmpge              1
+   if_icmpge              LABEL543
    jump                   LABEL552
+LABEL543:
    033                    8
    033                    6
-   if_icmpgt              1
+   if_icmpgt              LABEL547
    jump                   LABEL552
+LABEL547:
    load_int               6
    load_string            "Kick user "
    035                    3
@@ -582,8 +602,9 @@ LABEL552:
 LABEL557:
    033                    10
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL561
    jump                   LABEL573
+LABEL561:
    load_int               4980751
    widget_get_scrolly_widget
    034                    4
@@ -702,12 +723,14 @@ LABEL672:
    035                    2
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL677
    jump                   LABEL750
+LABEL677:
    042                    64
    033                    3
-   if_icmpne              1
+   if_icmpne              LABEL681
    jump                   LABEL739
+LABEL681:
    load_int               4980757
    load_int               4
    033                    1
@@ -781,8 +804,9 @@ LABEL739:
 LABEL750:
    042                    64
    load_int               0
-   if_icmpne              1
+   if_icmpne              LABEL754
    jump                   LABEL808
+LABEL754:
    load_int               4980757
    load_int               4
    033                    1

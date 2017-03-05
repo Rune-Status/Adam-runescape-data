@@ -6,12 +6,14 @@
    034                    7
    033                    6
    033                    2
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL15
+LABEL10:
    033                    7
    033                    3
-   if_icmpeq              1
+   if_icmpeq              LABEL14
    jump                   LABEL15
+LABEL14:
    return                
 LABEL15:
    033                    7
@@ -22,8 +24,9 @@ LABEL15:
    034                    9
    033                    9
    033                    8
-   if_icmpgt              1
+   if_icmpgt              LABEL25
    jump                   LABEL27
+LABEL25:
    033                    8
    034                    9
 LABEL27:

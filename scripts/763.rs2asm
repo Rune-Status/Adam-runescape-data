@@ -1,7 +1,8 @@
    025                    4374
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL8
+LABEL4:
    load_string            "Trade modified"
    033                    3
    2112                  
@@ -13,8 +14,9 @@ LABEL8:
 LABEL11:
    025                    4375
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL15
    jump                   LABEL19
+LABEL15:
    load_string            "Trade modified"
    033                    5
    2112                  
@@ -32,8 +34,9 @@ LABEL22:
    034                    6
    033                    6
    load_int               2
-   if_icmplt              1
+   if_icmplt              LABEL32
    jump                   LABEL34
+LABEL32:
    load_int               2
    034                    6
 LABEL34:
@@ -189,30 +192,34 @@ LABEL34:
 LABEL183:
    033                    15
    033                   
-   if_icmplt              1
+   if_icmplt              LABEL187
    jump                   LABEL291
+LABEL187:
    033                    2
    033                    15
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL193
    jump                   LABEL286
+LABEL193:
    033                    2
    033                   
    033                    15
    iadd                  
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL201
    jump                   LABEL286
+LABEL201:
    load_int               90
    033                    15
    3301                  
    034                    9
    033                    9
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL209
    jump                   LABEL248
+LABEL209:
    load_int               90
    033                    15
    3302                  
@@ -426,30 +433,34 @@ LABEL291:
 LABEL415:
    033                    15
    033                   
-   if_icmplt              1
+   if_icmplt              LABEL419
    jump                   LABEL508
+LABEL419:
    033                    4
    033                    15
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL425
    jump                   LABEL503
+LABEL425:
    033                    4
    033                   
    033                    15
    iadd                  
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL433
    jump                   LABEL503
+LABEL433:
    load_int               90
    033                    15
    3313                  
    034                    9
    033                    9
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL441
    jump                   LABEL465
+LABEL441:
    load_int               90
    033                    15
    3314                  

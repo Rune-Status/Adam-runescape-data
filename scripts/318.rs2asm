@@ -1,7 +1,8 @@
    get_settings           18
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL11
+LABEL4:
    load_int               186
    033                   
    widget_put_textureid_widget
@@ -19,8 +20,9 @@ LABEL11:
 LABEL17:
    025                    4137
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL21
    jump                   LABEL25
+LABEL21:
    load_int               186
    033                    2
    widget_put_textureid_widget

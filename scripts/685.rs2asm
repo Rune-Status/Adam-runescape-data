@@ -1,10 +1,11 @@
    033                   
    load_int               0
-   if_icmplt              4
+   if_icmplt              LABEL7
    033                   
    load_int               10
-   if_icmpge              1
+   if_icmpge              LABEL7
    jump                   LABEL8
+LABEL7:
    return                
 LABEL8:
    load_int               1041
@@ -13,8 +14,9 @@ LABEL8:
    3200                  
    033                    1
    load_int               3
-   if_icmpeq              1
+   if_icmpeq              LABEL16
    jump                   LABEL44
+LABEL16:
    033                    2
    033                   
    iadd                  
@@ -46,8 +48,9 @@ LABEL8:
 LABEL44:
    033                    1
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL48
    jump                   LABEL55
+LABEL48:
    033                    2
    load_int               10
    033                   
@@ -58,8 +61,9 @@ LABEL44:
 LABEL55:
    033                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL59
    jump                   LABEL66
+LABEL59:
    033                    2
    load_int               100
    033                   
@@ -70,8 +74,9 @@ LABEL55:
 LABEL66:
    033                    1
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL70
    jump                   LABEL75
+LABEL70:
    load_int               1000
    033                   
    imul                  

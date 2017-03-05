@@ -1,7 +1,8 @@
    033                    4
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL15
+LABEL4:
    load_int               429
    033                   
    033                    1
@@ -16,24 +17,26 @@
 LABEL15:
    033                   
    load_int               -1
-   if_icmpeq              6
+   if_icmpeq              LABEL24
    load_int               93
    033                   
    3303                  
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL24
    jump                   LABEL62
+LABEL24:
    load_int               93
    load_int               2357
    3303                  
    load_int               0
-   if_icmpgt              6
+   if_icmpgt              LABEL35
    load_int               93
    load_int               2365
    3303                  
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL35
    jump                   LABEL62
+LABEL35:
    033                    1
    load_int               1
    033                    3

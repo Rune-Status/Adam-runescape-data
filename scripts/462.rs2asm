@@ -1,27 +1,31 @@
    033                   
    load_int               1
-   if_icmpne              1
+   if_icmpne              LABEL4
    jump                   LABEL5
+LABEL4:
    return                
 LABEL5:
    033                    2
    033                    3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL11
    jump                   LABEL60
+LABEL11:
    033                    2
    033                    4
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL17
    jump                   LABEL60
+LABEL17:
    025                    4101
    033                    1
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL23
    jump                   LABEL31
+LABEL23:
    025                    4101
    033                    1
    clear_bit             
@@ -34,8 +38,9 @@ LABEL31:
    033                    1
    040                    464
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL36
    jump                   LABEL41
+LABEL36:
    load_int               2673
    load_int               1
    load_int               0
@@ -45,8 +50,9 @@ LABEL41:
    load_int               5
    get_boostedskilllevels
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL46
    jump                   LABEL53
+LABEL46:
    load_int               2673
    load_int               1
    load_int               0

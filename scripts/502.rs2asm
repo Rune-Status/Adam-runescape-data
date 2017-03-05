@@ -4,8 +4,9 @@
    102                   
    025                    4146
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL8
    jump                   LABEL23
+LABEL8:
    load_string            "Select hairstyle"
    033                    1
    2112                  
@@ -24,8 +25,9 @@
 LABEL23:
    025                    4146
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL27
    jump                   LABEL42
+LABEL27:
    load_string            "Select facial hair"
    033                    1
    2112                  
@@ -44,8 +46,9 @@ LABEL23:
 LABEL42:
    025                    4146
    load_int               3
-   if_icmpeq              1
+   if_icmpeq              LABEL46
    jump                   LABEL61
+LABEL46:
    load_string            "Select hairstyle"
    033                    1
    2112                  
@@ -72,8 +75,9 @@ LABEL65:
 LABEL67:
    033                    3
    load_int               25
-   if_icmplt              1
+   if_icmplt              LABEL71
    jump                   LABEL123
+LABEL71:
    033                    2
    load_int               3
    033                    3
@@ -85,8 +89,9 @@ LABEL67:
    1001                  
    033                    3
    load_int               13
-   if_icmplt              1
+   if_icmplt              LABEL84
    jump                   LABEL92
+LABEL84:
    033                    3
    load_int               25
    imul                  
@@ -134,8 +139,9 @@ LABEL123:
 LABEL125:
    033                    3
    load_int               25
-   if_icmplt              1
+   if_icmplt              LABEL129
    jump                   LABEL182
+LABEL129:
    033                    2
    load_int               5
    033                    3
@@ -149,8 +155,9 @@ LABEL125:
    1001                  
    033                    3
    load_int               13
-   if_icmplt              1
+   if_icmplt              LABEL144
    jump                   LABEL152
+LABEL144:
    033                    3
    load_int               25
    imul                  

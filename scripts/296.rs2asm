@@ -6,12 +6,14 @@
 LABEL5:
    033                    5
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL9
    jump                   LABEL26
+LABEL9:
    033                    4
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL13
    jump                   LABEL26
+LABEL13:
    033                    5
    load_int               1
    isub                  
@@ -20,8 +22,9 @@ LABEL5:
    033                    5
    3301                  
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL23
    jump                   LABEL25
+LABEL23:
    load_int               1
    034                    4
 LABEL25:
@@ -53,8 +56,9 @@ LABEL26:
 LABEL49:
    033                    5
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL53
    jump                   LABEL125
+LABEL53:
    033                    5
    load_int               1
    isub                  
@@ -63,8 +67,9 @@ LABEL49:
    033                    5
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL63
    jump                   LABEL124
+LABEL63:
    load_int               93
    033                    5
    3301                  
@@ -98,12 +103,14 @@ LABEL49:
    1000                  
    033                    9
    load_int               11941
-   if_icmpeq              1
+   if_icmpeq              LABEL98
    jump                   LABEL124
+LABEL98:
    033                    4
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL102
    jump                   LABEL124
+LABEL102:
    033                    2
    load_int               5
    033                    6

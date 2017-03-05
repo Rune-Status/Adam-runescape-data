@@ -4,8 +4,9 @@
    load_int               4
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL8
    jump                   LABEL10
+LABEL8:
    load_int               0
    widget_put_hidden     
 LABEL10:
@@ -13,8 +14,9 @@ LABEL10:
    load_int               5
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL16
    jump                   LABEL18
+LABEL16:
    load_int               0
    widget_put_hidden     
 LABEL18:

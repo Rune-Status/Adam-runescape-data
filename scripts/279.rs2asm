@@ -4,19 +4,22 @@
    036                    1
    040                    514
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL8
    jump                   LABEL34
+LABEL8:
    040                    280
    036                    1
    035                    1
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL15
    jump                   LABEL34
+LABEL15:
    033                   
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL19
    jump                   LABEL23
+LABEL19:
    033                   
    get_item_name         
    tolowercase           
@@ -27,8 +30,9 @@ LABEL23:
    load_int               0
    string_indexof_from   
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL30
    jump                   LABEL32
+LABEL30:
    load_int               1
    return                
 LABEL32:

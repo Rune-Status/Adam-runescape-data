@@ -1,16 +1,18 @@
    load_int               6
    get_boostedskilllevels
    033                    1
-   if_icmpge              1
+   if_icmpge              LABEL5
    jump                   LABEL25
+LABEL5:
    load_int               65280
    widget_put_textcolor   1
    load_int               93
    033                    2
    3303                  
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL13
    jump                   LABEL20
+LABEL13:
    load_int               65280
    widget_put_textcolor  
    load_int               1
@@ -32,8 +34,9 @@ LABEL25:
    033                    2
    3303                  
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL33
    jump                   LABEL36
+LABEL33:
    load_int               65280
    widget_put_textcolor  
    jump                   LABEL38

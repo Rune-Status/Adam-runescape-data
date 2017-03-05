@@ -2,8 +2,9 @@
    034                    1
    get_ismembers         
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL14
+LABEL6:
    load_int               111
    load_int               105
    load_int               906
@@ -15,8 +16,9 @@
 LABEL14:
    033                    1
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL18
    jump                   LABEL22
+LABEL18:
    load_int               1
    load_int               38862877
    widget_put_hidden_widget
@@ -27,8 +29,9 @@ LABEL22:
    load_int               38862877
    widget_get_hidden_widget
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL29
    jump                   LABEL31
+LABEL29:
    load_int               1
    034                    2
 LABEL31:
@@ -37,8 +40,9 @@ LABEL31:
    widget_put_hidden_widget
    get_settings           301
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL38
    jump                   LABEL42
+LABEL38:
    load_int               16776960
    load_int               38862882
    widget_put_textcolor_widget
@@ -52,8 +56,9 @@ LABEL45:
    034                    3
    033                    3
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL51
    jump                   LABEL53
+LABEL51:
    load_int               0
    034                    3
 LABEL53:
@@ -72,8 +77,9 @@ LABEL53:
    040                    189
    033                    3
    033                    1
-   if_icmpge              1
+   if_icmpge              LABEL70
    jump                   LABEL74
+LABEL70:
    load_int               18552
    load_int               38862881
    widget_put_modelid_1_widget

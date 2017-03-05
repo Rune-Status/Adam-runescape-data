@@ -6,14 +6,16 @@
    034                    3
    033                    3
    033                    2
-   if_icmpge              1
+   if_icmpge              LABEL10
    jump                   LABEL32
+LABEL10:
    load_int               65280
    widget_put_textcolor   1
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL16
    jump                   LABEL24
+LABEL16:
    033                    2
    int_to_string         
    load_string            "/"

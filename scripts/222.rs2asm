@@ -5,36 +5,39 @@
    034                   
    042                    5
    load_int               6
-   if_icmpeq              10
+   if_icmpeq              LABEL18
    042                    5
    load_int               9
-   if_icmpeq              7
+   if_icmpeq              LABEL18
    042                    5
    load_int               11
-   if_icmpeq              4
+   if_icmpeq              LABEL18
    042                    5
    load_int               13
-   if_icmpeq              1
+   if_icmpeq              LABEL18
    jump                   LABEL21
+LABEL18:
    load_int               80
    034                   
    jump                   LABEL47
 LABEL21:
    042                    5
    load_int               7
-   if_icmpeq              4
+   if_icmpeq              LABEL28
    042                    5
    load_int               12
-   if_icmpeq              1
+   if_icmpeq              LABEL28
    jump                   LABEL31
+LABEL28:
    load_int               10
    034                   
    jump                   LABEL47
 LABEL31:
    042                    5
    load_int               14
-   if_icmpeq              1
+   if_icmpeq              LABEL35
    jump                   LABEL47
+LABEL35:
    load_int               25
    034                   
    load_string            "<col=000000>"
@@ -51,8 +54,9 @@ LABEL47:
    047                    22
    string_length         
    033                   
-   if_icmplt              1
+   if_icmplt              LABEL52
    jump                   LABEL56
+LABEL52:
    035                    1
    load_string            "*"
    concat_string         
@@ -64,8 +68,9 @@ LABEL56:
    4109                  
    load_int               10616865
    widget_get_width_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL64
    jump                   LABEL70
+LABEL64:
    load_int               2
    load_int               1
    load_int               0

@@ -1,7 +1,8 @@
    025                    4901
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL9
+LABEL4:
    load_int               13426
    load_int               1
    033                   
@@ -10,8 +11,9 @@
 LABEL9:
    025                    4901
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL13
    jump                   LABEL18
+LABEL13:
    load_int               13427
    load_int               1
    033                   
@@ -20,8 +22,9 @@ LABEL9:
 LABEL18:
    025                    4901
    load_int               3
-   if_icmpeq              1
+   if_icmpeq              LABEL22
    jump                   LABEL27
+LABEL22:
    load_int               13428
    load_int               1
    033                   
@@ -37,8 +40,9 @@ LABEL31:
    034                    3
    025                    4900
    load_int               100
-   if_icmple              1
+   if_icmple              LABEL37
    jump                   LABEL39
+LABEL37:
    025                    4900
    034                    3
 LABEL39:
@@ -59,8 +63,9 @@ LABEL39:
    034                    6
    033                    3
    033                    4
-   if_icmplt              1
+   if_icmplt              LABEL58
    jump                   LABEL72
+LABEL58:
    load_int               0
    033                    3
    load_int               0
@@ -91,8 +96,9 @@ LABEL72:
    2112                  
    025                    4893
    load_int               1000
-   if_icmpge              1
+   if_icmpge              LABEL89
    jump                   LABEL93
+LABEL89:
    load_int               16711680
    033                    2
    widget_put_textcolor_widget

@@ -1,7 +1,8 @@
    033                   
    load_int               1
-   if_icmpne              1
+   if_icmpne              LABEL4
    jump                   LABEL5
+LABEL4:
    return                
 LABEL5:
    load_int               2266
@@ -10,12 +11,14 @@ LABEL5:
    3200                  
    025                    4180
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL13
    jump                   LABEL20
+LABEL13:
    025                    1777
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL17
    jump                   LABEL20
+LABEL17:
    load_int               1
    027                    4180
    jump                   LABEL22

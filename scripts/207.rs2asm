@@ -7,8 +7,9 @@
    033                    2
    get_item_stackable    
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL11
    jump                   LABEL26
+LABEL11:
    035                    2
    load_string            "<col=ff9040>"
    033                    2
@@ -27,8 +28,9 @@
 LABEL26:
    033                    1
    load_int               100000
-   if_icmplt              1
+   if_icmplt              LABEL30
    jump                   LABEL47
+LABEL30:
    033                    1
    load_string            ","
    040                    46
@@ -49,8 +51,9 @@ LABEL26:
 LABEL47:
    033                    1
    load_int               10000000
-   if_icmplt              1
+   if_icmplt              LABEL51
    jump                   LABEL77
+LABEL51:
    033                    1
    load_string            ","
    040                    46

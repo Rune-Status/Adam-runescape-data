@@ -8,8 +8,9 @@
    034                    10
    033                   
    load_int               1
-   if_icmple              1
+   if_icmple              LABEL12
    jump                   LABEL133
+LABEL12:
    load_int               2266
    load_int               1
    load_int               0
@@ -39,8 +40,9 @@
    034                    8
    033                    8
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL43
    jump                   LABEL114
+LABEL43:
    load_string            "<u=ff981f>"
    033                    8
    get_item_name         
@@ -70,12 +72,14 @@
    034                    10
    033                    9
    load_int               1
-   if_icmpne              1
+   if_icmpne              LABEL74
    jump                   LABEL98
+LABEL74:
    033                    10
    load_int               1
-   if_icmpgt              1
+   if_icmpgt              LABEL78
    jump                   LABEL89
+LABEL78:
    035                   
    load_string            "Cost: "
    033                    9
@@ -101,8 +105,9 @@ LABEL97:
 LABEL98:
    033                    10
    load_int               1
-   if_icmpgt              1
+   if_icmpgt              LABEL102
    jump                   LABEL110
+LABEL102:
    035                   
    load_string            "Cost: 1 point for "
    033                    10
@@ -139,16 +144,18 @@ LABEL114:
 LABEL133:
    033                   
    load_int               10
-   if_icmpge              1
+   if_icmpge              LABEL137
    jump                   LABEL138
+LABEL137:
    return                
 LABEL138:
    033                    1
    033                    2
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL144
    jump                   LABEL158
+LABEL144:
    load_int               75
    widget_put_opacity    
    load_int               2266

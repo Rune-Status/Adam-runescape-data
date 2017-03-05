@@ -9,13 +9,14 @@
 LABEL8:
    033                    2
    load_int               100
-   if_icmplt              1
+   if_icmplt              LABEL12
    jump                   LABEL38
 LABEL12:
    033                    3
    load_int               32
-   if_icmplt              1
+   if_icmplt              LABEL16
    jump                   LABEL31
+LABEL16:
    033                   
    load_int               3
    033                    1

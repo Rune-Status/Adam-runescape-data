@@ -1,7 +1,8 @@
    042                    6
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL7
+LABEL4:
    load_int               0
    043                    6
    jump                   LABEL9
@@ -11,8 +12,9 @@ LABEL7:
 LABEL9:
    042                    6
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL13
    jump                   LABEL21
+LABEL13:
    load_string            "Moderator option: Mute player: "
    load_string            "<lt>"
    load_string            "OFF"

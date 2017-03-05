@@ -30,8 +30,9 @@
 LABEL29:
    033                    7
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL33
    jump                   LABEL82
+LABEL33:
    033                   
    load_int               5
    033                    6
@@ -132,8 +133,9 @@ LABEL82:
 LABEL129:
    033                    7
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL133
    jump                   LABEL224
+LABEL133:
    033                    1
    load_int               5
    033                    6

@@ -3,19 +3,22 @@
 LABEL2:
    033                    1
    load_int               43
-   if_icmple              1
+   if_icmple              LABEL6
    jump                   LABEL35
+LABEL6:
    033                   
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL12
    jump                   LABEL30
+LABEL12:
    033                    1
    040                    702
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL17
    jump                   LABEL24
+LABEL17:
    load_int               105
    load_int               100
    load_int               1001

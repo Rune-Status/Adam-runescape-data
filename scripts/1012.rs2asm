@@ -1,13 +1,15 @@
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL31
+LABEL4:
    033                    1
    load_int               0
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL12
+LABEL10:
    load_int               100
    widget_put_opacity    
 LABEL12:
@@ -15,8 +17,9 @@ LABEL12:
    load_int               3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL18
    jump                   LABEL22
+LABEL18:
    load_int               125
    widget_put_opacity    
    load_int               788
@@ -26,8 +29,9 @@ LABEL22:
    load_int               4
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL28
    jump                   LABEL30
+LABEL28:
    load_int               16758847
    widget_put_textcolor  
 LABEL30:

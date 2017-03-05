@@ -1,7 +1,8 @@
    033                   
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL4
    jump                   LABEL48
+LABEL4:
    load_int               1
    033                    6
    2005                  
@@ -56,8 +57,9 @@ LABEL48:
    040                    449
    get_settings           456
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL59
    jump                   LABEL63
+LABEL59:
    load_int               1062
    033                    3
    widget_put_textureid_widget
@@ -65,8 +67,9 @@ LABEL48:
 LABEL63:
    get_settings           102
    load_int               1000000
-   if_icmpge              1
+   if_icmpge              LABEL67
    jump                   LABEL71
+LABEL67:
    load_int               1102
    033                    3
    widget_put_textureid_widget
@@ -74,8 +77,9 @@ LABEL63:
 LABEL71:
    get_settings           102
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL75
    jump                   LABEL79
+LABEL75:
    load_int               1061
    033                    3
    widget_put_textureid_widget
@@ -87,12 +91,14 @@ LABEL79:
 LABEL82:
    get_settings           102
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL86
    jump                   LABEL101
+LABEL86:
    get_settings           102
    load_int               1000000
-   if_icmpge              1
+   if_icmpge              LABEL90
    jump                   LABEL94
+LABEL90:
    load_int               1102
    033                    5
    widget_put_textureid_widget
@@ -115,16 +121,18 @@ LABEL104:
    034                    8
    get_settings           102
    load_int               0
-   if_icmpgt              4
+   if_icmpgt              LABEL113
    get_settings           456
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL113
    jump                   LABEL136
+LABEL113:
    load_int               3
    040                    918
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL118
    jump                   LABEL136
+LABEL118:
    load_int               44
    033                    6
    033                    8

@@ -2,8 +2,9 @@
    034                    6
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL13
+LABEL6:
    load_int               2048
    025                    3985
    load_int               512
@@ -14,8 +15,9 @@
 LABEL13:
    033                   
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL17
    jump                   LABEL24
+LABEL17:
    load_int               2048
    025                    3986
    load_int               512
@@ -26,8 +28,9 @@ LABEL13:
 LABEL24:
    033                   
    load_int               3
-   if_icmpeq              1
+   if_icmpeq              LABEL28
    jump                   LABEL35
+LABEL28:
    load_int               2048
    025                    3987
    load_int               512
@@ -43,11 +46,12 @@ LABEL36:
    034                    7
    033                    7
    load_int               0
-   if_icmplt              4
+   if_icmplt              LABEL46
    033                    7
    load_int               2048
-   if_icmpge              1
+   if_icmpge              LABEL46
    jump                   LABEL48
+LABEL46:
    load_int               0
    034                    7
 LABEL48:
@@ -55,12 +59,14 @@ LABEL48:
    034                    8
    033                    7
    033                    6
-   if_icmpne              1
+   if_icmpne              LABEL54
    jump                   LABEL93
+LABEL54:
    033                    6
    033                    7
-   if_icmplt              1
+   if_icmplt              LABEL58
    jump                   LABEL62
+LABEL58:
    033                    6
    load_int               2048
    iadd                  
@@ -72,12 +78,14 @@ LABEL62:
    034                    8
    033                    8
    load_int               1024
-   if_icmplt              1
+   if_icmplt              LABEL70
    jump                   LABEL82
+LABEL70:
    033                    8
    load_int               10
-   if_icmpgt              1
+   if_icmpgt              LABEL74
    jump                   LABEL79
+LABEL74:
    033                    7
    load_int               10
    iadd                  
@@ -91,8 +99,9 @@ LABEL81:
 LABEL82:
    033                    8
    load_int               2038
-   if_icmplt              1
+   if_icmplt              LABEL86
    jump                   LABEL91
+LABEL86:
    033                    7
    load_int               2038
    iadd                  
@@ -108,12 +117,14 @@ LABEL93:
    034                    7
    033                    7
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL101
    jump                   LABEL112
+LABEL101:
    033                    7
    load_int               -2048
-   if_icmplt              1
+   if_icmplt              LABEL105
    jump                   LABEL108
+LABEL105:
    load_int               0
    034                    7
    jump                   LABEL112

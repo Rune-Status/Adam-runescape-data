@@ -2,14 +2,16 @@
    034                    2
    033                    1
    load_int               60
-   if_icmple              1
+   if_icmple              LABEL6
    jump                   LABEL55
+LABEL6:
    033                   
    load_int               0
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL12
    jump                   LABEL18
+LABEL12:
    load_int               255
    033                    1
    load_int               4
@@ -21,14 +23,16 @@ LABEL18:
    load_int               1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL24
    jump                   LABEL54
+LABEL24:
    033                   
    load_int               2
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL30
    jump                   LABEL54
+LABEL30:
    load_int               2000
    033                    1
    load_int               32
@@ -58,8 +62,9 @@ LABEL54:
 LABEL55:
    033                    1
    load_int               90
-   if_icmple              1
+   if_icmple              LABEL59
    jump                   LABEL92
+LABEL59:
    033                    1
    load_int               60
    isub                  
@@ -68,8 +73,9 @@ LABEL55:
    load_int               0
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL69
    jump                   LABEL75
+LABEL69:
    load_int               15
    033                    1
    load_int               8
@@ -81,14 +87,16 @@ LABEL75:
    load_int               1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL81
    jump                   LABEL91
+LABEL81:
    033                   
    load_int               2
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL87
    jump                   LABEL91
+LABEL87:
    load_int               16238
    widget_put_modelid_1  
    load_int               16238

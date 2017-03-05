@@ -38,8 +38,9 @@
 LABEL37:
    033                    8
    load_int               516
-   if_icmple              1
+   if_icmple              LABEL41
    jump                   LABEL69
+LABEL41:
    033                    1
    load_int               4
    033                    8
@@ -54,8 +55,9 @@ LABEL37:
    034                    7
    033                    7
    load_int               0
-   if_icmpne              1
+   if_icmpne              LABEL57
    jump                   LABEL64
+LABEL57:
    033                    6
    033                    7
    046                   
@@ -82,8 +84,9 @@ LABEL69:
    widget_put_scrollwidthheight_widget
    033                    6
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL83
    jump                   LABEL87
+LABEL83:
    033                    6
    load_int               1
    isub                  
@@ -98,8 +101,9 @@ LABEL87:
 LABEL93:
    033                    8
    033                    6
-   if_icmple              1
+   if_icmple              LABEL97
    jump                   LABEL129
+LABEL97:
    033                    8
    045                   
    034                    7
@@ -107,8 +111,9 @@ LABEL93:
    033                    7
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL106
    jump                   LABEL124
+LABEL106:
    load_int               0
    widget_put_hidden     
    load_int               1

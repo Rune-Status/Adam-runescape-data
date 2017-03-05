@@ -1,7 +1,8 @@
    033                    5
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL4
    jump                   LABEL6
+LABEL4:
    load_int               1
    034                    5
 LABEL6:
@@ -37,8 +38,9 @@ LABEL6:
    load_int               2
    modulo                
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL40
    jump                   LABEL43
+LABEL40:
    load_int               0
    widget_put_opacity    
    jump                   LABEL45
@@ -104,8 +106,9 @@ LABEL45:
    1114                   1
    033                    4
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL105
    jump                   LABEL110
+LABEL105:
    load_int               1106
    widget_put_textureid  
    load_string            "Sold:"
@@ -151,8 +154,9 @@ LABEL114:
    1114                  
    033                    5
    load_int               2
-   if_icmpge              1
+   if_icmpge              LABEL150
    jump                   LABEL162
+LABEL150:
    load_string            "<col=ffb83f>"
    033                    3
    get_item_name         
@@ -238,8 +242,9 @@ LABEL168:
    036                   
    033                    6
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL235
    jump                   LABEL238
+LABEL235:
    load_string            "1?coin"
    036                   
    jump                   LABEL244
@@ -253,8 +258,9 @@ LABEL238:
 LABEL244:
    033                    5
    load_int               2
-   if_icmpge              1
+   if_icmpge              LABEL248
    jump                   LABEL262
+LABEL248:
    035                   
    load_string            "<br>"
    load_string            "<col=9f9f9f>"

@@ -6,15 +6,17 @@
    034                    4
    033                    2
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL10
    jump                   LABEL12
+LABEL10:
    load_int               0
    034                    2
 LABEL12:
    033                    2
    033                    4
-   if_icmpgt              1
+   if_icmpgt              LABEL16
    jump                   LABEL18
+LABEL16:
    033                    4
    034                    2
 LABEL18:
@@ -28,8 +30,9 @@ LABEL18:
    load_int               1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL30
    jump                   LABEL78
+LABEL30:
    033                   
    widget_get_height_widget
    load_int               32
@@ -39,8 +42,9 @@ LABEL18:
    034                    5
    033                    3
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL41
    jump                   LABEL78
+LABEL41:
    load_int               0
    load_int               16
    033                    5
@@ -56,8 +60,9 @@ LABEL18:
    load_int               2
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL58
    jump                   LABEL63
+LABEL58:
    load_int               0
    widget_get_relativey  
    load_int               1
@@ -68,8 +73,9 @@ LABEL63:
    load_int               3
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL69
    jump                   LABEL78
+LABEL69:
    load_int               0
    widget_get_relativey  
    widget_get_height     

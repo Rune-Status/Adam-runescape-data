@@ -17,14 +17,16 @@
    034                    2
    033                    4
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL21
    jump                   LABEL47
+LABEL21:
    033                    1
    load_int               3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL27
    jump                   LABEL29
+LABEL27:
    load_int               1
    widget_put_hidden     
 LABEL29:
@@ -32,8 +34,9 @@ LABEL29:
    load_int               6
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL35
    jump                   LABEL38
+LABEL35:
    033                    2
    int_to_string         
    1112                  
@@ -42,8 +45,9 @@ LABEL38:
    load_int               7
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL44
    jump                   LABEL46
+LABEL44:
    load_int               1
    widget_put_hidden     
 LABEL46:
@@ -53,8 +57,9 @@ LABEL47:
    load_int               3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL53
    jump                   LABEL58
+LABEL53:
    load_int               0
    widget_put_hidden     
    033                    2
@@ -65,8 +70,9 @@ LABEL58:
    load_int               6
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL64
    jump                   LABEL67
+LABEL64:
    033                    3
    int_to_string         
    1112                  
@@ -75,8 +81,9 @@ LABEL67:
    load_int               7
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL73
    jump                   LABEL75
+LABEL73:
    load_int               0
    widget_put_hidden     
 LABEL75:

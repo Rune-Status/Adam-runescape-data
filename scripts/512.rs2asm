@@ -1,7 +1,8 @@
    033                    2
    033                   
-   if_icmpne              1
+   if_icmpne              LABEL4
    jump                   LABEL5
+LABEL4:
    return                
 LABEL5:
    033                    1
@@ -18,29 +19,31 @@ LABEL5:
    034                    7
    033                    6
    load_int               0
-   if_icmpeq              14
+   if_icmpeq              LABEL34
    033                    7
    load_int               0
-   if_icmpeq              11
+   if_icmpeq              LABEL34
    033                    4
    033                    6
    test_bit              
    load_int               0
-   if_icmpeq              6
+   if_icmpeq              LABEL34
    033                    4
    033                    7
    test_bit              
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL34
    jump                   LABEL35
+LABEL34:
    return                
 LABEL35:
    033                   
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL41
    jump                   LABEL52
+LABEL41:
    load_int               200
    widget_put_opacity    
    load_int               488

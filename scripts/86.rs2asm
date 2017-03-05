@@ -3,8 +3,9 @@
    036                    1
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL7
    jump                   LABEL11
+LABEL7:
    load_int               4
    035                    1
    3107                  
@@ -12,8 +13,9 @@
 LABEL11:
    033                   
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL15
    jump                   LABEL19
+LABEL15:
    load_int               1
    035                    1
    3107                  
@@ -21,16 +23,18 @@ LABEL11:
 LABEL19:
    033                   
    load_int               8
-   if_icmpeq              1
+   if_icmpeq              LABEL23
    jump                   LABEL26
+LABEL23:
    035                    1
    048                    24
    jump                   LABEL61
 LABEL26:
    033                   
    load_int               9
-   if_icmpeq              1
+   if_icmpeq              LABEL30
    jump                   LABEL33
+LABEL30:
    035                    1
    040                    215
    jump                   LABEL61
@@ -38,15 +42,17 @@ LABEL33:
    035                    1
    3609                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL38
    jump                   LABEL48
+LABEL38:
    033                   
    load_int               6
-   if_icmpeq              4
+   if_icmpeq              LABEL45
    033                   
    load_int               7
-   if_icmpeq              1
+   if_icmpeq              LABEL45
    jump                   LABEL47
+LABEL45:
    035                    1
    040                    107
 LABEL47:
@@ -54,16 +60,18 @@ LABEL47:
 LABEL48:
    033                   
    load_int               6
-   if_icmpeq              1
+   if_icmpeq              LABEL52
    jump                   LABEL55
+LABEL52:
    035                    1
    add_friend            
    jump                   LABEL61
 LABEL55:
    033                   
    load_int               7
-   if_icmpeq              1
+   if_icmpeq              LABEL59
    jump                   LABEL61
+LABEL59:
    035                    1
    add_ignore            
 LABEL61:

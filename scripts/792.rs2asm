@@ -6,8 +6,9 @@
    033                    3
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL12
+LABEL10:
    033                    4
    widget_put_textureid   1
 LABEL12:
@@ -19,8 +20,9 @@ LABEL12:
    034                    7
    033                    6
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL22
    jump                   LABEL85
+LABEL22:
    033                    1
    033                   
    3302                  
@@ -45,12 +47,14 @@ LABEL12:
    033                    6
    get_item_note_1       
    033                    6
-   if_icmpne              1
+   if_icmpne              LABEL48
    jump                   LABEL66
+LABEL48:
    033                    7
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL52
    jump                   LABEL59
+LABEL52:
    load_int               1
    load_string            "Collect-item"
    1300                  

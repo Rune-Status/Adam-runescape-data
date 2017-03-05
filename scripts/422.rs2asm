@@ -8,12 +8,14 @@
    036                   
    get_settings           262
    load_int               98
-   if_icmpeq              1
+   if_icmpeq              LABEL12
    jump                   LABEL52
+LABEL12:
    get_settings           261
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL16
    jump                   LABEL32
+LABEL16:
    load_int               1
    load_int               105
    load_int               115
@@ -33,8 +35,9 @@
 LABEL32:
    get_settings           261
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL36
    jump                   LABEL48
+LABEL36:
    load_int               1
    load_int               105
    load_int               115
@@ -56,12 +59,14 @@ LABEL51:
 LABEL52:
    get_settings           261
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL56
    jump                   LABEL76
+LABEL56:
    get_settings           262
    load_int               0
-   if_icmpne              1
+   if_icmpne              LABEL60
    jump                   LABEL76
+LABEL60:
    load_int               1
    load_int               105
    load_int               115
@@ -133,8 +138,9 @@ LABEL79:
    1112                   1
    033                    8
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL131
    jump                   LABEL159
+LABEL131:
    load_int               16750623
    widget_put_textcolor   1
    load_int               85
@@ -217,16 +223,19 @@ LABEL161:
    1112                   1
    033                    8
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL213
    jump                   LABEL249
+LABEL213:
    get_settings           262
    load_int               97
-   if_icmpne              1
+   if_icmpne              LABEL217
    jump                   LABEL249
+LABEL217:
    get_settings           262
    load_int               98
-   if_icmpne              1
+   if_icmpne              LABEL221
    jump                   LABEL249
+LABEL221:
    load_int               16750623
    widget_put_textcolor   1
    load_int               85

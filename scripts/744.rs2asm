@@ -19,8 +19,9 @@
    036                   
    033                    2
    load_int               10
-   if_icmpge              1
+   if_icmpge              LABEL23
    jump                   LABEL31
+LABEL23:
    035                   
    load_string            ":"
    033                    2
@@ -40,8 +41,9 @@ LABEL31:
 LABEL38:
    033                    3
    load_int               10
-   if_icmpge              1
+   if_icmpge              LABEL42
    jump                   LABEL50
+LABEL42:
    035                   
    load_string            ":"
    033                    3
@@ -61,8 +63,9 @@ LABEL50:
 LABEL57:
    033                   
    load_int               3000
-   if_icmple              1
+   if_icmple              LABEL61
    jump                   LABEL66
+LABEL61:
    load_string            "<col=ff0000>"
    035                   
    load_string            "</col>"

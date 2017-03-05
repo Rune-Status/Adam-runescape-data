@@ -13,8 +13,9 @@
 LABEL12:
    033                    6
    load_int               43
-   if_icmple              1
+   if_icmple              LABEL16
    jump                   LABEL86
+LABEL16:
    033                    1
    load_int               5
    033                    6
@@ -25,8 +26,9 @@ LABEL12:
    033                    6
    3408                  
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL28
    jump                   LABEL79
+LABEL28:
    load_int               0
    widget_put_hidden     
    load_int               42
@@ -90,8 +92,9 @@ LABEL81:
 LABEL86:
    033                    4
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL90
    jump                   LABEL94
+LABEL90:
    033                    5
    load_int               48
    iadd                  
@@ -104,8 +107,9 @@ LABEL94:
    033                    5
    033                    1
    widget_get_height_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL103
    jump                   LABEL108
+LABEL103:
    load_int               0
    033                    5
    033                    1

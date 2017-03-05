@@ -3,8 +3,9 @@
    036                    1
    033                   
    load_int               10
-   if_icmpeq              1
+   if_icmpeq              LABEL7
    jump                   LABEL10
+LABEL7:
    035                    1
    048                    24
    jump                   LABEL38
@@ -12,15 +13,17 @@ LABEL10:
    035                    1
    3609                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL15
    jump                   LABEL25
+LABEL15:
    033                   
    load_int               8
-   if_icmpeq              4
+   if_icmpeq              LABEL22
    033                   
    load_int               9
-   if_icmpeq              1
+   if_icmpeq              LABEL22
    jump                   LABEL24
+LABEL22:
    035                    1
    040                    107
 LABEL24:
@@ -28,16 +31,18 @@ LABEL24:
 LABEL25:
    033                   
    load_int               8
-   if_icmpeq              1
+   if_icmpeq              LABEL29
    jump                   LABEL32
+LABEL29:
    035                    1
    add_friend            
    jump                   LABEL38
 LABEL32:
    033                   
    load_int               9
-   if_icmpeq              1
+   if_icmpeq              LABEL36
    jump                   LABEL38
+LABEL36:
    035                    1
    add_ignore            
 LABEL38:

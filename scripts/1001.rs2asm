@@ -1,14 +1,16 @@
    033                   
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL4
    jump                   LABEL6
+LABEL4:
    load_string            ""
    return                
 LABEL6:
    033                   
    load_int               1000
-   if_icmpge              1
+   if_icmpge              LABEL10
    jump                   LABEL16
+LABEL10:
    load_string            "- "
    load_string            "<col=ff0000>"
    load_string            "COMPLETE!"

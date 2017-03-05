@@ -2,8 +2,9 @@
    036                   
    033                    2
    033                    5
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL43
+LABEL6:
    047                    27
    load_int               5
    033                   
@@ -15,8 +16,9 @@
    047                    27
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL19
    jump                   LABEL32
+LABEL19:
    load_int               1
    load_string            "Submit"
    033                    7
@@ -46,8 +48,9 @@ LABEL42:
 LABEL43:
    033                    2
    033                    6
-   if_icmpeq              1
+   if_icmpeq              LABEL47
    jump                   LABEL56
+LABEL47:
    047                    130
    load_int               5
    033                   
@@ -85,8 +88,9 @@ LABEL57:
    034                    9
    033                    8
    033                    9
-   if_icmplt              1
+   if_icmplt              LABEL84
    jump                   LABEL86
+LABEL84:
    033                    9
    034                    8
 LABEL86:
@@ -94,14 +98,16 @@ LABEL86:
    load_int               0
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL92
    jump                   LABEL110
+LABEL92:
    033                    2
    load_int               1
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL98
    jump                   LABEL110
+LABEL98:
    load_int               0
    033                    8
    load_int               1
@@ -117,8 +123,9 @@ LABEL86:
 LABEL110:
    033                    8
    033                    9
-   if_icmpgt              1
+   if_icmpgt              LABEL114
    jump                   LABEL119
+LABEL114:
    load_int               0
    033                    8
    033                    2

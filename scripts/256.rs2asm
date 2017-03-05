@@ -6,14 +6,16 @@
    034                    3
    033                    2
    033                    3
-   if_icmpge              1
+   if_icmpge              LABEL10
    jump                   LABEL36
+LABEL10:
    033                    2
    033                    3
    load_int               128
    iadd                  
-   if_icmplt              1
+   if_icmplt              LABEL16
    jump                   LABEL36
+LABEL16:
    get_coordinates       
    and_16384             
    033                    1
@@ -22,14 +24,16 @@
    034                    2
    033                    2
    033                    3
-   if_icmpge              1
+   if_icmpge              LABEL26
    jump                   LABEL36
+LABEL26:
    033                    2
    033                    3
    load_int               128
    iadd                  
-   if_icmplt              1
+   if_icmplt              LABEL32
    jump                   LABEL36
+LABEL32:
    load_int               0
    033                   
    widget_put_hidden_widget

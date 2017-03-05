@@ -71,8 +71,9 @@
 LABEL70:
    033                    3
    load_int               47
-   if_icmple              1
+   if_icmple              LABEL74
    jump                   LABEL153
+LABEL74:
    033                    1
    load_int               5
    033                    3
@@ -84,12 +85,14 @@ LABEL70:
    034                    2
    033                    2
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL87
    jump                   LABEL146
+LABEL87:
    033                    4
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL91
    jump                   LABEL146
+LABEL91:
    033                    2
    033                    4
    load_int               0

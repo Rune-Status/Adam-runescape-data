@@ -5,8 +5,9 @@
    3408                  
    2702                  
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL9
    jump                   LABEL10
+LABEL9:
    return                
 LABEL10:
    033                    6
@@ -29,8 +30,9 @@ LABEL10:
    034                    10
    033                    10
    load_int               64
-   if_icmpgt              1
+   if_icmpgt              LABEL32
    jump                   LABEL37
+LABEL32:
    033                    10
    load_int               32
    isub                  
@@ -44,8 +46,9 @@ LABEL37:
 LABEL41:
    033                    11
    load_int               64
-   if_icmpgt              1
+   if_icmpgt              LABEL45
    jump                   LABEL50
+LABEL45:
    033                    11
    load_int               32
    isub                  
@@ -59,8 +62,9 @@ LABEL50:
 LABEL54:
    033                    12
    load_int               64
-   if_icmpgt              1
+   if_icmpgt              LABEL58
    jump                   LABEL63
+LABEL58:
    033                    12
    load_int               32
    isub                  
@@ -87,8 +91,9 @@ LABEL78:
    035                    1
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL83
    jump                   LABEL146
+LABEL83:
    035                    1
    033                    7
    033                    3
@@ -120,8 +125,9 @@ LABEL78:
    load_int               2
    modulo                
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL116
    jump                   LABEL119
+LABEL116:
    033                   
    widget_put_textcolor  
    jump                   LABEL121
@@ -157,8 +163,9 @@ LABEL121:
 LABEL146:
    033                    9
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL150
    jump                   LABEL154
+LABEL150:
    042                    49
    load_int               3
    iadd                  

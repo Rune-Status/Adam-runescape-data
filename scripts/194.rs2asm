@@ -1,11 +1,13 @@
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL11
+LABEL4:
    get_clanchatcount     
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL8
    jump                   LABEL10
+LABEL8:
    3620                  
    jump                   LABEL11
 LABEL10:

@@ -5,8 +5,9 @@
    3408                  
    2702                  
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL9
    jump                   LABEL10
+LABEL9:
    return                
 LABEL10:
    load_int               2013
@@ -20,8 +21,9 @@ LABEL10:
 LABEL18:
    033                    3
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL22
    jump                   LABEL176
+LABEL22:
    033                    3
    102                   
    033                    3
@@ -58,8 +60,9 @@ LABEL18:
    1107                   1
    033                    2
    033                   
-   if_icmpeq              1
+   if_icmpeq              LABEL60
    jump                   LABEL109
+LABEL60:
    load_int               177
    widget_put_textureid  
    load_int               178
@@ -186,8 +189,9 @@ LABEL176:
 LABEL180:
    033                    4
    033                    1
-   if_icmplt              1
+   if_icmplt              LABEL184
    jump                   LABEL195
+LABEL184:
    load_int               20316168
    load_int               3
    033                    4
@@ -214,8 +218,9 @@ LABEL195:
 LABEL206:
    033                    8
    033                    1
-   if_icmplt              1
+   if_icmplt              LABEL210
    jump                   LABEL363
+LABEL210:
    load_int               20316168
    load_int               3
    033                    4
@@ -362,8 +367,9 @@ LABEL206:
    034                    5
    033                    8
    033                    1
-   if_icmplt              1
+   if_icmplt              LABEL358
    jump                   LABEL362
+LABEL358:
    033                    5
    load_int               10
    iadd                  
@@ -374,8 +380,9 @@ LABEL363:
    033                    5
    load_int               20316168
    widget_get_height_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL368
    jump                   LABEL373
+LABEL368:
    load_int               0
    033                    5
    load_int               20316168

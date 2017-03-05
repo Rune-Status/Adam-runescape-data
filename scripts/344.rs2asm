@@ -4,8 +4,9 @@
    034                    2
    033                    2
    load_int               90
-   if_icmplt              1
+   if_icmplt              LABEL8
    jump                   LABEL19
+LABEL8:
    load_int               255
    load_int               0
    033                    2
@@ -20,8 +21,9 @@
 LABEL19:
    033                    2
    load_int               195
-   if_icmplt              1
+   if_icmplt              LABEL23
    jump                   LABEL27
+LABEL23:
    load_int               0
    033                   
    widget_put_opacity_widget
@@ -29,8 +31,9 @@ LABEL19:
 LABEL27:
    033                    2
    load_int               255
-   if_icmplt              1
+   if_icmplt              LABEL31
    jump                   LABEL44
+LABEL31:
    load_int               255
    load_int               0
    load_int               255

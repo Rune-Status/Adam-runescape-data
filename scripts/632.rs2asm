@@ -3,8 +3,9 @@
    034                   
    033                   
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL7
    jump                   LABEL10
+LABEL7:
    load_string            ""
    load_string            ""
    return                
@@ -16,16 +17,18 @@ LABEL10:
    034                    1
    033                    1
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL19
    jump                   LABEL22
+LABEL19:
    035                   
    load_string            ""
    return                
 LABEL22:
    033                    1
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL26
    jump                   LABEL32
+LABEL26:
    load_string            ""
    035                   
    load_int               1
@@ -37,8 +40,9 @@ LABEL32:
    load_int               1
    iadd                  
    033                   
-   if_icmpge              1
+   if_icmpge              LABEL38
    jump                   LABEL44
+LABEL38:
    035                   
    load_int               0
    033                    1

@@ -1,7 +1,8 @@
    025                    1776
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL30
+LABEL4:
    load_int               697
    load_int               14090280
    widget_put_textureid_widget
@@ -10,8 +11,9 @@
    widget_put_textureid_widget
    get_settings           281
    load_int               1000
-   if_icmplt              1
+   if_icmplt              LABEL14
    jump                   LABEL21
+LABEL14:
    load_int               692
    load_int               -2147483644
    load_int               0
@@ -43,8 +45,9 @@ LABEL30:
    2409                  
    get_settings           281
    load_int               1000
-   if_icmplt              1
+   if_icmplt              LABEL44
    jump                   LABEL51
+LABEL44:
    load_int               692
    load_int               -2147483644
    load_int               1

@@ -1,7 +1,8 @@
    025                    3905
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL11
+LABEL4:
    025                    3901
    int_to_string         
    load_string            "/5"
@@ -12,8 +13,9 @@
 LABEL11:
    025                    3905
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL15
    jump                   LABEL22
+LABEL15:
    025                    3902
    int_to_string         
    load_string            "/5"
@@ -24,8 +26,9 @@ LABEL11:
 LABEL22:
    025                    3905
    load_int               3
-   if_icmpeq              1
+   if_icmpeq              LABEL26
    jump                   LABEL33
+LABEL26:
    025                    3903
    int_to_string         
    load_string            "/5"
@@ -36,8 +39,9 @@ LABEL22:
 LABEL33:
    025                    3905
    load_int               4
-   if_icmpeq              1
+   if_icmpeq              LABEL37
    jump                   LABEL43
+LABEL37:
    025                    3904
    int_to_string         
    load_string            "/5"

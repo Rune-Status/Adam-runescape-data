@@ -6,16 +6,19 @@
    040                    900
    3408                  
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL10
    jump                   LABEL27
+LABEL10:
    042                    41
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL14
    jump                   LABEL23
+LABEL14:
    040                    922
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL18
    jump                   LABEL23
+LABEL18:
    033                    1
    load_int               23
    iadd                  
@@ -46,8 +49,9 @@ LABEL27:
    036                   
    3317                  
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL48
    jump                   LABEL112
+LABEL48:
    3317                  
    load_int               50
    idiv                  
@@ -56,8 +60,9 @@ LABEL27:
    034                    6
    033                    6
    load_int               10
-   if_icmplt              1
+   if_icmplt              LABEL58
    jump                   LABEL69
+LABEL58:
    load_string            "System update in: "
    3317                  
    load_int               3000
@@ -127,13 +132,15 @@ LABEL112:
    get_gamecycle         
    load_int               3000
    isub                  
-   if_icmpgt              1
+   if_icmpgt              LABEL126
    jump                   LABEL176
+LABEL126:
    load_int               14
    5017                  
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL131
    jump                   LABEL176
+LABEL131:
    load_int               14
    load_int               0
    5003                  
@@ -144,8 +151,9 @@ LABEL112:
    034                    7
    033                    7
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL143
    jump                   LABEL176
+LABEL143:
    033                    2
    035                   
    033                    4
@@ -186,30 +194,34 @@ LABEL176:
    034                    9
    get_settings           287
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL184
    jump                   LABEL357
+LABEL184:
    042                    41
    load_int               -1
-   if_icmpne              4
+   if_icmpne              LABEL191
    025                    4089
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL191
    jump                   LABEL357
 LABEL191:
    033                    7
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL195
    jump                   LABEL357
+LABEL195:
    033                    5
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL199
    jump                   LABEL357
+LABEL199:
    033                    2
    033                    1
    isub                  
    load_int               57
-   if_icmplt              1
+   if_icmplt              LABEL205
    jump                   LABEL357
+LABEL205:
    033                    7
    5004                  
    036                   
@@ -222,15 +234,17 @@ LABEL191:
    033                    8
    040                    91
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL219
    jump                   LABEL353
+LABEL219:
    033                    9
    load_int               3
-   if_icmpeq              4
+   if_icmpeq              LABEL226
    033                    9
    load_int               7
-   if_icmpeq              1
+   if_icmpeq              LABEL226
    jump                   LABEL246
+LABEL226:
    033                    2
    load_string            "From?"
    035                    1
@@ -254,8 +268,9 @@ LABEL191:
 LABEL246:
    033                    9
    load_int               6
-   if_icmpeq              1
+   if_icmpeq              LABEL250
    jump                   LABEL270
+LABEL250:
    033                    2
    load_string            "To?"
    035                    1
@@ -294,12 +309,14 @@ LABEL270:
    034                    2
    033                    9
    load_int               5
-   if_icmpeq              1
+   if_icmpeq              LABEL289
    jump                   LABEL304
+LABEL289:
    025                    1627
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL293
    jump                   LABEL304
+LABEL293:
    033                    8
    load_int               500
    iadd                  
@@ -316,14 +333,15 @@ LABEL304:
    widget_put_actions_null_widget
    033                    9
    load_int               3
-   if_icmpeq              7
+   if_icmpeq              LABEL316
    033                    9
    load_int               6
-   if_icmpeq              4
+   if_icmpeq              LABEL316
    033                    9
    load_int               7
-   if_icmpeq              1
+   if_icmpeq              LABEL316
    jump                   LABEL343
+LABEL316:
    load_string            "<col=ffffff>"
    035                    1
    037                    2
@@ -332,8 +350,9 @@ LABEL304:
    035                    1
    3609                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL326
    jump                   LABEL331
+LABEL326:
    load_int               8
    load_string            "Message"
    033                    5
@@ -372,8 +391,9 @@ LABEL353:
 LABEL357:
    033                    5
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL361
    jump                   LABEL406
+LABEL361:
    033                    5
    widget_put_actions_null_widget
    load_int               0
@@ -388,8 +408,9 @@ LABEL357:
    imul                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL377
    jump                   LABEL381
+LABEL377:
    load_string            ""
    1112                  
    load_int               1
@@ -403,8 +424,9 @@ LABEL381:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL391
    jump                   LABEL395
+LABEL391:
    load_string            ""
    1112                  
    load_int               1

@@ -5,8 +5,9 @@ LABEL2:
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL8
    jump                   LABEL15
+LABEL8:
    load_int               1345
    widget_put_textureid  
    033                    1
@@ -21,8 +22,9 @@ LABEL15:
    imul                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL23
    jump                   LABEL25
+LABEL23:
    load_int               1344
    widget_put_textureid  
 LABEL25:
@@ -34,8 +36,9 @@ LABEL25:
    036                   
    033                   
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL35
    jump                   LABEL57
+LABEL35:
    load_string            "In Deadman mode, when you die "
    load_string            "<col=ffffff>"
    load_string            "unskulled"
@@ -61,8 +64,9 @@ LABEL25:
 LABEL57:
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL61
    jump                   LABEL87
+LABEL61:
    load_string            "In Deadman mode, when you die from "
    load_string            "<col=ffffff>"
    load_string            "PvP combat"
@@ -92,8 +96,9 @@ LABEL57:
 LABEL87:
    033                   
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL91
    jump                   LABEL117
+LABEL91:
    load_string            "In Deadman mode, if you die whilst "
    load_string            "<col=ffffff>"
    load_string            "skulled"
@@ -123,8 +128,9 @@ LABEL87:
 LABEL117:
    033                   
    load_int               3
-   if_icmpeq              1
+   if_icmpeq              LABEL121
    jump                   LABEL151
+LABEL121:
    load_string            "In Deadman mode, if you die in a "
    load_string            "<col=ffffff>"
    load_string            "guarded"

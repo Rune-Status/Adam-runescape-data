@@ -2,8 +2,9 @@
    036                   
    040                    921
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL15
+LABEL6:
    load_string            "<col=9090ff>"
    036                   
    load_int               16777215
@@ -31,16 +32,18 @@ LABEL21:
    036                    2
    025                    1777
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL33
    jump                   LABEL36
+LABEL33:
    load_string            "<img=2>"
    036                    2
    jump                   LABEL42
 LABEL36:
    025                    1777
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL40
    jump                   LABEL42
+LABEL40:
    load_string            "<img=3>"
    036                    2
 LABEL42:
@@ -54,8 +57,9 @@ LABEL42:
    036                    3
    033                   
    load_int               80
-   if_icmplt              1
+   if_icmplt              LABEL54
    jump                   LABEL61
+LABEL54:
    035                    3
    035                   
    load_string            "*"
@@ -72,8 +76,9 @@ LABEL61:
    033                    1
    load_int               10616874
    widget_get_width_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL71
    jump                   LABEL77
+LABEL71:
    load_int               2
    load_int               2
    load_int               0

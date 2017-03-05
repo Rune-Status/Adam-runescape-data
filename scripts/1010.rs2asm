@@ -323,8 +323,9 @@
 LABEL322:
    033                    46
    load_int               23
-   if_icmple              1
+   if_icmple              LABEL326
    jump                   LABEL474
+LABEL326:
    033                    25
    load_int               3
    033                    46
@@ -354,8 +355,9 @@ LABEL322:
    load_int               2
    modulo                
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL357
    jump                   LABEL369
+LABEL357:
    load_int               16777215
    widget_put_textcolor  
    load_int               255
@@ -386,8 +388,9 @@ LABEL380:
    1300                  
    033                    46
    load_int               23
-   if_icmplt              1
+   if_icmplt              LABEL387
    jump                   LABEL436
+LABEL387:
    033                    46
    load_int               105
    load_int               83
@@ -485,8 +488,9 @@ LABEL474:
 LABEL478:
    033                    48
    load_int               23
-   if_icmple              1
+   if_icmple              LABEL482
    jump                   LABEL593
+LABEL482:
    033                    48
    load_int               25
    imul                  
@@ -511,8 +515,9 @@ LABEL478:
    1000                  
    033                    48
    load_int               23
-   if_icmplt              1
+   if_icmplt              LABEL508
    jump                   LABEL516
+LABEL508:
    load_int               83
    load_int               100
    load_int               255
@@ -555,8 +560,9 @@ LABEL518:
    1115                  
    033                    48
    load_int               23
-   if_icmplt              1
+   if_icmplt              LABEL550
    jump                   LABEL558
+LABEL550:
    load_int               83
    load_int               115
    load_int               680
@@ -618,8 +624,9 @@ LABEL593:
    033                    47
    033                    25
    widget_get_height_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL610
    jump                   LABEL615
+LABEL610:
    load_int               0
    033                    47
    033                    25

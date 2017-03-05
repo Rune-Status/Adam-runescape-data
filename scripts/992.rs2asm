@@ -2,12 +2,14 @@
    get_gamecycle         
    033                    4
    iadd                  
-   if_icmplt              1
+   if_icmplt              LABEL6
    jump                   LABEL17
+LABEL6:
    042                    1
    get_gamecycle         
-   if_icmplt              1
+   if_icmplt              LABEL10
    jump                   LABEL12
+LABEL10:
    get_gamecycle         
    043                    1
 LABEL12:
@@ -25,12 +27,13 @@ LABEL17:
    043                    1
    042                    2
    load_int               1
-   if_icmpeq              5
+   if_icmpeq              LABEL31
    033                    2
    widget_get_hidden_widget
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL31
    jump                   LABEL32
+LABEL31:
    return                
 LABEL32:
    load_int               495
@@ -41,8 +44,9 @@ LABEL32:
    034                    7
    033                    3
    load_int               494
-   if_icmpeq              1
+   if_icmpeq              LABEL42
    jump                   LABEL49
+LABEL42:
    load_int               494
    load_int               10
    load_int               2
@@ -53,8 +57,9 @@ LABEL32:
 LABEL49:
    033                    3
    load_int               496
-   if_icmpeq              1
+   if_icmpeq              LABEL53
    jump                   LABEL55
+LABEL53:
    load_int               496
    034                    5
 LABEL55:
@@ -93,15 +98,17 @@ LABEL55:
 LABEL87:
    033                    13
    load_int               0
-   if_icmpgt              4
+   if_icmpgt              LABEL94
    033                    14
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL94
    jump                   LABEL188
+LABEL94:
    033                    13
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL98
    jump                   LABEL104
+LABEL98:
    035                    4
    load_int               2147483647
    033                    3
@@ -114,8 +121,9 @@ LABEL104:
 LABEL106:
    033                    14
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL110
    jump                   LABEL116
+LABEL110:
    035                    5
    load_int               2147483647
    033                    3
@@ -134,15 +142,17 @@ LABEL118:
    034                    10
    033                    11
    033                    10
-   if_icmplt              1
+   if_icmplt              LABEL128
    jump                   LABEL130
+LABEL128:
    033                    10
    034                    11
 LABEL130:
    033                    12
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL134
    jump                   LABEL147
+LABEL134:
    035                    2
    load_string            "<br>"
    035                    4
@@ -173,12 +183,13 @@ LABEL155:
    035                   
    string_length         
    load_int               0
-   if_icmpgt              5
+   if_icmpgt              LABEL168
    035                    1
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL168
    jump                   LABEL183
+LABEL168:
    035                   
    040                    632
    036                   
@@ -232,14 +243,16 @@ LABEL188:
    034                    17
    033                    1
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL220
    jump                   LABEL243
+LABEL220:
    033                   
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL226
    jump                   LABEL243
+LABEL226:
    033                    15
    widget_get_relativex  
    iadd                  
@@ -268,8 +281,9 @@ LABEL246:
 LABEL249:
    033                    18
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL253
    jump                   LABEL273
+LABEL253:
    033                    15
    033                    18
    widget_get_relativex_widget
@@ -308,8 +322,9 @@ LABEL273:
    034                    22
    033                    22
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL292
    jump                   LABEL316
+LABEL292:
    033                    22
    widget_get_width_widget
    033                    10
@@ -317,8 +332,9 @@ LABEL273:
    034                    21
    033                    19
    033                    21
-   if_icmpgt              1
+   if_icmpgt              LABEL301
    jump                   LABEL303
+LABEL301:
    033                    21
    034                    19
 LABEL303:
@@ -327,8 +343,9 @@ LABEL303:
    widget_get_height_widget
    033                    6
    isub                  
-   if_icmpgt              1
+   if_icmpgt              LABEL310
    jump                   LABEL316
+LABEL310:
    033                    16
    033                    6
    isub                  

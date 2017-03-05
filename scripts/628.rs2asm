@@ -6,8 +6,9 @@
    033                    2
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL24
+LABEL10:
    load_string            "<col=ffffff>"
    load_string            "Loading..."
    load_string            "</col>"
@@ -27,8 +28,9 @@ LABEL24:
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL30
    jump                   LABEL31
+LABEL30:
    1121                  
 LABEL31:
    return                

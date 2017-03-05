@@ -29,8 +29,9 @@
 LABEL28:
    033                    9
    load_int               27
-   if_icmple              1
+   if_icmple              LABEL32
    jump                   LABEL111
+LABEL32:
    033                   
    load_int               5
    033                    9
@@ -39,8 +40,9 @@ LABEL28:
    033                    9
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL42
    jump                   LABEL104
+LABEL42:
    load_int               105
    load_int               79
    load_int               985
@@ -76,8 +78,9 @@ LABEL28:
    widget_put_borderthickness
    033                   
    load_int               9699342
-   if_icmpeq              1
+   if_icmpeq              LABEL79
    jump                   LABEL88
+LABEL79:
    load_int               1
    load_string            "Reclaim"
    1300                  
@@ -116,8 +119,9 @@ LABEL106:
 LABEL111:
    033                    6
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL115
    jump                   LABEL142
+LABEL115:
    033                   
    load_int               4
    033                    9
@@ -157,8 +161,9 @@ LABEL146:
    widget_put_scroll_widget
    033                    8
    033                    4
-   if_icmpgt              1
+   if_icmpgt              LABEL154
    jump                   LABEL159
+LABEL154:
    load_int               0
    033                    8
    033                   

@@ -11,8 +11,9 @@
    034                    11
    033                    7
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL15
    jump                   LABEL19
+LABEL15:
    033                    6
    033                    11
    isub                  
@@ -24,8 +25,9 @@ LABEL19:
    imul                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL27
    jump                   LABEL57
+LABEL27:
    033                    10
    033                    11
    load_int               0
@@ -65,8 +67,9 @@ LABEL57:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL67
    jump                   LABEL71
+LABEL67:
    load_string            ""
    1112                  
    load_int               1

@@ -2,12 +2,14 @@
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL23
+LABEL6:
    033                    2
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL10
    jump                   LABEL14
+LABEL10:
    033                    2
    load_int               1
    isub                  

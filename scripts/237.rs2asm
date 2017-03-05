@@ -33,40 +33,45 @@
    load_int               6
    get_boostedskilllevels
    033                    1
-   if_icmpge              1
+   if_icmpge              LABEL37
    jump                   LABEL76
+LABEL37:
    033                    2
    load_int               -1
-   if_icmpeq              5
+   if_icmpeq              LABEL45
    033                    2
    040                    19
    033                    3
-   if_icmpge              1
+   if_icmpge              LABEL45
    jump                   LABEL76
+LABEL45:
    033                    4
    load_int               -1
-   if_icmpeq              5
+   if_icmpeq              LABEL53
    033                    4
    040                    19
    033                    5
-   if_icmpge              1
+   if_icmpge              LABEL53
    jump                   LABEL76
+LABEL53:
    033                    6
    load_int               -1
-   if_icmpeq              5
+   if_icmpeq              LABEL61
    033                    6
    040                    19
    033                    7
-   if_icmpge              1
+   if_icmpge              LABEL61
    jump                   LABEL76
+LABEL61:
    033                    8
    load_int               -1
-   if_icmpeq              5
+   if_icmpeq              LABEL69
    033                    8
    040                    19
    033                    9
-   if_icmpge              1
+   if_icmpge              LABEL69
    jump                   LABEL76
+LABEL69:
    load_int               105
    load_int               100
    load_int               796

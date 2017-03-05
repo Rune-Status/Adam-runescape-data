@@ -1,7 +1,8 @@
    033                   
    load_int               3
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL20
+LABEL4:
    load_string            "Finally, the FOURTH digit."
    033                    18
    2112                  
@@ -21,8 +22,9 @@
 LABEL20:
    033                   
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL24
    jump                   LABEL40
+LABEL24:
    load_string            "Time for the THIRD digit."
    033                    18
    2112                  
@@ -42,8 +44,9 @@ LABEL20:
 LABEL40:
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL44
    jump                   LABEL60
+LABEL44:
    load_string            "Now click the SECOND digit."
    033                    18
    2112                  
@@ -63,8 +66,9 @@ LABEL40:
 LABEL60:
    033                   
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL64
    jump                   LABEL80
+LABEL64:
    load_string            "First click the FIRST digit."
    033                    18
    2112                  
@@ -172,8 +176,9 @@ LABEL128:
 LABEL166:
    033                    21
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL170
    jump                   LABEL188
+LABEL170:
    033                    21
    load_int               1
    isub                  

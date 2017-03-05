@@ -8,8 +8,9 @@
 LABEL7:
    033                    2
    033                    3
-   if_icmplt              1
+   if_icmplt              LABEL11
    jump                   LABEL35
+LABEL11:
    033                   
    load_int               5
    033                    2
@@ -42,8 +43,9 @@ LABEL35:
 LABEL39:
    033                    2
    load_int               4
-   if_icmplt              1
+   if_icmplt              LABEL43
    jump                   LABEL76
+LABEL43:
    033                    1
    load_int               3
    033                    2

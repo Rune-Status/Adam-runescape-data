@@ -12,20 +12,23 @@
    034                    4
    033                    4
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL16
    jump                   LABEL41
+LABEL16:
    033                    2
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL20
    jump                   LABEL30
+LABEL20:
    033                    4
    load_int               2
    idiv                  
    034                    4
    033                    4
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL28
    jump                   LABEL30
+LABEL28:
    load_int               1
    034                    4
 LABEL30:
@@ -43,20 +46,23 @@ LABEL30:
 LABEL41:
    033                    4
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL45
    jump                   LABEL70
+LABEL45:
    033                    2
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL49
    jump                   LABEL59
+LABEL49:
    033                    4
    load_int               2
    idiv                  
    034                    4
    033                    4
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL57
    jump                   LABEL59
+LABEL57:
    load_int               -1
    034                    4
 LABEL59:

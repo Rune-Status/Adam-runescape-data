@@ -61,8 +61,9 @@
 LABEL60:
    033                    1
    load_int               516
-   if_icmple              1
+   if_icmple              LABEL64
    jump                   LABEL127
+LABEL64:
    load_int               105
    load_int               105
    load_int               818
@@ -71,14 +72,16 @@ LABEL60:
    034                    2
    033                    2
    load_int               0
-   if_icmpne              1
+   if_icmpne              LABEL74
    jump                   LABEL122
+LABEL74:
    033                   
    033                    2
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL80
    jump                   LABEL122
+LABEL80:
    load_int               105
    load_int               99
    load_int               819
@@ -87,8 +90,9 @@ LABEL60:
    034                    3
    033                    3
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL90
    jump                   LABEL120
+LABEL90:
    033                    3
    divide_by_16384       
    033                    3
@@ -100,20 +104,23 @@ LABEL60:
    033                    5
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL103
    jump                   LABEL106
+LABEL103:
    load_int               65280
    040                    314
    jump                   LABEL119
 LABEL106:
    033                    2
    load_int               331
-   if_icmpeq              1
+   if_icmpeq              LABEL110
    jump                   LABEL117
+LABEL110:
    025                    1028
    load_int               35
-   if_icmpgt              1
+   if_icmpgt              LABEL114
    jump                   LABEL117
+LABEL114:
    load_int               65280
    040                    314
    jump                   LABEL119

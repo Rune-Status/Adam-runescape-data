@@ -27,24 +27,28 @@
 LABEL26:
    033                    11
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL30
    jump                   LABEL73
+LABEL30:
    035                   
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL35
    jump                   LABEL73
+LABEL35:
    035                   
    033                    11
    2112                  
    025                    4372
    033                    9
-   if_icmpeq              1
+   if_icmpeq              LABEL42
    jump                   LABEL57
+LABEL42:
    033                    10
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL46
    jump                   LABEL52
+LABEL46:
    035                   
    load_string            " - Members Only"
    concat_string         
@@ -82,8 +86,9 @@ LABEL73:
    034                    9
    033                    12
    load_int               2
-   if_icmpge              1
+   if_icmpge              LABEL81
    jump                   LABEL141
+LABEL81:
    load_int               0
    033                    5
    widget_put_hidden_widget
@@ -120,12 +125,14 @@ LABEL73:
 LABEL114:
    033                    11
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL118
    jump                   LABEL140
+LABEL118:
    033                    9
    033                    12
-   if_icmplt              1
+   if_icmplt              LABEL122
    jump                   LABEL126
+LABEL122:
    load_int               0
    033                    11
    widget_put_hidden_widget
@@ -167,8 +174,9 @@ LABEL141:
 LABEL156:
    033                    11
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL160
    jump                   LABEL174
+LABEL160:
    load_int               1
    033                    11
    widget_put_hidden_widget
@@ -217,8 +225,9 @@ LABEL174:
 LABEL204:
    033                    16
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL208
    jump                   LABEL231
+LABEL208:
    033                    15
    033                    16
    035                   
@@ -257,8 +266,9 @@ LABEL231:
    033                    14
    033                    2
    widget_get_height_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL247
    jump                   LABEL261
+LABEL247:
    load_int               0
    033                    14
    033                    2

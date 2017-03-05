@@ -7,8 +7,9 @@
    034                    1
    033                    1
    load_int               120
-   if_icmplt              1
+   if_icmplt              LABEL11
    jump                   LABEL13
+LABEL11:
    load_int               120
    034                    1
 LABEL13:
@@ -21,8 +22,9 @@ LABEL13:
    034                    2
    033                    2
    load_int               60
-   if_icmplt              1
+   if_icmplt              LABEL24
    jump                   LABEL26
+LABEL24:
    load_int               60
    034                    2
 LABEL26:
@@ -34,12 +36,14 @@ LABEL26:
    2001                  
    033                    1
    load_int               120
-   if_icmpeq              1
+   if_icmpeq              LABEL36
    jump                   LABEL44
+LABEL36:
    033                    2
    load_int               60
-   if_icmpeq              1
+   if_icmpeq              LABEL40
    jump                   LABEL44
+LABEL40:
    load_int               -1
    load_string            ""
    033                   

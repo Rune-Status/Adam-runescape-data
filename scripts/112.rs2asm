@@ -1,20 +1,24 @@
    033                   
    load_int               84
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL32
+LABEL4:
    042                    56
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL8
    jump                   LABEL30
+LABEL8:
    047                    22
    string_length         
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL13
    jump                   LABEL30
+LABEL13:
    042                    5
    load_int               8
-   if_icmpeq              1
+   if_icmpeq              LABEL17
    jump                   LABEL22
+LABEL17:
    047                    128
    048                    22
    035                   
@@ -23,8 +27,9 @@
 LABEL22:
    042                    5
    load_int               10
-   if_icmpeq              1
+   if_icmpeq              LABEL26
    jump                   LABEL30
+LABEL26:
    047                    129
    048                    22
    035                   
@@ -35,14 +40,15 @@ LABEL30:
 LABEL32:
    042                    5
    load_int               6
-   if_icmpeq              7
+   if_icmpeq              LABEL42
    042                    5
    load_int               9
-   if_icmpeq              4
+   if_icmpeq              LABEL42
    042                    5
    load_int               11
-   if_icmpeq              1
+   if_icmpeq              LABEL42
    jump                   LABEL49
+LABEL42:
    047                    22
    load_int               0
    033                   
@@ -53,8 +59,9 @@ LABEL32:
 LABEL49:
    042                    5
    load_int               7
-   if_icmpeq              1
+   if_icmpeq              LABEL53
    jump                   LABEL60
+LABEL53:
    047                    22
    load_int               1
    033                   
@@ -65,8 +72,9 @@ LABEL49:
 LABEL60:
    042                    5
    load_int               12
-   if_icmpeq              1
+   if_icmpeq              LABEL64
    jump                   LABEL72
+LABEL64:
    047                    22
    load_int               3
    033                   
@@ -78,8 +86,9 @@ LABEL60:
 LABEL72:
    042                    5
    load_int               13
-   if_icmpeq              1
+   if_icmpeq              LABEL76
    jump                   LABEL84
+LABEL76:
    047                    22
    load_int               0
    033                   
@@ -91,12 +100,14 @@ LABEL72:
 LABEL84:
    042                    5
    load_int               14
-   if_icmpeq              1
+   if_icmpeq              LABEL88
    jump                   LABEL109
+LABEL88:
    033                   
    load_int               13
-   if_icmpeq              1
+   if_icmpeq              LABEL92
    jump                   LABEL102
+LABEL92:
    load_int               -1
    3115                  
    load_int               2266

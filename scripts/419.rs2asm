@@ -4,8 +4,9 @@
    102                   
    033                   
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL8
    jump                   LABEL9
+LABEL8:
    return                
 LABEL9:
    load_int               -1
@@ -29,20 +30,23 @@ LABEL9:
 LABEL27:
    033                    7
    033                    6
-   if_icmplt              1
+   if_icmplt              LABEL31
    jump                   LABEL213
+LABEL31:
    033                   
    033                    7
    3301                  
    034                    4
    033                    4
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL39
    jump                   LABEL208
+LABEL39:
    033                    7
    load_int               31
-   if_icmplt              1
+   if_icmplt              LABEL43
    jump                   LABEL48
+LABEL43:
    033                    1
    033                    7
    test_bit              
@@ -76,8 +80,9 @@ LABEL54:
    1102                  
    033                    4
    load_int               10165
-   if_icmpeq              1
+   if_icmpeq              LABEL76
    jump                   LABEL80
+LABEL76:
    load_int               1
    load_string            "More"
    1300                  
@@ -85,8 +90,9 @@ LABEL54:
 LABEL80:
    033                    4
    load_int               10166
-   if_icmpeq              1
+   if_icmpeq              LABEL84
    jump                   LABEL88
+LABEL84:
    load_int               1
    load_string            "Back"
    1300                  
@@ -94,8 +100,9 @@ LABEL80:
 LABEL88:
    033                    10
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL92
    jump                   LABEL95
+LABEL92:
    load_int               1
    load_string            "Take"
    1300                  
@@ -202,8 +209,9 @@ LABEL103:
    1102                  
    033                    10
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL198
    jump                   LABEL200
+LABEL198:
    load_int               1
    widget_put_hidden     
 LABEL200:
@@ -243,8 +251,9 @@ LABEL213:
    034                    11
    033                    3
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL236
    jump                   LABEL238
+LABEL236:
    load_int               0
    043                    58
 LABEL238:
@@ -254,8 +263,9 @@ LABEL238:
    040                    72
    033                    3
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL246
    jump                   LABEL248
+LABEL246:
    033                    11
    043                    58
 LABEL248:

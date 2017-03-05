@@ -47,8 +47,9 @@
    033                    2
    load_int               6029315
    widget_get_height_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL51
    jump                   LABEL56
+LABEL51:
    load_int               0
    033                    2
    load_int               6029315
@@ -71,8 +72,9 @@ LABEL60:
    040                    31
    033                   
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL73
    jump                   LABEL101
+LABEL73:
    load_int               1
    load_int               6029318
    widget_put_hidden_widget
@@ -104,8 +106,9 @@ LABEL60:
 LABEL101:
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL105
    jump                   LABEL117
+LABEL105:
    load_int               0
    load_int               6029318
    widget_put_hidden_widget

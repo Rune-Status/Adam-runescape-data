@@ -2,8 +2,9 @@
    033                   
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL40
+LABEL6:
    033                    3
    033                    1
    widget_get_scrolly_widget
@@ -11,8 +12,9 @@
    034                    3
    033                    3
    load_int               10
-   if_icmplt              1
+   if_icmplt              LABEL15
    jump                   LABEL23
+LABEL15:
    033                    2
    033                    1
    033                    1
@@ -29,8 +31,9 @@ LABEL23:
    widget_get_height_widget
    load_int               10
    isub                  
-   if_icmpgt              1
+   if_icmpgt              LABEL32
    jump                   LABEL40
+LABEL32:
    033                    2
    033                    1
    033                    1

@@ -1,13 +1,15 @@
    033                   
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL4
    jump                   LABEL95
+LABEL4:
    widget_put_actions_null
    033                   
    4209                  
    033                   
-   if_icmpne              1
+   if_icmpne              LABEL10
    jump                   LABEL28
+LABEL10:
    033                   
    load_int               0
    1200                  
@@ -41,8 +43,9 @@ LABEL28:
    1300                  
    025                    3960
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL44
    jump                   LABEL50
+LABEL44:
    load_int               4
    load_string            "Withdraw-"
    025                    3960
@@ -61,8 +64,9 @@ LABEL50:
    1300                  
    025                    3755
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL63
    jump                   LABEL66
+LABEL63:
    load_int               8
    load_string            "Placeholder"
    1300                  

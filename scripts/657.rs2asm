@@ -26,8 +26,9 @@
    1115                  
    033                   
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL30
    jump                   LABEL34
+LABEL30:
    033                   
    int_to_string         
    1112                  
@@ -59,16 +60,19 @@ LABEL36:
    1200                  
    025                    4371
    load_int               22
-   if_icmpeq              1
+   if_icmpeq              LABEL61
    jump                   LABEL72
+LABEL61:
    033                    5
    load_int               1
-   if_icmpge              1
+   if_icmpge              LABEL65
    jump                   LABEL72
+LABEL65:
    033                    5
    load_int               11
-   if_icmple              1
+   if_icmple              LABEL69
    jump                   LABEL72
+LABEL69:
    load_int               1
    load_string            "Check materials"
    1300                  
@@ -90,8 +94,9 @@ LABEL72:
    034                    8
    033                    8
    load_int               32
-   if_icmplt              1
+   if_icmplt              LABEL91
    jump                   LABEL93
+LABEL91:
    load_int               32
    034                    8
 LABEL93:

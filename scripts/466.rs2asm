@@ -20,8 +20,9 @@
 LABEL19:
    033                    4
    load_int               26
-   if_icmple              1
+   if_icmple              LABEL23
    jump                   LABEL70
+LABEL23:
    load_int               105
    load_int               73
    load_int               859
@@ -30,8 +31,9 @@ LABEL19:
    034                    5
    033                    5
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL33
    jump                   LABEL54
+LABEL33:
    033                    1
    load_int               5
    033                    4
@@ -74,8 +76,9 @@ LABEL65:
 LABEL70:
    033                    3
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL74
    jump                   LABEL80
+LABEL74:
    load_int               0
    load_int               0
    033                    3
@@ -96,8 +99,9 @@ LABEL80:
 LABEL90:
    033                    9
    033                    3
-   if_icmplt              1
+   if_icmplt              LABEL94
    jump                   LABEL250
+LABEL94:
    033                    9
    load_int               5
    modulo                
@@ -115,8 +119,9 @@ LABEL90:
    045                   
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL113
    jump                   LABEL245
+LABEL113:
    033                    7
    033                    8
    load_int               0
@@ -161,11 +166,12 @@ LABEL90:
    040                    468
    033                    4
    load_int               25
-   if_icmpeq              4
+   if_icmpeq              LABEL162
    033                    4
    load_int               26
-   if_icmpeq              1
+   if_icmpeq              LABEL162
    jump                   LABEL182
+LABEL162:
    load_int               467
    033                    9
    045                   

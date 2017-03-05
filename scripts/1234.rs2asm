@@ -6,18 +6,21 @@
    034                    3
    033                    1
    load_int               0
-   if_icmpge              1
+   if_icmpge              LABEL10
    jump                   LABEL95
+LABEL10:
    033                   
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL14
    jump                   LABEL95
+LABEL14:
    load_int               2147483647
    033                   
    idiv                  
    033                    1
-   if_icmplt              1
+   if_icmplt              LABEL20
    jump                   LABEL23
+LABEL20:
    load_int               2147483647
    034                    3
    jump                   LABEL27
@@ -29,16 +32,19 @@ LABEL23:
 LABEL27:
    033                   
    load_int               1
-   if_icmpgt              1
+   if_icmpgt              LABEL31
    jump                   LABEL77
+LABEL31:
    033                    3
    load_int               0
-   if_icmpge              1
+   if_icmpge              LABEL35
    jump                   LABEL54
+LABEL35:
    033                    3
    load_int               2147483647
-   if_icmplt              1
+   if_icmplt              LABEL39
    jump                   LABEL54
+LABEL39:
    033                   
    035                    1
    040                    46

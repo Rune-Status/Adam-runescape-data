@@ -29,18 +29,21 @@
 LABEL28:
    033                    8
    load_int               71
-   if_icmple              1
+   if_icmple              LABEL32
    jump                   LABEL173
+LABEL32:
    033                    8
    load_int               32
-   if_icmplt              1
+   if_icmplt              LABEL36
    jump                   LABEL48
+LABEL36:
    033                   
    033                    8
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL42
    jump                   LABEL45
+LABEL42:
    load_int               1
    034                    6
    jump                   LABEL47
@@ -52,16 +55,18 @@ LABEL47:
 LABEL48:
    033                    8
    load_int               64
-   if_icmplt              1
+   if_icmplt              LABEL52
    jump                   LABEL66
+LABEL52:
    033                    1
    033                    8
    load_int               32
    isub                  
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL60
    jump                   LABEL63
+LABEL60:
    load_int               1
    034                    6
    jump                   LABEL65
@@ -73,16 +78,18 @@ LABEL65:
 LABEL66:
    033                    8
    load_int               96
-   if_icmplt              1
+   if_icmplt              LABEL70
    jump                   LABEL84
+LABEL70:
    033                    2
    033                    8
    load_int               64
    isub                  
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL78
    jump                   LABEL81
+LABEL78:
    load_int               1
    034                    6
    jump                   LABEL83
@@ -101,8 +108,9 @@ LABEL86:
    100                   
    033                    6
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL94
    jump                   LABEL166
+LABEL94:
    load_int               105
    load_int               79
    load_int               708
@@ -111,14 +119,16 @@ LABEL86:
    034                    7
    033                    7
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL104
    jump                   LABEL163
+LABEL104:
    load_int               93
    033                    7
    3303                  
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL110
    jump                   LABEL113
+LABEL110:
    load_int               0
    widget_put_hidden     
    jump                   LABEL115
@@ -158,8 +168,9 @@ LABEL115:
    widget_put_name       
    033                    5
    load_int               9
-   if_icmplt              1
+   if_icmplt              LABEL149
    jump                   LABEL154
+LABEL149:
    033                    5
    load_int               1
    iadd                  
@@ -193,8 +204,9 @@ LABEL168:
 LABEL173:
    033                    5
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL177
    jump                   LABEL182
+LABEL177:
    033                    4
    load_int               32
    iadd                  
@@ -203,8 +215,9 @@ LABEL173:
 LABEL182:
    033                    4
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL186
    jump                   LABEL190
+LABEL186:
    033                    4
    load_int               15
    isub                  
@@ -213,8 +226,9 @@ LABEL190:
    033                    4
    load_int               5111812
    widget_get_height_widget
-   if_icmple              1
+   if_icmple              LABEL195
    jump                   LABEL200
+LABEL195:
    load_int               0
    load_int               0
    load_int               5111812

@@ -2,26 +2,30 @@
    load_int               10
    modulo                
    load_int               0
-   if_icmpne              1
+   if_icmpne              LABEL6
    jump                   LABEL7
+LABEL6:
    return                
 LABEL7:
    3111                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL11
    jump                   LABEL17
+LABEL11:
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL15
    jump                   LABEL16
+LABEL15:
    return                
 LABEL16:
    jump                   LABEL22
 LABEL17:
    033                   
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL21
    jump                   LABEL22
+LABEL21:
    return                
 LABEL22:
    033                    1

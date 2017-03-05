@@ -2,12 +2,14 @@
    034                    2
    033                   
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL17
+LABEL6:
    get_settings           1065
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL17
+LABEL10:
    load_int               1
    034                    2
    load_int               -1
@@ -142,8 +144,9 @@ LABEL22:
    widget_put_opacity    
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL144
    jump                   LABEL161
+LABEL144:
    load_int               1
    load_string            "Kick player"
    1300                  
@@ -180,8 +183,9 @@ LABEL161:
    widget_put_opacity    
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL181
    jump                   LABEL198
+LABEL181:
    load_int               1
    load_string            "Kick player"
    1300                  
@@ -218,8 +222,9 @@ LABEL198:
    widget_put_opacity    
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL218
    jump                   LABEL235
+LABEL218:
    load_int               1
    load_string            "Kick player"
    1300                  
@@ -256,8 +261,9 @@ LABEL235:
    widget_put_opacity    
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL255
    jump                   LABEL272
+LABEL255:
    load_int               1
    load_string            "Kick player"
    1300                  
@@ -408,8 +414,9 @@ LABEL272:
    1114                  
    033                    2
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL406
    jump                   LABEL408
+LABEL406:
    033                    1
    040                    269
 LABEL408:
@@ -420,12 +427,14 @@ LABEL408:
    036                   
    033                   
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL417
    jump                   LABEL439
+LABEL417:
    get_settings           1065
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL421
    jump                   LABEL427
+LABEL421:
    load_string            "When your party leader drinks from the vial,"
    load_string            "<br>"
    load_string            "you will be invited into their Rumble dream."
@@ -435,8 +444,9 @@ LABEL408:
 LABEL427:
    025                    3946
    load_int               0
-   if_icmpne              1
+   if_icmpne              LABEL431
    jump                   LABEL434
+LABEL431:
    load_string            "Drink from the vial when you're ready to start your dream."
    036                   
    jump                   LABEL439

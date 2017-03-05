@@ -1,8 +1,9 @@
    load_int               5898267
    widget_get_hidden_widget
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL5
    jump                   LABEL9
+LABEL5:
    load_string            ""
    033                   
    2112                  
@@ -18,8 +19,9 @@ LABEL9:
    034                    3
    033                    3
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL21
    jump                   LABEL25
+LABEL21:
    load_string            "Hurry!"
    033                   
    2112                  
@@ -35,8 +37,9 @@ LABEL25:
    034                    3
    033                    3
    load_int               10
-   if_icmpge              1
+   if_icmpge              LABEL37
    jump                   LABEL46
+LABEL37:
    033                    4
    int_to_string         
    load_string            ":"

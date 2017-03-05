@@ -1,7 +1,8 @@
    042                    5
    load_int               14
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL7
+LABEL4:
    load_int               1
    043                    66
    return                
@@ -13,41 +14,47 @@ LABEL7:
    047                    22
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL16
    jump                   LABEL195
+LABEL16:
    042                    5
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL20
    jump                   LABEL21
+LABEL20:
    return                
 LABEL21:
    042                    5
    load_int               4
-   if_icmpeq              4
+   if_icmpeq              LABEL28
    042                    5
    load_int               5
-   if_icmpeq              1
+   if_icmpeq              LABEL28
    jump                   LABEL49
+LABEL28:
    get_ignorecount       
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL32
    jump                   LABEL35
+LABEL32:
    load_string            "Unable to update ignore list - system busy."
    send_game_message     
    jump                   LABEL48
 LABEL35:
    042                    5
    load_int               4
-   if_icmpeq              1
+   if_icmpeq              LABEL39
    jump                   LABEL42
+LABEL39:
    047                    22
    add_ignore            
    jump                   LABEL48
 LABEL42:
    042                    5
    load_int               5
-   if_icmpeq              1
+   if_icmpeq              LABEL46
    jump                   LABEL48
+LABEL46:
    047                    22
    remove_ignore         
 LABEL48:
@@ -55,46 +62,52 @@ LABEL48:
 LABEL49:
    042                    5
    load_int               2
-   if_icmpeq              7
+   if_icmpeq              LABEL59
    042                    5
    load_int               3
-   if_icmpeq              4
+   if_icmpeq              LABEL59
    042                    5
    load_int               6
-   if_icmpeq              1
+   if_icmpeq              LABEL59
    jump                   LABEL112
+LABEL59:
    get_friendcount       
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL63
    jump                   LABEL66
+LABEL63:
    load_string            "Unable to complete action - system busy."
    send_game_message     
    jump                   LABEL111
 LABEL66:
    042                    5
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL70
    jump                   LABEL73
+LABEL70:
    047                    22
    add_friend            
    jump                   LABEL111
 LABEL73:
    042                    5
    load_int               3
-   if_icmpeq              1
+   if_icmpeq              LABEL77
    jump                   LABEL80
+LABEL77:
    047                    22
    remove_friend         
    jump                   LABEL111
 LABEL80:
    042                    5
    load_int               6
-   if_icmpeq              1
+   if_icmpeq              LABEL84
    jump                   LABEL111
+LABEL84:
    5005                  
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL88
    jump                   LABEL99
+LABEL88:
    5000                  
    load_int               1
    5016                  
@@ -109,8 +122,9 @@ LABEL80:
 LABEL99:
    025                    4394
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL103
    jump                   LABEL106
+LABEL103:
    047                    23
    remove_friend         
    jump                   LABEL109
@@ -126,8 +140,9 @@ LABEL111:
 LABEL112:
    042                    5
    load_int               7
-   if_icmpeq              1
+   if_icmpeq              LABEL116
    jump                   LABEL120
+LABEL116:
    047                    22
    040                    212
    3104                  
@@ -135,8 +150,9 @@ LABEL112:
 LABEL120:
    042                    5
    load_int               8
-   if_icmpeq              1
+   if_icmpeq              LABEL124
    jump                   LABEL130
+LABEL124:
    047                    22
    string_remove_html    
    048                    128
@@ -146,16 +162,18 @@ LABEL120:
 LABEL130:
    042                    5
    load_int               9
-   if_icmpeq              1
+   if_icmpeq              LABEL134
    jump                   LABEL137
+LABEL134:
    047                    22
    3106                  
    jump                   LABEL194
 LABEL137:
    042                    5
    load_int               10
-   if_icmpeq              1
+   if_icmpeq              LABEL141
    jump                   LABEL147
+LABEL141:
    047                    22
    string_remove_html    
    048                    129
@@ -165,13 +183,15 @@ LABEL137:
 LABEL147:
    042                    5
    load_int               12
-   if_icmpeq              1
+   if_icmpeq              LABEL151
    jump                   LABEL170
+LABEL151:
    047                    22
    string_length         
    load_int               10
-   if_icmpgt              1
+   if_icmpgt              LABEL156
    jump                   LABEL162
+LABEL156:
    047                    22
    load_int               0
    load_int               9
@@ -191,8 +211,9 @@ LABEL164:
 LABEL170:
    042                    5
    load_int               13
-   if_icmpeq              1
+   if_icmpeq              LABEL174
    jump                   LABEL186
+LABEL174:
    047                    22
    load_int               0
    043                    62
@@ -208,8 +229,9 @@ LABEL170:
 LABEL186:
    042                    5
    load_int               11
-   if_icmpeq              1
+   if_icmpeq              LABEL190
    jump                   LABEL194
+LABEL190:
    load_int               0
    load_int               1
    040                    299
@@ -219,14 +241,15 @@ LABEL194:
 LABEL195:
    042                    5
    load_int               7
-   if_icmpeq              7
+   if_icmpeq              LABEL205
    042                    5
    load_int               8
-   if_icmpeq              4
+   if_icmpeq              LABEL205
    042                    5
    load_int               9
-   if_icmpeq              1
+   if_icmpeq              LABEL205
    jump                   LABEL206
+LABEL205:
    return                
 LABEL206:
    load_int               1

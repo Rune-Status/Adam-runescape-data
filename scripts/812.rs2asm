@@ -2,27 +2,31 @@
    034                    5
    033                    3
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL76
+LABEL6:
    033                    1
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL10
    jump                   LABEL12
+LABEL10:
    load_int               1
    034                    1
 LABEL12:
    033                    1
    033                    2
-   if_icmplt              1
+   if_icmplt              LABEL16
    jump                   LABEL18
+LABEL16:
    033                    2
    034                    1
 LABEL18:
    033                   
    3912                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL23
    jump                   LABEL38
+LABEL23:
    033                    4
    widget_get_height     
    load_int               0
@@ -30,8 +34,9 @@ LABEL18:
    1001                  
    033                    2
    033                    1
-   if_icmplt              1
+   if_icmplt              LABEL32
    jump                   LABEL35
+LABEL32:
    load_int               9371648
    widget_put_textcolor  
    jump                   LABEL37
@@ -47,8 +52,9 @@ LABEL38:
    load_int               2
    load_int               15
    pow                   
-   if_icmplt              1
+   if_icmplt              LABEL46
    jump                   LABEL57
+LABEL46:
    load_int               0
    033                    2
    load_int               0

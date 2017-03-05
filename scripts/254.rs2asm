@@ -30,15 +30,17 @@
 LABEL29:
    033                    7
    load_int               31
-   if_icmple              1
+   if_icmple              LABEL33
    jump                   LABEL137
+LABEL33:
    033                   
    033                    1
    033                    7
    040                    1260
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL40
    jump                   LABEL132
+LABEL40:
    load_int               8454157
    load_int               5
    033                    4
@@ -79,8 +81,9 @@ LABEL29:
    load_int               2
    modulo                
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL82
    jump                   LABEL85
+LABEL82:
    load_int               297
    widget_put_textureid  
    jump                   LABEL87
@@ -105,8 +108,9 @@ LABEL87:
    033                    7
    040                    1260
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL106
    jump                   LABEL113
+LABEL106:
    load_int               105
    load_int               115
    load_int               804
@@ -145,8 +149,9 @@ LABEL137:
    033                    6
    load_int               8454157
    widget_get_height_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL142
    jump                   LABEL151
+LABEL142:
    load_int               0
    load_int               0
    load_int               8454157
@@ -199,8 +204,9 @@ LABEL181:
    040                    31
    033                    5
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL194
    jump                   LABEL222
+LABEL194:
    load_int               8454157
    load_int               4
    033                    4

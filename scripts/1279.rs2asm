@@ -17,12 +17,14 @@
    034                    4
    033                    3
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL21
    jump                   LABEL32
+LABEL21:
    042                    139
    load_int               3
-   if_icmplt              1
+   if_icmplt              LABEL25
    jump                   LABEL29
+LABEL25:
    033                    2
    033                    2
    load_int               0
@@ -34,8 +36,9 @@ LABEL29:
 LABEL32:
    042                    139
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL36
    jump                   LABEL40
+LABEL36:
    033                    2
    033                    2
    load_int               0
@@ -43,8 +46,9 @@ LABEL32:
 LABEL40:
    042                    139
    load_int               1
-   if_icmple              1
+   if_icmple              LABEL44
    jump                   LABEL46
+LABEL44:
    load_int               75
    034                    4
 LABEL46:
@@ -65,8 +69,9 @@ LABEL56:
    033                    7
    3408                  
    033                    6
-   if_icmpgt              1
+   if_icmpgt              LABEL64
    jump                   LABEL69
+LABEL64:
    033                    7
    load_int               1
    isub                  
@@ -81,15 +86,17 @@ LABEL69:
    034                    8
    033                    2
    033                    8
-   if_icmplt              1
+   if_icmplt              LABEL79
    jump                   LABEL81
+LABEL79:
    033                    2
    034                    8
 LABEL81:
    033                    8
    033                    7
-   if_icmpgt              1
+   if_icmpgt              LABEL85
    jump                   LABEL87
+LABEL85:
    033                    8
    034                    7
 LABEL87:
@@ -101,15 +108,17 @@ LABEL87:
    034                    9
    033                    5
    033                    9
-   if_icmplt              1
+   if_icmplt              LABEL97
    jump                   LABEL99
+LABEL97:
    033                    5
    034                    9
 LABEL99:
    033                    9
    033                    6
-   if_icmpgt              1
+   if_icmpgt              LABEL103
    jump                   LABEL105
+LABEL103:
    033                    9
    034                    6
 LABEL105:

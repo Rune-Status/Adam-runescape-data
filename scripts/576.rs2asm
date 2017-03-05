@@ -10,8 +10,9 @@
    102                   
    033                    4
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL14
    jump                   LABEL16
+LABEL14:
    033                    4
    102                   
 LABEL16:
@@ -45,8 +46,9 @@ LABEL42:
    035                   
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL47
    jump                   LABEL225
+LABEL47:
    033                    3
    load_int               3
    033                    11
@@ -148,16 +150,19 @@ LABEL42:
    1114                  
    033                   
    load_int               927
-   if_icmpeq              1
+   if_icmpeq              LABEL150
    jump                   LABEL167
+LABEL150:
    033                    9
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL154
    jump                   LABEL167
+LABEL154:
    033                    10
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL158
    jump                   LABEL164
+LABEL158:
    load_string            "<str>"
    035                   
    load_string            "</str>"
@@ -172,20 +177,23 @@ LABEL166:
 LABEL167:
    033                   
    load_int               929
-   if_icmpeq              1
+   if_icmpeq              LABEL171
    jump                   LABEL192
+LABEL171:
    get_ismembers         
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL175
    jump                   LABEL192
+LABEL175:
    load_int               105
    load_int               49
    load_int               935
    033                    11
    3408                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL183
    jump                   LABEL189
+LABEL183:
    load_string            "<str>"
    035                   
    load_string            "</str>"
@@ -217,18 +225,21 @@ LABEL194:
    036                   
    033                    9
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL212
    jump                   LABEL224
+LABEL212:
    033                   
    load_int               929
-   if_icmpeq              1
+   if_icmpeq              LABEL216
    jump                   LABEL224
+LABEL216:
    033                    10
    load_int               12
    load_int               17
    imul                  
-   if_icmpge              1
+   if_icmpge              LABEL222
    jump                   LABEL224
+LABEL222:
    load_string            ""
    036                   
 LABEL224:
@@ -240,12 +251,14 @@ LABEL225:
    widget_put_scroll_widget
    033                    4
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL233
    jump                   LABEL255
+LABEL233:
    033                    10
    033                    8
-   if_icmpgt              1
+   if_icmpgt              LABEL237
    jump                   LABEL242
+LABEL237:
    load_int               0
    033                    10
    033                    3

@@ -11,12 +11,14 @@
    033                    1
    3408                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL15
    jump                   LABEL23
+LABEL15:
    033                    2
    load_int               2
-   if_icmpge              1
+   if_icmpge              LABEL19
    jump                   LABEL22
+LABEL19:
    load_string            "You already have the maximum number of combat skills protected."
    send_game_message     
    return                
@@ -25,8 +27,9 @@ LABEL22:
 LABEL23:
    033                    3
    load_int               3
-   if_icmpge              1
+   if_icmpge              LABEL27
    jump                   LABEL30
+LABEL27:
    load_string            "You already have the maximum number of non-combat skills protected."
    send_game_message     
    return                

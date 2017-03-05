@@ -23,8 +23,9 @@
 LABEL22:
    033                    6
    033                    2
-   if_icmplt              1
+   if_icmplt              LABEL26
    jump                   LABEL58
+LABEL26:
    load_int               105
    load_int               105
    load_int               861
@@ -36,8 +37,9 @@ LABEL22:
    load_int               861
    033                    4
    3408                  
-   if_icmple              1
+   if_icmple              LABEL39
    jump                   LABEL53
+LABEL39:
    033                    6
    045                   
    034                    7
@@ -70,8 +72,9 @@ LABEL58:
    033                    5
    load_int               1
    isub                  
-   if_icmplt              1
+   if_icmplt              LABEL71
    jump                   LABEL77
+LABEL71:
    load_int               0
    033                    1
    033                    5
@@ -83,8 +86,9 @@ LABEL77:
    load_int               1
    iadd                  
    033                    2
-   if_icmplt              1
+   if_icmplt              LABEL83
    jump                   LABEL89
+LABEL83:
    load_int               0
    033                    5
    load_int               1

@@ -2,12 +2,14 @@
    034                    1
    040                    1138
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL34
+LABEL6:
    025                    4965
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL10
    jump                   LABEL14
+LABEL10:
    load_string            "Protection"
    033                   
    2112                  
@@ -15,8 +17,9 @@
 LABEL14:
    042                    78
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL18
    jump                   LABEL22
+LABEL18:
    load_string            "Guarded"
    033                   
    2112                  
@@ -24,8 +27,9 @@ LABEL14:
 LABEL22:
    042                    78
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL26
    jump                   LABEL30
+LABEL26:
    load_string            "No PvP"
    033                   
    2112                  
@@ -39,8 +43,9 @@ LABEL33:
 LABEL34:
    033                    1
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL38
    jump                   LABEL45
+LABEL38:
    load_string            "Level: "
    033                    1
    int_to_string         

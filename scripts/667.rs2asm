@@ -4,12 +4,14 @@
    1408                  
    033                   
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL8
    jump                   LABEL53
+LABEL8:
    033                    1
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL12
    jump                   LABEL53
+LABEL12:
    load_int               0
    widget_put_opacity    
    033                   

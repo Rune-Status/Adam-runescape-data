@@ -9,19 +9,21 @@
 LABEL8:
    033                    1
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL12
    jump                   LABEL36
+LABEL12:
    033                    1
    load_int               0
    3302                  
    load_int               0
-   if_icmpgt              6
+   if_icmpgt              LABEL23
    033                    1
    load_int               1
    3302                  
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL23
    jump                   LABEL25
+LABEL23:
    load_int               1
    return                
 LABEL25:

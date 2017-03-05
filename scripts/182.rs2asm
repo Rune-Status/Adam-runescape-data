@@ -7,8 +7,9 @@
    load_int               25
    modulo                
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL11
    jump                   LABEL35
+LABEL11:
    040                    178
    033                    1
    load_int               25
@@ -16,8 +17,9 @@
    034                    2
    033                    2
    load_int               1
-   if_icmple              1
+   if_icmple              LABEL20
    jump                   LABEL29
+LABEL20:
    load_int               -1
    load_string            ""
    load_int               105

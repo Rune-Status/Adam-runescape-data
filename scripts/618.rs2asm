@@ -5,14 +5,16 @@
    3408                  
    2702                  
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL9
    jump                   LABEL10
+LABEL9:
    return                
 LABEL10:
    033                   
    load_int               26214409
-   if_icmpeq              1
+   if_icmpeq              LABEL14
    jump                   LABEL31
+LABEL14:
    load_int               26214409
    widget_get_width_widget
    load_int               26214410
@@ -34,8 +36,9 @@ LABEL31:
    042                    49
    033                   
    widget_get_height_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL36
    jump                   LABEL41
+LABEL36:
    load_int               0
    042                    49
    033                   
@@ -51,8 +54,9 @@ LABEL45:
    102                   
    033                    3
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL51
    jump                   LABEL67
+LABEL51:
    load_int               0
    load_int               0
    033                   
@@ -72,8 +76,9 @@ LABEL45:
 LABEL67:
    042                    63
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL71
    jump                   LABEL73
+LABEL71:
    load_int               0
    043                    63
 LABEL73:

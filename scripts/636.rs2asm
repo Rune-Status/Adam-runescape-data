@@ -2,8 +2,9 @@
    033                   
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL8
+LABEL6:
    load_int               1
    widget_put_hidden     
 LABEL8:
@@ -14,22 +15,26 @@ LABEL8:
 LABEL12:
    033                    1
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL16
    jump                   LABEL37
+LABEL16:
    033                   
    load_int               27
-   if_icmple              1
+   if_icmple              LABEL20
    jump                   LABEL37
+LABEL20:
    load_int               9699342
    033                   
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL26
    jump                   LABEL32
+LABEL26:
    widget_get_hidden     
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL30
    jump                   LABEL32
+LABEL30:
    load_int               1
    034                    1
 LABEL32:
@@ -41,8 +46,9 @@ LABEL32:
 LABEL37:
    033                    1
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL41
    jump                   LABEL45
+LABEL41:
    load_int               9699342
    load_int               9699343
    load_int               0

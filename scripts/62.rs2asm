@@ -23,8 +23,9 @@
 LABEL22:
    033                    7
    033                    2
-   if_icmplt              1
+   if_icmplt              LABEL26
    jump                   LABEL62
+LABEL26:
    load_int               73
    load_int               115
    033                    3
@@ -40,8 +41,9 @@ LABEL22:
    tolowercase           
    4107                  
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL43
    jump                   LABEL57
+LABEL43:
    033                    7
    045                   
    034                    8
@@ -74,8 +76,9 @@ LABEL62:
    033                    6
    load_int               1
    isub                  
-   if_icmplt              1
+   if_icmplt              LABEL75
    jump                   LABEL82
+LABEL75:
    load_int               0
    033                    1
    033                    6
@@ -88,8 +91,9 @@ LABEL82:
    load_int               1
    iadd                  
    033                    2
-   if_icmplt              1
+   if_icmplt              LABEL88
    jump                   LABEL95
+LABEL88:
    load_int               0
    033                    6
    load_int               1

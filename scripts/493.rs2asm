@@ -12,8 +12,9 @@
 LABEL11:
    033                    4
    033                    1
-   if_icmplt              1
+   if_icmplt              LABEL15
    jump                   LABEL95
+LABEL15:
    033                   
    load_int               5
    033                    4
@@ -24,8 +25,9 @@ LABEL11:
    034                    2
    033                    2
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL27
    jump                   LABEL88
+LABEL27:
    033                    3
    load_int               1
    iadd                  
@@ -99,8 +101,9 @@ LABEL90:
 LABEL95:
    033                    3
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL99
    jump                   LABEL127
+LABEL99:
    033                   
    load_int               4
    033                    4

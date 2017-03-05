@@ -5,11 +5,12 @@
    036                   
    get_settings           287
    load_int               0
-   if_icmpeq              4
+   if_icmpeq              LABEL12
    get_isresized         
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL12
    jump                   LABEL23
+LABEL12:
    load_int               761
    033                   
    widget_put_textureid_widget
@@ -24,8 +25,9 @@
 LABEL23:
    025                    4089
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL27
    jump                   LABEL48
+LABEL27:
    load_string            "Hide private chat when the chatbox is hidden"
    load_string            "<br>"
    load_string            "(currently off)"

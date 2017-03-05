@@ -1,14 +1,16 @@
    033                   
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL4
    jump                   LABEL6
+LABEL4:
    load_string            ""
    return                
 LABEL6:
    033                   
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL10
    jump                   LABEL13
+LABEL10:
    load_int               0
    int_to_string         
    return                

@@ -28,8 +28,9 @@
 LABEL27:
    033                    7
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL31
    jump                   LABEL93
+LABEL31:
    033                    1
    load_int               5
    033                    6
@@ -52,8 +53,9 @@ LABEL27:
    033                    7
    get_item_stackable    
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL55
    jump                   LABEL61
+LABEL55:
    load_int               2
    load_string            "Take-5"
    1300                  
@@ -133,8 +135,9 @@ LABEL93:
    040                    31
    040                    514
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL134
    jump                   LABEL137
+LABEL134:
    load_int               1
    load_int               1
    040                    299

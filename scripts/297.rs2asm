@@ -2,8 +2,9 @@
    036                   
    033                   
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL6
    jump                   LABEL88
+LABEL6:
    load_int               0
    widget_put_opacity    
    033                   
@@ -12,12 +13,14 @@
    widget_put_actions_null
    033                   
    load_int               11941
-   if_icmpeq              1
+   if_icmpeq              LABEL16
    jump                   LABEL30
+LABEL16:
    033                    4
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL20
    jump                   LABEL30
+LABEL20:
    load_int               1
    load_string            "View"
    1300                  
@@ -40,8 +43,9 @@ LABEL30:
    1300                  
    025                    3960
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL43
    jump                   LABEL49
+LABEL43:
    load_int               5
    load_string            "Deposit-"
    025                    3960
@@ -64,8 +68,9 @@ LABEL49:
    035                   
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL66
    jump                   LABEL69
+LABEL66:
    load_int               9
    035                   
    1300                  

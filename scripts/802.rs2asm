@@ -5,8 +5,9 @@
 LABEL4:
    033                    3
    033                    1
-   if_icmplt              1
+   if_icmplt              LABEL8
    jump                   LABEL17
+LABEL8:
    load_int               15532034
    load_int               5
    033                    3
@@ -48,14 +49,16 @@ LABEL17:
    034                    3
    025                    4440
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL50
    jump                   LABEL249
+LABEL50:
    load_int               15532036
    033                    2
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL56
    jump                   LABEL58
+LABEL56:
    load_int               697
    widget_put_textureid  
 LABEL58:
@@ -86,16 +89,18 @@ LABEL58:
 LABEL82:
    033                    3
    033                    1
-   if_icmplt              1
+   if_icmplt              LABEL86
    jump                   LABEL248
+LABEL86:
    033                   
    033                    3
    3301                  
    034                    7
    033                    7
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL94
    jump                   LABEL235
+LABEL94:
    033                    11
    033                    3
    load_int               5
@@ -116,8 +121,9 @@ LABEL82:
    033                    3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL116
    jump                   LABEL144
+LABEL116:
    load_int               0
    widget_put_hidden     
    load_int               36
@@ -226,8 +232,9 @@ LABEL144:
    1114                  
    033                    8
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL225
    jump                   LABEL228
+LABEL225:
    load_string            "1 coin"
    1112                  
    jump                   LABEL234
@@ -245,8 +252,9 @@ LABEL235:
    033                    3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL241
    jump                   LABEL243
+LABEL241:
    load_int               1
    widget_put_hidden     
 LABEL243:
@@ -262,8 +270,9 @@ LABEL249:
    033                    2
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL255
    jump                   LABEL257
+LABEL255:
    load_int               699
    widget_put_textureid  
 LABEL257:
@@ -282,16 +291,18 @@ LABEL257:
 LABEL269:
    033                    3
    033                    1
-   if_icmplt              1
+   if_icmplt              LABEL273
    jump                   LABEL497
+LABEL273:
    033                   
    033                    3
    3301                  
    034                    7
    033                    7
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL281
    jump                   LABEL484
+LABEL281:
    033                    3
    load_int               2
    idiv                  
@@ -302,8 +313,9 @@ LABEL269:
    load_int               2
    modulo                
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL293
    jump                   LABEL329
+LABEL293:
    load_int               0
    034                    14
    load_int               15532034
@@ -327,8 +339,9 @@ LABEL269:
    load_int               4
    modulo                
    load_int               2
-   if_icmplt              1
+   if_icmplt              LABEL318
    jump                   LABEL321
+LABEL318:
    load_int               0
    widget_put_opacity    
    jump                   LABEL323
@@ -354,8 +367,9 @@ LABEL331:
    033                    3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL341
    jump                   LABEL365
+LABEL341:
    load_int               0
    widget_put_hidden     
    load_int               36
@@ -483,8 +497,9 @@ LABEL365:
    1114                  
    033                    8
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL469
    jump                   LABEL475
+LABEL469:
    load_string            "<col=ffffff>"
    load_string            "1 coin"
    load_string            "</col>"
@@ -507,8 +522,9 @@ LABEL484:
    033                    3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL490
    jump                   LABEL492
+LABEL490:
    load_int               1
    widget_put_hidden     
 LABEL492:
@@ -520,8 +536,9 @@ LABEL492:
 LABEL497:
    033                    15
    load_int               0
-   if_icmpge              1
+   if_icmpge              LABEL501
    jump                   LABEL505
+LABEL501:
    033                    15
    033                    12
    iadd                  
@@ -530,8 +547,9 @@ LABEL505:
    033                    15
    load_int               15532034
    widget_get_height_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL510
    jump                   LABEL515
+LABEL510:
    load_int               0
    033                    15
    load_int               15532034

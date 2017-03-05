@@ -1,7 +1,8 @@
    033                    2
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL21
+LABEL4:
    033                   
    033                    1
    033                    3
@@ -25,12 +26,14 @@ LABEL21:
 LABEL23:
    033                    6
    033                    2
-   if_icmpne              1
+   if_icmpne              LABEL27
    jump                   LABEL81
+LABEL27:
    033                    6
    033                    2
-   if_icmpgt              1
+   if_icmpgt              LABEL31
    jump                   LABEL54
+LABEL31:
    033                   
    033                    6
    load_int               1
@@ -57,8 +60,9 @@ LABEL23:
 LABEL54:
    033                    6
    033                    2
-   if_icmplt              1
+   if_icmplt              LABEL58
    jump                   LABEL80
+LABEL58:
    033                   
    033                    6
    load_int               1

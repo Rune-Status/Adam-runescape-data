@@ -1,13 +1,15 @@
    033                    6
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL4
    jump                   LABEL30
+LABEL4:
    033                    5
    033                    6
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL30
+LABEL10:
    033                   
    033                    1
    widget_get_rotationx  
@@ -31,8 +33,9 @@
 LABEL30:
    033                    6
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL34
    jump                   LABEL58
+LABEL34:
    033                   
    033                    1
    033                    5

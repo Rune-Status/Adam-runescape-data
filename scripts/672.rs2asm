@@ -3,23 +3,26 @@
    034                    6
    033                    2
    load_int               0
-   if_icmplt              4
+   if_icmplt              LABEL10
    033                    2
    033                    6
-   if_icmpge              1
+   if_icmpge              LABEL10
    jump                   LABEL11
+LABEL10:
    return                
 LABEL11:
    033                    1
    033                   
-   if_icmpne              1
+   if_icmpne              LABEL15
    jump                   LABEL33
+LABEL15:
    033                   
    033                    2
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL21
    jump                   LABEL32
+LABEL21:
    033                    4
    widget_put_opacity    
    load_int               488
@@ -36,14 +39,15 @@ LABEL32:
 LABEL33:
    033                    2
    033                    3
-   if_icmpeq              7
+   if_icmpeq              LABEL43
    033                    3
    load_int               0
-   if_icmplt              4
+   if_icmplt              LABEL43
    033                    3
    033                    6
-   if_icmpge              1
+   if_icmpge              LABEL43
    jump                   LABEL44
+LABEL43:
    return                
 LABEL44:
    load_int               93
@@ -52,8 +56,9 @@ LABEL44:
    034                    7
    033                    7
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL52
    jump                   LABEL53
+LABEL52:
    return                
 LABEL53:
    load_int               93
@@ -64,8 +69,9 @@ LABEL53:
    033                    3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL63
    jump                   LABEL68
+LABEL63:
    033                    7
    load_int               93
    033                    2
@@ -76,8 +82,9 @@ LABEL68:
    033                    2
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL74
    jump                   LABEL79
+LABEL74:
    033                    8
    load_int               93
    033                    3

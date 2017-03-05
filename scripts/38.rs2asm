@@ -6,12 +6,14 @@
    get_gamecycle         
    033                    2
    iadd                  
-   if_icmplt              1
+   if_icmplt              LABEL10
    jump                   LABEL21
+LABEL10:
    042                    1
    get_gamecycle         
-   if_icmplt              1
+   if_icmplt              LABEL14
    jump                   LABEL16
+LABEL14:
    get_gamecycle         
    043                    1
 LABEL16:
@@ -29,14 +31,16 @@ LABEL21:
    043                    1
    042                    2
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL31
    jump                   LABEL184
+LABEL31:
    033                    3
    033                    1
    widget_get_parentid_widget
    widget_get_width_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL37
    jump                   LABEL41
+LABEL37:
    033                    1
    widget_get_parentid_widget
    widget_get_width_widget
@@ -80,8 +84,9 @@ LABEL41:
    033                    1
    widget_get_parentid_widget
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL81
    jump                   LABEL114
+LABEL81:
    033                    4
    033                    1
    widget_get_parentid_widget
@@ -89,8 +94,9 @@ LABEL41:
    033                    1
    widget_get_width_widget
    isub                  
-   if_icmpgt              1
+   if_icmpgt              LABEL90
    jump                   LABEL97
+LABEL90:
    033                    1
    widget_get_parentid_widget
    widget_get_width_widget
@@ -106,8 +112,9 @@ LABEL97:
    033                    1
    widget_get_height_widget
    isub                  
-   if_icmpgt              1
+   if_icmpgt              LABEL106
    jump                   LABEL114
+LABEL106:
    033                   
    widget_get_relativey_widget
    033                    1

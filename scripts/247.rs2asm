@@ -4,12 +4,13 @@
    033                    3
    033                   
    divide_by_16384       
-   if_icmplt              5
+   if_icmplt              LABEL12
    033                    3
    033                    1
    divide_by_16384       
-   if_icmpgt              1
+   if_icmpgt              LABEL12
    jump                   LABEL14
+LABEL12:
    load_int               0
    return                
 LABEL14:
@@ -19,12 +20,13 @@ LABEL14:
    033                    3
    033                   
    right_shift_28        
-   if_icmplt              5
+   if_icmplt              LABEL26
    033                    3
    033                    1
    right_shift_28        
-   if_icmpgt              1
+   if_icmpgt              LABEL26
    jump                   LABEL28
+LABEL26:
    load_int               0
    return                
 LABEL28:
@@ -34,12 +36,13 @@ LABEL28:
    033                    3
    033                   
    and_16384             
-   if_icmplt              5
+   if_icmplt              LABEL40
    033                    3
    033                    1
    and_16384             
-   if_icmpgt              1
+   if_icmpgt              LABEL40
    jump                   LABEL42
+LABEL40:
    load_int               0
    return                
 LABEL42:

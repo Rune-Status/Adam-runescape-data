@@ -16,8 +16,9 @@
    034                    10
    033                    5
    033                    6
-   if_icmpge              1
+   if_icmpge              LABEL20
    jump                   LABEL42
+LABEL20:
    load_int               0
    load_int               0
    load_int               1
@@ -26,8 +27,9 @@
    2001                  
    033                    4
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL30
    jump                   LABEL35
+LABEL30:
    load_int               255
    load_int               210
    034                    9
@@ -45,8 +47,9 @@ LABEL39:
 LABEL42:
    033                    5
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL46
    jump                   LABEL57
+LABEL46:
    load_int               0
    load_int               0
    load_int               0
@@ -61,8 +64,9 @@ LABEL42:
 LABEL57:
    033                    6
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL61
    jump                   LABEL72
+LABEL61:
    load_int               0
    load_int               0
    load_int               1
@@ -77,8 +81,9 @@ LABEL57:
 LABEL72:
    033                    6
    load_int               2
-   if_icmplt              1
+   if_icmplt              LABEL76
    jump                   LABEL87
+LABEL76:
    load_int               0
    load_int               0
    load_int               0
@@ -93,8 +98,9 @@ LABEL72:
 LABEL87:
    033                    6
    load_int               1000000000
-   if_icmpgt              1
+   if_icmpgt              LABEL91
    jump                   LABEL100
+LABEL91:
    033                    5
    load_int               100000
    idiv                  
@@ -107,8 +113,9 @@ LABEL87:
 LABEL100:
    033                    6
    load_int               100000000
-   if_icmpgt              1
+   if_icmpgt              LABEL104
    jump                   LABEL113
+LABEL104:
    033                    5
    load_int               10000
    idiv                  
@@ -121,8 +128,9 @@ LABEL100:
 LABEL113:
    033                    6
    load_int               10000000
-   if_icmpgt              1
+   if_icmpgt              LABEL117
    jump                   LABEL126
+LABEL117:
    033                    5
    load_int               1000
    idiv                  
@@ -135,8 +143,9 @@ LABEL113:
 LABEL126:
    033                    6
    load_int               1000000
-   if_icmpgt              1
+   if_icmpgt              LABEL130
    jump                   LABEL139
+LABEL130:
    033                    5
    load_int               100
    idiv                  
@@ -149,8 +158,9 @@ LABEL126:
 LABEL139:
    033                    6
    load_int               100000
-   if_icmpgt              1
+   if_icmpgt              LABEL143
    jump                   LABEL151
+LABEL143:
    033                    5
    load_int               10
    idiv                  
@@ -162,8 +172,9 @@ LABEL139:
 LABEL151:
    033                    5
    033                    6
-   if_icmpge              1
+   if_icmpge              LABEL155
    jump                   LABEL159
+LABEL155:
    033                    5
    load_int               1
    iadd                  
@@ -186,15 +197,17 @@ LABEL159:
    034                    7
    033                    7
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL178
    jump                   LABEL180
+LABEL178:
    load_int               1
    034                    7
 LABEL180:
    033                    5
    033                    7
-   if_icmple              1
+   if_icmple              LABEL184
    jump                   LABEL194
+LABEL184:
    load_int               150
    load_int               0
    033                    5

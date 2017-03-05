@@ -7,8 +7,9 @@
    034                    18
    040                    514
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL11
    jump                   LABEL15
+LABEL11:
    load_int               1
    load_int               1
    040                    299
@@ -16,8 +17,9 @@
 LABEL15:
    042                    5
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL19
    jump                   LABEL21
+LABEL19:
    load_string            ""
    048                    22
 LABEL21:
@@ -98,8 +100,9 @@ LABEL21:
 LABEL95:
    033                    20
    load_int               800
-   if_icmplt              1
+   if_icmplt              LABEL99
    jump                   LABEL125
+LABEL99:
    033                    6
    load_int               5
    033                    19
@@ -135,8 +138,9 @@ LABEL125:
 LABEL130:
    033                    20
    load_int               9
-   if_icmple              1
+   if_icmple              LABEL134
    jump                   LABEL156
+LABEL134:
    033                    6
    load_int               5
    033                    19
@@ -165,8 +169,9 @@ LABEL156:
 LABEL158:
    033                    20
    load_int               9
-   if_icmple              1
+   if_icmple              LABEL162
    jump                   LABEL231
+LABEL162:
    033                    6
    load_int               4
    033                    19
@@ -242,8 +247,9 @@ LABEL231:
 LABEL233:
    033                    20
    load_int               9
-   if_icmple              1
+   if_icmple              LABEL237
    jump                   LABEL259
+LABEL237:
    033                    6
    load_int               3
    033                    19
@@ -324,8 +330,9 @@ LABEL259:
    034                    22
    033                    22
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL318
    jump                   LABEL325
+LABEL318:
    033                   
    033                    22
    load_int               -2147483648

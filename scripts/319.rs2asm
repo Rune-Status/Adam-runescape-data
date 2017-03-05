@@ -1,7 +1,8 @@
    033                    1
    load_int               1
-   if_icmpne              1
+   if_icmpne              LABEL4
    jump                   LABEL5
+LABEL4:
    return                
 LABEL5:
    load_int               2266
@@ -16,8 +17,9 @@ LABEL5:
    2409                  
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL19
    jump                   LABEL34
+LABEL19:
    load_string            "Requesting..."
    033                    4
    2112                  

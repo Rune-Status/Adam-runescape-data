@@ -18,14 +18,15 @@
    034                    6
    033                    4
    load_int               -1
-   if_icmpeq              7
+   if_icmpeq              LABEL28
    033                    5
    load_int               -1
-   if_icmpeq              4
+   if_icmpeq              LABEL28
    033                    6
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL28
    jump                   LABEL29
+LABEL28:
    return                
 LABEL29:
    033                    2
@@ -40,15 +41,17 @@ LABEL29:
    034                    8
    033                    8
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL43
    jump                   LABEL45
+LABEL43:
    load_int               1
    034                    8
 LABEL45:
    033                    7
    033                    8
-   if_icmpgt              1
+   if_icmpgt              LABEL49
    jump                   LABEL51
+LABEL49:
    033                    8
    034                    7
 LABEL51:
@@ -67,13 +70,14 @@ LABEL51:
    load_int               1
    test_bit              
    load_int               1
-   if_icmpeq              6
+   if_icmpeq              LABEL73
    033                    3
    load_int               0
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL73
    jump                   LABEL107
+LABEL73:
    033                    4
    load_int               3
    033                    10
@@ -100,8 +104,9 @@ LABEL51:
    load_int               1
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL101
    jump                   LABEL104
+LABEL101:
    load_int               16727871
    widget_put_textcolor  
    jump                   LABEL106
@@ -208,11 +213,12 @@ LABEL129:
    036                   
    033                    1
    load_int               1925
-   if_icmpeq              4
+   if_icmpeq              LABEL208
    033                    1
    load_int               6055
-   if_icmpeq              1
+   if_icmpeq              LABEL208
    jump                   LABEL215
+LABEL208:
    load_int               105
    load_int               115
    load_int               1234
@@ -243,8 +249,9 @@ LABEL221:
    034                    13
    033                    7
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL238
    jump                   LABEL363
+LABEL238:
    033                    6
    load_int               3
    033                    10
@@ -327,8 +334,9 @@ LABEL221:
    load_int               1
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL322
    jump                   LABEL337
+LABEL322:
    load_int               16711680
    widget_put_textcolor  
    load_int               16711680
@@ -349,8 +357,9 @@ LABEL337:
    load_int               0
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL343
    jump                   LABEL358
+LABEL343:
    load_int               16750623
    widget_put_textcolor  
    load_int               16750623
@@ -376,8 +385,9 @@ LABEL362:
 LABEL363:
    033                    1
    load_int               1925
-   if_icmpeq              1
+   if_icmpeq              LABEL367
    jump                   LABEL372
+LABEL367:
    035                   
    load_string            " (empty)"
    concat_string         
@@ -386,8 +396,9 @@ LABEL363:
 LABEL372:
    033                    1
    load_int               6055
-   if_icmpeq              1
+   if_icmpeq              LABEL376
    jump                   LABEL380
+LABEL376:
    035                   
    load_string            " (weeds)"
    concat_string         
@@ -397,8 +408,9 @@ LABEL380:
    load_int               2
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL386
    jump                   LABEL413
+LABEL386:
    033                    6
    load_int               5
    033                    10
@@ -431,8 +443,9 @@ LABEL413:
    load_int               7
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL419
    jump                   LABEL446
+LABEL419:
    033                    6
    load_int               5
    033                    10
@@ -465,8 +478,9 @@ LABEL446:
    load_int               3
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL452
    jump                   LABEL483
+LABEL452:
    033                    6
    load_int               5
    033                    10
@@ -503,12 +517,13 @@ LABEL483:
    load_int               4
    test_bit              
    load_int               1
-   if_icmpeq              5
+   if_icmpeq              LABEL493
    033                    2
    right_shift_28        
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL493
    jump                   LABEL541
+LABEL493:
    033                    6
    load_int               5
    033                    10
@@ -534,8 +549,9 @@ LABEL483:
    033                    2
    right_shift_28        
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL520
    jump                   LABEL530
+LABEL520:
    load_int               5340
    load_int               1
    1205                  
@@ -563,13 +579,14 @@ LABEL541:
    load_int               6
    test_bit              
    load_int               1
-   if_icmpeq              6
+   if_icmpeq              LABEL552
    033                    3
    load_int               5
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL552
    jump                   LABEL599
+LABEL552:
    033                    6
    load_int               5
    033                    10
@@ -596,8 +613,9 @@ LABEL541:
    load_int               6
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL580
    jump                   LABEL590
+LABEL580:
    load_int               6034
    load_int               1
    1205                  
@@ -621,8 +639,9 @@ LABEL590:
 LABEL599:
    033                    9
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL603
    jump                   LABEL642
+LABEL603:
    033                    6
    load_int               4
    033                    10

@@ -6,13 +6,14 @@
    034                    4
    033                    1
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL32
 LABEL10:
    033                    4
    load_int               800
-   if_icmplt              1
+   if_icmplt              LABEL14
    jump                   LABEL32
+LABEL14:
    load_int               95
    033                    4
    3301                  
@@ -20,8 +21,9 @@ LABEL10:
    033                    2
    4209                  
    033                    2
-   if_icmpne              1
+   if_icmpne              LABEL23
    jump                   LABEL27
+LABEL23:
    033                    3
    load_int               1
    iadd                  
@@ -39,8 +41,9 @@ LABEL32:
    034                    5
    033                    3
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL40
    jump                   LABEL45
+LABEL40:
    033                   
    033                    5
    040                    836
@@ -76,8 +79,9 @@ LABEL49:
    036                   
    033                    3
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL75
    jump                   LABEL84
+LABEL75:
    035                   
    load_string            " ("
    033                    3
@@ -127,8 +131,9 @@ LABEL84:
    1112                  
    033                    3
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL125
    jump                   LABEL148
+LABEL125:
    load_int               16750623
    widget_put_textcolor  
    load_int               85

@@ -7,8 +7,9 @@
    033                   
    201                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL11
    jump                   LABEL43
+LABEL11:
    get_gamecycle         
    034                    3
    033                    3
@@ -17,8 +18,9 @@
    034                    4
    033                    4
    load_int               750
-   if_icmpge              1
+   if_icmpge              LABEL21
    jump                   LABEL27
+LABEL21:
    load_int               255
    widget_put_opacity    
    load_int               -1
@@ -30,8 +32,9 @@ LABEL27:
    load_int               40
    modulo                
    load_int               20
-   if_icmpge              1
+   if_icmpge              LABEL33
    jump                   LABEL36
+LABEL33:
    load_int               255
    widget_put_opacity    
    return                

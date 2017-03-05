@@ -2,20 +2,23 @@
    034                   
    042                    41
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL22
+LABEL6:
    040                    922
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL13
+LABEL10:
    load_int               1
    034                   
    jump                   LABEL22
 LABEL13:
    get_isresized         
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL17
    jump                   LABEL22
+LABEL17:
    load_int               0
    043                    41
    load_int               0
@@ -31,8 +34,9 @@ LABEL22:
    102                   
    040                    921
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL33
    jump                   LABEL95
+LABEL33:
    load_int               1
    load_int               10616862
    2005                  
@@ -85,8 +89,9 @@ LABEL22:
    040                    838
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL87
    jump                   LABEL91
+LABEL87:
    load_int               255
    load_int               10616834
    widget_put_opacity_widget
@@ -106,8 +111,9 @@ LABEL95:
    034                    2
    025                    2570
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL105
    jump                   LABEL109
+LABEL105:
    load_int               1
    load_int               10616862
    2005                  
@@ -125,8 +131,9 @@ LABEL115:
 LABEL117:
    033                    3
    load_int               20
-   if_icmplt              1
+   if_icmplt              LABEL121
    jump                   LABEL196
+LABEL121:
    load_int               10616862
    load_int               3
    033                    3
@@ -214,8 +221,9 @@ LABEL196:
    040                    838
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL209
    jump                   LABEL213
+LABEL209:
    load_int               255
    load_int               10616834
    widget_put_opacity_widget

@@ -4,14 +4,16 @@
    034                    5
    033                    5
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL8
    jump                   LABEL21
+LABEL8:
    033                   
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL14
    jump                   LABEL17
+LABEL14:
    load_int               -1
    load_string            ""
    1408                  
@@ -23,12 +25,14 @@ LABEL17:
 LABEL21:
    get_gamecycle         
    033                    4
-   if_icmplt              1
+   if_icmplt              LABEL25
    jump                   LABEL42
+LABEL25:
    033                    5
    load_int               -2
-   if_icmple              1
+   if_icmple              LABEL29
    jump                   LABEL34
+LABEL29:
    033                    5
    load_int               2
    idiv                  
@@ -37,8 +41,9 @@ LABEL21:
 LABEL34:
    033                    5
    load_int               2
-   if_icmpge              1
+   if_icmpge              LABEL38
    jump                   LABEL42
+LABEL38:
    033                    5
    load_int               2
    idiv                  
@@ -52,8 +57,9 @@ LABEL42:
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL52
    jump                   LABEL67
+LABEL52:
    load_int               258
    033                   
    033                    1

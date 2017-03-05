@@ -10,8 +10,9 @@
    033                    2
    3408                  
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL14
    jump                   LABEL17
+LABEL14:
    load_int               1
    034                    3
    jump                   LABEL31
@@ -19,12 +20,14 @@ LABEL17:
    033                    2
    3910                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL22
    jump                   LABEL29
+LABEL22:
    025                    4397
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL26
    jump                   LABEL28
+LABEL26:
    load_int               1
    034                    3
 LABEL28:
@@ -38,18 +41,21 @@ LABEL31:
 LABEL33:
    033                    4
    load_int               4
-   if_icmplt              1
+   if_icmplt              LABEL37
    jump                   LABEL73
+LABEL37:
    033                    1
    033                    4
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL43
    jump                   LABEL68
+LABEL43:
    033                    3
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL47
    jump                   LABEL66
+LABEL47:
    load_int               240
    widget_put_opacity    
    load_int               811
@@ -101,8 +107,9 @@ LABEL73:
 LABEL92:
    033                    4
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL96
    jump                   LABEL173
+LABEL96:
    033                    4
    load_int               1
    isub                  
@@ -111,8 +118,9 @@ LABEL92:
    033                    4
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL106
    jump                   LABEL172
+LABEL106:
    widget_put_actions_null
    033                    5
    033                    4
@@ -137,8 +145,9 @@ LABEL92:
    034                    7
    033                    7
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL132
    jump                   LABEL167
+LABEL132:
    load_int               0
    widget_put_hidden     
    033                    7
@@ -148,8 +157,9 @@ LABEL92:
    1200                  
    033                    3
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL143
    jump                   LABEL154
+LABEL143:
    load_int               1
    load_string            "Offer"
    1300                  

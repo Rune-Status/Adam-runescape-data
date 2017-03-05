@@ -11,19 +11,22 @@
    034                    5
    033                    3
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL15
    jump                   LABEL64
+LABEL15:
    033                    3
    load_int               4
-   if_icmpgt              1
+   if_icmpgt              LABEL19
    jump                   LABEL21
+LABEL19:
    load_int               4
    034                    3
 LABEL21:
    033                    5
    033                    3
-   if_icmplt              1
+   if_icmplt              LABEL25
    jump                   LABEL63
+LABEL25:
    035                   
    033                    5
    033                    5
@@ -38,8 +41,9 @@ LABEL21:
    034                    4
    033                    4
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL41
    jump                   LABEL54
+LABEL41:
    033                    2
    033                    4
    load_int               10

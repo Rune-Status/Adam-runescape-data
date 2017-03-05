@@ -4,8 +4,9 @@
    043                    70
    042                    76
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL8
    jump                   LABEL10
+LABEL8:
    get_gamecycle         
    043                    76
 LABEL10:
@@ -20,8 +21,9 @@ LABEL10:
 LABEL18:
    033                    9
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL22
    jump                   LABEL52
+LABEL22:
    033                    9
    102                   
    033                    9

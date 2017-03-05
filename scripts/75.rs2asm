@@ -4,23 +4,26 @@
    036                   
    033                   
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL8
    jump                   LABEL10
+LABEL8:
    042                    4
    034                   
 LABEL10:
    042                    3
    042                    4
-   if_icmpne              1
+   if_icmpne              LABEL14
    jump                   LABEL36
+LABEL14:
    033                   
    load_int               1
    isub                  
    034                   
    033                   
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL22
    jump                   LABEL24
+LABEL22:
    load_int               19
    034                   
 LABEL24:
@@ -30,8 +33,9 @@ LABEL24:
    035                   
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL32
    jump                   LABEL36
+LABEL32:
    035                   
    048                    1
    033                   

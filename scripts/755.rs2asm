@@ -66,8 +66,9 @@
 LABEL65:
    033                    6
    033                    5
-   if_icmplt              1
+   if_icmplt              LABEL69
    jump                   LABEL104
+LABEL69:
    033                    1
    load_int               5
    033                    6
@@ -111,8 +112,9 @@ LABEL104:
 LABEL108:
    033                    6
    033                    5
-   if_icmplt              1
+   if_icmplt              LABEL112
    jump                   LABEL151
+LABEL112:
    033                    5
    033                    6
    iadd                  

@@ -1,7 +1,8 @@
    get_gamecycle         
    033                    4
-   if_icmplt              1
+   if_icmplt              LABEL4
    jump                   LABEL5
+LABEL4:
    return                
 LABEL5:
    load_int               0
@@ -16,8 +17,9 @@ LABEL5:
    025                    4694
    3408                  
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL19
    jump                   LABEL80
+LABEL19:
    load_int               1
    033                    1
    widget_put_hidden_widget
@@ -38,8 +40,9 @@ LABEL5:
 LABEL36:
    033                    6
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL40
    jump                   LABEL80
+LABEL40:
    load_int               1
    033                    6
    widget_put_hidden_widget
@@ -47,8 +50,9 @@ LABEL36:
    load_int               0
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL49
    jump                   LABEL53
+LABEL49:
    load_string            ""
    1112                  
    load_int               1
@@ -56,14 +60,16 @@ LABEL36:
 LABEL53:
    033                    7
    load_int               5
-   if_icmple              1
+   if_icmple              LABEL57
    jump                   LABEL69
+LABEL57:
    033                    6
    033                    7
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL63
    jump                   LABEL64
+LABEL63:
    101                   
 LABEL64:
    033                    7

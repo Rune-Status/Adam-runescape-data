@@ -4,8 +4,9 @@
    102                   
    033                    4
    load_int               -2
-   if_icmpeq              1
+   if_icmpeq              LABEL8
    jump                   LABEL15
+LABEL8:
    load_string            "Loading friend list"
    load_string            "<br>"
    load_string            "Please wait..."
@@ -16,8 +17,9 @@
 LABEL15:
    033                    4
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL19
    jump                   LABEL26
+LABEL19:
    load_string            "Connecting to friendserver"
    load_string            "<br>"
    load_string            "Please wait..."
@@ -45,8 +47,9 @@ LABEL26:
 LABEL42:
    033                    8
    033                    4
-   if_icmplt              1
+   if_icmplt              LABEL46
    jump                   LABEL244
+LABEL46:
    033                    8
    get_friend            
    036                    1
@@ -87,8 +90,9 @@ LABEL42:
    033                    8
    get_friend_world      
    load_int               0
-   if_icmpne              1
+   if_icmpne              LABEL88
    jump                   LABEL95
+LABEL88:
    load_int               1
    load_string            "Message"
    1300                  
@@ -115,8 +119,9 @@ LABEL101:
    035                    1
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL114
    jump                   LABEL162
+LABEL114:
    load_string            "Previous name:"
    load_string            "<br>"
    035                    1
@@ -184,8 +189,9 @@ LABEL166:
    034                    7
    033                    7
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL181
    jump                   LABEL186
+LABEL181:
    load_string            "Offline"
    1112                  
    load_int               16711680
@@ -194,8 +200,9 @@ LABEL166:
 LABEL186:
    033                    7
    get_world             
-   if_icmpeq              1
+   if_icmpeq              LABEL190
    jump                   LABEL198
+LABEL190:
    load_string            "World "
    033                    7
    int_to_string         
@@ -207,8 +214,9 @@ LABEL186:
 LABEL198:
    033                    7
    load_int               5000
-   if_icmpgt              1
+   if_icmpgt              LABEL202
    jump                   LABEL211
+LABEL202:
    load_string            "<col=ffff00>"
    load_string            "Classic "
    033                    7
@@ -264,8 +272,9 @@ LABEL244:
    033                    9
    033                   
    widget_get_height_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL255
    jump                   LABEL264
+LABEL255:
    load_int               0
    033                    9
    033                   

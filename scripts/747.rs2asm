@@ -41,8 +41,9 @@
 LABEL40:
    033                    14
    load_int               420
-   if_icmple              1
+   if_icmple              LABEL44
    jump                   LABEL85
+LABEL44:
    033                    4
    load_int               5
    033                    14
@@ -60,8 +61,9 @@ LABEL40:
    1300                  
    033                    14
    load_int               300
-   if_icmpgt              1
+   if_icmpgt              LABEL63
    jump                   LABEL72
+LABEL63:
    load_string            "<col=ff9040>"
    033                    14
    load_int               300

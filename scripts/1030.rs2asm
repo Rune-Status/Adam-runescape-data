@@ -24,8 +24,9 @@
 LABEL23:
    033                    25
    033                    2
-   if_icmpne              1
+   if_icmpne              LABEL27
    jump                   LABEL47
+LABEL27:
    033                    23
    033                    25
    widget_get_relativex_widget
@@ -81,8 +82,9 @@ LABEL47:
    034                    26
    033                    1
    033                    8
-   if_icmpeq              1
+   if_icmpeq              LABEL83
    jump                   LABEL131
+LABEL83:
    load_int               0
    033                    8
    widget_put_hidden_widget
@@ -134,8 +136,9 @@ LABEL47:
 LABEL131:
    033                    1
    033                    10
-   if_icmpeq              1
+   if_icmpeq              LABEL135
    jump                   LABEL183
+LABEL135:
    load_int               1
    033                    8
    widget_put_hidden_widget
@@ -187,8 +190,9 @@ LABEL131:
 LABEL183:
    033                    1
    033                    12
-   if_icmpeq              1
+   if_icmpeq              LABEL187
    jump                   LABEL235
+LABEL187:
    load_int               1
    033                    8
    widget_put_hidden_widget
@@ -240,8 +244,9 @@ LABEL183:
 LABEL235:
    033                    1
    033                    14
-   if_icmpeq              1
+   if_icmpeq              LABEL239
    jump                   LABEL285
+LABEL239:
    load_int               1
    033                    8
    widget_put_hidden_widget
@@ -291,8 +296,9 @@ LABEL235:
 LABEL285:
    033                    1
    033                    16
-   if_icmpeq              1
+   if_icmpeq              LABEL289
    jump                   LABEL335
+LABEL289:
    load_int               1
    033                    8
    widget_put_hidden_widget
@@ -342,8 +348,9 @@ LABEL285:
 LABEL335:
    033                    1
    033                    18
-   if_icmpeq              1
+   if_icmpeq              LABEL339
    jump                   LABEL387
+LABEL339:
    load_int               1
    033                    8
    widget_put_hidden_widget
@@ -395,8 +402,9 @@ LABEL335:
 LABEL387:
    033                    1
    033                    20
-   if_icmpeq              1
+   if_icmpeq              LABEL391
    jump                   LABEL439
+LABEL391:
    load_int               1
    033                    8
    widget_put_hidden_widget
@@ -448,8 +456,9 @@ LABEL387:
 LABEL439:
    033                    1
    033                    22
-   if_icmpeq              1
+   if_icmpeq              LABEL443
    jump                   LABEL490
+LABEL443:
    load_int               1
    033                    8
    widget_put_hidden_widget
@@ -515,8 +524,9 @@ LABEL490:
    034                    29
    033                    28
    033                    29
-   if_icmpgt              1
+   if_icmpgt              LABEL509
    jump                   LABEL525
+LABEL509:
    033                   
    widget_get_width_widget
    033                    29

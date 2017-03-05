@@ -1,15 +1,17 @@
    042                    11
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL5
+LABEL4:
    3103                  
 LABEL5:
    040                    677
    5022                  
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL11
    jump                   LABEL15
+LABEL11:
    load_string            ""
    5021                  
    040                    553

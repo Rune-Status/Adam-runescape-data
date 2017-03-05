@@ -2,8 +2,9 @@
    034                    5
    033                    1
    033                    2
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL8
+LABEL6:
    load_int               3
    034                    5
 LABEL8:
@@ -17,16 +18,18 @@ LABEL8:
 LABEL15:
    033                    8
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL19
    jump                   LABEL122
+LABEL19:
    033                    8
    load_int               1
    isub                  
    034                    8
    033                    8
    033                    6
-   if_icmpeq              1
+   if_icmpeq              LABEL27
    jump                   LABEL73
+LABEL27:
    033                    2
    033                    8
    load_int               3
@@ -35,8 +38,9 @@ LABEL15:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL37
    jump                   LABEL40
+LABEL37:
    load_int               -1
    load_string            ""
    1409                  
@@ -51,8 +55,9 @@ LABEL40:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL52
    jump                   LABEL54
+LABEL52:
    load_int               699
    widget_put_textureid  
 LABEL54:
@@ -66,8 +71,9 @@ LABEL54:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL66
    jump                   LABEL68
+LABEL66:
    load_int               16777215
    widget_put_textcolor  
 LABEL68:
@@ -85,8 +91,9 @@ LABEL73:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL83
    jump                   LABEL93
+LABEL83:
    load_int               579
    load_int               -2147483644
    033                    8
@@ -108,8 +115,9 @@ LABEL93:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL105
    jump                   LABEL107
+LABEL105:
    load_int               697
    widget_put_textureid  
 LABEL107:
@@ -123,8 +131,9 @@ LABEL107:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL119
    jump                   LABEL121
+LABEL119:
    load_int               16750623
    widget_put_textcolor  
 LABEL121:
@@ -132,8 +141,9 @@ LABEL121:
 LABEL122:
    033                    3
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL126
    jump                   LABEL127
+LABEL126:
    return                
 LABEL127:
    load_int               0
@@ -143,8 +153,9 @@ LABEL127:
    034                    10
    033                    7
    033                    10
-   if_icmplt              1
+   if_icmplt              LABEL136
    jump                   LABEL141
+LABEL136:
    033                    3
    033                    2
    033                    7
@@ -162,8 +173,9 @@ LABEL141:
    033                    10
    033                    9
    iadd                  
-   if_icmpgt              1
+   if_icmpgt              LABEL154
    jump                   LABEL160
+LABEL154:
    033                    3
    033                    2
    033                    7

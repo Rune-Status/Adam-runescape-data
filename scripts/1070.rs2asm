@@ -1,7 +1,8 @@
    033                    1
    load_int               50
-   if_icmple              1
+   if_icmple              LABEL4
    jump                   LABEL30
+LABEL4:
    load_int               255
    033                    1
    load_int               4
@@ -31,8 +32,9 @@
 LABEL30:
    033                    1
    load_int               70
-   if_icmple              1
+   if_icmple              LABEL34
    jump                   LABEL47
+LABEL34:
    033                    1
    load_int               50
    isub                  

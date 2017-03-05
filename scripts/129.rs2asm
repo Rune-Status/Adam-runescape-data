@@ -4,8 +4,9 @@
    034                    4
    033                    4
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL8
    jump                   LABEL15
+LABEL8:
    load_string            "Loading ignore list"
    load_string            "<br>"
    load_string            "Please wait..."
@@ -31,8 +32,9 @@ LABEL15:
 LABEL29:
    033                    7
    033                    4
-   if_icmplt              1
+   if_icmplt              LABEL33
    jump                   LABEL139
+LABEL33:
    033                    7
    get_ignore            
    036                    1
@@ -80,8 +82,9 @@ LABEL29:
    035                    1
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL82
    jump                   LABEL130
+LABEL82:
    load_string            "Previous name:"
    load_string            "<br>"
    035                    1
@@ -151,8 +154,9 @@ LABEL139:
    033                    8
    033                   
    widget_get_height_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL150
    jump                   LABEL155
+LABEL150:
    load_int               0
    033                    8
    033                   

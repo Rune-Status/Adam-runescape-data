@@ -6,8 +6,9 @@
 LABEL5:
    033                    1
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL9
    jump                   LABEL34
+LABEL9:
    033                    1
    load_int               1
    isub                  
@@ -16,8 +17,9 @@ LABEL5:
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL19
    jump                   LABEL27
+LABEL19:
    load_int               563
    033                    1
    3301                  

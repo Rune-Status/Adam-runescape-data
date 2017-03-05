@@ -34,8 +34,9 @@
    load_int               93
    load_int               995
    3303                  
-   if_icmpgt              1
+   if_icmpgt              LABEL38
    jump                   LABEL43
+LABEL38:
    load_string            "You do not have enough coins for this transaction."
    load_int               4194331
    2112                  
@@ -47,8 +48,9 @@ LABEL43:
    2112                  
    042                    67
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL50
    jump                   LABEL52
+LABEL50:
    040                    730
    jump                   LABEL53
 LABEL52:

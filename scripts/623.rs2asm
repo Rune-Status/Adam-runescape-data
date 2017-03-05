@@ -6,8 +6,9 @@
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL21
+LABEL10:
    load_int               220
    widget_put_opacity    
    load_int               488
@@ -28,8 +29,9 @@ LABEL21:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL31
    jump                   LABEL32
+LABEL31:
    1121                  
 LABEL32:
    return                

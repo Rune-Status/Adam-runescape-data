@@ -146,8 +146,9 @@
 LABEL145:
    033                    28
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL149
    jump                   LABEL167
+LABEL149:
    033                    28
    load_int               1
    isub                  
@@ -156,8 +157,9 @@ LABEL145:
    033                    28
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL159
    jump                   LABEL166
+LABEL159:
    load_int               90
    033                    28
    3314                  

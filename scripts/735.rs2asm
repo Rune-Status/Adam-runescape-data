@@ -1,21 +1,24 @@
    get_settings           1204
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL6
+LABEL4:
    040                    737
    jump                   LABEL17
 LABEL6:
    get_settings           1204
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL12
+LABEL10:
    040                    739
    jump                   LABEL17
 LABEL12:
    get_settings           1204
    load_int               3
-   if_icmpeq              1
+   if_icmpeq              LABEL16
    jump                   LABEL17
+LABEL16:
    040                    741
 LABEL17:
    return                

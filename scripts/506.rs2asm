@@ -8,12 +8,14 @@
    033                    10
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL12
    jump                   LABEL362
+LABEL12:
    033                    10
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL16
    jump                   LABEL65
+LABEL16:
    033                    9
    load_int               5
    033                    10
@@ -66,12 +68,14 @@
 LABEL65:
    033                    11
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL69
    jump                   LABEL301
+LABEL69:
    025                    4170
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL73
    jump                   LABEL133
+LABEL73:
    033                    10
    int_to_string         
    036                   
@@ -135,8 +139,9 @@ LABEL65:
 LABEL133:
    025                    4170
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL137
    jump                   LABEL200
+LABEL137:
    load_int               105
    load_int               115
    load_int               207
@@ -237,8 +242,9 @@ LABEL200:
    widget_put_borderthickness
    033                    18
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL238
    jump                   LABEL272
+LABEL238:
    033                    18
    load_int               95
    033                    12
@@ -247,8 +253,9 @@ LABEL200:
    033                    18
    4209                  
    033                    18
-   if_icmpne              1
+   if_icmpne              LABEL248
    jump                   LABEL260
+LABEL248:
    load_int               120
    widget_put_opacity    
    load_int               512
@@ -310,8 +317,9 @@ LABEL300:
 LABEL301:
    033                    13
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL305
    jump                   LABEL350
+LABEL305:
    033                    9
    load_int               5
    033                    10

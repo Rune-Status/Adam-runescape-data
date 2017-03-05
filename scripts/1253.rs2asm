@@ -11,8 +11,9 @@
    036                    1
    033                    1
    load_int               3
-   if_icmpge              1
+   if_icmpge              LABEL15
    jump                   LABEL27
+LABEL15:
    load_int               1
    load_string            "Take"
    033                   
@@ -28,8 +29,9 @@
 LABEL27:
    033                    1
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL31
    jump                   LABEL38
+LABEL31:
    load_int               1
    load_string            "Take"
    033                   
@@ -40,8 +42,9 @@ LABEL27:
 LABEL38:
    033                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL42
    jump                   LABEL49
+LABEL42:
    load_int               1
    load_string            "Retrieve"
    033                   

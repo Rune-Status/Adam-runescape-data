@@ -1,12 +1,13 @@
    033                   
    load_int               0
-   if_icmple              6
+   if_icmple              LABEL9
    033                    1
    load_int               21
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL9
    jump                   LABEL11
+LABEL9:
    load_int               0
    return                
 LABEL11:

@@ -30,8 +30,9 @@
 LABEL29:
    033                    5
    load_int               36
-   if_icmple              1
+   if_icmple              LABEL33
    jump                   LABEL160
+LABEL33:
    load_int               36503554
    load_int               5
    033                    5
@@ -48,8 +49,9 @@ LABEL29:
    100                    1
    033                    5
    load_int               32
-   if_icmplt              1
+   if_icmplt              LABEL51
    jump                   LABEL56
+LABEL51:
    033                   
    033                    5
    test_bit              
@@ -65,8 +67,9 @@ LABEL56:
 LABEL62:
    033                    7
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL66
    jump                   LABEL151
+LABEL66:
    load_int               105
    load_int               79
    load_int               767
@@ -147,8 +150,9 @@ LABEL62:
    034                    6
    033                    5
    033                    2
-   if_icmpeq              1
+   if_icmpeq              LABEL148
    jump                   LABEL150
+LABEL148:
    widget_get_relativey  
    034                    8
 LABEL150:
@@ -173,8 +177,9 @@ LABEL160:
    load_int               6
    modulo                
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL170
    jump                   LABEL174
+LABEL170:
    033                    10
    load_int               1
    iadd                  
@@ -187,8 +192,9 @@ LABEL174:
    033                    10
    load_int               36503554
    widget_get_height_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL183
    jump                   LABEL201
+LABEL183:
    load_int               0
    033                    10
    load_int               36503554

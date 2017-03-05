@@ -10,18 +10,20 @@
    034                    14
    033                    14
    load_int               -1
-   if_icmpeq              5
+   if_icmpeq              LABEL18
    033                    13
    3910                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL18
    jump                   LABEL104
+LABEL18:
    033                   
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL24
    jump                   LABEL26
+LABEL24:
    load_string            "No offer"
    1112                  
 LABEL26:
@@ -29,8 +31,9 @@ LABEL26:
    033                    2
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL32
    jump                   LABEL34
+LABEL32:
    load_int               1
    widget_put_hidden     
 LABEL34:
@@ -38,8 +41,9 @@ LABEL34:
    033                    3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL40
    jump                   LABEL43
+LABEL40:
    load_int               6512
    load_int               1
    1205                  
@@ -48,8 +52,9 @@ LABEL43:
    033                    4
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL49
    jump                   LABEL51
+LABEL49:
    load_string            "No offer"
    1112                  
 LABEL51:
@@ -57,8 +62,9 @@ LABEL51:
    033                    5
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL57
    jump                   LABEL59
+LABEL57:
    load_string            ""
    1112                  
 LABEL59:
@@ -66,8 +72,9 @@ LABEL59:
    033                    6
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL65
    jump                   LABEL67
+LABEL65:
    load_string            ""
    1112                  
 LABEL67:
@@ -75,8 +82,9 @@ LABEL67:
    033                    7
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL73
    jump                   LABEL75
+LABEL73:
    load_string            ""
    1112                  
 LABEL75:
@@ -84,8 +92,9 @@ LABEL75:
    033                    9
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL81
    jump                   LABEL83
+LABEL81:
    load_int               1
    widget_put_hidden     
 LABEL83:
@@ -93,8 +102,9 @@ LABEL83:
    033                    10
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL89
    jump                   LABEL91
+LABEL89:
    load_string            "No offer found for this slot."
    1112                  
 LABEL91:
@@ -102,8 +112,9 @@ LABEL91:
    033                    11
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL97
    jump                   LABEL103
+LABEL97:
    load_int               -1
    load_int               -1
    load_int               -1
@@ -121,8 +132,9 @@ LABEL104:
    034                    16
    033                    16
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL114
    jump                   LABEL116
+LABEL114:
    load_int               6512
    034                    16
 LABEL116:
@@ -131,8 +143,9 @@ LABEL116:
    034                    17
    033                    17
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL123
    jump                   LABEL125
+LABEL123:
    load_int               1
    034                    17
 LABEL125:
@@ -154,20 +167,23 @@ LABEL125:
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL145
    jump                   LABEL166
+LABEL145:
    033                   
    033                    2
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL151
    jump                   LABEL166
+LABEL151:
    load_int               0
    widget_put_hidden      1
    033                    15
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL157
    jump                   LABEL162
+LABEL157:
    load_string            "Sell offer"
    1112                  
    load_int               1119
@@ -183,8 +199,9 @@ LABEL166:
    033                    3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL172
    jump                   LABEL175
+LABEL172:
    033                    16
    033                    17
    1205                  
@@ -193,8 +210,9 @@ LABEL175:
    033                    4
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL181
    jump                   LABEL184
+LABEL181:
    033                    16
    get_item_name         
    1112                  
@@ -203,8 +221,9 @@ LABEL184:
    033                    5
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL190
    jump                   LABEL194
+LABEL190:
    033                    17
    035                   
    040                    46
@@ -214,12 +233,14 @@ LABEL194:
    033                    6
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL200
    jump                   LABEL213
+LABEL200:
    033                    19
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL204
    jump                   LABEL207
+LABEL204:
    load_string            "1 coin"
    1112                  
    jump                   LABEL213
@@ -237,14 +258,16 @@ LABEL213:
    033                    7
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL221
    jump                   LABEL247
+LABEL221:
    load_int               2147483647
    033                    17
    idiv                  
    033                    19
-   if_icmplt              1
+   if_icmplt              LABEL227
    jump                   LABEL230
+LABEL227:
    load_string            "Lots of money"
    1112                  
    jump                   LABEL247
@@ -255,8 +278,9 @@ LABEL230:
    034                    22
    033                    22
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL238
    jump                   LABEL241
+LABEL238:
    load_string            "1 coin"
    1112                  
    jump                   LABEL247
@@ -276,20 +300,24 @@ LABEL247:
    033                    10
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL257
    jump                   LABEL474
+LABEL257:
    033                    21
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL261
    jump                   LABEL345
+LABEL261:
    033                    15
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL265
    jump                   LABEL301
+LABEL265:
    033                    20
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL269
    jump                   LABEL284
+LABEL269:
    load_string            "You sold a total of "
    load_string            "<col=ffb83f>"
    033                    18
@@ -327,8 +355,9 @@ LABEL300:
 LABEL301:
    033                    20
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL305
    jump                   LABEL320
+LABEL305:
    load_string            "You bought a total of "
    load_string            "<col=ffb83f>"
    033                    18
@@ -366,8 +395,9 @@ LABEL336:
    033                    9
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL342
    jump                   LABEL344
+LABEL342:
    load_int               1
    widget_put_hidden     
 LABEL344:
@@ -375,12 +405,14 @@ LABEL344:
 LABEL345:
    033                    15
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL349
    jump                   LABEL387
+LABEL349:
    033                    20
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL353
    jump                   LABEL369
+LABEL353:
    load_string            "You have sold a total of "
    load_string            "<col=ffb83f>"
    033                    18
@@ -420,8 +452,9 @@ LABEL386:
 LABEL387:
    033                    20
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL391
    jump                   LABEL407
+LABEL391:
    load_string            "You have bought a total of "
    load_string            "<col=ffb83f>"
    033                    18
@@ -461,15 +494,17 @@ LABEL424:
    033                    9
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL430
    jump                   LABEL474
+LABEL430:
    load_int               0
    widget_put_hidden     
    033                    13
    3911                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL437
    jump                   LABEL461
+LABEL437:
    load_int               0
    widget_put_opacity    
    033                    23
@@ -513,8 +548,9 @@ LABEL474:
    033                    11
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL480
    jump                   LABEL488
+LABEL480:
    load_int               0
    widget_put_hidden     
    033                    13

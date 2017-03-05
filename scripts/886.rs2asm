@@ -2,8 +2,9 @@
    034                    3
    033                    3
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL7
+LABEL6:
    return                
 LABEL7:
    load_int               103
@@ -24,8 +25,9 @@ LABEL7:
    2001                  
    033                    4
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL27
    jump                   LABEL34
+LABEL27:
    load_int               -7
    load_int               200
    load_int               2

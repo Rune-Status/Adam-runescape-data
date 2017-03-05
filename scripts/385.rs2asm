@@ -1,16 +1,17 @@
    033                   
    load_int               1
-   if_icmpeq              10
+   if_icmpeq              LABEL13
    get_coordinates       
    040                    568
    load_int               1
-   if_icmpeq              6
+   if_icmpeq              LABEL13
    get_gamecycle         
    load_int               100
    modulo                
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL13
    jump                   LABEL14
+LABEL13:
    040                    386
 LABEL14:
    return                

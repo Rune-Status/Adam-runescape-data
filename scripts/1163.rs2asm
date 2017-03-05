@@ -7,8 +7,9 @@
 LABEL6:
    033                   
    load_int               5
-   if_icmplt              1
+   if_icmplt              LABEL10
    jump                   LABEL36
+LABEL10:
    load_int               15335438
    load_int               5
    033                   
@@ -41,8 +42,9 @@ LABEL36:
 LABEL38:
    033                   
    load_int               5
-   if_icmplt              1
+   if_icmplt              LABEL42
    jump                   LABEL74
+LABEL42:
    load_int               15335438
    load_int               5
    load_int               5
@@ -81,8 +83,9 @@ LABEL74:
 LABEL76:
    033                   
    load_int               5
-   if_icmplt              1
+   if_icmplt              LABEL80
    jump                   LABEL115
+LABEL80:
    load_int               15335438
    load_int               4
    load_int               5
@@ -126,13 +129,14 @@ LABEL115:
 LABEL119:
    033                    1
    load_int               5
-   if_icmplt              1
+   if_icmplt              LABEL123
    jump                   LABEL199
 LABEL123:
    033                    2
    load_int               28
-   if_icmplt              1
+   if_icmplt              LABEL127
    jump                   LABEL192
+LABEL127:
    load_int               15335439
    load_int               5
    033                    1

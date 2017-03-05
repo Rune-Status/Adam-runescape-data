@@ -6,8 +6,9 @@
    034                    3
    033                    3
    load_int               10
-   if_icmpge              1
+   if_icmpge              LABEL10
    jump                   LABEL20
+LABEL10:
    033                    2
    load_int               3000
    idiv                  
@@ -39,8 +40,9 @@ LABEL29:
    2408                  
    033                    2
    load_int               500
-   if_icmpgt              1
+   if_icmpgt              LABEL41
    jump                   LABEL43
+LABEL41:
    load_int               500
    034                    2
 LABEL43:

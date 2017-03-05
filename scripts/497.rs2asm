@@ -102,8 +102,9 @@
 LABEL101:
    033                    5
    033                    1
-   if_icmplt              1
+   if_icmplt              LABEL105
    jump                   LABEL243
+LABEL105:
    load_int               5308421
    load_int               5
    033                    5
@@ -114,8 +115,9 @@ LABEL101:
    034                    2
    033                    2
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL117
    jump                   LABEL236
+LABEL117:
    033                   
    033                    5
    3302                  
@@ -155,12 +157,14 @@ LABEL101:
    1200                  
    033                   
    load_int               93
-   if_icmpeq              1
+   if_icmpeq              LABEL158
    jump                   LABEL220
+LABEL158:
    033                    2
    load_int               11941
-   if_icmpeq              1
+   if_icmpeq              LABEL162
    jump                   LABEL171
+LABEL162:
    load_int               150
    widget_put_opacity    
    load_int               -1
@@ -183,8 +187,9 @@ LABEL171:
    033                    5
    045                   
    load_int               -1
-   if_icmple              1
+   if_icmple              LABEL185
    jump                   LABEL199
+LABEL185:
    load_int               526
    load_int               -2147483645
    load_int               -2147483643
@@ -252,12 +257,14 @@ LABEL238:
 LABEL243:
    033                   
    load_int               516
-   if_icmpeq              1
+   if_icmpeq              LABEL247
    jump                   LABEL279
+LABEL247:
    033                    4
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL251
    jump                   LABEL279
+LABEL251:
    load_int               5308421
    load_int               4
    033                    5

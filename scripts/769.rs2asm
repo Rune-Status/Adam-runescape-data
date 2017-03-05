@@ -1,17 +1,19 @@
    033                   
    load_int               -1
-   if_icmpeq              4
+   if_icmpeq              LABEL7
    033                    1
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL7
    jump                   LABEL9
+LABEL7:
    load_string            ""
    return                
 LABEL9:
    033                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL13
    jump                   LABEL16
+LABEL13:
    033                   
    get_item_name         
    return                
@@ -20,8 +22,9 @@ LABEL16:
    036                   
    033                    1
    load_int               100000
-   if_icmplt              1
+   if_icmplt              LABEL22
    jump                   LABEL34
+LABEL22:
    033                    1
    load_string            ","
    040                    46
@@ -39,8 +42,9 @@ LABEL34:
    036                    1
    033                    1
    load_int               10000000
-   if_icmplt              1
+   if_icmplt              LABEL40
    jump                   LABEL61
+LABEL40:
    033                    1
    load_string            ","
    040                    46

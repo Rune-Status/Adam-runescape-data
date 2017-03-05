@@ -13,21 +13,23 @@
    040                    21
    033                   
    load_int               14286849
-   if_icmpeq              10
+   if_icmpeq              LABEL26
    033                   
    load_int               14286940
-   if_icmpeq              7
+   if_icmpeq              LABEL26
    033                   
    load_int               14286942
-   if_icmpeq              4
+   if_icmpeq              LABEL26
    033                   
    load_int               14286986
-   if_icmpeq              1
+   if_icmpeq              LABEL26
    jump                   LABEL39
+LABEL26:
    025                    1771
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL30
    jump                   LABEL35
+LABEL30:
    load_int               10
    load_string            "Animation"
    033                   
@@ -41,16 +43,19 @@ LABEL35:
 LABEL39:
    033                   
    load_int               14286864
-   if_icmpeq              1
+   if_icmpeq              LABEL43
    jump                   LABEL68
+LABEL43:
    025                    4585
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL47
    jump                   LABEL60
+LABEL47:
    get_ismembers         
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL51
    jump                   LABEL60
+LABEL51:
    load_int               1
    load_string            ""
    033                   
@@ -72,16 +77,19 @@ LABEL60:
 LABEL68:
    033                   
    load_int               14286875
-   if_icmpeq              1
+   if_icmpeq              LABEL72
    jump                   LABEL97
+LABEL72:
    025                    4560
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL76
    jump                   LABEL89
+LABEL76:
    get_ismembers         
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL80
    jump                   LABEL89
+LABEL80:
    load_int               1
    load_string            ""
    033                   
@@ -103,16 +111,19 @@ LABEL89:
 LABEL97:
    033                   
    load_int               14286886
-   if_icmpeq              1
+   if_icmpeq              LABEL101
    jump                   LABEL126
+LABEL101:
    025                    4548
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL105
    jump                   LABEL118
+LABEL105:
    get_ismembers         
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL109
    jump                   LABEL118
+LABEL109:
    load_int               1
    load_string            ""
    033                   

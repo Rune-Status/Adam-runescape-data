@@ -4,16 +4,18 @@
    034                    7
    025                    4697
    load_int               31
-   if_icmpeq              1
+   if_icmpeq              LABEL8
    jump                   LABEL11
+LABEL8:
    042                    72
    034                    7
    jump                   LABEL24
 LABEL11:
    025                    4697
    load_int               30
-   if_icmpeq              1
+   if_icmpeq              LABEL15
    jump                   LABEL18
+LABEL15:
    load_int               -1
    034                    7
    jump                   LABEL24
@@ -29,16 +31,18 @@ LABEL24:
    034                    8
    025                    4698
    load_int               31
-   if_icmpeq              1
+   if_icmpeq              LABEL30
    jump                   LABEL33
+LABEL30:
    042                    72
    034                    8
    jump                   LABEL46
 LABEL33:
    025                    4698
    load_int               30
-   if_icmpeq              1
+   if_icmpeq              LABEL37
    jump                   LABEL40
+LABEL37:
    load_int               -1
    034                    8
    jump                   LABEL46
@@ -80,8 +84,9 @@ LABEL46:
    034                    18
    033                    7
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL78
    jump                   LABEL211
+LABEL78:
    load_int               1
    034                    9
    load_int               83
@@ -100,16 +105,18 @@ LABEL46:
    034                    12
    033                    11
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL98
    jump                   LABEL150
+LABEL98:
    033                    12
    033                    10
    isub                  
    034                    15
    033                    15
    load_int               0
-   if_icmpge              1
+   if_icmpge              LABEL106
    jump                   LABEL135
+LABEL106:
    033                    15
    035                   
    040                    46
@@ -169,8 +176,9 @@ LABEL150:
    034                    13
    033                    13
    load_int               99
-   if_icmplt              1
+   if_icmplt              LABEL164
    jump                   LABEL200
+LABEL164:
    load_int               105
    load_int               105
    load_int               256
@@ -223,8 +231,9 @@ LABEL210:
 LABEL211:
    025                    4697
    load_int               30
-   if_icmpeq              1
+   if_icmpeq              LABEL215
    jump                   LABEL228
+LABEL215:
    load_int               -1
    033                    1
    widget_put_textureid_widget
@@ -249,8 +258,9 @@ LABEL228:
    034                    17
    get_settings           1252
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL240
    jump                   LABEL352
+LABEL240:
    033                    16
    load_int               1000
    modulo                
@@ -267,8 +277,9 @@ LABEL228:
    034                    18
    033                    18
    get_settings           1228
-   if_icmpgt              1
+   if_icmpgt              LABEL258
    jump                   LABEL300
+LABEL258:
    033                    18
    get_settings           1228
    isub                  
@@ -288,8 +299,9 @@ LABEL228:
    036                    1
    get_settings           1228
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL279
    jump                   LABEL292
+LABEL279:
    035                    3
    load_string            "|"
    get_settings           1228
@@ -316,12 +328,14 @@ LABEL299:
 LABEL300:
    033                    18
    get_settings           1228
-   if_icmpeq              1
+   if_icmpeq              LABEL304
    jump                   LABEL343
+LABEL304:
    033                    15
    load_int               0
-   if_icmpge              1
+   if_icmpge              LABEL308
    jump                   LABEL343
+LABEL308:
    033                    15
    int_to_string         
    036                    3
@@ -334,8 +348,9 @@ LABEL300:
    036                    1
    get_settings           1228
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL322
    jump                   LABEL335
+LABEL322:
    035                    3
    load_string            "|"
    get_settings           1228
@@ -389,8 +404,9 @@ LABEL363:
    035                    2
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL371
    jump                   LABEL383
+LABEL371:
    load_int               992
    load_int               -2147483645
    load_int               -1
@@ -407,8 +423,9 @@ LABEL383:
    035                    1
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL388
    jump                   LABEL399
+LABEL388:
    load_int               526
    load_int               -2147483645
    load_int               -1
@@ -447,8 +464,9 @@ LABEL403:
    034                    26
    033                    8
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL426
    jump                   LABEL584
+LABEL426:
    load_int               1
    034                    20
    033                    8
@@ -460,12 +478,14 @@ LABEL403:
    034                    10
    033                    11
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL439
    jump                   LABEL504
+LABEL439:
    033                    11
    033                    10
-   if_icmpgt              1
+   if_icmpgt              LABEL443
    jump                   LABEL504
+LABEL443:
    033                    4
    033                    10
    033                    12
@@ -510,8 +530,9 @@ LABEL403:
    036                    2
    033                    12
    033                    11
-   if_icmplt              1
+   if_icmplt              LABEL489
    jump                   LABEL503
+LABEL489:
    035                    1
    load_string            "|Remaining:"
    concat_string         
@@ -538,8 +559,9 @@ LABEL504:
    034                    22
    033                    22
    load_int               99
-   if_icmpgt              1
+   if_icmpgt              LABEL515
    jump                   LABEL517
+LABEL515:
    load_int               99
    034                    22
 LABEL517:
@@ -562,8 +584,9 @@ LABEL517:
    034                    21
    033                    13
    load_int               99
-   if_icmplt              1
+   if_icmplt              LABEL538
    jump                   LABEL571
+LABEL538:
    load_int               83
    load_int               115
    load_int               680
@@ -615,8 +638,9 @@ LABEL583:
 LABEL584:
    025                    4698
    load_int               30
-   if_icmpeq              1
+   if_icmpeq              LABEL588
    jump                   LABEL806
+LABEL588:
    load_int               1
    034                    20
    040                    1008
@@ -624,22 +648,26 @@ LABEL584:
    034                    17
    get_settings           1252
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL597
    jump                   LABEL792
+LABEL597:
    get_settings           1252
    get_settings           1228
-   if_icmpgt              1
+   if_icmpgt              LABEL601
    jump                   LABEL792
+LABEL601:
    033                    17
    load_int               2
-   if_icmplt              1
+   if_icmplt              LABEL605
    jump                   LABEL641
+LABEL605:
    get_settings           1252
    load_int               2147483647
    load_int               1000
    idiv                  
-   if_icmple              1
+   if_icmple              LABEL611
    jump                   LABEL641
+LABEL611:
    033                    4
    get_settings           1228
    load_int               1000
@@ -690,8 +718,9 @@ LABEL641:
    034                    21
    033                    25
    get_settings           1252
-   if_icmplt              1
+   if_icmplt              LABEL662
    jump                   LABEL713
+LABEL662:
    get_settings           1252
    033                    25
    isub                  
@@ -702,8 +731,9 @@ LABEL641:
    034                    26
    033                    26
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL674
    jump                   LABEL699
+LABEL674:
    033                    24
    load_int               1
    isub                  
@@ -757,8 +787,9 @@ LABEL713:
    036                    1
    get_settings           1228
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL727
    jump                   LABEL752
+LABEL727:
    033                    21
    040                    1001
    load_string            "|"
@@ -808,11 +839,12 @@ LABEL752:
 LABEL772:
    033                    23
    load_int               0
-   if_icmpgt              4
+   if_icmpgt              LABEL779
    033                    24
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL779
    jump                   LABEL791
+LABEL779:
    035                    1
    load_string            "|Remaining:"
    concat_string         
@@ -854,8 +886,9 @@ LABEL812:
    035                    2
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL817
    jump                   LABEL829
+LABEL817:
    load_int               992
    load_int               -2147483645
    load_int               -1
@@ -872,8 +905,9 @@ LABEL829:
    035                    1
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL834
    jump                   LABEL845
+LABEL834:
    load_int               526
    load_int               -2147483645
    load_int               -1
@@ -898,8 +932,9 @@ LABEL849:
    2404                  
    033                    9
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL858
    jump                   LABEL909
+LABEL858:
    load_int               0
    033                    19
    widget_put_hidden_widget
@@ -917,8 +952,9 @@ LABEL849:
    2001                  
    033                    20
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL877
    jump                   LABEL896
+LABEL877:
    load_int               0
    033                    3
    widget_put_hidden_widget
@@ -956,8 +992,9 @@ LABEL908:
 LABEL909:
    033                    20
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL913
    jump                   LABEL947
+LABEL913:
    load_int               0
    033                    19
    widget_put_hidden_widget

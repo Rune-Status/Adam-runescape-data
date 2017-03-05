@@ -132,14 +132,16 @@
    1200                  
    033                    4
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL136
    jump                   LABEL137
+LABEL136:
    return                
 LABEL137:
    033                    6
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL141
    jump                   LABEL149
+LABEL141:
    load_int               31
    033                   
    033                    11
@@ -151,8 +153,9 @@ LABEL137:
 LABEL149:
    033                    8
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL153
    jump                   LABEL168
+LABEL153:
    load_int               14
    033                   
    033                    11

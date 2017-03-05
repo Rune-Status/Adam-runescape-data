@@ -8,16 +8,18 @@
    033                    1
    200                   
    load_int               1
-   if_icmpeq              9
+   if_icmpeq              LABEL20
    033                    1
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL15
    jump                   LABEL23
+LABEL15:
    033                   
    201                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL20
    jump                   LABEL23
+LABEL20:
    040                    749
    034                    3
    034                    2

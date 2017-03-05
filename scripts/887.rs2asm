@@ -1,7 +1,8 @@
    025                    136
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL4
    jump                   LABEL12
+LABEL4:
    load_string            "Health "
    025                    136
    int_to_string         
@@ -23,8 +24,9 @@ LABEL12:
 LABEL21:
    025                    137
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL25
    jump                   LABEL32
+LABEL25:
    load_string            "<col=ff0000>"
    load_string            "Unlocked"
    load_string            "</col>"
@@ -39,8 +41,9 @@ LABEL32:
 LABEL35:
    025                    138
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL39
    jump                   LABEL46
+LABEL39:
    load_string            "<col=ff0000>"
    load_string            "Cleared"
    load_string            "</col>"
@@ -55,8 +58,9 @@ LABEL46:
 LABEL49:
    025                    139
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL53
    jump                   LABEL60
+LABEL53:
    load_string            "<col=ff0000>"
    load_string            "Cleared"
    load_string            "</col>"
@@ -71,8 +75,9 @@ LABEL60:
 LABEL63:
    025                    140
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL67
    jump                   LABEL74
+LABEL67:
    load_string            "<col=ff0000>"
    load_string            "Destroyed"
    load_string            "</col>"
@@ -87,8 +92,9 @@ LABEL74:
 LABEL77:
    025                    143
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL81
    jump                   LABEL85
+LABEL81:
    load_string            "Safe"
    033                    5
    2112                  
@@ -96,8 +102,9 @@ LABEL77:
 LABEL85:
    025                    143
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL89
    jump                   LABEL96
+LABEL89:
    load_string            "<col=ff0000>"
    load_string            "Taken"
    load_string            "</col>"
@@ -108,8 +115,9 @@ LABEL85:
 LABEL96:
    025                    143
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL100
    jump                   LABEL107
+LABEL100:
    load_string            "<col=ffff00>"
    load_string            "Dropped"
    load_string            "</col>"
@@ -124,8 +132,9 @@ LABEL107:
 LABEL110:
    025                    153
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL114
    jump                   LABEL118
+LABEL114:
    load_string            "Safe"
    033                    6
    2112                  
@@ -133,8 +142,9 @@ LABEL110:
 LABEL118:
    025                    153
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL122
    jump                   LABEL129
+LABEL122:
    load_string            "<col=ff0000>"
    load_string            "Taken"
    load_string            "</col>"
@@ -145,8 +155,9 @@ LABEL118:
 LABEL129:
    025                    153
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL133
    jump                   LABEL140
+LABEL133:
    load_string            "<col=ffff00>"
    load_string            "Dropped"
    load_string            "</col>"

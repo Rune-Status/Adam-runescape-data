@@ -2,15 +2,17 @@
    034                    1
    025                    4733
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL41
+LABEL6:
    load_int               584586432
    load_int               585094359
    get_coordinates       
    040                    247
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL13
    jump                   LABEL16
+LABEL13:
    load_int               125
    034                    1
    jump                   LABEL41
@@ -20,8 +22,9 @@ LABEL16:
    get_coordinates       
    040                    247
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL23
    jump                   LABEL26
+LABEL23:
    load_int               150
    034                    1
    jump                   LABEL41
@@ -31,14 +34,15 @@ LABEL26:
    get_coordinates       
    040                    247
    load_int               1
-   if_icmpeq              7
+   if_icmpeq              LABEL39
    load_int               584193248
    load_int               584439015
    get_coordinates       
    040                    247
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL39
    jump                   LABEL41
+LABEL39:
    load_int               175
    034                    1
 LABEL41:
@@ -46,16 +50,18 @@ LABEL41:
    034                    2
    033                    2
    033                    1
-   if_icmpgt              1
+   if_icmpgt              LABEL47
    jump                   LABEL58
+LABEL47:
    033                    2
    load_int               4
    isub                  
    034                    2
    033                    2
    033                    1
-   if_icmplt              1
+   if_icmplt              LABEL55
    jump                   LABEL57
+LABEL55:
    033                    1
    034                    2
 LABEL57:
@@ -63,23 +69,26 @@ LABEL57:
 LABEL58:
    033                    2
    033                    1
-   if_icmplt              1
+   if_icmplt              LABEL62
    jump                   LABEL72
+LABEL62:
    033                    2
    load_int               4
    iadd                  
    034                    2
    033                    2
    033                    1
-   if_icmpgt              1
+   if_icmpgt              LABEL70
    jump                   LABEL72
+LABEL70:
    033                    1
    034                    2
 LABEL72:
    033                    2
    042                    50
-   if_icmpne              1
+   if_icmpne              LABEL76
    jump                   LABEL81
+LABEL76:
    033                    2
    033                   
    widget_put_opacity_widget

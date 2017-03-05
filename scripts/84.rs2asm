@@ -8,8 +8,9 @@
    034                    2
    042                    41
    load_int               3
-   if_icmpeq              1
+   if_icmpeq              LABEL12
    jump                   LABEL14
+LABEL12:
    load_int               1
    034                    2
 LABEL14:
@@ -35,8 +36,9 @@ LABEL14:
    036                    8
    040                    921
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL38
    jump                   LABEL58
+LABEL38:
    load_int               16777215
    load_int               1
    034                    4
@@ -72,16 +74,18 @@ LABEL58:
    034                    8
    042                    41
    load_int               0
-   if_icmpeq              4
+   if_icmpeq              LABEL77
    042                    41
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL77
    jump                   LABEL120
+LABEL77:
    5022                  
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL82
    jump                   LABEL120
+LABEL82:
    035                    1
    load_string            "Public chat filtering:"
    load_string            "</col>"
@@ -136,12 +140,14 @@ LABEL120:
 LABEL132:
    033                    9
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL136
    jump                   LABEL541
+LABEL136:
    033                    8
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL140
    jump                   LABEL541
+LABEL140:
    033                    9
    5004                  
    036                    11
@@ -153,8 +159,9 @@ LABEL132:
    035                    9
    040                    193
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL153
    jump                   LABEL537
+LABEL153:
    033                    10
    035                    9
    035                    11
@@ -163,15 +170,17 @@ LABEL132:
    035                   
    040                    90
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL163
    jump                   LABEL537
+LABEL163:
    033                    10
    load_int               2
-   if_icmpeq              4
+   if_icmpeq              LABEL170
    033                    10
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL170
    jump                   LABEL190
+LABEL170:
    035                    9
    load_string            ":"
    037                    2
@@ -195,11 +204,12 @@ LABEL132:
 LABEL190:
    033                    10
    load_int               90
-   if_icmpeq              4
+   if_icmpeq              LABEL197
    033                    10
    load_int               91
-   if_icmpeq              1
+   if_icmpeq              LABEL197
    jump                   LABEL217
+LABEL197:
    035                    9
    load_string            ":"
    037                    2
@@ -223,11 +233,12 @@ LABEL190:
 LABEL217:
    033                    10
    load_int               3
-   if_icmpeq              4
+   if_icmpeq              LABEL224
    033                    10
    load_int               7
-   if_icmpeq              1
+   if_icmpeq              LABEL224
    jump                   LABEL245
+LABEL224:
    load_string            "From?"
    035                    9
    load_string            ":"
@@ -252,8 +263,9 @@ LABEL217:
 LABEL245:
    033                    10
    load_int               101
-   if_icmpeq              1
+   if_icmpeq              LABEL249
    jump                   LABEL266
+LABEL249:
    035                    7
    035                    11
    load_string            "</col>"
@@ -274,8 +286,9 @@ LABEL245:
 LABEL266:
    033                    10
    load_int               5
-   if_icmpeq              1
+   if_icmpeq              LABEL270
    jump                   LABEL302
+LABEL270:
    035                    2
    035                    11
    load_string            "</col>"
@@ -294,8 +307,9 @@ LABEL266:
    034                    6
    025                    1627
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL290
    jump                   LABEL301
+LABEL290:
    033                    11
    load_int               500
    iadd                  
@@ -312,8 +326,9 @@ LABEL301:
 LABEL302:
    033                    10
    load_int               6
-   if_icmpeq              1
+   if_icmpeq              LABEL306
    jump                   LABEL327
+LABEL306:
    load_string            "To?"
    035                    9
    load_string            ":"
@@ -338,11 +353,12 @@ LABEL302:
 LABEL327:
    033                    10
    load_int               103
-   if_icmpeq              4
+   if_icmpeq              LABEL334
    033                    10
    load_int               104
-   if_icmpeq              1
+   if_icmpeq              LABEL334
    jump                   LABEL351
+LABEL334:
    035                    8
    035                    11
    load_string            "</col>"
@@ -363,8 +379,9 @@ LABEL327:
 LABEL351:
    033                    10
    load_int               9
-   if_icmpeq              1
+   if_icmpeq              LABEL355
    jump                   LABEL380
+LABEL355:
    load_string            "["
    035                    5
    035                    10
@@ -393,8 +410,9 @@ LABEL351:
 LABEL380:
    033                    10
    load_int               14
-   if_icmpeq              1
+   if_icmpeq              LABEL384
    jump                   LABEL402
+LABEL384:
    035                    4
    load_string            "Broadcast:"
    load_string            "</col>"
@@ -432,29 +450,30 @@ LABEL415:
    widget_put_actions_null_widget
    033                    10
    load_int               1
-   if_icmpeq              22
+   if_icmpeq              LABEL442
    033                    10
    load_int               2
-   if_icmpeq              19
+   if_icmpeq              LABEL442
    033                    10
    load_int               3
-   if_icmpeq              16
+   if_icmpeq              LABEL442
    033                    10
    load_int               6
-   if_icmpeq              13
+   if_icmpeq              LABEL442
    033                    10
    load_int               7
-   if_icmpeq              10
+   if_icmpeq              LABEL442
    033                    10
    load_int               9
-   if_icmpeq              7
+   if_icmpeq              LABEL442
    033                    10
    load_int               90
-   if_icmpeq              4
+   if_icmpeq              LABEL442
    033                    10
    load_int               91
-   if_icmpeq              1
+   if_icmpeq              LABEL442
    jump                   LABEL493
+LABEL442:
    load_string            "<col=ffffff>"
    035                    9
    037                    2
@@ -465,13 +484,15 @@ LABEL415:
    string_remove_html    
    4107                  
    load_int               0
-   if_icmpne              1
+   if_icmpne              LABEL454
    jump                   LABEL492
+LABEL454:
    035                    9
    3609                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL459
    jump                   LABEL464
+LABEL459:
    load_int               6
    load_string            "Message"
    033                    8
@@ -493,16 +514,19 @@ LABEL472:
    2300                  
    033                    10
    load_int               9
-   if_icmpeq              1
+   if_icmpeq              LABEL480
    jump                   LABEL492
+LABEL480:
    get_clanchatcount     
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL484
    jump                   LABEL492
+LABEL484:
    3618                  
    3616                  
-   if_icmpge              1
+   if_icmpge              LABEL488
    jump                   LABEL492
+LABEL488:
    load_int               9
    load_string            "Kick"
    033                    8
@@ -512,8 +536,9 @@ LABEL492:
 LABEL493:
    033                    10
    load_int               101
-   if_icmpeq              1
+   if_icmpeq              LABEL497
    jump                   LABEL507
+LABEL497:
    load_string            "<col=ffffff>"
    035                    9
    037                    2
@@ -527,11 +552,12 @@ LABEL493:
 LABEL507:
    033                    10
    load_int               103
-   if_icmpeq              4
+   if_icmpeq              LABEL514
    033                    10
    load_int               104
-   if_icmpeq              1
+   if_icmpeq              LABEL514
    jump                   LABEL523
+LABEL514:
    load_string            "<col=ffffff>"
    035                    9
    037                    2
@@ -567,8 +593,9 @@ LABEL541:
 LABEL543:
    033                    8
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL547
    jump                   LABEL592
+LABEL547:
    033                    8
    widget_put_actions_null_widget
    load_int               0
@@ -583,8 +610,9 @@ LABEL543:
    imul                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL563
    jump                   LABEL567
+LABEL563:
    load_string            ""
    1112                  
    load_int               1
@@ -598,8 +626,9 @@ LABEL567:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL577
    jump                   LABEL581
+LABEL577:
    load_string            ""
    1112                  
    load_int               1
@@ -630,8 +659,9 @@ LABEL592:
    034                    13
    033                    5
    033                    13
-   if_icmpgt              1
+   if_icmpgt              LABEL607
    jump                   LABEL609
+LABEL607:
    033                    5
    034                    13
 LABEL609:
@@ -640,8 +670,9 @@ LABEL609:
 LABEL611:
    033                    7
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL615
    jump                   LABEL668
+LABEL615:
    033                    7
    load_int               1
    isub                  
@@ -672,8 +703,9 @@ LABEL611:
    imul                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL647
    jump                   LABEL652
+LABEL647:
    widget_get_relativex  
    033                    5
    load_int               0
@@ -688,8 +720,9 @@ LABEL652:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL662
    jump                   LABEL667
+LABEL662:
    widget_get_relativex  
    033                    5
    load_int               0

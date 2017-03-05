@@ -1,15 +1,17 @@
    033                   
    load_int               99
-   if_icmpgt              1
+   if_icmpgt              LABEL4
    jump                   LABEL7
+LABEL4:
    033                   
    int_to_string         
    return                
 LABEL7:
    033                   
    load_int               9
-   if_icmpgt              1
+   if_icmpgt              LABEL11
    jump                   LABEL16
+LABEL11:
    load_string            "0"
    033                   
    int_to_string         
@@ -18,8 +20,9 @@ LABEL7:
 LABEL16:
    033                   
    load_int               0
-   if_icmpge              1
+   if_icmpge              LABEL20
    jump                   LABEL25
+LABEL20:
    load_string            "00"
    033                   
    int_to_string         

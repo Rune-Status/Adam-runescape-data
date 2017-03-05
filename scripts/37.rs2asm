@@ -6,22 +6,25 @@
    034                    4
    033                    4
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL12
+LABEL10:
    load_int               1
    034                    4
 LABEL12:
    033                    2
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL16
    jump                   LABEL18
+LABEL16:
    load_int               0
    034                    2
 LABEL18:
    033                    2
    033                    4
-   if_icmpgt              1
+   if_icmpgt              LABEL22
    jump                   LABEL24
+LABEL22:
    033                    4
    034                    2
 LABEL24:
@@ -31,8 +34,9 @@ LABEL24:
    widget_put_scroll_widget
    033                    1
    load_int               10616875
-   if_icmpeq              1
+   if_icmpeq              LABEL32
    jump                   LABEL36
+LABEL32:
    033                    1
    widget_get_scrolly_widget
    043                    7
@@ -40,8 +44,9 @@ LABEL24:
 LABEL36:
    033                    1
    load_int               17956864
-   if_icmpeq              1
+   if_icmpeq              LABEL40
    jump                   LABEL44
+LABEL40:
    033                    1
    widget_get_scrolly_widget
    043                    10
@@ -49,8 +54,9 @@ LABEL36:
 LABEL44:
    033                    1
    load_int               28114947
-   if_icmpeq              1
+   if_icmpeq              LABEL48
    jump                   LABEL52
+LABEL48:
    033                    1
    widget_get_scrolly_widget
    043                    9
@@ -58,8 +64,9 @@ LABEL44:
 LABEL52:
    033                    1
    load_int               786444
-   if_icmpeq              1
+   if_icmpeq              LABEL56
    jump                   LABEL60
+LABEL56:
    033                    1
    widget_get_scrolly_widget
    043                    51
@@ -67,8 +74,9 @@ LABEL52:
 LABEL60:
    033                    1
    load_int               24969223
-   if_icmpeq              1
+   if_icmpeq              LABEL64
    jump                   LABEL68
+LABEL64:
    033                    1
    widget_get_scrolly_widget
    043                   
@@ -76,8 +84,9 @@ LABEL60:
 LABEL68:
    033                    1
    load_int               4521991
-   if_icmpeq              1
+   if_icmpeq              LABEL72
    jump                   LABEL76
+LABEL72:
    033                    1
    widget_get_scrolly_widget
    043                    69
@@ -85,8 +94,9 @@ LABEL68:
 LABEL76:
    033                    1
    load_int               38797314
-   if_icmpeq              1
+   if_icmpeq              LABEL80
    jump                   LABEL84
+LABEL80:
    033                    1
    widget_get_scrolly_widget
    043                    58
@@ -94,11 +104,12 @@ LABEL76:
 LABEL84:
    033                    1
    load_int               22609930
-   if_icmpeq              4
+   if_icmpeq              LABEL91
    033                    1
    load_int               26214409
-   if_icmpeq              1
+   if_icmpeq              LABEL91
    jump                   LABEL95
+LABEL91:
    033                    1
    widget_get_scrolly_widget
    043                    63
@@ -106,8 +117,9 @@ LABEL84:
 LABEL95:
    033                    1
    load_int               11730949
-   if_icmpeq              1
+   if_icmpeq              LABEL99
    jump                   LABEL103
+LABEL99:
    033                    1
    widget_get_scrolly_widget
    043                    77
@@ -115,8 +127,9 @@ LABEL95:
 LABEL103:
    033                    1
    load_int               4915202
-   if_icmpeq              1
+   if_icmpeq              LABEL107
    jump                   LABEL111
+LABEL107:
    033                    1
    widget_get_scrolly_widget
    043                    80
@@ -124,8 +137,9 @@ LABEL103:
 LABEL111:
    033                    1
    load_int               8454157
-   if_icmpeq              1
+   if_icmpeq              LABEL115
    jump                   LABEL118
+LABEL115:
    033                    1
    widget_get_scrolly_widget
    043                    138
@@ -139,8 +153,9 @@ LABEL118:
    034                    5
    033                    3
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL129
    jump                   LABEL166
+LABEL129:
    load_int               0
    load_int               16
    033                    5
@@ -156,8 +171,9 @@ LABEL118:
    load_int               2
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL146
    jump                   LABEL151
+LABEL146:
    load_int               0
    widget_get_relativey  
    load_int               1
@@ -168,8 +184,9 @@ LABEL151:
    load_int               3
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL157
    jump                   LABEL166
+LABEL157:
    load_int               0
    widget_get_relativey  
    widget_get_height     

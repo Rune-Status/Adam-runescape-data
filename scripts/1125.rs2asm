@@ -24,8 +24,9 @@
 LABEL23:
    033                    15
    033                    3
-   if_icmpne              1
+   if_icmpne              LABEL27
    jump                   LABEL47
+LABEL27:
    033                    13
    033                    15
    widget_get_relativex_widget
@@ -91,8 +92,9 @@ LABEL87:
    035                   
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL92
    jump                   LABEL162
+LABEL92:
    033                    1
    load_int               4
    033                    16
@@ -169,16 +171,18 @@ LABEL162:
    widget_put_hidden_widget
    033                    1
    033                    8
-   if_icmpne              1
+   if_icmpne              LABEL169
    jump                   LABEL172
+LABEL169:
    load_int               1
    033                    8
    widget_put_hidden_widget
 LABEL172:
    033                    1
    033                    9
-   if_icmpne              1
+   if_icmpne              LABEL176
    jump                   LABEL179
+LABEL176:
    load_int               1
    033                    9
    widget_put_hidden_widget
@@ -200,8 +204,9 @@ LABEL179:
    034                    19
    033                    18
    033                    19
-   if_icmpgt              1
+   if_icmpgt              LABEL198
    jump                   LABEL214
+LABEL198:
    033                   
    widget_get_width_widget
    033                    19

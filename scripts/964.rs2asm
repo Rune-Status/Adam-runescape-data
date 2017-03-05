@@ -4,8 +4,9 @@
    3200                  
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL8
    jump                   LABEL16
+LABEL8:
    040                    300
    033                    1
    033                    2
@@ -17,8 +18,9 @@
 LABEL16:
    042                    5
    load_int               11
-   if_icmpeq              1
+   if_icmpeq              LABEL20
    jump                   LABEL23
+LABEL20:
    load_int               1
    load_int               1
    040                    299

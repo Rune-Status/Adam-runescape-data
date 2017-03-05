@@ -1,36 +1,42 @@
    033                    1
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL11
+LABEL4:
    get_gamecycle         
    load_int               50
    modulo                
    load_int               0
-   if_icmpne              1
+   if_icmpne              LABEL10
    jump                   LABEL11
+LABEL10:
    return                
 LABEL11:
    040                    1138
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL15
    jump                   LABEL20
+LABEL15:
    025                    4965
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL19
    jump                   LABEL20
+LABEL19:
    return                
 LABEL20:
    025                    4143
    load_int               0
-   if_icmpeq              8
+   if_icmpeq              LABEL31
    040                    1138
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL27
    jump                   LABEL35
+LABEL27:
    040                    384
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL31
    jump                   LABEL35
+LABEL31:
    load_int               1
    033                   
    widget_put_hidden_widget
@@ -41,8 +47,9 @@ LABEL35:
    widget_put_hidden_widget
    get_settings           1102
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL42
    jump                   LABEL53
+LABEL42:
    load_string            "Kills:"
    get_settings           1103
    int_to_string         

@@ -45,13 +45,15 @@
 LABEL44:
    033                    1
    load_int               4
-   if_icmplt              1
+   if_icmplt              LABEL48
    jump                   LABEL99
+LABEL48:
    033                    1
    045                   
    033                   
-   if_icmpeq              1
+   if_icmpeq              LABEL53
    jump                   LABEL86
+LABEL53:
    load_int               0
    033                    1
    045                    1
@@ -65,8 +67,9 @@ LABEL44:
    widget_get_height_widget
    load_int               34209810
    widget_get_height_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL68
    jump                   LABEL82
+LABEL68:
    load_int               0
    load_int               34209819
    widget_put_hidden_widget

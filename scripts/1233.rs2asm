@@ -12,8 +12,9 @@
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL16
    jump                   LABEL79
+LABEL16:
    load_int               105
    load_int               105
    load_int               1279
@@ -26,8 +27,9 @@
    034                    4
    033                    5
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL30
    jump                   LABEL36
+LABEL30:
    033                    4
    widget_put_textcolor  
    load_int               -1
@@ -37,8 +39,9 @@
 LABEL36:
    033                    5
    load_int               30
-   if_icmpgt              1
+   if_icmpgt              LABEL40
    jump                   LABEL42
+LABEL40:
    load_int               30
    034                    5
 LABEL42:

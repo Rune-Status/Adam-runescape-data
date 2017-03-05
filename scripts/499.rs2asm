@@ -10,8 +10,9 @@ LABEL8:
    035                   
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL13
    jump                   LABEL37
+LABEL13:
    033                   
    load_int               3
    033                    10
@@ -39,16 +40,18 @@ LABEL8:
 LABEL37:
    033                    10
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL41
    jump                   LABEL42
+LABEL41:
    return                
 LABEL42:
    load_int               0
    034                    11
    033                    9
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL48
    jump                   LABEL63
+LABEL48:
    033                    10
    load_int               2
    idiv                  
@@ -57,8 +60,9 @@ LABEL42:
    load_int               2
    modulo                
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL58
    jump                   LABEL62
+LABEL58:
    033                    11
    load_int               1
    iadd                  
@@ -80,8 +84,9 @@ LABEL65:
    034                    14
    033                    12
    033                    13
-   if_icmple              1
+   if_icmple              LABEL78
    jump                   LABEL81
+LABEL78:
    033                    12
    034                    13
    jump                   LABEL87
@@ -106,8 +111,9 @@ LABEL87:
    034                    16
    033                    9
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL102
    jump                   LABEL106
+LABEL102:
    033                    16
    load_int               2
    idiv                  
@@ -123,8 +129,9 @@ LABEL106:
    034                    18
    033                    9
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL118
    jump                   LABEL122
+LABEL118:
    033                    17
    033                    16
    iadd                  
@@ -145,16 +152,19 @@ LABEL122:
 LABEL134:
    033                    20
    033                    10
-   if_icmplt              1
+   if_icmplt              LABEL138
    jump                   LABEL340
+LABEL138:
    033                    9
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL142
    jump                   LABEL159
+LABEL142:
    033                    20
    033                    11
-   if_icmpge              1
+   if_icmpge              LABEL146
    jump                   LABEL159
+LABEL146:
    load_int               1
    load_int               20
    033                    16
@@ -182,8 +192,9 @@ LABEL167:
    033                    20
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL173
    jump                   LABEL185
+LABEL173:
    033                    13
    033                    16
    load_int               0
@@ -230,8 +241,9 @@ LABEL185:
    1109                  
    033                    3
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL220
    jump                   LABEL257
+LABEL220:
    load_int               105
    load_int               109
    033                    3
@@ -240,8 +252,9 @@ LABEL185:
    034                    23
    033                    23
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL230
    jump                   LABEL257
+LABEL230:
    033                   
    load_int               6
    033                    19
@@ -272,8 +285,9 @@ LABEL185:
 LABEL257:
    033                    4
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL261
    jump                   LABEL288
+LABEL261:
    033                   
    load_int               6
    033                    19
@@ -317,8 +331,9 @@ LABEL288:
    1001                  
    033                    24
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL305
    jump                   LABEL313
+LABEL305:
    033                    21
    033                    15
    iadd                  

@@ -7,8 +7,9 @@
    1300                  
    get_ismembers         
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL11
    jump                   LABEL26
+LABEL11:
    load_int               105
    load_int               79
    033                   
@@ -16,8 +17,9 @@
    3408                  
    get_item_ismembers    
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL20
    jump                   LABEL26
+LABEL20:
    load_int               130
    widget_put_opacity    
    load_int               -1
@@ -40,21 +42,24 @@ LABEL26:
 LABEL38:
    033                    4
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL42
    jump                   LABEL77
+LABEL42:
    033                    1
    load_int               0
-   if_icmpeq              4
+   if_icmpeq              LABEL49
    033                    2
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL49
    jump                   LABEL77
+LABEL49:
    load_int               93
    033                    4
    3303                  
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL55
    jump                   LABEL57
+LABEL55:
    load_int               1
    034                    1
 LABEL57:
@@ -63,8 +68,9 @@ LABEL57:
    get_item_note_1       
    3303                  
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL64
    jump                   LABEL66
+LABEL64:
    load_int               1
    034                    2
 LABEL66:
@@ -82,12 +88,14 @@ LABEL66:
 LABEL77:
    033                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL81
    jump                   LABEL98
+LABEL81:
    033                    2
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL85
    jump                   LABEL98
+LABEL85:
    load_int               130
    widget_put_opacity    
    load_int               487

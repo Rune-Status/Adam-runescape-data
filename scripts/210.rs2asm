@@ -1,15 +1,17 @@
    042                    41
    load_int               5
-   if_icmpne              1
+   if_icmpne              LABEL4
    jump                   LABEL6
+LABEL4:
    load_int               0
    return                
 LABEL6:
    047                    25
    string_length         
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL11
    jump                   LABEL13
+LABEL11:
    load_int               0
    return                
 LABEL13:
@@ -17,23 +19,24 @@ LABEL13:
    036                    1
    033                   
    load_int               2
-   if_icmpeq              16
+   if_icmpeq              LABEL34
    033                   
    load_int               1
-   if_icmpeq              13
+   if_icmpeq              LABEL34
    033                   
    load_int               3
-   if_icmpeq              10
+   if_icmpeq              LABEL34
    033                   
    load_int               6
-   if_icmpeq              7
+   if_icmpeq              LABEL34
    033                   
    load_int               7
-   if_icmpeq              4
+   if_icmpeq              LABEL34
    033                   
    load_int               9
-   if_icmpeq              1
+   if_icmpeq              LABEL34
    jump                   LABEL79
+LABEL34:
    035                   
    string_remove_html    
    036                    1
@@ -42,8 +45,9 @@ LABEL13:
    string_remove_html    
    4107                  
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL44
    jump                   LABEL46
+LABEL44:
    load_int               1
    return                
 LABEL46:
@@ -52,34 +56,39 @@ LABEL46:
    string_remove_html    
    4107                  
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL53
    jump                   LABEL79
+LABEL53:
    033                   
    load_int               1
-   if_icmpeq              4
+   if_icmpeq              LABEL60
    033                   
    load_int               7
-   if_icmpeq              1
+   if_icmpeq              LABEL60
    jump                   LABEL62
+LABEL60:
    load_int               1
    return                
 LABEL62:
    5016                  
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL66
    jump                   LABEL68
+LABEL66:
    load_int               1
    return                
 LABEL68:
    5016                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL72
    jump                   LABEL79
+LABEL72:
    035                   
    3609                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL77
    jump                   LABEL79
+LABEL77:
    load_int               1
    return                
 LABEL79:

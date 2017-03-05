@@ -148,8 +148,9 @@
 LABEL147:
    033                    29
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL151
    jump                   LABEL198
+LABEL151:
    033                    29
    load_int               1
    isub                  
@@ -158,23 +159,27 @@ LABEL147:
    033                    29
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL161
    jump                   LABEL197
+LABEL161:
    033                   
    load_int               93
-   if_icmpeq              1
+   if_icmpeq              LABEL165
    jump                   LABEL190
+LABEL165:
    033                    29
    045                   
    load_int               -1
-   if_icmple              1
+   if_icmple              LABEL170
    jump                   LABEL190
+LABEL170:
    load_int               93
    033                    29
    3301                  
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL176
    jump                   LABEL190
+LABEL176:
    load_int               526
    load_int               -2147483645
    load_int               -2147483643

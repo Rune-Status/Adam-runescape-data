@@ -7,14 +7,16 @@
 LABEL6:
    033                   
    load_int               23
-   if_icmplt              1
+   if_icmplt              LABEL10
    jump                   LABEL40
+LABEL10:
    get_settings           1295
    033                   
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL16
    jump                   LABEL35
+LABEL16:
    load_int               105
    load_int               105
    load_int               1239
@@ -23,8 +25,9 @@ LABEL6:
    iadd                  
    3408                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL26
    jump                   LABEL31
+LABEL26:
    033                    1
    load_int               1
    iadd                  

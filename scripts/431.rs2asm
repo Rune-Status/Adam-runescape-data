@@ -2,8 +2,9 @@
    102                   
    033                    1
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL10
+LABEL6:
    load_int               1
    033                   
    widget_put_hidden_widget
@@ -17,12 +18,14 @@ LABEL10:
    get_coordinates       
    040                    247
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL20
    jump                   LABEL26
+LABEL20:
    033                    1
    load_int               1205
-   if_icmpne              1
+   if_icmpne              LABEL24
    jump                   LABEL26
+LABEL24:
    load_int               1
    034                    2
 LABEL26:
@@ -53,7 +56,7 @@ LABEL26:
    1114                  
    033                    2
    load_int               1
-   if_icmpeq              9
+   if_icmpeq              LABEL63
    load_int               13
    get_boostedskilllevels
    load_int               111
@@ -61,8 +64,9 @@ LABEL26:
    load_int               846
    033                    1
    3408                  
-   if_icmplt              1
+   if_icmplt              LABEL63
    jump                   LABEL68
+LABEL63:
    load_int               0
    widget_put_textcolor  
    load_int               0
@@ -110,8 +114,9 @@ LABEL72:
    033                    3
    3303                  
    033                    5
-   if_icmplt              1
+   if_icmplt              LABEL110
    jump                   LABEL113
+LABEL110:
    load_int               16750623
    widget_put_textcolor  
    jump                   LABEL115
@@ -121,8 +126,9 @@ LABEL113:
 LABEL115:
    033                    5
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL119
    jump                   LABEL122
+LABEL119:
    load_string            "1 bar"
    1112                  
    jump                   LABEL127
@@ -162,8 +168,9 @@ LABEL127:
    1200                  
    033                    6
    load_int               1
-   if_icmpgt              1
+   if_icmpgt              LABEL158
    jump                   LABEL175
+LABEL158:
    load_int               1
    load_string            "Smith 1 set"
    033                   

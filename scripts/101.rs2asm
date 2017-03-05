@@ -1,13 +1,14 @@
    042                    5
    033                   
-   if_icmpeq              7
+   if_icmpeq              LABEL10
    042                    5
    load_int               0
-   if_icmple              4
+   if_icmple              LABEL10
    033                   
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL10
    jump                   LABEL13
+LABEL10:
    load_int               1
    load_int               1
    040                    299

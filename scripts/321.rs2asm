@@ -38,8 +38,9 @@
 LABEL37:
    033                    18
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL41
    jump                   LABEL188
+LABEL41:
    033                    17
    load_int               5
    modulo                
@@ -125,8 +126,9 @@ LABEL37:
    1112                   1
    033                    16
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL128
    jump                   LABEL138
+LABEL128:
    load_int               2
    load_string            "Buy 1"
    1300                  
@@ -150,8 +152,9 @@ LABEL138:
 LABEL147:
    033                    18
    load_int               13226
-   if_icmpeq              1
+   if_icmpeq              LABEL151
    jump                   LABEL155
+LABEL151:
    widget_put_actions_null
    load_int               2
    load_string            "Buy 1"
@@ -210,8 +213,9 @@ LABEL188:
    033                    15
    033                   
    widget_get_height_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL209
    jump                   LABEL214
+LABEL209:
    load_int               0
    033                    15
    033                   

@@ -6,8 +6,9 @@
    034                    5
    033                    5
    load_int               50
-   if_icmpge              1
+   if_icmpge              LABEL10
    jump                   LABEL14
+LABEL10:
    load_int               100
    033                    5
    isub                  
@@ -26,8 +27,9 @@ LABEL14:
    034                    6
    033                    1
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL29
    jump                   LABEL33
+LABEL29:
    033                    6
    033                   
    widget_put_opacity_widget
@@ -37,8 +39,9 @@ LABEL33:
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL39
    jump                   LABEL41
+LABEL39:
    033                    6
    widget_put_opacity    
 LABEL41:

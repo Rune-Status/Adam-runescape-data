@@ -1,19 +1,22 @@
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL19
+LABEL4:
    033                    1
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL8
    jump                   LABEL11
+LABEL8:
    load_int               14408631
    033                    1
    widget_put_textcolor_widget
 LABEL11:
    033                    2
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL15
    jump                   LABEL18
+LABEL15:
    load_int               14408631
    033                    2
    widget_put_textcolor_widget
@@ -22,16 +25,18 @@ LABEL18:
 LABEL19:
    033                    1
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL23
    jump                   LABEL26
+LABEL23:
    load_int               13938818
    033                    1
    widget_put_textcolor_widget
 LABEL26:
    033                    2
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL30
    jump                   LABEL33
+LABEL30:
    load_int               13938818
    033                    2
    widget_put_textcolor_widget

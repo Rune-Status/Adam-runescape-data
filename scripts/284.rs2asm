@@ -12,24 +12,28 @@
    034                    7
    033                    2
    load_int               15
-   if_icmplt              1
+   if_icmplt              LABEL16
    jump                   LABEL105
+LABEL16:
    033                    2
    load_int               -8
-   if_icmplt              1
+   if_icmplt              LABEL20
    jump                   LABEL21
+LABEL20:
    return                
 LABEL21:
    033                    4
    get_gamecycle         
-   if_icmple              1
+   if_icmple              LABEL25
    jump                   LABEL43
+LABEL25:
    033                   
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL31
    jump                   LABEL42
+LABEL31:
    load_int               284
    load_int               -2147483645
    load_int               -2147483643
@@ -48,14 +52,16 @@ LABEL43:
    get_gamecycle         
    isub                  
    load_int               5
-   if_icmplt              1
+   if_icmplt              LABEL49
    jump                   LABEL67
+LABEL49:
    033                   
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL55
    jump                   LABEL66
+LABEL55:
    load_int               284
    load_int               -2147483645
    load_int               -2147483643
@@ -74,8 +80,9 @@ LABEL67:
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL73
    jump                   LABEL83
+LABEL73:
    load_int               284
    load_int               -2147483645
    load_int               -2147483643
@@ -89,15 +96,17 @@ LABEL67:
 LABEL83:
    033                    2
    load_int               5
-   if_icmplt              1
+   if_icmplt              LABEL87
    jump                   LABEL89
+LABEL87:
    load_int               8
    034                    5
 LABEL89:
    033                    7
    033                    5
-   if_icmpgt              1
+   if_icmpgt              LABEL93
    jump                   LABEL98
+LABEL93:
    033                    7
    033                    5
    isub                  
@@ -122,20 +131,23 @@ LABEL105:
    034                    6
    033                    6
    load_int               20
-   if_icmplt              1
+   if_icmplt              LABEL116
    jump                   LABEL137
+LABEL116:
    033                    6
    load_int               -5
-   if_icmplt              1
+   if_icmplt              LABEL120
    jump                   LABEL123
+LABEL120:
    load_int               10
    034                    5
    jump                   LABEL129
 LABEL123:
    033                    6
    load_int               5
-   if_icmplt              1
+   if_icmplt              LABEL127
    jump                   LABEL129
+LABEL127:
    load_int               8
    034                    5
 LABEL129:

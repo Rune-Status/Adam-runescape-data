@@ -1,13 +1,15 @@
    get_settings           211
    033                    2
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL25
+LABEL4:
    033                   
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL12
+LABEL10:
    load_int               175
    widget_put_opacity    
 LABEL12:
@@ -29,8 +31,9 @@ LABEL25:
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL31
    jump                   LABEL33
+LABEL31:
    load_int               255
    widget_put_opacity    
 LABEL33:

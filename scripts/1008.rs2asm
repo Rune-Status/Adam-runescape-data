@@ -17,8 +17,9 @@
 LABEL16:
    033                    4
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL20
    jump                   LABEL49
+LABEL20:
    033                   
    033                    4
    get_skillexperiences  
@@ -27,8 +28,9 @@ LABEL16:
 LABEL25:
    033                   
    033                    2
-   if_icmpge              1
+   if_icmpge              LABEL29
    jump                   LABEL38
+LABEL29:
    033                   
    033                    2
    isub                  

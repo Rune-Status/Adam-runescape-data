@@ -29,8 +29,9 @@
    load_int               30
    load_int               8
    iadd                  
-   if_icmpeq              1
+   if_icmpeq              LABEL33
    jump                   LABEL50
+LABEL33:
    load_string            "<u=ff981f>"
    035                   
    load_string            "</u>"
@@ -51,8 +52,9 @@
 LABEL50:
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL54
    jump                   LABEL87
+LABEL54:
    load_int               105
    load_int               115
    load_int               834
@@ -117,8 +119,9 @@ LABEL108:
 LABEL113:
    033                    8
    033                    1
-   if_icmplt              1
+   if_icmplt              LABEL117
    jump                   LABEL128
+LABEL117:
    033                    5
    load_int               3
    033                    8

@@ -1,11 +1,13 @@
    033                   
    load_int               1
-   if_icmpne              1
+   if_icmpne              LABEL4
    jump                   LABEL9
+LABEL4:
    033                   
    load_int               2
-   if_icmpne              1
+   if_icmpne              LABEL8
    jump                   LABEL9
+LABEL8:
    return                
 LABEL9:
    load_int               2266
@@ -14,8 +16,9 @@ LABEL9:
    3200                  
    033                   
    load_int               1
-   if_icmpne              1
+   if_icmpne              LABEL17
    jump                   LABEL18
+LABEL17:
    return                
 LABEL18:
    load_int               105
@@ -26,8 +29,9 @@ LABEL18:
    034                    10
    033                    10
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL28
    jump                   LABEL31
+LABEL28:
    load_int               0
    027                    4439
    jump                   LABEL63
@@ -35,19 +39,21 @@ LABEL31:
    033                    1
    3910                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL36
    jump                   LABEL48
+LABEL36:
    033                    10
    load_int               0
    3301                  
    load_int               -1
-   if_icmpne              6
+   if_icmpne              LABEL47
    033                    10
    load_int               1
    3301                  
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL47
    jump                   LABEL48
+LABEL47:
    return                
 LABEL48:
    033                    1
@@ -56,13 +62,15 @@ LABEL48:
    027                    4439
    033                    2
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL56
    jump                   LABEL63
+LABEL56:
    033                    1
    3910                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL61
    jump                   LABEL63
+LABEL61:
    033                    2
    027                    4397
 LABEL63:

@@ -3,12 +3,14 @@
    034                   
    025                    4990
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL7
    jump                   LABEL15
+LABEL7:
    033                   
    load_int               0
-   if_icmpne              1
+   if_icmpne              LABEL11
    jump                   LABEL14
+LABEL11:
    load_int               0
    load_int               5898241
    widget_put_textcolor_widget
@@ -44,12 +46,13 @@ LABEL15:
    034                    9
    025                    4991
    load_int               1
-   if_icmpeq              5
+   if_icmpeq              LABEL50
    get_coordinates       
    right_shift_28        
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL50
    jump                   LABEL57
+LABEL50:
    033                    9
    033                    10
    033                    11
@@ -82,8 +85,9 @@ LABEL57:
    034                    3
    033                    2
    033                    3
-   if_icmpgt              1
+   if_icmpgt              LABEL83
    jump                   LABEL86
+LABEL83:
    033                    2
    034                    1
    jump                   LABEL88
@@ -101,8 +105,9 @@ LABEL88:
    034                    4
    033                    1
    033                    4
-   if_icmple              1
+   if_icmple              LABEL100
    jump                   LABEL107
+LABEL100:
    load_int               0
    load_int               0
    load_int               0
@@ -113,8 +118,9 @@ LABEL88:
 LABEL107:
    033                    1
    033                    5
-   if_icmpge              1
+   if_icmpge              LABEL111
    jump                   LABEL118
+LABEL111:
    033                    9
    033                    10
    033                    11
@@ -162,8 +168,9 @@ LABEL143:
    034                    12
    033                    12
    033                    6
-   if_icmplt              1
+   if_icmplt              LABEL158
    jump                   LABEL163
+LABEL158:
    033                    12
    load_int               1
    iadd                  
@@ -172,8 +179,9 @@ LABEL143:
 LABEL163:
    033                    12
    033                    6
-   if_icmpgt              1
+   if_icmpgt              LABEL167
    jump                   LABEL171
+LABEL167:
    033                    12
    load_int               1
    isub                  
@@ -181,8 +189,9 @@ LABEL163:
 LABEL171:
    033                    13
    033                    7
-   if_icmplt              1
+   if_icmplt              LABEL175
    jump                   LABEL180
+LABEL175:
    033                    13
    load_int               1
    iadd                  
@@ -191,8 +200,9 @@ LABEL171:
 LABEL180:
    033                    13
    033                    7
-   if_icmpgt              1
+   if_icmpgt              LABEL184
    jump                   LABEL188
+LABEL184:
    033                    13
    load_int               1
    isub                  
@@ -200,8 +210,9 @@ LABEL180:
 LABEL188:
    033                    14
    033                    8
-   if_icmplt              1
+   if_icmplt              LABEL192
    jump                   LABEL197
+LABEL192:
    033                    14
    load_int               1
    iadd                  
@@ -210,8 +221,9 @@ LABEL188:
 LABEL197:
    033                    14
    033                    8
-   if_icmpgt              1
+   if_icmpgt              LABEL201
    jump                   LABEL205
+LABEL201:
    033                    14
    load_int               1
    isub                  

@@ -6,8 +6,9 @@
    034                    3
    033                    3
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL12
+LABEL10:
    033                   
    return                
 LABEL12:
@@ -69,8 +70,9 @@ LABEL12:
    034                    7
    033                    7
    load_int               162
-   if_icmplt              1
+   if_icmplt              LABEL72
    jump                   LABEL74
+LABEL72:
    load_int               162
    034                    7
 LABEL74:
@@ -148,8 +150,9 @@ LABEL74:
    034                    8
    033                    8
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL150
    jump                   LABEL154
+LABEL150:
    033                    8
    get_item_price        
    034                    7

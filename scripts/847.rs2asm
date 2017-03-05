@@ -1,7 +1,8 @@
    get_isresized         
    033                   
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL5
+LABEL4:
    return                
 LABEL5:
    load_int               2266
@@ -12,8 +13,9 @@ LABEL5:
    set_isresized         
    5308                  
    033                   
-   if_icmpne              1
+   if_icmpne              LABEL15
    jump                   LABEL17
+LABEL15:
    033                   
    5309                  
 LABEL17:

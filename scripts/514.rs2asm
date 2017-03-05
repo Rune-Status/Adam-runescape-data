@@ -1,15 +1,17 @@
    042                    5
    load_int               11
-   if_icmpeq              9
+   if_icmpeq              LABEL12
    042                    5
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL7
    jump                   LABEL14
+LABEL7:
    047                    22
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL12
    jump                   LABEL14
+LABEL12:
    load_int               1
    return                
 LABEL14:

@@ -8,29 +8,33 @@
    load_int               0
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL12
    jump                   LABEL91
+LABEL12:
    get_gamecycle         
    033                    1
    isub                  
    034                    1
    033                    1
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL20
    jump                   LABEL40
+LABEL20:
    load_int               1
    widget_put_hidden     
 LABEL22:
    033                    3
    load_int               5
-   if_icmple              1
+   if_icmple              LABEL26
    jump                   LABEL39
+LABEL26:
    033                   
    033                    3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL32
    jump                   LABEL34
+LABEL32:
    load_int               1
    widget_put_hidden     
 LABEL34:
@@ -50,8 +54,9 @@ LABEL40:
    034                    4
    033                    1
    033                    4
-   if_icmplt              1
+   if_icmplt              LABEL50
    jump                   LABEL87
+LABEL50:
    load_int               0
    033                    1
    load_int               0
@@ -69,14 +74,16 @@ LABEL40:
 LABEL64:
    033                    3
    load_int               5
-   if_icmple              1
+   if_icmple              LABEL68
    jump                   LABEL86
+LABEL68:
    033                   
    033                    3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL74
    jump                   LABEL81
+LABEL74:
    load_int               0
    widget_put_hidden     
    widget_get_relativex  
@@ -100,8 +107,9 @@ LABEL87:
 LABEL91:
    033                    3
    load_int               5
-   if_icmple              1
+   if_icmple              LABEL95
    jump                   LABEL103
+LABEL95:
    033                   
    033                    3
    040                    1006

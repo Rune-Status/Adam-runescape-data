@@ -4,8 +4,9 @@
    034                    5
    033                    5
    load_int               1000
-   if_icmpgt              1
+   if_icmpgt              LABEL8
    jump                   LABEL10
+LABEL8:
    load_int               1000
    034                    5
 LABEL10:
@@ -24,8 +25,9 @@ LABEL10:
    034                    7
    033                    5
    load_int               500
-   if_icmple              1
+   if_icmple              LABEL27
    jump                   LABEL37
+LABEL27:
    load_int               255
    load_int               0
    033                    5

@@ -12,16 +12,18 @@
    034                    5
    033                    4
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL16
    jump                   LABEL28
+LABEL16:
    load_int               -1
    load_string            ""
    033                   
    2408                  
    033                    3
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL24
    jump                   LABEL25
+LABEL24:
    5630                  
 LABEL25:
    load_int               14942212
@@ -30,8 +32,9 @@ LABEL25:
 LABEL28:
    033                    5
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL32
    jump                   LABEL38
+LABEL32:
    load_string            "There is 1 second remaining "
    035                   
    037                    2

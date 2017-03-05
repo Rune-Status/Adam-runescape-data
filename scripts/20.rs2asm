@@ -1,14 +1,16 @@
    033                   
    load_int               2147483647
-   if_icmpge              1
+   if_icmpge              LABEL4
    jump                   LABEL6
+LABEL4:
    load_string            "*"
    return                
 LABEL6:
    033                   
    load_int               10000000
-   if_icmpge              1
+   if_icmpge              LABEL10
    jump                   LABEL17
+LABEL10:
    033                   
    load_int               1000000
    idiv                  
@@ -19,8 +21,9 @@ LABEL6:
 LABEL17:
    033                   
    load_int               10000
-   if_icmpge              1
+   if_icmpge              LABEL21
    jump                   LABEL28
+LABEL21:
    033                   
    load_int               1000
    idiv                  

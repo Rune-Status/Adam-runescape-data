@@ -1,19 +1,22 @@
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL37
+LABEL4:
    033                    2
    033                    3
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL37
+LABEL10:
    025                    4102
    033                    1
    test_bit              
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL16
    jump                   LABEL21
+LABEL16:
    025                    4102
    033                    1
    clear_bit             
@@ -23,8 +26,9 @@ LABEL21:
    033                    1
    040                    464
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL26
    jump                   LABEL27
+LABEL26:
    return                
 LABEL27:
    025                    4102

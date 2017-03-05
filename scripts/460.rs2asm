@@ -46,11 +46,12 @@
    040                    463
    033                   
    load_int               25
-   if_icmpeq              4
+   if_icmpeq              LABEL53
    033                   
    load_int               26
-   if_icmpeq              1
+   if_icmpeq              LABEL53
    jump                   LABEL76
+LABEL53:
    load_int               461
    033                   
    033                    1
@@ -145,15 +146,17 @@ LABEL96:
    2404                  
    033                   
    load_int               8
-   if_icmpeq              1
+   if_icmpeq              LABEL147
    jump                   LABEL173
+LABEL147:
    040                    451
    load_int               1
-   if_icmpeq              4
+   if_icmpeq              LABEL154
    040                    1138
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL154
    jump                   LABEL173
+LABEL154:
    load_int               100
    widget_put_opacity     1
    033                    1

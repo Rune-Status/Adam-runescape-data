@@ -2,8 +2,9 @@
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL8
+LABEL6:
    load_int               0
    widget_put_hidden     
 LABEL8:
@@ -13,8 +14,9 @@ LABEL8:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL16
    jump                   LABEL18
+LABEL16:
    load_int               697
    widget_put_textureid  
 LABEL18:

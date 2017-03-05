@@ -1,7 +1,8 @@
    042                    11
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL5
+LABEL4:
    3103                  
 LABEL5:
    040                    677
@@ -25,8 +26,9 @@ LABEL5:
    047                    129
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL28
    jump                   LABEL41
+LABEL28:
    040                    678
    load_string            "<col=000000>"
    load_string            "Last name:"

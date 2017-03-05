@@ -2,16 +2,18 @@
    034                    4
    033                    4
    load_int               334
-   if_icmplt              1
+   if_icmplt              LABEL6
    jump                   LABEL9
+LABEL6:
    load_int               334
    034                    4
    jump                   LABEL15
 LABEL9:
    033                    4
    load_int               1000
-   if_icmpgt              1
+   if_icmpgt              LABEL13
    jump                   LABEL15
+LABEL13:
    load_int               1000
    034                    4
 LABEL15:
@@ -48,8 +50,9 @@ LABEL15:
    034                    8
    033                    4
    033                    8
-   if_icmpgt              1
+   if_icmpgt              LABEL50
    jump                   LABEL52
+LABEL50:
    033                    4
    034                    8
 LABEL52:
@@ -57,18 +60,21 @@ LABEL52:
    load_int               0
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL58
    jump                   LABEL93
+LABEL58:
    033                   
    load_int               1
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL64
    jump                   LABEL93
+LABEL64:
    033                    2
    033                    8
-   if_icmplt              1
+   if_icmplt              LABEL68
    jump                   LABEL73
+LABEL68:
    load_int               1
    widget_put_hidden     
    load_int               1
@@ -100,18 +106,21 @@ LABEL93:
    load_int               2
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL99
    jump                   LABEL134
+LABEL99:
    033                   
    load_int               3
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL105
    jump                   LABEL134
+LABEL105:
    033                    1
    033                    8
-   if_icmplt              1
+   if_icmplt              LABEL109
    jump                   LABEL114
+LABEL109:
    load_int               1
    widget_put_hidden     
    load_int               1

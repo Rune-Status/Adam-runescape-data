@@ -1,7 +1,8 @@
    033                    4
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL15
+LABEL4:
    load_int               428
    033                   
    load_int               -2147483645
@@ -18,8 +19,9 @@ LABEL15:
    033                   
    3303                  
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL21
    jump                   LABEL28
+LABEL21:
    load_int               0
    033                    3
    widget_put_hidden_widget

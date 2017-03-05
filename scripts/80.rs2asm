@@ -12,28 +12,32 @@
    034                    9
    033                    6
    033                    1
-   if_icmpne              1
+   if_icmpne              LABEL16
    jump                   LABEL19
+LABEL16:
    load_int               1
    034                    5
    jump                   LABEL60
 LABEL19:
    033                    9
    033                    4
-   if_icmpne              1
+   if_icmpne              LABEL23
    jump                   LABEL26
+LABEL23:
    load_int               1
    034                    5
    jump                   LABEL60
 LABEL26:
    033                    7
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL30
    jump                   LABEL37
+LABEL30:
    033                    2
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL34
    jump                   LABEL36
+LABEL34:
    load_int               1
    034                    5
 LABEL36:
@@ -41,19 +45,22 @@ LABEL36:
 LABEL37:
    033                    2
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL41
    jump                   LABEL43
+LABEL41:
    load_int               1
    034                    5
 LABEL43:
    033                    8
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL47
    jump                   LABEL54
+LABEL47:
    033                    3
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL51
    jump                   LABEL53
+LABEL51:
    load_int               1
    034                    5
 LABEL53:
@@ -61,15 +68,17 @@ LABEL53:
 LABEL54:
    033                    3
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL58
    jump                   LABEL60
+LABEL58:
    load_int               1
    034                    5
 LABEL60:
    033                    5
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL64
    jump                   LABEL74
+LABEL64:
    040                    113
    load_int               80
    load_int               -2147483645

@@ -10,8 +10,9 @@
 LABEL9:
    033                    1
    load_int               13
-   if_icmple              1
+   if_icmple              LABEL13
    jump                   LABEL60
+LABEL13:
    035                   
    load_string            "|"
    load_int               0
@@ -19,8 +20,9 @@ LABEL9:
    034                    2
    033                    2
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL22
    jump                   LABEL36
+LABEL22:
    035                   
    load_int               0
    033                    2
@@ -44,8 +46,9 @@ LABEL40:
    035                    1
    string_length         
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL45
    jump                   LABEL47
+LABEL45:
    load_string            "-"
    036                    1
 LABEL47:
@@ -53,8 +56,9 @@ LABEL47:
    033                    1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL53
    jump                   LABEL55
+LABEL53:
    035                    1
    1112                  
 LABEL55:

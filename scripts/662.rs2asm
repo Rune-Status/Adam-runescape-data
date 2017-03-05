@@ -1,7 +1,8 @@
    033                   
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL4
    jump                   LABEL11
+LABEL4:
    load_int               30
    load_int               10149
    load_string            "Swamp lizard"
@@ -12,8 +13,9 @@
 LABEL11:
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL15
    jump                   LABEL22
+LABEL15:
    load_int               50
    load_int               10146
    load_string            "Orange salamander"
@@ -24,8 +26,9 @@ LABEL11:
 LABEL22:
    033                   
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL26
    jump                   LABEL33
+LABEL26:
    load_int               60
    load_int               10147
    load_string            "Red salamander"
@@ -36,8 +39,9 @@ LABEL22:
 LABEL33:
    033                   
    load_int               3
-   if_icmpeq              1
+   if_icmpeq              LABEL37
    jump                   LABEL44
+LABEL37:
    load_int               70
    load_int               10148
    load_string            "Black salamander"

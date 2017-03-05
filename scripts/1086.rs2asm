@@ -2,11 +2,12 @@
    034                    3
    033                   
    load_int               1
-   if_icmpeq              4
+   if_icmpeq              LABEL9
    033                    1
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL9
    jump                   LABEL13
+LABEL9:
    033                    2
    040                    198
    034                    3
@@ -32,16 +33,18 @@ LABEL16:
    1000                  
    033                    1
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL34
    jump                   LABEL37
+LABEL34:
    load_int               16777215
    widget_put_textcolor  
    jump                   LABEL46
 LABEL37:
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL41
    jump                   LABEL44
+LABEL41:
    load_int               16754735
    widget_put_textcolor  
    jump                   LABEL46
@@ -61,8 +64,9 @@ LABEL46:
    1112                  
    033                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL60
    jump                   LABEL86
+LABEL60:
    load_int               1085
    load_int               1
    load_int               1

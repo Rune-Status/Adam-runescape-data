@@ -40,8 +40,9 @@
 LABEL39:
    033                    6
    033                    7
-   if_icmplt              1
+   if_icmplt              LABEL43
    jump                   LABEL173
+LABEL43:
    load_int               93
    033                    6
    3301                  
@@ -62,16 +63,18 @@ LABEL39:
    100                    1
    033                    9
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL65
    jump                   LABEL164
+LABEL65:
    load_int               111
    load_int               79
    load_int               815
    033                    9
    3408                  
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL73
    jump                   LABEL159
+LABEL73:
    033                    4
    033                    8
    load_int               7
@@ -207,8 +210,9 @@ LABEL173:
    1112                  
    033                    8
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL205
    jump                   LABEL244
+LABEL205:
    033                   
    load_int               4
    033                    6

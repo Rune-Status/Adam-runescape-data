@@ -1,33 +1,38 @@
    get_gamecycle         
    033                    6
-   if_icmplt              1
+   if_icmplt              LABEL4
    jump                   LABEL5
+LABEL4:
    return                
 LABEL5:
    load_int               0
    034                    7
    033                   
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL11
    jump                   LABEL18
+LABEL11:
    033                   
    033                    4
-   if_icmpeq              1
+   if_icmpeq              LABEL15
    jump                   LABEL18
+LABEL15:
    load_int               1
    034                    7
    jump                   LABEL32
 LABEL18:
    033                    1
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL22
    jump                   LABEL31
+LABEL22:
    035                   
    033                    1
    string_indexof        
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL28
    jump                   LABEL31
+LABEL28:
    load_int               1
    034                    7
    jump                   LABEL32
@@ -36,19 +41,22 @@ LABEL31:
 LABEL32:
    033                    3
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL36
    jump                   LABEL66
+LABEL36:
    033                    2
    033                    3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL42
    jump                   LABEL66
+LABEL42:
    widget_get_text       
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL47
    jump                   LABEL52
+LABEL47:
    1121                  
    load_string            "Please wait..."
    1112                  
@@ -74,8 +82,9 @@ LABEL66:
    widget_get_text_widget
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL72
    jump                   LABEL80
+LABEL72:
    033                    2
    2121                  
    load_string            "Please wait..."

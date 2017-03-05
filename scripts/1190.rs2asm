@@ -11,16 +11,18 @@
    load_int               1
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL15
    jump                   LABEL31
+LABEL15:
    042                    80
    load_int               0
-   if_icmplt              5
+   if_icmplt              LABEL23
    042                    80
    033                   
    widget_get_scrollheight_widget
-   if_icmpge              1
+   if_icmpge              LABEL23
    jump                   LABEL25
+LABEL23:
    load_int               0
    043                    80
 LABEL25:

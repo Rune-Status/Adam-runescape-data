@@ -10,8 +10,9 @@
    034                    1
    033                    1
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL14
    jump                   LABEL19
+LABEL14:
    load_int               1
    widget_put_hidden     
    load_int               1
@@ -26,8 +27,9 @@ LABEL19:
    034                    3
    033                    2
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL29
    jump                   LABEL77
+LABEL29:
    033                    1
    load_int               0
    3302                  
@@ -37,12 +39,14 @@ LABEL19:
    033                    2
    get_item_note_1       
    033                    2
-   if_icmpne              1
+   if_icmpne              LABEL40
    jump                   LABEL58
+LABEL40:
    033                    3
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL44
    jump                   LABEL51
+LABEL44:
    load_int               1
    load_string            "Collect-item"
    1300                  
@@ -90,8 +94,9 @@ LABEL79:
    034                    2
    033                    2
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL87
    jump                   LABEL135
+LABEL87:
    033                    1
    load_int               1
    3302                  
@@ -101,12 +106,14 @@ LABEL79:
    033                    2
    get_item_note_1       
    033                    2
-   if_icmpne              1
+   if_icmpne              LABEL98
    jump                   LABEL116
+LABEL98:
    033                    3
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL102
    jump                   LABEL109
+LABEL102:
    load_int               1
    load_string            "Collect-item"
    1300                   1

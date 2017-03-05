@@ -7,8 +7,9 @@
    033                   
    widget_get_scrollwidth_widget
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL11
    jump                   LABEL23
+LABEL11:
    033                   
    widget_get_scrollwidth_widget
    load_int               36
@@ -37,8 +38,9 @@ LABEL34:
    033                   
    widget_get_scrollheight_widget
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL39
    jump                   LABEL51
+LABEL39:
    033                   
    widget_get_scrollheight_widget
    load_int               32
@@ -71,8 +73,9 @@ LABEL64:
    033                    2
    033                    3
    imul                  
-   if_icmple              1
+   if_icmple              LABEL70
    jump                   LABEL117
+LABEL70:
    033                   
    load_int               5
    033                    8

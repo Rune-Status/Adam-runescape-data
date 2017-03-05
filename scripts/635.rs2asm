@@ -4,8 +4,9 @@
    034                    3
    033                    3
    load_int               -2
-   if_icmpeq              1
+   if_icmpeq              LABEL8
    jump                   LABEL35
+LABEL8:
    033                   
    load_int               4
    load_int               0
@@ -36,8 +37,9 @@
 LABEL35:
    033                    3
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL39
    jump                   LABEL66
+LABEL39:
    033                   
    load_int               4
    load_int               0
@@ -77,8 +79,9 @@ LABEL66:
 LABEL74:
    033                    5
    033                    3
-   if_icmplt              1
+   if_icmplt              LABEL78
    jump                   LABEL233
+LABEL78:
    033                    5
    get_friend            
    036                    1
@@ -114,8 +117,9 @@ LABEL74:
    035                    1
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL115
    jump                   LABEL163
+LABEL115:
    load_string            "Previous name:"
    load_string            "<br>"
    035                    1
@@ -246,8 +250,9 @@ LABEL233:
    033                    6
    033                   
    widget_get_height_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL244
    jump                   LABEL249
+LABEL244:
    load_int               0
    033                    6
    033                   

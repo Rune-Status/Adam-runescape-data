@@ -19,8 +19,9 @@
 LABEL18:
    033                    2
    033                    1
-   if_icmplt              1
+   if_icmplt              LABEL22
    jump                   LABEL301
+LABEL22:
    033                    2
    033                    2
    iadd                  
@@ -72,13 +73,15 @@ LABEL18:
    033                    2
    clanmember_isme       
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL75
    jump                   LABEL107
+LABEL75:
    035                   
    3609                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL80
    jump                   LABEL86
+LABEL80:
    load_int               9
    load_string            "Remove friend "
    035                   
@@ -89,8 +92,9 @@ LABEL86:
    035                   
    3623                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL91
    jump                   LABEL97
+LABEL91:
    load_int               10
    load_string            "Remove ignore "
    035                   
@@ -111,12 +115,14 @@ LABEL97:
 LABEL107:
    033                    4
    033                    3
-   if_icmpge              1
+   if_icmpge              LABEL111
    jump                   LABEL120
+LABEL111:
    033                    4
    033                    7
-   if_icmpgt              1
+   if_icmpgt              LABEL115
    jump                   LABEL120
+LABEL115:
    load_int               6
    load_string            "Kick user "
    035                   
@@ -154,8 +160,9 @@ LABEL120:
    1001                  
    033                    6
    get_world             
-   if_icmpeq              1
+   if_icmpeq              LABEL153
    jump                   LABEL156
+LABEL153:
    load_int               65280
    widget_put_textcolor  
    jump                   LABEL158
@@ -173,13 +180,15 @@ LABEL158:
    033                    2
    clanmember_isme       
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL170
    jump                   LABEL202
+LABEL170:
    035                   
    3609                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL175
    jump                   LABEL181
+LABEL175:
    load_int               9
    load_string            "Remove friend "
    035                   
@@ -190,8 +199,9 @@ LABEL181:
    035                   
    3623                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL186
    jump                   LABEL192
+LABEL186:
    load_int               10
    load_string            "Remove ignore "
    035                   
@@ -212,12 +222,14 @@ LABEL192:
 LABEL202:
    033                    4
    033                    3
-   if_icmpge              1
+   if_icmpge              LABEL206
    jump                   LABEL215
+LABEL206:
    033                    4
    033                    7
-   if_icmpgt              1
+   if_icmpgt              LABEL210
    jump                   LABEL215
+LABEL210:
    load_int               6
    load_string            "Kick user "
    035                   
@@ -258,13 +270,15 @@ LABEL215:
    033                    2
    clanmember_isme       
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL251
    jump                   LABEL283
+LABEL251:
    035                   
    3609                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL256
    jump                   LABEL262
+LABEL256:
    load_int               9
    load_string            "Remove friend "
    035                   
@@ -275,8 +289,9 @@ LABEL262:
    035                   
    3623                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL267
    jump                   LABEL273
+LABEL267:
    load_int               10
    load_string            "Remove ignore "
    035                   
@@ -297,12 +312,14 @@ LABEL273:
 LABEL283:
    033                    4
    033                    3
-   if_icmpge              1
+   if_icmpge              LABEL287
    jump                   LABEL296
+LABEL287:
    033                    4
    033                    7
-   if_icmpgt              1
+   if_icmpgt              LABEL291
    jump                   LABEL296
+LABEL291:
    load_int               6
    load_string            "Kick user "
    035                   
@@ -317,8 +334,9 @@ LABEL296:
 LABEL301:
    033                    1
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL305
    jump                   LABEL327
+LABEL305:
    load_string            "<col=ff9b00>"
    load_string            "Talking in: "
    load_string            "<col=ffff64>"
@@ -369,8 +387,9 @@ LABEL344:
    034                    9
    033                    8
    load_int               15
-   if_icmplt              1
+   if_icmplt              LABEL355
    jump                   LABEL357
+LABEL355:
    load_int               15
    034                    8
 LABEL357:
@@ -380,8 +399,9 @@ LABEL357:
    034                    10
    033                    10
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL365
    jump                   LABEL367
+LABEL365:
    load_int               0
    034                    10
 LABEL367:
@@ -390,15 +410,17 @@ LABEL367:
    034                    11
    033                    11
    033                    10
-   if_icmpgt              1
+   if_icmpgt              LABEL374
    jump                   LABEL376
+LABEL374:
    033                    10
    034                    11
 LABEL376:
    033                    1
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL380
    jump                   LABEL385
+LABEL380:
    load_int               0
    033                    8
    load_int               38600709

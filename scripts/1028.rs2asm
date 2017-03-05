@@ -1,7 +1,8 @@
    033                   
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL4
    jump                   LABEL6
+LABEL4:
    load_string            ""
    return                
 LABEL6:
@@ -13,12 +14,14 @@ LABEL6:
    034                    2
    033                    2
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL16
    jump                   LABEL30
+LABEL16:
    033                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL20
    jump                   LABEL25
+LABEL20:
    load_string            "Level?"
    033                    2
    int_to_string         

@@ -1,13 +1,14 @@
    033                   
    load_int               1
-   if_icmpne              7
+   if_icmpne              LABEL10
    033                    1
    load_int               0
-   if_icmplt              4
+   if_icmplt              LABEL10
    033                    1
    load_int               5
-   if_icmpgt              1
+   if_icmpgt              LABEL10
    jump                   LABEL11
+LABEL10:
    return                
 LABEL11:
    load_int               2266

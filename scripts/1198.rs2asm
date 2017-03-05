@@ -9,8 +9,9 @@
    034                    19
    get_settings           262
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL13
    jump                   LABEL33
+LABEL13:
    load_int               20
    load_int               0
    get_settings           261
@@ -47,8 +48,9 @@ LABEL33:
 LABEL45:
    025                    4893
    033                    19
-   if_icmplt              1
+   if_icmplt              LABEL49
    jump                   LABEL53
+LABEL49:
    load_int               16711680
    033                    2
    widget_put_textcolor_widget
@@ -60,8 +62,9 @@ LABEL53:
 LABEL56:
    get_settings           263
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL60
    jump                   LABEL68
+LABEL60:
    load_int               1
    load_string            "Buy"
    033                    5
@@ -86,11 +89,12 @@ LABEL68:
 LABEL80:
    025                    4893
    033                    19
-   if_icmplt              4
+   if_icmplt              LABEL87
    get_settings           263
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL87
    jump                   LABEL91
+LABEL87:
    load_int               16711680
    033                    6
    widget_put_textcolor_widget
@@ -102,8 +106,9 @@ LABEL91:
 LABEL94:
    get_settings           264
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL98
    jump                   LABEL115
+LABEL98:
    load_int               13647
    load_int               1
    033                    9
@@ -153,8 +158,9 @@ LABEL131:
    2300                  
    025                    4893
    033                    19
-   if_icmplt              1
+   if_icmplt              LABEL147
    jump                   LABEL151
+LABEL147:
    load_int               16711680
    033                    8
    widget_put_textcolor_widget
@@ -178,8 +184,9 @@ LABEL154:
    2300                  
    025                    4893
    033                    19
-   if_icmplt              1
+   if_icmplt              LABEL170
    jump                   LABEL174
+LABEL170:
    load_int               16711680
    033                    11
    widget_put_textcolor_widget
@@ -203,8 +210,9 @@ LABEL177:
    2300                  
    025                    4893
    033                    19
-   if_icmplt              1
+   if_icmplt              LABEL193
    jump                   LABEL197
+LABEL193:
    load_int               16711680
    033                    14
    widget_put_textcolor_widget
@@ -228,8 +236,9 @@ LABEL200:
    2300                  
    025                    4893
    033                    19
-   if_icmplt              1
+   if_icmplt              LABEL216
    jump                   LABEL220
+LABEL216:
    load_int               16711680
    033                    17
    widget_put_textcolor_widget
@@ -272,8 +281,9 @@ LABEL223:
 LABEL253:
    033                    25
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL257
    jump                   LABEL414
+LABEL257:
    033                    3
    load_int               5
    033                    24
@@ -353,8 +363,9 @@ LABEL253:
    1112                   1
    025                    4893
    033                    19
-   if_icmplt              1
+   if_icmplt              LABEL338
    jump                   LABEL341
+LABEL338:
    load_int               16711680
    widget_put_textcolor   1
    jump                   LABEL343
@@ -366,8 +377,9 @@ LABEL343:
    load_int               3
    modulo                
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL349
    jump                   LABEL364
+LABEL349:
    033                    22
    033                    23
    load_int               0
@@ -388,8 +400,9 @@ LABEL364:
    load_int               3
    modulo                
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL370
    jump                   LABEL385
+LABEL370:
    load_int               0
    033                    23
    load_int               1

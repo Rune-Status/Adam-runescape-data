@@ -22,8 +22,9 @@
 LABEL21:
    033                    5
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL25
    jump                   LABEL62
+LABEL25:
    033                    5
    load_int               1
    isub                  
@@ -32,8 +33,9 @@ LABEL21:
    033                    5
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL35
    jump                   LABEL61
+LABEL35:
    widget_put_actions_null
    033                    5
    load_int               7
@@ -71,8 +73,9 @@ LABEL62:
    load_int               11941
    3303                  
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL72
    jump                   LABEL93
+LABEL72:
    load_int               273
    033                    2
    load_int               75

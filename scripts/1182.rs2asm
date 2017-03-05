@@ -1,14 +1,16 @@
    025                    4854
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL4
    jump                   LABEL6
+LABEL4:
    load_string            ""
    return                
 LABEL6:
    025                    4854
    load_int               255
-   if_icmpge              1
+   if_icmpge              LABEL10
    jump                   LABEL18
+LABEL10:
    load_int               105
    load_int               115
    load_int               1245
@@ -22,8 +24,9 @@ LABEL18:
    load_int               2
    modulo                
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL24
    jump                   LABEL37
+LABEL24:
    load_int               105
    load_int               115
    load_int               1245

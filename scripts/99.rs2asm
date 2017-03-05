@@ -17,13 +17,14 @@
 LABEL16:
    033                   
    load_int               450
-   if_icmplt              1
+   if_icmplt              LABEL20
    jump                   LABEL137
 LABEL20:
    033                    1
    load_int               120
-   if_icmplt              1
+   if_icmplt              LABEL24
    jump                   LABEL130
+LABEL24:
    load_int               7012454
    load_int               5
    033                    2
@@ -42,8 +43,9 @@ LABEL20:
    033                    2
    3301                  
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL44
    jump                   LABEL80
+LABEL44:
    load_int               134
    033                    2
    3301                  
@@ -99,8 +101,9 @@ LABEL80:
    033                    2
    3313                  
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL100
    jump                   LABEL121
+LABEL100:
    load_int               134
    033                    2
    3313                  

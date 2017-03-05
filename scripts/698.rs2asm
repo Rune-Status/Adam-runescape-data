@@ -15,12 +15,14 @@
    034                    6
    025                    4803
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL19
    jump                   LABEL29
+LABEL19:
    025                    4804
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL23
    jump                   LABEL26
+LABEL23:
    load_int               21
    034                    6
    jump                   LABEL28
@@ -32,8 +34,9 @@ LABEL28:
 LABEL29:
    025                    4804
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL33
    jump                   LABEL35
+LABEL33:
    load_int               23
    034                    6
 LABEL35:
@@ -46,8 +49,9 @@ LABEL35:
 LABEL41:
    033                    7
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL45
    jump                   LABEL198
+LABEL45:
    033                   
    load_int               3
    033                    3
@@ -60,16 +64,19 @@ LABEL41:
    034                    4
    033                    4
    load_int               8
-   if_icmpeq              1
+   if_icmpeq              LABEL59
    jump                   LABEL102
+LABEL59:
    025                    4803
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL63
    jump                   LABEL99
+LABEL63:
    033                    4
    get_settings           262
-   if_icmpeq              1
+   if_icmpeq              LABEL67
    jump                   LABEL69
+LABEL67:
    033                    2
    034                    5
 LABEL69:
@@ -111,19 +118,22 @@ LABEL101:
 LABEL102:
    033                    4
    load_int               9
-   if_icmpeq              4
+   if_icmpeq              LABEL109
    033                    4
    load_int               10
-   if_icmpeq              1
+   if_icmpeq              LABEL109
    jump                   LABEL152
+LABEL109:
    025                    4804
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL113
    jump                   LABEL149
+LABEL113:
    033                    4
    get_settings           262
-   if_icmpeq              1
+   if_icmpeq              LABEL117
    jump                   LABEL119
+LABEL117:
    033                    2
    034                    5
 LABEL119:
@@ -165,8 +175,9 @@ LABEL151:
 LABEL152:
    033                    4
    get_settings           262
-   if_icmpeq              1
+   if_icmpeq              LABEL156
    jump                   LABEL158
+LABEL156:
    033                    2
    034                    5
 LABEL158:
@@ -238,8 +249,9 @@ LABEL198:
    034                    3
    033                    5
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL226
    jump                   LABEL248
+LABEL226:
    033                   
    load_int               5
    033                    3

@@ -6,8 +6,9 @@
    034                    2
    033                    2
    load_int               -1
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL23
+LABEL10:
    load_int               1
    widget_put_hidden     
    load_int               0
@@ -46,12 +47,13 @@ LABEL23:
    036                   
    get_ismembers         
    load_int               1
-   if_icmpeq              5
+   if_icmpeq              LABEL53
    033                    2
    get_item_ismembers    
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL53
    jump                   LABEL193
+LABEL53:
    load_int               111
    load_int               115
    load_int               899
@@ -61,8 +63,9 @@ LABEL23:
    035                   
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL64
    jump                   LABEL68
+LABEL64:
    load_int               2
    035                   
    033                   
@@ -77,8 +80,9 @@ LABEL68:
    035                   
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL79
    jump                   LABEL83
+LABEL79:
    load_int               3
    035                   
    033                   
@@ -93,8 +97,9 @@ LABEL83:
    035                   
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL94
    jump                   LABEL98
+LABEL94:
    load_int               4
    035                   
    033                   
@@ -109,8 +114,9 @@ LABEL98:
    035                   
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL109
    jump                   LABEL113
+LABEL109:
    load_int               5
    035                   
    033                   
@@ -125,8 +131,9 @@ LABEL113:
    035                   
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL124
    jump                   LABEL128
+LABEL124:
    load_int               6
    035                   
    033                   
@@ -141,8 +148,9 @@ LABEL128:
    035                   
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL139
    jump                   LABEL143
+LABEL139:
    load_int               7
    035                   
    033                   
@@ -157,8 +165,9 @@ LABEL143:
    035                   
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL154
    jump                   LABEL158
+LABEL154:
    load_int               8
    035                   
    033                   
@@ -166,15 +175,17 @@ LABEL143:
 LABEL158:
    033                    2
    load_int               6707
-   if_icmpeq              1
+   if_icmpeq              LABEL162
    jump                   LABEL188
+LABEL162:
    025                    4525
    load_int               1
-   if_icmpeq              4
+   if_icmpeq              LABEL169
    025                    4526
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL169
    jump                   LABEL177
+LABEL169:
    load_int               3
    load_string            "Temple"
    033                   

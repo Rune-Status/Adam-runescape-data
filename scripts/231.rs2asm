@@ -2,8 +2,9 @@
    load_int               0
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL6
    jump                   LABEL16
+LABEL6:
    load_int               0
    load_int               0
    load_int               1
@@ -23,8 +24,9 @@ LABEL16:
    load_int               1
    200                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL26
    jump                   LABEL108
+LABEL26:
    load_int               0
    load_int               16
    load_int               1
@@ -35,16 +37,18 @@ LABEL16:
    034                    2
    033                    2
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL38
    jump                   LABEL41
+LABEL38:
    033                    1
    widget_get_height_widget
    034                    2
 LABEL41:
    033                    2
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL45
    jump                   LABEL56
+LABEL45:
    033                   
    widget_get_height_widget
    load_int               32
@@ -65,8 +69,9 @@ LABEL56:
 LABEL61:
    033                    3
    load_int               10
-   if_icmplt              1
+   if_icmplt              LABEL65
    jump                   LABEL67
+LABEL65:
    load_int               10
    034                    3
 LABEL67:
@@ -79,8 +84,9 @@ LABEL67:
    load_int               2
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL78
    jump                   LABEL88
+LABEL78:
    load_int               0
    widget_get_relativey   1
    load_int               1
@@ -96,8 +102,9 @@ LABEL88:
    load_int               3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL94
    jump                   LABEL108
+LABEL94:
    load_int               0
    widget_get_relativey   1
    widget_get_height      1
@@ -117,8 +124,9 @@ LABEL108:
    load_int               4
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL114
    jump                   LABEL124
+LABEL114:
    load_int               0
    load_int               0
    load_int               1
@@ -134,8 +142,9 @@ LABEL124:
    load_int               5
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL130
    jump                   LABEL140
+LABEL130:
    load_int               0
    load_int               0
    load_int               1

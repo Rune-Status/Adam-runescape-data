@@ -6,12 +6,14 @@
    widget_put_hidden_widget
    033                   
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL10
    jump                   LABEL24
+LABEL10:
    033                    1
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL14
    jump                   LABEL24
+LABEL14:
    load_int               103
    load_int               105
    load_int               1135

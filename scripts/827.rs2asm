@@ -8,8 +8,9 @@
 LABEL7:
    033                    3
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL11
    jump                   LABEL105
+LABEL11:
    033                    3
    load_int               1
    isub                  
@@ -18,8 +19,9 @@ LABEL7:
    033                    3
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL21
    jump                   LABEL104
+LABEL21:
    widget_put_actions_null
    load_int               -1
    load_string            ""
@@ -30,8 +32,9 @@ LABEL7:
    034                    1
    033                    1
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL33
    jump                   LABEL99
+LABEL33:
    load_int               0
    widget_put_hidden     
    033                    1
@@ -45,7 +48,7 @@ LABEL7:
    033                    1
    3408                  
    load_int               -1
-   if_icmpne              9
+   if_icmpne              LABEL56
    load_int               111
    load_int               103
    load_int               1034
@@ -53,17 +56,20 @@ LABEL7:
    get_item_note_2       
    3408                  
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL56
    jump                   LABEL84
+LABEL56:
    get_ismembers         
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL60
    jump                   LABEL71
+LABEL60:
    033                    1
    get_item_ismembers    
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL65
    jump                   LABEL71
+LABEL65:
    load_int               130
    widget_put_opacity    
    load_int               -1

@@ -3,8 +3,9 @@
    035                   
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL7
    jump                   LABEL9
+LABEL7:
    load_int               0
    034                    4
 LABEL9:
@@ -23,17 +24,19 @@ LABEL9:
 LABEL21:
    033                    8
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL25
    jump                   LABEL80
+LABEL25:
    033                   
    033                    7
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL31
    jump                   LABEL69
+LABEL31:
    033                    4
    load_int               1
-   if_icmpeq              9
+   if_icmpeq              LABEL43
    033                    8
    get_item_name         
    tolowercase           
@@ -41,8 +44,9 @@ LABEL21:
    load_int               0
    string_indexof_from   
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL43
    jump                   LABEL67
+LABEL43:
    load_int               0
    widget_put_hidden     
    033                    5
@@ -87,12 +91,14 @@ LABEL80:
    033                    7
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL86
    jump                   LABEL95
+LABEL86:
    033                    5
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL90
    jump                   LABEL93
+LABEL90:
    load_int               1
    widget_put_hidden     
    jump                   LABEL95
@@ -107,8 +113,9 @@ LABEL95:
    033                    6
    033                   
    widget_get_height_widget
-   if_icmpgt              1
+   if_icmpgt              LABEL104
    jump                   LABEL109
+LABEL104:
    load_int               0
    033                    6
    033                   

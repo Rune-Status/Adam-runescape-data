@@ -1,8 +1,9 @@
    047                    28
    string_length         
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL5
    jump                   LABEL13
+LABEL5:
    load_int               -1
    load_string            ""
    033                   
@@ -14,8 +15,9 @@
 LABEL13:
    033                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL17
    jump                   LABEL23
+LABEL17:
    load_int               552
    load_int               -2147483645
    load_int               0
@@ -25,14 +27,16 @@ LABEL13:
 LABEL23:
    042                    62
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL27
    jump                   LABEL28
+LABEL27:
    return                
 LABEL28:
    5000                  
    load_int               4
-   if_icmpne              1
+   if_icmpne              LABEL32
    jump                   LABEL39
+LABEL32:
    load_int               4
    5005                  
    5016                  
@@ -45,11 +49,12 @@ LABEL39:
    042                    61
    isub                  
    load_int               150
-   if_icmpge              4
+   if_icmpge              LABEL48
    033                    1
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL48
    jump                   LABEL51
+LABEL48:
    047                    28
    load_int               1
    040                    96

@@ -3,12 +3,14 @@
    034                    3
    033                    1
    load_int               85
-   if_icmpeq              1
+   if_icmpeq              LABEL7
    jump                   LABEL20
+LABEL7:
    033                    3
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL11
    jump                   LABEL18
+LABEL11:
    035                   
    load_int               0
    033                    3
@@ -24,51 +26,59 @@ LABEL20:
    034                    4
    033                   
    load_int               3
-   if_icmpeq              1
+   if_icmpeq              LABEL26
    jump                   LABEL29
+LABEL26:
    load_int               10
    034                    4
    jump                   LABEL42
 LABEL29:
    033                   
    load_int               4
-   if_icmpeq              1
+   if_icmpeq              LABEL33
    jump                   LABEL36
+LABEL33:
    load_int               25
    034                    4
    jump                   LABEL42
 LABEL36:
    033                   
    load_int               5
-   if_icmpeq              1
+   if_icmpeq              LABEL40
    jump                   LABEL42
+LABEL40:
    load_int               500
    034                    4
 LABEL42:
    033                    2
    char_is_printable     
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL47
    jump                   LABEL87
+LABEL47:
    033                   
    load_int               5
-   if_icmpeq              1
+   if_icmpeq              LABEL51
    jump                   LABEL85
+LABEL51:
    033                    1
    load_int               84
-   if_icmpeq              1
+   if_icmpeq              LABEL55
    jump                   LABEL85
+LABEL55:
    033                    3
    033                    4
-   if_icmpge              1
+   if_icmpge              LABEL59
    jump                   LABEL61
+LABEL59:
    035                   
    return                
 LABEL61:
    033                    3
    load_int               15
-   if_icmplt              1
+   if_icmplt              LABEL65
    jump                   LABEL67
+LABEL65:
    035                   
    return                
 LABEL67:
@@ -82,8 +92,9 @@ LABEL67:
    load_int               0
    string_indexof_from   
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL79
    jump                   LABEL81
+LABEL79:
    035                   
    return                
 LABEL81:
@@ -97,22 +108,25 @@ LABEL85:
 LABEL87:
    033                   
    load_int               2
-   if_icmpeq              1
+   if_icmpeq              LABEL91
    jump                   LABEL111
+LABEL91:
    033                    2
    4114                  
    load_int               1
-   if_icmpeq              6
+   if_icmpeq              LABEL101
    load_string            " _"
    033                    2
    string_indexof        
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL101
    jump                   LABEL109
+LABEL101:
    033                    3
    load_int               12
-   if_icmplt              1
+   if_icmplt              LABEL105
    jump                   LABEL109
+LABEL105:
    035                   
    033                    2
    concat_char           
@@ -127,48 +141,56 @@ LABEL111:
    036                    1
    033                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL119
    jump                   LABEL184
+LABEL119:
    load_string            "kKmM"
    033                    2
    string_indexof        
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL125
    jump                   LABEL127
+LABEL125:
    load_int               1
    034                    5
 LABEL127:
    033                    5
    load_int               1
-   if_icmpeq              5
+   if_icmpeq              LABEL135
    033                    2
    4116                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL135
    jump                   LABEL182
+LABEL135:
    033                    3
    load_int               10
-   if_icmplt              1
+   if_icmplt              LABEL139
    jump                   LABEL182
+LABEL139:
    033                    5
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL143
    jump                   LABEL149
+LABEL143:
    033                    3
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL147
    jump                   LABEL149
+LABEL147:
    035                   
    return                
 LABEL149:
    033                    3
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL153
    jump                   LABEL178
+LABEL153:
    033                    5
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL157
    jump                   LABEL178
+LABEL157:
    035                   
    033                    3
    load_int               1
@@ -181,13 +203,14 @@ LABEL149:
    load_string            "k"
    4107                  
    load_int               0
-   if_icmpeq              6
+   if_icmpeq              LABEL176
    035                    1
    load_string            "m"
    4107                  
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL176
    jump                   LABEL178
+LABEL176:
    035                   
    return                
 LABEL178:
@@ -201,21 +224,24 @@ LABEL182:
 LABEL184:
    033                   
    load_int               5
-   if_icmpeq              1
+   if_icmpeq              LABEL188
    jump                   LABEL196
+LABEL188:
    load_string            "|"
    033                    2
    string_indexof        
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL194
    jump                   LABEL196
+LABEL194:
    035                   
    return                
 LABEL196:
    033                    3
    033                    4
-   if_icmplt              1
+   if_icmplt              LABEL200
    jump                   LABEL204
+LABEL200:
    035                   
    033                    2
    concat_char           

@@ -1,12 +1,13 @@
    load_int               10616872
    widget_get_hidden_widget
    load_int               1
-   if_icmpeq              5
+   if_icmpeq              LABEL9
    load_int               10616873
    widget_get_hidden_widget
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL9
    jump                   LABEL10
+LABEL9:
    return                
 LABEL10:
    047                    1
@@ -16,60 +17,71 @@ LABEL10:
    034                    3
    3316                  
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL19
    jump                   LABEL21
+LABEL19:
    load_int               1
    034                    3
 LABEL21:
    033                    3
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL25
    jump                   LABEL36
+LABEL25:
    load_string            "`"
    033                    1
    string_indexof        
    load_int               -1
-   if_icmpne              1
+   if_icmpne              LABEL31
    jump                   LABEL36
+LABEL31:
    033                    2
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL35
    jump                   LABEL36
+LABEL35:
    return                
 LABEL36:
    033                   
    load_int               84
-   if_icmpeq              1
+   if_icmpeq              LABEL40
    jump                   LABEL153
+LABEL40:
    033                    2
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL44
    jump                   LABEL153
+LABEL44:
    047                    1
    load_string            "/"
    load_int               0
    string_indexof_from   
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL51
    jump                   LABEL78
+LABEL51:
    get_clanchatcount     
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL55
    jump                   LABEL74
+LABEL55:
    033                    2
    load_int               1
-   if_icmple              1
+   if_icmple              LABEL59
    jump                   LABEL60
+LABEL59:
    return                
 LABEL60:
    025                    4394
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL64
    jump                   LABEL70
+LABEL64:
    get_clanchatcount     
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL68
    jump                   LABEL69
+LABEL68:
    3620                  
 LABEL69:
    jump                   LABEL73
@@ -91,23 +103,27 @@ LABEL78:
    load_int               0
    string_indexof_from   
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL85
    jump                   LABEL145
+LABEL85:
    033                    2
    load_int               2
-   if_icmpgt              1
+   if_icmpgt              LABEL89
    jump                   LABEL141
+LABEL89:
    047                    1
    load_string            "::toggleroof"
    load_int               0
    string_indexof_from   
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL96
    jump                   LABEL110
+LABEL96:
    3111                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL100
    jump                   LABEL105
+LABEL100:
    load_int               0
    3112                  
    load_string            "Roofs will only be removed selectively."
@@ -126,8 +142,9 @@ LABEL110:
    load_int               0
    string_indexof_from   
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL117
    jump                   LABEL121
+LABEL117:
    load_string            "Hey, everyone, I just tried to do something very silly!"
    load_int               0
    040                    96
@@ -135,8 +152,9 @@ LABEL110:
 LABEL121:
    033                    3
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL125
    jump                   LABEL137
+LABEL125:
    047                    1
    040                    224
    048                    1
@@ -174,50 +192,58 @@ LABEL148:
 LABEL153:
    033                   
    load_int               104
-   if_icmpeq              1
+   if_icmpeq              LABEL157
    jump                   LABEL163
+LABEL157:
    033                    3
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL161
    jump                   LABEL162
+LABEL161:
    040                    75
 LABEL162:
    jump                   LABEL221
 LABEL163:
    033                   
    load_int               105
-   if_icmpeq              1
+   if_icmpeq              LABEL167
    jump                   LABEL173
+LABEL167:
    033                    3
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL171
    jump                   LABEL172
+LABEL171:
    040                    76
 LABEL172:
    jump                   LABEL221
 LABEL173:
    033                   
    load_int               80
-   if_icmpeq              1
+   if_icmpeq              LABEL177
    jump                   LABEL215
+LABEL177:
    047                   
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL182
    jump                   LABEL202
+LABEL182:
    047                   
    3609                  
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL187
    jump                   LABEL190
+LABEL187:
    047                   
    040                    107
    return                
 LABEL190:
    042                    60
    get_gamecycle         
-   if_icmpgt              1
+   if_icmpgt              LABEL194
    jump                   LABEL195
+LABEL194:
    return                
 LABEL195:
    get_gamecycle         
@@ -230,8 +256,9 @@ LABEL195:
 LABEL202:
    042                    60
    get_gamecycle         
-   if_icmpgt              1
+   if_icmpgt              LABEL206
    jump                   LABEL207
+LABEL206:
    return                
 LABEL207:
    get_gamecycle         

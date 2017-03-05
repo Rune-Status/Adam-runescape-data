@@ -6,15 +6,17 @@
    034                   
    033                   
    load_int               0
-   if_icmple              1
+   if_icmple              LABEL10
    jump                   LABEL12
+LABEL10:
    load_string            "0"
    return                
 LABEL12:
    033                   
    load_int               10
-   if_icmpgt              1
+   if_icmpgt              LABEL16
    jump                   LABEL18
+LABEL16:
    035                    1
    return                
 LABEL18:
@@ -32,8 +34,9 @@ LABEL18:
 LABEL29:
    033                    1
    033                   
-   if_icmplt              1
+   if_icmplt              LABEL33
    jump                   LABEL136
+LABEL33:
    035                   
    033                    1
    033                    1
@@ -45,12 +48,14 @@ LABEL29:
    load_string            "k"
    4107                  
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL46
    jump                   LABEL86
+LABEL46:
    033                   
    load_int               8
-   if_icmpgt              1
+   if_icmpgt              LABEL50
    jump                   LABEL52
+LABEL50:
    035                    1
    return                
 LABEL52:
@@ -63,8 +68,9 @@ LABEL52:
    033                    1
    load_int               1
    iadd                  
-   if_icmpgt              1
+   if_icmpgt              LABEL63
    jump                   LABEL71
+LABEL63:
    035                   
    033                    1
    load_int               1
@@ -95,12 +101,14 @@ LABEL86:
    load_string            "m"
    4107                  
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL92
    jump                   LABEL131
+LABEL92:
    033                   
    load_int               5
-   if_icmpgt              1
+   if_icmpgt              LABEL96
    jump                   LABEL98
+LABEL96:
    035                    1
    return                
 LABEL98:
@@ -113,8 +121,9 @@ LABEL98:
    033                    1
    load_int               1
    iadd                  
-   if_icmpgt              1
+   if_icmpgt              LABEL109
    jump                   LABEL117
+LABEL109:
    035                   
    033                    1
    load_int               1
@@ -148,8 +157,9 @@ LABEL131:
 LABEL136:
    033                   
    load_int               10
-   if_icmplt              1
+   if_icmplt              LABEL140
    jump                   LABEL142
+LABEL140:
    035                   
    return                
 LABEL142:
@@ -160,8 +170,9 @@ LABEL142:
 LABEL146:
    033                    1
    033                   
-   if_icmplt              1
+   if_icmplt              LABEL150
    jump                   LABEL182
+LABEL150:
    035                   
    033                    1
    033                    1
@@ -178,16 +189,18 @@ LABEL146:
    034                    2
    033                    2
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL168
    jump                   LABEL171
+LABEL168:
    035                    1
    return                
    jump                   LABEL177
 LABEL171:
    033                    2
    load_int               0
-   if_icmplt              1
+   if_icmplt              LABEL175
    jump                   LABEL177
+LABEL175:
    035                   
    return                
 LABEL177:

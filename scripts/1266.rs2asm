@@ -9,8 +9,9 @@
 LABEL8:
    033                    2
    load_int               11
-   if_icmplt              1
+   if_icmplt              LABEL12
    jump                   LABEL62
+LABEL12:
    load_int               8519683
    load_int               5
    033                    2
@@ -31,8 +32,9 @@ LABEL8:
    load_int               2
    modulo                
    load_int               0
-   if_icmpeq              1
+   if_icmpeq              LABEL34
    jump                   LABEL37
+LABEL34:
    load_int               897
    034                   
    jump                   LABEL39
@@ -75,8 +77,9 @@ LABEL62:
 LABEL70:
    033                    2
    load_int               11
-   if_icmplt              1
+   if_icmplt              LABEL74
    jump                   LABEL148
+LABEL74:
    035                   
    040                    632
    036                   
@@ -84,14 +87,16 @@ LABEL70:
    035                    1
    string_length         
    load_int               0
-   if_icmpgt              1
+   if_icmpgt              LABEL83
    jump                   LABEL143
+LABEL83:
    load_int               8519683
    033                    2
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL89
    jump                   LABEL143
+LABEL89:
    load_int               1
    load_string            "Find"
    1300                  

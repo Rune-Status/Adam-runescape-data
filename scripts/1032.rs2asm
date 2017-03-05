@@ -15,8 +15,9 @@
 LABEL14:
    033                    21
    load_int               23
-   if_icmple              1
+   if_icmple              LABEL18
    jump                   LABEL54
+LABEL18:
    033                    21
    033                    21
    046                   
@@ -56,8 +57,9 @@ LABEL14:
 LABEL54:
    033                    21
    load_int               30
-   if_icmplt              1
+   if_icmplt              LABEL58
    jump                   LABEL71
+LABEL58:
    033                   
    load_int               4
    033                    21
@@ -145,8 +147,9 @@ LABEL71:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL146
    jump                   LABEL162
+LABEL146:
    load_int               0
    033                    21
    load_int               15
@@ -156,8 +159,9 @@ LABEL71:
    1000                  
    033                   
    033                    10
-   if_icmpeq              1
+   if_icmpeq              LABEL157
    jump                   LABEL160
+LABEL157:
    load_string            "Total XP"
    1112                  
    jump                   LABEL162
@@ -175,8 +179,9 @@ LABEL162:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL174
    jump                   LABEL181
+LABEL174:
    load_int               0
    load_int               15
    load_int               1
@@ -187,8 +192,9 @@ LABEL162:
 LABEL181:
    033                    21
    load_int               23
-   if_icmple              1
+   if_icmple              LABEL185
    jump                   LABEL215
+LABEL185:
    033                   
    033                    21
    045                   
@@ -196,8 +202,9 @@ LABEL181:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL194
    jump                   LABEL210
+LABEL194:
    load_int               0
    033                    21
    load_int               1
@@ -227,8 +234,9 @@ LABEL215:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              1
+   if_icmpeq              LABEL223
    jump                   LABEL241
+LABEL223:
    load_int               0
    033                    19
    load_int               1
@@ -240,8 +248,9 @@ LABEL215:
    1000                  
    033                   
    033                    12
-   if_icmpeq              1
+   if_icmpeq              LABEL236
    jump                   LABEL239
+LABEL236:
    load_string            "Total XP goal"
    1112                  
    jump                   LABEL241
