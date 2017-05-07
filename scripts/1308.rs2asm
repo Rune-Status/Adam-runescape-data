@@ -1,0 +1,75 @@
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              LABEL6
+   jump                   LABEL8
+LABEL6:
+   033                    2
+   widget_put_opacity    
+LABEL8:
+   033                   
+   033                    3
+   200                    1
+   load_int               1
+   if_icmpeq              LABEL14
+   jump                   LABEL63
+LABEL14:
+   033                    6
+   load_int               2
+   if_icmpge              LABEL18
+   jump                   LABEL46
+LABEL18:
+   033                    4
+   load_int               1
+   if_icmpeq              LABEL22
+   jump                   LABEL34
+LABEL22:
+   load_string            "<col=ffffff>"
+   033                    5
+   get_item_name         
+   load_string            "</col>"
+   load_string            "<br>"
+   load_string            "x?"
+   033                    6
+   load_string            ","
+   040                    46
+   037                    6
+   1112                   1
+   jump                   LABEL45
+LABEL34:
+   load_string            "<col=ffb83f>"
+   033                    5
+   get_item_name         
+   load_string            "</col>"
+   load_string            "<br>"
+   load_string            "x?"
+   033                    6
+   load_string            ","
+   040                    46
+   037                    6
+   1112                   1
+LABEL45:
+   jump                   LABEL63
+LABEL46:
+   033                    4
+   load_int               1
+   if_icmpeq              LABEL50
+   jump                   LABEL57
+LABEL50:
+   load_string            "<col=ffffff>"
+   033                    5
+   get_item_name         
+   load_string            "</col>"
+   037                    3
+   1112                   1
+   jump                   LABEL63
+LABEL57:
+   load_string            "<col=ffb83f>"
+   033                    5
+   get_item_name         
+   load_string            "</col>"
+   037                    3
+   1112                   1
+LABEL63:
+   return                

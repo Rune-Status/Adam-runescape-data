@@ -4,7 +4,7 @@
    040                    228
    pop_int               
    042                    51
-   034                    18
+   034                    21
    040                    514
    load_int               1
    if_icmpeq              LABEL11
@@ -33,6 +33,9 @@ LABEL21:
    033                    16
    033                    14
    033                    17
+   033                    18
+   033                    19
+   033                    20
    040                    282
    load_int               281
    load_int               -2147483644
@@ -46,7 +49,10 @@ LABEL21:
    033                    16
    033                    14
    033                    17
-   load_string            "iIIIIIIIIII"
+   033                    18
+   033                    19
+   033                    20
+   load_string            "iIIIIIIIIIIIII"
    033                    14
    2409                  
    033                    7
@@ -94,23 +100,23 @@ LABEL21:
    033                    6
    102                   
    load_int               0
-   034                    19
+   034                    22
    load_int               0
-   034                    20
-LABEL95:
-   033                    20
+   034                    23
+LABEL101:
+   033                    23
    load_int               800
-   if_icmplt              LABEL99
-   jump                   LABEL125
-LABEL99:
+   if_icmplt              LABEL105
+   jump                   LABEL131
+LABEL105:
    033                    6
    load_int               5
-   033                    19
+   033                    22
    100                   
-   033                    19
+   033                    22
    load_int               1
    iadd                  
-   034                    19
+   034                    22
    load_int               36
    load_int               32
    load_int               0
@@ -124,32 +130,32 @@ LABEL99:
    1303                  
    load_int               5
    1304                  
-   033                    20
+   033                    23
    load_int               1
    iadd                  
-   034                    20
-   jump                   LABEL95
-LABEL125:
+   034                    23
+   jump                   LABEL101
+LABEL131:
    033                    6
    widget_get_width_widget
-   034                    21
+   034                    24
    load_int               1
-   034                    20
-LABEL130:
-   033                    20
+   034                    23
+LABEL136:
+   033                    23
    load_int               9
-   if_icmple              LABEL134
-   jump                   LABEL156
-LABEL134:
+   if_icmple              LABEL140
+   jump                   LABEL162
+LABEL140:
    033                    6
    load_int               5
-   033                    19
+   033                    22
    100                   
-   033                    19
+   033                    22
    load_int               1
    iadd                  
-   034                    19
-   033                    21
+   034                    22
+   033                    24
    load_int               2
    load_int               0
    load_int               0
@@ -158,29 +164,29 @@ LABEL134:
    widget_put_textureid  
    load_int               1
    1107                  
-   033                    20
+   033                    23
    load_int               1
    iadd                  
-   034                    20
-   jump                   LABEL130
-LABEL156:
-   load_int               1
-   034                    20
-LABEL158:
-   033                    20
-   load_int               9
-   if_icmple              LABEL162
-   jump                   LABEL231
+   034                    23
+   jump                   LABEL136
 LABEL162:
+   load_int               1
+   034                    23
+LABEL164:
+   033                    23
+   load_int               9
+   if_icmple              LABEL168
+   jump                   LABEL240
+LABEL168:
    033                    6
    load_int               4
-   033                    19
+   033                    22
    100                   
-   033                    19
+   033                    22
    load_int               1
    iadd                  
-   034                    19
-   033                    21
+   034                    22
+   033                    24
    load_int               15
    load_int               0
    load_int               0
@@ -208,7 +214,7 @@ LABEL162:
    load_int               1
    1115                  
    load_string            "Tab "
-   033                    20
+   033                    23
    int_to_string         
    037                    2
    1112                  
@@ -216,7 +222,7 @@ LABEL162:
    load_string            "View tab"
    1300                  
    load_string            "<col=ff9040>"
-   033                    20
+   033                    23
    int_to_string         
    load_string            "</col>"
    037                    3
@@ -232,32 +238,35 @@ LABEL162:
    033                    16
    033                    14
    033                    17
+   033                    18
+   033                    19
+   033                    20
    load_int               -2147483644
-   033                    20
-   load_string            "IIIIIIIIIIii"
+   033                    23
+   load_string            "IIIIIIIIIIIIIii"
    1409                  
-   033                    20
+   033                    23
    load_int               1
    iadd                  
-   034                    20
-   jump                   LABEL158
-LABEL231:
+   034                    23
+   jump                   LABEL164
+LABEL240:
    load_int               0
-   034                    20
-LABEL233:
-   033                    20
+   034                    23
+LABEL242:
+   033                    23
    load_int               9
-   if_icmple              LABEL237
-   jump                   LABEL259
-LABEL237:
+   if_icmple              LABEL246
+   jump                   LABEL268
+LABEL246:
    033                    6
    load_int               3
-   033                    19
+   033                    22
    100                   
-   033                    19
+   033                    22
    load_int               1
    iadd                  
-   034                    19
+   034                    22
    load_int               0
    load_int               32
    load_int               0
@@ -267,12 +276,12 @@ LABEL237:
    1102                  
    load_int               255
    widget_put_opacity    
-   033                    20
+   033                    23
    load_int               1
    iadd                  
-   034                    20
-   jump                   LABEL233
-LABEL259:
+   034                    23
+   jump                   LABEL242
+LABEL268:
    load_int               0
    033                   
    033                    1
@@ -284,6 +293,9 @@ LABEL259:
    033                    16
    033                    14
    033                    17
+   033                    18
+   033                    19
+   033                    20
    033                    4
    033                    5
    040                    503
@@ -298,9 +310,12 @@ LABEL259:
    033                    16
    033                    14
    033                    17
+   033                    18
+   033                    19
+   033                    20
    load_int               95
    load_int               1
-   load_string            "IIIIIIIIIIY"
+   load_string            "IIIIIIIIIIIIIY"
    033                    6
    2414                  
    load_int               276
@@ -314,31 +329,100 @@ LABEL259:
    033                    16
    033                    14
    033                    17
+   033                    18
+   033                    19
+   033                    20
    load_int               304
    load_int               115
    load_int               867
    load_int               1052
    load_int               1053
    load_int               5
-   load_string            "IIIIIIIIIIY"
+   load_string            "IIIIIIIIIIIIIY"
    033                    6
    2407                  
-   033                    18
+   033                    21
    043                    51
    033                   
    widget_get_parentid_widget
-   034                    22
-   033                    22
+   034                    25
+   033                    25
    load_int               -1
-   if_icmpne              LABEL318
-   jump                   LABEL325
-LABEL318:
+   if_icmpne              LABEL336
+   jump                   LABEL343
+LABEL336:
    033                   
-   033                    22
+   033                    25
    load_int               -2147483648
    load_int               -2147483648
    033                    7
    033                    6
    040                    840
-LABEL325:
+LABEL343:
+   033                    18
+   102                   
+   033                    18
+   load_int               6
+   load_int               0
+   100                   
+   033                    18
+   load_int               6
+   load_int               1
+   100                    1
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   1001                  
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   1001                   1
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   1000                  
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   1000                   1
+   load_int               9037
+   widget_put_modelid_1  
+   load_int               9056
+   widget_put_modelid_1   1
+   load_int               15
+   load_int               300
+   load_int               141
+   load_int               220
+   load_int               0
+   load_int               3500
+   1109                  
+   load_int               15
+   load_int               300
+   load_int               141
+   load_int               220
+   load_int               0
+   load_int               3500
+   1109                   1
+   load_int               2439
+   1110                   1
+   load_int               1
+   widget_put_hidden      1
+   load_int               1312
+   load_int               1
+   033                    18
+   033                    20
+   load_string            "1II"
+   033                    18
+   2412                  
+   load_int               1312
+   load_int               0
+   033                    18
+   033                    20
+   load_string            "1II"
+   033                    18
+   2404                  
    return                

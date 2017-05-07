@@ -18,15 +18,15 @@
    034                    5
 LABEL18:
    033                    5
-   load_int               105
+   load_int               107
    if_icmple              LABEL22
-   jump                   LABEL92
+   jump                   LABEL81
 LABEL22:
    033                    5
    5017                  
    load_int               0
    if_icmpgt              LABEL27
-   jump                   LABEL87
+   jump                   LABEL76
 LABEL27:
    033                    5
    load_int               0
@@ -50,46 +50,38 @@ LABEL42:
    034                    2
 LABEL46:
    033                    5
-   load_int               3
-   if_icmpeq              LABEL56
-   033                    5
-   load_int               6
-   if_icmpeq              LABEL56
-   033                    5
-   load_int               7
-   if_icmpeq              LABEL56
-   jump                   LABEL66
-LABEL56:
+   switch                
+      3: LABEL49
+      6: LABEL49
+      7: LABEL49
+      14: LABEL59
+   jump                   LABEL76
+LABEL49:
    033                    1
    033                    4
-   if_icmpgt              LABEL60
-   jump                   LABEL65
-LABEL60:
+   if_icmpgt              LABEL53
+   jump                   LABEL58
+LABEL53:
    033                    1
    034                    4
    035                   
    string_remove_html    
    048                   
-LABEL65:
-   jump                   LABEL87
-LABEL66:
-   033                    5
-   load_int               14
-   if_icmpeq              LABEL70
-   jump                   LABEL87
-LABEL70:
+LABEL58:
+   jump                   LABEL76
+LABEL59:
    033                   
    load_int               -1
-   if_icmpne              LABEL74
-   jump                   LABEL87
-LABEL74:
+   if_icmpne              LABEL63
+   jump                   LABEL76
+LABEL63:
    033                    1
    get_gamecycle         
    load_int               3000
    isub                  
-   if_icmpgt              LABEL80
-   jump                   LABEL87
-LABEL80:
+   if_icmpgt              LABEL69
+   jump                   LABEL76
+LABEL69:
    033                    1
    043                    55
    load_int               664
@@ -97,13 +89,13 @@ LABEL80:
    load_string            "1"
    load_int               10616832
    2408                  
-LABEL87:
+LABEL76:
    033                    5
    load_int               1
    iadd                  
    034                    5
    jump                   LABEL18
-LABEL92:
+LABEL81:
    033                    2
    return                
    load_int               0

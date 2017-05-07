@@ -1,5 +1,107 @@
+   025                    5605
+   load_int               1
+   if_icmpeq              LABEL4
+   jump                   LABEL13
+LABEL4:
    033                   
+   040                    1594
    033                    1
+   load_string            "Look up name"
+   040                    1672
    033                    2
-   040                    635
+   load_string            "---"
+   040                    1677
+   jump                   LABEL91
+LABEL13:
+   025                    5605
+   load_int               2
+   if_icmpeq              LABEL17
+   jump                   LABEL29
+LABEL17:
+   load_int               1593
+   033                   
+   load_string            "I"
+   033                   
+   2408                  
+   033                    1
+   load_string            "Look up name"
+   040                    1677
+   033                    2
+   load_string            "---"
+   040                    1677
+   jump                   LABEL91
+LABEL29:
+   025                    5605
+   load_int               4
+   if_icmpeq              LABEL33
+   jump                   LABEL64
+LABEL33:
+   033                   
+   040                    1594
+   033                    1
+   load_string            "Another name"
+   040                    1672
+   025                    5606
+   load_int               1
+   if_icmpeq              LABEL42
+   jump                   LABEL60
+LABEL42:
+   025                    5607
+   load_int               0
+   if_icmpeq              LABEL46
+   jump                   LABEL60
+LABEL46:
+   047                    137
+   string_length         
+   load_int               0
+   if_icmple              LABEL51
+   jump                   LABEL53
+LABEL51:
+   load_string            "-"
+   048                    137
+LABEL53:
+   033                    2
+   load_string            "<col=00ff00>"
+   047                    137
+   load_string            "</col>"
+   037                    3
+   040                    1672
+   jump                   LABEL63
+LABEL60:
+   033                    2
+   load_string            "---"
+   040                    1677
+LABEL63:
+   jump                   LABEL91
+LABEL64:
+   025                    5605
+   load_int               5
+   if_icmpeq              LABEL68
+   jump                   LABEL80
+LABEL68:
+   load_int               1593
+   033                   
+   load_string            "I"
+   033                   
+   2408                  
+   033                    1
+   load_string            "Another name"
+   040                    1677
+   033                    2
+   load_string            "---"
+   040                    1677
+   jump                   LABEL91
+LABEL80:
+   load_int               1593
+   033                   
+   load_string            "I"
+   033                   
+   2408                  
+   033                    1
+   load_string            "Look up name"
+   040                    1677
+   033                    2
+   load_string            "---"
+   040                    1677
+LABEL91:
    return                

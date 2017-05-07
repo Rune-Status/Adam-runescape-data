@@ -1,0 +1,108 @@
+   load_int               1
+   034                    2
+   get_settings           101
+   033                    2
+   if_icmpgt              LABEL6
+   jump                   LABEL8
+LABEL6:
+   get_settings           101
+   034                    2
+LABEL8:
+   025                    5099
+   034                    3
+   025                    5099
+   get_settings           101
+   if_icmplt              LABEL14
+   jump                   LABEL18
+LABEL14:
+   033                    3
+   load_int               1
+   isub                  
+   034                    3
+LABEL18:
+   033                    3
+   load_int               0
+   if_icmple              LABEL25
+   033                    2
+   load_int               0
+   if_icmple              LABEL25
+   jump                   LABEL36
+LABEL25:
+   load_int               0
+   load_int               0
+   load_int               0
+   load_int               1
+   033                    1
+   2001                  
+   load_int               -1
+   load_string            ""
+   033                   
+   2408                  
+   return                
+LABEL36:
+   033                    3
+   033                    2
+   if_icmpge              LABEL40
+   jump                   LABEL51
+LABEL40:
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   033                    1
+   2001                  
+   load_int               -1
+   load_string            ""
+   033                   
+   2408                  
+   return                
+LABEL51:
+   load_int               0
+   033                    3
+   load_int               0
+   033                    2
+   load_int               16384
+   4006                  
+   034                    4
+   033                    3
+   load_int               30
+   imul                  
+   034                    5
+   033                    4
+   load_int               0
+   if_icmple              LABEL69
+   033                    5
+   load_int               0
+   if_icmple              LABEL69
+   jump                   LABEL80
+LABEL69:
+   load_int               0
+   load_int               0
+   load_int               0
+   load_int               1
+   033                    1
+   2001                  
+   load_int               -1
+   load_string            ""
+   033                   
+   2408                  
+   return                
+LABEL80:
+   033                    4
+   load_int               0
+   load_int               2
+   load_int               1
+   033                    1
+   2001                  
+   load_int               1307
+   033                   
+   033                    1
+   033                    4
+   033                    4
+   033                    5
+   idiv                  
+   get_gamecycle         
+   load_string            "IIiii"
+   033                   
+   2408                  
+   return                

@@ -37,16 +37,25 @@ LABEL21:
 LABEL33:
    load_string            "<img=2>"
    036                    2
-   jump                   LABEL42
+   jump                   LABEL49
 LABEL36:
    025                    1777
    load_int               2
    if_icmpeq              LABEL40
-   jump                   LABEL42
+   jump                   LABEL43
 LABEL40:
    load_string            "<img=3>"
    036                    2
-LABEL42:
+   jump                   LABEL49
+LABEL43:
+   025                    1777
+   load_int               3
+   if_icmpeq              LABEL47
+   jump                   LABEL49
+LABEL47:
+   load_string            "<img=10>"
+   036                    2
+LABEL49:
    035                    2
    get_localplayer_name  
    load_string            ":?"
@@ -57,9 +66,9 @@ LABEL42:
    036                    3
    033                   
    load_int               80
-   if_icmplt              LABEL54
-   jump                   LABEL61
-LABEL54:
+   if_icmplt              LABEL61
+   jump                   LABEL68
+LABEL61:
    035                    3
    035                   
    load_string            "*"
@@ -67,7 +76,7 @@ LABEL54:
    037                    3
    concat_string         
    036                    3
-LABEL61:
+LABEL68:
    035                    3
    load_int               2147483647
    load_int               495
@@ -76,22 +85,22 @@ LABEL61:
    033                    1
    load_int               10616874
    widget_get_width_widget
-   if_icmpgt              LABEL71
-   jump                   LABEL77
-LABEL71:
+   if_icmpgt              LABEL78
+   jump                   LABEL84
+LABEL78:
    load_int               2
    load_int               2
    load_int               0
    load_int               10616874
    2114                  
-   jump                   LABEL82
-LABEL77:
+   jump                   LABEL89
+LABEL84:
    load_int               0
    load_int               2
    load_int               0
    load_int               10616874
    2114                  
-LABEL82:
+LABEL89:
    035                    3
    load_int               10616874
    2112                  

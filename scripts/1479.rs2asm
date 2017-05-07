@@ -1,0 +1,221 @@
+   load_int               108
+   load_int               99
+   load_int               1368
+   033                   
+   3408                  
+   034                    4
+   033                    4
+   load_int               -1
+   if_icmpeq              LABEL10
+   jump                   LABEL13
+LABEL10:
+   load_int               0
+   load_int               0
+   return                
+LABEL13:
+   033                    4
+   divide_by_16384       
+   034                    5
+   033                    4
+   and_16384             
+   034                    6
+   load_int               0
+   034                    7
+   033                    5
+   load_int               1
+   if_icmpeq              LABEL25
+   jump                   LABEL28
+LABEL25:
+   get_settings           1365
+   034                    7
+   jump                   LABEL59
+LABEL28:
+   033                    5
+   load_int               2
+   if_icmpeq              LABEL32
+   jump                   LABEL35
+LABEL32:
+   get_settings           1366
+   034                    7
+   jump                   LABEL59
+LABEL35:
+   033                    5
+   load_int               3
+   if_icmpeq              LABEL39
+   jump                   LABEL42
+LABEL39:
+   get_settings           1367
+   034                    7
+   jump                   LABEL59
+LABEL42:
+   033                    5
+   load_int               4
+   if_icmpeq              LABEL46
+   jump                   LABEL49
+LABEL46:
+   get_settings           1368
+   034                    7
+   jump                   LABEL59
+LABEL49:
+   033                    5
+   load_int               5
+   if_icmpeq              LABEL53
+   jump                   LABEL56
+LABEL53:
+   get_settings           1369
+   034                    7
+   jump                   LABEL59
+LABEL56:
+   load_int               0
+   load_int               0
+   return                
+LABEL59:
+   033                    7
+   033                    6
+   test_bit              
+   load_int               0
+   if_icmpeq              LABEL65
+   jump                   LABEL68
+LABEL65:
+   load_int               0
+   load_int               0
+   return                
+LABEL68:
+   load_int               108
+   load_int               99
+   load_int               1525
+   033                   
+   3408                  
+   034                    8
+   033                    8
+   load_int               -1
+   if_icmpne              LABEL78
+   jump                   LABEL104
+LABEL78:
+   load_int               576
+   033                    8
+   divide_by_16384       
+   3301                  
+   load_int               -1
+   if_icmpne              LABEL85
+   jump                   LABEL88
+LABEL85:
+   load_int               1
+   load_int               1
+   return                
+LABEL88:
+   033                   
+   load_int               29032
+   if_icmpeq              LABEL92
+   jump                   LABEL101
+LABEL92:
+   033                    2
+   load_int               31
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL98
+   jump                   LABEL101
+LABEL98:
+   load_int               1
+   load_int               1
+   return                
+LABEL101:
+   load_int               1
+   load_int               0
+   return                
+LABEL104:
+   load_int               108
+   load_int               99
+   load_int               1440
+   033                   
+   3408                  
+   034                    8
+   033                    8
+   load_int               -1
+   if_icmpne              LABEL114
+   jump                   LABEL156
+LABEL114:
+   033                    8
+   divide_by_16384       
+   033                    8
+   and_16384             
+   034                    6
+   034                    5
+   033                    5
+   load_int               1
+   if_icmpeq              LABEL124
+   jump                   LABEL127
+LABEL124:
+   033                    1
+   034                    7
+   jump                   LABEL144
+LABEL127:
+   033                    5
+   load_int               2
+   if_icmpeq              LABEL131
+   jump                   LABEL134
+LABEL131:
+   033                    2
+   034                    7
+   jump                   LABEL144
+LABEL134:
+   033                    5
+   load_int               3
+   if_icmpeq              LABEL138
+   jump                   LABEL141
+LABEL138:
+   033                    3
+   034                    7
+   jump                   LABEL144
+LABEL141:
+   load_int               0
+   load_int               0
+   return                
+LABEL144:
+   033                    7
+   033                    6
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL150
+   jump                   LABEL153
+LABEL150:
+   load_int               1
+   load_int               1
+   return                
+LABEL153:
+   load_int               1
+   load_int               0
+   return                
+LABEL156:
+   033                   
+   load_int               29057
+   if_icmpeq              LABEL160
+   jump                   LABEL178
+LABEL160:
+   033                    3
+   load_int               10
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL171
+   033                    3
+   load_int               12
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL171
+   jump                   LABEL175
+LABEL171:
+   load_int               1
+   load_int               1
+   return                
+   jump                   LABEL178
+LABEL175:
+   load_int               1
+   load_int               0
+   return                
+LABEL178:
+   load_int               0
+   load_int               0
+   return                
+   load_int               -1
+   load_int               -1
+   return                

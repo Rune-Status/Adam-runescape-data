@@ -1,0 +1,519 @@
+   load_int               95
+   033                   
+   3301                  
+   034                    5
+   033                    5
+   load_int               -1
+   if_icmpeq              LABEL8
+   jump                   LABEL9
+LABEL8:
+   return                
+LABEL9:
+   033                    5
+   4209                  
+   033                    5
+   if_icmpne              LABEL14
+   jump                   LABEL21
+LABEL14:
+   load_int               2277
+   load_int               1
+   load_int               0
+   3200                  
+   load_string            "You can release placeholders by clicking on them."
+   send_game_message     
+   return                
+LABEL21:
+   033                    4
+   040                    41
+   033                    2
+   load_int               1
+   200                    1
+   load_int               1
+   if_icmpeq              LABEL29
+   jump                   LABEL31
+LABEL29:
+   load_int               1
+   widget_put_hidden      1
+LABEL31:
+   load_int               0
+   033                    3
+   widget_put_hidden_widget
+   033                    3
+   102                   
+   load_int               0
+   034                    6
+   load_int               95
+   033                   
+   3302                  
+   034                    7
+   033                    7
+   load_string            ","
+   040                    46
+   load_string            " "
+   load_string            "<col=ffffff>"
+   load_string            "x"
+   load_string            "</col>"
+   load_string            " "
+   033                    5
+   get_item_name         
+   037                    7
+   036                   
+   load_string            "Are you "
+   load_string            "<col=ffffff>"
+   load_string            "sure"
+   load_string            "</col>"
+   load_string            " you"
+   load_string            "<br>"
+   load_string            "want to destroy it?"
+   037                    7
+   036                    1
+   033                    7
+   load_int               1
+   if_icmpgt              LABEL67
+   jump                   LABEL80
+LABEL67:
+   load_string            "Are you "
+   load_string            "<col=ffffff>"
+   load_string            "sure"
+   load_string            "</col>"
+   load_string            " you want"
+   load_string            "<br>"
+   load_string            "to destroy "
+   load_string            "<col=ffffff>"
+   load_string            "all of them"
+   load_string            "</col>"
+   load_string            "?"
+   037                    11
+   036                    1
+LABEL80:
+   035                   
+   load_int               512
+   load_int               495
+   4109                  
+   load_int               67
+   iadd                  
+   034                    8
+   035                    1
+   load_int               512
+   load_int               495
+   4109                  
+   load_int               170
+   iadd                  
+   034                    9
+   033                    8
+   033                    9
+   if_icmplt              LABEL98
+   jump                   LABEL100
+LABEL98:
+   033                    9
+   034                    8
+LABEL100:
+   033                    1
+   widget_get_parentid_widget
+   widget_get_width_widget
+   034                    9
+   033                    8
+   033                    9
+   if_icmpgt              LABEL108
+   jump                   LABEL110
+LABEL108:
+   033                    9
+   034                    8
+LABEL110:
+   033                    3
+   load_int               5
+   033                    6
+   100                   
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   033                    8
+   load_int               120
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   1000                  
+   load_int               1040
+   widget_put_textureid  
+   load_int               1
+   1107                  
+LABEL132:
+   033                    6
+   033                   
+   if_icmple              LABEL136
+   jump                   LABEL147
+LABEL136:
+   033                    3
+   load_int               3
+   033                    6
+   100                   
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   load_int               1
+   widget_put_hidden     
+   jump                   LABEL132
+LABEL147:
+   033                    3
+   load_int               4
+   033                    6
+   100                   
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   load_int               85
+   load_int               22
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               0
+   load_int               40
+   load_int               1
+   load_int               1
+   1000                  
+   033                    5
+   033                    7
+   1200                  
+   load_string            "<col=ff9040>"
+   033                    5
+   get_item_name         
+   load_string            "</col>"
+   037                    3
+   widget_put_name       
+   033                    3
+   load_int               5
+   033                    6
+   100                    1
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   load_int               85
+   load_int               22
+   load_int               0
+   load_int               0
+   1001                   1
+   load_int               0
+   load_int               40
+   load_int               1
+   load_int               1
+   1000                   1
+   load_int               812
+   widget_put_textureid   1
+   033                    3
+   load_int               4
+   033                    6
+   100                    1
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   load_int               85
+   load_int               22
+   load_int               0
+   load_int               0
+   1001                   1
+   load_int               0
+   load_int               40
+   load_int               1
+   load_int               1
+   1000                   1
+   load_int               1
+   load_int               1
+   load_int               0
+   1114                   1
+   load_int               494
+   widget_put_fontid      1
+   load_int               1
+   1115                   1
+   load_string            "Wait"
+   1112                   1
+   load_int               9408399
+   widget_put_textcolor   1
+   load_int               1318
+   033                    7
+   033                    3
+   1702                  
+   1702                   1
+   get_gamecycle         
+   load_int               100
+   iadd                  
+   load_string            "iIiii"
+   1408                  
+   033                    3
+   load_int               4
+   033                    6
+   100                   
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   033                    8
+   load_int               20
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               0
+   load_int               -45
+   load_int               1
+   load_int               1
+   1000                  
+   load_int               16750623
+   widget_put_textcolor  
+   load_int               1
+   load_int               2
+   load_int               0
+   1114                  
+   load_int               495
+   widget_put_fontid     
+   load_int               1
+   1115                  
+   035                   
+   1112                  
+   033                    3
+   load_int               5
+   033                    6
+   100                   
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   load_int               16
+   load_int               16
+   load_int               0
+   load_int               0
+   1001                  
+   033                    8
+   load_int               2
+   idiv                  
+   load_int               18
+   isub                  
+   load_int               -44
+   load_int               1
+   load_int               1
+   1000                  
+   load_int               831
+   034                    10
+   033                    10
+   widget_put_textureid  
+   load_int               229
+   load_int               -2147483645
+   load_int               -2147483643
+   033                    10
+   load_int               -1
+   load_string            "IidI"
+   1404                  
+   load_int               832
+   034                    10
+   load_int               229
+   load_int               -2147483645
+   load_int               -2147483643
+   033                    10
+   load_int               -1
+   load_string            "IidI"
+   1403                  
+   load_int               1
+   load_string            "Close"
+   1300                  
+   load_int               1319
+   load_int               1
+   033                    3
+   load_string            "iI"
+   1409                  
+   033                    8
+   load_int               2
+   idiv                  
+   load_int               42
+   isub                  
+   034                    11
+   033                    3
+   load_int               6
+   033                    6
+   100                   
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   033                    3
+   load_int               6
+   033                    6
+   100                    1
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   load_int               80
+   load_int               120
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               80
+   load_int               120
+   load_int               0
+   load_int               0
+   1001                   1
+   033                    11
+   load_int               0
+   load_int               1
+   load_int               1
+   1000                  
+   033                    11
+   load_int               0
+   load_int               1
+   load_int               1
+   1000                   1
+   load_int               9037
+   widget_put_modelid_1  
+   load_int               9056
+   widget_put_modelid_1   1
+   load_int               15
+   load_int               400
+   load_int               141
+   load_int               220
+   load_int               0
+   load_int               2500
+   1109                  
+   load_int               15
+   load_int               400
+   load_int               141
+   load_int               220
+   load_int               0
+   load_int               2500
+   1109                   1
+   load_int               2439
+   1110                   1
+   033                    3
+   load_int               6
+   033                    6
+   100                   
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   load_int               40
+   load_int               40
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               0
+   033                    8
+   load_int               2
+   idiv                  
+   load_int               42
+   isub                  
+   isub                  
+   load_int               0
+   load_int               1
+   load_int               1
+   1000                  
+   033                    5
+   load_int               995
+   if_icmpeq              LABEL407
+   033                    5
+   load_int               10476
+   if_icmpeq              LABEL407
+   jump                   LABEL415
+LABEL407:
+   033                    7
+   load_int               10
+   if_icmpgt              LABEL411
+   jump                   LABEL415
+LABEL411:
+   033                    5
+   load_int               10
+   1200                  
+   jump                   LABEL419
+LABEL415:
+   033                    5
+   get_item_note_2       
+   033                    7
+   1200                  
+LABEL419:
+   033                    3
+   load_int               4
+   033                    6
+   100                   
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   033                    8
+   load_int               120
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   1000                  
+   load_int               16750623
+   widget_put_textcolor  
+   load_int               1
+   load_int               1
+   load_int               0
+   1114                  
+   load_int               495
+   widget_put_fontid     
+   load_int               1
+   1115                  
+   035                    1
+   1112                  
+   033                    3
+   load_int               3
+   033                    6
+   100                   
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   033                    8
+   load_int               120
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   1000                  
+   load_int               921100
+   widget_put_textcolor  
+   load_int               0
+   1102                  
+   033                    3
+   load_int               3
+   033                    6
+   100                   
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   033                    8
+   load_int               2
+   isub                  
+   load_int               118
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   1000                  
+   load_int               4671301
+   widget_put_textcolor  
+   load_int               0
+   1102                  
+   load_int               2266
+   load_int               1
+   load_int               0
+   3200                  
+   return                

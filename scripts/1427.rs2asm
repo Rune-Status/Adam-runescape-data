@@ -1,0 +1,56 @@
+   033                   
+   get_gamecycle         
+   isub                  
+   034                    1
+   033                    1
+   load_int               0
+   if_icmple              LABEL8
+   jump                   LABEL16
+LABEL8:
+   load_string            ""
+   load_int               25952259
+   2112                  
+   load_int               -1
+   load_string            ""
+   load_int               25952259
+   2408                  
+   return                
+LABEL16:
+   033                    1
+   load_int               50
+   idiv                  
+   034                    2
+   033                    2
+   load_int               60
+   idiv                  
+   034                    3
+   033                    2
+   load_int               60
+   modulo                
+   034                    4
+   033                    3
+   load_int               0
+   if_icmpgt              LABEL32
+   jump                   LABEL43
+LABEL32:
+   load_string            "The Wintertodt returns in: "
+   033                    3
+   int_to_string         
+   load_string            "min "
+   033                    4
+   int_to_string         
+   load_string            "sec"
+   037                    5
+   load_int               25952259
+   2112                  
+   jump                   LABEL50
+LABEL43:
+   load_string            "The Wintertodt returns in: "
+   033                    4
+   int_to_string         
+   load_string            "sec"
+   037                    3
+   load_int               25952259
+   2112                  
+LABEL50:
+   return                

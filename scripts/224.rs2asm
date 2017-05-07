@@ -324,6 +324,54 @@ LABEL278:
    040                    225
    return                
 LABEL286:
+   load_string            "::tele up"
+   036                    2
+   035                    2
+   string_length         
+   034                    1
+   033                   
+   033                    1
+   if_icmpge              LABEL295
+   jump                   LABEL307
+LABEL295:
+   035                    1
+   load_int               0
+   033                    1
+   string_substring      
+   035                    2
+   4107                  
+   load_int               0
+   if_icmpeq              LABEL304
+   jump                   LABEL307
+LABEL304:
+   load_int               1
+   040                    1410
+   return                
+LABEL307:
+   load_string            "::tele down"
+   036                    2
+   035                    2
+   string_length         
+   034                    1
+   033                   
+   033                    1
+   if_icmpge              LABEL316
+   jump                   LABEL328
+LABEL316:
+   035                    1
+   load_int               0
+   033                    1
+   string_substring      
+   035                    2
+   4107                  
+   load_int               0
+   if_icmpeq              LABEL325
+   jump                   LABEL328
+LABEL325:
+   load_int               -1
+   040                    1410
+   return                
+LABEL328:
    035                   
    return                
    load_string            ""

@@ -293,10 +293,10 @@ LABEL244:
    jump                   LABEL220
 LABEL249:
    035                   
-   load_int               6946915
+   load_int               31195193
    2112                  
    035                    1
-   load_int               6946917
+   load_int               31195201
    2112                  
    load_string            ""
    036                    2
@@ -378,44 +378,18 @@ LABEL317:
    jump                   LABEL328
 LABEL323:
    035                    3
-   load_string            "You cannot use weapons."
+   load_string            "You cannot switch weapons."
    load_string            "<br>"
    037                    3
    036                    3
 LABEL328:
    get_settings           286
-   load_int               3
-   test_bit              
-   load_int               1
-   if_icmpeq              LABEL334
-   jump                   LABEL339
-LABEL334:
-   035                    3
-   load_string            "You cannot wear armour."
-   load_string            "<br>"
-   037                    3
-   036                    3
-LABEL339:
-   get_settings           286
-   load_int               11
-   test_bit              
-   load_int               1
-   if_icmpeq              LABEL345
-   jump                   LABEL350
-LABEL345:
-   035                    3
-   load_string            "You cannot wear jewellery."
-   load_string            "<br>"
-   037                    3
-   036                    3
-LABEL350:
-   get_settings           286
    load_int               4
    test_bit              
    load_int               1
-   if_icmpeq              LABEL356
-   jump                   LABEL365
-LABEL356:
+   if_icmpeq              LABEL334
+   jump                   LABEL343
+LABEL334:
    035                    3
    load_string            "You cannot use Ranged attacks "
    load_string            "<col=ff0000>"
@@ -425,16 +399,16 @@ LABEL356:
    load_string            "<br>"
    037                    7
    036                    3
-LABEL365:
+LABEL343:
    get_settings           286
    load_int               5
    test_bit              
    load_int               1
-   if_icmpeq              LABEL371
-   jump                   LABEL380
-LABEL371:
+   if_icmpeq              LABEL349
+   jump                   LABEL358
+LABEL349:
    035                    3
-   load_string            "You cannot use melee attacks "
+   load_string            "You cannot use Melee attacks "
    load_string            "<col=ff0000>"
    load_string            "or salamanders"
    load_string            "<col=ffffff>"
@@ -442,14 +416,14 @@ LABEL371:
    load_string            "<br>"
    037                    7
    036                    3
-LABEL380:
+LABEL358:
    get_settings           286
    load_int               6
    test_bit              
    load_int               1
-   if_icmpeq              LABEL386
-   jump                   LABEL395
-LABEL386:
+   if_icmpeq              LABEL364
+   jump                   LABEL373
+LABEL364:
    035                    3
    load_string            "You cannot use Magic attacks "
    load_string            "<col=ff0000>"
@@ -459,184 +433,259 @@ LABEL386:
    load_string            "<br>"
    037                    7
    036                    3
-LABEL395:
+LABEL373:
    get_settings           286
    load_int               13
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL379
+   jump                   LABEL384
+LABEL379:
+   035                    3
+   load_string            "You cannot use special attacks."
+   load_string            "<br>"
+   037                    3
+   036                    3
+LABEL384:
+   get_settings           286
+   load_int               12
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL390
+   jump                   LABEL395
+LABEL390:
+   035                    3
+   load_string            "You can only attack with 'fun' weapons."
+   load_string            "<br>"
+   037                    3
+   036                    3
+LABEL395:
+   get_settings           286
+   load_int               7
    test_bit              
    load_int               1
    if_icmpeq              LABEL401
    jump                   LABEL406
 LABEL401:
    035                    3
-   load_string            "You cannot use special attacks."
+   load_string            "You cannot use potions or drinks."
    load_string            "<br>"
    037                    3
    036                    3
 LABEL406:
    get_settings           286
-   load_int               12
+   load_int               8
    test_bit              
    load_int               1
    if_icmpeq              LABEL412
    jump                   LABEL417
 LABEL412:
    035                    3
-   load_string            "You can only attack with 'fun' weapons."
+   load_string            "You cannot use food."
    load_string            "<br>"
    037                    3
    036                    3
 LABEL417:
    get_settings           286
-   load_int               7
+   load_int               9
    test_bit              
    load_int               1
    if_icmpeq              LABEL423
    jump                   LABEL428
 LABEL423:
    035                    3
-   load_string            "You cannot use drinks."
+   load_string            "You cannot use Prayer."
    load_string            "<br>"
    037                    3
    036                    3
 LABEL428:
    get_settings           286
-   load_int               8
+   load_int               10
    test_bit              
    load_int               1
    if_icmpeq              LABEL434
    jump                   LABEL439
 LABEL434:
    035                    3
-   load_string            "You cannot use food."
+   load_string            "There will be obstacles in the arena."
    load_string            "<br>"
    037                    3
    036                    3
 LABEL439:
    get_settings           286
-   load_int               9
-   test_bit              
-   load_int               1
-   if_icmpeq              LABEL445
-   jump                   LABEL450
-LABEL445:
-   035                    3
-   load_string            "You cannot use Prayer."
-   load_string            "<br>"
-   037                    3
-   036                    3
-LABEL450:
-   get_settings           286
-   load_int               10
-   test_bit              
-   load_int               1
-   if_icmpeq              LABEL456
-   jump                   LABEL461
-LABEL456:
-   035                    3
-   load_string            "There will be obstacles in the arena."
-   load_string            "<br>"
-   037                    3
-   036                    3
-LABEL461:
-   get_settings           286
    load_int               17
    test_bit              
    load_int               1
-   if_icmpeq              LABEL472
+   if_icmpeq              LABEL450
    get_settings           286
    load_int               19
    test_bit              
    load_int               1
-   if_icmpeq              LABEL472
-   jump                   LABEL477
-LABEL472:
+   if_icmpeq              LABEL450
+   jump                   LABEL455
+LABEL450:
    035                    3
    load_string            "You can't use 2H weapons such as bows."
    load_string            "<br>"
    037                    3
    036                    3
-LABEL477:
+LABEL455:
    035                    2
-   load_int               6946888
+   load_int               31195210
    2112                  
    035                    3
-   load_int               6946892
+   load_int               31195212
    2112                  
-   load_int               36
+   load_int               100
+   load_int               11
+   load_int               31195208
+   widget_get_text_widget
+   load_int               100
+   load_int               494
+   4108                  
+   imul                  
+   load_int               0
+   load_int               0
+   load_int               31195208
+   2001                  
+   load_int               132
    load_int               11
    035                    2
    load_int               132
    load_int               494
    4108                  
    imul                  
+   load_int               0
+   load_int               0
+   load_int               31195210
+   2001                  
+   load_int               132
+   load_int               11
+   035                    3
+   load_int               132
+   load_int               494
+   4108                  
+   imul                  
+   load_int               0
+   load_int               0
+   load_int               31195212
+   2001                  
+   load_int               2
+   load_int               2
+   load_int               0
+   load_int               0
+   load_int               31195213
+   2000                  
+   load_int               31195213
+   widget_get_hidden_widget
+   load_int               1
+   if_icmpeq              LABEL506
+   jump                   LABEL513
+LABEL506:
+   load_int               2
+   load_int               2
+   load_int               0
+   load_int               0
+   load_int               31195207
+   2000                  
+   jump                   LABEL525
+LABEL513:
+   load_int               2
+   load_int               31195213
+   widget_get_relativey_widget
+   load_int               31195213
+   widget_get_height_widget
    iadd                  
-   load_int               11
-   035                    3
-   load_int               132
-   load_int               494
-   4108                  
-   imul                  
+   load_int               2
+   iadd                  
+   load_int               0
+   load_int               0
+   load_int               31195207
+   2000                  
+LABEL525:
+   load_int               2
+   load_int               31195207
+   widget_get_relativey_widget
+   load_int               31195207
+   widget_get_height_widget
+   iadd                  
+   load_int               2
+   iadd                  
+   load_int               0
+   load_int               0
+   load_int               31195208
+   2000                  
+   load_int               2
+   load_int               31195208
+   widget_get_relativey_widget
+   load_int               31195208
+   widget_get_height_widget
+   iadd                  
+   load_int               2
+   iadd                  
+   load_int               0
+   load_int               0
+   load_int               31195209
+   2000                  
+   load_int               2
+   load_int               31195209
+   widget_get_relativey_widget
+   load_int               31195209
+   widget_get_height_widget
+   iadd                  
+   load_int               2
+   iadd                  
+   load_int               0
+   load_int               0
+   load_int               31195210
+   2000                  
+   load_int               2
+   load_int               31195210
+   widget_get_relativey_widget
+   load_int               31195210
+   widget_get_height_widget
+   iadd                  
+   load_int               2
+   iadd                  
+   load_int               0
+   load_int               0
+   load_int               31195211
+   2000                  
+   load_int               2
+   load_int               31195211
+   widget_get_relativey_widget
+   load_int               31195211
+   widget_get_height_widget
+   iadd                  
+   load_int               2
+   iadd                  
+   load_int               0
+   load_int               0
+   load_int               31195212
+   2000                  
+   load_int               31195212
+   widget_get_relativey_widget
+   load_int               31195212
+   widget_get_height_widget
+   iadd                  
+   load_int               2
    iadd                  
    034                    6
    033                    6
-   load_int               6946891
+   load_int               31195204
    widget_get_height_widget
-   if_icmpgt              LABEL504
-   jump                   LABEL565
-LABEL504:
-   load_int               132
-   load_int               11
-   035                    2
-   load_int               132
-   load_int               494
-   4108                  
-   imul                  
-   load_int               0
-   load_int               0
-   load_int               6946888
-   2001                  
-   load_int               132
-   load_int               11
-   035                    3
-   load_int               132
-   load_int               494
-   4108                  
-   imul                  
-   load_int               0
-   load_int               0
-   load_int               6946892
-   2001                  
-   load_int               1
-   load_int               6946888
-   widget_get_relativey_widget
-   load_int               6946888
-   widget_get_height_widget
-   iadd                  
-   load_int               2
-   iadd                  
-   load_int               0
-   load_int               0
-   load_int               6946890
-   2000                  
-   load_int               2
-   load_int               6946890
-   widget_get_relativey_widget
-   load_int               6946890
-   widget_get_height_widget
-   iadd                  
-   load_int               0
-   load_int               0
-   load_int               6946892
-   2000                  
+   if_icmpgt              LABEL598
+   jump                   LABEL615
+LABEL598:
    load_int               0
    033                    6
-   load_int               6946891
+   load_int               31195205
    widget_put_scrollwidthheight_widget
    load_int               0
-   load_int               6946889
+   load_int               31195206
    widget_put_hidden_widget
-   load_int               6946889
-   load_int               6946891
+   load_int               31195206
+   load_int               31195205
    load_int               792
    load_int               789
    load_int               790
@@ -644,44 +693,14 @@ LABEL504:
    load_int               773
    load_int               788
    040                    31
-   jump                   LABEL602
-LABEL565:
+   jump                   LABEL622
+LABEL615:
    load_int               1
-   load_int               6946889
+   load_int               31195206
    widget_put_hidden_widget
    load_int               0
    load_int               0
-   load_int               6946891
+   load_int               31195205
    widget_put_scroll_widget
-   load_int               132
-   load_int               85
-   load_int               0
-   load_int               0
-   load_int               6946888
-   2001                  
-   load_int               132
-   load_int               16
-   load_int               0
-   load_int               0
-   load_int               6946890
-   2001                  
-   load_int               132
-   load_int               145
-   load_int               0
-   load_int               0
-   load_int               6946892
-   2001                  
-   load_int               1
-   load_int               105
-   load_int               0
-   load_int               0
-   load_int               6946890
-   2000                  
-   load_int               2
-   load_int               120
-   load_int               0
-   load_int               0
-   load_int               6946892
-   2000                  
-LABEL602:
+LABEL622:
    return                

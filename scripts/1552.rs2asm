@@ -1,0 +1,22 @@
+   get_clanchatcount     
+   load_int               0
+   if_icmpgt              LABEL4
+   jump                   LABEL15
+LABEL4:
+   3618                  
+   3616                  
+   if_icmpge              LABEL8
+   jump                   LABEL15
+LABEL8:
+   load_int               2266
+   load_int               1
+   load_int               0
+   3200                  
+   035                   
+   040                    215
+   jump                   LABEL17
+LABEL15:
+   load_string            "You don't have permission to do that."
+   send_game_message     
+LABEL17:
+   return                

@@ -1,0 +1,235 @@
+   load_int               73
+   load_int               73
+   040                    900
+   load_int               10551364
+   3408                  
+   2702                  
+   load_int               0
+   if_icmpeq              LABEL9
+   jump                   LABEL10
+LABEL9:
+   return                
+LABEL10:
+   035                   
+   string_length         
+   load_int               0
+   if_icmple              LABEL15
+   jump                   LABEL16
+LABEL15:
+   return                
+LABEL16:
+   load_string            ""
+   036                    1
+   035                   
+   040                    632
+   036                   
+   036                    1
+   035                    1
+   string_remove_html    
+   036                    2
+   load_string            ""
+   036                    3
+   035                   
+   040                    632
+   036                   
+   036                    3
+   load_int               32768010
+   033                   
+   load_int               7
+   imul                  
+   200                   
+   load_int               1
+   if_icmpeq              LABEL39
+   jump                   LABEL51
+LABEL39:
+   load_string            "<col=ff9040>"
+   035                    2
+   load_string            "</col>"
+   037                    3
+   widget_put_name       
+   033                   
+   load_int               0
+   040                    1549
+   load_int               1552
+   035                    2
+   load_string            "s"
+   1409                  
+LABEL51:
+   load_int               0
+   034                    1
+   load_int               0
+   034                    2
+   load_int               0
+   034                    3
+   load_string            ""
+   036                    4
+   load_int               32768010
+   033                   
+   load_int               7
+   imul                  
+   load_int               1
+   iadd                  
+   200                   
+   load_int               1
+   if_icmpeq              LABEL69
+   jump                   LABEL138
+LABEL69:
+   035                    1
+   string_length         
+   widget_get_width      
+   034                    2
+   034                    1
+   033                    1
+   load_int               0
+   if_icmpgt              LABEL78
+   jump                   LABEL130
+LABEL78:
+   035                    1
+   load_int               512
+   load_int               494
+   4109                  
+   033                    2
+   if_icmpgt              LABEL85
+   jump                   LABEL130
+LABEL85:
+   load_int               526
+   load_int               -2147483645
+   load_int               -2147483643
+   load_int               32768015
+   035                    2
+   load_int               25
+   load_int               190
+   load_string            "IiIsii"
+   1412                  
+   load_int               40
+   load_int               32768015
+   load_string            "I"
+   1404                  
+LABEL98:
+   033                    1
+   load_int               1
+   if_icmpgt              LABEL102
+   jump                   LABEL129
+LABEL102:
+   033                    3
+   load_int               0
+   if_icmpeq              LABEL106
+   jump                   LABEL129
+LABEL106:
+   033                    1
+   load_int               1
+   isub                  
+   034                    1
+   035                    1
+   load_int               0
+   033                    1
+   string_substring      
+   load_string            "..."
+   concat_string         
+   036                    4
+   035                    4
+   load_int               512
+   load_int               494
+   4109                  
+   033                    2
+   if_icmple              LABEL124
+   jump                   LABEL128
+LABEL124:
+   035                    4
+   load_int               1
+   034                    3
+   036                    1
+LABEL128:
+   jump                   LABEL98
+LABEL129:
+   jump                   LABEL136
+LABEL130:
+   load_int               -1
+   load_string            ""
+   1412                  
+   load_int               -1
+   load_string            ""
+   1404                  
+LABEL136:
+   035                    1
+   1112                  
+LABEL138:
+   load_int               32768010
+   033                   
+   load_int               7
+   imul                  
+   load_int               2
+   iadd                  
+   200                   
+   load_int               1
+   if_icmpeq              LABEL148
+   jump                   LABEL150
+LABEL148:
+   035                    3
+   1112                  
+LABEL150:
+   load_int               32768010
+   033                   
+   load_int               7
+   imul                  
+   load_int               3
+   iadd                  
+   200                   
+   load_int               1
+   if_icmpeq              LABEL160
+   jump                   LABEL162
+LABEL160:
+   035                   
+   1112                  
+LABEL162:
+   load_int               32768010
+   033                   
+   load_int               7
+   imul                  
+   load_int               4
+   iadd                  
+   200                   
+   load_int               1
+   if_icmpeq              LABEL172
+   jump                   LABEL174
+LABEL172:
+   035                    2
+   1112                  
+LABEL174:
+   load_int               32768010
+   033                   
+   load_int               7
+   imul                  
+   load_int               5
+   iadd                  
+   200                   
+   load_int               1
+   if_icmpeq              LABEL184
+   jump                   LABEL190
+LABEL184:
+   035                    3
+   load_int               3
+   040                    1503
+   033                   
+   concat_int            
+   1112                  
+LABEL190:
+   load_int               32768010
+   033                   
+   load_int               7
+   imul                  
+   load_int               6
+   iadd                  
+   200                   
+   load_int               1
+   if_icmpeq              LABEL200
+   jump                   LABEL206
+LABEL200:
+   035                   
+   load_int               4
+   040                    1503
+   033                   
+   concat_int            
+   1112                  
+LABEL206:
+   return                

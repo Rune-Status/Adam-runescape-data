@@ -1,0 +1,17 @@
+LABEL0:
+   035                   
+   string_length         
+   033                   
+   if_icmplt              LABEL5
+   jump                   LABEL10
+LABEL5:
+   load_string            "0"
+   035                   
+   concat_string         
+   036                   
+   jump                   LABEL0
+LABEL10:
+   035                   
+   return                
+   load_string            ""
+   return                

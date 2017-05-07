@@ -1,0 +1,150 @@
+   033                    1
+   load_int               1
+   if_icmpeq              LABEL4
+   jump                   LABEL65
+LABEL4:
+   033                   
+   load_int               1
+   if_icmpeq              LABEL8
+   jump                   LABEL25
+LABEL8:
+   load_int               2266
+   load_int               1
+   load_int               0
+   3200                  
+   load_int               0
+   load_int               0
+   027                    5412
+   027                    5411
+   033                    3
+   033                    4
+   200                   
+   load_int               1
+   if_icmpeq              LABEL22
+   jump                   LABEL24
+LABEL22:
+   033                    3
+   040                    1500
+LABEL24:
+   jump                   LABEL64
+LABEL25:
+   033                   
+   load_int               2
+   if_icmpeq              LABEL29
+   jump                   LABEL64
+LABEL29:
+   load_int               2266
+   load_int               1
+   load_int               0
+   3200                  
+   033                    3
+   033                    4
+   200                   
+   load_int               1
+   if_icmpeq              LABEL39
+   jump                   LABEL64
+LABEL39:
+   load_int               16777215
+   widget_put_textcolor  
+   load_string            "Set a value..."
+   1112                  
+   load_int               -1
+   load_string            ""
+   033                    3
+   2412                  
+   load_int               -1
+   load_string            ""
+   033                    3
+   2404                  
+   load_int               -1
+   load_string            ""
+   033                    3
+   2409                  
+   load_int               1502
+   033                    3
+   1702                  
+   get_gamecycle         
+   load_int               100
+   iadd                  
+   load_string            "Iii"
+   033                    3
+   2408                  
+LABEL64:
+   jump                   LABEL131
+LABEL65:
+   033                   
+   load_int               1
+   if_icmpeq              LABEL69
+   jump                   LABEL131
+LABEL69:
+   033                    2
+   load_int               0
+   if_icmpgt              LABEL73
+   jump                   LABEL96
+LABEL73:
+   load_int               2266
+   load_int               1
+   load_int               0
+   3200                  
+   033                    2
+   load_int               500000000
+   if_icmpgt              LABEL81
+   jump                   LABEL83
+LABEL81:
+   load_int               500000000
+   034                    2
+LABEL83:
+   load_int               1
+   033                    2
+   027                    5412
+   027                    5411
+   033                    3
+   033                    4
+   200                   
+   load_int               1
+   if_icmpeq              LABEL93
+   jump                   LABEL95
+LABEL93:
+   033                    3
+   040                    1500
+LABEL95:
+   jump                   LABEL131
+LABEL96:
+   load_int               2266
+   load_int               1
+   load_int               0
+   3200                  
+   033                    3
+   033                    4
+   200                   
+   load_int               1
+   if_icmpeq              LABEL106
+   jump                   LABEL131
+LABEL106:
+   load_int               16777215
+   widget_put_textcolor  
+   load_string            "Set a value..."
+   1112                  
+   load_int               -1
+   load_string            ""
+   033                    3
+   2412                  
+   load_int               -1
+   load_string            ""
+   033                    3
+   2404                  
+   load_int               -1
+   load_string            ""
+   033                    3
+   2409                  
+   load_int               1502
+   033                    3
+   1702                  
+   get_gamecycle         
+   load_int               100
+   iadd                  
+   load_string            "Iii"
+   033                    3
+   2408                  
+LABEL131:
+   return                

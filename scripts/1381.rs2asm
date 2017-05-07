@@ -1,0 +1,40 @@
+   033                   
+   load_int               1
+   if_icmpeq              LABEL4
+   jump                   LABEL22
+LABEL4:
+   033                    1
+   033                    2
+   200                   
+   load_int               1
+   if_icmpeq              LABEL10
+   jump                   LABEL12
+LABEL10:
+   load_int               175
+   widget_put_opacity    
+LABEL12:
+   033                    1
+   load_int               -1
+   load_int               27656257
+   035                   
+   load_int               25
+   load_int               512
+   load_int               2
+   idiv                  
+   040                    837
+   jump                   LABEL32
+LABEL22:
+   033                    1
+   033                    2
+   200                   
+   load_int               1
+   if_icmpeq              LABEL28
+   jump                   LABEL30
+LABEL28:
+   load_int               0
+   widget_put_opacity    
+LABEL30:
+   load_int               27656257
+   040                    41
+LABEL32:
+   return                

@@ -1,0 +1,54 @@
+   load_int               0
+   033                    2
+   widget_get_width_widget
+   load_int               0
+   load_int               255
+   025                    3377
+   4006                  
+   034                    3
+   033                    3
+   load_int               0
+   load_int               0
+   load_int               1
+   033                   
+   2001                  
+   033                    2
+   widget_get_width_widget
+   033                    3
+   isub                  
+   load_int               0
+   load_int               0
+   load_int               1
+   033                    1
+   2001                  
+   033                    3
+   033                    2
+   widget_get_width_widget
+   load_int               4
+   idiv                  
+   if_icmplt              LABEL30
+   jump                   LABEL34
+LABEL30:
+   load_int               15601937
+   033                   
+   widget_put_textcolor_widget
+   jump                   LABEL48
+LABEL34:
+   033                    3
+   033                    2
+   widget_get_width_widget
+   load_int               2
+   idiv                  
+   if_icmplt              LABEL41
+   jump                   LABEL45
+LABEL41:
+   load_int               15658513
+   033                   
+   widget_put_textcolor_widget
+   jump                   LABEL48
+LABEL45:
+   load_int               1175057
+   033                   
+   widget_put_textcolor_widget
+LABEL48:
+   return                

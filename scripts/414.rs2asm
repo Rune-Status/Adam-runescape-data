@@ -20,20 +20,20 @@
    033                    5
    widget_put_hidden_widget
    load_string            "Extend everything"
-   036                   
-   load_string            "Confirm"
    036                    1
-   load_string            ""
+   load_string            "Confirm"
    036                    2
+   load_string            ""
+   036                    3
    033                    1
-   load_int               30
-   load_int               8
+   load_int               37
+   load_int               9
    iadd                  
    if_icmpeq              LABEL33
    jump                   LABEL50
 LABEL33:
    load_string            "<u=ff981f>"
-   035                   
+   035                    1
    load_string            "</u>"
    load_string            "<br>"
    load_string            "<br>"
@@ -47,32 +47,96 @@ LABEL33:
    load_string            " points?"
    load_string            "</col>"
    037                    13
-   036                    2
-   jump                   LABEL108
+   036                    3
+   jump                   LABEL166
 LABEL50:
-   033                   
-   load_int               1
+   033                    1
+   load_int               35
    if_icmpeq              LABEL54
-   jump                   LABEL87
+   jump                   LABEL112
 LABEL54:
+   033                   
+   load_int               0
+   if_icmpeq              LABEL58
+   jump                   LABEL112
+LABEL58:
    load_int               105
    load_int               115
    load_int               834
    033                    1
    3408                  
-   036                   
-   load_string            "Unlock"
    036                    1
+   025                    5362
+   load_int               1
+   if_icmpeq              LABEL68
+   jump                   LABEL90
+LABEL68:
+   load_string            "Enable"
+   036                    2
    load_string            "<u=ff981f>"
-   035                   
+   035                    1
    load_string            "</u>"
    load_string            "<br>"
    load_string            "<br>"
+   035                   
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "<col=00ff00>"
+   load_string            "Really enable it? It will "
+   load_string            "</col>"
+   load_string            "<col=ffffff>"
+   load_string            "not cost you any points"
+   load_string            "</col>"
+   load_string            "<col=00ff00>"
+   load_string            " as you have unlocked this previously."
+   load_string            "</col>"
+   037                    17
+   036                    3
+   jump                   LABEL111
+LABEL90:
+   load_string            "Disable"
+   036                    2
+   load_string            "<u=ff981f>"
+   035                    1
+   load_string            "</u>"
+   load_string            "<br>"
+   load_string            "<br>"
+   035                   
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "<col=00ff00>"
+   load_string            "Really disable it? This feature can be toggled at your leisure for "
+   load_string            "</col>"
+   load_string            "<col=ffffff>"
+   load_string            "no future cost"
+   load_string            "</col>"
+   load_string            "<col=00ff00>"
+   load_string            "."
+   load_string            "</col>"
+   037                    17
+   036                    3
+LABEL111:
+   jump                   LABEL166
+LABEL112:
+   033                   
+   load_int               1
+   if_icmpeq              LABEL116
+   jump                   LABEL145
+LABEL116:
    load_int               105
    load_int               115
-   load_int               835
+   load_int               834
    033                    1
    3408                  
+   036                    1
+   load_string            "Unlock"
+   036                    2
+   load_string            "<u=ff981f>"
+   035                    1
+   load_string            "</u>"
+   load_string            "<br>"
+   load_string            "<br>"
+   035                   
    load_string            "<br>"
    load_string            "<br>"
    load_string            "<col=ff0000>"
@@ -86,19 +150,19 @@ LABEL54:
    load_string            " points?"
    load_string            "</col>"
    037                    13
-   036                    2
-   jump                   LABEL108
-LABEL87:
+   036                    3
+   jump                   LABEL166
+LABEL145:
    load_int               105
    load_int               115
    load_int               834
    033                    1
    3408                  
-   036                   
-   load_string            "Disable"
    036                    1
+   load_string            "Disable"
+   036                    2
    load_string            "<u=ff981f>"
-   035                   
+   035                    1
    load_string            "</u>"
    load_string            "<br>"
    load_string            "<br>"
@@ -109,19 +173,19 @@ LABEL87:
    load_string            "You will not get your points back."
    load_string            "</col>"
    037                    11
-   036                    2
-LABEL108:
-   035                    2
+   036                    3
+LABEL166:
+   035                    3
    033                    4
    2112                  
    load_int               0
    034                    8
-LABEL113:
+LABEL171:
    033                    8
    033                    1
-   if_icmplt              LABEL117
-   jump                   LABEL128
-LABEL117:
+   if_icmplt              LABEL175
+   jump                   LABEL186
+LABEL175:
    033                    5
    load_int               3
    033                    8
@@ -132,8 +196,8 @@ LABEL117:
    load_int               1
    iadd                  
    034                    8
-   jump                   LABEL113
-LABEL128:
+   jump                   LABEL171
+LABEL186:
    033                    5
    load_int               3
    033                    1
@@ -153,10 +217,10 @@ LABEL128:
    load_int               255
    widget_put_opacity    
    load_int               1
-   035                    1
+   035                    2
    1300                  
    load_string            "<col=ff9040>"
-   035                   
+   035                    1
    037                    2
    widget_put_name       
    load_int               319

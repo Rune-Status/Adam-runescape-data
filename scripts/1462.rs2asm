@@ -1,0 +1,51 @@
+   load_int               -1
+   034                    2
+   033                    1
+   034                    3
+LABEL4:
+   033                    3
+   load_int               0
+   if_icmpgt              LABEL8
+   jump                   LABEL43
+LABEL8:
+   033                    3
+   load_int               1
+   isub                  
+   034                    3
+   033                   
+   033                    3
+   200                   
+   load_int               1
+   if_icmpeq              LABEL18
+   jump                   LABEL42
+LABEL18:
+   load_int               93
+   033                    3
+   3301                  
+   034                    2
+   033                    2
+   load_int               -1
+   if_icmpne              LABEL26
+   jump                   LABEL40
+LABEL26:
+   load_int               0
+   widget_put_hidden     
+   033                    2
+   load_int               93
+   033                    3
+   3302                  
+   1200                  
+   load_string            "<col=ff9040>"
+   033                    2
+   get_item_name         
+   load_string            "</col>"
+   037                    3
+   widget_put_name       
+   jump                   LABEL42
+LABEL40:
+   load_int               1
+   widget_put_hidden     
+LABEL42:
+   jump                   LABEL4
+LABEL43:
+   return                

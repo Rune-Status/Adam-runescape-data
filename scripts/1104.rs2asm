@@ -19,27 +19,54 @@ LABEL6:
    037                    3
    load_int               36241415
    2112                  
-   load_string            "Moderator option: Mute player: "
-   load_string            "<lt>"
-   load_string            "OFF"
-   load_string            "<gt>"
-   037                    4
-   load_int               36241416
-   2112                  
    load_int               1
    load_int               0
+   load_int               1
+   043                    140
    043                    6
    043                    11
+   3323                  
+   load_int               1
+   if_icmpeq              LABEL32
+   3316                  
+   load_int               0
+   if_icmpgt              LABEL32
+   jump                   LABEL41
+LABEL32:
+   load_int               0
+   043                    140
+   load_int               16777215
+   load_int               36241422
+   widget_put_textcolor_widget
+   load_int               36241423
+   042                    6
+   040                    1326
+   jump                   LABEL51
+LABEL41:
+   load_int               1215
+   load_int               36241423
+   widget_put_textureid_widget
+   load_int               12303291
+   load_int               36241422
+   widget_put_textcolor_widget
+   load_int               36241423
+   widget_put_actions_null_widget
+   load_int               36241422
+   widget_put_actions_null_widget
+LABEL51:
+   load_int               36241420
+   042                    140
+   040                    1326
    load_int               10616863
    widget_get_hidden_widget
    load_int               0
-   if_icmpeq              LABEL35
-   jump                   LABEL38
-LABEL35:
+   if_icmpeq              LABEL59
+   jump                   LABEL62
+LABEL59:
    load_int               1
    load_int               1
    040                    299
-LABEL38:
+LABEL62:
    load_int               0
    040                    927
    return                

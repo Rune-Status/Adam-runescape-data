@@ -1,49 +1,45 @@
-   get_settings           261
-   load_int               1
-   test_bit              
-   load_int               1
-   if_icmpeq              LABEL6
-   jump                   LABEL10
-LABEL6:
-   load_int               1
    033                   
-   widget_put_hidden_widget
-   jump                   LABEL13
-LABEL10:
+   load_int               1
+   if_icmpne              LABEL4
+   jump                   LABEL5
+LABEL4:
+   return                
+LABEL5:
+   load_int               2266
+   load_int               1
    load_int               0
-   033                   
-   widget_put_hidden_widget
-LABEL13:
-   get_settings           261
-   load_int               2
-   test_bit              
-   load_int               1
-   if_icmpeq              LABEL19
-   jump                   LABEL23
-LABEL19:
-   load_int               1
+   3200                  
+   033                    3
    033                    1
-   widget_put_hidden_widget
-   jump                   LABEL26
-LABEL23:
+   widget_put_modelid_1_widget
    load_int               0
+   033                    4
+   widget_put_hidden_widget
+   load_int               -1
+   load_string            ""
    033                    1
-   widget_put_hidden_widget
-LABEL26:
-   get_settings           261
-   load_int               3
-   test_bit              
-   load_int               1
-   if_icmpeq              LABEL32
-   jump                   LABEL36
-LABEL32:
-   load_int               1
+   2412                  
+   load_int               -1
+   load_string            ""
+   033                    1
+   2404                  
+   load_int               1413
+   033                    1
    033                    2
-   widget_put_hidden_widget
-   jump                   LABEL39
-LABEL36:
-   load_int               0
-   033                    2
-   widget_put_hidden_widget
+   033                    4
+   get_gamecycle         
+   load_int               20
+   iadd                  
+   load_string            "ImIi"
+   033                    1
+   2408                  
+   033                    5
+   033                    6
+   200                   
+   load_int               1
+   if_icmpeq              LABEL39
+   jump                   LABEL40
 LABEL39:
+   1121                  
+LABEL40:
    return                

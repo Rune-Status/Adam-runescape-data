@@ -14,20 +14,38 @@ LABEL12:
    033                    9
    load_int               -1
    if_icmpne              LABEL16
-   jump                   LABEL49
+   jump                   LABEL64
 LABEL16:
    033                    9
-   load_int               30
+   load_int               37
    if_icmple              LABEL20
-   jump                   LABEL49
+   jump                   LABEL64
 LABEL20:
+   033                    9
+   load_int               32
+   if_icmplt              LABEL24
+   jump                   LABEL29
+LABEL24:
    get_settings           1076
    033                    9
    test_bit              
    load_int               0
-   if_icmpeq              LABEL26
-   jump                   LABEL38
-LABEL26:
+   if_icmpeq              LABEL41
+LABEL29:
+   033                    9
+   load_int               32
+   if_icmpge              LABEL33
+   jump                   LABEL53
+LABEL33:
+   get_settings           1344
+   033                    9
+   load_int               32
+   modulo                
+   test_bit              
+   load_int               0
+   if_icmpeq              LABEL41
+   jump                   LABEL53
+LABEL41:
    033                    6
    load_int               1
    iadd                  
@@ -40,7 +58,7 @@ LABEL26:
    iadd                  
    034                    7
    034                    6
-LABEL38:
+LABEL53:
    033                    8
    load_int               1
    iadd                  
@@ -52,7 +70,7 @@ LABEL38:
    3408                  
    034                    9
    jump                   LABEL12
-LABEL49:
+LABEL64:
    033                   
    102                   
    033                   
@@ -87,21 +105,23 @@ LABEL49:
    1114                  
    load_string            "Nothing more to extend"
    036                   
+   load_string            ""
+   036                    1
    033                    6
    load_int               0
-   if_icmpgt              LABEL87
-   jump                   LABEL161
-LABEL87:
+   if_icmpgt              LABEL104
+   jump                   LABEL179
+LABEL104:
    033                    7
    load_int               0
-   if_icmpgt              LABEL91
-   jump                   LABEL161
-LABEL91:
+   if_icmpgt              LABEL108
+   jump                   LABEL179
+LABEL108:
    033                    6
    load_int               1
-   if_icmpgt              LABEL95
-   jump                   LABEL119
-LABEL95:
+   if_icmpgt              LABEL112
+   jump                   LABEL136
+LABEL112:
    load_int               0
    load_int               95
    load_int               0
@@ -111,12 +131,12 @@ LABEL95:
    034                    7
    033                    7
    load_int               2
-   if_icmplt              LABEL106
-   jump                   LABEL108
-LABEL106:
+   if_icmplt              LABEL123
+   jump                   LABEL125
+LABEL123:
    load_int               2
    034                    7
-LABEL108:
+LABEL125:
    load_string            "Extend remaining "
    033                    6
    int_to_string         
@@ -127,8 +147,8 @@ LABEL108:
    load_string            " points"
    037                    5
    036                   
-   jump                   LABEL126
-LABEL119:
+   jump                   LABEL143
+LABEL136:
    load_string            "Extend remaining task: "
    033                    7
    load_string            ","
@@ -136,7 +156,7 @@ LABEL119:
    load_string            " points"
    037                    3
    036                   
-LABEL126:
+LABEL143:
    load_int               16750623
    widget_put_textcolor  
    035                   
@@ -154,25 +174,26 @@ LABEL126:
    033                   
    2404                  
    load_int               1
-   load_string            "Etcetera"
+   load_string            "Extend"
    033                   
    2300                  
    load_int               414
    load_int               -1
-   load_int               30
-   load_int               8
+   load_int               37
+   load_int               9
    iadd                  
+   035                    1
    033                    1
    033                    2
    033                    3
    033                    4
    033                    5
    033                    7
-   load_string            "1iIIIIIi"
+   load_string            "1isIIIIIi"
    033                   
    2409                  
-   jump                   LABEL179
-LABEL161:
+   jump                   LABEL197
+LABEL179:
    load_int               8342543
    widget_put_textcolor  
    035                   
@@ -191,7 +212,7 @@ LABEL161:
    load_string            ""
    033                   
    2409                  
-LABEL179:
+LABEL197:
    035                   
    033                   
    widget_get_parentid_widget

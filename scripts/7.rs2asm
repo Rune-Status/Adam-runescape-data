@@ -1,117 +1,51 @@
-   load_string            "Quest Points: "
-   get_settings           101
-   int_to_string         
-   037                    2
-   load_int               17956874
+   load_int               0
+   034                    5
+   load_int               1
+   033                    3
+   widget_put_hidden_widget
+   load_int               1
+   033                    4
+   widget_put_hidden_widget
+LABEL8:
+   033                   
+   033                    5
+   200                   
+   load_int               1
+   if_icmpeq              LABEL14
+   jump                   LABEL44
+LABEL14:
+   033                    5
+   025                    2459
+   if_icmpeq              LABEL18
+   jump                   LABEL34
+LABEL18:
+   load_int               2
+   widget_put_borderthickness
+   load_int               105
+   load_int               115
+   load_int               1383
+   025                    2459
+   3408                  
+   033                    3
    2112                  
    load_int               0
-   034                   
+   033                    3
+   widget_put_hidden_widget
    load_int               0
-   034                    1
-LABEL10:
-   033                   
-   load_int               17
-   if_icmple              LABEL14
-   jump                   LABEL53
-LABEL14:
-   033                   
-   040                    4
-   034                    1
-   033                    1
-   load_int               2
-   if_icmpeq              LABEL21
-   jump                   LABEL29
-LABEL21:
-   load_int               65280
-   load_int               105
-   load_int               73
-   load_int               208
-   033                   
-   3408                  
-   widget_put_textcolor_widget
-   jump                   LABEL48
-LABEL29:
-   033                    1
-   load_int               1
-   if_icmpeq              LABEL33
-   jump                   LABEL41
-LABEL33:
-   load_int               16776960
-   load_int               105
-   load_int               73
-   load_int               208
-   033                   
-   3408                  
-   widget_put_textcolor_widget
-   jump                   LABEL48
-LABEL41:
-   load_int               16711680
-   load_int               105
-   load_int               73
-   load_int               208
-   033                   
-   3408                  
-   widget_put_textcolor_widget
-LABEL48:
-   033                   
+   033                    4
+   widget_put_hidden_widget
+   jump                   LABEL36
+LABEL34:
+   load_int               0
+   widget_put_borderthickness
+LABEL36:
+   040                    8
+   033                    2
+   2112                  
+   033                    5
    load_int               1
    iadd                  
-   034                   
-   jump                   LABEL10
-LABEL53:
-   load_int               0
-   034                   
-   load_int               0
-   034                    1
-LABEL57:
-   033                   
-   load_int               108
-   if_icmple              LABEL61
-   jump                   LABEL100
-LABEL61:
-   033                   
-   040                    5
-   034                    1
-   033                    1
-   load_int               2
-   if_icmpeq              LABEL68
-   jump                   LABEL76
-LABEL68:
-   load_int               65280
-   load_int               105
-   load_int               73
-   load_int               209
-   033                   
-   3408                  
-   widget_put_textcolor_widget
-   jump                   LABEL95
-LABEL76:
-   033                    1
-   load_int               1
-   if_icmpeq              LABEL80
-   jump                   LABEL88
-LABEL80:
-   load_int               16776960
-   load_int               105
-   load_int               73
-   load_int               209
-   033                   
-   3408                  
-   widget_put_textcolor_widget
-   jump                   LABEL95
-LABEL88:
-   load_int               16711680
-   load_int               105
-   load_int               73
-   load_int               209
-   033                   
-   3408                  
-   widget_put_textcolor_widget
-LABEL95:
-   033                   
-   load_int               1
-   iadd                  
-   034                   
-   jump                   LABEL57
-LABEL100:
+   034                    5
+   jump                   LABEL8
+LABEL44:
    return                

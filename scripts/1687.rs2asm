@@ -1,0 +1,41 @@
+   033                    1
+   load_int               1
+   040                    1045
+   034                    1
+   033                   
+   widget_get_height_widget
+   load_int               10
+   isub                  
+   033                    1
+   idiv                  
+   load_int               25
+   040                    1046
+   034                    2
+   load_int               0
+   033                    2
+   033                    1
+   load_int               2
+   idiv                  
+   imul                  
+   isub                  
+   034                    3
+   033                    1
+   load_int               2
+   modulo                
+   load_int               0
+   if_icmpeq              LABEL27
+   jump                   LABEL33
+LABEL27:
+   033                    3
+   033                    2
+   load_int               2
+   idiv                  
+   iadd                  
+   034                    3
+LABEL33:
+   033                    3
+   033                    2
+   return                
+   load_int               0
+   load_int               0
+   return                

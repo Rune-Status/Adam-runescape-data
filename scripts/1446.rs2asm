@@ -1,0 +1,41 @@
+   get_settings           286
+   load_int               3
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL6
+   jump                   LABEL36
+LABEL6:
+   033                   
+   widget_get_hidden_widget
+   load_int               0
+   if_icmpeq              LABEL11
+   jump                   LABEL24
+LABEL11:
+   load_int               1
+   033                   
+   widget_put_hidden_widget
+   load_int               0
+   033                    1
+   widget_put_hidden_widget
+   load_int               0
+   033                    3
+   widget_put_hidden_widget
+   load_int               900
+   033                    2
+   widget_put_textureid_widget
+   jump                   LABEL36
+LABEL24:
+   load_int               0
+   033                   
+   widget_put_hidden_widget
+   load_int               1
+   033                    1
+   widget_put_hidden_widget
+   load_int               1
+   033                    3
+   widget_put_hidden_widget
+   load_int               901
+   033                    2
+   widget_put_textureid_widget
+LABEL36:
+   return                

@@ -1,0 +1,123 @@
+   load_int               0
+   034                    1
+   033                   
+   102                   
+   load_int               0
+   034                    2
+   load_int               0
+   034                    3
+   load_int               4
+   034                    4
+   load_int               7
+   034                    5
+   load_int               0
+   034                    6
+   load_int               0
+   034                    7
+   033                   
+   widget_get_scrollwidth_widget
+   load_int               0
+   if_icmpgt              LABEL21
+   jump                   LABEL33
+LABEL21:
+   033                   
+   widget_get_scrollwidth_widget
+   load_int               36
+   033                    4
+   imul                  
+   isub                  
+   033                    4
+   load_int               1
+   isub                  
+   idiv                  
+   034                    2
+   jump                   LABEL44
+LABEL33:
+   033                   
+   widget_get_width_widget
+   load_int               36
+   033                    4
+   imul                  
+   isub                  
+   033                    4
+   load_int               1
+   isub                  
+   idiv                  
+   034                    2
+LABEL44:
+   033                   
+   widget_get_scrollheight_widget
+   load_int               0
+   if_icmpgt              LABEL49
+   jump                   LABEL61
+LABEL49:
+   033                   
+   widget_get_scrollheight_widget
+   load_int               32
+   033                    5
+   imul                  
+   isub                  
+   033                    5
+   load_int               1
+   isub                  
+   idiv                  
+   034                    3
+   jump                   LABEL72
+LABEL61:
+   033                   
+   widget_get_height_widget
+   load_int               32
+   033                    5
+   imul                  
+   isub                  
+   033                    5
+   load_int               1
+   isub                  
+   idiv                  
+   034                    3
+LABEL72:
+   033                    1
+   load_int               134
+   3304                  
+   if_icmplt              LABEL77
+   jump                   LABEL114
+LABEL77:
+   033                   
+   load_int               3
+   033                    1
+   100                   
+   load_int               36
+   load_int               32
+   load_int               0
+   load_int               0
+   1001                  
+   load_int               36
+   033                    2
+   iadd                  
+   033                    1
+   033                    4
+   modulo                
+   imul                  
+   033                    1
+   033                    4
+   idiv                  
+   load_int               32
+   033                    3
+   iadd                  
+   imul                  
+   load_int               0
+   load_int               0
+   1000                  
+   load_int               1
+   1102                  
+   load_int               16711680
+   widget_put_textcolor  
+   load_int               1
+   widget_put_hidden     
+   033                    1
+   load_int               1
+   iadd                  
+   034                    1
+   jump                   LABEL72
+LABEL114:
+   return                

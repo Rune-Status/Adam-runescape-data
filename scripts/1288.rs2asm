@@ -1,0 +1,43 @@
+   get_settings           153
+   load_int               -1
+   if_icmpne              LABEL4
+   jump                   LABEL8
+LABEL4:
+   load_int               1
+   033                   
+   widget_put_hidden_widget
+   jump                   LABEL11
+LABEL8:
+   load_int               0
+   033                   
+   widget_put_hidden_widget
+LABEL11:
+   get_settings           416
+   load_int               200
+   if_icmplt              LABEL15
+   jump                   LABEL19
+LABEL15:
+   load_int               1
+   033                    1
+   widget_put_hidden_widget
+   jump                   LABEL22
+LABEL19:
+   load_int               0
+   033                    1
+   widget_put_hidden_widget
+LABEL22:
+   025                    5027
+   load_int               195
+   if_icmplt              LABEL26
+   jump                   LABEL30
+LABEL26:
+   load_int               1
+   033                    2
+   widget_put_hidden_widget
+   jump                   LABEL33
+LABEL30:
+   load_int               0
+   033                    2
+   widget_put_hidden_widget
+LABEL33:
+   return                

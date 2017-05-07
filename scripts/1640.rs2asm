@@ -1,0 +1,53 @@
+   033                    1
+   load_int               0
+   if_icmplt              LABEL4
+   jump                   LABEL6
+LABEL4:
+   load_int               0
+   034                    1
+LABEL6:
+   033                    1
+   load_int               50
+   idiv                  
+   034                    2
+   033                    2
+   load_int               60
+   idiv                  
+   034                    3
+   033                    2
+   load_int               60
+   modulo                
+   034                    2
+   033                    2
+   load_int               10
+   if_icmplt              LABEL22
+   jump                   LABEL31
+LABEL22:
+   033                    3
+   int_to_string         
+   load_string            ":0"
+   033                    2
+   int_to_string         
+   037                    3
+   load_int               5898250
+   2112                  
+   jump                   LABEL39
+LABEL31:
+   033                    3
+   int_to_string         
+   load_string            ":"
+   033                    2
+   int_to_string         
+   037                    3
+   load_int               5898250
+   2112                  
+LABEL39:
+   load_int               1639
+   033                   
+   033                    1
+   load_int               1
+   isub                  
+   load_string            "Ii"
+   033                   
+   2408                  
+   return                

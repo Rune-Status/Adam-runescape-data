@@ -1,0 +1,94 @@
+   load_int               0
+   034                    4
+   load_int               15
+   034                    5
+   load_int               20
+   034                    6
+   035                   
+   load_string            "|"
+   load_int               0
+   string_indexof_from   
+   034                    7
+   load_string            ""
+   036                    1
+LABEL13:
+   033                    7
+   load_int               -1
+   if_icmpne              LABEL17
+   jump                   LABEL47
+LABEL17:
+   035                   
+   load_int               0
+   033                    7
+   string_substring      
+   036                    1
+   035                    1
+   033                   
+   033                    1
+   033                    2
+   033                    4
+   033                    5
+   033                    6
+   040                    1329
+   034                    6
+   034                    5
+   034                    4
+   035                   
+   033                    7
+   load_int               1
+   iadd                  
+   035                   
+   string_length         
+   string_substring      
+   036                   
+   035                   
+   load_string            "|"
+   load_int               0
+   string_indexof_from   
+   034                    7
+   jump                   LABEL13
+LABEL47:
+   035                   
+   033                   
+   033                    1
+   033                    2
+   033                    4
+   033                    5
+   033                    6
+   040                    1329
+   034                    6
+   034                    5
+   034                    4
+   033                    6
+   load_int               38
+   iadd                  
+   033                   
+   widget_get_height_widget
+   if_icmpgt              LABEL65
+   jump                   LABEL85
+LABEL65:
+   load_int               0
+   033                    6
+   load_int               50
+   iadd                  
+   033                   
+   widget_put_scrollwidthheight_widget
+   load_int               0
+   load_int               0
+   033                   
+   widget_put_scroll_widget
+   033                    3
+   033                   
+   load_int               798
+   load_int               795
+   load_int               796
+   load_int               797
+   load_int               793
+   load_int               794
+   040                    31
+   jump                   LABEL87
+LABEL85:
+   033                    3
+   102                   
+LABEL87:
+   return                

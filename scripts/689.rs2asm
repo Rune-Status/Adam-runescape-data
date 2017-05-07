@@ -39,26 +39,56 @@ LABEL35:
    025                    1777
    load_int               2
    if_icmpeq              LABEL39
-   jump                   LABEL85
+   jump                   LABEL125
 LABEL39:
    load_int               699
-   load_int               14090261
+   load_int               14090265
    widget_put_textureid_widget
    load_int               697
    load_int               14090257
    widget_put_textureid_widget
    load_int               697
-   load_int               14090265
+   load_int               14090261
    widget_put_textureid_widget
+   load_int               697
+   load_int               14090269
+   widget_put_textureid_widget
+   025                    1776
+   load_int               1
+   if_icmpeq              LABEL55
+   jump                   LABEL63
+LABEL55:
+   load_string            "<col=ffffff>"
+   load_string            "Selected"
+   load_string            "</col>"
+   load_string            " - PIN."
+   037                    4
+   load_int               14090274
+   2112                  
+   jump                   LABEL70
+LABEL63:
+   load_string            "<col=ffffff>"
+   load_string            "Selected"
+   load_string            "</col>"
+   load_string            " - Permanent."
+   037                    4
+   load_int               14090274
+   2112                  
+LABEL70:
+   load_int               1484
+   load_int               -2147483644
+   load_string            "i"
+   load_int               14090275
+   2409                  
    load_int               -1
    load_string            ""
-   load_int               14090259
+   load_int               14090263
    2409                  
    get_settings           281
    load_int               1000
-   if_icmplt              LABEL56
-   jump                   LABEL75
-LABEL56:
+   if_icmplt              LABEL83
+   jump                   LABEL111
+LABEL83:
    load_int               691
    load_int               -2147483644
    load_int               1
@@ -70,53 +100,105 @@ LABEL56:
    2409                  
    load_int               691
    load_int               -2147483644
+   load_int               3
+   033                   
+   033                    1
+   033                    2
+   load_string            "iiIII"
+   load_int               14090259
+   2409                  
+   load_int               691
+   load_int               -2147483644
    load_int               0
    033                   
    033                    1
    033                    2
    load_string            "iiIII"
-   load_int               14090263
+   load_int               14090267
    2409                  
-   jump                   LABEL83
-LABEL75:
+   jump                   LABEL123
+LABEL111:
    load_int               -1
    load_string            ""
    load_int               14090255
    2409                  
    load_int               -1
    load_string            ""
-   load_int               14090263
+   load_int               14090259
    2409                  
-LABEL83:
+   load_int               -1
+   load_string            ""
+   load_int               14090267
+   2409                  
+LABEL123:
    040                    690
-   jump                   LABEL193
-LABEL85:
+   jump                   LABEL390
+LABEL125:
    025                    1777
    load_int               1
-   if_icmpeq              LABEL89
-   jump                   LABEL135
-LABEL89:
+   if_icmpeq              LABEL129
+   jump                   LABEL215
+LABEL129:
    load_int               697
-   load_int               14090261
+   load_int               14090265
    widget_put_textureid_widget
    load_int               699
    load_int               14090257
    widget_put_textureid_widget
    load_int               697
-   load_int               14090265
+   load_int               14090261
    widget_put_textureid_widget
+   load_int               697
+   load_int               14090269
+   widget_put_textureid_widget
+   025                    1776
+   load_int               1
+   if_icmpeq              LABEL145
+   jump                   LABEL153
+LABEL145:
+   load_string            "<col=ffffff>"
+   load_string            "Selected"
+   load_string            "</col>"
+   load_string            " - PIN."
+   037                    4
+   load_int               14090274
+   2112                  
+   jump                   LABEL160
+LABEL153:
+   load_string            "<col=ffffff>"
+   load_string            "Selected"
+   load_string            "</col>"
+   load_string            " - Permanent."
+   037                    4
+   load_int               14090274
+   2112                  
+LABEL160:
+   load_int               1484
+   load_int               -2147483644
+   load_string            "i"
+   load_int               14090275
+   2409                  
    load_int               -1
    load_string            ""
    load_int               14090255
    2409                  
    get_settings           281
    load_int               1000
-   if_icmplt              LABEL106
-   jump                   LABEL125
-LABEL106:
+   if_icmplt              LABEL173
+   jump                   LABEL201
+LABEL173:
    load_int               691
    load_int               -2147483644
    load_int               2
+   033                   
+   033                    1
+   033                    2
+   load_string            "iiIII"
+   load_int               14090263
+   2409                  
+   load_int               691
+   load_int               -2147483644
+   load_int               3
    033                   
    033                    1
    033                    2
@@ -130,39 +212,164 @@ LABEL106:
    033                    1
    033                    2
    load_string            "iiIII"
+   load_int               14090267
+   2409                  
+   jump                   LABEL213
+LABEL201:
+   load_int               -1
+   load_string            ""
    load_int               14090263
    2409                  
-   jump                   LABEL133
-LABEL125:
    load_int               -1
    load_string            ""
    load_int               14090259
    2409                  
    load_int               -1
    load_string            ""
-   load_int               14090263
+   load_int               14090267
    2409                  
-LABEL133:
+LABEL213:
    040                    690
-   jump                   LABEL193
-LABEL135:
+   jump                   LABEL390
+LABEL215:
+   025                    1777
+   load_int               3
+   if_icmpeq              LABEL219
+   jump                   LABEL305
+LABEL219:
    load_int               697
-   load_int               14090261
+   load_int               14090265
    widget_put_textureid_widget
    load_int               697
    load_int               14090257
    widget_put_textureid_widget
    load_int               699
-   load_int               14090265
+   load_int               14090261
    widget_put_textureid_widget
+   load_int               697
+   load_int               14090269
+   widget_put_textureid_widget
+   025                    1776
+   load_int               1
+   if_icmpeq              LABEL235
+   jump                   LABEL243
+LABEL235:
+   load_string            "<col=ffffff>"
+   load_string            "Selected"
+   load_string            "</col>"
+   load_string            " - PIN."
+   037                    4
+   load_int               14090274
+   2112                  
+   jump                   LABEL250
+LABEL243:
+   load_string            "<col=ffffff>"
+   load_string            "Selected"
+   load_string            "</col>"
+   load_string            " - Permanent."
+   037                    4
+   load_int               14090274
+   2112                  
+LABEL250:
+   load_int               1484
+   load_int               -2147483644
+   load_string            "i"
+   load_int               14090275
+   2409                  
+   load_int               -1
+   load_string            ""
+   load_int               14090259
+   2409                  
    get_settings           281
    load_int               1000
-   if_icmplt              LABEL148
-   jump                   LABEL167
-LABEL148:
+   if_icmplt              LABEL263
+   jump                   LABEL291
+LABEL263:
    load_int               691
    load_int               -2147483644
    load_int               2
+   033                   
+   033                    1
+   033                    2
+   load_string            "iiIII"
+   load_int               14090263
+   2409                  
+   load_int               691
+   load_int               -2147483644
+   load_int               1
+   033                   
+   033                    1
+   033                    2
+   load_string            "iiIII"
+   load_int               14090255
+   2409                  
+   load_int               691
+   load_int               -2147483644
+   load_int               0
+   033                   
+   033                    1
+   033                    2
+   load_string            "iiIII"
+   load_int               14090267
+   2409                  
+   jump                   LABEL303
+LABEL291:
+   load_int               -1
+   load_string            ""
+   load_int               14090263
+   2409                  
+   load_int               -1
+   load_string            ""
+   load_int               14090255
+   2409                  
+   load_int               -1
+   load_string            ""
+   load_int               14090267
+   2409                  
+LABEL303:
+   040                    690
+   jump                   LABEL390
+LABEL305:
+   load_int               697
+   load_int               14090265
+   widget_put_textureid_widget
+   load_int               697
+   load_int               14090257
+   widget_put_textureid_widget
+   load_int               697
+   load_int               14090261
+   widget_put_textureid_widget
+   load_int               699
+   load_int               14090269
+   widget_put_textureid_widget
+   load_string            "<col=ffffff>"
+   load_string            "Selected"
+   load_string            "</col>"
+   load_string            " - None."
+   037                    4
+   load_int               14090274
+   2112                  
+   load_int               -1
+   load_string            ""
+   load_int               14090275
+   2409                  
+   get_settings           281
+   load_int               1000
+   if_icmplt              LABEL332
+   jump                   LABEL360
+LABEL332:
+   load_int               691
+   load_int               -2147483644
+   load_int               2
+   033                   
+   033                    1
+   033                    2
+   load_string            "iiIII"
+   load_int               14090263
+   2409                  
+   load_int               691
+   load_int               -2147483644
+   load_int               3
    033                   
    033                    1
    033                    2
@@ -178,34 +385,38 @@ LABEL148:
    load_string            "iiIII"
    load_int               14090255
    2409                  
-   jump                   LABEL175
-LABEL167:
+   jump                   LABEL372
+LABEL360:
    load_int               -1
    load_string            ""
-   load_int               14090259
+   load_int               14090263
    2409                  
    load_int               -1
    load_string            ""
    load_int               14090255
    2409                  
-LABEL175:
    load_int               -1
    load_string            ""
-   load_int               14090263
+   load_int               14090261
+   2409                  
+LABEL372:
+   load_int               -1
+   load_string            ""
+   load_int               14090267
    2409                  
    load_int               698
-   load_int               14090280
+   load_int               14090299
    widget_put_textureid_widget
    load_int               698
-   load_int               14090276
+   load_int               14090295
    widget_put_textureid_widget
    load_int               -1
    load_string            ""
-   load_int               14090278
+   load_int               14090297
    2409                  
    load_int               -1
    load_string            ""
-   load_int               14090274
+   load_int               14090293
    2409                  
-LABEL193:
+LABEL390:
    return                

@@ -1,0 +1,38 @@
+   033                    1
+   load_int               17
+   if_icmple              LABEL4
+   jump                   LABEL11
+LABEL4:
+   load_int               255
+   033                    1
+   load_int               15
+   imul                  
+   isub                  
+   widget_put_opacity    
+   return                
+LABEL11:
+   033                    1
+   load_int               50
+   if_icmple              LABEL15
+   jump                   LABEL16
+LABEL15:
+   return                
+LABEL16:
+   033                    1
+   load_int               67
+   if_icmple              LABEL20
+   jump                   LABEL29
+LABEL20:
+   033                    1
+   load_int               50
+   isub                  
+   034                    1
+   033                    1
+   load_int               15
+   imul                  
+   widget_put_opacity    
+   return                
+LABEL29:
+   033                   
+   102                   
+   return                

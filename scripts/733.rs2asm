@@ -118,7 +118,7 @@ LABEL99:
    033                    7
    load_int               0
    if_icmpgt              LABEL106
-   jump                   LABEL119
+   jump                   LABEL131
 LABEL106:
    load_int               1
    load_int               4259895
@@ -132,15 +132,27 @@ LABEL106:
    load_int               16750623
    load_int               4259899
    widget_put_textcolor_widget
-   jump                   LABEL150
-LABEL119:
+   load_int               1
+   load_int               4259928
+   widget_put_hidden_widget
+   load_int               0
+   load_int               4259931
+   widget_put_hidden_widget
+   load_string            "Redemption in progress"
+   load_int               4259932
+   2112                  
+   load_int               16750623
+   load_int               4259932
+   widget_put_textcolor_widget
+   jump                   LABEL186
+LABEL131:
    033                    8
    033                    9
    iadd                  
    load_int               0
-   if_icmpgt              LABEL125
-   jump                   LABEL138
-LABEL125:
+   if_icmpgt              LABEL137
+   jump                   LABEL162
+LABEL137:
    load_int               0
    load_int               4259895
    widget_put_hidden_widget
@@ -153,8 +165,20 @@ LABEL125:
    load_int               16777215
    load_int               4259899
    widget_put_textcolor_widget
-   jump                   LABEL150
-LABEL138:
+   load_int               0
+   load_int               4259928
+   widget_put_hidden_widget
+   load_int               1
+   load_int               4259931
+   widget_put_hidden_widget
+   load_string            "Redeem now..."
+   load_int               4259932
+   2112                  
+   load_int               16777215
+   load_int               4259932
+   widget_put_textcolor_widget
+   jump                   LABEL186
+LABEL162:
    load_int               1
    load_int               4259895
    widget_put_hidden_widget
@@ -167,5 +191,17 @@ LABEL138:
    load_int               16750623
    load_int               4259899
    widget_put_textcolor_widget
-LABEL150:
+   load_int               1
+   load_int               4259928
+   widget_put_hidden_widget
+   load_int               0
+   load_int               4259931
+   widget_put_hidden_widget
+   load_string            "Nothing to redeem"
+   load_int               4259932
+   2112                  
+   load_int               16750623
+   load_int               4259932
+   widget_put_textcolor_widget
+LABEL186:
    return                

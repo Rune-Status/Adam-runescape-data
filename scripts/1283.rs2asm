@@ -1,0 +1,33 @@
+   load_int               16842752
+   load_int               0
+   200                   
+   load_int               1
+   if_icmpeq              LABEL6
+   jump                   LABEL26
+LABEL6:
+   get_gamecycle         
+   033                   
+   if_icmplt              LABEL10
+   jump                   LABEL11
+LABEL10:
+   return                
+LABEL11:
+   get_gamecycle         
+   033                    1
+   if_icmpge              LABEL15
+   jump                   LABEL19
+LABEL15:
+   load_int               -1
+   load_string            ""
+   1408                  
+   return                
+LABEL19:
+   load_int               0
+   load_int               32896
+   033                   
+   033                    1
+   get_gamecycle         
+   040                    1285
+   widget_put_textcolor  
+LABEL26:
+   return                

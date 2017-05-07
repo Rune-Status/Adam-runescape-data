@@ -1,15 +1,45 @@
    033                   
    load_int               -1
    if_icmpne              LABEL4
-   jump                   LABEL95
+   jump                   LABEL130
 LABEL4:
    widget_put_actions_null
    033                   
+   load_int               20594
+   if_icmpeq              LABEL9
+   jump                   LABEL33
+LABEL9:
+   033                   
+   load_int               -1
+   1200                  
+   load_int               7
+   load_string            "Clear-All"
+   1300                  
+   load_int               8
+   load_string            "Clear"
+   1300                  
+   load_int               0
+   widget_put_opacity    
+   load_int               285
+   load_int               -2147483645
+   load_int               -2147483643
+   load_int               -2147483642
+   load_int               -2147483641
+   load_int               0
+   033                    3
+   033                    4
+   033                    5
+   033                    6
+   load_string            "IiIiiIIII"
+   1410                  
+   jump                   LABEL111
+LABEL33:
+   033                   
    4209                  
    033                   
-   if_icmpne              LABEL10
-   jump                   LABEL28
-LABEL10:
+   if_icmpne              LABEL38
+   jump                   LABEL59
+LABEL38:
    033                   
    load_int               0
    1200                  
@@ -25,10 +55,13 @@ LABEL10:
    load_int               -2147483641
    load_int               120
    033                    3
-   load_string            "IiIiiI"
+   033                    4
+   033                    5
+   033                    6
+   load_string            "IiIiiIIII"
    1410                  
-   jump                   LABEL77
-LABEL28:
+   jump                   LABEL111
+LABEL59:
    033                   
    033                    1
    1200                  
@@ -43,16 +76,16 @@ LABEL28:
    1300                  
    025                    3960
    load_int               0
-   if_icmpgt              LABEL44
-   jump                   LABEL50
-LABEL44:
+   if_icmpgt              LABEL75
+   jump                   LABEL81
+LABEL75:
    load_int               4
    load_string            "Withdraw-"
    025                    3960
    int_to_string         
    037                    2
    1300                  
-LABEL50:
+LABEL81:
    load_int               5
    load_string            "Withdraw-X"
    1300                  
@@ -64,13 +97,13 @@ LABEL50:
    1300                  
    025                    3755
    load_int               0
-   if_icmpeq              LABEL63
-   jump                   LABEL66
-LABEL63:
+   if_icmpeq              LABEL94
+   jump                   LABEL97
+LABEL94:
    load_int               8
    load_string            "Placeholder"
    1300                  
-LABEL66:
+LABEL97:
    load_int               0
    widget_put_opacity    
    load_int               285
@@ -80,9 +113,12 @@ LABEL66:
    load_int               -2147483641
    load_int               0
    033                    3
-   load_string            "IiIiiI"
+   033                    4
+   033                    5
+   033                    6
+   load_string            "IiIiiIIII"
    1410                  
-LABEL77:
+LABEL111:
    load_int               10
    load_string            "Examine"
    1300                  
@@ -95,13 +131,14 @@ LABEL77:
    load_int               284
    load_int               -2147483645
    load_int               -2147483643
+   load_int               -2147483647
    load_int               -2147483646
    033                    3
    load_int               0
-   load_string            "IiiIi"
+   load_string            "IiiiIi"
    1405                  
-   jump                   LABEL107
-LABEL95:
+   jump                   LABEL142
+LABEL130:
    load_int               255
    widget_put_opacity    
    load_int               6512
@@ -114,5 +151,5 @@ LABEL95:
    load_int               -1
    load_string            ""
    1410                  
-LABEL107:
+LABEL142:
    return                

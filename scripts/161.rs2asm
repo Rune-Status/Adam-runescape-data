@@ -3,15 +3,20 @@
    200                   
    load_int               1
    if_icmpeq              LABEL6
-   jump                   LABEL160
+   jump                   LABEL170
 LABEL6:
    033                   
    033                    1
    3313                  
    load_int               -1
    if_icmpne              LABEL12
-   jump                   LABEL114
+   jump                   LABEL124
 LABEL12:
+   033                    6
+   load_int               1
+   if_icmpeq              LABEL16
+   jump                   LABEL24
+LABEL16:
    033                   
    033                    1
    3313                  
@@ -19,6 +24,14 @@ LABEL12:
    033                    1
    3314                  
    1200                  
+   jump                   LABEL29
+LABEL24:
+   033                   
+   033                    1
+   3313                  
+   load_int               1
+   1205                  
+LABEL29:
    033                   
    033                    1
    3313                  
@@ -58,19 +71,19 @@ LABEL12:
    1300                  
    033                    4
    load_int               0
-   if_icmpgt              LABEL60
-   jump                   LABEL64
-LABEL60:
+   if_icmpgt              LABEL70
+   jump                   LABEL74
+LABEL70:
    load_int               5
    1303                  
    load_int               5
    1304                  
-LABEL64:
+LABEL74:
    033                    4
    load_int               1
-   if_icmpeq              LABEL68
-   jump                   LABEL87
-LABEL68:
+   if_icmpeq              LABEL78
+   jump                   LABEL97
+LABEL78:
    load_int               155
    033                   
    load_int               -2147483643
@@ -89,13 +102,13 @@ LABEL68:
    035                    8
    load_string            "viiIiIsssssssss"
    1410                  
-   jump                   LABEL109
-LABEL87:
+   jump                   LABEL119
+LABEL97:
    033                    4
    load_int               2
-   if_icmpeq              LABEL91
-   jump                   LABEL109
-LABEL91:
+   if_icmpeq              LABEL101
+   jump                   LABEL119
+LABEL101:
    load_int               156
    033                   
    load_int               -2147483643
@@ -114,13 +127,13 @@ LABEL91:
    035                    8
    load_string            "viiIiIsssssssss"
    1410                  
-LABEL109:
+LABEL119:
    load_int               3355443
    1117                  
    load_int               1
    widget_put_borderthickness
-   jump                   LABEL160
-LABEL114:
+   jump                   LABEL170
+LABEL124:
    load_int               -1
    load_int               0
    1200                  
@@ -158,16 +171,16 @@ LABEL114:
    1300                  
    033                    4
    load_int               0
-   if_icmpgt              LABEL153
-   jump                   LABEL157
-LABEL153:
+   if_icmpgt              LABEL163
+   jump                   LABEL167
+LABEL163:
    load_int               0
    1303                  
    load_int               0
    1304                  
-LABEL157:
+LABEL167:
    load_int               -1
    load_string            ""
    1410                  
-LABEL160:
+LABEL170:
    return                

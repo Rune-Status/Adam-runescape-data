@@ -42,7 +42,7 @@ LABEL36:
    load_int               73
    load_int               73
    033                    1
-   load_int               10551315
+   load_int               10551320
    3408                  
    034                    2
    033                    2
@@ -181,18 +181,32 @@ LABEL135:
    033                    8
    load_int               -1
    if_icmpne              LABEL165
-   jump                   LABEL212
+   jump                   LABEL224
 LABEL165:
    033                    7
    load_int               -1
    if_icmpne              LABEL169
-   jump                   LABEL212
+   jump                   LABEL224
 LABEL169:
-   025                    618
+   025                    5432
    load_int               1
    if_icmpeq              LABEL173
    jump                   LABEL181
 LABEL173:
+   load_int               1
+   load_string            "Raiding Party"
+   033                    8
+   2300                  
+   load_int               1414
+   033                    7
+   widget_put_textureid_widget
+   jump                   LABEL224
+LABEL181:
+   025                    618
+   load_int               1
+   if_icmpeq              LABEL185
+   jump                   LABEL193
+LABEL185:
    load_int               1
    load_string            "Kourend Tasks"
    033                    8
@@ -200,13 +214,13 @@ LABEL173:
    load_int               1299
    033                    7
    widget_put_textureid_widget
-   jump                   LABEL212
-LABEL181:
+   jump                   LABEL224
+LABEL193:
    025                    3217
    load_int               1
-   if_icmpeq              LABEL185
-   jump                   LABEL193
-LABEL185:
+   if_icmpeq              LABEL197
+   jump                   LABEL205
+LABEL197:
    load_int               1
    load_string            "Minigames"
    033                    8
@@ -214,13 +228,13 @@ LABEL185:
    load_int               1052
    033                    7
    widget_put_textureid_widget
-   jump                   LABEL212
-LABEL193:
+   jump                   LABEL224
+LABEL205:
    025                    3612
    load_int               1
-   if_icmpeq              LABEL197
-   jump                   LABEL205
-LABEL197:
+   if_icmpeq              LABEL209
+   jump                   LABEL217
+LABEL209:
    load_int               1
    load_string            "Achievement Diaries"
    033                    8
@@ -228,8 +242,8 @@ LABEL197:
    load_int               1053
    033                    7
    widget_put_textureid_widget
-   jump                   LABEL212
-LABEL205:
+   jump                   LABEL224
+LABEL217:
    load_int               1
    load_string            "Quest List"
    033                    8
@@ -237,38 +251,38 @@ LABEL205:
    load_int               776
    033                    7
    widget_put_textureid_widget
-LABEL212:
+LABEL224:
    load_int               73
    load_int               73
    033                    1
-   load_int               10551319
+   load_int               10551324
    3408                  
    034                    7
    033                    7
    load_int               -1
-   if_icmpne              LABEL222
-   jump                   LABEL239
-LABEL222:
+   if_icmpne              LABEL234
+   jump                   LABEL251
+LABEL234:
    025                    4609
    load_int               1
-   if_icmpeq              LABEL226
-   jump                   LABEL233
-LABEL226:
+   if_icmpeq              LABEL238
+   jump                   LABEL245
+LABEL238:
    load_int               897
    033                    7
    widget_put_textureid_widget
    load_int               0
    033                    7
    widget_put_opacity_widget
-   jump                   LABEL239
-LABEL233:
+   jump                   LABEL251
+LABEL245:
    load_int               1040
    033                    7
    widget_put_textureid_widget
    load_int               150
    033                    7
    widget_put_opacity_widget
-LABEL239:
+LABEL251:
    load_int               73
    load_int               73
    033                    1
@@ -277,38 +291,62 @@ LABEL239:
    034                    7
    033                    7
    load_int               -1
-   if_icmpne              LABEL249
-   jump                   LABEL264
-LABEL249:
+   if_icmpne              LABEL261
+   jump                   LABEL276
+LABEL261:
    025                    4605
    load_int               1
-   if_icmpeq              LABEL253
-   jump                   LABEL261
-LABEL253:
+   if_icmpeq              LABEL265
+   jump                   LABEL273
+LABEL265:
    025                    542
    load_int               0
-   if_icmpeq              LABEL257
-   jump                   LABEL261
-LABEL257:
+   if_icmpeq              LABEL269
+   jump                   LABEL273
+LABEL269:
    load_int               0
    033                    7
    widget_put_hidden_widget
-   jump                   LABEL264
-LABEL261:
+   jump                   LABEL276
+LABEL273:
    load_int               1
    033                    7
    widget_put_hidden_widget
-LABEL264:
+LABEL276:
    025                    4134
    load_int               1
-   if_icmpeq              LABEL268
-   jump                   LABEL271
-LABEL268:
+   if_icmpeq              LABEL280
+   jump                   LABEL283
+LABEL280:
    load_int               0
    3110                  
-   jump                   LABEL273
-LABEL271:
+   jump                   LABEL285
+LABEL283:
    load_int               1
    3110                  
-LABEL273:
+LABEL285:
+   025                    5542
+   load_int               1
+   if_icmpeq              LABEL289
+   jump                   LABEL292
+LABEL289:
+   load_int               1
+   3117                  
+   jump                   LABEL294
+LABEL292:
+   load_int               0
+   3117                  
+LABEL294:
+   025                    5599
+   load_int               1
+   if_icmpeq              LABEL298
+   jump                   LABEL301
+LABEL298:
+   load_int               1
+   6512                  
+   jump                   LABEL303
+LABEL301:
+   load_int               0
+   6512                  
+LABEL303:
    return                

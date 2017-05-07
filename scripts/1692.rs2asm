@@ -1,0 +1,48 @@
+   get_gamecycle         
+   033                    3
+   if_icmplt              LABEL4
+   jump                   LABEL5
+LABEL4:
+   return                
+LABEL5:
+   033                    1
+   033                    2
+   200                   
+   load_int               1
+   if_icmpeq              LABEL11
+   jump                   LABEL42
+LABEL11:
+   load_int               38666240
+   033                   
+   200                    1
+   load_int               1
+   if_icmpeq              LABEL17
+   jump                   LABEL42
+LABEL17:
+   load_int               -1
+   load_string            ""
+   1408                   1
+   035                   
+   1112                  
+   load_int               1690
+   load_int               -2147483644
+   033                   
+   033                    1
+   033                    2
+   035                   
+   035                    1
+   035                    2
+   load_string            "iiIisss"
+   1409                  
+   load_int               1689
+   load_int               -2147483639
+   033                   
+   033                    1
+   033                    2
+   035                   
+   035                    1
+   035                    2
+   load_string            "ziIisss"
+   1419                   1
+LABEL42:
+   return                

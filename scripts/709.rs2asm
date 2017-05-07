@@ -1,16 +1,16 @@
+   load_int               11
+   044                    105
    load_int               0
-   034                    1
-   load_int               10
    034                    2
 LABEL4:
-   033                    1
+   033                    2
    load_int               11
    if_icmplt              LABEL8
-   jump                   LABEL58
+   jump                   LABEL52
 LABEL8:
    033                   
    load_int               4
-   033                    1
+   033                    2
    100                   
    load_int               1
    load_string            "Open Journal"
@@ -18,27 +18,18 @@ LABEL8:
    load_int               105
    load_int               115
    load_int               595
-   033                    1
+   033                    2
    3408                  
    1112                  
    load_int               494
    widget_put_fontid     
    load_int               1
    1115                  
-   load_int               152
    load_int               15
-   load_int               0
+   load_int               15
+   load_int               1
    load_int               0
    1001                  
-   load_int               10
-   033                    2
-   load_int               0
-   load_int               0
-   1000                  
-   033                    2
-   load_int               15
-   iadd                  
-   034                    2
    load_int               710
    load_int               -2147483645
    load_int               -2147483643
@@ -51,23 +42,84 @@ LABEL8:
    load_string            "IiY"
    1407                  
    033                   
-   033                    1
+   033                    2
    040                    716
-   033                    1
+   033                    2
+   033                    2
+   046                   
+   033                    2
    load_int               1
    iadd                  
-   034                    1
+   034                    2
    jump                   LABEL4
-LABEL58:
+LABEL52:
+   load_int               0
+   load_int               0
+   load_int               11
+   load_int               1
+   isub                  
+   load_int               595
+   040                    1360
+   load_int               10
+   034                    3
+   load_int               0
+   034                    2
+LABEL63:
+   033                    2
+   load_int               11
+   if_icmplt              LABEL67
+   jump                   LABEL88
+LABEL67:
+   033                   
+   033                    2
+   045                   
+   200                   
+   load_int               1
+   if_icmpeq              LABEL74
+   jump                   LABEL79
+LABEL74:
+   load_int               10
+   033                    3
+   load_int               0
+   load_int               0
+   1000                  
+LABEL79:
+   033                    2
+   load_int               1
+   iadd                  
+   033                    3
+   load_int               15
+   iadd                  
+   034                    3
+   034                    2
+   jump                   LABEL63
+LABEL88:
+   033                    3
+   load_int               10
+   iadd                  
+   034                    3
    load_int               0
    load_int               0
    033                   
    widget_put_scroll_widget
+   033                    3
+   033                   
+   widget_get_height_widget
+   if_icmpgt              LABEL101
+   jump                   LABEL106
+LABEL101:
    load_int               0
-   033                    2
+   033                    3
    033                   
    widget_put_scrollwidthheight_widget
-   load_int               16973838
+   jump                   LABEL110
+LABEL106:
+   load_int               0
+   load_int               0
+   033                   
+   widget_put_scrollwidthheight_widget
+LABEL110:
+   033                    1
    033                   
    load_int               792
    load_int               789

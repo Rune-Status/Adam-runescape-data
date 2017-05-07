@@ -1,7 +1,7 @@
-   033                    1
+   033                    5
    102                   
-   033                    1
-   033                   
+   033                    5
+   033                    4
    load_int               792
    load_int               789
    load_int               790
@@ -9,17 +9,41 @@
    load_int               773
    load_int               788
    040                    31
-   033                   
+   042                    184
+   load_int               1
+   if_icmpne              LABEL15
+   jump                   LABEL25
+LABEL15:
+   042                    184
+   load_int               2
+   if_icmpne              LABEL19
+   jump                   LABEL25
+LABEL19:
+   042                    184
+   load_int               3
+   if_icmpne              LABEL23
+   jump                   LABEL25
+LABEL23:
+   load_int               0
+   043                    184
+LABEL25:
    033                    1
    033                    2
    033                    3
+   033                    4
+   033                    5
+   033                    6
+   033                    7
    040                    129
    load_int               630
-   033                   
    033                    1
    033                    2
    033                    3
-   load_string            "IIII"
+   033                    4
+   033                    5
+   033                    6
+   033                    7
+   load_string            "IIIIIII"
    033                   
    2420                  
    return                

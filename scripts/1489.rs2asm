@@ -1,0 +1,59 @@
+   033                   
+   widget_get_width_widget
+   034                    6
+   033                   
+   widget_get_height_widget
+   034                    7
+   033                    6
+   033                    4
+   if_icmpeq              LABEL10
+   jump                   LABEL15
+LABEL10:
+   033                    7
+   033                    5
+   if_icmpeq              LABEL14
+   jump                   LABEL15
+LABEL14:
+   return                
+LABEL15:
+   033                    7
+   load_int               10
+   isub                  
+   034                    8
+   load_int               800
+   034                    9
+   033                    9
+   033                    8
+   if_icmpgt              LABEL25
+   jump                   LABEL27
+LABEL25:
+   033                    8
+   034                    9
+LABEL27:
+   033                    2
+   widget_get_scrollheight_widget
+   034                    10
+   load_int               500
+   033                    9
+   load_int               0
+   load_int               0
+   033                    1
+   2001                  
+   033                    3
+   033                    2
+   040                    231
+   033                    3
+   033                    2
+   042                    63
+   040                    72
+   load_int               1488
+   033                   
+   033                    1
+   033                    2
+   033                    3
+   033                    6
+   033                    7
+   load_string            "IIIIii"
+   033                   
+   2408                  
+   return                

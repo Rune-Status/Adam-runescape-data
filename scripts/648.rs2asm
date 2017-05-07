@@ -4,7 +4,7 @@
    034                    2
 LABEL4:
    033                    2
-   load_int               25
+   load_int               27
    if_icmple              LABEL8
    jump                   LABEL19
 LABEL8:
@@ -137,6 +137,12 @@ LABEL19:
    040                    649
    034                    3
    033                    3
+   load_int               26
+   load_string            "Superior garden"
+   load_int               65
+   040                    649
+   034                    3
+   033                    3
    load_int               17
    load_string            "Dungeon - Corridor"
    load_int               70
@@ -160,25 +166,31 @@ LABEL19:
    load_int               75
    040                    649
    034                    3
+   033                    3
+   load_int               27
+   load_string            "Achievement gallery"
+   load_int               80
+   040                    649
+   034                    3
    033                    1
    102                   
    033                    3
    033                   
    widget_get_height_widget
-   if_icmpgt              LABEL166
-   jump                   LABEL171
-LABEL166:
+   if_icmpgt              LABEL178
+   jump                   LABEL183
+LABEL178:
    load_int               0
    033                    3
    033                   
    widget_put_scrollwidthheight_widget
-   jump                   LABEL175
-LABEL171:
+   jump                   LABEL187
+LABEL183:
    load_int               0
    load_int               0
    033                   
    widget_put_scrollwidthheight_widget
-LABEL175:
+LABEL187:
    load_int               0
    load_int               0
    033                   

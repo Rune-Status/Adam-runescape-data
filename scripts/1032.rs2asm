@@ -137,7 +137,8 @@ LABEL71:
    load_int               0
    load_int               1
    load_int               23
-   040                    1034
+   load_int               108
+   040                    1360
    load_int               0
    034                    21
    033                   
@@ -147,9 +148,9 @@ LABEL71:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              LABEL146
-   jump                   LABEL162
-LABEL146:
+   if_icmpeq              LABEL147
+   jump                   LABEL163
+LABEL147:
    load_int               0
    033                    21
    load_int               15
@@ -159,16 +160,16 @@ LABEL146:
    1000                  
    033                   
    033                    10
-   if_icmpeq              LABEL157
-   jump                   LABEL160
-LABEL157:
+   if_icmpeq              LABEL158
+   jump                   LABEL161
+LABEL158:
    load_string            "Total XP"
    1112                  
-   jump                   LABEL162
-LABEL160:
+   jump                   LABEL163
+LABEL161:
    load_string            "Off"
    1112                  
-LABEL162:
+LABEL163:
    033                    21
    load_int               1
    iadd                  
@@ -179,9 +180,9 @@ LABEL162:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              LABEL174
-   jump                   LABEL181
-LABEL174:
+   if_icmpeq              LABEL175
+   jump                   LABEL182
+LABEL175:
    load_int               0
    load_int               15
    load_int               1
@@ -189,12 +190,12 @@ LABEL174:
    1000                  
    load_string            "Most recent"
    1112                  
-LABEL181:
+LABEL182:
    033                    21
    load_int               23
-   if_icmple              LABEL185
-   jump                   LABEL215
-LABEL185:
+   if_icmple              LABEL186
+   jump                   LABEL216
+LABEL186:
    033                   
    033                    21
    045                   
@@ -202,9 +203,9 @@ LABEL185:
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              LABEL194
-   jump                   LABEL210
-LABEL194:
+   if_icmpeq              LABEL195
+   jump                   LABEL211
+LABEL195:
    load_int               0
    033                    21
    load_int               1
@@ -221,22 +222,22 @@ LABEL194:
    045                   
    3408                  
    1112                  
-LABEL210:
+LABEL211:
    033                    21
    load_int               1
    iadd                  
    034                    21
-   jump                   LABEL181
-LABEL215:
+   jump                   LABEL182
+LABEL216:
    033                   
    load_int               30
    load_int               1
    iadd                  
    200                   
    load_int               1
-   if_icmpeq              LABEL223
-   jump                   LABEL241
-LABEL223:
+   if_icmpeq              LABEL224
+   jump                   LABEL242
+LABEL224:
    load_int               0
    033                    19
    load_int               1
@@ -248,16 +249,16 @@ LABEL223:
    1000                  
    033                   
    033                    12
-   if_icmpeq              LABEL236
-   jump                   LABEL239
-LABEL236:
+   if_icmpeq              LABEL237
+   jump                   LABEL240
+LABEL237:
    load_string            "Total XP goal"
    1112                  
-   jump                   LABEL241
-LABEL239:
+   jump                   LABEL242
+LABEL240:
    load_string            "Off"
    1112                  
-LABEL241:
+LABEL242:
    033                    19
    return                
    load_int               0

@@ -1,0 +1,67 @@
+   load_int               235
+   034                    4
+   033                    1
+   033                    2
+   if_icmpeq              LABEL6
+   jump                   LABEL9
+LABEL6:
+   load_int               220
+   034                    4
+   jump                   LABEL17
+LABEL9:
+   033                   
+   load_int               2
+   modulo                
+   load_int               0
+   if_icmpeq              LABEL15
+   jump                   LABEL17
+LABEL15:
+   load_int               255
+   034                    4
+LABEL17:
+   033                    4
+   widget_put_opacity    
+   widget_put_actions_null
+   033                    3
+   load_int               1
+   if_icmpeq              LABEL24
+   jump                   LABEL56
+LABEL24:
+   load_int               1
+   load_string            "Stats"
+   1300                  
+   025                    5428
+   load_int               1
+   if_icmpeq              LABEL31
+   jump                   LABEL42
+LABEL31:
+   get_clanchatcount     
+   load_int               0
+   if_icmpgt              LABEL35
+   jump                   LABEL42
+LABEL35:
+   3618                  
+   3616                  
+   if_icmpge              LABEL39
+   jump                   LABEL42
+LABEL39:
+   load_int               6
+   load_string            "Kick"
+   1300                  
+LABEL42:
+   load_int               244
+   load_int               -2147483645
+   load_int               -2147483643
+   load_int               220
+   load_int               -1
+   load_string            "IiiI"
+   1412                  
+   load_int               244
+   load_int               -2147483645
+   load_int               -2147483643
+   033                    4
+   load_int               -1
+   load_string            "IiiI"
+   1404                  
+LABEL56:
+   return                

@@ -1,0 +1,35 @@
+   load_string            "Shift click to drop items (currently off)"
+   036                   
+   025                    5542
+   load_int               1
+   if_icmpeq              LABEL6
+   jump                   LABEL14
+LABEL6:
+   load_int               1
+   3117                  
+   load_string            "Shift click to drop items (currently on)"
+   036                   
+   load_int               762
+   033                   
+   widget_put_textureid_widget
+   jump                   LABEL19
+LABEL14:
+   load_int               0
+   3117                  
+   load_int               761
+   033                   
+   widget_put_textureid_widget
+LABEL19:
+   load_int               526
+   033                   
+   load_int               -1
+   033                    1
+   035                   
+   load_int               25
+   load_int               190
+   load_string            "IiIsii"
+   033                   
+   2412                  
+   load_int               0
+   043                    2
+   return                

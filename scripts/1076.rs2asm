@@ -1,48 +1,99 @@
    load_int               -1
-   034                    3
-   load_int               -1
-   034                    4
-   load_int               0
    034                    5
+   load_int               -1
+   034                    6
+   load_int               0
+   034                    7
 LABEL6:
-   033                    5
+   033                    7
    033                    1
    if_icmplt              LABEL10
-   jump                   LABEL57
+   jump                   LABEL101
 LABEL10:
    033                   
-   033                    5
+   033                    7
+   load_int               1
+   iadd                  
    200                   
    load_int               1
-   if_icmpeq              LABEL16
-   jump                   LABEL52
-LABEL16:
+   if_icmpeq              LABEL18
+   jump                   LABEL96
+LABEL18:
    033                    2
-   033                    5
+   033                    7
    3301                  
-   034                    3
-   033                    3
+   034                    5
+   033                    5
    load_int               -1
-   if_icmpne              LABEL24
-   jump                   LABEL40
-LABEL24:
+   if_icmpne              LABEL26
+   jump                   LABEL84
+LABEL26:
    load_int               0
    widget_put_hidden     
-   033                    3
-   033                    2
    033                    5
+   033                    2
+   033                    7
    3302                  
    1200                  
-   load_string            "<col=ff9040>"
+   033                    5
    033                    3
+   if_icmpeq              LABEL37
+   jump                   LABEL75
+LABEL37:
+   033                    4
+   load_int               1
+   if_icmpgt              LABEL41
+   jump                   LABEL55
+LABEL41:
+   033                    4
+   load_int               5
+   if_icmpne              LABEL45
+   jump                   LABEL55
+LABEL45:
+   033                    4
+   load_int               10
+   if_icmpne              LABEL49
+   jump                   LABEL55
+LABEL49:
+   load_int               9
+   load_string            "Buy "
+   033                    4
+   int_to_string         
+   037                    2
+   1300                  
+LABEL55:
+   load_int               19660802
+   load_int               0
+   200                    1
+   load_int               1
+   if_icmpeq              LABEL61
+   jump                   LABEL75
+LABEL61:
+   load_int               34
+   load_int               34
+   load_int               0
+   load_int               0
+   1001                   1
+   widget_get_relativex  
+   widget_get_relativey  
+   load_int               0
+   load_int               0
+   1000                   1
+   load_int               155
+   widget_put_textureid   1
+   load_int               180
+   widget_put_opacity     1
+LABEL75:
+   load_string            "<col=ff9040>"
+   033                    5
    get_item_name         
    load_string            "</col>"
    037                    3
    widget_put_name       
    widget_get_relativey  
-   034                    4
-   jump                   LABEL52
-LABEL40:
+   034                    6
+   jump                   LABEL96
+LABEL84:
    load_int               1
    widget_put_hidden     
    load_int               6512
@@ -55,35 +106,35 @@ LABEL40:
    load_int               -1
    load_string            ""
    1408                  
-LABEL52:
-   033                    5
+LABEL96:
+   033                    7
    load_int               1
    iadd                  
-   034                    5
+   034                    7
    jump                   LABEL6
-LABEL57:
-   033                    4
+LABEL101:
+   033                    6
    load_int               -1
-   if_icmpne              LABEL61
-   jump                   LABEL66
-LABEL61:
-   033                    4
+   if_icmpne              LABEL105
+   jump                   LABEL110
+LABEL105:
+   033                    6
    load_int               32
    iadd                  
-   034                    4
-   jump                   LABEL68
-LABEL66:
+   034                    6
+   jump                   LABEL112
+LABEL110:
    load_int               0
-   034                    4
-LABEL68:
-   033                    4
+   034                    6
+LABEL112:
+   033                    6
    033                   
    widget_get_height_widget
-   if_icmpgt              LABEL73
-   jump                   LABEL86
-LABEL73:
+   if_icmpgt              LABEL117
+   jump                   LABEL130
+LABEL117:
    load_int               0
-   033                    4
+   033                    6
    033                   
    widget_put_scrollwidthheight_widget
    load_int               19660803
@@ -94,8 +145,8 @@ LABEL73:
    load_int               0
    load_int               19660803
    widget_put_hidden_widget
-   jump                   LABEL101
-LABEL86:
+   jump                   LABEL145
+LABEL130:
    load_int               0
    load_int               0
    load_int               19660802
@@ -111,5 +162,5 @@ LABEL86:
    load_int               1
    load_int               19660803
    widget_put_hidden_widget
-LABEL101:
+LABEL145:
    return                

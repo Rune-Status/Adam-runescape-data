@@ -1,0 +1,25 @@
+   get_gamecycle         
+   load_int               80
+   modulo                
+   034                    1
+   033                    1
+   load_int               40
+   if_icmpgt              LABEL8
+   jump                   LABEL12
+LABEL8:
+   load_int               80
+   033                    1
+   isub                  
+   034                    1
+LABEL12:
+   033                    1
+   load_int               100
+   iadd                  
+   034                    1
+   033                    1
+   033                    1
+   033                    1
+   040                    246
+   033                   
+   widget_put_textcolor_widget
+   return                

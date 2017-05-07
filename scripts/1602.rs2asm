@@ -1,0 +1,39 @@
+   025                    1777
+   load_int               0
+   if_icmpne              LABEL4
+   jump                   LABEL21
+LABEL4:
+   load_string            "As an "
+   load_string            "<col=ff0000>"
+   load_string            "Iron Man"
+   load_string            "Iron Woman"
+   switch_male_or_female 
+   load_string            "</col>"
+   load_string            " you "
+   load_string            "<col=ff0000>"
+   load_string            "cannot retrieve"
+   load_string            "</col>"
+   load_string            " items"
+   load_string            "<br>"
+   load_string            "once you have donated them to the party."
+   037                    11
+   033                   
+   2112                  
+   jump                   LABEL35
+LABEL21:
+   load_string            "Items donated here may be retrieved by "
+   load_string            "<col=ff0000>"
+   load_string            "other"
+   load_string            "</col>"
+   load_string            " party-members,"
+   load_string            "<br>"
+   load_string            "or "
+   load_string            "<col=ff0000>"
+   load_string            "may be lost"
+   load_string            "</col>"
+   load_string            " if the party dissolves."
+   037                    11
+   033                   
+   2112                  
+LABEL35:
+   return                

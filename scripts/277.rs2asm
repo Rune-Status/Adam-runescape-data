@@ -1,58 +1,99 @@
+   025                    5102
+   load_int               1
+   if_icmpeq              LABEL4
+   jump                   LABEL8
+LABEL4:
    load_int               0
-   034                    10
+   033                    10
+   widget_put_hidden_widget
+   jump                   LABEL13
+LABEL8:
+   load_int               1
+   033                    10
+   widget_put_hidden_widget
+   033                    12
+   040                    41
+LABEL13:
+   025                    5364
+   load_int               1
+   if_icmpeq              LABEL17
+   jump                   LABEL24
+LABEL17:
+   load_int               37
+   load_int               37
+   load_int               1
+   load_int               0
+   033                    5
+   2001                  
+   jump                   LABEL30
+LABEL24:
+   load_int               0
+   load_int               37
+   load_int               1
+   load_int               0
+   033                    5
+   2001                  
+LABEL30:
+   load_int               1
+   033                    11
+   widget_put_hidden_widget
+   033                    11
+   102                   
+   load_int               0
+   034                    13
    025                    4170
    load_int               3
-   if_icmpeq              LABEL6
-   jump                   LABEL39
-LABEL6:
+   if_icmpeq              LABEL41
+   jump                   LABEL74
+LABEL41:
    025                    4171
    load_int               0
-   if_icmpgt              LABEL34
+   if_icmpgt              LABEL69
    025                    4172
    load_int               0
-   if_icmpgt              LABEL34
+   if_icmpgt              LABEL69
    025                    4173
    load_int               0
-   if_icmpgt              LABEL34
+   if_icmpgt              LABEL69
    025                    4174
    load_int               0
-   if_icmpgt              LABEL34
+   if_icmpgt              LABEL69
    025                    4175
    load_int               0
-   if_icmpgt              LABEL34
+   if_icmpgt              LABEL69
    025                    4176
    load_int               0
-   if_icmpgt              LABEL34
+   if_icmpgt              LABEL69
    025                    4177
    load_int               0
-   if_icmpgt              LABEL34
+   if_icmpgt              LABEL69
    025                    4178
    load_int               0
-   if_icmpgt              LABEL34
+   if_icmpgt              LABEL69
    025                    4179
    load_int               0
-   if_icmpgt              LABEL34
-   jump                   LABEL37
-LABEL34:
+   if_icmpgt              LABEL69
+   jump                   LABEL72
+LABEL69:
    load_int               0
-   034                    10
-   jump                   LABEL39
-LABEL37:
+   034                    13
+   jump                   LABEL74
+LABEL72:
    load_int               1
-   034                    10
-LABEL39:
+   034                    13
+LABEL74:
    load_int               0
-   034                    11
-   033                    10
+   034                    14
+   033                    13
    load_int               1
-   if_icmpeq              LABEL45
-   jump                   LABEL75
-LABEL45:
+   if_icmpeq              LABEL80
+   jump                   LABEL110
+LABEL80:
    load_int               1
    033                    9
    widget_put_hidden_widget
    load_int               11
-   034                    11
+   034                    14
    load_int               0
    load_int               26
    load_int               1
@@ -77,8 +118,8 @@ LABEL45:
    load_int               0
    033                    2
    2000                  
-   jump                   LABEL102
-LABEL75:
+   jump                   LABEL137
+LABEL110:
    load_int               0
    033                    9
    widget_put_hidden_widget
@@ -106,110 +147,110 @@ LABEL75:
    load_int               0
    033                    2
    2000                  
-LABEL102:
+LABEL137:
    033                    4
    033                    3
    040                    231
    load_int               800
-   034                    12
+   034                    15
    load_int               800
    load_int               9
    load_int               3
    imul                  
    iadd                  
-   034                    13
-LABEL113:
-   033                    12
-   033                    13
-   if_icmple              LABEL117
-   jump                   LABEL130
-LABEL117:
+   034                    16
+LABEL148:
+   033                    15
+   033                    16
+   if_icmple              LABEL152
+   jump                   LABEL165
+LABEL152:
    033                    3
-   033                    12
+   033                    15
    200                   
    load_int               1
-   if_icmpeq              LABEL123
-   jump                   LABEL125
-LABEL123:
+   if_icmpeq              LABEL158
+   jump                   LABEL160
+LABEL158:
    load_int               1
    widget_put_hidden     
-LABEL125:
-   033                    12
+LABEL160:
+   033                    15
    load_int               1
    iadd                  
-   034                    12
-   jump                   LABEL113
-LABEL130:
+   034                    15
+   jump                   LABEL148
+LABEL165:
    load_int               0
-   034                    12
+   034                    15
    load_int               8
    load_int               1
    isub                  
-   034                    14
+   034                    17
    033                    3
    widget_get_width_widget
    load_int               8
    load_int               36
    imul                  
    isub                  
-   033                    14
+   033                    17
    idiv                  
-   034                    15
-   load_int               -1
-   034                    16
-   load_int               0
-   034                    17
-   load_int               0
    034                    18
    load_int               -1
    034                    19
    load_int               0
    034                    20
+   load_int               0
+   034                    21
+   load_int               -1
+   034                    22
+   load_int               0
+   034                    23
    load_string            ""
    036                   
    025                    4150
    load_int               0
-   if_icmple              LABEL164
+   if_icmple              LABEL199
    025                    4150
    load_int               9
-   if_icmpgt              LABEL164
-   jump                   LABEL512
-LABEL164:
-   033                    12
+   if_icmpgt              LABEL199
+   jump                   LABEL580
+LABEL199:
+   033                    15
    load_int               800
-   if_icmplt              LABEL168
-   jump                   LABEL193
-LABEL168:
+   if_icmplt              LABEL203
+   jump                   LABEL228
+LABEL203:
    033                    3
-   033                    12
+   033                    15
    200                   
    load_int               1
-   if_icmpeq              LABEL174
-   jump                   LABEL176
-LABEL174:
+   if_icmpeq              LABEL209
+   jump                   LABEL211
+LABEL209:
    load_int               1
    widget_put_hidden     
-LABEL176:
+LABEL211:
    load_int               95
-   033                    12
+   033                    15
    3301                  
    load_int               -1
-   if_icmpne              LABEL182
-   jump                   LABEL188
-LABEL182:
-   033                    18
+   if_icmpne              LABEL217
+   jump                   LABEL223
+LABEL217:
+   033                    21
    load_int               1
    iadd                  
-   033                    12
-   034                    19
-   034                    18
-LABEL188:
-   033                    12
+   033                    15
+   034                    22
+   034                    21
+LABEL223:
+   033                    15
    load_int               1
    iadd                  
-   034                    12
-   jump                   LABEL164
-LABEL193:
+   034                    15
+   jump                   LABEL199
+LABEL228:
    025                    4171
    025                    4172
    iadd                  
@@ -227,297 +268,327 @@ LABEL193:
    iadd                  
    025                    4179
    iadd                  
-   034                    20
-   033                    20
+   034                    23
+   033                    23
    load_int               0
-   if_icmple              LABEL215
-   jump                   LABEL219
-LABEL215:
+   if_icmple              LABEL250
+   jump                   LABEL254
+LABEL250:
    load_int               800
    load_int               1
    isub                  
-   034                    19
-LABEL219:
+   034                    22
+LABEL254:
+   033                    23
+   033                    22
+   load_int               1
+   iadd                  
+   load_int               0
+   033                    3
+   033                    4
+   033                    10
+   033                    11
+   033                    12
+   033                    14
+   033                    18
+   033                    17
+   033                    13
+   040                    509
+   034                    20
+   load_int               0
+   034                    15
+   025                    4171
+   load_int               0
+   if_icmpgt              LABEL276
+   jump                   LABEL301
+LABEL276:
+   load_int               1
+   033                    3
    033                    20
-   033                    19
-   load_int               1
-   iadd                  
-   load_int               0
-   033                    3
-   033                    4
-   033                    11
-   033                    15
-   033                    14
-   033                    10
-   040                    509
-   034                    17
-   load_int               0
-   034                    12
-   025                    4171
-   load_int               0
-   if_icmpgt              LABEL238
-   jump                   LABEL260
-LABEL238:
-   load_int               1
-   033                    3
-   033                    17
    040                    510
-   034                    11
-   033                    12
-   033                    12
+   034                    14
+   033                    15
+   033                    15
    025                    4171
    iadd                  
    load_int               1
    033                    3
    033                    4
-   033                    11
-   033                    15
-   033                    14
    033                    10
-   040                    509
-   034                    17
+   033                    11
    033                    12
+   033                    14
+   033                    18
+   033                    17
+   033                    13
+   040                    509
+   034                    20
+   033                    15
    025                    4171
    iadd                  
-   034                    12
-LABEL260:
+   034                    15
+LABEL301:
    025                    4172
    load_int               0
-   if_icmpgt              LABEL264
-   jump                   LABEL286
-LABEL264:
+   if_icmpgt              LABEL305
+   jump                   LABEL330
+LABEL305:
    load_int               2
    033                    3
-   033                    17
+   033                    20
    040                    510
-   034                    11
-   033                    12
-   033                    12
+   034                    14
+   033                    15
+   033                    15
    025                    4172
    iadd                  
    load_int               2
    033                    3
    033                    4
-   033                    11
-   033                    15
-   033                    14
    033                    10
-   040                    509
-   034                    17
+   033                    11
    033                    12
+   033                    14
+   033                    18
+   033                    17
+   033                    13
+   040                    509
+   034                    20
+   033                    15
    025                    4172
    iadd                  
-   034                    12
-LABEL286:
+   034                    15
+LABEL330:
    025                    4173
    load_int               0
-   if_icmpgt              LABEL290
-   jump                   LABEL312
-LABEL290:
+   if_icmpgt              LABEL334
+   jump                   LABEL359
+LABEL334:
    load_int               3
    033                    3
-   033                    17
+   033                    20
    040                    510
-   034                    11
-   033                    12
-   033                    12
+   034                    14
+   033                    15
+   033                    15
    025                    4173
    iadd                  
    load_int               3
    033                    3
    033                    4
-   033                    11
-   033                    15
-   033                    14
    033                    10
-   040                    509
-   034                    17
+   033                    11
    033                    12
+   033                    14
+   033                    18
+   033                    17
+   033                    13
+   040                    509
+   034                    20
+   033                    15
    025                    4173
    iadd                  
-   034                    12
-LABEL312:
+   034                    15
+LABEL359:
    025                    4174
    load_int               0
-   if_icmpgt              LABEL316
-   jump                   LABEL338
-LABEL316:
+   if_icmpgt              LABEL363
+   jump                   LABEL388
+LABEL363:
    load_int               4
    033                    3
-   033                    17
+   033                    20
    040                    510
-   034                    11
-   033                    12
-   033                    12
+   034                    14
+   033                    15
+   033                    15
    025                    4174
    iadd                  
    load_int               4
    033                    3
    033                    4
-   033                    11
-   033                    15
-   033                    14
    033                    10
-   040                    509
-   034                    17
+   033                    11
    033                    12
+   033                    14
+   033                    18
+   033                    17
+   033                    13
+   040                    509
+   034                    20
+   033                    15
    025                    4174
    iadd                  
-   034                    12
-LABEL338:
+   034                    15
+LABEL388:
    025                    4175
    load_int               0
-   if_icmpgt              LABEL342
-   jump                   LABEL364
-LABEL342:
+   if_icmpgt              LABEL392
+   jump                   LABEL417
+LABEL392:
    load_int               5
    033                    3
-   033                    17
+   033                    20
    040                    510
-   034                    11
-   033                    12
-   033                    12
+   034                    14
+   033                    15
+   033                    15
    025                    4175
    iadd                  
    load_int               5
    033                    3
    033                    4
-   033                    11
-   033                    15
-   033                    14
    033                    10
-   040                    509
-   034                    17
+   033                    11
    033                    12
+   033                    14
+   033                    18
+   033                    17
+   033                    13
+   040                    509
+   034                    20
+   033                    15
    025                    4175
    iadd                  
-   034                    12
-LABEL364:
+   034                    15
+LABEL417:
    025                    4176
    load_int               0
-   if_icmpgt              LABEL368
-   jump                   LABEL390
-LABEL368:
+   if_icmpgt              LABEL421
+   jump                   LABEL446
+LABEL421:
    load_int               6
    033                    3
-   033                    17
+   033                    20
    040                    510
-   034                    11
-   033                    12
-   033                    12
+   034                    14
+   033                    15
+   033                    15
    025                    4176
    iadd                  
    load_int               6
    033                    3
    033                    4
-   033                    11
-   033                    15
-   033                    14
    033                    10
-   040                    509
-   034                    17
+   033                    11
    033                    12
+   033                    14
+   033                    18
+   033                    17
+   033                    13
+   040                    509
+   034                    20
+   033                    15
    025                    4176
    iadd                  
-   034                    12
-LABEL390:
-   025                    4177
-   load_int               0
-   if_icmpgt              LABEL394
-   jump                   LABEL416
-LABEL394:
-   load_int               7
-   033                    3
-   033                    17
-   040                    510
-   034                    11
-   033                    12
-   033                    12
-   025                    4177
-   iadd                  
-   load_int               7
-   033                    3
-   033                    4
-   033                    11
-   033                    15
-   033                    14
-   033                    10
-   040                    509
-   034                    17
-   033                    12
-   025                    4177
-   iadd                  
-   034                    12
-LABEL416:
-   025                    4178
-   load_int               0
-   if_icmpgt              LABEL420
-   jump                   LABEL442
-LABEL420:
-   load_int               8
-   033                    3
-   033                    17
-   040                    510
-   034                    11
-   033                    12
-   033                    12
-   025                    4178
-   iadd                  
-   load_int               8
-   033                    3
-   033                    4
-   033                    11
-   033                    15
-   033                    14
-   033                    10
-   040                    509
-   034                    17
-   033                    12
-   025                    4178
-   iadd                  
-   034                    12
-LABEL442:
-   025                    4179
-   load_int               0
-   if_icmpgt              LABEL446
-   jump                   LABEL468
+   034                    15
 LABEL446:
+   025                    4177
+   load_int               0
+   if_icmpgt              LABEL450
+   jump                   LABEL475
+LABEL450:
+   load_int               7
+   033                    3
+   033                    20
+   040                    510
+   034                    14
+   033                    15
+   033                    15
+   025                    4177
+   iadd                  
+   load_int               7
+   033                    3
+   033                    4
+   033                    10
+   033                    11
+   033                    12
+   033                    14
+   033                    18
+   033                    17
+   033                    13
+   040                    509
+   034                    20
+   033                    15
+   025                    4177
+   iadd                  
+   034                    15
+LABEL475:
+   025                    4178
+   load_int               0
+   if_icmpgt              LABEL479
+   jump                   LABEL504
+LABEL479:
+   load_int               8
+   033                    3
+   033                    20
+   040                    510
+   034                    14
+   033                    15
+   033                    15
+   025                    4178
+   iadd                  
+   load_int               8
+   033                    3
+   033                    4
+   033                    10
+   033                    11
+   033                    12
+   033                    14
+   033                    18
+   033                    17
+   033                    13
+   040                    509
+   034                    20
+   033                    15
+   025                    4178
+   iadd                  
+   034                    15
+LABEL504:
+   025                    4179
+   load_int               0
+   if_icmpgt              LABEL508
+   jump                   LABEL533
+LABEL508:
    load_int               9
    033                    3
-   033                    17
+   033                    20
    040                    510
-   034                    11
-   033                    12
-   033                    12
+   034                    14
+   033                    15
+   033                    15
    025                    4179
    iadd                  
    load_int               9
    033                    3
    033                    4
-   033                    11
-   033                    15
-   033                    14
    033                    10
-   040                    509
-   034                    17
+   033                    11
    033                    12
+   033                    14
+   033                    18
+   033                    17
+   033                    13
+   040                    509
+   034                    20
+   033                    15
    025                    4179
    iadd                  
-   034                    12
-LABEL468:
+   034                    15
+LABEL533:
    040                    514
    load_int               1
-   if_icmpeq              LABEL472
-   jump                   LABEL495
-LABEL472:
+   if_icmpeq              LABEL537
+   jump                   LABEL560
+LABEL537:
    040                    280
    036                   
    035                   
    string_length         
    load_int               0
-   if_icmpgt              LABEL479
-   jump                   LABEL487
-LABEL479:
+   if_icmpgt              LABEL544
+   jump                   LABEL552
+LABEL544:
    load_string            "Showing items: "
    load_string            "<col=ff0000>"
    035                   
@@ -525,8 +596,8 @@ LABEL479:
    037                    4
    033                    6
    2112                  
-   jump                   LABEL494
-LABEL487:
+   jump                   LABEL559
+LABEL552:
    load_string            "Showing items: "
    load_string            "<col=ff0000>"
    load_string            "*"
@@ -534,13 +605,13 @@ LABEL487:
    037                    4
    033                    6
    2112                  
-LABEL494:
-   jump                   LABEL498
-LABEL495:
+LABEL559:
+   jump                   LABEL563
+LABEL560:
    load_string            "The Bank of RuneScape"
    033                    6
    2112                  
-LABEL498:
+LABEL563:
    033                   
    033                    1
    033                    2
@@ -551,129 +622,135 @@ LABEL498:
    033                    7
    033                    8
    033                    9
-   033                    17
-   033                    18
+   033                    10
+   033                    11
+   033                    12
+   033                    20
+   033                    21
    040                    505
    return                
-LABEL512:
+LABEL580:
    040                    514
    load_int               1
-   if_icmpeq              LABEL516
-   jump                   LABEL519
-LABEL516:
+   if_icmpeq              LABEL584
+   jump                   LABEL587
+LABEL584:
    load_int               1
    load_int               1
    040                    299
-LABEL519:
+LABEL587:
    load_int               -1
-   034                    21
+   034                    24
    load_int               -1
-   034                    22
+   034                    25
    025                    4150
    040                    513
-   034                    22
-   034                    21
-   load_int               0
-   034                    23
-   load_int               0
+   034                    25
    034                    24
-LABEL531:
-   033                    12
+   load_int               0
+   034                    26
+   load_int               0
+   034                    27
+LABEL599:
+   033                    15
    load_int               800
-   if_icmplt              LABEL535
-   jump                   LABEL610
-LABEL535:
+   if_icmplt              LABEL603
+   jump                   LABEL681
+LABEL603:
    033                    3
-   033                    12
+   033                    15
    200                   
    load_int               1
-   if_icmpeq              LABEL541
-   jump                   LABEL605
-LABEL541:
+   if_icmpeq              LABEL609
+   jump                   LABEL676
+LABEL609:
    load_int               95
-   033                    12
+   033                    15
    3301                  
-   034                    16
-   033                    16
+   034                    19
+   033                    19
    load_int               -1
-   if_icmpne              LABEL549
-   jump                   LABEL553
-LABEL549:
-   033                    18
+   if_icmpne              LABEL617
+   jump                   LABEL621
+LABEL617:
+   033                    21
    load_int               1
    iadd                  
-   034                    18
-LABEL553:
-   033                    12
-   033                    21
-   if_icmpge              LABEL557
-   jump                   LABEL603
-LABEL557:
-   033                    12
-   033                    22
-   if_icmplt              LABEL561
-   jump                   LABEL603
-LABEL561:
+   034                    21
+LABEL621:
+   033                    15
+   033                    24
+   if_icmpge              LABEL625
+   jump                   LABEL674
+LABEL625:
+   033                    15
+   033                    25
+   if_icmplt              LABEL629
+   jump                   LABEL674
+LABEL629:
    load_int               0
    widget_put_hidden     
-   033                    16
+   033                    19
    load_int               95
-   033                    12
+   033                    15
    3302                  
    033                    3
    033                    4
+   033                    10
+   033                    11
+   033                    12
    040                    278
-   033                    24
+   033                    27
    load_int               36
    imul                  
-   034                    17
-   033                    23
+   034                    20
+   033                    26
    load_int               36
-   033                    15
+   033                    18
    iadd                  
    imul                  
-   033                    17
+   033                    20
    load_int               0
    load_int               0
    1000                  
-   033                    17
+   033                    20
    load_int               32
    iadd                  
-   034                    17
-   033                    23
-   033                    14
-   if_icmplt              LABEL591
-   jump                   LABEL596
-LABEL591:
-   033                    23
+   034                    20
+   033                    26
+   033                    17
+   if_icmplt              LABEL662
+   jump                   LABEL667
+LABEL662:
+   033                    26
    load_int               1
    iadd                  
-   034                    23
-   jump                   LABEL602
-LABEL596:
+   034                    26
+   jump                   LABEL673
+LABEL667:
    load_int               0
-   033                    24
+   033                    27
    load_int               1
    iadd                  
-   034                    24
-   034                    23
-LABEL602:
-   jump                   LABEL605
-LABEL603:
+   034                    27
+   034                    26
+LABEL673:
+   jump                   LABEL676
+LABEL674:
    load_int               1
    widget_put_hidden     
-LABEL605:
-   033                    12
+LABEL676:
+   033                    15
    load_int               1
    iadd                  
-   034                    12
-   jump                   LABEL531
-LABEL610:
+   034                    15
+   jump                   LABEL599
+LABEL681:
    025                    4170
    load_int               2
-   if_icmpeq              LABEL614
-   jump                   LABEL624
-LABEL614:
+   if_icmpeq              LABEL685
+   jump                   LABEL695
+LABEL685:
    load_string            "Tab "
    load_int               105
    load_int               115
@@ -683,15 +760,15 @@ LABEL614:
    037                    2
    033                    6
    2112                  
-   jump                   LABEL630
-LABEL624:
+   jump                   LABEL701
+LABEL695:
    load_string            "Tab "
    025                    4150
    int_to_string         
    037                    2
    033                    6
    2112                  
-LABEL630:
+LABEL701:
    033                   
    033                    1
    033                    2
@@ -702,7 +779,10 @@ LABEL630:
    033                    7
    033                    8
    033                    9
-   033                    17
-   033                    18
+   033                    10
+   033                    11
+   033                    12
+   033                    20
+   033                    21
    040                    505
    return                

@@ -1,0 +1,37 @@
+   033                   
+   load_int               -1
+   if_icmpne              LABEL4
+   jump                   LABEL31
+LABEL4:
+   035                    1
+   033                   
+   string_indexof        
+   load_int               -1
+   if_icmpne              LABEL15
+   035                    2
+   033                   
+   string_indexof        
+   load_int               -1
+   if_icmpne              LABEL15
+   jump                   LABEL31
+LABEL15:
+   033                    2
+   033                    3
+   200                   
+   load_int               1
+   if_icmpeq              LABEL21
+   jump                   LABEL31
+LABEL21:
+   load_int               38666240
+   033                    1
+   200                    1
+   load_int               1
+   if_icmpeq              LABEL27
+   jump                   LABEL31
+LABEL27:
+   035                   
+   035                    1
+   035                    2
+   040                    1691
+LABEL31:
+   return                

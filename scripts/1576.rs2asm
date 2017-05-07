@@ -1,0 +1,30 @@
+   get_gamecycle         
+   load_int               50
+   modulo                
+   load_int               0
+   if_icmpeq              LABEL6
+   jump                   LABEL7
+LABEL6:
+   return                
+LABEL7:
+   get_gamecycle         
+   033                    3
+   isub                  
+   load_int               50
+   idiv                  
+   034                    4
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              LABEL19
+   jump                   LABEL25
+LABEL19:
+   033                    2
+   033                    4
+   iadd                  
+   033                    2
+   033                    3
+   040                    1575
+LABEL25:
+   return                

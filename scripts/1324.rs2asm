@@ -1,0 +1,29 @@
+   3323                  
+   load_int               1
+   if_icmpeq              LABEL7
+   3316                  
+   load_int               0
+   if_icmpgt              LABEL7
+   jump                   LABEL20
+LABEL7:
+   042                    6
+   load_int               1
+   if_icmpeq              LABEL11
+   jump                   LABEL14
+LABEL11:
+   load_int               0
+   043                    6
+   jump                   LABEL16
+LABEL14:
+   load_int               1
+   043                    6
+LABEL16:
+   033                   
+   042                    6
+   040                    1326
+   jump                   LABEL22
+LABEL20:
+   load_string            "Only moderators may do that."
+   send_game_message     
+LABEL22:
+   return                

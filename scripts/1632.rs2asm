@@ -1,0 +1,69 @@
+   get_gamecycle         
+   033                    3
+   if_icmplt              LABEL4
+   jump                   LABEL5
+LABEL4:
+   return                
+LABEL5:
+   033                   
+   load_int               -1
+   if_icmpne              LABEL9
+   jump                   LABEL60
+LABEL9:
+   035                   
+   033                   
+   string_indexof        
+   load_int               -1
+   if_icmpne              LABEL20
+   035                    1
+   033                   
+   string_indexof        
+   load_int               -1
+   if_icmpne              LABEL20
+   jump                   LABEL60
+LABEL20:
+   load_int               1632
+   load_int               -2147483639
+   033                    1
+   load_int               -2147483645
+   035                   
+   035                    1
+   get_gamecycle         
+   load_int               20
+   iadd                  
+   load_string            "ziIssi"
+   033                    2
+   2419                  
+   033                    2
+   load_int               4
+   200                   
+   load_int               1
+   if_icmpeq              LABEL38
+   jump                   LABEL49
+LABEL38:
+   load_int               120
+   widget_put_opacity    
+   load_int               488
+   load_int               -2147483645
+   load_int               -2147483643
+   load_int               0
+   get_gamecycle         
+   load_int               10
+   iadd                  
+   load_string            "Iiii"
+   1408                  
+LABEL49:
+   load_int               2266
+   load_int               1
+   load_int               0
+   3200                  
+   load_int               30015490
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              LABEL59
+   jump                   LABEL60
+LABEL59:
+   1121                  
+LABEL60:
+   return                

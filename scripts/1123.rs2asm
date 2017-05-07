@@ -2,23 +2,56 @@
    string_length         
    load_int               0
    if_icmpgt              LABEL5
-   jump                   LABEL19
+   jump                   LABEL44
 LABEL5:
    load_int               2266
    load_int               1
    load_int               0
    3200                  
+   033                   
+   load_int               7
+   if_icmpeq              LABEL13
+   jump                   LABEL22
+LABEL13:
+   047                    24
+   047                    136
+   4107                  
+   load_int               0
+   if_icmpeq              LABEL19
+   jump                   LABEL22
+LABEL19:
+   load_string            "Thank-you, your abuse report has been received."
+   send_game_message     
+   jump                   LABEL26
+LABEL22:
    047                    24
    033                   
    042                    6
    5002                  
+LABEL26:
+   042                    140
+   load_int               1
+   if_icmpeq              LABEL30
+   jump                   LABEL32
+LABEL30:
+   047                    24
+   add_ignore            
+LABEL32:
+   033                   
+   load_int               7
+   if_icmpeq              LABEL36
+   jump                   LABEL38
+LABEL36:
+   047                    24
+   048                    136
+LABEL38:
    3103                  
    load_int               0
    load_string            ""
    048                    24
    043                    11
    return                
-LABEL19:
+LABEL44:
    load_int               2277
    load_int               1
    load_int               0

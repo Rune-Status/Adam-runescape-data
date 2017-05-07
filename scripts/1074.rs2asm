@@ -19,36 +19,42 @@
    idiv                  
    load_int               36
    iadd                  
-   034                    1
+   034                    3
    033                   
    3304                  
-   034                    2
+   034                    4
    load_int               0
-   034                    3
-LABEL27:
-   033                    3
-   033                    2
-   if_icmplt              LABEL31
-   jump                   LABEL84
-LABEL31:
+   034                    5
    load_int               19660802
    load_int               5
-   033                    3
+   load_int               0
+   100                   
+LABEL31:
+   033                    5
+   033                    4
+   if_icmplt              LABEL35
+   jump                   LABEL90
+LABEL35:
+   load_int               19660802
+   load_int               5
+   033                    5
+   load_int               1
+   iadd                  
    100                   
    load_int               36
    load_int               32
    load_int               0
    load_int               0
    1001                  
-   033                    3
+   033                    5
    load_int               8
    modulo                
-   033                    1
-   imul                  
    033                    3
+   imul                  
+   033                    5
    load_int               8
    idiv                  
-   033                    1
+   033                    3
    imul                  
    load_int               0
    load_int               0
@@ -79,12 +85,12 @@ LABEL31:
    load_int               0
    load_string            "Iiii"
    1409                  
-   033                    3
+   033                    5
    load_int               1
    iadd                  
-   034                    3
-   jump                   LABEL27
-LABEL84:
+   034                    5
+   jump                   LABEL31
+LABEL90:
    load_int               19660803
    load_int               19660802
    load_int               792
@@ -95,16 +101,20 @@ LABEL84:
    load_int               788
    040                    31
    load_int               19660802
-   033                    2
+   033                    4
    033                   
+   033                    1
+   033                    2
    040                    1076
    load_int               1075
    load_int               -2147483645
+   033                    4
+   033                   
+   033                    1
    033                    2
    033                   
-   033                   
    load_int               1
-   load_string            "IivY"
+   load_string            "IivoiY"
    load_int               19660802
    2414                  
    return                

@@ -6,6 +6,14 @@ LABEL4:
    load_int               1
    return                
 LABEL6:
+   025                    5314
+   load_int               1
+   if_icmpeq              LABEL10
+   jump                   LABEL12
+LABEL10:
+   load_int               1
+   return                
+LABEL12:
    load_int               0
    return                
    load_int               -1

@@ -50,7 +50,7 @@
    033                   
    load_int               26
    if_icmpeq              LABEL53
-   jump                   LABEL76
+   jump                   LABEL77
 LABEL53:
    load_int               461
    033                   
@@ -69,13 +69,50 @@ LABEL53:
    1702                  
    1702                   1
    load_int               83
+   load_int               1377
    load_int               1050
-   load_int               2
+   load_int               3
    load_string            "iIiiY"
    033                    1
    2407                  
-   jump                   LABEL96
-LABEL76:
+   jump                   LABEL132
+LABEL77:
+   033                   
+   load_int               24
+   if_icmpeq              LABEL87
+   033                   
+   load_int               27
+   if_icmpeq              LABEL87
+   033                   
+   load_int               28
+   if_icmpeq              LABEL87
+   jump                   LABEL111
+LABEL87:
+   load_int               461
+   033                   
+   033                    1
+   1702                  
+   1702                   1
+   load_int               5
+   load_int               1
+   load_int               2
+   load_string            "iIiiY"
+   033                    1
+   2415                  
+   load_int               461
+   033                   
+   033                    1
+   1702                  
+   1702                   1
+   load_int               83
+   load_int               1377
+   load_int               1429
+   load_int               3
+   load_string            "iIiiY"
+   033                    1
+   2407                  
+   jump                   LABEL132
+LABEL111:
    load_int               461
    033                   
    033                    1
@@ -92,11 +129,12 @@ LABEL76:
    1702                  
    1702                   1
    load_int               83
-   load_int               1
+   load_int               1377
+   load_int               2
    load_string            "iIiiY"
    033                    1
    2407                  
-LABEL96:
+LABEL132:
    load_int               462
    load_int               -2147483644
    033                   
@@ -146,17 +184,20 @@ LABEL96:
    2404                  
    033                   
    load_int               8
-   if_icmpeq              LABEL147
-   jump                   LABEL173
-LABEL147:
+   if_icmpeq              LABEL183
+   jump                   LABEL212
+LABEL183:
    040                    451
    load_int               1
-   if_icmpeq              LABEL154
+   if_icmpeq              LABEL193
    040                    1138
    load_int               1
-   if_icmpeq              LABEL154
-   jump                   LABEL173
-LABEL154:
+   if_icmpeq              LABEL193
+   025                    5314
+   load_int               1
+   if_icmpeq              LABEL193
+   jump                   LABEL212
+LABEL193:
    load_int               100
    widget_put_opacity     1
    033                    1
@@ -175,9 +216,9 @@ LABEL154:
    1000                   1
    load_int               1047
    widget_put_textureid   1
-   jump                   LABEL175
-LABEL173:
+   jump                   LABEL214
+LABEL212:
    load_int               0
    widget_put_opacity     1
-LABEL175:
+LABEL214:
    return                

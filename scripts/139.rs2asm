@@ -1,20 +1,28 @@
-   025                    464
-   load_int               10000
-   if_icmpge              LABEL4
-   jump                   LABEL8
+   get_gamecycle         
+   033                    2
+   if_icmplt              LABEL4
+   jump                   LABEL5
 LABEL4:
-   load_string            "Kill Count: Many!"
-   033                   
-   2112                  
    return                
-LABEL8:
-   load_string            ","
-   036                   
-   load_string            "Kill Count: "
-   025                    464
-   035                   
-   040                    46
-   037                    2
+LABEL5:
    033                   
-   2112                  
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              LABEL11
+   jump                   LABEL14
+LABEL11:
+   load_int               -1
+   load_string            ""
+   1408                  
+LABEL14:
+   load_int               33226784
+   load_string            "Refresh"
+   load_int               33226755
+   load_int               73
+   load_int               105
+   load_int               1539
+   load_int               33226784
+   3408                  
+   040                    890
    return                

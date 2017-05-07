@@ -13,7 +13,7 @@ LABEL10:
    load_int               3
    034                    9
    034                    8
-   jump                   LABEL52
+   jump                   LABEL61
 LABEL15:
    033                    1
    load_int               2
@@ -24,7 +24,7 @@ LABEL19:
    load_int               4
    034                    9
    034                    8
-   jump                   LABEL52
+   jump                   LABEL61
 LABEL24:
    033                    1
    load_int               3
@@ -35,7 +35,7 @@ LABEL28:
    load_int               5
    034                    9
    034                    8
-   jump                   LABEL52
+   jump                   LABEL61
 LABEL33:
    033                    1
    load_int               4
@@ -46,7 +46,7 @@ LABEL37:
    load_int               6
    034                    9
    034                    8
-   jump                   LABEL52
+   jump                   LABEL61
 LABEL42:
    033                    1
    load_int               5
@@ -57,11 +57,22 @@ LABEL46:
    load_int               7
    034                    9
    034                    8
-   jump                   LABEL52
+   jump                   LABEL61
 LABEL51:
+   033                    1
+   load_int               6
+   if_icmpeq              LABEL55
+   jump                   LABEL60
+LABEL55:
+   025                    5023
+   load_int               8
+   034                    9
+   034                    8
+   jump                   LABEL61
+LABEL60:
    return                
-LABEL52:
-   load_int               30
+LABEL61:
+   load_int               37
    033                    9
    iadd                  
    034                    9
@@ -127,19 +138,19 @@ LABEL52:
    1114                  
    033                    8
    load_int               0
-   if_icmpeq              LABEL120
-   jump                   LABEL167
-LABEL120:
+   if_icmpeq              LABEL129
+   jump                   LABEL176
+LABEL129:
    033                    2
    load_int               0
-   if_icmpeq              LABEL124
-   jump                   LABEL145
-LABEL124:
+   if_icmpeq              LABEL133
+   jump                   LABEL154
+LABEL133:
    025                    4538
    load_int               0
-   if_icmpeq              LABEL128
-   jump                   LABEL138
-LABEL128:
+   if_icmpeq              LABEL137
+   jump                   LABEL147
+LABEL137:
    load_int               16711680
    widget_put_textcolor  
    load_int               494
@@ -149,22 +160,22 @@ LABEL128:
    load_string            "elite diary to use this slot."
    037                    3
    1112                  
-   jump                   LABEL144
-LABEL138:
+   jump                   LABEL153
+LABEL147:
    load_int               16750623
    widget_put_textcolor  
    load_int               495
    widget_put_fontid     
    load_string            "Empty"
    1112                  
-LABEL144:
-   jump                   LABEL166
-LABEL145:
+LABEL153:
+   jump                   LABEL175
+LABEL154:
    get_settings           101
    033                    2
-   if_icmplt              LABEL149
-   jump                   LABEL160
-LABEL149:
+   if_icmplt              LABEL158
+   jump                   LABEL169
+LABEL158:
    load_int               16711680
    widget_put_textcolor  
    load_int               495
@@ -175,17 +186,17 @@ LABEL149:
    load_string            " QP to use this slot."
    037                    3
    1112                  
-   jump                   LABEL166
-LABEL160:
+   jump                   LABEL175
+LABEL169:
    load_int               16750623
    widget_put_textcolor  
    load_int               495
    widget_put_fontid     
    load_string            "Empty"
    1112                  
-LABEL166:
-   jump                   LABEL177
-LABEL167:
+LABEL175:
+   jump                   LABEL186
+LABEL176:
    load_int               16777215
    widget_put_textcolor  
    load_int               495
@@ -196,7 +207,7 @@ LABEL167:
    033                    8
    3408                  
    1112                  
-LABEL177:
+LABEL186:
    033                   
    load_int               5
    033                    10
@@ -247,9 +258,9 @@ LABEL177:
    1112                   1
    033                    8
    load_int               0
-   if_icmpne              LABEL229
-   jump                   LABEL257
-LABEL229:
+   if_icmpne              LABEL238
+   jump                   LABEL266
+LABEL238:
    load_int               16750623
    widget_put_textcolor   1
    load_int               85
@@ -277,9 +288,9 @@ LABEL229:
    033                    7
    load_string            "iiIIIII"
    1409                  
-   jump                   LABEL259
-LABEL257:
+   jump                   LABEL268
+LABEL266:
    load_int               8342543
    widget_put_textcolor   1
-LABEL259:
+LABEL268:
    return                

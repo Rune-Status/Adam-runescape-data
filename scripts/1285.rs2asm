@@ -1,0 +1,83 @@
+   033                    4
+   033                    2
+   if_icmple              LABEL4
+   jump                   LABEL6
+LABEL4:
+   033                   
+   return                
+LABEL6:
+   033                    4
+   033                    3
+   if_icmpge              LABEL10
+   jump                   LABEL12
+LABEL10:
+   033                    1
+   return                
+LABEL12:
+   033                   
+   load_int               256
+   idiv                  
+   load_int               256
+   idiv                  
+   034                    5
+   033                    1
+   load_int               256
+   idiv                  
+   load_int               256
+   idiv                  
+   034                    6
+   033                   
+   load_int               256
+   idiv                  
+   load_int               255
+   and                   
+   034                    7
+   033                    1
+   load_int               256
+   idiv                  
+   load_int               255
+   and                   
+   034                    8
+   033                   
+   load_int               255
+   and                   
+   034                    9
+   033                    1
+   load_int               255
+   and                   
+   034                    10
+   033                    5
+   033                    6
+   033                    2
+   033                    3
+   033                    4
+   4006                  
+   034                    11
+   033                    7
+   033                    8
+   033                    2
+   033                    3
+   033                    4
+   4006                  
+   034                    12
+   033                    9
+   033                    10
+   033                    2
+   033                    3
+   033                    4
+   4006                  
+   034                    13
+   033                    11
+   load_int               256
+   imul                  
+   load_int               256
+   imul                  
+   033                    12
+   load_int               256
+   imul                  
+   iadd                  
+   033                    13
+   iadd                  
+   return                
+   load_int               0
+   return                

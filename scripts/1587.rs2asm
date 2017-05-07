@@ -1,0 +1,87 @@
+   load_int               0
+   034                    2
+   load_int               0
+   034                    3
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              LABEL10
+   jump                   LABEL81
+LABEL10:
+   load_int               35979277
+   033                    1
+   200                    1
+   load_int               1
+   if_icmpeq              LABEL16
+   jump                   LABEL81
+LABEL16:
+   load_string            "Reset streak:"
+   load_string            "<br>"
+   widget_get_text        1
+   037                    3
+   load_int               35979288
+   2112                  
+   load_int               35979288
+   widget_get_text_widget
+   load_int               75
+   load_int               494
+   4109                  
+   load_int               10
+   iadd                  
+   load_int               50
+   load_int               0
+   load_int               0
+   load_int               35979283
+   2001                  
+   load_int               35979288
+   widget_get_text_widget
+   load_int               35979288
+   widget_get_width_widget
+   load_int               494
+   4108                  
+   load_int               2
+   if_icmpgt              LABEL43
+   jump                   LABEL50
+LABEL43:
+   load_int               35979283
+   widget_get_width_widget
+   load_int               60
+   load_int               0
+   load_int               0
+   load_int               35979283
+   2001                  
+LABEL50:
+   load_int               35979269
+   widget_get_scrolly_widget
+   034                    2
+   load_int               35979269
+   widget_get_scrolly_widget
+   load_int               35979269
+   widget_get_height_widget
+   iadd                  
+   load_int               35979283
+   widget_get_height_widget
+   isub                  
+   034                    3
+   load_int               0
+   load_int               35979281
+   widget_put_hidden_widget
+   load_int               0
+   load_int               35979283
+   widget_put_hidden_widget
+   load_int               12
+   033                    2
+   033                    3
+   load_int               18
+   033                    1
+   imul                  
+   load_int               5
+   iadd                  
+   040                    1425
+   load_int               2
+   load_int               0
+   load_int               35979283
+   2000                  
+LABEL81:
+   return                

@@ -1,0 +1,65 @@
+   load_int               0
+   034                    6
+   033                   
+   033                    1
+   200                   
+   load_int               1
+   if_icmpeq              LABEL8
+   jump                   LABEL53
+LABEL8:
+   033                    3
+   load_int               1
+   if_icmpeq              LABEL12
+   jump                   LABEL51
+LABEL12:
+   033                    4
+   load_int               0
+   if_icmpeq              LABEL19
+   033                    5
+   load_int               0
+   if_icmpgt              LABEL19
+   jump                   LABEL51
+LABEL19:
+   load_int               255
+   widget_put_textcolor  
+   load_int               -1
+   load_string            ""
+   1403                  
+   load_int               -1
+   load_string            ""
+   1404                  
+   033                    2
+   put_settings           261
+LABEL29:
+   033                    6
+   load_int               16
+   if_icmple              LABEL33
+   jump                   LABEL50
+LABEL33:
+   033                    6
+   033                    1
+   if_icmpne              LABEL37
+   jump                   LABEL45
+LABEL37:
+   033                   
+   033                    6
+   200                    1
+   load_int               1
+   if_icmpeq              LABEL43
+   jump                   LABEL45
+LABEL43:
+   load_int               3355392
+   widget_put_textcolor   1
+LABEL45:
+   033                    6
+   load_int               1
+   iadd                  
+   034                    6
+   jump                   LABEL29
+LABEL50:
+   return                
+LABEL51:
+   load_int               3355392
+   widget_put_textcolor  
+LABEL53:
+   return                

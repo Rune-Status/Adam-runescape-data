@@ -74,11 +74,6 @@ LABEL64:
    load_int               1
    034                    2
 LABEL66:
-   load_string            "Calculating teleport: "
-   033                    2
-   int_to_string         
-   037                    2
-   send_game_message     
    get_coordinates       
    divide_by_16384       
    033                    2
@@ -118,6 +113,10 @@ LABEL66:
    modulo                
    int_to_string         
    037                    10
+   036                    2
+   035                    2
+   send_game_message     
+   035                    2
    return                
    load_string            ""
    return                

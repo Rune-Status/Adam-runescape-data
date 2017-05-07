@@ -1,0 +1,102 @@
+   load_int               0
+   034                    1
+   033                   
+   widget_get_width_widget
+   034                    2
+   load_int               0
+   034                    3
+   load_int               -1
+   034                    4
+   load_int               8
+   034                    5
+   load_int               5
+   034                    6
+   033                    2
+   load_int               36
+   033                    6
+   imul                  
+   isub                  
+   033                    6
+   load_int               1
+   iadd                  
+   idiv                  
+   034                    7
+   033                   
+   widget_get_height_widget
+   load_int               32
+   033                    6
+   imul                  
+   isub                  
+   033                    5
+   isub                  
+   033                    6
+   load_int               1
+   iadd                  
+   idiv                  
+   034                    8
+   033                   
+   102                   
+LABEL38:
+   033                    1
+   load_int               25
+   if_icmplt              LABEL42
+   jump                   LABEL95
+LABEL42:
+   get_settings           1356
+   033                    1
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL48
+   jump                   LABEL51
+LABEL48:
+   load_int               20356
+   034                    4
+   jump                   LABEL53
+LABEL51:
+   load_int               20357
+   034                    4
+LABEL53:
+   033                   
+   load_int               5
+   033                    1
+   100                   
+   load_int               36
+   load_int               32
+   load_int               0
+   load_int               0
+   1001                  
+   033                    7
+   033                    1
+   033                    6
+   modulo                
+   load_int               36
+   033                    7
+   iadd                  
+   imul                  
+   iadd                  
+   load_int               1
+   iadd                  
+   033                    5
+   033                    1
+   033                    6
+   idiv                  
+   load_int               32
+   033                    8
+   iadd                  
+   imul                  
+   iadd                  
+   load_int               0
+   load_int               0
+   1000                  
+   033                    4
+   load_int               0
+   1205                  
+   load_int               1
+   widget_put_borderthickness
+   033                    1
+   load_int               1
+   iadd                  
+   034                    1
+   jump                   LABEL38
+LABEL95:
+   return                

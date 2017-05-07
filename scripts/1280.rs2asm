@@ -1,7 +1,6 @@
    load_int               14811152
    102                   
-   load_int               554
-   3304                  
+   load_int               0
    034                   
    load_int               0
    034                    1
@@ -11,27 +10,31 @@
    034                    3
    042                    139
    load_int               0
-   if_icmpne              LABEL15
-   jump                   LABEL75
-LABEL15:
+   if_icmpne              LABEL14
+   jump                   LABEL80
+LABEL14:
+   load_int               554
+   3304                  
+   034                   
+LABEL17:
    033                    1
    033                   
-   if_icmplt              LABEL19
-   jump                   LABEL75
-LABEL19:
+   if_icmplt              LABEL21
+   jump                   LABEL80
+LABEL21:
+   load_int               14811152
+   load_int               5
+   033                    1
+   100                   
    load_int               554
    033                    1
    3301                  
    034                    3
    033                    3
    load_int               -1
-   if_icmpne              LABEL27
-   jump                   LABEL70
-LABEL27:
-   load_int               14811152
-   load_int               5
-   033                    2
-   100                   
+   if_icmpne              LABEL33
+   jump                   LABEL73
+LABEL33:
    load_int               36
    load_int               32
    load_int               0
@@ -55,7 +58,7 @@ LABEL27:
    033                    1
    3302                  
    1200                  
-   load_string            "<col=ff981f>"
+   load_string            "<col=ff9040>"
    033                    3
    get_item_name         
    037                    2
@@ -63,7 +66,7 @@ LABEL27:
    load_int               1
    load_string            "Examine"
    1300                  
-   load_int               1118481
+   load_int               3355443
    1117                  
    load_int               1
    widget_put_borderthickness
@@ -71,26 +74,30 @@ LABEL27:
    load_int               1
    iadd                  
    034                    2
-LABEL70:
+   jump                   LABEL75
+LABEL73:
+   load_int               1
+   widget_put_hidden     
+LABEL75:
    033                    1
    load_int               1
    iadd                  
    034                    1
-   jump                   LABEL15
-LABEL75:
+   jump                   LABEL17
+LABEL80:
    033                    2
    load_int               0
-   if_icmpeq              LABEL79
-   jump                   LABEL105
-LABEL79:
+   if_icmpeq              LABEL84
+   jump                   LABEL110
+LABEL84:
    load_int               14811152
    load_int               4
    033                    2
    100                   
-   load_int               260
-   load_int               32
    load_int               0
    load_int               0
+   load_int               1
+   load_int               1
    1001                  
    load_int               0
    load_int               0
@@ -109,7 +116,7 @@ LABEL79:
    1115                  
    load_string            "None."
    1112                  
-LABEL105:
+LABEL110:
    load_int               0
    033                    2
    load_int               1

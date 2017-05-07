@@ -1,0 +1,58 @@
+   get_coordinates       
+   divide_by_16384       
+   034                    1
+   get_coordinates       
+   and_16384             
+   034                    2
+   get_coordinates       
+   right_shift_28        
+   033                   
+   iadd                  
+   034                    3
+   load_string            "No such level: "
+   033                    3
+   int_to_string         
+   037                    2
+   036                   
+   033                    3
+   load_int               0
+   if_icmpge              LABEL20
+   jump                   LABEL49
+LABEL20:
+   033                    3
+   load_int               3
+   if_icmple              LABEL24
+   jump                   LABEL49
+LABEL24:
+   load_string            "::tele "
+   033                    3
+   int_to_string         
+   load_string            ","
+   033                    1
+   load_int               64
+   idiv                  
+   int_to_string         
+   load_string            ","
+   033                    2
+   load_int               64
+   idiv                  
+   int_to_string         
+   load_string            ","
+   033                    1
+   load_int               64
+   modulo                
+   int_to_string         
+   load_string            ","
+   033                    2
+   load_int               64
+   modulo                
+   int_to_string         
+   037                    10
+   036                   
+LABEL49:
+   035                   
+   send_game_message     
+   035                   
+   return                
+   load_string            ""
+   return                

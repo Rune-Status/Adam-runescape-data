@@ -8,17 +8,27 @@
    033                    2
    load_int               0
    if_icmple              LABEL11
-   jump                   LABEL19
+   jump                   LABEL26
 LABEL11:
+   033                    1
+   load_int               20655
+   if_icmpeq              LABEL15
+   jump                   LABEL18
+LABEL15:
+   load_int               725
+   034                    2
+   jump                   LABEL22
+LABEL18:
    load_int               108
    033                    1
    3303                  
    034                    2
+LABEL22:
    033                    2
    load_int               1000
    imul                  
    034                    2
-LABEL19:
+LABEL26:
    033                    2
    load_string            ","
    040                    46
