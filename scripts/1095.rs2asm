@@ -1,4 +1,8 @@
-   035                   
+.int_stack_count    0
+.string_stack_count 1
+.int_var_count      1
+.string_var_count   1
+   sload                  0
    load_int               10223624
    widget_get_width_widget
    load_int               495
@@ -7,7 +11,7 @@
    imul                  
    load_int               5
    iadd                  
-   034                   
+   istore                
    load_int               10223624
    102                   
    load_int               10223624
@@ -41,7 +45,7 @@
    load_int               1
    100                   
    load_int               0
-   033                   
+   iload                  0
    load_int               1
    load_int               0
    1001                  
@@ -60,7 +64,7 @@
    load_int               0
    load_int               0
    1114                  
-   035                   
+   sload                  0
    1112                  
    load_int               0
    load_int               0
@@ -68,18 +72,18 @@
    widget_put_scroll_widget
    load_int               10223625
    102                   
-   033                   
+   iload                  0
    load_int               40
    iadd                  
-   034                   
-   033                   
+   istore                
+   iload                  0
    load_int               10223624
    widget_get_height_widget
    if_icmpgt              LABEL79
    jump                   LABEL84
 LABEL79:
    load_int               0
-   033                   
+   iload                  0
    load_int               10223624
    widget_put_scrollwidthheight_widget
    jump                   LABEL88
@@ -97,5 +101,5 @@ LABEL88:
    load_int               791
    load_int               773
    load_int               788
-   040                    31
+   invoke                 31
    return                

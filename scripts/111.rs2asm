@@ -1,3 +1,7 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   1
    042                    11
    load_int               1
    if_icmpeq              LABEL4
@@ -5,31 +9,31 @@
 LABEL4:
    3103                  
 LABEL5:
-   040                    677
+   invoke                 677
    load_string            "Enter the player name whose channel you wish to join:"
    load_int               10616864
    2112                  
    load_int               10
    043                    5
    load_string            ""
-   040                    222
+   invoke                 222
    load_string            ""
-   036                   
+   sstore                
    load_int               112
    load_int               -2147483640
    load_int               -2147483639
-   035                   
+   sload                  0
    load_string            "izs"
    load_int               10616865
    2419                  
-   040                    680
+   invoke                 680
    047                    129
    string_length         
    load_int               0
    if_icmpgt              LABEL28
    jump                   LABEL41
 LABEL28:
-   040                    678
+   invoke                 678
    load_string            "<col=000000>"
    load_string            "Last name:"
    load_string            "</col>"

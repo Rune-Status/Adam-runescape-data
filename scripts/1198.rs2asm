@@ -1,12 +1,16 @@
+.int_stack_count    23
+.string_stack_count 0
+.int_var_count      31
+.string_var_count   0
    load_string            "Points: "
    025                    4893
    load_string            ","
-   040                    46
+   invoke                 46
    037                    2
-   033                   
+   iload                  0
    2112                  
    load_int               0
-   034                    23
+   istore                 23
    get_settings           262
    load_int               0
    if_icmpgt              LABEL13
@@ -20,50 +24,50 @@ LABEL13:
    load_int               20
    4006                  
    isub                  
-   034                    23
+   istore                 23
    load_string            "Recharge can: "
-   033                    23
+   iload                  23
    int_to_string         
    037                    2
-   033                    2
+   iload                  2
    2112                  
    load_int               1
    load_string            "Recharge"
-   033                    1
+   iload                  1
    2300                  
    jump                   LABEL45
 LABEL33:
    load_int               200
-   034                    23
+   istore                 23
    load_string            "Buy can: "
-   033                    23
+   iload                  23
    int_to_string         
    037                    2
-   033                    2
+   iload                  2
    2112                  
    load_int               1
    load_string            "Buy"
-   033                    1
+   iload                  1
    2300                  
 LABEL45:
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
-   033                    1
+   iload                  1
    2409                  
    025                    4893
-   033                    23
+   iload                  23
    if_icmplt              LABEL55
    jump                   LABEL59
 LABEL55:
    load_int               16711680
-   033                    2
+   iload                  2
    widget_put_textcolor_widget
    jump                   LABEL62
 LABEL59:
    load_int               16777215
-   033                    2
+   iload                  2
    widget_put_textcolor_widget
 LABEL62:
    get_settings           263
@@ -73,34 +77,34 @@ LABEL62:
 LABEL66:
    load_int               1
    load_string            "Buy"
-   033                    5
+   iload                  5
    2300                  
    load_string            "Already owned"
-   033                    6
+   iload                  6
    2112                  
    jump                   LABEL86
 LABEL74:
    load_int               250
-   034                    23
+   istore                 23
    load_int               1
    load_string            "Buy"
-   033                    5
+   iload                  5
    2300                  
    load_string            "Buy seedbox: "
-   033                    23
+   iload                  23
    int_to_string         
    037                    2
-   033                    6
+   iload                  6
    2112                  
 LABEL86:
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
-   033                    5
+   iload                  5
    2409                  
    025                    4893
-   033                    23
+   iload                  23
    if_icmplt              LABEL99
    get_settings           263
    load_int               0
@@ -108,12 +112,12 @@ LABEL86:
    jump                   LABEL103
 LABEL99:
    load_int               16711680
-   033                    6
+   iload                  6
    widget_put_textcolor_widget
    jump                   LABEL106
 LABEL103:
    load_int               16777215
-   033                    6
+   iload                  6
    widget_put_textcolor_widget
 LABEL106:
    025                    5557
@@ -122,14 +126,14 @@ LABEL106:
    jump                   LABEL132
 LABEL110:
    load_int               1
-   033                    22
+   iload                  22
    widget_put_hidden_widget
    load_int               1
    load_string            "Buy"
-   033                    19
+   iload                  19
    2300                  
    load_string            "Buy Auto-weed: 50"
-   033                    20
+   iload                  20
    2112                  
    025                    4893
    load_int               50
@@ -137,12 +141,12 @@ LABEL110:
    jump                   LABEL128
 LABEL124:
    load_int               16711680
-   033                    20
+   iload                  20
    widget_put_textcolor_widget
    jump                   LABEL131
 LABEL128:
    load_int               16777215
-   033                    20
+   iload                  20
    widget_put_textcolor_widget
 LABEL131:
    jump                   LABEL169
@@ -153,49 +157,49 @@ LABEL132:
    jump                   LABEL153
 LABEL136:
    load_int               0
-   033                    22
+   iload                  22
    widget_put_hidden_widget
    load_int               520
-   033                    22
+   iload                  22
    widget_put_textureid_widget
    load_int               1
    load_string            "Activate"
-   033                    19
+   iload                  19
    2300                  
    load_string            "Deactivated"
-   033                    20
+   iload                  20
    2112                  
    load_int               16711680
-   033                    20
+   iload                  20
    widget_put_textcolor_widget
    jump                   LABEL169
 LABEL153:
    load_int               0
-   033                    22
+   iload                  22
    widget_put_hidden_widget
    load_int               1210
-   033                    22
+   iload                  22
    widget_put_textureid_widget
    load_int               1
    load_string            "Deactivate"
-   033                    19
+   iload                  19
    2300                  
    load_string            "Activated"
-   033                    20
+   iload                  20
    2112                  
    load_int               16777215
-   033                    20
+   iload                  20
    widget_put_textcolor_widget
 LABEL169:
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
-   033                    19
+   iload                  19
    2409                  
    load_int               6055
    load_int               1
-   033                    21
+   iload                  21
    2205                  
    get_settings           264
    load_int               1
@@ -204,213 +208,213 @@ LABEL169:
 LABEL183:
    load_int               13647
    load_int               1
-   033                    9
+   iload                  9
    2200                  
    load_int               13643
    load_int               1
-   033                    12
+   iload                  12
    2200                  
    load_int               13641
    load_int               1
-   033                    15
+   iload                  15
    2200                  
    load_int               13645
    load_int               1
-   033                    18
+   iload                  18
    2200                  
    jump                   LABEL216
 LABEL200:
    load_int               13646
    load_int               1
-   033                    9
+   iload                  9
    2200                  
    load_int               13642
    load_int               1
-   033                    12
+   iload                  12
    2200                  
    load_int               13640
    load_int               1
-   033                    15
+   iload                  15
    2200                  
    load_int               13644
    load_int               1
-   033                    18
+   iload                  18
    2200                  
 LABEL216:
    load_int               75
-   034                    23
+   istore                 23
    load_string            "Buy hat: "
-   033                    23
+   iload                  23
    int_to_string         
    037                    2
-   033                    8
+   iload                  8
    2112                  
    load_int               1
    load_string            "Buy"
-   033                    7
+   iload                  7
    2300                  
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
-   033                    7
+   iload                  7
    2409                  
    025                    4893
-   033                    23
+   iload                  23
    if_icmplt              LABEL238
    jump                   LABEL242
 LABEL238:
    load_int               16711680
-   033                    8
+   iload                  8
    widget_put_textcolor_widget
    jump                   LABEL245
 LABEL242:
    load_int               16777215
-   033                    8
+   iload                  8
    widget_put_textcolor_widget
 LABEL245:
    load_int               150
-   034                    23
+   istore                 23
    load_string            "Buy jacket: "
-   033                    23
+   iload                  23
    int_to_string         
    037                    2
-   033                    11
+   iload                  11
    2112                  
    load_int               1
    load_string            "Buy"
-   033                    10
+   iload                  10
    2300                  
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
-   033                    10
+   iload                  10
    2409                  
    025                    4893
-   033                    23
+   iload                  23
    if_icmplt              LABEL267
    jump                   LABEL271
 LABEL267:
    load_int               16711680
-   033                    11
+   iload                  11
    widget_put_textcolor_widget
    jump                   LABEL274
 LABEL271:
    load_int               16777215
-   033                    11
+   iload                  11
    widget_put_textcolor_widget
 LABEL274:
    load_int               125
-   034                    23
+   istore                 23
    load_string            "Buy legs: "
-   033                    23
+   iload                  23
    int_to_string         
    037                    2
-   033                    14
+   iload                  14
    2112                  
    load_int               1
    load_string            "Buy"
-   033                    13
+   iload                  13
    2300                  
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
-   033                    13
+   iload                  13
    2409                  
    025                    4893
-   033                    23
+   iload                  23
    if_icmplt              LABEL296
    jump                   LABEL300
 LABEL296:
    load_int               16711680
-   033                    14
+   iload                  14
    widget_put_textcolor_widget
    jump                   LABEL303
 LABEL300:
    load_int               16777215
-   033                    14
+   iload                  14
    widget_put_textcolor_widget
 LABEL303:
    load_int               50
-   034                    23
+   istore                 23
    load_string            "Buy boots: "
-   033                    23
+   iload                  23
    int_to_string         
    037                    2
-   033                    17
+   iload                  17
    2112                  
    load_int               1
    load_string            "Buy"
-   033                    16
+   iload                  16
    2300                  
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
-   033                    16
+   iload                  16
    2409                  
    025                    4893
-   033                    23
+   iload                  23
    if_icmplt              LABEL325
    jump                   LABEL329
 LABEL325:
    load_int               16711680
-   033                    17
+   iload                  17
    widget_put_textcolor_widget
    jump                   LABEL332
 LABEL329:
    load_int               16777215
-   033                    17
+   iload                  17
    widget_put_textcolor_widget
 LABEL332:
-   033                    3
+   iload                  3
    widget_get_width_widget
    load_int               3
    idiv                  
-   034                    24
+   istore                 24
    load_int               32
    load_int               18
    iadd                  
-   034                    25
-   033                    24
+   istore                 25
+   iload                  24
    load_int               36
    isub                  
    load_int               2
    idiv                  
-   034                    26
+   istore                 26
    load_int               0
-   034                    27
-   033                    3
+   istore                 27
+   iload                  3
    102                   
-   033                    4
+   iload                  4
    102                   
    load_int               0
-   034                    28
+   istore                 28
    load_int               0
-   034                    29
+   istore                 29
    load_int               105
    load_int               79
    load_int               1261
-   033                    29
+   iload                  29
    3408                  
-   034                    30
+   istore                 30
 LABEL363:
-   033                    30
+   iload                  30
    load_int               -1
    if_icmpne              LABEL367
    jump                   LABEL530
 LABEL367:
-   033                    3
+   iload                  3
    load_int               5
-   033                    29
+   iload                  29
    100                   
-   033                    4
+   iload                  4
    load_int               4
-   033                    29
+   iload                  29
    100                    1
-   033                    30
+   iload                  30
    load_int               20747
    if_icmpne              LABEL382
    025                    5370
@@ -427,12 +431,12 @@ LABEL382:
    1117                  
    load_int               1
    widget_put_borderthickness
-   033                    30
+   iload                  30
    get_item_note_2       
    load_int               1
    1205                  
    load_string            "<col=ff9040>"
-   033                    30
+   iload                  30
    get_item_name         
    load_string            "</col>"
    037                    3
@@ -459,7 +463,7 @@ LABEL382:
    load_int               0
    load_string            "Iiii"
    1409                  
-   033                    24
+   iload                  24
    load_int               18
    load_int               0
    load_int               0
@@ -477,14 +481,14 @@ LABEL382:
    load_int               111
    load_int               105
    load_int               1262
-   033                    30
+   iload                  30
    3408                  
-   034                    23
-   033                    23
+   istore                 23
+   iload                  23
    int_to_string         
    1112                   1
    025                    4893
-   033                    23
+   iload                  23
    if_icmplt              LABEL451
    jump                   LABEL454
 LABEL451:
@@ -495,20 +499,20 @@ LABEL454:
    load_int               16777215
    widget_put_textcolor   1
 LABEL456:
-   033                    28
+   iload                  28
    load_int               3
    modulo                
    load_int               0
    if_icmpeq              LABEL462
    jump                   LABEL475
 LABEL462:
-   033                    26
-   033                    27
+   iload                  26
+   iload                  27
    load_int               0
    load_int               0
    1000                  
    load_int               0
-   033                    27
+   iload                  27
    load_int               32
    iadd                  
    load_int               0
@@ -516,7 +520,7 @@ LABEL462:
    1000                   1
    jump                   LABEL510
 LABEL475:
-   033                    28
+   iload                  28
    load_int               3
    modulo                
    load_int               1
@@ -524,12 +528,12 @@ LABEL475:
    jump                   LABEL494
 LABEL481:
    load_int               0
-   033                    27
+   iload                  27
    load_int               1
    load_int               0
    1000                  
    load_int               0
-   033                    27
+   iload                  27
    load_int               32
    iadd                  
    load_int               1
@@ -537,27 +541,27 @@ LABEL481:
    1000                   1
    jump                   LABEL510
 LABEL494:
-   033                    26
-   033                    27
+   iload                  26
+   iload                  27
    load_int               2
    load_int               0
    1000                  
    load_int               0
-   033                    27
+   iload                  27
    load_int               32
    iadd                  
    load_int               2
    load_int               0
    1000                   1
-   033                    27
-   033                    25
+   iload                  27
+   iload                  25
    iadd                  
-   034                    27
+   istore                 27
 LABEL510:
-   033                    28
+   iload                  28
    load_int               1
    iadd                  
-   034                    28
+   istore                 28
    jump                   LABEL519
 LABEL515:
    load_int               1
@@ -565,16 +569,16 @@ LABEL515:
    load_int               1
    widget_put_hidden      1
 LABEL519:
-   033                    29
+   iload                  29
    load_int               1
    iadd                  
-   034                    29
+   istore                 29
    load_int               105
    load_int               79
    load_int               1261
-   033                    29
+   iload                  29
    3408                  
-   034                    30
+   istore                 30
    jump                   LABEL363
 LABEL530:
    return                

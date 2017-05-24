@@ -1,6 +1,10 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
    load_int               73
    load_int               73
-   040                    900
+   invoke                 900
    load_int               10551308
    3408                  
    2702                  
@@ -10,7 +14,7 @@
 LABEL9:
    return                
 LABEL10:
-   033                   
+   iload                  0
    load_int               26214410
    if_icmpeq              LABEL14
    jump                   LABEL31
@@ -34,44 +38,44 @@ LABEL14:
    043                    49
 LABEL31:
    042                    49
-   033                   
+   iload                  0
    widget_get_height_widget
    if_icmpgt              LABEL36
    jump                   LABEL41
 LABEL36:
    load_int               0
    042                    49
-   033                   
+   iload                  0
    widget_put_scrollwidthheight_widget
    jump                   LABEL45
 LABEL41:
    load_int               0
    load_int               0
-   033                   
+   iload                  0
    widget_put_scrollwidthheight_widget
 LABEL45:
-   033                    1
+   iload                  1
    102                   
-   033                    3
+   iload                  3
    load_int               1
    if_icmpeq              LABEL51
    jump                   LABEL67
 LABEL51:
    load_int               0
    load_int               0
-   033                   
+   iload                  0
    widget_put_scroll_widget
    load_int               0
    043                    63
-   033                    1
-   033                   
+   iload                  1
+   iload                  0
    load_int               792
    load_int               789
    load_int               790
    load_int               791
    load_int               773
    load_int               788
-   040                    31
+   invoke                 31
    jump                   LABEL86
 LABEL67:
    042                    63
@@ -82,24 +86,24 @@ LABEL71:
    load_int               0
    043                    63
 LABEL73:
-   033                    1
-   033                   
+   iload                  1
+   iload                  0
    load_int               792
    load_int               789
    load_int               790
    load_int               791
    load_int               773
    load_int               788
-   040                    31
-   033                    1
-   033                   
+   invoke                 31
+   iload                  1
+   iload                  0
    042                    63
-   040                    72
+   invoke                 72
 LABEL86:
    load_int               0
-   033                   
+   iload                  0
    widget_put_hidden_widget
    load_int               1
-   033                    2
+   iload                  2
    widget_put_hidden_widget
    return                

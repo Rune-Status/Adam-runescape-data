@@ -1,23 +1,27 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    get_gamecycle         
-   033                    1
+   iload                  1
    isub                  
    load_int               50
    modulo                
-   034                    2
-   033                    2
+   istore                 2
+   iload                  2
    load_int               25
    if_icmpge              LABEL10
    jump                   LABEL14
 LABEL10:
    load_int               49
-   033                    2
+   iload                  2
    isub                  
-   034                    2
+   istore                 2
 LABEL14:
    load_int               255
    load_int               152
    load_int               0
-   033                    2
+   iload                  2
    load_int               0
    load_int               24
    load_int               103
@@ -25,13 +29,13 @@ LABEL14:
    iadd                  
    load_int               31
    load_int               0
-   033                    2
+   iload                  2
    load_int               0
    load_int               24
    load_int               224
    4006                  
    iadd                  
-   040                    246
-   033                   
+   invoke                 246
+   iload                  0
    widget_put_textcolor_widget
    return                

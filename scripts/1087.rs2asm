@@ -1,24 +1,28 @@
+.int_stack_count    1
+.string_stack_count 2
+.int_var_count      1
+.string_var_count   2
    load_int               -1
    load_int               0
-   033                   
-   035                   
-   035                    1
-   040                    1086
+   iload                  0
+   sload                  0
+   sload                  1
+   invoke                 1086
    load_int               1088
    get_gamecycle         
    load_int               20
    iadd                  
-   033                   
-   035                   
-   035                    1
+   iload                  0
+   sload                  0
+   sload                  1
    load_string            "iIss"
-   033                   
+   iload                  0
    2408                  
    load_int               2266
    load_int               1
    load_int               0
    3200                  
-   035                    1
+   sload                  1
    load_int               1
    3113                  
    return                

@@ -1,5 +1,9 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
    load_int               1
-   040                    927
+   invoke                 927
    load_int               924
    load_int               1054
    load_int               1055
@@ -15,7 +19,7 @@
    2702                  
    load_int               10617377
    2702                  
-   040                    900
+   invoke                 900
    load_string            "Ii11g"
    load_int               10616832
    2424                  
@@ -97,28 +101,28 @@
    043                    62
    048                    28
    load_int               0
-   034                   
+   istore                
    load_int               105
    load_int               73
    load_int               579
-   033                   
+   iload                  0
    3408                  
-   034                    1
+   istore                 1
 LABEL106:
-   033                    1
+   iload                  1
    load_int               -1
    if_icmpne              LABEL110
    jump                   LABEL155
 LABEL110:
    load_int               10616875
    load_int               4
-   033                   
+   iload                  0
    load_int               2
    imul                  
    100                   
    load_int               10616875
    load_int               4
-   033                   
+   iload                  0
    load_int               2
    imul                  
    load_int               1
@@ -144,16 +148,16 @@ LABEL110:
    widget_put_hidden     
    load_int               1
    widget_put_hidden      1
-   033                   
+   iload                  0
    load_int               1
    iadd                  
-   034                   
+   istore                
    load_int               105
    load_int               73
    load_int               579
-   033                   
+   iload                  0
    3408                  
-   034                    1
+   istore                 1
    jump                   LABEL106
 LABEL155:
    load_int               0
@@ -168,12 +172,12 @@ LABEL155:
    load_int               -1
    load_int               -1
    load_int               -1
-   040                    31
-   040                    923
+   invoke                 31
+   invoke                 923
    load_string            ""
    5021                  
-   040                    223
-   040                    178
-   040                    553
-   040                    84
+   invoke                 223
+   invoke                 178
+   invoke                 553
+   invoke                 84
    return                

@@ -1,3 +1,7 @@
+.int_stack_count    0
+.string_stack_count 1
+.int_var_count      0
+.string_var_count   2
    042                    11
    load_int               1
    if_icmpeq              LABEL4
@@ -7,9 +11,9 @@ LABEL4:
    send_game_message     
    return                
 LABEL7:
-   035                   
+   sload                  0
    048                    23
-   040                    677
+   invoke                 677
    load_string            "Enter message to send to "
    047                    23
    037                    2
@@ -18,13 +22,13 @@ LABEL7:
    load_int               6
    043                    5
    load_string            ""
-   040                    222
+   invoke                 222
    load_string            ""
-   036                    1
+   sstore                 1
    load_int               112
    load_int               -2147483640
    load_int               -2147483639
-   035                    1
+   sload                  1
    load_string            "izs"
    load_int               10616865
    2419                  

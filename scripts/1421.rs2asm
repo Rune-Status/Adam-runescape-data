@@ -1,4 +1,8 @@
-   033                    1
+.int_stack_count    10
+.string_stack_count 0
+.int_var_count      10
+.string_var_count   0
+   iload                  1
    load_int               0
    if_icmpeq              LABEL4
    jump                   LABEL14
@@ -14,7 +18,7 @@ LABEL4:
    2112                  
    jump                   LABEL41
 LABEL14:
-   033                    1
+   iload                  1
    load_int               -1
    if_icmpne              LABEL18
    jump                   LABEL41
@@ -23,7 +27,7 @@ LABEL18:
    load_int               16384
    load_int               0
    load_int               3500
-   033                    1
+   iload                  1
    4006                  
    load_int               0
    load_int               2
@@ -35,7 +39,7 @@ LABEL18:
    load_int               100
    load_int               0
    load_int               3500
-   033                    1
+   iload                  1
    4006                  
    int_to_string         
    load_string            "%"
@@ -45,12 +49,12 @@ LABEL18:
 LABEL41:
    load_string            "Points"
    load_string            "<br>"
-   033                   
+   iload                  0
    int_to_string         
    037                    3
    load_int               25952263
    2112                  
-   033                   
+   iload                  0
    load_int               500
    if_icmplt              LABEL52
    jump                   LABEL56
@@ -64,7 +68,7 @@ LABEL56:
    load_int               25952263
    widget_put_textcolor_widget
 LABEL59:
-   033                    2
+   iload                  2
    load_int               1
    if_icmpeq              LABEL63
    jump                   LABEL67
@@ -78,7 +82,7 @@ LABEL67:
    load_int               25952264
    widget_put_textureid_widget
 LABEL70:
-   033                    3
+   iload                  3
    load_int               1
    if_icmpeq              LABEL74
    jump                   LABEL78
@@ -92,7 +96,7 @@ LABEL78:
    load_int               25952265
    widget_put_textureid_widget
 LABEL81:
-   033                    4
+   iload                  4
    load_int               1
    if_icmpeq              LABEL85
    jump                   LABEL89
@@ -106,7 +110,7 @@ LABEL89:
    load_int               25952266
    widget_put_textureid_widget
 LABEL92:
-   033                    5
+   iload                  5
    load_int               1
    if_icmpeq              LABEL96
    jump                   LABEL100
@@ -120,7 +124,7 @@ LABEL100:
    load_int               25952267
    widget_put_textureid_widget
 LABEL103:
-   033                    6
+   iload                  6
    load_int               0
    if_icmpeq              LABEL107
    jump                   LABEL111
@@ -130,7 +134,7 @@ LABEL107:
    widget_put_textureid_widget
    jump                   LABEL126
 LABEL111:
-   033                    6
+   iload                  6
    load_int               1
    if_icmpeq              LABEL115
    jump                   LABEL119
@@ -140,7 +144,7 @@ LABEL115:
    widget_put_textureid_widget
    jump                   LABEL126
 LABEL119:
-   033                    6
+   iload                  6
    load_int               2
    if_icmpeq              LABEL123
    jump                   LABEL126
@@ -149,7 +153,7 @@ LABEL123:
    load_int               25952268
    widget_put_textureid_widget
 LABEL126:
-   033                    7
+   iload                  7
    load_int               0
    if_icmpeq              LABEL130
    jump                   LABEL134
@@ -159,7 +163,7 @@ LABEL130:
    widget_put_textureid_widget
    jump                   LABEL149
 LABEL134:
-   033                    7
+   iload                  7
    load_int               1
    if_icmpeq              LABEL138
    jump                   LABEL142
@@ -169,7 +173,7 @@ LABEL138:
    widget_put_textureid_widget
    jump                   LABEL149
 LABEL142:
-   033                    7
+   iload                  7
    load_int               2
    if_icmpeq              LABEL146
    jump                   LABEL149
@@ -178,7 +182,7 @@ LABEL146:
    load_int               25952269
    widget_put_textureid_widget
 LABEL149:
-   033                    8
+   iload                  8
    load_int               0
    if_icmpeq              LABEL153
    jump                   LABEL157
@@ -188,7 +192,7 @@ LABEL153:
    widget_put_textureid_widget
    jump                   LABEL172
 LABEL157:
-   033                    8
+   iload                  8
    load_int               1
    if_icmpeq              LABEL161
    jump                   LABEL165
@@ -198,7 +202,7 @@ LABEL161:
    widget_put_textureid_widget
    jump                   LABEL172
 LABEL165:
-   033                    8
+   iload                  8
    load_int               2
    if_icmpeq              LABEL169
    jump                   LABEL172
@@ -207,7 +211,7 @@ LABEL169:
    load_int               25952270
    widget_put_textureid_widget
 LABEL172:
-   033                    9
+   iload                  9
    load_int               0
    if_icmpeq              LABEL176
    jump                   LABEL180
@@ -217,7 +221,7 @@ LABEL176:
    widget_put_textureid_widget
    jump                   LABEL195
 LABEL180:
-   033                    9
+   iload                  9
    load_int               1
    if_icmpeq              LABEL184
    jump                   LABEL188
@@ -227,7 +231,7 @@ LABEL184:
    widget_put_textureid_widget
    jump                   LABEL195
 LABEL188:
-   033                    9
+   iload                  9
    load_int               2
    if_icmpeq              LABEL192
    jump                   LABEL195

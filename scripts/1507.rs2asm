@@ -1,6 +1,10 @@
-   040                    900
-   034                    1
-   033                    1
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   invoke                 900
+   istore                 1
+   iload                  1
    load_int               -1
    if_icmpne              LABEL6
    jump                   LABEL20
@@ -8,16 +12,16 @@ LABEL6:
    load_int               103
    load_int               105
    load_int               1135
-   033                    1
+   iload                  1
    3408                  
    load_int               103
    load_int               105
    load_int               1136
-   033                    1
+   iload                  1
    3408                  
    load_int               1
    load_int               1
-   033                   
+   iload                  0
    2001                  
 LABEL20:
    return                

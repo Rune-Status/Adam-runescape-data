@@ -1,29 +1,33 @@
+.int_stack_count    6
+.string_stack_count 1
+.int_var_count      8
+.string_var_count   2
    load_int               2266
    load_int               1
    load_int               0
    3200                  
    load_int               1
-   033                    1
+   iload                  1
    widget_put_hidden_widget
    load_int               0
-   033                    2
+   iload                  2
    widget_put_hidden_widget
-   033                    4
+   iload                  4
    102                   
    load_int               33
    load_int               165
    load_int               0
    load_int               0
-   033                    5
+   iload                  5
    2000                  
    load_int               0
-   033                    4
+   iload                  4
    widget_put_hidden_widget
    load_string            ""
-   036                    1
+   sstore                 1
    load_int               0
-   034                    6
-   033                   
+   istore                 6
+   iload                  0
    load_int               1
    if_icmpeq              LABEL29
    jump                   LABEL53
@@ -31,9 +35,9 @@ LABEL29:
    load_int               37
    load_int               2
    iadd                  
-   034                    6
+   istore                 6
    load_string            "<u=ff981f>"
-   035                   
+   sload                  0
    load_string            "</u>"
    load_string            "<br>"
    load_string            "<br>"
@@ -50,15 +54,15 @@ LABEL29:
    load_string            "<br>"
    load_string            "If you unblock this creature in future, you will not get your points back."
    037                    16
-   036                    1
+   sstore                 1
    jump                   LABEL73
 LABEL53:
    load_int               37
    load_int               1
    iadd                  
-   034                    6
+   istore                 6
    load_string            "<u=ff981f>"
-   035                   
+   sload                  0
    load_string            "</u>"
    load_string            "<br>"
    load_string            "<br>"
@@ -72,34 +76,34 @@ LABEL53:
    load_string            " points"
    load_string            "</col>"
    037                    13
-   036                    1
+   sstore                 1
 LABEL73:
-   035                    1
-   033                    3
+   sload                  1
+   iload                  3
    2112                  
    load_int               0
-   034                    7
+   istore                 7
 LABEL78:
-   033                    7
-   033                    6
+   iload                  7
+   iload                  6
    if_icmplt              LABEL82
    jump                   LABEL93
 LABEL82:
-   033                    4
+   iload                  4
    load_int               3
-   033                    7
+   iload                  7
    100                   
    load_int               1
    widget_put_hidden     
-   033                    7
+   iload                  7
    load_int               1
    iadd                  
-   034                    7
+   istore                 7
    jump                   LABEL78
 LABEL93:
-   033                    4
+   iload                  4
    load_int               3
-   033                    6
+   iload                  6
    100                   
    load_int               0
    load_int               0
@@ -121,26 +125,26 @@ LABEL93:
    load_int               319
    load_int               1
    load_int               -2147483644
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
    load_string            "1iIIIII"
    1409                  
    load_int               1
    load_string            "Back"
-   033                    5
+   iload                  5
    2300                  
    load_int               319
    load_int               0
    load_int               -2147483644
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
    load_string            "1iIIIII"
-   033                    5
+   iload                  5
    2409                  
    return                

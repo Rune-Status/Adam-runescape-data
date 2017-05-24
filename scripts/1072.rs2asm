@@ -1,5 +1,9 @@
-   033                   
-   033                    1
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   iload                  0
+   iload                  1
    load_int               2
    imul                  
    load_int               1
@@ -9,7 +13,7 @@
    if_icmpeq              LABEL10
    jump                   LABEL12
 LABEL10:
-   033                    1
-   040                    1073
+   iload                  1
+   invoke                 1073
 LABEL12:
    return                

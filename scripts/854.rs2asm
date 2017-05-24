@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    5
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
+   iload                  0
    load_int               1
    if_icmpne              LABEL4
    jump                   LABEL5
@@ -9,7 +13,7 @@ LABEL5:
    load_int               1
    load_int               0
    3200                  
-   033                    1
+   iload                  1
    load_int               1
    if_icmpeq              LABEL13
    jump                   LABEL23
@@ -40,8 +44,8 @@ LABEL30:
    load_int               0
    027                    4608
 LABEL32:
-   033                    2
-   033                    3
-   033                    4
-   040                    855
+   iload                  2
+   iload                  3
+   iload                  4
+   invoke                 855
    return                

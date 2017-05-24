@@ -1,3 +1,7 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
    047                    28
    string_length         
    load_int               0
@@ -6,14 +10,14 @@
 LABEL5:
    load_int               -1
    load_string            ""
-   033                   
+   iload                  0
    2408                  
    load_int               0
    043                    62
-   040                    95
+   invoke                 95
    return                
 LABEL13:
-   033                    1
+   iload                  1
    load_int               1
    if_icmpeq              LABEL17
    jump                   LABEL23
@@ -22,7 +26,7 @@ LABEL17:
    load_int               -2147483645
    load_int               0
    load_string            "I1"
-   033                   
+   iload                  0
    2408                  
 LABEL23:
    042                    62
@@ -41,22 +45,22 @@ LABEL32:
    5005                  
    5016                  
    5001                  
-   040                    178
-   040                    553
-   040                    84
+   invoke                 178
+   invoke                 553
+   invoke                 84
 LABEL39:
    get_gamecycle         
    042                    61
    isub                  
    load_int               150
    if_icmpge              LABEL48
-   033                    1
+   iload                  1
    load_int               1
    if_icmpeq              LABEL48
    jump                   LABEL51
 LABEL48:
    047                    28
    load_int               1
-   040                    96
+   invoke                 96
 LABEL51:
    return                

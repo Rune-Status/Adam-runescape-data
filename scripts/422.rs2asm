@@ -1,11 +1,15 @@
-   033                   
+.int_stack_count    7
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   1
+   iload                  0
    102                   
    load_int               0
-   034                    7
+   istore                 7
    load_int               0
-   034                    8
+   istore                 8
    load_string            "Creature"
-   036                   
+   sstore                
    get_settings           262
    load_int               98
    if_icmpeq              LABEL12
@@ -22,14 +26,14 @@ LABEL16:
    load_int               1174
    get_settings           263
    3408                  
-   036                   
-   034                    8
+   sstore                
+   istore                 8
    get_settings           261
    int_to_string         
    load_string            " x "
-   035                   
+   sload                  0
    037                    3
-   033                    1
+   iload                  1
    2112                  
    jump                   LABEL51
 LABEL32:
@@ -44,15 +48,15 @@ LABEL36:
    load_int               1174
    get_settings           263
    3408                  
-   036                   
-   034                    8
-   035                   
-   033                    1
+   sstore                
+   istore                 8
+   sload                  0
+   iload                  1
    2112                  
    jump                   LABEL51
 LABEL48:
    load_string            "None"
-   033                    1
+   iload                  1
    2112                  
 LABEL51:
    jump                   LABEL79
@@ -73,37 +77,37 @@ LABEL60:
    load_int               693
    get_settings           262
    3408                  
-   036                   
-   034                    8
+   sstore                
+   istore                 8
    get_settings           261
    int_to_string         
    load_string            " x "
-   035                   
+   sload                  0
    037                    3
-   033                    1
+   iload                  1
    2112                  
    jump                   LABEL79
 LABEL76:
    load_string            "None"
-   033                    1
+   iload                  1
    2112                  
 LABEL79:
-   033                   
+   iload                  0
    load_int               5
-   033                    7
+   iload                  7
    100                   
-   033                    7
+   iload                  7
    load_int               1
    iadd                  
-   034                    7
-   033                   
+   istore                 7
+   iload                  0
    load_int               4
-   033                    7
+   iload                  7
    100                    1
-   033                    7
+   iload                  7
    load_int               1
    iadd                  
-   034                    7
+   istore                 7
    load_int               85
    load_int               22
    load_int               0
@@ -136,7 +140,7 @@ LABEL79:
    1115                   1
    load_string            "Cancel task"
    1112                   1
-   033                    8
+   iload                  8
    load_int               1
    if_icmpeq              LABEL131
    jump                   LABEL159
@@ -159,13 +163,13 @@ LABEL131:
    load_string            "Cancel"
    1300                  
    load_int               423
-   035                   
+   sload                  0
    load_int               0
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
    load_string            "s1IIIII"
    1409                  
    jump                   LABEL161
@@ -173,22 +177,22 @@ LABEL159:
    load_int               8342543
    widget_put_textcolor   1
 LABEL161:
-   033                   
+   iload                  0
    load_int               5
-   033                    7
+   iload                  7
    100                   
-   033                    7
+   iload                  7
    load_int               1
    iadd                  
-   034                    7
-   033                   
+   istore                 7
+   iload                  0
    load_int               4
-   033                    7
+   iload                  7
    100                    1
-   033                    7
+   iload                  7
    load_int               1
    iadd                  
-   034                    7
+   istore                 7
    load_int               85
    load_int               22
    load_int               0
@@ -221,7 +225,7 @@ LABEL161:
    1115                   1
    load_string            "Block task"
    1112                   1
-   033                    8
+   iload                  8
    load_int               1
    if_icmpeq              LABEL213
    jump                   LABEL249
@@ -254,13 +258,13 @@ LABEL221:
    load_string            "Block"
    1300                  
    load_int               423
-   035                   
+   sload                  0
    load_int               1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
    load_string            "s1IIIII"
    1409                  
    jump                   LABEL251

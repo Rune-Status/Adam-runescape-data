@@ -1,18 +1,22 @@
-   033                   
-   033                    1
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  0
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL30
 LABEL6:
-   033                   
+   iload                  0
    load_int               5
-   033                    3
+   iload                  3
    100                    1
-   033                    3
+   iload                  3
    load_int               1
    iadd                  
-   034                    3
+   istore                 3
    load_int               20
    load_int               18
    load_int               0
@@ -27,10 +31,10 @@ LABEL6:
    load_int               0
    load_int               0
    1000                   1
-   033                    2
+   iload                  2
    widget_put_textureid   1
 LABEL30:
-   033                    3
+   iload                  3
    return                
    load_int               0
    return                

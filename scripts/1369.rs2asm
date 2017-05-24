@@ -1,182 +1,186 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      8
+.string_var_count   0
    load_int               0
-   034                   
-   040                    1371
-   034                    1
-   040                    1374
-   034                    2
-   040                    1372
-   034                    3
-   040                    1373
-   034                    4
+   istore                
+   invoke                 1371
+   istore                 1
+   invoke                 1374
+   istore                 2
+   invoke                 1372
+   istore                 3
+   invoke                 1373
+   istore                 4
    load_int               200
-   034                    5
+   istore                 5
    load_int               105
    load_int               105
    load_int               1408
    025                    3251
    3408                  
-   034                    5
-   033                    1
-   033                    5
+   istore                 5
+   iload                  1
+   iload                  5
    if_icmpge              LABEL22
    jump                   LABEL30
 LABEL22:
-   033                    5
+   iload                  5
    load_int               0
    if_icmpgt              LABEL26
    jump                   LABEL30
 LABEL26:
-   033                   
+   iload                  0
    load_int               0
    set_bit               
-   034                   
+   istore                
 LABEL30:
    load_int               105
    load_int               105
    load_int               1408
    025                    3254
    3408                  
-   034                    5
-   033                    2
-   033                    5
+   istore                 5
+   iload                  2
+   iload                  5
    if_icmpge              LABEL40
    jump                   LABEL48
 LABEL40:
-   033                    5
+   iload                  5
    load_int               0
    if_icmpgt              LABEL44
    jump                   LABEL48
 LABEL44:
-   033                   
+   iload                  0
    load_int               1
    set_bit               
-   034                   
+   istore                
 LABEL48:
    load_int               105
    load_int               105
    load_int               1408
    025                    3253
    3408                  
-   034                    5
-   033                    3
-   033                    5
+   istore                 5
+   iload                  3
+   iload                  5
    if_icmpge              LABEL58
    jump                   LABEL66
 LABEL58:
-   033                    5
+   iload                  5
    load_int               0
    if_icmpgt              LABEL62
    jump                   LABEL66
 LABEL62:
-   033                   
+   iload                  0
    load_int               2
    set_bit               
-   034                   
+   istore                
 LABEL66:
    load_int               105
    load_int               105
    load_int               1408
    025                    3255
    3408                  
-   034                    5
-   033                    4
-   033                    5
+   istore                 5
+   iload                  4
+   iload                  5
    if_icmpge              LABEL76
    jump                   LABEL84
 LABEL76:
-   033                    5
+   iload                  5
    load_int               0
    if_icmpgt              LABEL80
    jump                   LABEL84
 LABEL80:
-   033                   
+   iload                  0
    load_int               3
    set_bit               
-   034                   
+   istore                
 LABEL84:
-   033                    1
-   033                    2
-   040                    1046
-   033                    3
-   033                    4
-   040                    1046
-   040                    1046
-   034                    6
-   033                    1
-   033                    2
-   040                    1045
-   033                    3
-   033                    4
-   040                    1045
-   040                    1045
-   034                    7
-   033                    6
+   iload                  1
+   iload                  2
+   invoke                 1046
+   iload                  3
+   iload                  4
+   invoke                 1046
+   invoke                 1046
+   istore                 6
+   iload                  1
+   iload                  2
+   invoke                 1045
+   iload                  3
+   iload                  4
+   invoke                 1045
+   invoke                 1045
+   istore                 7
+   iload                  6
    load_int               375
    if_icmpge              LABEL104
    jump                   LABEL112
 LABEL104:
-   033                   
+   iload                  0
    load_int               8
    set_bit               
-   034                   
-   033                   
+   istore                
+   iload                  0
    load_int               9
    set_bit               
-   034                   
+   istore                
 LABEL112:
-   033                    6
+   iload                  6
    load_int               275
    if_icmpge              LABEL116
    jump                   LABEL132
 LABEL116:
-   033                   
+   iload                  0
    load_int               4
    set_bit               
-   034                   
-   033                   
+   istore                
+   iload                  0
    load_int               5
    set_bit               
-   034                   
-   033                   
+   istore                
+   iload                  0
    load_int               6
    set_bit               
-   034                   
-   033                   
+   istore                
+   iload                  0
    load_int               7
    set_bit               
-   034                   
+   istore                
 LABEL132:
-   033                    6
+   iload                  6
    load_int               150
    if_icmpge              LABEL136
    jump                   LABEL140
 LABEL136:
-   033                   
+   iload                  0
    load_int               11
    set_bit               
-   034                   
+   istore                
 LABEL140:
-   033                    6
+   iload                  6
    load_int               100
    if_icmpge              LABEL144
    jump                   LABEL148
 LABEL144:
-   033                   
+   iload                  0
    load_int               10
    set_bit               
-   034                   
+   istore                
 LABEL148:
-   033                    7
+   iload                  7
    load_int               500
    if_icmpge              LABEL152
    jump                   LABEL156
 LABEL152:
-   033                   
+   iload                  0
    load_int               15
    set_bit               
-   034                   
+   istore                
 LABEL156:
-   033                    7
+   iload                  7
    load_int               400
    if_icmpge              LABEL160
    jump                   LABEL168
@@ -186,12 +190,12 @@ LABEL160:
    if_icmpgt              LABEL164
    jump                   LABEL168
 LABEL164:
-   033                   
+   iload                  0
    load_int               14
    set_bit               
-   034                   
+   istore                
 LABEL168:
-   033                    7
+   iload                  7
    load_int               200
    if_icmpge              LABEL172
    jump                   LABEL180
@@ -201,10 +205,10 @@ LABEL172:
    if_icmpgt              LABEL176
    jump                   LABEL180
 LABEL176:
-   033                   
+   iload                  0
    load_int               13
    set_bit               
-   034                   
+   istore                
 LABEL180:
    load_int               93
    load_int               995
@@ -213,12 +217,12 @@ LABEL180:
    if_icmpge              LABEL186
    jump                   LABEL190
 LABEL186:
-   033                   
+   iload                  0
    load_int               12
    set_bit               
-   034                   
+   istore                
 LABEL190:
-   033                   
+   iload                  0
    return                
    load_int               0
    return                

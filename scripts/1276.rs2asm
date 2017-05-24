@@ -1,8 +1,12 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   1
    load_int               0
-   034                    1
+   istore                 1
 LABEL2:
    load_int               14811140
-   033                    1
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL8
@@ -10,14 +14,14 @@ LABEL2:
 LABEL8:
    load_int               1345
    widget_put_textureid  
-   033                    1
+   iload                  1
    load_int               2
    iadd                  
-   034                    1
+   istore                 1
    jump                   LABEL2
 LABEL15:
    load_int               14811140
-   033                   
+   iload                  0
    load_int               2
    imul                  
    200                   
@@ -28,13 +32,13 @@ LABEL23:
    load_int               1344
    widget_put_textureid  
 LABEL25:
-   033                   
+   iload                  0
    043                    139
-   040                    1277
-   040                    1280
+   invoke                 1277
+   invoke                 1280
    load_string            ""
-   036                   
-   033                   
+   sstore                
+   iload                  0
    load_int               0
    if_icmpeq              LABEL35
    jump                   LABEL57
@@ -60,9 +64,9 @@ LABEL35:
    load_string            "</col>"
    load_string            " at the time."
    037                    20
-   036                   
+   sstore                
 LABEL57:
-   033                   
+   iload                  0
    load_int               1
    if_icmpeq              LABEL61
    jump                   LABEL87
@@ -92,9 +96,9 @@ LABEL61:
    load_string            "</col>"
    load_string            "."
    037                    24
-   036                   
+   sstore                
 LABEL87:
-   033                   
+   iload                  0
    load_int               2
    if_icmpeq              LABEL91
    jump                   LABEL117
@@ -124,9 +128,9 @@ LABEL91:
    load_string            "</col>"
    load_string            " area."
    037                    24
-   036                   
+   sstore                
 LABEL117:
-   033                   
+   iload                  0
    load_int               3
    if_icmpeq              LABEL121
    jump                   LABEL151
@@ -160,9 +164,9 @@ LABEL121:
    load_string            "</col>"
    load_string            " in any unprotected skills."
    037                    28
-   036                   
+   sstore                
 LABEL151:
-   035                   
+   sload                  0
    load_int               14811141
    2112                  
    return                

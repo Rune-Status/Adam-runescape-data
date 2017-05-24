@@ -1,5 +1,9 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    load_int               255
-   034                    1
+   istore                 1
    025                    4733
    load_int               0
    if_icmpeq              LABEL6
@@ -8,91 +12,91 @@ LABEL6:
    load_int               584586432
    load_int               585094359
    get_coordinates       
-   040                    247
+   invoke                 247
    load_int               1
    if_icmpeq              LABEL13
    jump                   LABEL16
 LABEL13:
    load_int               125
-   034                    1
+   istore                 1
    jump                   LABEL41
 LABEL16:
    load_int               584455384
    load_int               585094399
    get_coordinates       
-   040                    247
+   invoke                 247
    load_int               1
    if_icmpeq              LABEL23
    jump                   LABEL26
 LABEL23:
    load_int               150
-   034                    1
+   istore                 1
    jump                   LABEL41
 LABEL26:
    load_int               584062184
    load_int               584439039
    get_coordinates       
-   040                    247
+   invoke                 247
    load_int               1
    if_icmpeq              LABEL39
    load_int               584193248
    load_int               584439015
    get_coordinates       
-   040                    247
+   invoke                 247
    load_int               1
    if_icmpeq              LABEL39
    jump                   LABEL41
 LABEL39:
    load_int               175
-   034                    1
+   istore                 1
 LABEL41:
    042                    50
-   034                    2
-   033                    2
-   033                    1
+   istore                 2
+   iload                  2
+   iload                  1
    if_icmpgt              LABEL47
    jump                   LABEL58
 LABEL47:
-   033                    2
+   iload                  2
    load_int               4
    isub                  
-   034                    2
-   033                    2
-   033                    1
+   istore                 2
+   iload                  2
+   iload                  1
    if_icmplt              LABEL55
    jump                   LABEL57
 LABEL55:
-   033                    1
-   034                    2
+   iload                  1
+   istore                 2
 LABEL57:
    jump                   LABEL72
 LABEL58:
-   033                    2
-   033                    1
+   iload                  2
+   iload                  1
    if_icmplt              LABEL62
    jump                   LABEL72
 LABEL62:
-   033                    2
+   iload                  2
    load_int               4
    iadd                  
-   034                    2
-   033                    2
-   033                    1
+   istore                 2
+   iload                  2
+   iload                  1
    if_icmpgt              LABEL70
    jump                   LABEL72
 LABEL70:
-   033                    1
-   034                    2
+   iload                  1
+   istore                 2
 LABEL72:
-   033                    2
+   iload                  2
    042                    50
    if_icmpne              LABEL76
    jump                   LABEL81
 LABEL76:
-   033                    2
-   033                   
+   iload                  2
+   iload                  0
    widget_put_opacity_widget
-   033                    2
+   iload                  2
    043                    50
 LABEL81:
    return                

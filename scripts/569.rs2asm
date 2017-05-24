@@ -1,21 +1,25 @@
-   033                    1
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   1
+   iload                  1
    102                   
    load_string            "Step over the line to fight!"
-   036                   
-   035                   
+   sstore                
+   sload                  0
    load_int               512
    load_int               645
    4109                  
    load_int               15
    iadd                  
-   034                    2
-   033                    2
+   istore                 2
+   iload                  2
    load_int               40
    load_int               0
    load_int               0
-   033                    1
+   iload                  1
    2001                  
-   033                    1
+   iload                  1
    load_int               5
    load_int               0
    100                   
@@ -24,7 +28,7 @@
    load_int               0
    load_int               0
    1000                  
-   033                    2
+   iload                  2
    load_int               40
    load_int               0
    load_int               0
@@ -35,18 +39,18 @@
    1107                  
    load_int               100
    widget_put_opacity    
-   033                    1
+   iload                  1
    load_int               4
-   033                    1
+   iload                  1
    load_int               1
-   040                    575
+   invoke                 575
    100                   
    load_int               0
    load_int               3
    load_int               0
    load_int               0
    1000                  
-   033                    2
+   iload                  2
    load_int               34
    load_int               0
    load_int               0
@@ -61,11 +65,11 @@
    1115                  
    load_int               16777120
    widget_put_textcolor  
-   035                   
+   sload                  0
    1112                  
    load_int               570
-   033                    1
+   iload                  1
    load_string            "I"
-   033                   
+   iload                  0
    2408                  
    return                

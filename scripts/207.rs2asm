@@ -1,113 +1,117 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   3
    load_string            ""
-   036                   
+   sstore                
    load_string            ""
-   036                    1
+   sstore                 1
    load_string            ""
-   036                    2
-   033                    2
+   sstore                 2
+   iload                  2
    get_item_stackable    
    load_int               0
    if_icmpeq              LABEL11
    jump                   LABEL26
 LABEL11:
-   035                    2
+   sload                  2
    load_string            "<col=ff9040>"
-   033                    2
+   iload                  2
    get_item_name         
    load_string            " "
    load_string            "<col=ffffff>"
    load_string            " x "
    load_string            "<col=fff000>"
-   033                    1
+   iload                  1
    int_to_string         
    load_string            "<br>"
    037                    8
    concat_string         
-   036                    2
+   sstore                 2
    jump                   LABEL102
 LABEL26:
-   033                    1
+   iload                  1
    load_int               100000
    if_icmplt              LABEL30
    jump                   LABEL47
 LABEL30:
-   033                    1
+   iload                  1
    load_string            ","
-   040                    46
-   036                   
-   035                    2
+   invoke                 46
+   sstore                
+   sload                  2
    load_string            "<col=ff9040>"
-   033                    2
+   iload                  2
    get_item_name         
    load_string            "<col=ffffff>"
    load_string            " x "
    load_string            "<col=ffff00>"
-   035                   
+   sload                  0
    load_string            "<br>"
    037                    7
    concat_string         
-   036                    2
+   sstore                 2
    jump                   LABEL102
 LABEL47:
-   033                    1
+   iload                  1
    load_int               10000000
    if_icmplt              LABEL51
    jump                   LABEL77
 LABEL51:
-   033                    1
+   iload                  1
    load_string            ","
-   040                    46
-   036                   
-   033                    1
+   invoke                 46
+   sstore                
+   iload                  1
    load_int               1000
    idiv                  
    load_string            ","
-   040                    46
-   036                    1
-   035                    2
+   invoke                 46
+   sstore                 1
+   sload                  2
    load_string            "<col=ff9040>"
-   033                    2
+   iload                  2
    get_item_name         
    load_string            "<col=ffffff>"
    load_string            " x "
    load_string            "<col=ffffff>"
-   035                    1
+   sload                  1
    load_string            "K ("
-   035                   
+   sload                  0
    load_string            ")"
    load_string            "<br>"
    037                    10
    concat_string         
-   036                    2
+   sstore                 2
    jump                   LABEL102
 LABEL77:
-   033                    1
+   iload                  1
    load_string            ","
-   040                    46
-   036                   
-   033                    1
+   invoke                 46
+   sstore                
+   iload                  1
    load_int               1000000
    idiv                  
    load_string            ","
-   040                    46
-   036                    1
-   035                    2
+   invoke                 46
+   sstore                 1
+   sload                  2
    load_string            "<col=ff9040>"
-   033                    2
+   iload                  2
    get_item_name         
    load_string            "<col=ffffff>"
    load_string            " x "
    load_string            "<col=00ff80>"
-   035                    1
+   sload                  1
    load_string            "M ("
-   035                   
+   sload                  0
    load_string            ")"
    load_string            "<br>"
    037                    10
    concat_string         
-   036                    2
+   sstore                 2
 LABEL102:
-   035                    2
+   sload                  2
    return                
    load_string            ""
    return                

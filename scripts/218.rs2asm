@@ -1,22 +1,26 @@
-   035                   
-   033                    2
+.int_stack_count    6
+.string_stack_count 1
+.int_var_count      7
+.string_var_count   3
+   sload                  0
+   iload                  2
    load_int               495
    4108                  
    load_int               14
    imul                  
    load_int               2
    iadd                  
-   034                    6
-   033                   
+   istore                 6
+   iload                  0
    load_int               4
-   033                    3
+   iload                  3
    100                   
-   033                    1
+   iload                  1
    load_int               3
-   033                    3
+   iload                  3
    100                    1
    load_int               0
-   033                    4
+   iload                  4
    load_int               1
    load_int               0
    1000                  
@@ -26,7 +30,7 @@
    load_int               1
    1000                   1
    load_int               0
-   033                    6
+   iload                  6
    load_int               1
    load_int               0
    1001                  
@@ -55,79 +59,79 @@
    load_int               0
    load_int               14
    1114                  
-   035                   
+   sload                  0
    1112                  
    load_string            ""
-   036                    1
+   sstore                 1
    load_string            ""
-   036                    2
-   033                    3
+   sstore                 2
+   iload                  3
    load_int               1
    iadd                  
-   034                    3
-   033                    5
+   istore                 3
+   iload                  5
    load_int               1
    if_icmpeq              LABEL71
    jump                   LABEL119
 LABEL71:
-   033                    3
+   iload                  3
    load_int               36
    if_icmplt              LABEL75
    jump                   LABEL119
 LABEL75:
-   033                    3
+   iload                  3
    load_int               10
    if_icmplt              LABEL79
    jump                   LABEL83
 LABEL79:
-   033                    3
+   iload                  3
    int_to_string         
-   036                    1
+   sstore                 1
    jump                   LABEL99
 LABEL83:
    load_int               105
    load_int               115
    load_int               1401
-   033                    3
+   iload                  3
    load_int               9
    isub                  
    3408                  
-   036                    1
+   sstore                 1
    load_int               105
    load_int               115
    load_int               1402
-   033                    3
+   iload                  3
    load_int               9
    isub                  
    3408                  
-   036                    2
+   sstore                 2
 LABEL99:
    load_string            "<col=735a28>"
-   035                    1
+   sload                  1
    load_string            "</col>"
    load_string            ": "
    037                    4
-   035                   
+   sload                  0
    concat_string         
-   036                   
+   sstore                
    load_int               57
    load_int               -2147483640
    load_int               -2147483639
-   033                   
+   iload                  0
    1702                  
    load_int               -1
-   035                    1
-   035                    2
+   sload                  1
+   sload                  2
    load_int               4600330
    load_int               0
    load_string            "izIiissii"
    1419                   1
 LABEL119:
-   035                   
+   sload                  0
    1112                  
-   033                    3
-   033                    4
-   033                    6
+   iload                  3
+   iload                  4
+   iload                  6
    iadd                  
    return                
    load_int               0

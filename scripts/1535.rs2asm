@@ -1,12 +1,16 @@
+.int_stack_count    3
+.string_stack_count 1
+.int_var_count      3
+.string_var_count   1
    get_gamecycle         
-   033                    2
+   iload                  2
    if_icmplt              LABEL4
    jump                   LABEL5
 LABEL4:
    return                
 LABEL5:
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL11
@@ -14,12 +18,12 @@ LABEL5:
 LABEL11:
    load_int               16750623
    widget_put_textcolor  
-   033                   
-   035                   
-   040                    1533
+   iload                  0
+   sload                  0
+   invoke                 1533
 LABEL16:
-   033                   
-   033                    1
-   035                   
-   040                    1531
+   iload                  0
+   iload                  1
+   sload                  0
+   invoke                 1531
    return                

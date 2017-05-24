@@ -1,9 +1,13 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
    load_int               5
    get_realskilllevels   
    load_int               105
    load_int               105
    load_int               861
-   033                   
+   iload                  0
    3408                  
    if_icmplt              LABEL9
    jump                   LABEL15
@@ -16,7 +20,7 @@ LABEL13:
    load_int               0
    return                
 LABEL15:
-   033                   
+   iload                  0
    load_int               25
    if_icmpeq              LABEL19
    jump                   LABEL37
@@ -43,7 +47,7 @@ LABEL34:
 LABEL36:
    jump                   LABEL157
 LABEL37:
-   033                   
+   iload                  0
    load_int               26
    if_icmpeq              LABEL41
    jump                   LABEL59
@@ -70,13 +74,13 @@ LABEL56:
 LABEL58:
    jump                   LABEL157
 LABEL59:
-   033                   
+   iload                  0
    load_int               15
    if_icmpeq              LABEL69
-   033                   
+   iload                  0
    load_int               16
    if_icmpeq              LABEL69
-   033                   
+   iload                  0
    load_int               17
    if_icmpeq              LABEL69
    jump                   LABEL80
@@ -96,7 +100,7 @@ LABEL77:
 LABEL79:
    jump                   LABEL157
 LABEL80:
-   033                   
+   iload                  0
    load_int               24
    if_icmpeq              LABEL84
    jump                   LABEL102
@@ -123,7 +127,7 @@ LABEL99:
 LABEL101:
    jump                   LABEL157
 LABEL102:
-   033                   
+   iload                  0
    load_int               27
    if_icmpeq              LABEL106
    jump                   LABEL124
@@ -150,7 +154,7 @@ LABEL121:
 LABEL123:
    jump                   LABEL157
 LABEL124:
-   033                   
+   iload                  0
    load_int               28
    if_icmpeq              LABEL128
    jump                   LABEL141
@@ -171,15 +175,15 @@ LABEL138:
 LABEL140:
    jump                   LABEL157
 LABEL141:
-   033                   
+   iload                  0
    load_int               8
    if_icmpeq              LABEL145
    jump                   LABEL157
 LABEL145:
-   040                    451
+   invoke                 451
    load_int               1
    if_icmpeq              LABEL155
-   040                    1138
+   invoke                 1138
    load_int               1
    if_icmpeq              LABEL155
    025                    5314

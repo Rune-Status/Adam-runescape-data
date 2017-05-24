@@ -1,15 +1,19 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
    load_int               235
-   034                    4
-   033                    1
-   033                    2
+   istore                 4
+   iload                  1
+   iload                  2
    if_icmpeq              LABEL6
    jump                   LABEL9
 LABEL6:
    load_int               220
-   034                    4
+   istore                 4
    jump                   LABEL17
 LABEL9:
-   033                   
+   iload                  0
    load_int               2
    modulo                
    load_int               0
@@ -17,12 +21,12 @@ LABEL9:
    jump                   LABEL17
 LABEL15:
    load_int               255
-   034                    4
+   istore                 4
 LABEL17:
-   033                    4
+   iload                  4
    widget_put_opacity    
    widget_put_actions_null
-   033                    3
+   iload                  3
    load_int               1
    if_icmpeq              LABEL24
    jump                   LABEL56
@@ -59,7 +63,7 @@ LABEL42:
    load_int               244
    load_int               -2147483645
    load_int               -2147483643
-   033                    4
+   iload                  4
    load_int               -1
    load_string            "IiiI"
    1404                  

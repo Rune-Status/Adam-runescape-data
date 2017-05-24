@@ -1,31 +1,35 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
    load_int               105
    load_int               105
    load_int               1504
-   033                    1
+   iload                  1
    3408                  
-   034                    2
+   istore                 2
    load_int               31588470
-   034                    3
-   033                    1
+   istore                 3
+   iload                  1
    load_int               14
    if_icmpge              LABEL12
    jump                   LABEL18
 LABEL12:
-   033                    1
+   iload                  1
    load_int               27
    if_icmple              LABEL16
    jump                   LABEL18
 LABEL16:
    load_int               31588443
-   034                    3
+   istore                 3
 LABEL18:
-   033                    2
+   iload                  2
    load_int               -1
    if_icmpne              LABEL22
    jump                   LABEL36
 LABEL22:
-   033                    3
-   033                    2
+   iload                  3
+   iload                  2
    200                   
    load_int               1
    if_icmpeq              LABEL28
@@ -34,13 +38,13 @@ LABEL28:
    load_int               0
    widget_put_hidden     
    load_int               756
-   033                    3
-   033                    2
+   iload                  3
+   iload                  2
    get_gamecycle         
    load_string            "Iii"
    1408                  
 LABEL36:
-   033                   
+   iload                  0
    load_int               5
-   040                    1442
+   invoke                 1442
    return                

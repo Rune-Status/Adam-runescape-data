@@ -1,3 +1,7 @@
+.int_stack_count    0
+.string_stack_count 1
+.int_var_count      0
+.string_var_count   1
    042                    5
    load_int               0
    if_icmple              LABEL7
@@ -6,8 +10,8 @@
    if_icmpeq              LABEL7
    jump                   LABEL30
 LABEL7:
-   040                    677
-   035                   
+   invoke                 677
+   sload                  0
    load_int               10616864
    2112                  
    load_string            "Click to continue"

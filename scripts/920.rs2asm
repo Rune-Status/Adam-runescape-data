@@ -1,23 +1,27 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
    load_int               0
-   034                    2
+   istore                 2
    load_int               0
-   034                    3
-   033                    1
+   istore                 3
+   iload                  1
    load_int               1131
    if_icmpeq              LABEL8
    jump                   LABEL67
 LABEL8:
    load_int               10747935
    widget_get_width_widget
-   034                    2
+   istore                 2
    load_int               10747935
    widget_get_height_widget
-   034                    3
-   033                   
+   istore                 3
+   iload                  0
    widget_get_width_widget
    load_int               73
    load_int               73
-   033                    1
+   iload                  1
    load_int               10551323
    3408                  
    widget_get_width_widget
@@ -27,7 +31,7 @@ LABEL8:
    jump                   LABEL48
 LABEL26:
    load_int               0
-   033                    3
+   iload                  3
    load_int               10747949
    widget_get_height_widget
    iadd                  
@@ -36,13 +40,13 @@ LABEL26:
    load_int               10747964
    2000                  
    load_int               0
-   033                    3
+   iload                  3
    load_int               2
    load_int               2
    load_int               10747949
    2000                  
    load_int               0
-   033                    3
+   iload                  3
    load_int               2
    load_int               2
    load_int               10747948
@@ -50,18 +54,18 @@ LABEL26:
    jump                   LABEL66
 LABEL48:
    load_int               0
-   033                    3
+   iload                  3
    load_int               2
    load_int               2
    load_int               10747964
    2000                  
-   033                    2
+   iload                  2
    load_int               0
    load_int               2
    load_int               2
    load_int               10747949
    2000                  
-   033                    2
+   iload                  2
    load_int               0
    load_int               2
    load_int               2
@@ -70,7 +74,7 @@ LABEL48:
 LABEL66:
    jump                   LABEL74
 LABEL67:
-   033                    1
+   iload                  1
    load_int               1129
    if_icmpeq              LABEL71
    jump                   LABEL74

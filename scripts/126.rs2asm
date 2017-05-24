@@ -1,14 +1,18 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 1
+.int_var_count      1
+.string_var_count   1
+   iload                  0
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL8
 LABEL4:
-   035                   
+   sload                  0
    string_remove_html    
-   040                    107
+   invoke                 107
    jump                   LABEL24
 LABEL8:
-   033                   
+   iload                  0
    load_int               2
    if_icmpeq              LABEL12
    jump                   LABEL15
@@ -17,12 +21,12 @@ LABEL12:
    send_game_message     
    jump                   LABEL24
 LABEL15:
-   033                   
+   iload                  0
    load_int               3
    if_icmpeq              LABEL19
    jump                   LABEL23
 LABEL19:
-   035                   
+   sload                  0
    string_remove_html    
    remove_friend         
    jump                   LABEL24

@@ -1,3 +1,7 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    025                    457
    025                    458
    iadd                  
@@ -9,23 +13,23 @@
    iadd                  
    025                    462
    iadd                  
-   034                    1
+   istore                 1
    025                    463
-   033                    1
+   iload                  1
    load_int               2
    imul                  
    iadd                  
-   034                    2
+   istore                 2
    load_string            "Rewards potential: "
    load_int               0
    load_int               100
    load_int               0
    load_int               1012
-   033                    2
+   iload                  2
    4006                  
    int_to_string         
    load_string            "%"
    037                    3
-   033                   
+   iload                  0
    2112                  
    return                

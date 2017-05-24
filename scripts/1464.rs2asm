@@ -1,97 +1,101 @@
+.int_stack_count    6
+.string_stack_count 0
+.int_var_count      7
+.string_var_count   1
    load_int               0
-   033                   
+   iload                  0
    widget_put_opacity_widget
    load_int               0
-   033                    1
+   iload                  1
    widget_put_opacity_widget
    load_string            "Low-Alchemy"
-   036                   
+   sstore                
    025                    5398
    load_int               1
    if_icmpeq              LABEL12
    jump                   LABEL54
 LABEL12:
    load_string            "High-Alchemy"
-   036                   
+   sstore                
    load_string            "High Alchemy"
-   033                    2
+   iload                  2
    2112                  
    load_int               75
-   033                   
+   iload                  0
    widget_put_textureid_widget
    load_int               273
    load_int               -2147483645
    load_int               120
    load_string            "Ii"
-   033                   
+   iload                  0
    2412                  
    load_int               273
    load_int               -2147483645
    load_int               0
    load_string            "Ii"
-   033                   
+   iload                  0
    2404                  
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
-   033                   
+   iload                  0
    2409                  
    load_int               41
-   033                    1
+   iload                  1
    widget_put_textureid_widget
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2412                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2404                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2409                  
    jump                   LABEL93
 LABEL54:
    load_string            "Low Alchemy"
-   033                    2
+   iload                  2
    2112                  
    load_int               25
-   033                   
+   iload                  0
    widget_put_textureid_widget
    load_int               -1
    load_string            ""
-   033                   
+   iload                  0
    2412                  
    load_int               -1
    load_string            ""
-   033                   
+   iload                  0
    2404                  
    load_int               -1
    load_string            ""
-   033                   
+   iload                  0
    2409                  
    load_int               91
-   033                    1
+   iload                  1
    widget_put_textureid_widget
    load_int               273
    load_int               -2147483645
    load_int               120
    load_string            "Ii"
-   033                    1
+   iload                  1
    2412                  
    load_int               273
    load_int               -2147483645
    load_int               0
    load_string            "Ii"
-   033                    1
+   iload                  1
    2404                  
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
-   033                    1
+   iload                  1
    2409                  
 LABEL93:
    load_string            "Charges: "
@@ -100,7 +104,7 @@ LABEL93:
    isub                  
    int_to_string         
    037                    2
-   033                    4
+   iload                  4
    2112                  
    025                    4554
    load_int               30
@@ -108,35 +112,35 @@ LABEL93:
    jump                   LABEL109
 LABEL105:
    load_int               16750623
-   033                    4
+   iload                  4
    widget_put_textcolor_widget
    jump                   LABEL112
 LABEL109:
    load_int               16711680
-   033                    4
+   iload                  4
    widget_put_textcolor_widget
 LABEL112:
-   033                    5
-   034                    6
+   iload                  5
+   istore                 6
 LABEL114:
-   033                    6
+   iload                  6
    load_int               0
    if_icmpgt              LABEL118
    jump                   LABEL132
 LABEL118:
-   033                    6
+   iload                  6
    load_int               1
    isub                  
-   034                    6
-   033                    3
-   033                    6
+   istore                 6
+   iload                  3
+   iload                  6
    200                   
    load_int               1
    if_icmpeq              LABEL128
    jump                   LABEL131
 LABEL128:
    load_int               1
-   035                   
+   sload                  0
    1300                  
 LABEL131:
    jump                   LABEL114

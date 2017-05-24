@@ -1,62 +1,66 @@
-   035                    1
-   035                    2
+.int_stack_count    0
+.string_stack_count 3
+.int_var_count      3
+.string_var_count   3
+   sload                  1
+   sload                  2
    4107                  
    load_int               0
    if_icmpeq              LABEL6
    jump                   LABEL8
 LABEL6:
-   035                   
+   sload                  0
    return                
 LABEL8:
-   035                    1
+   sload                  1
    string_length         
-   034                   
-   033                   
+   istore                
+   iload                  0
    load_int               0
    if_icmple              LABEL15
    jump                   LABEL17
 LABEL15:
-   035                   
+   sload                  0
    return                
 LABEL17:
    load_int               0
-   034                    1
-   035                   
-   035                    1
+   istore                 1
+   sload                  0
+   sload                  1
    load_int               0
    string_indexof_from   
-   034                    2
+   istore                 2
 LABEL24:
-   033                    2
+   iload                  2
    load_int               -1
    if_icmpne              LABEL28
    jump                   LABEL51
 LABEL28:
-   035                   
+   sload                  0
    string_length         
-   034                    1
-   035                   
+   istore                 1
+   sload                  0
    load_int               0
-   033                    2
+   iload                  2
    string_substring      
-   035                    2
+   sload                  2
    concat_string         
-   035                   
-   033                    2
-   033                   
+   sload                  0
+   iload                  2
+   iload                  0
    iadd                  
-   033                    1
+   iload                  1
    string_substring      
    concat_string         
-   036                   
-   035                   
-   035                    1
+   sstore                
+   sload                  0
+   sload                  1
    load_int               0
    string_indexof_from   
-   034                    2
+   istore                 2
    jump                   LABEL24
 LABEL51:
-   035                   
+   sload                  0
    return                
    load_string            ""
    return                

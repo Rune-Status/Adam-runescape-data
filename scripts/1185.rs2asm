@@ -1,5 +1,9 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   1
    load_string            ""
-   036                   
+   sstore                
    025                    4820
    025                    4821
    if_icmpgt              LABEL6
@@ -8,14 +12,14 @@ LABEL6:
    load_string            "<col=ffffff>"
    025                    4820
    load_string            ","
-   040                    46
+   invoke                 46
    load_string            "</col>"
    load_string            "<br>"
    025                    4821
    load_string            ","
-   040                    46
+   invoke                 46
    037                    5
-   036                   
+   sstore                
    jump                   LABEL43
 LABEL18:
    025                    4820
@@ -25,26 +29,26 @@ LABEL18:
 LABEL22:
    025                    4820
    load_string            ","
-   040                    46
+   invoke                 46
    load_string            "<br>"
    load_string            "<col=ffffff>"
    025                    4821
    load_string            ","
-   040                    46
+   invoke                 46
    load_string            "</col>"
    037                    5
-   036                   
+   sstore                
    jump                   LABEL43
 LABEL34:
    025                    4820
    load_string            ","
-   040                    46
+   invoke                 46
    load_string            "<br>"
    025                    4821
    load_string            ","
-   040                    46
+   invoke                 46
    037                    3
-   036                   
+   sstore                
 LABEL43:
    025                    4822
    load_int               2147483647
@@ -57,12 +61,12 @@ LABEL47:
    load_string            "<br>"
    load_string            "Starting soon..."
    037                    5
-   033                   
+   iload                  0
    2112                  
-   035                   
+   sload                  0
    load_string            "<br>"
    concat_string         
-   036                   
+   sstore                
    jump                   LABEL130
 LABEL60:
    025                    4822
@@ -76,16 +80,16 @@ LABEL64:
    load_string            "<br>"
    load_string            "Time:"
    037                    5
-   033                   
+   iload                  0
    2112                  
-   035                   
+   sload                  0
    load_string            "<br>"
    025                    4822
    int_to_string         
    load_string            " mins"
    037                    3
    concat_string         
-   036                   
+   sstore                
    jump                   LABEL130
 LABEL81:
    025                    4822
@@ -99,14 +103,14 @@ LABEL85:
    load_string            "<br>"
    load_string            "Time:"
    037                    5
-   033                   
+   iload                  0
    2112                  
-   035                   
+   sload                  0
    load_string            "<br>"
    load_string            "1 min"
    037                    2
    concat_string         
-   036                   
+   sstore                
    jump                   LABEL130
 LABEL100:
    025                    4820
@@ -119,14 +123,14 @@ LABEL104:
    load_string            "Opponents:"
    load_string            "<br>"
    037                    4
-   033                   
+   iload                  0
    2112                  
-   035                   
+   sload                  0
    load_string            "<br>"
    load_string            "Next kill wins!"
    037                    2
    concat_string         
-   036                   
+   sstore                
    jump                   LABEL130
 LABEL118:
    load_string            "Your clan:"
@@ -135,14 +139,14 @@ LABEL118:
    load_string            "<br>"
    load_string            "Ending..."
    037                    5
-   033                   
+   iload                  0
    2112                  
-   035                   
+   sload                  0
    load_string            "<br>"
    concat_string         
-   036                   
+   sstore                
 LABEL130:
-   035                   
-   033                    1
+   sload                  0
+   iload                  1
    2112                  
    return                

@@ -1,17 +1,21 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
    load_int               1
-   034                   
+   istore                
 LABEL2:
-   033                   
+   iload                  0
    load_int               23
    if_icmple              LABEL6
    jump                   LABEL13
 LABEL6:
-   033                   
-   040                    1278
-   033                   
+   iload                  0
+   invoke                 1278
+   iload                  0
    load_int               1
    iadd                  
-   034                   
+   istore                
    jump                   LABEL2
 LABEL13:
    return                

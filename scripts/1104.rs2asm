@@ -1,9 +1,13 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 1
+.int_var_count      1
+.string_var_count   1
+   iload                  0
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL6
 LABEL4:
-   035                   
+   sload                  0
    048                    24
 LABEL6:
    load_int               133
@@ -40,7 +44,7 @@ LABEL32:
    widget_put_textcolor_widget
    load_int               36241423
    042                    6
-   040                    1326
+   invoke                 1326
    jump                   LABEL51
 LABEL41:
    load_int               1215
@@ -56,7 +60,7 @@ LABEL41:
 LABEL51:
    load_int               36241420
    042                    140
-   040                    1326
+   invoke                 1326
    load_int               10616863
    widget_get_hidden_widget
    load_int               0
@@ -65,8 +69,8 @@ LABEL51:
 LABEL59:
    load_int               1
    load_int               1
-   040                    299
+   invoke                 299
 LABEL62:
    load_int               0
-   040                    927
+   invoke                 927
    return                

@@ -1,58 +1,62 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   1
    load_string            "Always hide roofs (currently on)"
-   036                   
+   sstore                
    3111                  
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL24
 LABEL6:
    load_int               762
-   033                   
+   iload                  0
    widget_put_textureid_widget
    load_int               532
    load_int               0
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_string            "1II"
-   033                   
+   iload                  0
    2409                  
    load_int               533
    load_int               1
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_string            "1II"
-   033                   
+   iload                  0
    2408                  
    jump                   LABEL43
 LABEL24:
    load_string            "Always hide roofs (currently off)"
-   036                   
+   sstore                
    load_int               761
-   033                   
+   iload                  0
    widget_put_textureid_widget
    load_int               532
    load_int               1
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_string            "1II"
-   033                   
+   iload                  0
    2409                  
    load_int               533
    load_int               0
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_string            "1II"
-   033                   
+   iload                  0
    2408                  
 LABEL43:
    load_int               526
-   033                   
+   iload                  0
    load_int               -1
-   033                    1
-   035                   
+   iload                  1
+   sload                  0
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   033                   
+   iload                  0
    2412                  
    load_int               0
    043                    2

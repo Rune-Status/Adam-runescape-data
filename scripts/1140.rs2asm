@@ -1,40 +1,44 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   1
    load_int               105
    load_int               115
    load_int               108
-   033                    1
+   iload                  1
    3408                  
-   036                   
+   sstore                
    load_int               105
    load_int               83
    load_int               681
-   033                    1
+   iload                  1
    3408                  
-   034                    3
+   istore                 3
    load_int               1
    load_string            "Protect"
-   033                   
+   iload                  0
    2300                  
-   035                   
-   033                   
+   sload                  0
+   iload                  0
    widget_put_name_widget
    load_int               1142
    load_int               -2147483644
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_string            "iIi"
-   033                   
+   iload                  0
    2409                  
    load_int               1141
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_int               1295
    load_int               1
    load_string            "IiY"
-   033                   
+   iload                  0
    2407                  
-   033                   
+   iload                  0
    102                   
-   033                   
+   iload                  0
    load_int               5
    load_int               0
    100                   
@@ -50,7 +54,7 @@
    1001                  
    load_int               174
    widget_put_textureid  
-   033                   
+   iload                  0
    load_int               5
    load_int               1
    100                   
@@ -66,12 +70,12 @@
    1001                  
    load_int               176
    widget_put_textureid  
-   033                   
+   iload                  0
    load_int               5
    load_int               2
    100                   
    load_int               3
-   033                    2
+   iload                  2
    iadd                  
    load_int               4
    load_int               0
@@ -85,10 +89,10 @@
    load_int               83
    load_int               100
    load_int               255
-   033                    3
+   iload                  3
    3408                  
    widget_put_textureid  
-   033                   
+   iload                  0
    load_int               4
    load_int               3
    100                   
@@ -112,7 +116,7 @@
    1114                  
    load_int               1
    1115                  
-   033                   
+   iload                  0
    load_int               5
    load_int               4
    100                   
@@ -130,7 +134,7 @@
    widget_put_textureid  
    load_int               128
    widget_put_opacity    
-   033                   
+   iload                  0
    load_int               5
    load_int               5
    100                   
@@ -148,7 +152,7 @@
    widget_put_textureid  
    load_int               128
    widget_put_opacity    
-   033                   
+   iload                  0
    load_int               4
    load_int               6
    100                   
@@ -172,7 +176,7 @@
    1114                  
    load_int               1
    1115                  
-   033                   
+   iload                  0
    load_int               3
    load_int               7
    100                   
@@ -189,7 +193,7 @@
    load_int               16711680
    widget_put_textcolor  
    get_settings           1295
-   033                    1
+   iload                  1
    load_int               1
    isub                  
    test_bit              
@@ -197,13 +201,13 @@
    if_icmpeq              LABEL198
    jump                   LABEL202
 LABEL198:
-   033                   
-   033                    1
-   040                    1145
+   iload                  0
+   iload                  1
+   invoke                 1145
    jump                   LABEL205
 LABEL202:
-   033                   
-   033                    1
-   040                    1146
+   iload                  0
+   iload                  1
+   invoke                 1146
 LABEL205:
    return                

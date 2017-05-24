@@ -1,11 +1,15 @@
-   035                   
+.int_stack_count    7
+.string_stack_count 2
+.int_var_count      10
+.string_var_count   2
+   sload                  0
    string_remove_html    
-   036                   
-   035                   
+   sstore                
+   sload                  0
    string_length         
    load_int               0
    if_icmple              LABEL12
-   035                    1
+   sload                  1
    string_length         
    load_int               0
    if_icmple              LABEL12
@@ -13,41 +17,41 @@
 LABEL12:
    return                
 LABEL13:
-   033                    1
+   iload                  1
    load_int               15
-   033                    6
+   iload                  6
    iadd                  
    isub                  
-   034                    7
-   035                   
-   033                    7
-   033                    4
+   istore                 7
+   sload                  0
+   iload                  7
+   iload                  4
    4109                  
-   034                    8
-   035                   
-   033                    7
-   033                    4
+   istore                 8
+   sload                  0
+   iload                  7
+   iload                  4
    4108                  
-   033                    5
+   iload                  5
    imul                  
-   033                    6
+   iload                  6
    iadd                  
-   034                    9
-   033                    9
+   istore                 9
+   iload                  9
    load_int               15
    if_icmplt              LABEL37
    jump                   LABEL39
 LABEL37:
    load_int               15
-   034                    9
+   istore                 9
 LABEL39:
-   033                    8
+   iload                  8
    load_int               15
    iadd                  
-   033                    6
+   iload                  6
    iadd                  
-   034                    7
-   033                   
+   istore                 7
+   iload                  0
    load_int               3
    042                    43
    100                   
@@ -55,18 +59,18 @@ LABEL39:
    load_int               1
    iadd                  
    043                    43
-   033                    7
-   033                    9
+   iload                  7
+   iload                  9
    load_int               0
    load_int               0
    1001                  
-   033                    1
-   033                    7
+   iload                  1
+   iload                  7
    isub                  
    load_int               2
    idiv                  
-   034                    7
-   033                    7
+   istore                 7
+   iload                  7
    042                    49
    load_int               0
    load_int               0
@@ -75,7 +79,7 @@ LABEL39:
    1102                  
    load_int               255
    widget_put_opacity    
-   033                   
+   iload                  0
    load_int               4
    042                    43
    100                    1
@@ -83,21 +87,21 @@ LABEL39:
    load_int               1
    iadd                  
    043                    43
-   033                    8
-   033                    9
+   iload                  8
+   iload                  9
    load_int               0
    load_int               0
    1001                   1
-   033                    7
+   iload                  7
    load_int               15
    iadd                  
-   033                    6
+   iload                  6
    iadd                  
    042                    49
    load_int               0
    load_int               0
    1000                   1
-   033                    3
+   iload                  3
    widget_put_fontid      1
    load_int               1
    load_int               1
@@ -105,13 +109,13 @@ LABEL39:
    1114                   1
    load_int               1
    1115                   1
-   033                   
+   iload                  0
    1702                  
    1702                   1
-   035                   
-   035                    1
-   040                    612
-   033                   
+   sload                  0
+   sload                  1
+   invoke                 612
+   iload                  0
    load_int               5
    042                    43
    100                    1
@@ -124,9 +128,9 @@ LABEL39:
    load_int               0
    load_int               0
    1001                   1
-   033                    7
+   iload                  7
    042                    49
-   033                    9
+   iload                  9
    load_int               15
    isub                  
    load_int               2
@@ -142,7 +146,7 @@ LABEL39:
    load_int               1094
    widget_put_textureid   1
    042                    49
-   033                    9
+   iload                  9
    iadd                  
    load_int               3
    iadd                  

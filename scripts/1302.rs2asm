@@ -1,12 +1,16 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    load_int               0
-   034                    2
-   033                    1
+   istore                 2
+   iload                  1
    load_int               50
    if_icmple              LABEL6
    jump                   LABEL26
 LABEL6:
    load_int               255
-   033                    1
+   iload                  1
    load_int               5
    imul                  
    isub                  
@@ -15,28 +19,28 @@ LABEL6:
    load_int               300
    load_int               100
    load_int               1536
-   033                    1
+   iload                  1
    load_int               3
    imul                  
    load_int               10100
-   033                    1
+   iload                  1
    load_int               200
    imul                  
    isub                  
    1109                   1
    return                
 LABEL26:
-   033                    1
+   iload                  1
    load_int               75
    if_icmple              LABEL30
    jump                   LABEL43
 LABEL30:
-   033                    1
+   iload                  1
    load_int               50
    isub                  
-   034                    1
+   istore                 1
    load_int               5
-   033                    1
+   iload                  1
    load_int               10
    imul                  
    iadd                  
@@ -45,6 +49,6 @@ LABEL30:
    widget_put_modelid_1   1
    return                
 LABEL43:
-   033                   
+   iload                  0
    102                   
    return                

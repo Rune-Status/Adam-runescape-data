@@ -1,3 +1,7 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    025                    5432
    load_int               1
    if_icmpeq              LABEL4
@@ -19,16 +23,16 @@ LABEL4:
    load_string            "</col>"
    load_string            " be retrieved outside."
    037                    15
-   033                    2
+   iload                  2
    2112                  
    load_int               0
    load_int               45
    load_int               1
    load_int               2
-   033                   
+   iload                  0
    2000                  
    load_int               1
-   033                    1
+   iload                  1
    widget_put_hidden_widget
    jump                   LABEL51
 LABEL32:
@@ -40,16 +44,16 @@ LABEL32:
    load_string            "<br>"
    load_string            "before you can re-enter the Chambers of Xeric."
    037                    7
-   033                    2
+   iload                  2
    2112                  
    load_int               30
    load_int               45
    load_int               0
    load_int               2
-   033                   
+   iload                  0
    2000                  
    load_int               0
-   033                    1
+   iload                  1
    widget_put_hidden_widget
 LABEL51:
    return                

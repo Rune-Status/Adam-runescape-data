@@ -1,10 +1,14 @@
-   033                    2
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  2
    load_int               30
    if_icmplt              LABEL4
    jump                   LABEL14
 LABEL4:
-   033                   
-   033                    2
+   iload                  0
+   iload                  2
    test_bit              
    load_int               1
    if_icmpeq              LABEL10
@@ -16,13 +20,13 @@ LABEL12:
    load_int               0
    return                
 LABEL14:
-   033                    2
+   iload                  2
    load_int               60
    if_icmplt              LABEL18
    jump                   LABEL28
 LABEL18:
-   033                    1
-   033                    2
+   iload                  1
+   iload                  2
    load_int               30
    isub                  
    test_bit              

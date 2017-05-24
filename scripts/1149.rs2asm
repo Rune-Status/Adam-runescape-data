@@ -1,35 +1,39 @@
-   033                   
+.int_stack_count    2
+.string_stack_count 2
+.int_var_count      5
+.string_var_count   2
+   iload                  0
    load_int               30
    imul                  
-   034                    2
+   istore                 2
    load_int               49
-   033                    2
+   iload                  2
    iadd                  
    load_int               50
    idiv                  
-   034                    3
-   033                    3
+   istore                 3
+   iload                  3
    load_int               1
    if_icmpeq              LABEL14
    jump                   LABEL20
 LABEL14:
    load_string            "There is 1 second remaining "
-   035                   
+   sload                  0
    037                    2
    load_int               14942210
    2112                  
    jump                   LABEL28
 LABEL20:
    load_string            "There are "
-   033                    3
+   iload                  3
    int_to_string         
    load_string            " seconds remaining "
-   035                   
+   sload                  0
    037                    4
    load_int               14942210
    2112                  
 LABEL28:
-   035                    1
+   sload                  1
    load_int               14942208
    2112                  
    load_int               0
@@ -37,30 +41,30 @@ LABEL28:
    widget_put_hidden_widget
    load_int               73
    load_int               73
-   040                    900
+   invoke                 900
    load_int               10551323
    3408                  
-   034                    4
-   033                    4
+   istore                 4
+   iload                  4
    load_int               -1
    if_icmpeq              LABEL44
    jump                   LABEL46
 LABEL44:
    load_int               14942208
-   034                    4
+   istore                 4
 LABEL46:
    load_int               1150
-   033                    4
-   035                   
+   iload                  4
+   sload                  0
    get_gamecycle         
-   033                    2
-   033                    1
+   iload                  2
+   iload                  1
    load_string            "Isii1"
-   033                    4
+   iload                  4
    2408                  
    load_int               1597
-   033                    4
+   iload                  4
    load_string            "I"
-   033                    4
+   iload                  4
    2423                  
    return                

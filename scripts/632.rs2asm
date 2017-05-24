@@ -1,7 +1,11 @@
-   035                   
+.int_stack_count    0
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
+   sload                  0
    string_length         
-   034                   
-   033                   
+   istore                
+   iload                  0
    load_int               0
    if_icmple              LABEL7
    jump                   LABEL10
@@ -10,55 +14,55 @@ LABEL7:
    load_string            ""
    return                
 LABEL10:
-   035                   
+   sload                  0
    load_string            "|"
    load_int               0
    string_indexof_from   
-   034                    1
-   033                    1
+   istore                 1
+   iload                  1
    load_int               -1
    if_icmpeq              LABEL19
    jump                   LABEL22
 LABEL19:
-   035                   
+   sload                  0
    load_string            ""
    return                
 LABEL22:
-   033                    1
+   iload                  1
    load_int               0
    if_icmpeq              LABEL26
    jump                   LABEL32
 LABEL26:
    load_string            ""
-   035                   
+   sload                  0
    load_int               1
-   033                   
+   iload                  0
    string_substring      
    return                
 LABEL32:
-   033                    1
+   iload                  1
    load_int               1
    iadd                  
-   033                   
+   iload                  0
    if_icmpge              LABEL38
    jump                   LABEL44
 LABEL38:
-   035                   
+   sload                  0
    load_int               0
-   033                    1
+   iload                  1
    string_substring      
    load_string            ""
    return                
 LABEL44:
-   035                   
+   sload                  0
    load_int               0
-   033                    1
+   iload                  1
    string_substring      
-   035                   
-   033                    1
+   sload                  0
+   iload                  1
    load_int               1
    iadd                  
-   033                   
+   iload                  0
    string_substring      
    return                
    load_string            ""

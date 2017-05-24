@@ -1,3 +1,7 @@
+.int_stack_count    2
+.string_stack_count 2
+.int_var_count      3
+.string_var_count   2
    load_int               38273024
    102                   
    load_int               38273024
@@ -54,25 +58,25 @@
    load_int               1
    load_int               0
    1114                  
-   035                   
+   sload                  0
    1112                  
-   035                   
+   sload                  0
    load_int               479
    load_int               497
    4109                  
-   034                    2
-   033                    2
+   istore                 2
+   iload                  2
    load_int               330
-   040                    1045
-   034                    2
-   033                    2
+   invoke                 1045
+   istore                 2
+   iload                  2
    load_int               57
    iadd                  
    load_int               2
    idiv                  
    load_int               5
    iadd                  
-   034                    2
+   istore                 2
    load_int               38273024
    load_int               5
    load_int               3
@@ -92,13 +96,13 @@
    load_int               0
    1001                   1
    load_int               0
-   033                    2
+   iload                  2
    isub                  
    load_int               9
    load_int               1
    load_int               0
    1000                  
-   033                    2
+   iload                  2
    load_int               9
    load_int               1
    load_int               0
@@ -110,7 +114,7 @@
    load_int               31462208
    load_int               837800831
    get_coordinates       
-   040                    247
+   invoke                 247
    load_int               1
    if_icmpeq              LABEL116
    jump                   LABEL122
@@ -119,29 +123,29 @@ LABEL116:
    load_string            "Yes"
    load_int               1
    load_string            "Yy"
-   040                    815
+   invoke                 815
    jump                   LABEL127
 LABEL122:
    load_int               38273025
    load_string            "Yes"
    load_int               1
    load_string            "1Yy"
-   040                    815
+   invoke                 815
 LABEL127:
    load_int               38273027
    load_string            "No"
    load_int               0
    load_string            "2Nn"
-   040                    815
-   033                   
-   033                    1
+   invoke                 815
+   iload                  0
+   iload                  1
    load_int               38273029
    2200                  
-   033                   
+   iload                  0
    get_item_name         
    load_int               38273030
    2112                  
-   035                    1
+   sload                  1
    load_int               38273031
    2112                  
    return                

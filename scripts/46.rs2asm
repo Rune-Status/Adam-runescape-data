@@ -1,90 +1,94 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 1
+.int_var_count      5
+.string_var_count   1
+   iload                  0
    load_int               1000000000
    idiv                  
-   034                    1
-   033                   
-   033                    1
+   istore                 1
+   iload                  0
+   iload                  1
    load_int               1000000000
    imul                  
    isub                  
    load_int               1000000
    idiv                  
-   034                    2
-   033                   
-   033                    1
+   istore                 2
+   iload                  0
+   iload                  1
    load_int               1000000000
    imul                  
-   033                    2
+   iload                  2
    load_int               1000000
    imul                  
    iadd                  
    isub                  
    load_int               1000
    idiv                  
-   034                    3
-   033                   
-   033                    1
+   istore                 3
+   iload                  0
+   iload                  1
    load_int               1000000000
    imul                  
-   033                    2
+   iload                  2
    load_int               1000000
    imul                  
    iadd                  
-   033                    3
+   iload                  3
    load_int               1000
    imul                  
    iadd                  
    isub                  
-   034                    4
-   033                    1
+   istore                 4
+   iload                  1
    load_int               0
    if_icmpgt              LABEL42
    jump                   LABEL55
 LABEL42:
-   033                    1
+   iload                  1
    int_to_string         
-   035                   
-   033                    2
-   040                    47
-   035                   
-   033                    3
-   040                    47
-   035                   
-   033                    4
-   040                    47
+   sload                  0
+   iload                  2
+   invoke                 47
+   sload                  0
+   iload                  3
+   invoke                 47
+   sload                  0
+   iload                  4
+   invoke                 47
    037                    7
    return                
 LABEL55:
-   033                    2
+   iload                  2
    load_int               0
    if_icmpgt              LABEL59
    jump                   LABEL69
 LABEL59:
-   033                    2
+   iload                  2
    int_to_string         
-   035                   
-   033                    3
-   040                    47
-   035                   
-   033                    4
-   040                    47
+   sload                  0
+   iload                  3
+   invoke                 47
+   sload                  0
+   iload                  4
+   invoke                 47
    037                    5
    return                
 LABEL69:
-   033                    3
+   iload                  3
    load_int               0
    if_icmpgt              LABEL73
    jump                   LABEL80
 LABEL73:
-   033                    3
+   iload                  3
    int_to_string         
-   035                   
-   033                    4
-   040                    47
+   sload                  0
+   iload                  4
+   invoke                 47
    037                    3
    return                
 LABEL80:
-   033                   
+   iload                  0
    int_to_string         
    return                
    load_string            ""

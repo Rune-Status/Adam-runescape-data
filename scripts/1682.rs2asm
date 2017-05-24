@@ -1,24 +1,28 @@
-   033                   
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  0
    102                   
    load_int               0
-   034                    2
-   033                    1
+   istore                 2
+   iload                  1
    load_int               1
    if_icmpeq              LABEL8
    jump                   LABEL12
 LABEL8:
-   033                   
-   040                    198
-   034                    2
+   iload                  0
+   invoke                 198
+   istore                 2
    jump                   LABEL15
 LABEL12:
-   033                   
-   040                    208
-   034                    2
+   iload                  0
+   invoke                 208
+   istore                 2
 LABEL15:
-   033                   
+   iload                  0
    load_int               6
-   033                    2
+   iload                  2
    100                   
    load_int               42
    load_int               42

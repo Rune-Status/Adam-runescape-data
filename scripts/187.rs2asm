@@ -1,5 +1,9 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
    load_int               0
-   034                    1
+   istore                 1
    get_ismembers         
    load_int               1
    if_icmpeq              LABEL9
@@ -15,9 +19,9 @@ LABEL9:
    load_int               3
    3301                  
    3408                  
-   034                    1
+   istore                 1
 LABEL17:
-   033                    1
+   iload                  1
    load_int               0
    if_icmple              LABEL21
    jump                   LABEL25
@@ -28,7 +32,7 @@ LABEL21:
    return                
 LABEL25:
    load_int               0
-   034                    2
+   istore                 2
    load_int               38862877
    widget_get_hidden_widget
    load_int               1
@@ -36,7 +40,7 @@ LABEL25:
    jump                   LABEL34
 LABEL32:
    load_int               1
-   034                    2
+   istore                 2
 LABEL34:
    load_int               0
    load_int               38862877
@@ -56,17 +60,17 @@ LABEL45:
    widget_put_textcolor_widget
 LABEL48:
    get_settings           300
-   034                    3
-   033                    3
+   istore                 3
+   iload                  3
    load_int               0
    if_icmplt              LABEL54
    jump                   LABEL56
 LABEL54:
    load_int               0
-   034                    3
+   istore                 3
 LABEL56:
    load_string            "Special Attack: "
-   033                    3
+   iload                  3
    load_int               10
    idiv                  
    int_to_string         
@@ -74,12 +78,12 @@ LABEL56:
    037                    3
    load_int               38862882
    2112                  
-   033                   
-   033                    3
-   033                    2
-   040                    189
-   033                    3
-   033                    1
+   iload                  0
+   iload                  3
+   iload                  2
+   invoke                 189
+   iload                  3
+   iload                  1
    if_icmpge              LABEL73
    jump                   LABEL77
 LABEL73:

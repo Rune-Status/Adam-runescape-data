@@ -1,3 +1,7 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   1
    load_string            "Party size: "
    load_string            "<col=ffffff>"
    025                    5424
@@ -58,7 +62,7 @@ LABEL42:
    1112                   1
 LABEL47:
    load_string            "Start raid"
-   036                   
+   sstore                
    025                    5423
    load_int               1
    if_icmpeq              LABEL53
@@ -69,78 +73,78 @@ LABEL53:
    if_icmpeq              LABEL57
    jump                   LABEL106
 LABEL57:
-   035                   
+   sload                  0
    load_int               190
    load_int               495
    4109                  
    load_int               20
    iadd                  
-   033                    1
+   iload                  1
    widget_get_height_widget
    load_int               0
    load_int               0
-   033                    1
+   iload                  1
    2001                  
    load_int               0
-   033                    1
+   iload                  1
    widget_put_hidden_widget
    load_int               0
-   035                   
-   033                    1
-   040                    1542
+   sload                  0
+   iload                  1
+   invoke                 1542
    load_int               1541
    load_int               1
-   035                   
-   033                    1
+   sload                  0
+   iload                  1
    load_string            "1sI"
-   033                    1
+   iload                  1
    2412                  
    load_int               1541
    load_int               0
-   035                   
-   033                    1
+   sload                  0
+   iload                  1
    load_string            "1sI"
-   033                    1
+   iload                  1
    2404                  
    load_int               1543
    load_int               -2147483644
-   035                   
-   033                    1
+   sload                  0
+   iload                  1
    load_string            "isI"
-   033                    1
+   iload                  1
    2409                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2408                  
    load_int               1
-   035                   
-   033                    1
+   sload                  0
+   iload                  1
    2300                  
    jump                   LABEL129
 LABEL106:
    load_int               1
-   033                    1
+   iload                  1
    widget_put_hidden_widget
-   033                    1
+   iload                  1
    102                   
-   033                    1
+   iload                  1
    widget_put_actions_null_widget
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2412                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2404                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2409                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2408                  
 LABEL129:
    return                

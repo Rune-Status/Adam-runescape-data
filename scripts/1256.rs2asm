@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    6
+.string_stack_count 1
+.int_var_count      6
+.string_var_count   1
+   iload                  0
    load_int               1
    if_icmpne              LABEL4
    jump                   LABEL5
@@ -10,40 +14,40 @@ LABEL5:
    load_int               0
    3200                  
    load_int               1
-   033                    1
-   035                   
+   iload                  1
+   sload                  0
    load_string            "<col=7f7f7f>"
    load_string            "Requesting..."
    load_string            "</col>"
    037                    3
-   033                    5
-   040                    1255
+   iload                  5
+   invoke                 1255
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2412                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2404                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2409                  
    load_int               1
    load_string            ""
-   033                    1
+   iload                  1
    2300                  
    load_int               1257
    get_gamecycle         
    load_int               40
    iadd                  
-   033                    1
-   033                    2
-   035                   
-   033                    3
-   033                    4
+   iload                  1
+   iload                  2
+   sload                  0
+   iload                  3
+   iload                  4
    load_string            "iIisoo"
-   033                    1
+   iload                  1
    2408                  
    return                

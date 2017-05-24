@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
+   iload                  0
    load_int               5341
    if_icmpeq              LABEL4
    jump                   LABEL9
@@ -9,7 +13,7 @@ LABEL4:
    load_int               5341
    return                
 LABEL9:
-   033                   
+   iload                  0
    load_int               5343
    if_icmpeq              LABEL13
    jump                   LABEL18
@@ -20,7 +24,7 @@ LABEL13:
    load_int               5343
    return                
 LABEL18:
-   033                   
+   iload                  0
    load_int               952
    if_icmpeq              LABEL22
    jump                   LABEL27
@@ -32,8 +36,8 @@ LABEL22:
    return                
 LABEL27:
    load_int               0
-   034                    1
-   033                   
+   istore                 1
+   iload                  0
    load_int               5329
    if_icmpeq              LABEL33
    jump                   LABEL53
@@ -41,13 +45,13 @@ LABEL33:
    load_int               93
    load_int               7409
    3303                  
-   034                    1
-   033                    1
+   istore                 1
+   iload                  1
    load_int               0
    if_icmpgt              LABEL41
    jump                   LABEL48
 LABEL41:
-   033                    1
+   iload                  1
    load_int               93
    load_int               5329
    3303                  
@@ -62,22 +66,22 @@ LABEL48:
    return                
 LABEL53:
    load_int               0
-   034                    2
+   istore                 2
    load_int               -1
-   034                    3
+   istore                 3
    load_int               0
-   034                    4
+   istore                 4
    load_int               -1
-   034                    5
-   033                   
+   istore                 5
+   iload                  0
    load_int               6797
    if_icmpeq              LABEL65
    jump                   LABEL107
 LABEL65:
    load_int               15
-   034                    2
+   istore                 2
 LABEL67:
-   033                    2
+   iload                  2
    load_int               0
    if_icmpge              LABEL71
    jump                   LABEL104
@@ -85,46 +89,46 @@ LABEL71:
    load_int               105
    load_int               79
    load_int               136
-   033                    2
+   iload                  2
    3408                  
-   034                    3
-   033                    3
+   istore                 3
+   iload                  3
    load_int               -1
    if_icmpne              LABEL81
    jump                   LABEL99
 LABEL81:
    load_int               93
-   033                    3
+   iload                  3
    3303                  
-   034                    4
-   033                    4
+   istore                 4
+   iload                  4
    load_int               0
    if_icmpgt              LABEL89
    jump                   LABEL99
 LABEL89:
-   033                    1
-   033                    4
+   iload                  1
+   iload                  4
    iadd                  
-   034                    1
-   033                    5
+   istore                 1
+   iload                  5
    load_int               -1
    if_icmpeq              LABEL97
    jump                   LABEL99
 LABEL97:
-   033                    3
-   034                    5
+   iload                  3
+   istore                 5
 LABEL99:
-   033                    2
+   iload                  2
    load_int               1
    isub                  
-   034                    2
+   istore                 2
    jump                   LABEL67
 LABEL104:
-   033                    1
-   033                    5
+   iload                  1
+   iload                  5
    return                
 LABEL107:
-   033                   
+   iload                  0
    load_int               5325
    if_icmpeq              LABEL111
    jump                   LABEL116
@@ -135,7 +139,7 @@ LABEL111:
    load_int               5325
    return                
 LABEL116:
-   033                   
+   iload                  0
    load_int               1925
    if_icmpeq              LABEL120
    jump                   LABEL125
@@ -146,7 +150,7 @@ LABEL120:
    load_int               1925
    return                
 LABEL125:
-   033                   
+   iload                  0
    load_int               6032
    if_icmpeq              LABEL129
    jump                   LABEL134
@@ -157,7 +161,7 @@ LABEL129:
    load_int               6032
    return                
 LABEL134:
-   033                   
+   iload                  0
    load_int               6034
    if_icmpeq              LABEL138
    jump                   LABEL143

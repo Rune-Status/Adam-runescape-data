@@ -1,6 +1,10 @@
-   033                    1
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      7
+.string_var_count   0
+   iload                  1
    102                   
-   033                    1
+   iload                  1
    load_int               5
    load_int               0
    100                   
@@ -15,13 +19,13 @@
    1107                  
    load_int               100
    widget_put_opacity    
-   033                    1
+   iload                  1
    load_int               1
-   040                    575
-   034                    3
-   033                    1
+   invoke                 575
+   istore                 3
+   iload                  1
    load_int               4
-   033                    3
+   iload                  3
    100                   
    load_int               494
    widget_put_fontid     
@@ -33,9 +37,9 @@
    1115                  
    load_int               16750623
    widget_put_textcolor  
-   033                    1
+   iload                  1
    load_int               4
-   033                    3
+   iload                  3
    load_int               1
    iadd                  
    100                   
@@ -49,9 +53,9 @@
    1115                  
    load_int               13565952
    widget_put_textcolor  
-   033                    1
+   iload                  1
    load_int               4
-   033                    3
+   iload                  3
    load_int               2
    iadd                  
    100                   
@@ -65,9 +69,9 @@
    1115                  
    load_int               8355839
    widget_put_textcolor  
-   033                    1
+   iload                  1
    load_int               4
-   033                    3
+   iload                  3
    load_int               3
    iadd                  
    100                   
@@ -81,35 +85,35 @@
    1115                  
    load_int               16750623
    widget_put_textcolor  
-   033                   
-   033                    1
-   033                    3
-   040                    595
-   033                    2
+   iload                  0
+   iload                  1
+   iload                  3
+   invoke                 595
+   iload                  2
    102                   
    load_int               0
-   034                    4
-   033                    2
+   istore                 4
+   iload                  2
    widget_get_width_widget
-   034                    5
-   033                    2
+   istore                 5
+   iload                  2
    widget_get_height_widget
-   034                    6
-   033                    2
+   istore                 6
+   iload                  2
    load_int               5
-   033                    4
+   iload                  4
    100                   
-   033                    4
+   iload                  4
    load_int               1
    iadd                  
-   034                    4
+   istore                 4
    load_int               0
    load_int               0
    load_int               0
    load_int               0
    1000                  
-   033                    5
-   033                    6
+   iload                  5
+   iload                  6
    load_int               0
    load_int               0
    1001                  
@@ -119,21 +123,21 @@
    1107                  
    load_int               100
    widget_put_opacity    
-   033                    2
-   033                    4
-   040                    575
-   034                    4
-   033                    2
+   iload                  2
+   iload                  4
+   invoke                 575
+   istore                 4
+   iload                  2
    load_int               4
-   033                    4
+   iload                  4
    100                   
    load_int               0
    load_int               0
    load_int               0
    load_int               0
    1000                  
-   033                    5
-   033                    6
+   iload                  5
+   iload                  6
    load_int               0
    load_int               0
    1001                  
@@ -145,15 +149,15 @@
    1114                  
    load_int               1
    1115                  
-   033                   
-   033                    2
-   040                    596
+   iload                  0
+   iload                  2
+   invoke                 596
    load_int               594
-   033                   
-   033                    1
-   033                    3
-   033                    2
-   033                    4
+   iload                  0
+   iload                  1
+   iload                  3
+   iload                  2
+   iload                  4
    load_int               92
    load_int               93
    load_int               94
@@ -161,6 +165,6 @@
    load_int               98
    load_int               5
    load_string            "IIiIiY"
-   033                   
+   iload                  0
    2407                  
    return                

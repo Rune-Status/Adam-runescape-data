@@ -1,21 +1,25 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   1
    load_int               105
    load_int               115
    load_int               835
-   033                   
+   iload                  0
    3408                  
-   036                   
+   sstore                
    025                    5037
    load_int               1
    if_icmpeq              LABEL10
    jump                   LABEL15
 LABEL10:
-   035                   
+   sload                  0
    load_string            "Nieve"
    load_string            "Steve"
-   040                    1299
-   036                   
+   invoke                 1299
+   sstore                
 LABEL15:
-   035                   
+   sload                  0
    return                
    load_string            ""
    return                

@@ -1,5 +1,9 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   3
    042                    57
-   034                    1
+   istore                 1
    get_gamecycle         
    043                    57
    042                    41
@@ -10,65 +14,65 @@ LABEL8:
    return                
 LABEL9:
    load_int               0
-   034                    2
+   istore                 2
    042                    41
    load_int               -1
    if_icmpeq              LABEL15
    jump                   LABEL17
 LABEL15:
    load_int               1
-   034                    2
+   istore                 2
 LABEL17:
    load_int               0
-   034                    3
+   istore                 3
    load_int               -1
-   034                    4
+   istore                 4
    load_string            ""
-   036                   
+   sstore                
    load_string            ""
-   036                    1
+   sstore                 1
    load_string            ""
-   036                    2
+   sstore                 2
 LABEL27:
-   033                   
+   iload                  0
    load_int               -1
    if_icmpne              LABEL31
    jump                   LABEL89
 LABEL31:
-   033                   
+   iload                  0
    5004                  
-   036                    2
-   036                    1
-   036                   
-   034                    4
-   034                    3
-   033                    4
-   033                    1
+   sstore                 2
+   sstore                 1
+   sstore                
+   istore                 4
+   istore                 3
+   iload                  4
+   iload                  1
    if_icmple              LABEL42
    jump                   LABEL43
 LABEL42:
    return                
 LABEL43:
-   033                    3
-   035                   
-   035                    2
-   033                    4
-   033                    2
+   iload                  3
+   sload                  0
+   sload                  2
+   iload                  4
+   iload                  2
    get_localplayer_name  
    string_remove_html    
-   040                    90
+   invoke                 90
    load_int               1
    if_icmpeq              LABEL54
    jump                   LABEL85
 LABEL54:
-   033                    3
-   035                   
-   040                    210
+   iload                  3
+   sload                  0
+   invoke                 210
    load_int               0
    if_icmpeq              LABEL60
    jump                   LABEL85
 LABEL60:
-   033                    3
+   iload                  3
    switch                
       1: LABEL63
       2: LABEL63
@@ -85,36 +89,36 @@ LABEL60:
    jump                   LABEL75
 LABEL63:
    load_int               2
-   040                    180
+   invoke                 180
    jump                   LABEL85
 LABEL66:
    load_int               3
-   040                    180
+   invoke                 180
    jump                   LABEL85
 LABEL69:
    load_int               5
-   040                    180
+   invoke                 180
    jump                   LABEL85
 LABEL72:
    load_int               4
-   040                    180
+   invoke                 180
    jump                   LABEL85
 LABEL75:
    load_int               105
    load_int               49
    load_int               892
-   033                    3
+   iload                  3
    3408                  
    load_int               1
    if_icmpeq              LABEL83
    jump                   LABEL85
 LABEL83:
    load_int               1
-   040                    180
+   invoke                 180
 LABEL85:
-   033                   
+   iload                  0
    5019                  
-   034                   
+   istore                
    jump                   LABEL27
 LABEL89:
    return                

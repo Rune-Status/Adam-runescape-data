@@ -1,12 +1,16 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   4
    load_string            "<col=0000ff>"
-   036                   
-   040                    921
+   sstore                
+   invoke                 921
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL15
 LABEL6:
    load_string            "<col=9090ff>"
-   036                   
+   sstore                
    load_int               16777215
    load_int               10616874
    widget_put_textcolor_widget
@@ -24,19 +28,19 @@ LABEL15:
 LABEL21:
    047                    1
    string_length         
-   034                   
+   istore                
    047                    1
    4111                  
-   036                    1
+   sstore                 1
    load_string            ""
-   036                    2
+   sstore                 2
    025                    1777
    load_int               1
    if_icmpeq              LABEL33
    jump                   LABEL36
 LABEL33:
    load_string            "<img=2>"
-   036                    2
+   sstore                 2
    jump                   LABEL49
 LABEL36:
    025                    1777
@@ -45,7 +49,7 @@ LABEL36:
    jump                   LABEL43
 LABEL40:
    load_string            "<img=3>"
-   036                    2
+   sstore                 2
    jump                   LABEL49
 LABEL43:
    025                    1777
@@ -54,35 +58,35 @@ LABEL43:
    jump                   LABEL49
 LABEL47:
    load_string            "<img=10>"
-   036                    2
+   sstore                 2
 LABEL49:
-   035                    2
+   sload                  2
    get_localplayer_name  
    load_string            ":?"
-   035                   
-   035                    1
+   sload                  0
+   sload                  1
    load_string            "</col>"
    037                    6
-   036                    3
-   033                   
+   sstore                 3
+   iload                  0
    load_int               80
    if_icmplt              LABEL61
    jump                   LABEL68
 LABEL61:
-   035                    3
-   035                   
+   sload                  3
+   sload                  0
    load_string            "*"
    load_string            "</col>"
    037                    3
    concat_string         
-   036                    3
+   sstore                 3
 LABEL68:
-   035                    3
+   sload                  3
    load_int               2147483647
    load_int               495
    4109                  
-   034                    1
-   033                    1
+   istore                 1
+   iload                  1
    load_int               10616874
    widget_get_width_widget
    if_icmpgt              LABEL78
@@ -101,7 +105,7 @@ LABEL84:
    load_int               10616874
    2114                  
 LABEL89:
-   035                    3
+   sload                  3
    load_int               10616874
    2112                  
    load_int               3

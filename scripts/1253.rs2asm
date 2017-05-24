@@ -1,103 +1,107 @@
+.int_stack_count    4
+.string_stack_count 1
+.int_var_count      5
+.string_var_count   2
    load_int               -1
    load_string            ""
-   033                   
+   iload                  0
    2408                  
-   033                    2
-   034                    4
+   iload                  2
+   istore                 4
    load_string            "<col=ff0000>"
    load_string            "Not owned"
    load_string            "</col>"
    037                    3
-   036                    1
-   033                    1
+   sstore                 1
+   iload                  1
    load_int               3
    if_icmpge              LABEL15
    jump                   LABEL27
 LABEL15:
    load_int               1
    load_string            "Take"
-   033                   
+   iload                  0
    2300                  
-   033                    3
+   iload                  3
    load_string            "<col=00ff00>"
    load_string            "Complete"
    load_string            "</col>"
    037                    3
-   036                    1
-   034                    4
+   sstore                 1
+   istore                 4
    jump                   LABEL53
 LABEL27:
-   033                    1
+   iload                  1
    load_int               2
    if_icmpeq              LABEL31
    jump                   LABEL38
 LABEL31:
    load_int               1
    load_string            "Take"
-   033                   
+   iload                  0
    2300                  
    load_string            "Incomplete"
-   036                    1
+   sstore                 1
    jump                   LABEL53
 LABEL38:
-   033                    1
+   iload                  1
    load_int               1
    if_icmpeq              LABEL42
    jump                   LABEL49
 LABEL42:
    load_int               1
    load_string            "Retrieve"
-   033                   
+   iload                  0
    2300                  
    load_string            "Missing"
-   036                    1
+   sstore                 1
    jump                   LABEL53
 LABEL49:
    load_int               1
    load_string            "Unlock"
-   033                   
+   iload                  0
    2300                  
 LABEL53:
    load_string            "<col=ff9040>"
-   033                    4
+   iload                  4
    get_item_name         
    load_string            "</col>"
    037                    3
-   033                   
+   iload                  0
    widget_put_name_widget
    load_int               0
-   033                   
-   035                   
-   035                    1
-   033                    4
-   040                    1255
+   iload                  0
+   sload                  0
+   sload                  1
+   iload                  4
+   invoke                 1255
    load_int               1254
    load_int               1
-   033                   
-   035                   
-   035                    1
-   033                    4
+   iload                  0
+   sload                  0
+   sload                  1
+   iload                  4
    load_string            "1Isso"
-   033                   
+   iload                  0
    2412                  
    load_int               1254
    load_int               0
-   033                   
-   035                   
-   035                    1
-   033                    4
+   iload                  0
+   sload                  0
+   sload                  1
+   iload                  4
    load_string            "1Isso"
-   033                   
+   iload                  0
    2404                  
    load_int               1256
    load_int               -2147483644
-   033                   
-   033                    1
-   035                   
-   033                    2
-   033                    3
-   033                    4
+   iload                  0
+   iload                  1
+   sload                  0
+   iload                  2
+   iload                  3
+   iload                  4
    load_string            "iIisooo"
-   033                   
+   iload                  0
    2409                  
    return                

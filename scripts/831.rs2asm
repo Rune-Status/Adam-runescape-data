@@ -1,55 +1,59 @@
+.int_stack_count    6
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   1
    042                    75
-   033                    2
+   iload                  2
    widget_put_hidden_widget
    load_int               833
-   033                    4
-   033                    3
+   iload                  4
+   iload                  3
    load_int               -2147483647
    load_string            "IIi"
-   033                    4
+   iload                  4
    2405                  
    load_int               1043
-   033                    4
-   033                    3
+   iload                  4
+   iload                  3
    load_int               -2147483647
    load_string            "IIi"
-   033                    4
+   iload                  4
    2410                  
    load_string            "Click here to enable zooming using the mouse scroll wheel."
-   036                   
+   sstore                
    042                    75
    load_int               1
    if_icmpeq              LABEL23
    jump                   LABEL25
 LABEL23:
    load_string            "Click here to disable zooming using the mouse scroll wheel."
-   036                   
+   sstore                
 LABEL25:
    load_int               526
-   033                   
+   iload                  0
    load_int               -1
-   033                    5
-   035                   
+   iload                  5
+   sload                  0
    load_int               25
    load_int               190
    load_string            "IiIsii"
-   033                   
+   iload                  0
    2412                  
    load_int               40
-   033                    5
+   iload                  5
    load_string            "I"
-   033                   
+   iload                  0
    2404                  
    load_int               832
    load_int               1
-   033                    1
+   iload                  1
    load_string            "iI"
-   033                    1
+   iload                  1
    2403                  
    load_int               832
    load_int               0
-   033                    1
+   iload                  1
    load_string            "iI"
-   033                    1
+   iload                  1
    2404                  
    return                

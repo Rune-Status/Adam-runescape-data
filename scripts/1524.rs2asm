@@ -1,6 +1,10 @@
+.int_stack_count    3
+.string_stack_count 1
+.int_var_count      4
+.string_var_count   2
    load_int               73
    load_int               73
-   040                    900
+   invoke                 900
    load_int               10551308
    3408                  
    2702                  
@@ -16,21 +20,21 @@ LABEL10:
    042                    178
    load_int               14
    imul                  
-   034                    3
-   033                    3
+   istore                 3
+   iload                  3
    load_int               33226762
    widget_get_height_widget
    if_icmpgt              LABEL22
    jump                   LABEL31
 LABEL22:
    load_int               0
-   033                    3
+   iload                  3
    load_int               33226762
    widget_put_scrollwidthheight_widget
    load_int               33226763
    load_int               33226762
    042                    179
-   040                    72
+   invoke                 72
    jump                   LABEL41
 LABEL31:
    load_int               0
@@ -42,7 +46,7 @@ LABEL31:
    load_int               33226763
    load_int               33226762
    load_int               0
-   040                    72
+   invoke                 72
 LABEL41:
    042                    181
    load_int               0
@@ -78,9 +82,9 @@ LABEL65:
    043                    181
 LABEL67:
    load_int               -1
-   040                    1525
-   040                    1523
-   040                    1537
+   invoke                 1525
+   invoke                 1523
+   invoke                 1537
    load_int               1536
    load_int               1430
    load_int               1
@@ -88,51 +92,51 @@ LABEL67:
    load_int               33226762
    2407                  
    load_int               33226754
-   035                   
+   sload                  0
    load_int               0
-   040                    228
+   invoke                 228
    pop_int               
    load_string            ""
-   036                    1
-   033                   
+   sstore                 1
+   iload                  0
    load_int               2
    if_icmpeq              LABEL88
    jump                   LABEL133
 LABEL88:
-   033                    1
+   iload                  1
    load_int               1
    if_icmpeq              LABEL92
    jump                   LABEL95
 LABEL92:
    load_string            "De-list"
-   036                    1
+   sstore                 1
    jump                   LABEL111
 LABEL95:
-   033                    2
+   iload                  2
    load_int               0
    if_icmpgt              LABEL99
    jump                   LABEL106
 LABEL99:
    load_string            "Advertise ("
-   033                    2
+   iload                  2
    int_to_string         
    load_string            ")"
    037                    3
-   036                    1
+   sstore                 1
    jump                   LABEL111
 LABEL106:
    load_string            "<col=7f7f7f>"
    load_string            "Advertise (0)"
    load_string            "</col>"
    037                    3
-   036                    1
+   sstore                 1
 LABEL111:
    load_int               33226780
-   035                    1
+   sload                  1
    load_int               33226755
    load_int               1539
    load_int               -1
-   040                    1558
+   invoke                 1558
    load_int               0
    load_int               33226780
    widget_put_hidden_widget
@@ -144,13 +148,13 @@ LABEL111:
    load_int               33226755
    load_int               1539
    load_int               -1
-   040                    1558
+   invoke                 1558
    load_int               0
    load_int               33226781
    widget_put_hidden_widget
    jump                   LABEL162
 LABEL133:
-   033                   
+   iload                  0
    load_int               1
    if_icmpeq              LABEL137
    jump                   LABEL150
@@ -163,7 +167,7 @@ LABEL137:
    load_int               33226755
    load_int               1539
    load_int               -1
-   040                    1558
+   invoke                 1558
    load_int               0
    load_int               33226782
    widget_put_hidden_widget
@@ -177,7 +181,7 @@ LABEL150:
    load_int               33226755
    load_int               1539
    load_int               -1
-   040                    1558
+   invoke                 1558
    load_int               0
    load_int               33226782
    widget_put_hidden_widget
@@ -187,7 +191,7 @@ LABEL162:
    load_int               33226755
    load_int               1539
    load_int               -1
-   040                    1558
+   invoke                 1558
    load_int               0
    load_int               33226783
    widget_put_hidden_widget
@@ -196,20 +200,20 @@ LABEL162:
    load_int               33226755
    load_int               1539
    load_int               -1
-   040                    1558
+   invoke                 1558
    load_int               0
    load_int               33226784
    widget_put_hidden_widget
    load_int               33226764
    load_string            "Preferred party size"
-   033                   
-   040                    1530
+   iload                  0
+   invoke                 1530
    load_int               33226768
    load_string            "Preferred combat level"
-   033                   
-   040                    1530
+   iload                  0
+   invoke                 1530
    load_int               33226772
    load_string            "Preferred skill total"
-   033                   
-   040                    1530
+   iload                  0
+   invoke                 1530
    return                

@@ -1,17 +1,21 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   1
    load_string            "Resizable mode stone buttons:"
    load_string            "<br>"
    load_string            "'Old School Box'"
    037                    3
-   036                   
+   sstore                
    025                    4607
    load_int               0
    if_icmpeq              LABEL9
    jump                   LABEL49
 LABEL9:
    load_int               761
-   033                   
+   iload                  0
    widget_put_textureid_widget
-   033                    1
+   iload                  1
    load_int               0
    200                   
    load_int               1
@@ -21,7 +25,7 @@ LABEL18:
    load_int               9408399
    widget_put_textcolor  
 LABEL20:
-   033                    1
+   iload                  1
    load_int               1
    200                   
    load_int               1
@@ -31,7 +35,7 @@ LABEL26:
    load_int               9408399
    widget_put_textcolor  
 LABEL28:
-   033                    1
+   iload                  1
    load_int               2
    200                   
    load_int               1
@@ -43,22 +47,22 @@ LABEL34:
 LABEL36:
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2412                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2404                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2409                  
    jump                   LABEL124
 LABEL49:
    load_int               762
-   033                   
+   iload                  0
    widget_put_textureid_widget
-   033                    1
+   iload                  1
    load_int               0
    200                   
    load_int               1
@@ -68,7 +72,7 @@ LABEL58:
    load_int               16750623
    widget_put_textcolor  
 LABEL60:
-   033                    1
+   iload                  1
    load_int               1
    200                   
    load_int               1
@@ -89,8 +93,8 @@ LABEL72:
    load_string            "<br>"
    load_string            "The hotkeys will not close the side-panels."
    037                    5
-   036                   
-   033                    1
+   sstore                
+   iload                  1
    load_int               2
    200                   
    load_int               1
@@ -108,8 +112,8 @@ LABEL88:
    load_string            "<br>"
    load_string            "The hotkeys can close the side-panels."
    037                    5
-   036                   
-   033                    1
+   sstore                
+   iload                  1
    load_int               2
    200                   
    load_int               1
@@ -123,33 +127,33 @@ LABEL103:
    load_int               1
    load_int               -2147483645
    load_string            "1I"
-   033                    1
+   iload                  1
    2412                  
    load_int               121
    load_int               0
    load_int               -2147483645
    load_string            "1I"
-   033                    1
+   iload                  1
    2404                  
    load_int               850
    load_int               -2147483644
    load_int               1
-   033                   
-   033                    1
-   033                    2
+   iload                  0
+   iload                  1
+   iload                  2
    load_string            "i1III"
-   033                    1
+   iload                  1
    2409                  
 LABEL124:
    load_int               526
-   033                   
+   iload                  0
    load_int               -1
-   033                    2
-   035                   
+   iload                  2
+   sload                  0
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   033                   
+   iload                  0
    2412                  
    load_int               0
    043                    2

@@ -1,180 +1,184 @@
-   033                    1
+.int_stack_count    29
+.string_stack_count 0
+.int_var_count      30
+.string_var_count   1
+   iload                  1
    043                    81
-   033                    2
+   iload                  2
    043                    82
-   033                    3
+   iload                  3
    043                    83
-   033                    4
+   iload                  4
    043                    84
-   033                    5
+   iload                  5
    043                    85
-   033                    6
+   iload                  6
    043                    86
-   033                    7
+   iload                  7
    043                    87
-   033                    8
+   iload                  8
    043                    88
-   033                    9
+   iload                  9
    043                    89
-   033                    10
+   iload                  10
    043                    90
-   033                    11
+   iload                  11
    043                    91
-   033                    12
+   iload                  12
    043                    92
-   033                    13
+   iload                  13
    043                    93
-   033                    14
+   iload                  14
    043                    94
-   033                    15
+   iload                  15
    043                    95
-   033                    16
+   iload                  16
    043                    96
-   033                    17
+   iload                  17
    043                    97
-   033                    18
+   iload                  18
    043                    98
-   033                    19
+   iload                  19
    043                    99
-   033                    20
+   iload                  20
    043                    100
-   033                    21
+   iload                  21
    043                    101
-   033                    22
+   iload                  22
    043                    102
-   033                    23
+   iload                  23
    043                    104
-   033                    24
+   iload                  24
    043                    105
-   033                    25
+   iload                  25
    043                    106
-   033                    26
+   iload                  26
    043                    107
-   033                    27
+   iload                  27
    043                    108
-   033                    28
+   iload                  28
    043                    109
-   033                   
+   iload                  0
    3304                  
-   034                    29
-   033                    29
+   istore                 29
+   iload                  29
    044                    105
    load_int               0
-   033                    1
+   iload                  1
    046                   
    load_int               1
-   033                    2
+   iload                  2
    046                   
    load_int               2
-   033                    3
+   iload                  3
    046                   
    load_int               3
-   033                    4
+   iload                  4
    046                   
    load_int               4
-   033                    5
+   iload                  5
    046                   
    load_int               5
-   033                    6
+   iload                  6
    046                   
    load_int               6
-   033                    7
+   iload                  7
    046                   
    load_int               7
-   033                    8
+   iload                  8
    046                   
    load_int               8
-   033                    9
+   iload                  9
    046                   
    load_int               9
-   033                    10
+   iload                  10
    046                   
    load_int               10
-   033                    11
+   iload                  11
    046                   
    load_int               11
-   033                    12
+   iload                  12
    046                   
    load_int               12
-   033                    13
+   iload                  13
    046                   
    load_int               13
-   033                    14
+   iload                  14
    046                   
    load_int               14
-   033                    15
+   iload                  15
    046                   
    load_int               15
-   033                    16
+   iload                  16
    046                   
    load_int               16
-   033                    17
+   iload                  17
    046                   
    load_int               17
-   033                    18
+   iload                  18
    046                   
    load_int               18
-   033                    19
+   iload                  19
    046                   
    load_int               19
-   033                    20
+   iload                  20
    046                   
    load_int               20
-   033                    21
+   iload                  21
    046                   
    load_int               21
-   033                    22
+   iload                  22
    046                   
    load_int               22
-   033                    23
+   iload                  23
    046                   
    load_int               23
-   033                    24
+   iload                  24
    046                   
    load_int               24
-   033                    25
+   iload                  25
    046                   
    load_int               25
-   033                    26
+   iload                  26
    046                   
    load_int               26
-   033                    27
+   iload                  27
    046                   
    load_int               27
-   033                    28
+   iload                  28
    046                   
    load_string            "Invalid item."
-   036                   
+   sstore                
 LABEL147:
-   033                    29
+   iload                  29
    load_int               0
    if_icmpgt              LABEL151
    jump                   LABEL198
 LABEL151:
-   033                    29
+   iload                  29
    load_int               1
    isub                  
-   034                    29
+   istore                 29
    load_int               5308421
-   033                    29
+   iload                  29
    200                   
    load_int               1
    if_icmpeq              LABEL161
    jump                   LABEL197
 LABEL161:
-   033                   
+   iload                  0
    load_int               93
    if_icmpeq              LABEL165
    jump                   LABEL190
 LABEL165:
-   033                    29
+   iload                  29
    045                   
    load_int               -1
    if_icmple              LABEL170
    jump                   LABEL190
 LABEL170:
    load_int               93
-   033                    29
+   iload                  29
    3301                  
    load_int               -1
    if_icmpne              LABEL176
@@ -184,7 +188,7 @@ LABEL176:
    load_int               -2147483645
    load_int               -2147483643
    load_int               5308423
-   035                   
+   sload                  0
    load_int               25
    load_int               512
    load_string            "IiIsii"
@@ -195,16 +199,16 @@ LABEL176:
    1404                  
    jump                   LABEL197
 LABEL190:
-   033                   
-   033                    29
+   iload                  0
+   iload                  29
    3302                  
-   033                    29
+   iload                  29
    045                   
    load_int               5308423
-   040                    1234
+   invoke                 1234
 LABEL197:
    jump                   LABEL147
 LABEL198:
    load_int               5308423
-   040                    41
+   invoke                 41
    return                

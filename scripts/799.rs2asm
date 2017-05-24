@@ -1,11 +1,15 @@
+.int_stack_count    1
+.string_stack_count 1
+.int_var_count      3
+.string_var_count   2
    load_int               15532033
    102                   
    load_int               15532033
    load_string            "Grand Exchange: "
-   035                   
+   sload                  0
    037                    2
    load_int               0
-   040                    228
+   invoke                 228
    pop_int               
    load_int               15532035
    102                   
@@ -17,7 +21,7 @@
    load_int               791
    load_int               773
    load_int               788
-   040                    31
+   invoke                 31
    load_int               15532036
    102                   
    load_int               15532036
@@ -35,15 +39,15 @@
    load_int               0
    1000                  
    load_string            "Column view"
-   036                    1
-   035                    1
+   sstore                 1
+   sload                  1
    load_int               512
    load_int               495
    4109                  
    load_int               20
    iadd                  
-   034                    1
-   033                    1
+   istore                 1
+   iload                  1
    load_int               17
    load_int               0
    load_int               0
@@ -53,7 +57,7 @@
    load_int               4
    load_int               1
    100                    1
-   033                    1
+   iload                  1
    load_int               17
    load_int               0
    load_int               0
@@ -87,23 +91,23 @@
    load_int               1
    load_int               0
    1114                   1
-   035                    1
+   sload                  1
    1112                   1
-   033                   
+   iload                  0
    3304                  
-   034                    2
+   istore                 2
    load_int               800
-   033                   
-   033                    2
+   iload                  0
+   iload                  2
    1702                  
-   033                   
+   iload                  0
    load_int               1
    load_string            "viiY"
    load_int               15532032
    2414                  
    load_int               800
-   033                   
-   033                    2
+   iload                  0
+   iload                  2
    1702                  
    load_int               499
    load_int               1
@@ -112,14 +116,14 @@
    2407                  
    load_int               801
    load_int               -2147483644
-   033                   
-   033                    2
+   iload                  0
+   iload                  2
    1702                  
    load_string            "ivii"
    load_int               15532036
    2409                  
-   033                   
-   033                    2
+   iload                  0
+   iload                  2
    1702                  
-   040                    802
+   invoke                 802
    return                

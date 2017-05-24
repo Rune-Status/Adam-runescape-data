@@ -1,6 +1,10 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   1
    load_string            "Coffer"
-   036                   
-   035                   
+   sstore                
+   sload                  0
    load_int               512
    load_int               495
    4109                  
@@ -9,21 +13,21 @@
    load_int               58
    load_int               0
    load_int               0
-   033                    1
+   iload                  1
    2001                  
-   033                    1
+   iload                  1
    102                   
-   033                    1
+   iload                  1
    load_int               0
-   040                    715
-   034                    2
-   033                    1
+   invoke                 715
+   istore                 2
+   iload                  1
    load_int               4
-   033                    2
+   iload                  2
    100                   
-   033                    1
+   iload                  1
    load_int               5
-   033                    2
+   iload                  2
    load_int               1
    iadd                  
    100                    1
@@ -47,7 +51,7 @@
    load_int               0
    load_int               0
    1114                  
-   035                   
+   sload                  0
    1112                  
    load_int               36
    load_int               32
@@ -63,21 +67,21 @@
    1117                   1
    load_int               1
    widget_put_borderthickness 1
-   033                    1
-   040                    1424
+   iload                  1
+   invoke                 1424
    load_int               1423
-   033                    1
+   iload                  1
    1702                   1
    load_string            "Ii"
-   033                   
+   iload                  0
    2424                  
    load_int               1423
-   033                    1
+   iload                  1
    1702                   1
    load_int               1227
    load_int               795
    load_int               2
    load_string            "IiY"
-   033                   
+   iload                  0
    2407                  
    return                

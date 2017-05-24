@@ -1,10 +1,14 @@
+.int_stack_count    5
+.string_stack_count 0
+.int_var_count      10
+.string_var_count   0
    load_int               105
    load_int               73
    load_int               1424
-   033                   
+   iload                  0
    3408                  
-   034                    5
-   033                    5
+   istore                 5
+   iload                  5
    load_int               -1
    if_icmpeq              LABEL10
    jump                   LABEL11
@@ -12,62 +16,62 @@ LABEL10:
    return                
 LABEL11:
    load_int               0
-   034                    6
+   istore                 6
    load_int               0
-   034                    7
+   istore                 7
    load_int               0
-   034                    8
-   033                    1
-   040                    1387
-   034                    8
-   034                    7
-   034                    6
-   033                    7
+   istore                 8
+   iload                  1
+   invoke                 1387
+   istore                 8
+   istore                 7
+   istore                 6
+   iload                  7
    load_int               3
    if_icmpeq              LABEL26
    jump                   LABEL36
 LABEL26:
    load_int               1
-   033                    5
+   iload                  5
    widget_put_hidden_widget
-   033                    5
+   iload                  5
    widget_put_actions_null_widget
    load_int               -1
    load_string            ""
-   033                    5
+   iload                  5
    2409                  
    return                
 LABEL36:
    load_int               -1
-   034                    9
-   033                    7
-   033                    2
+   istore                 9
+   iload                  7
+   iload                  2
    if_icmpeq              LABEL42
    jump                   LABEL81
 LABEL42:
    load_int               0
-   033                    5
+   iload                  5
    widget_put_hidden_widget
    load_int               1
    load_string            "View"
-   033                    5
+   iload                  5
    2300                  
    load_int               1379
    load_int               -2147483644
    load_int               -2147483645
-   033                   
+   iload                  0
    load_string            "iIi"
-   033                    5
+   iload                  5
    2409                  
    load_int               27656197
-   033                    2
-   033                    4
+   iload                  2
+   iload                  4
    imul                  
-   033                    8
-   033                    3
+   iload                  8
+   iload                  3
    imul                  
    iadd                  
-   033                    6
+   iload                  6
    iadd                  
    200                   
    load_int               1
@@ -77,7 +81,7 @@ LABEL70:
    load_int               1
    widget_put_hidden     
 LABEL72:
-   033                    5
+   iload                  5
    load_int               1
    200                   
    load_int               1
@@ -89,204 +93,204 @@ LABEL78:
 LABEL80:
    jump                   LABEL279
 LABEL81:
-   033                    7
+   iload                  7
    load_int               1
    if_icmpeq              LABEL85
    jump                   LABEL270
 LABEL85:
-   033                    2
+   iload                  2
    load_int               2
    if_icmpeq              LABEL89
    jump                   LABEL270
 LABEL89:
-   033                    6
+   iload                  6
    load_int               2
-   033                    8
-   040                    1386
-   034                    9
+   iload                  8
+   invoke                 1386
+   istore                 9
    042                    141
-   033                    9
+   iload                  9
    if_icmpne              LABEL98
    jump                   LABEL260
 LABEL98:
    042                    142
-   033                    9
+   iload                  9
    if_icmpne              LABEL102
    jump                   LABEL260
 LABEL102:
    042                    143
-   033                    9
+   iload                  9
    if_icmpne              LABEL106
    jump                   LABEL260
 LABEL106:
    042                    144
-   033                    9
+   iload                  9
    if_icmpne              LABEL110
    jump                   LABEL260
 LABEL110:
    042                    145
-   033                    9
+   iload                  9
    if_icmpne              LABEL114
    jump                   LABEL260
 LABEL114:
    042                    146
-   033                    9
+   iload                  9
    if_icmpne              LABEL118
    jump                   LABEL260
 LABEL118:
    042                    147
-   033                    9
+   iload                  9
    if_icmpne              LABEL122
    jump                   LABEL260
 LABEL122:
    042                    148
-   033                    9
+   iload                  9
    if_icmpne              LABEL126
    jump                   LABEL260
 LABEL126:
    042                    149
-   033                    9
+   iload                  9
    if_icmpne              LABEL130
    jump                   LABEL260
 LABEL130:
    042                    150
-   033                    9
+   iload                  9
    if_icmpne              LABEL134
    jump                   LABEL260
 LABEL134:
    042                    151
-   033                    9
+   iload                  9
    if_icmpne              LABEL138
    jump                   LABEL260
 LABEL138:
    042                    152
-   033                    9
+   iload                  9
    if_icmpne              LABEL142
    jump                   LABEL260
 LABEL142:
    042                    153
-   033                    9
+   iload                  9
    if_icmpne              LABEL146
    jump                   LABEL260
 LABEL146:
    042                    154
-   033                    9
+   iload                  9
    if_icmpne              LABEL150
    jump                   LABEL260
 LABEL150:
    042                    155
-   033                    9
+   iload                  9
    if_icmpne              LABEL154
    jump                   LABEL260
 LABEL154:
    042                    156
-   033                    9
+   iload                  9
    if_icmpne              LABEL158
    jump                   LABEL260
 LABEL158:
    042                    157
-   033                    9
+   iload                  9
    if_icmpne              LABEL162
    jump                   LABEL260
 LABEL162:
    042                    158
-   033                    9
+   iload                  9
    if_icmpne              LABEL166
    jump                   LABEL260
 LABEL166:
    042                    159
-   033                    9
+   iload                  9
    if_icmpne              LABEL170
    jump                   LABEL260
 LABEL170:
    042                    160
-   033                    9
+   iload                  9
    if_icmpne              LABEL174
    jump                   LABEL260
 LABEL174:
    042                    161
-   033                    9
+   iload                  9
    if_icmpne              LABEL178
    jump                   LABEL260
 LABEL178:
    042                    162
-   033                    9
+   iload                  9
    if_icmpne              LABEL182
    jump                   LABEL260
 LABEL182:
    042                    163
-   033                    9
+   iload                  9
    if_icmpne              LABEL186
    jump                   LABEL260
 LABEL186:
    042                    164
-   033                    9
+   iload                  9
    if_icmpne              LABEL190
    jump                   LABEL260
 LABEL190:
    042                    165
-   033                    9
+   iload                  9
    if_icmpne              LABEL194
    jump                   LABEL260
 LABEL194:
    042                    166
-   033                    9
+   iload                  9
    if_icmpne              LABEL198
    jump                   LABEL260
 LABEL198:
    042                    167
-   033                    9
+   iload                  9
    if_icmpne              LABEL202
    jump                   LABEL260
 LABEL202:
    042                    168
-   033                    9
+   iload                  9
    if_icmpne              LABEL206
    jump                   LABEL260
 LABEL206:
    042                    169
-   033                    9
+   iload                  9
    if_icmpne              LABEL210
    jump                   LABEL260
 LABEL210:
    042                    170
-   033                    9
+   iload                  9
    if_icmpne              LABEL214
    jump                   LABEL260
 LABEL214:
    042                    174
-   033                    9
+   iload                  9
    if_icmpne              LABEL218
    jump                   LABEL260
 LABEL218:
    042                    176
-   033                    9
+   iload                  9
    if_icmpne              LABEL222
    jump                   LABEL260
 LABEL222:
    042                    177
-   033                    9
+   iload                  9
    if_icmpne              LABEL226
    jump                   LABEL260
 LABEL226:
    load_int               0
-   033                    5
+   iload                  5
    widget_put_hidden_widget
-   033                    5
+   iload                  5
    widget_put_actions_null_widget
    load_int               -1
    load_string            ""
-   033                    5
+   iload                  5
    2409                  
    load_int               27656197
-   033                    2
-   033                    4
+   iload                  2
+   iload                  4
    imul                  
-   033                    8
-   033                    3
+   iload                  8
+   iload                  3
    imul                  
    iadd                  
-   033                    6
+   iload                  6
    iadd                  
    200                   
    load_int               1
@@ -296,7 +300,7 @@ LABEL249:
    load_int               0
    widget_put_hidden     
 LABEL251:
-   033                    5
+   iload                  5
    load_int               1
    200                   
    load_int               1
@@ -309,25 +313,25 @@ LABEL259:
    jump                   LABEL269
 LABEL260:
    load_int               1
-   033                    5
+   iload                  5
    widget_put_hidden_widget
-   033                    5
+   iload                  5
    widget_put_actions_null_widget
    load_int               -1
    load_string            ""
-   033                    5
+   iload                  5
    2409                  
 LABEL269:
    jump                   LABEL279
 LABEL270:
    load_int               1
-   033                    5
+   iload                  5
    widget_put_hidden_widget
-   033                    5
+   iload                  5
    widget_put_actions_null_widget
    load_int               -1
    load_string            ""
-   033                    5
+   iload                  5
    2409                  
 LABEL279:
    return                

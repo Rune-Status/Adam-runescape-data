@@ -1,3 +1,7 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
    025                    1777
    load_int               0
    if_icmpne              LABEL4
@@ -15,7 +19,7 @@ LABEL4:
    load_string            "</col>"
    load_string            " items once you have donated them to the party."
    037                    9
-   033                   
+   iload                  0
    2112                  
    jump                   LABEL31
 LABEL19:
@@ -29,7 +33,7 @@ LABEL19:
    load_string            "</col>"
    load_string            " if the party dissolves."
    037                    9
-   033                   
+   iload                  0
    2112                  
 LABEL31:
    return                

@@ -1,10 +1,14 @@
+.int_stack_count    15
+.string_stack_count 0
+.int_var_count      16
+.string_var_count   1
    025                    4397
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL65
 LABEL4:
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL10
@@ -13,8 +17,8 @@ LABEL10:
    load_int               1
    widget_put_hidden     
 LABEL12:
-   033                   
-   033                    6
+   iload                  0
+   iload                  6
    200                   
    load_int               1
    if_icmpeq              LABEL18
@@ -26,8 +30,8 @@ LABEL18:
    load_string            ""
    1408                  
 LABEL23:
-   033                   
-   033                    12
+   iload                  0
+   iload                  12
    200                   
    load_int               1
    if_icmpeq              LABEL29
@@ -36,8 +40,8 @@ LABEL29:
    load_int               1
    widget_put_hidden     
 LABEL31:
-   033                   
-   033                    4
+   iload                  0
+   iload                  4
    200                   
    load_int               1
    if_icmpeq              LABEL37
@@ -46,8 +50,8 @@ LABEL37:
    load_string            "Sell offer"
    1112                  
 LABEL39:
-   033                   
-   033                    5
+   iload                  0
+   iload                  5
    200                   
    load_int               1
    if_icmpeq              LABEL45
@@ -56,8 +60,8 @@ LABEL45:
    load_int               1119
    widget_put_textureid  
 LABEL47:
-   033                   
-   033                    2
+   iload                  0
+   iload                  2
    200                   
    load_int               1
    if_icmpeq              LABEL53
@@ -67,8 +71,8 @@ LABEL53:
    load_string            "All"
    1300                  
 LABEL56:
-   033                   
-   033                    3
+   iload                  0
+   iload                  3
    200                   
    load_int               1
    if_icmpeq              LABEL62
@@ -79,8 +83,8 @@ LABEL62:
 LABEL64:
    jump                   LABEL130
 LABEL65:
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL71
@@ -89,8 +93,8 @@ LABEL71:
    load_int               0
    widget_put_hidden     
 LABEL73:
-   033                   
-   033                    6
+   iload                  0
+   iload                  6
    200                   
    load_int               1
    if_icmpeq              LABEL79
@@ -107,8 +111,8 @@ LABEL79:
    load_string            "Iiiii"
    1408                  
 LABEL89:
-   033                   
-   033                    12
+   iload                  0
+   iload                  12
    200                   
    load_int               1
    if_icmpeq              LABEL95
@@ -117,8 +121,8 @@ LABEL95:
    load_int               0
    widget_put_hidden     
 LABEL97:
-   033                   
-   033                    4
+   iload                  0
+   iload                  4
    200                   
    load_int               1
    if_icmpeq              LABEL103
@@ -127,8 +131,8 @@ LABEL103:
    load_string            "Buy offer"
    1112                  
 LABEL105:
-   033                   
-   033                    5
+   iload                  0
+   iload                  5
    200                   
    load_int               1
    if_icmpeq              LABEL111
@@ -137,8 +141,8 @@ LABEL111:
    load_int               1118
    widget_put_textureid  
 LABEL113:
-   033                   
-   033                    2
+   iload                  0
+   iload                  2
    200                   
    load_int               1
    if_icmpeq              LABEL119
@@ -148,8 +152,8 @@ LABEL119:
    load_string            "+1K"
    1300                  
 LABEL122:
-   033                   
-   033                    3
+   iload                  0
+   iload                  3
    200                   
    load_int               1
    if_icmpeq              LABEL128
@@ -159,16 +163,16 @@ LABEL128:
    1112                  
 LABEL130:
    load_string            ","
-   036                   
+   sstore                
    load_int               0
-   034                    15
+   istore                 15
    get_settings           1151
    load_int               -1
    if_icmpne              LABEL138
    jump                   LABEL274
 LABEL138:
-   033                   
-   033                    7
+   iload                  0
+   iload                  7
    200                   
    load_int               1
    if_icmpeq              LABEL144
@@ -178,8 +182,8 @@ LABEL144:
    025                    4396
    1205                  
 LABEL147:
-   033                   
-   033                    8
+   iload                  0
+   iload                  8
    200                   
    load_int               1
    if_icmpeq              LABEL153
@@ -189,20 +193,20 @@ LABEL153:
    get_item_name         
    1112                  
 LABEL156:
-   033                   
-   033                    9
+   iload                  0
+   iload                  9
    200                   
    load_int               1
    if_icmpeq              LABEL162
    jump                   LABEL166
 LABEL162:
    025                    4396
-   035                   
-   040                    46
+   sload                  0
+   invoke                 46
    1112                  
 LABEL166:
-   033                   
-   033                    10
+   iload                  0
+   iload                  10
    200                   
    load_int               1
    if_icmpeq              LABEL172
@@ -218,8 +222,8 @@ LABEL176:
    jump                   LABEL185
 LABEL179:
    025                    4398
-   035                   
-   040                    46
+   sload                  0
+   invoke                 46
    load_string            " coins"
    037                    2
    1112                  
@@ -236,8 +240,8 @@ LABEL189:
    if_icmplt              LABEL195
    jump                   LABEL211
 LABEL195:
-   033                   
-   033                    11
+   iload                  0
+   iload                  11
    200                   
    load_int               1
    if_icmpeq              LABEL201
@@ -249,24 +253,24 @@ LABEL201:
    037                    3
    1112                  
 LABEL206:
-   033                   
-   033                    14
-   033                    13
-   040                    780
+   iload                  0
+   iload                  14
+   iload                  13
+   invoke                 780
    jump                   LABEL273
 LABEL211:
    025                    4396
    025                    4398
    imul                  
-   034                    15
-   033                   
-   033                    11
+   istore                 15
+   iload                  0
+   iload                  11
    200                   
    load_int               1
    if_icmpeq              LABEL221
    jump                   LABEL234
 LABEL221:
-   033                    15
+   iload                  15
    load_int               1
    if_icmpeq              LABEL225
    jump                   LABEL228
@@ -275,39 +279,39 @@ LABEL225:
    1112                  
    jump                   LABEL234
 LABEL228:
-   033                    15
-   035                   
-   040                    46
+   iload                  15
+   sload                  0
+   invoke                 46
    load_string            " coins"
    037                    2
    1112                  
 LABEL234:
-   033                    15
+   iload                  15
    load_int               0
    if_icmpgt              LABEL238
    jump                   LABEL269
 LABEL238:
-   033                    13
-   040                    208
+   iload                  13
+   invoke                 208
    pop_int               
    load_int               772
    load_int               -2147483645
    load_string            "I"
-   033                    13
+   iload                  13
    2412                  
    load_int               97
    load_int               -2147483645
    load_string            "I"
-   033                    13
+   iload                  13
    2404                  
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
-   033                    13
+   iload                  13
    2409                  
-   033                   
-   033                    14
+   iload                  0
+   iload                  14
    200                   
    load_int               1
    if_icmpeq              LABEL263
@@ -321,15 +325,15 @@ LABEL263:
 LABEL268:
    jump                   LABEL273
 LABEL269:
-   033                   
-   033                    14
-   033                    13
-   040                    780
+   iload                  0
+   iload                  14
+   iload                  13
+   invoke                 780
 LABEL273:
    jump                   LABEL319
 LABEL274:
-   033                   
-   033                    7
+   iload                  0
+   iload                  7
    200                   
    load_int               1
    if_icmpeq              LABEL280
@@ -339,8 +343,8 @@ LABEL280:
    load_int               1
    1205                  
 LABEL283:
-   033                   
-   033                    8
+   iload                  0
+   iload                  8
    200                   
    load_int               1
    if_icmpeq              LABEL289
@@ -349,8 +353,8 @@ LABEL289:
    load_string            "Choose an item..."
    1112                  
 LABEL291:
-   033                   
-   033                    9
+   iload                  0
+   iload                  9
    200                   
    load_int               1
    if_icmpeq              LABEL297
@@ -359,8 +363,8 @@ LABEL297:
    load_string            ""
    1112                  
 LABEL299:
-   033                   
-   033                    10
+   iload                  0
+   iload                  10
    200                   
    load_int               1
    if_icmpeq              LABEL305
@@ -369,8 +373,8 @@ LABEL305:
    load_string            ""
    1112                  
 LABEL307:
-   033                   
-   033                    11
+   iload                  0
+   iload                  11
    200                   
    load_int               1
    if_icmpeq              LABEL313
@@ -379,9 +383,9 @@ LABEL313:
    load_string            ""
    1112                  
 LABEL315:
-   033                   
-   033                    14
-   033                    13
-   040                    780
+   iload                  0
+   iload                  14
+   iload                  13
+   invoke                 780
 LABEL319:
    return                

@@ -1,6 +1,10 @@
-   040                    384
-   034                    1
-   040                    1138
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   invoke                 384
+   istore                 1
+   invoke                 1138
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL34
@@ -11,7 +15,7 @@ LABEL6:
    jump                   LABEL14
 LABEL10:
    load_string            "Protection"
-   033                   
+   iload                  0
    2112                  
    jump                   LABEL33
 LABEL14:
@@ -21,7 +25,7 @@ LABEL14:
    jump                   LABEL22
 LABEL18:
    load_string            "Guarded"
-   033                   
+   iload                  0
    2112                  
    jump                   LABEL33
 LABEL22:
@@ -31,33 +35,33 @@ LABEL22:
    jump                   LABEL30
 LABEL26:
    load_string            "No PvP"
-   033                   
+   iload                  0
    2112                  
    jump                   LABEL33
 LABEL30:
    load_string            "Deadman"
-   033                   
+   iload                  0
    2112                  
 LABEL33:
    jump                   LABEL48
 LABEL34:
-   033                    1
+   iload                  1
    load_int               0
    if_icmpgt              LABEL38
    jump                   LABEL45
 LABEL38:
    load_string            "Level: "
-   033                    1
+   iload                  1
    int_to_string         
    037                    2
-   033                   
+   iload                  0
    2112                  
    jump                   LABEL48
 LABEL45:
    load_string            ""
-   033                   
+   iload                  0
    2112                  
 LABEL48:
-   033                    1
-   040                    387
+   iload                  1
+   invoke                 387
    return                

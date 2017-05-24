@@ -1,3 +1,7 @@
+.int_stack_count    10
+.string_stack_count 0
+.int_var_count      10
+.string_var_count   0
    025                    136
    load_int               0
    if_icmpgt              LABEL4
@@ -8,7 +12,7 @@ LABEL4:
    int_to_string         
    load_string            "%"
    037                    3
-   033                   
+   iload                  0
    2112                  
    jump                   LABEL21
 LABEL12:
@@ -19,7 +23,7 @@ LABEL12:
    load_string            "%"
    load_string            "</col>"
    037                    5
-   033                   
+   iload                  0
    2112                  
 LABEL21:
    025                    137
@@ -31,12 +35,12 @@ LABEL25:
    load_string            "Unlocked"
    load_string            "</col>"
    037                    3
-   033                    1
+   iload                  1
    2112                  
    jump                   LABEL35
 LABEL32:
    load_string            "Locked"
-   033                    1
+   iload                  1
    2112                  
 LABEL35:
    025                    138
@@ -48,12 +52,12 @@ LABEL39:
    load_string            "Cleared"
    load_string            "</col>"
    037                    3
-   033                    2
+   iload                  2
    2112                  
    jump                   LABEL49
 LABEL46:
    load_string            "Collapsed"
-   033                    2
+   iload                  2
    2112                  
 LABEL49:
    025                    139
@@ -65,12 +69,12 @@ LABEL53:
    load_string            "Cleared"
    load_string            "</col>"
    037                    3
-   033                    3
+   iload                  3
    2112                  
    jump                   LABEL63
 LABEL60:
    load_string            "Collapsed"
-   033                    3
+   iload                  3
    2112                  
 LABEL63:
    025                    140
@@ -82,12 +86,12 @@ LABEL67:
    load_string            "Destroyed"
    load_string            "</col>"
    037                    3
-   033                    4
+   iload                  4
    2112                  
    jump                   LABEL77
 LABEL74:
    load_string            "Operational"
-   033                    4
+   iload                  4
    2112                  
 LABEL77:
    025                    143
@@ -96,7 +100,7 @@ LABEL77:
    jump                   LABEL85
 LABEL81:
    load_string            "Safe"
-   033                    5
+   iload                  5
    2112                  
    jump                   LABEL110
 LABEL85:
@@ -109,7 +113,7 @@ LABEL89:
    load_string            "Taken"
    load_string            "</col>"
    037                    3
-   033                    5
+   iload                  5
    2112                  
    jump                   LABEL110
 LABEL96:
@@ -122,12 +126,12 @@ LABEL100:
    load_string            "Dropped"
    load_string            "</col>"
    037                    3
-   033                    5
+   iload                  5
    2112                  
    jump                   LABEL110
 LABEL107:
    load_string            ""
-   033                    5
+   iload                  5
    2112                  
 LABEL110:
    025                    153
@@ -136,7 +140,7 @@ LABEL110:
    jump                   LABEL118
 LABEL114:
    load_string            "Safe"
-   033                    6
+   iload                  6
    2112                  
    jump                   LABEL143
 LABEL118:
@@ -149,7 +153,7 @@ LABEL122:
    load_string            "Taken"
    load_string            "</col>"
    037                    3
-   033                    6
+   iload                  6
    2112                  
    jump                   LABEL143
 LABEL129:
@@ -162,30 +166,30 @@ LABEL133:
    load_string            "Dropped"
    load_string            "</col>"
    037                    3
-   033                    6
+   iload                  6
    2112                  
    jump                   LABEL143
 LABEL140:
    load_string            ""
-   033                    6
+   iload                  6
    2112                  
 LABEL143:
    025                    145
    int_to_string         
    load_string            " = Saradomin"
    037                    2
-   033                    7
+   iload                  7
    2112                  
    load_string            "Zamorak = "
    025                    155
    int_to_string         
    037                    2
-   033                    8
+   iload                  8
    2112                  
    get_settings           380
    int_to_string         
    load_string            " Min"
    037                    2
-   033                    9
+   iload                  9
    2112                  
    return                

@@ -1,9 +1,13 @@
+.int_stack_count    3
+.string_stack_count 1
+.int_var_count      3
+.string_var_count   1
    load_int               2266
    load_int               1
    load_int               0
    3200                  
-   033                   
-   033                    2
+   iload                  0
+   iload                  2
    200                   
    load_int               1
    if_icmpeq              LABEL10
@@ -17,15 +21,15 @@ LABEL10:
    load_int               629
    load_int               -2147483645
    load_int               -2147483643
-   035                   
+   sload                  0
    get_gamecycle         
    load_int               30
    iadd                  
    load_string            "Iisi"
    1408                  
 LABEL24:
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL30

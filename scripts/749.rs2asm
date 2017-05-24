@@ -1,38 +1,42 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    widget_get_relativex  
-   034                   
+   istore                
    widget_get_relativey  
-   034                    1
+   istore                 1
    widget_get_parentid   
-   034                    2
+   istore                 2
 LABEL6:
-   033                    2
+   iload                  2
    load_int               -1
    if_icmpne              LABEL10
    jump                   LABEL30
 LABEL10:
-   033                   
-   033                    2
+   iload                  0
+   iload                  2
    widget_get_relativex_widget
    iadd                  
-   033                    2
+   iload                  2
    widget_get_scrollx_widget
    isub                  
-   034                   
-   033                    1
-   033                    2
+   istore                
+   iload                  1
+   iload                  2
    widget_get_relativey_widget
    iadd                  
-   033                    2
+   iload                  2
    widget_get_scrolly_widget
    isub                  
-   034                    1
-   033                    2
+   istore                 1
+   iload                  2
    widget_get_parentid_widget
-   034                    2
+   istore                 2
    jump                   LABEL6
 LABEL30:
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    return                
    load_int               0
    load_int               0

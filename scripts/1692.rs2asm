@@ -1,19 +1,23 @@
+.int_stack_count    4
+.string_stack_count 3
+.int_var_count      4
+.string_var_count   3
    get_gamecycle         
-   033                    3
+   iload                  3
    if_icmplt              LABEL4
    jump                   LABEL5
 LABEL4:
    return                
 LABEL5:
-   033                    1
-   033                    2
+   iload                  1
+   iload                  2
    200                   
    load_int               1
    if_icmpeq              LABEL11
    jump                   LABEL42
 LABEL11:
    load_int               38666240
-   033                   
+   iload                  0
    200                    1
    load_int               1
    if_icmpeq              LABEL17
@@ -22,26 +26,26 @@ LABEL17:
    load_int               -1
    load_string            ""
    1408                   1
-   035                   
+   sload                  0
    1112                  
    load_int               1690
    load_int               -2147483644
-   033                   
-   033                    1
-   033                    2
-   035                   
-   035                    1
-   035                    2
+   iload                  0
+   iload                  1
+   iload                  2
+   sload                  0
+   sload                  1
+   sload                  2
    load_string            "iiIisss"
    1409                  
    load_int               1689
    load_int               -2147483639
-   033                   
-   033                    1
-   033                    2
-   035                   
-   035                    1
-   035                    2
+   iload                  0
+   iload                  1
+   iload                  2
+   sload                  0
+   sload                  1
+   sload                  2
    load_string            "ziIisss"
    1419                   1
 LABEL42:

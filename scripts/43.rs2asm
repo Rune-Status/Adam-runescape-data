@@ -1,6 +1,10 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   1
    load_string            "Click here to enable zooming using the mouse scroll wheel."
-   036                   
-   033                    2
+   sstore                
+   iload                  2
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL36
@@ -17,35 +21,35 @@ LABEL13:
    load_int               1
    043                    75
    load_string            "Click here to disable zooming using the mouse scroll wheel."
-   036                   
+   sstore                
 LABEL17:
    042                    75
-   033                    1
+   iload                  1
    widget_put_hidden_widget
    load_int               526
-   033                   
+   iload                  0
    load_int               -1
-   033                    3
-   035                   
+   iload                  3
+   sload                  0
    load_int               25
    load_int               190
    load_string            "IiIsii"
-   033                   
+   iload                  0
    2412                  
    load_int               40
-   033                    3
+   iload                  3
    load_string            "I"
-   033                   
+   iload                  0
    2404                  
    jump                   LABEL43
 LABEL36:
-   033                    2
+   iload                  2
    load_int               2
    if_icmpeq              LABEL40
    jump                   LABEL43
 LABEL40:
    load_int               256
    load_int               320
-   040                    42
+   invoke                 42
 LABEL43:
    return                

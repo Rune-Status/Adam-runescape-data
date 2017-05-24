@@ -1,26 +1,30 @@
-   033                    3
-   033                    4
+.int_stack_count    10
+.string_stack_count 1
+.int_var_count      12
+.string_var_count   1
+   iload                  3
+   iload                  4
    isub                  
-   034                    10
-   035                   
-   033                    10
+   istore                 10
+   sload                  0
+   iload                  10
    load_int               495
    4108                  
-   033                    5
+   iload                  5
    imul                  
-   034                    11
-   033                    7
+   istore                 11
+   iload                  7
    load_int               0
    if_icmpeq              LABEL15
    jump                   LABEL19
 LABEL15:
-   033                    6
-   033                    11
+   iload                  6
+   iload                  11
    isub                  
-   034                    6
+   istore                 6
 LABEL19:
-   033                    2
-   033                   
+   iload                  2
+   iload                  0
    load_int               2
    imul                  
    200                   
@@ -28,39 +32,39 @@ LABEL19:
    if_icmpeq              LABEL27
    jump                   LABEL57
 LABEL27:
-   033                    10
-   033                    11
+   iload                  10
+   iload                  11
    load_int               0
    load_int               0
-   033                    1
+   iload                  1
    2001                  
-   033                    4
-   033                    6
+   iload                  4
+   iload                  6
    load_int               0
-   033                    7
-   033                    1
+   iload                  7
+   iload                  1
    2000                  
    load_int               0
    widget_put_hidden     
-   033                    10
-   033                    11
+   iload                  10
+   iload                  11
    load_int               0
    load_int               0
    1001                  
-   033                    4
-   033                    6
+   iload                  4
+   iload                  6
    load_int               0
-   033                    7
+   iload                  7
    1000                  
-   035                   
+   sload                  0
    1112                  
-   033                    8
+   iload                  8
    widget_put_textcolor  
-   033                    9
+   iload                  9
    1115                  
 LABEL57:
-   033                    2
-   033                   
+   iload                  2
+   iload                  0
    load_int               2
    imul                  
    load_int               1
@@ -75,7 +79,7 @@ LABEL67:
    load_int               1
    widget_put_hidden     
 LABEL71:
-   033                    11
+   iload                  11
    return                
    load_int               0
    return                

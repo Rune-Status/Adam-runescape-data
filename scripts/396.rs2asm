@@ -1,27 +1,31 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   2
    load_string            "Total level:"
    load_string            "<br>"
-   040                    1007
+   invoke                 1007
    int_to_string         
    037                    3
-   033                   
+   iload                  0
    2112                  
    load_string            "Total XP:"
-   036                   
-   040                    1008
-   040                    1009
-   036                    1
+   sstore                
+   invoke                 1008
+   invoke                 1009
+   sstore                 1
    load_int               992
    load_int               -2147483645
    load_int               -1
-   033                    1
-   035                   
-   035                    1
+   iload                  1
+   sload                  0
+   sload                  1
    load_int               495
    load_int               25
    load_int               5
    idiv                  
    load_string            "IiIssfi"
-   033                   
+   iload                  0
    2412                  
    load_int               0
    043                    2

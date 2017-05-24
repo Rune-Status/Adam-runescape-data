@@ -1,59 +1,63 @@
-   033                   
+.int_stack_count    5
+.string_stack_count 0
+.int_var_count      7
+.string_var_count   0
+   iload                  0
    102                   
    load_int               0
-   034                    5
+   istore                 5
    load_int               0
-   034                    6
-   033                   
-   033                    1
+   istore                 6
+   iload                  0
+   iload                  1
    load_string            "Resources"
-   033                    5
-   033                    6
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   040                    309
-   034                    6
-   034                    5
-   033                   
-   033                    2
+   iload                  5
+   iload                  6
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   invoke                 309
+   istore                 6
+   istore                 5
+   iload                  0
+   iload                  2
    load_string            "Upgrades"
-   033                    5
-   033                    6
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   040                    309
-   034                    6
-   034                    5
-   033                   
-   033                    3
+   iload                  5
+   iload                  6
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   invoke                 309
+   istore                 6
+   istore                 5
+   iload                  0
+   iload                  3
    load_string            "Benefits"
-   033                    5
-   033                    6
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   040                    309
-   034                    6
-   034                    5
-   033                   
+   iload                  5
+   iload                  6
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   invoke                 309
+   istore                 6
+   istore                 5
+   iload                  0
    load_int               4
-   033                    5
+   iload                  5
    100                   
-   033                    6
+   iload                  6
    load_int               0
    load_int               0
    load_int               0
    1000                  
-   033                   
+   iload                  0
    widget_get_width_widget
-   033                    6
+   iload                  6
    isub                  
-   033                   
+   iload                  0
    widget_get_height_widget
    load_int               0
    load_int               0
@@ -68,7 +72,7 @@
    widget_put_textcolor  
    load_int               1
    1115                  
-   040                    311
+   invoke                 311
    load_int               310
    load_int               -2147483645
    load_int               -2147483643
@@ -77,33 +81,33 @@
    load_string            "IiY"
    1407                  
    load_int               0
-   033                    4
+   iload                  4
    widget_put_hidden_widget
-   033                    4
-   033                    1
+   iload                  4
+   iload                  1
    if_icmpne              LABEL85
    jump                   LABEL88
 LABEL85:
    load_int               1
-   033                    1
+   iload                  1
    widget_put_hidden_widget
 LABEL88:
-   033                    4
-   033                    2
+   iload                  4
+   iload                  2
    if_icmpne              LABEL92
    jump                   LABEL95
 LABEL92:
    load_int               1
-   033                    2
+   iload                  2
    widget_put_hidden_widget
 LABEL95:
-   033                    4
-   033                    3
+   iload                  4
+   iload                  3
    if_icmpne              LABEL99
    jump                   LABEL102
 LABEL99:
    load_int               1
-   033                    3
+   iload                  3
    widget_put_hidden_widget
 LABEL102:
    return                

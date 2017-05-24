@@ -1,46 +1,50 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
    load_int               903
    load_int               -2147483645
-   033                    1
+   iload                  1
    load_string            "Ig"
-   033                   
+   iload                  0
    2424                  
    load_int               904
    load_int               -2147483645
-   033                    1
+   iload                  1
    load_string            "Ig"
-   033                   
+   iload                  0
    2427                  
    load_int               902
    load_int               -2147483645
-   033                    1
+   iload                  1
    load_int               1021
    load_int               1055
    load_int               1431
    load_int               3
    load_string            "IgY"
-   033                   
+   iload                  0
    2407                  
    load_int               0
-   034                    2
+   istore                 2
    load_int               105
    load_int               73
    load_int               1138
-   033                    2
+   iload                  2
    3408                  
-   034                    3
+   istore                 3
 LABEL30:
-   033                    3
+   iload                  3
    load_int               -1
    if_icmpne              LABEL34
    jump                   LABEL70
 LABEL34:
    load_int               73
    load_int               73
-   033                    1
-   033                    3
+   iload                  1
+   iload                  3
    3408                  
-   034                    3
-   033                    3
+   istore                 3
+   iload                  3
    load_int               -1
    if_icmpne              LABEL44
    jump                   LABEL59
@@ -49,28 +53,28 @@ LABEL44:
    load_int               105
    load_int               115
    load_int               1141
-   033                    2
+   iload                  2
    3408                  
-   033                    3
+   iload                  3
    2300                  
    load_int               914
    load_int               -2147483644
-   033                    1
-   033                    2
+   iload                  1
+   iload                  2
    load_string            "igi"
-   033                    3
+   iload                  3
    2409                  
 LABEL59:
-   033                    2
+   iload                  2
    load_int               1
    iadd                  
-   034                    2
+   istore                 2
    load_int               105
    load_int               73
    load_int               1138
-   033                    2
+   iload                  2
    3408                  
-   034                    3
+   istore                 3
    jump                   LABEL30
 LABEL70:
    042                    171
@@ -81,7 +85,7 @@ LABEL74:
    load_int               103
    load_int               49
    load_int               1134
-   033                    1
+   iload                  1
    3408                  
    load_int               0
    if_icmpeq              LABEL82
@@ -96,22 +100,22 @@ LABEL84:
    043                    172
    load_int               73
    load_int               73
-   033                    1
+   iload                  1
    load_int               10551320
    3408                  
-   034                    3
-   033                    3
+   istore                 3
+   iload                  3
    load_int               -1
    if_icmpne              LABEL98
    jump                   LABEL142
 LABEL98:
-   033                    3
+   iload                  3
    102                   
-   033                    3
+   iload                  3
    load_int               4
    load_int               0
    100                   
-   033                    3
+   iload                  3
    load_int               4
    load_int               1
    100                    1
@@ -150,14 +154,14 @@ LABEL98:
    load_string            "i"
    1409                   1
 LABEL142:
-   040                    1044
-   033                   
-   033                    1
-   040                    907
-   033                   
-   033                    1
-   040                    908
+   invoke                 1044
+   iload                  0
+   iload                  1
+   invoke                 907
+   iload                  0
+   iload                  1
+   invoke                 908
    042                    171
-   033                    1
-   040                    916
+   iload                  1
+   invoke                 916
    return                

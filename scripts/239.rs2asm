@@ -1,9 +1,13 @@
-   033                    1
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      12
+.string_var_count   1
+   iload                  1
    load_int               0
    if_icmpeq              LABEL4
    jump                   LABEL115
 LABEL4:
-   033                   
+   iload                  0
    load_int               47
    load_int               4
    iadd                  
@@ -15,7 +19,7 @@ LABEL12:
    load_int               0
    widget_put_hidden     
 LABEL14:
-   033                   
+   iload                  0
    load_int               47
    load_int               5
    iadd                  
@@ -27,7 +31,7 @@ LABEL22:
    load_int               1
    widget_put_hidden     
 LABEL24:
-   033                   
+   iload                  0
    load_int               47
    load_int               6
    iadd                  
@@ -39,7 +43,7 @@ LABEL32:
    load_int               1
    widget_put_hidden     
 LABEL34:
-   033                   
+   iload                  0
    load_int               47
    load_int               7
    iadd                  
@@ -51,7 +55,7 @@ LABEL42:
    load_int               1
    widget_put_hidden     
 LABEL44:
-   033                   
+   iload                  0
    load_int               47
    load_int               8
    iadd                  
@@ -63,7 +67,7 @@ LABEL52:
    load_int               1
    widget_put_hidden     
 LABEL54:
-   033                   
+   iload                  0
    load_int               47
    load_int               9
    iadd                  
@@ -75,7 +79,7 @@ LABEL62:
    load_int               1
    widget_put_hidden     
 LABEL64:
-   033                   
+   iload                  0
    load_int               47
    load_int               10
    iadd                  
@@ -87,7 +91,7 @@ LABEL72:
    load_int               1
    widget_put_hidden     
 LABEL74:
-   033                   
+   iload                  0
    load_int               47
    load_int               11
    iadd                  
@@ -99,7 +103,7 @@ LABEL82:
    load_int               1
    widget_put_hidden     
 LABEL84:
-   033                   
+   iload                  0
    load_int               47
    load_int               12
    iadd                  
@@ -111,7 +115,7 @@ LABEL92:
    load_int               1
    widget_put_hidden     
 LABEL94:
-   033                   
+   iload                  0
    load_int               47
    load_int               13
    iadd                  
@@ -123,7 +127,7 @@ LABEL102:
    load_int               1
    widget_put_hidden     
 LABEL104:
-   033                   
+   iload                  0
    load_int               47
    load_int               14
    iadd                  
@@ -137,7 +141,7 @@ LABEL112:
 LABEL114:
    return                
 LABEL115:
-   033                   
+   iload                  0
    load_int               47
    load_int               4
    iadd                  
@@ -150,38 +154,38 @@ LABEL123:
    widget_put_hidden     
 LABEL125:
    load_int               0
-   034                    2
+   istore                 2
    load_string            ""
-   036                   
+   sstore                
    load_int               -1
-   034                    3
+   istore                 3
    load_int               0
-   034                    4
+   istore                 4
    load_int               -1
-   034                    5
+   istore                 5
    load_int               0
-   034                    6
+   istore                 6
    load_int               -1
-   034                    7
+   istore                 7
    load_int               0
-   034                    8
+   istore                 8
    load_int               -1
-   034                    9
+   istore                 9
    load_int               0
-   034                    10
-   033                    1
-   040                    242
-   034                    10
-   034                    9
-   034                    8
-   034                    7
-   034                    6
-   034                    5
-   034                    4
-   034                    3
-   036                   
-   034                    2
-   033                   
+   istore                 10
+   iload                  1
+   invoke                 242
+   istore                 10
+   istore                 9
+   istore                 8
+   istore                 7
+   istore                 6
+   istore                 5
+   istore                 4
+   istore                 3
+   sstore                
+   istore                 2
+   iload                  0
    load_int               47
    load_int               5
    iadd                  
@@ -193,18 +197,18 @@ LABEL165:
    load_int               0
    widget_put_hidden     
    load_string            "Level "
-   033                    2
+   iload                  2
    int_to_string         
    load_string            ": "
    load_int               105
    load_int               115
    load_int               794
-   033                    1
+   iload                  1
    3408                  
    037                    4
    1112                  
 LABEL178:
-   033                   
+   iload                  0
    load_int               47
    load_int               6
    iadd                  
@@ -215,32 +219,32 @@ LABEL178:
 LABEL186:
    load_int               0
    widget_put_hidden     
-   035                   
+   sload                  0
    1112                  
 LABEL190:
    load_int               4
-   034                    11
-   033                    9
+   istore                 11
+   iload                  9
    load_int               -1
    if_icmpeq              LABEL196
    jump                   LABEL779
 LABEL196:
-   033                    7
+   iload                  7
    load_int               -1
    if_icmpeq              LABEL200
    jump                   LABEL575
 LABEL200:
-   033                    5
+   iload                  5
    load_int               -1
    if_icmpeq              LABEL204
    jump                   LABEL412
 LABEL204:
-   033                    3
+   iload                  3
    load_int               -1
    if_icmpeq              LABEL208
    jump                   LABEL290
 LABEL208:
-   033                   
+   iload                  0
    load_int               47
    load_int               7
    iadd                  
@@ -252,7 +256,7 @@ LABEL216:
    load_int               1
    widget_put_hidden     
 LABEL218:
-   033                   
+   iload                  0
    load_int               47
    load_int               8
    iadd                  
@@ -264,7 +268,7 @@ LABEL226:
    load_int               1
    widget_put_hidden     
 LABEL228:
-   033                   
+   iload                  0
    load_int               47
    load_int               9
    iadd                  
@@ -276,7 +280,7 @@ LABEL236:
    load_int               1
    widget_put_hidden     
 LABEL238:
-   033                   
+   iload                  0
    load_int               47
    load_int               10
    iadd                  
@@ -288,7 +292,7 @@ LABEL246:
    load_int               1
    widget_put_hidden     
 LABEL248:
-   033                   
+   iload                  0
    load_int               47
    load_int               11
    iadd                  
@@ -300,7 +304,7 @@ LABEL256:
    load_int               1
    widget_put_hidden     
 LABEL258:
-   033                   
+   iload                  0
    load_int               47
    load_int               12
    iadd                  
@@ -312,7 +316,7 @@ LABEL266:
    load_int               1
    widget_put_hidden     
 LABEL268:
-   033                   
+   iload                  0
    load_int               47
    load_int               13
    iadd                  
@@ -324,7 +328,7 @@ LABEL276:
    load_int               1
    widget_put_hidden     
 LABEL278:
-   033                   
+   iload                  0
    load_int               47
    load_int               14
    iadd                  
@@ -339,7 +343,7 @@ LABEL288:
    return                
    jump                   LABEL411
 LABEL290:
-   033                   
+   iload                  0
    load_int               47
    load_int               7
    iadd                  
@@ -348,7 +352,7 @@ LABEL290:
    if_icmpeq              LABEL298
    jump                   LABEL351
 LABEL298:
-   033                   
+   iload                  0
    load_int               47
    load_int               8
    iadd                  
@@ -372,13 +376,13 @@ LABEL306:
    load_int               0
    1000                   1
    load_int               0
-   033                    3
-   033                    4
-   040                    241
+   iload                  3
+   iload                  4
+   invoke                 241
    load_int               240
    load_int               0
-   033                    3
-   033                    4
+   iload                  3
+   iload                  4
    load_int               -2147483645
    1702                  
    1702                   1
@@ -389,8 +393,8 @@ LABEL306:
    1414                  
    load_int               240
    load_int               0
-   033                    3
-   033                    4
+   iload                  3
+   iload                  4
    load_int               -2147483645
    1702                  
    1702                   1
@@ -403,7 +407,7 @@ LABEL306:
    load_string            "1oiIiiY"
    1407                  
 LABEL351:
-   033                   
+   iload                  0
    load_int               47
    load_int               9
    iadd                  
@@ -412,7 +416,7 @@ LABEL351:
    if_icmpeq              LABEL359
    jump                   LABEL371
 LABEL359:
-   033                   
+   iload                  0
    load_int               47
    load_int               10
    iadd                  
@@ -426,7 +430,7 @@ LABEL367:
    load_int               1
    widget_put_hidden      1
 LABEL371:
-   033                   
+   iload                  0
    load_int               47
    load_int               11
    iadd                  
@@ -435,7 +439,7 @@ LABEL371:
    if_icmpeq              LABEL379
    jump                   LABEL391
 LABEL379:
-   033                   
+   iload                  0
    load_int               47
    load_int               12
    iadd                  
@@ -449,7 +453,7 @@ LABEL387:
    load_int               1
    widget_put_hidden      1
 LABEL391:
-   033                   
+   iload                  0
    load_int               47
    load_int               13
    iadd                  
@@ -458,7 +462,7 @@ LABEL391:
    if_icmpeq              LABEL399
    jump                   LABEL411
 LABEL399:
-   033                   
+   iload                  0
    load_int               47
    load_int               14
    iadd                  
@@ -474,7 +478,7 @@ LABEL407:
 LABEL411:
    jump                   LABEL574
 LABEL412:
-   033                   
+   iload                  0
    load_int               47
    load_int               7
    iadd                  
@@ -483,7 +487,7 @@ LABEL412:
    if_icmpeq              LABEL420
    jump                   LABEL473
 LABEL420:
-   033                   
+   iload                  0
    load_int               47
    load_int               8
    iadd                  
@@ -507,13 +511,13 @@ LABEL428:
    load_int               0
    1000                   1
    load_int               0
-   033                    3
-   033                    4
-   040                    241
+   iload                  3
+   iload                  4
+   invoke                 241
    load_int               240
    load_int               0
-   033                    3
-   033                    4
+   iload                  3
+   iload                  4
    load_int               -2147483645
    1702                  
    1702                   1
@@ -524,8 +528,8 @@ LABEL428:
    1414                  
    load_int               240
    load_int               0
-   033                    3
-   033                    4
+   iload                  3
+   iload                  4
    load_int               -2147483645
    1702                  
    1702                   1
@@ -538,7 +542,7 @@ LABEL428:
    load_string            "1oiIiiY"
    1407                  
 LABEL473:
-   033                   
+   iload                  0
    load_int               47
    load_int               9
    iadd                  
@@ -547,7 +551,7 @@ LABEL473:
    if_icmpeq              LABEL481
    jump                   LABEL534
 LABEL481:
-   033                   
+   iload                  0
    load_int               47
    load_int               10
    iadd                  
@@ -571,13 +575,13 @@ LABEL489:
    load_int               0
    1000                   1
    load_int               0
-   033                    5
-   033                    6
-   040                    241
+   iload                  5
+   iload                  6
+   invoke                 241
    load_int               240
    load_int               0
-   033                    5
-   033                    6
+   iload                  5
+   iload                  6
    load_int               -2147483645
    1702                  
    1702                   1
@@ -588,8 +592,8 @@ LABEL489:
    1414                  
    load_int               240
    load_int               0
-   033                    5
-   033                    6
+   iload                  5
+   iload                  6
    load_int               -2147483645
    1702                  
    1702                   1
@@ -602,7 +606,7 @@ LABEL489:
    load_string            "1oiIiiY"
    1407                  
 LABEL534:
-   033                   
+   iload                  0
    load_int               47
    load_int               11
    iadd                  
@@ -611,7 +615,7 @@ LABEL534:
    if_icmpeq              LABEL542
    jump                   LABEL554
 LABEL542:
-   033                   
+   iload                  0
    load_int               47
    load_int               12
    iadd                  
@@ -625,7 +629,7 @@ LABEL550:
    load_int               1
    widget_put_hidden      1
 LABEL554:
-   033                   
+   iload                  0
    load_int               47
    load_int               13
    iadd                  
@@ -634,7 +638,7 @@ LABEL554:
    if_icmpeq              LABEL562
    jump                   LABEL574
 LABEL562:
-   033                   
+   iload                  0
    load_int               47
    load_int               14
    iadd                  
@@ -650,7 +654,7 @@ LABEL570:
 LABEL574:
    jump                   LABEL778
 LABEL575:
-   033                   
+   iload                  0
    load_int               47
    load_int               7
    iadd                  
@@ -659,7 +663,7 @@ LABEL575:
    if_icmpeq              LABEL583
    jump                   LABEL636
 LABEL583:
-   033                   
+   iload                  0
    load_int               47
    load_int               8
    iadd                  
@@ -683,13 +687,13 @@ LABEL591:
    load_int               0
    1000                   1
    load_int               0
-   033                    3
-   033                    4
-   040                    241
+   iload                  3
+   iload                  4
+   invoke                 241
    load_int               240
    load_int               0
-   033                    3
-   033                    4
+   iload                  3
+   iload                  4
    load_int               -2147483645
    1702                  
    1702                   1
@@ -700,8 +704,8 @@ LABEL591:
    1414                  
    load_int               240
    load_int               0
-   033                    3
-   033                    4
+   iload                  3
+   iload                  4
    load_int               -2147483645
    1702                  
    1702                   1
@@ -714,7 +718,7 @@ LABEL591:
    load_string            "1oiIiiY"
    1407                  
 LABEL636:
-   033                   
+   iload                  0
    load_int               47
    load_int               9
    iadd                  
@@ -723,7 +727,7 @@ LABEL636:
    if_icmpeq              LABEL644
    jump                   LABEL697
 LABEL644:
-   033                   
+   iload                  0
    load_int               47
    load_int               10
    iadd                  
@@ -747,13 +751,13 @@ LABEL652:
    load_int               0
    1000                   1
    load_int               0
-   033                    5
-   033                    6
-   040                    241
+   iload                  5
+   iload                  6
+   invoke                 241
    load_int               240
    load_int               0
-   033                    5
-   033                    6
+   iload                  5
+   iload                  6
    load_int               -2147483645
    1702                  
    1702                   1
@@ -764,8 +768,8 @@ LABEL652:
    1414                  
    load_int               240
    load_int               0
-   033                    5
-   033                    6
+   iload                  5
+   iload                  6
    load_int               -2147483645
    1702                  
    1702                   1
@@ -778,7 +782,7 @@ LABEL652:
    load_string            "1oiIiiY"
    1407                  
 LABEL697:
-   033                   
+   iload                  0
    load_int               47
    load_int               11
    iadd                  
@@ -787,7 +791,7 @@ LABEL697:
    if_icmpeq              LABEL705
    jump                   LABEL758
 LABEL705:
-   033                   
+   iload                  0
    load_int               47
    load_int               12
    iadd                  
@@ -811,13 +815,13 @@ LABEL713:
    load_int               0
    1000                   1
    load_int               0
-   033                    7
-   033                    8
-   040                    241
+   iload                  7
+   iload                  8
+   invoke                 241
    load_int               240
    load_int               0
-   033                    7
-   033                    8
+   iload                  7
+   iload                  8
    load_int               -2147483645
    1702                  
    1702                   1
@@ -828,8 +832,8 @@ LABEL713:
    1414                  
    load_int               240
    load_int               0
-   033                    7
-   033                    8
+   iload                  7
+   iload                  8
    load_int               -2147483645
    1702                  
    1702                   1
@@ -842,7 +846,7 @@ LABEL713:
    load_string            "1oiIiiY"
    1407                  
 LABEL758:
-   033                   
+   iload                  0
    load_int               47
    load_int               13
    iadd                  
@@ -851,7 +855,7 @@ LABEL758:
    if_icmpeq              LABEL766
    jump                   LABEL778
 LABEL766:
-   033                   
+   iload                  0
    load_int               47
    load_int               14
    iadd                  
@@ -867,7 +871,7 @@ LABEL774:
 LABEL778:
    jump                   LABEL1023
 LABEL779:
-   033                   
+   iload                  0
    load_int               47
    load_int               7
    iadd                  
@@ -876,7 +880,7 @@ LABEL779:
    if_icmpeq              LABEL787
    jump                   LABEL840
 LABEL787:
-   033                   
+   iload                  0
    load_int               47
    load_int               8
    iadd                  
@@ -900,13 +904,13 @@ LABEL795:
    load_int               0
    1000                   1
    load_int               0
-   033                    3
-   033                    4
-   040                    241
+   iload                  3
+   iload                  4
+   invoke                 241
    load_int               240
    load_int               0
-   033                    3
-   033                    4
+   iload                  3
+   iload                  4
    load_int               -2147483645
    1702                  
    1702                   1
@@ -917,8 +921,8 @@ LABEL795:
    1414                  
    load_int               240
    load_int               0
-   033                    3
-   033                    4
+   iload                  3
+   iload                  4
    load_int               -2147483645
    1702                  
    1702                   1
@@ -931,7 +935,7 @@ LABEL795:
    load_string            "1oiIiiY"
    1407                  
 LABEL840:
-   033                   
+   iload                  0
    load_int               47
    load_int               9
    iadd                  
@@ -940,7 +944,7 @@ LABEL840:
    if_icmpeq              LABEL848
    jump                   LABEL901
 LABEL848:
-   033                   
+   iload                  0
    load_int               47
    load_int               10
    iadd                  
@@ -964,13 +968,13 @@ LABEL856:
    load_int               0
    1000                   1
    load_int               0
-   033                    5
-   033                    6
-   040                    241
+   iload                  5
+   iload                  6
+   invoke                 241
    load_int               240
    load_int               0
-   033                    5
-   033                    6
+   iload                  5
+   iload                  6
    load_int               -2147483645
    1702                  
    1702                   1
@@ -981,8 +985,8 @@ LABEL856:
    1414                  
    load_int               240
    load_int               0
-   033                    5
-   033                    6
+   iload                  5
+   iload                  6
    load_int               -2147483645
    1702                  
    1702                   1
@@ -995,7 +999,7 @@ LABEL856:
    load_string            "1oiIiiY"
    1407                  
 LABEL901:
-   033                   
+   iload                  0
    load_int               47
    load_int               11
    iadd                  
@@ -1004,7 +1008,7 @@ LABEL901:
    if_icmpeq              LABEL909
    jump                   LABEL962
 LABEL909:
-   033                   
+   iload                  0
    load_int               47
    load_int               12
    iadd                  
@@ -1028,13 +1032,13 @@ LABEL917:
    load_int               0
    1000                   1
    load_int               0
-   033                    7
-   033                    8
-   040                    241
+   iload                  7
+   iload                  8
+   invoke                 241
    load_int               240
    load_int               0
-   033                    7
-   033                    8
+   iload                  7
+   iload                  8
    load_int               -2147483645
    1702                  
    1702                   1
@@ -1045,8 +1049,8 @@ LABEL917:
    1414                  
    load_int               240
    load_int               0
-   033                    7
-   033                    8
+   iload                  7
+   iload                  8
    load_int               -2147483645
    1702                  
    1702                   1
@@ -1059,7 +1063,7 @@ LABEL917:
    load_string            "1oiIiiY"
    1407                  
 LABEL962:
-   033                   
+   iload                  0
    load_int               47
    load_int               13
    iadd                  
@@ -1068,7 +1072,7 @@ LABEL962:
    if_icmpeq              LABEL970
    jump                   LABEL1023
 LABEL970:
-   033                   
+   iload                  0
    load_int               47
    load_int               14
    iadd                  
@@ -1092,13 +1096,13 @@ LABEL978:
    load_int               0
    1000                   1
    load_int               0
-   033                    9
-   033                    10
-   040                    241
+   iload                  9
+   iload                  10
+   invoke                 241
    load_int               240
    load_int               0
-   033                    9
-   033                    10
+   iload                  9
+   iload                  10
    load_int               -2147483645
    1702                  
    1702                   1
@@ -1109,8 +1113,8 @@ LABEL978:
    1414                  
    load_int               240
    load_int               0
-   033                    9
-   033                    10
+   iload                  9
+   iload                  10
    load_int               -2147483645
    1702                  
    1702                   1

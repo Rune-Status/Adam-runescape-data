@@ -1,6 +1,10 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
    load_int               -1
-   034                    1
-   033                   
+   istore                 1
+   iload                  0
    load_int               1131
    if_icmpeq              LABEL6
    jump                   LABEL82
@@ -15,25 +19,25 @@ LABEL10:
    load_int               1137
    042                    171
    3408                  
-   034                    1
+   istore                 1
 LABEL16:
    load_int               73
    load_int               73
-   033                   
+   iload                  0
    load_int               10551360
    3408                  
    2702                  
    load_int               1
    if_icmpeq              LABEL37
-   033                    1
+   iload                  1
    load_int               -1
    if_icmpne              LABEL28
    jump                   LABEL41
 LABEL28:
    load_int               73
    load_int               73
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    3408                  
    2702                  
    load_int               1
@@ -51,7 +55,7 @@ LABEL41:
 LABEL44:
    load_int               73
    load_int               73
-   033                   
+   iload                  0
    load_int               10551344
    3408                  
    widget_get_hidden_widget
@@ -62,14 +66,14 @@ LABEL53:
    load_int               1
    load_int               73
    load_int               73
-   033                   
+   iload                  0
    load_int               10551332
    3408                  
    widget_put_hidden_widget
    load_int               1
    load_int               73
    load_int               73
-   033                   
+   iload                  0
    load_int               10551339
    3408                  
    widget_put_hidden_widget
@@ -78,14 +82,14 @@ LABEL68:
    load_int               0
    load_int               73
    load_int               73
-   033                   
+   iload                  0
    load_int               10551332
    3408                  
    widget_put_hidden_widget
    load_int               0
    load_int               73
    load_int               73
-   033                   
+   iload                  0
    load_int               10551339
    3408                  
    widget_put_hidden_widget

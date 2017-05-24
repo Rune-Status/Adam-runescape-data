@@ -1,9 +1,13 @@
+.int_stack_count    2
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
    load_int               0
-   033                   
+   iload                  0
    widget_put_hidden_widget
-   033                   
+   iload                  0
    102                   
-   033                   
+   iload                  0
    load_int               4
    load_int               0
    100                   
@@ -27,43 +31,43 @@
    1114                  
    load_int               1
    1115                  
-   033                   
-   035                   
-   040                    1533
+   iload                  0
+   sload                  0
+   invoke                 1533
    load_int               1532
-   033                   
+   iload                  0
    1702                  
-   035                   
+   sload                  0
    load_int               1430
    load_int               1432
    load_int               2
    load_string            "IisY"
-   033                   
+   iload                  0
    2407                  
-   033                    1
+   iload                  1
    load_int               2
    if_icmpeq              LABEL46
    jump                   LABEL51
 LABEL46:
-   033                   
+   iload                  0
    1702                  
-   035                   
-   040                    1531
+   sload                  0
+   invoke                 1531
    jump                   LABEL65
 LABEL51:
    load_int               -1
    load_string            ""
-   033                   
+   iload                  0
    2412                  
    load_int               -1
    load_string            ""
-   033                   
+   iload                  0
    2404                  
-   033                   
+   iload                  0
    widget_put_actions_null_widget
    load_int               -1
    load_string            ""
-   033                   
+   iload                  0
    2409                  
 LABEL65:
    return                

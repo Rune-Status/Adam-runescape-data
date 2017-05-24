@@ -1,3 +1,7 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   0
    025                    4611
    load_int               1
    if_icmpeq              LABEL4
@@ -5,47 +9,47 @@
 LABEL4:
    load_int               905
    load_int               -2147483640
-   033                    1
+   iload                  1
    load_int               0
    load_string            "ig1"
-   033                   
+   iload                  0
    2419                  
    jump                   LABEL19
 LABEL12:
    load_int               905
    load_int               -2147483640
-   033                    1
+   iload                  1
    load_int               1
    load_string            "ig1"
-   033                   
+   iload                  0
    2419                  
 LABEL19:
-   033                   
-   033                    1
-   040                    909
+   iload                  0
+   iload                  1
+   invoke                 909
    load_int               73
    load_int               73
-   033                    1
+   iload                  1
    load_int               10551311
    3408                  
-   034                    2
-   033                    2
+   istore                 2
+   iload                  2
    load_int               -1
    if_icmpne              LABEL32
    jump                   LABEL36
 LABEL32:
    025                    542
-   040                    633
-   033                    2
+   invoke                 633
+   iload                  2
    widget_put_hidden_widget
 LABEL36:
    load_int               73
    load_int               73
-   033                    1
+   iload                  1
    load_int               10551320
    3408                  
-   034                    2
-   033                    2
+   istore                 2
+   iload                  2
    load_int               -1
    if_icmpne              LABEL46
    jump                   LABEL60
@@ -59,27 +63,27 @@ LABEL46:
    jump                   LABEL57
 LABEL53:
    load_int               1
-   033                    2
+   iload                  2
    widget_put_hidden_widget
    jump                   LABEL60
 LABEL57:
    load_int               0
-   033                    2
+   iload                  2
    widget_put_hidden_widget
 LABEL60:
    load_int               73
    load_int               73
-   033                    1
+   iload                  1
    load_int               10551299
    3408                  
-   034                    3
+   istore                 3
    load_int               0
-   034                    4
+   istore                 4
    load_int               0
-   034                    5
+   istore                 5
    6204                  
-   034                    4
-   034                    5
+   istore                 4
+   istore                 5
    042                    73
    load_int               0
    if_icmpgt              LABEL77
@@ -90,100 +94,100 @@ LABEL77:
    if_icmpgt              LABEL81
    jump                   LABEL91
 LABEL81:
-   033                    5
+   iload                  5
    042                    73
    if_icmpne              LABEL88
-   033                    4
+   iload                  4
    042                    74
    if_icmpne              LABEL88
    jump                   LABEL91
 LABEL88:
    042                    73
    042                    74
-   040                    42
+   invoke                 42
 LABEL91:
    load_int               39
    load_int               -2147483646
    load_string            "i"
-   033                    3
+   iload                  3
    2417                  
    025                    3756
    load_int               1
    isub                  
-   034                    6
+   istore                 6
    load_int               105
    load_int               73
    load_int               1139
-   033                    6
+   iload                  6
    3408                  
-   034                    7
-   033                    7
+   istore                 7
+   iload                  7
    load_int               -1
    if_icmpne              LABEL110
    jump                   LABEL131
 LABEL110:
    load_int               73
    load_int               73
-   033                    1
-   033                    7
+   iload                  1
+   iload                  7
    3408                  
-   034                    7
-   033                    7
+   istore                 7
+   iload                  7
    load_int               -1
    if_icmpne              LABEL120
    jump                   LABEL126
 LABEL120:
    load_int               906
-   033                    7
+   iload                  7
    load_string            "I"
-   033                   
+   iload                  0
    2408                  
    jump                   LABEL130
 LABEL126:
    load_int               -1
    load_string            ""
-   033                   
+   iload                  0
    2408                  
 LABEL130:
    jump                   LABEL135
 LABEL131:
    load_int               -1
    load_string            ""
-   033                   
+   iload                  0
    2408                  
 LABEL135:
-   033                    1
-   040                    912
+   iload                  1
+   invoke                 912
    load_int               105
    load_int               73
    load_int               1138
    load_int               2
    3408                  
-   034                    8
+   istore                 8
    load_int               105
    load_int               73
    load_int               1139
    load_int               2
    3408                  
-   034                    7
+   istore                 7
    load_int               73
    load_int               73
-   033                    1
-   033                    8
+   iload                  1
+   iload                  8
    3408                  
    load_int               73
    load_int               73
-   033                    1
-   033                    7
+   iload                  1
+   iload                  7
    3408                  
-   034                    7
-   034                    8
-   033                    8
+   istore                 7
+   istore                 8
+   iload                  8
    load_int               -1
    if_icmpne              LABEL165
    jump                   LABEL224
 LABEL165:
-   033                    7
+   iload                  7
    load_int               -1
    if_icmpne              LABEL169
    jump                   LABEL224
@@ -195,10 +199,10 @@ LABEL169:
 LABEL173:
    load_int               1
    load_string            "Raiding Party"
-   033                    8
+   iload                  8
    2300                  
    load_int               1414
-   033                    7
+   iload                  7
    widget_put_textureid_widget
    jump                   LABEL224
 LABEL181:
@@ -209,10 +213,10 @@ LABEL181:
 LABEL185:
    load_int               1
    load_string            "Kourend Tasks"
-   033                    8
+   iload                  8
    2300                  
    load_int               1299
-   033                    7
+   iload                  7
    widget_put_textureid_widget
    jump                   LABEL224
 LABEL193:
@@ -223,10 +227,10 @@ LABEL193:
 LABEL197:
    load_int               1
    load_string            "Minigames"
-   033                    8
+   iload                  8
    2300                  
    load_int               1052
-   033                    7
+   iload                  7
    widget_put_textureid_widget
    jump                   LABEL224
 LABEL205:
@@ -237,28 +241,28 @@ LABEL205:
 LABEL209:
    load_int               1
    load_string            "Achievement Diaries"
-   033                    8
+   iload                  8
    2300                  
    load_int               1053
-   033                    7
+   iload                  7
    widget_put_textureid_widget
    jump                   LABEL224
 LABEL217:
    load_int               1
    load_string            "Quest List"
-   033                    8
+   iload                  8
    2300                  
    load_int               776
-   033                    7
+   iload                  7
    widget_put_textureid_widget
 LABEL224:
    load_int               73
    load_int               73
-   033                    1
+   iload                  1
    load_int               10551324
    3408                  
-   034                    7
-   033                    7
+   istore                 7
+   iload                  7
    load_int               -1
    if_icmpne              LABEL234
    jump                   LABEL251
@@ -269,27 +273,27 @@ LABEL234:
    jump                   LABEL245
 LABEL238:
    load_int               897
-   033                    7
+   iload                  7
    widget_put_textureid_widget
    load_int               0
-   033                    7
+   iload                  7
    widget_put_opacity_widget
    jump                   LABEL251
 LABEL245:
    load_int               1040
-   033                    7
+   iload                  7
    widget_put_textureid_widget
    load_int               150
-   033                    7
+   iload                  7
    widget_put_opacity_widget
 LABEL251:
    load_int               73
    load_int               73
-   033                    1
+   iload                  1
    load_int               10551310
    3408                  
-   034                    7
-   033                    7
+   istore                 7
+   iload                  7
    load_int               -1
    if_icmpne              LABEL261
    jump                   LABEL276
@@ -305,12 +309,12 @@ LABEL265:
    jump                   LABEL273
 LABEL269:
    load_int               0
-   033                    7
+   iload                  7
    widget_put_hidden_widget
    jump                   LABEL276
 LABEL273:
    load_int               1
-   033                    7
+   iload                  7
    widget_put_hidden_widget
 LABEL276:
    025                    4134

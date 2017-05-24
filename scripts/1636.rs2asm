@@ -1,5 +1,9 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   1
    load_string            ""
-   036                   
+   sstore                
    025                    4991
    load_int               0
    if_icmpeq              LABEL6
@@ -9,7 +13,7 @@ LABEL6:
    load_string            "When the timer hits 0:00 You will be safe here"
    load_string            "</col>"
    037                    3
-   036                   
+   sstore                
    jump                   LABEL23
 LABEL12:
    load_string            "<col=ff981f>"
@@ -22,9 +26,9 @@ LABEL12:
    load_string            " -  Get to safety"
    load_string            "</col>"
    037                    9
-   036                   
+   sstore                
 LABEL23:
-   035                   
-   033                   
+   sload                  0
+   iload                  0
    2112                  
    return                

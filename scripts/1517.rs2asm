@@ -1,6 +1,10 @@
+.int_stack_count    1
+.string_stack_count 1
+.int_var_count      4
+.string_var_count   5
    load_int               73
    load_int               73
-   040                    900
+   invoke                 900
    load_int               10551308
    3408                  
    2702                  
@@ -10,7 +14,7 @@
 LABEL9:
    return                
 LABEL10:
-   035                   
+   sload                  0
    string_length         
    load_int               0
    if_icmple              LABEL15
@@ -19,27 +23,27 @@ LABEL15:
    return                
 LABEL16:
    load_string            ""
-   036                    1
-   035                   
-   040                    632
-   036                   
-   036                    1
+   sstore                 1
+   sload                  0
+   invoke                 632
+   sstore                
+   sstore                 1
    load_string            ""
-   036                    2
-   035                   
-   040                    632
-   036                   
-   036                    2
+   sstore                 2
+   sload                  0
+   invoke                 632
+   sstore                
+   sstore                 2
    load_string            ""
-   036                    3
-   035                   
-   040                    632
-   036                   
-   036                    3
+   sstore                 3
+   sload                  0
+   invoke                 632
+   sstore                
+   sstore                 3
    042                    178
    load_int               14
    imul                  
-   034                    1
+   istore                 1
    load_int               33226762
    load_int               3
    042                    178
@@ -52,7 +56,7 @@ LABEL16:
    load_int               0
    1001                  
    load_int               0
-   033                    1
+   iload                  1
    load_int               1
    load_int               0
    1000                  
@@ -64,25 +68,25 @@ LABEL16:
    042                    178
    load_int               -1
    load_int               0
-   040                    1518
-   035                    1
+   invoke                 1518
+   sload                  1
    string_remove_html    
-   036                    4
+   sstore                 4
    load_string            "<col=ff9040>"
-   035                    4
+   sload                  4
    load_string            "</col>"
    037                    3
    widget_put_name       
    load_int               1521
    load_int               -2147483644
    042                    178
-   035                    4
-   035                   
+   sload                  4
+   sload                  0
    load_string            "iiss"
    1409                  
    load_int               33226759
    widget_get_width_widget
-   034                    2
+   istore                 2
    load_int               33226762
    load_int               4
    042                    178
@@ -91,13 +95,13 @@ LABEL16:
    load_int               1
    iadd                  
    100                   
-   033                    2
+   iload                  2
    load_int               14
    load_int               0
    load_int               0
    1001                  
    load_int               0
-   033                    1
+   iload                  1
    load_int               0
    load_int               0
    1000                  
@@ -111,13 +115,13 @@ LABEL16:
    1114                  
    load_int               1
    1115                  
-   035                    1
+   sload                  1
    1112                  
-   033                    2
-   034                    3
+   iload                  2
+   istore                 3
    load_int               33226760
    widget_get_width_widget
-   034                    2
+   istore                 2
    load_int               33226762
    load_int               4
    042                    178
@@ -126,13 +130,13 @@ LABEL16:
    load_int               2
    iadd                  
    100                   
-   033                    2
+   iload                  2
    load_int               14
    load_int               0
    load_int               0
    1001                  
-   033                    3
-   033                    1
+   iload                  3
+   iload                  1
    load_int               0
    load_int               0
    1000                  
@@ -146,7 +150,7 @@ LABEL16:
    1114                  
    load_int               1
    1115                  
-   035                    2
+   sload                  2
    1112                  
    load_int               33226762
    load_int               4
@@ -156,15 +160,15 @@ LABEL16:
    load_int               3
    iadd                  
    100                   
-   033                    3
-   033                    2
+   iload                  3
+   iload                  2
    iadd                  
    load_int               14
    load_int               1
    load_int               0
    1001                  
    load_int               0
-   033                    1
+   iload                  1
    load_int               2
    load_int               0
    1000                  
@@ -178,7 +182,7 @@ LABEL16:
    1114                  
    load_int               1
    1115                  
-   035                    3
+   sload                  3
    1112                  
    load_int               33226762
    load_int               4
@@ -200,9 +204,9 @@ LABEL16:
    1114                  
    load_int               1
    1115                  
-   035                    2
+   sload                  2
    load_int               3
-   040                    1503
+   invoke                 1503
    042                    178
    concat_int            
    1112                  
@@ -226,9 +230,9 @@ LABEL16:
    1114                  
    load_int               1
    1115                  
-   035                    3
+   sload                  3
    load_int               4
-   040                    1503
+   invoke                 1503
    042                    178
    concat_int            
    1112                  

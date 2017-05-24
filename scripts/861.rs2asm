@@ -1,10 +1,14 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   1
    load_int               8323073
    102                   
    load_int               8323084
    102                   
    load_int               8323084
    load_int               0
-   040                    835
+   invoke                 835
    pop_int               
    load_int               8323073
    load_int               3
@@ -19,7 +23,7 @@
    load_string            ""
    load_int               8323084
    2408                  
-   033                   
+   iload                  0
    load_int               -1
    if_icmpne              LABEL25
    jump                   LABEL60
@@ -44,7 +48,7 @@ LABEL25:
    load_int               8323084
    2300                  
    load_string            "<col=ff9040>"
-   033                   
+   iload                  0
    get_item_name         
    load_string            "</col>"
    037                    3
@@ -79,7 +83,7 @@ LABEL60:
    2409                  
 LABEL77:
    load_string            ""
-   036                   
+   sstore                
    load_int               8323073
    load_int               3
    load_int               1
@@ -96,7 +100,7 @@ LABEL77:
    load_string            ""
    load_int               8323090
    2408                  
-   033                    1
+   iload                  1
    load_int               -1
    if_icmpne              LABEL99
    jump                   LABEL138
@@ -118,7 +122,7 @@ LABEL99:
    load_int               8323090
    2300                  
    load_string            "<col=ff9040>"
-   033                    1
+   iload                  1
    get_item_name         
    load_string            "</col>"
    037                    3
@@ -151,20 +155,20 @@ LABEL138:
    2404                  
    load_int               8323090
    widget_put_actions_null_widget
-   033                    2
+   iload                  2
    load_int               -1
    if_icmpne              LABEL152
    jump                   LABEL155
 LABEL152:
    load_string            "This is the first key on your key ring."
-   036                   
+   sstore                
    jump                   LABEL157
 LABEL155:
    load_string            "There are no more keys on your key ring."
-   036                   
+   sstore                
 LABEL157:
    load_int               860
-   035                   
+   sload                  0
    load_string            "s"
    load_int               8323090
    2400                  
@@ -185,7 +189,7 @@ LABEL162:
    load_string            ""
    load_int               8323087
    2408                  
-   033                    2
+   iload                  2
    load_int               -1
    if_icmpne              LABEL182
    jump                   LABEL221
@@ -207,7 +211,7 @@ LABEL182:
    load_int               8323087
    2300                  
    load_string            "<col=ff9040>"
-   033                    2
+   iload                  2
    get_item_name         
    load_string            "</col>"
    037                    3
@@ -240,26 +244,26 @@ LABEL221:
    2404                  
    load_int               8323087
    widget_put_actions_null_widget
-   033                    1
+   iload                  1
    load_int               -1
    if_icmpne              LABEL235
    jump                   LABEL238
 LABEL235:
    load_string            "This is the last key on your key ring."
-   036                   
+   sstore                
    jump                   LABEL240
 LABEL238:
    load_string            "There are no more keys on your key ring."
-   036                   
+   sstore                
 LABEL240:
    load_int               860
-   035                   
+   sload                  0
    load_string            "s"
    load_int               8323087
    2400                  
 LABEL245:
    load_string            "Key total: "
-   033                    3
+   iload                  3
    int_to_string         
    037                    2
    load_int               8323086

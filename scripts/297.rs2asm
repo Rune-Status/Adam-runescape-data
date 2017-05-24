@@ -1,22 +1,26 @@
+.int_stack_count    7
+.string_stack_count 0
+.int_var_count      7
+.string_var_count   1
    load_string            ""
-   036                   
-   033                   
+   sstore                
+   iload                  0
    load_int               -1
    if_icmpne              LABEL6
    jump                   LABEL88
 LABEL6:
    load_int               0
    widget_put_opacity    
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    1200                  
    widget_put_actions_null
-   033                   
+   iload                  0
    load_int               11941
    if_icmpeq              LABEL16
    jump                   LABEL30
 LABEL16:
-   033                    4
+   iload                  4
    load_int               1
    if_icmpeq              LABEL20
    jump                   LABEL30
@@ -26,8 +30,8 @@ LABEL20:
    1300                  
    load_int               490
    load_int               -2147483644
-   033                    5
-   033                    6
+   iload                  5
+   iload                  6
    load_int               1
    load_string            "iIIi"
    1409                  
@@ -62,24 +66,24 @@ LABEL49:
    load_int               111
    load_int               115
    load_int               995
-   033                   
+   iload                  0
    3408                  
-   036                   
-   035                   
+   sstore                
+   sload                  0
    string_length         
    load_int               0
    if_icmpgt              LABEL66
    jump                   LABEL69
 LABEL66:
    load_int               9
-   035                   
+   sload                  0
    1300                  
 LABEL69:
    load_int               10
    load_string            "Examine"
    1300                  
    load_string            "<col=ff9040>"
-   033                   
+   iload                  0
    get_item_name         
    load_string            "</col>"
    037                    3
@@ -88,9 +92,9 @@ LABEL69:
    load_int               -2147483645
    load_int               -2147483643
    load_int               -2147483641
-   033                    3
-   033                    5
-   033                    6
+   iload                  3
+   iload                  5
+   iload                  6
    load_string            "IiiIII"
    1410                  
    jump                   LABEL97

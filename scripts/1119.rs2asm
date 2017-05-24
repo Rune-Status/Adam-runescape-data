@@ -1,91 +1,95 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      14
+.string_var_count   1
    load_int               105
    load_int               73
    load_int               1235
-   033                   
+   iload                  0
    3408                  
-   034                    4
+   istore                 4
    load_int               105
    load_int               73
    load_int               1236
-   033                   
+   iload                  0
    3408                  
-   034                    5
+   istore                 5
    load_int               105
    load_int               73
    load_int               1237
-   033                   
+   iload                  0
    3408                  
-   034                    6
-   033                    4
+   istore                 6
+   iload                  4
    load_int               -1
    if_icmpeq              LABEL28
-   033                    5
+   iload                  5
    load_int               -1
    if_icmpeq              LABEL28
-   033                    6
+   iload                  6
    load_int               -1
    if_icmpeq              LABEL28
    jump                   LABEL29
 LABEL28:
    return                
 LABEL29:
-   033                    2
+   iload                  2
    divide_by_16384       
    load_int               64
    modulo                
-   034                    7
-   033                    2
+   istore                 7
+   iload                  2
    and_16384             
    load_int               64
    modulo                
-   034                    8
-   033                    8
+   istore                 8
+   iload                  8
    load_int               0
    if_icmple              LABEL43
    jump                   LABEL45
 LABEL43:
    load_int               1
-   034                    8
+   istore                 8
 LABEL45:
-   033                    7
-   033                    8
+   iload                  7
+   iload                  8
    if_icmpgt              LABEL49
    jump                   LABEL51
 LABEL49:
-   033                    8
-   034                    7
+   iload                  8
+   istore                 7
 LABEL51:
-   033                    2
+   iload                  2
    divide_by_16384       
    load_int               64
    idiv                  
-   034                    9
-   033                    4
+   istore                 9
+   iload                  4
    102                   
    load_int               0
    043                    2
    load_int               0
-   034                    10
-   033                    3
+   istore                 10
+   iload                  3
    load_int               1
    test_bit              
    load_int               1
    if_icmpeq              LABEL73
-   033                    3
+   iload                  3
    load_int               0
    test_bit              
    load_int               1
    if_icmpeq              LABEL73
    jump                   LABEL107
 LABEL73:
-   033                    4
+   iload                  4
    load_int               3
-   033                    10
+   iload                  10
    100                   
-   033                    10
+   iload                  10
    load_int               1
    iadd                  
-   034                    10
+   istore                 10
    load_int               0
    load_int               0
    load_int               1
@@ -100,7 +104,7 @@ LABEL73:
    1102                  
    load_int               240
    widget_put_opacity    
-   033                    3
+   iload                  3
    load_int               1
    test_bit              
    load_int               1
@@ -116,14 +120,14 @@ LABEL104:
 LABEL106:
    jump                   LABEL129
 LABEL107:
-   033                    4
+   iload                  4
    load_int               5
-   033                    10
+   iload                  10
    100                   
-   033                    10
+   iload                  10
    load_int               1
    iadd                  
-   034                    10
+   istore                 10
    load_int               0
    load_int               0
    load_int               1
@@ -139,22 +143,22 @@ LABEL107:
    load_int               1040
    widget_put_textureid  
 LABEL129:
-   033                    4
-   033                    10
-   040                    715
-   034                    10
-   033                    6
+   iload                  4
+   iload                  10
+   invoke                 715
+   istore                 10
+   iload                  6
    102                   
    load_int               0
-   034                    10
-   033                    6
+   istore                 10
+   iload                  6
    load_int               4
-   033                    10
+   iload                  10
    100                   
-   033                    10
+   iload                  10
    load_int               1
    iadd                  
-   034                    10
+   istore                 10
    load_int               0
    load_int               20
    load_int               1
@@ -178,17 +182,17 @@ LABEL129:
    load_int               105
    load_int               115
    load_int               1233
-   033                   
+   iload                  0
    3408                  
    1112                  
-   033                    6
+   iload                  6
    load_int               4
-   033                    10
+   iload                  10
    100                   
-   033                    10
+   iload                  10
    load_int               1
    iadd                  
-   034                    10
+   istore                 10
    load_int               0
    load_int               20
    load_int               1
@@ -210,11 +214,11 @@ LABEL129:
    load_int               1
    1115                  
    load_string            ""
-   036                   
-   033                    1
+   sstore                
+   iload                  1
    load_int               1925
    if_icmpeq              LABEL208
-   033                    1
+   iload                  1
    load_int               6055
    if_icmpeq              LABEL208
    jump                   LABEL215
@@ -222,46 +226,46 @@ LABEL208:
    load_int               105
    load_int               115
    load_int               1234
-   033                   
+   iload                  0
    3408                  
-   036                   
+   sstore                
    jump                   LABEL221
 LABEL215:
    load_int               111
    load_int               115
    load_int               1238
-   033                    1
+   iload                  1
    3408                  
-   036                   
+   sstore                
 LABEL221:
-   035                   
+   sload                  0
    1112                  
-   033                    6
+   iload                  6
    widget_get_height_widget
-   034                    11
-   033                    11
+   istore                 11
+   iload                  11
    load_int               50
    isub                  
-   034                    12
-   033                    12
+   istore                 12
+   iload                  12
    load_int               4
    isub                  
-   034                    13
-   033                    7
+   istore                 13
+   iload                  7
    load_int               0
    if_icmpgt              LABEL238
    jump                   LABEL363
 LABEL238:
-   033                    6
+   iload                  6
    load_int               3
-   033                    10
+   iload                  10
    100                   
-   033                    10
+   iload                  10
    load_int               1
    iadd                  
-   034                    10
+   istore                 10
    load_int               10
-   033                    12
+   iload                  12
    load_int               0
    load_int               0
    1001                  
@@ -274,16 +278,16 @@ LABEL238:
    1102                  
    load_int               0
    widget_put_textcolor  
-   033                    6
+   iload                  6
    load_int               3
-   033                    10
+   iload                  10
    100                   
-   033                    10
+   iload                  10
    load_int               1
    iadd                  
-   034                    10
+   istore                 10
    load_int               10
-   033                    12
+   iload                  12
    load_int               0
    load_int               0
    1001                  
@@ -294,20 +298,20 @@ LABEL238:
    1000                  
    load_int               0
    1102                  
-   033                    6
+   iload                  6
    load_int               3
-   033                    10
+   iload                  10
    100                    1
-   033                    10
+   iload                  10
    load_int               1
    iadd                  
-   034                    10
+   istore                 10
    load_int               6
    load_int               0
-   033                    7
+   iload                  7
    load_int               0
-   033                    8
-   033                    13
+   iload                  8
+   iload                  13
    4006                  
    load_int               0
    load_int               0
@@ -319,18 +323,18 @@ LABEL238:
    1000                   1
    load_int               1
    1102                   1
-   035                   
+   sload                  0
    load_string            " (State: "
-   033                    7
+   iload                  7
    int_to_string         
    load_string            " / "
-   033                    8
+   iload                  8
    int_to_string         
    load_string            ")"
    037                    5
    concat_string         
-   036                   
-   033                    3
+   sstore                
+   iload                  3
    load_int               1
    test_bit              
    load_int               1
@@ -341,7 +345,7 @@ LABEL322:
    widget_put_textcolor  
    load_int               16711680
    widget_put_textcolor   1
-   035                   
+   sload                  0
    load_string            "<br>"
    load_string            "The patch is "
    load_string            "<col=7f0000>"
@@ -350,10 +354,10 @@ LABEL322:
    load_string            "."
    037                    6
    concat_string         
-   036                   
+   sstore                
    jump                   LABEL362
 LABEL337:
-   033                    3
+   iload                  3
    load_int               0
    test_bit              
    load_int               1
@@ -364,7 +368,7 @@ LABEL343:
    widget_put_textcolor  
    load_int               16750623
    widget_put_textcolor   1
-   035                   
+   sload                  0
    load_string            "<br>"
    load_string            "The patch is "
    load_string            "<col=003f00>"
@@ -373,7 +377,7 @@ LABEL343:
    load_string            "."
    037                    6
    concat_string         
-   036                   
+   sstore                
    jump                   LABEL362
 LABEL358:
    load_int               52992
@@ -383,42 +387,42 @@ LABEL358:
 LABEL362:
    jump                   LABEL380
 LABEL363:
-   033                    1
+   iload                  1
    load_int               1925
    if_icmpeq              LABEL367
    jump                   LABEL372
 LABEL367:
-   035                   
+   sload                  0
    load_string            " (empty)"
    concat_string         
-   036                   
+   sstore                
    jump                   LABEL380
 LABEL372:
-   033                    1
+   iload                  1
    load_int               6055
    if_icmpeq              LABEL376
    jump                   LABEL380
 LABEL376:
-   035                   
+   sload                  0
    load_string            " (weeds)"
    concat_string         
-   036                   
+   sstore                
 LABEL380:
-   033                    3
+   iload                  3
    load_int               2
    test_bit              
    load_int               1
    if_icmpeq              LABEL386
    jump                   LABEL413
 LABEL386:
-   033                    6
+   iload                  6
    load_int               5
-   033                    10
+   iload                  10
    100                   
-   033                    10
+   iload                  10
    load_int               1
    iadd                  
-   034                    10
+   istore                 10
    load_int               36
    load_int               36
    load_int               0
@@ -431,29 +435,29 @@ LABEL386:
    1000                  
    load_int               760
    widget_put_textureid  
-   035                   
+   sload                  0
    load_string            "<br>"
    load_string            "A gardener is protecting this patch."
    037                    2
    concat_string         
-   036                   
+   sstore                
    jump                   LABEL483
 LABEL413:
-   033                    3
+   iload                  3
    load_int               7
    test_bit              
    load_int               1
    if_icmpeq              LABEL419
    jump                   LABEL446
 LABEL419:
-   033                    6
+   iload                  6
    load_int               5
-   033                    10
+   iload                  10
    100                   
-   033                    10
+   iload                  10
    load_int               1
    iadd                  
-   034                    10
+   istore                 10
    load_int               32
    load_int               36
    load_int               0
@@ -466,29 +470,29 @@ LABEL419:
    1000                  
    load_int               904
    widget_put_textureid  
-   035                   
+   sload                  0
    load_string            "<br>"
    load_string            "A House in Kourend is protecting the patch as a favour."
    037                    2
    concat_string         
-   036                   
+   sstore                
    jump                   LABEL483
 LABEL446:
-   033                    3
+   iload                  3
    load_int               3
    test_bit              
    load_int               1
    if_icmpeq              LABEL452
    jump                   LABEL483
 LABEL452:
-   033                    6
+   iload                  6
    load_int               5
-   033                    10
+   iload                  10
    100                   
-   033                    10
+   iload                  10
    load_int               1
    iadd                  
-   034                    10
+   istore                 10
    load_int               36
    load_int               32
    load_int               0
@@ -506,32 +510,32 @@ LABEL452:
    load_int               2472
    load_int               1
    1205                  
-   035                   
+   sload                  0
    load_string            "<br>"
    load_string            "A nearby flower patch is providing protection."
    037                    2
    concat_string         
-   036                   
+   sstore                
 LABEL483:
-   033                    3
+   iload                  3
    load_int               4
    test_bit              
    load_int               1
    if_icmpeq              LABEL493
-   033                    2
+   iload                  2
    right_shift_28        
    load_int               1
    if_icmpeq              LABEL493
    jump                   LABEL541
 LABEL493:
-   033                    6
+   iload                  6
    load_int               5
-   033                    10
+   iload                  10
    100                   
-   033                    10
+   iload                  10
    load_int               1
    iadd                  
-   034                    10
+   istore                 10
    load_int               36
    load_int               32
    load_int               0
@@ -546,7 +550,7 @@ LABEL493:
    1117                  
    load_int               1
    widget_put_borderthickness
-   033                    2
+   iload                  2
    right_shift_28        
    load_int               1
    if_icmpeq              LABEL520
@@ -555,12 +559,12 @@ LABEL520:
    load_int               5340
    load_int               1
    1205                  
-   035                   
+   sload                  0
    load_string            "<br>"
    load_string            "The patch has been watered."
    037                    2
    concat_string         
-   036                   
+   sstore                
    jump                   LABEL541
 LABEL530:
    load_int               5331
@@ -568,33 +572,33 @@ LABEL530:
    1205                  
    load_int               125
    widget_put_opacity    
-   035                   
+   sload                  0
    load_string            "<br>"
    load_string            "The patch is dry."
    037                    2
    concat_string         
-   036                   
+   sstore                
 LABEL541:
-   033                    3
+   iload                  3
    load_int               6
    test_bit              
    load_int               1
    if_icmpeq              LABEL552
-   033                    3
+   iload                  3
    load_int               5
    test_bit              
    load_int               1
    if_icmpeq              LABEL552
    jump                   LABEL599
 LABEL552:
-   033                    6
+   iload                  6
    load_int               5
-   033                    10
+   iload                  10
    100                   
-   033                    10
+   iload                  10
    load_int               1
    iadd                  
-   034                    10
+   istore                 10
    load_int               36
    load_int               32
    load_int               0
@@ -609,7 +613,7 @@ LABEL552:
    1117                  
    load_int               1
    widget_put_borderthickness
-   033                    3
+   iload                  3
    load_int               6
    test_bit              
    load_int               1
@@ -619,37 +623,37 @@ LABEL580:
    load_int               6034
    load_int               1
    1205                  
-   035                   
+   sload                  0
    load_string            "<br>"
    load_string            "The patch has been treated with supercompost."
    037                    2
    concat_string         
-   036                   
+   sstore                
    jump                   LABEL599
 LABEL590:
    load_int               6032
    load_int               1
    1205                  
-   035                   
+   sload                  0
    load_string            "<br>"
    load_string            "The patch has been treated with compost."
    037                    2
    concat_string         
-   036                   
+   sstore                
 LABEL599:
-   033                    9
+   iload                  9
    load_int               0
    if_icmpgt              LABEL603
    jump                   LABEL642
 LABEL603:
-   033                    6
+   iload                  6
    load_int               4
-   033                    10
+   iload                  10
    100                   
-   033                    10
+   iload                  10
    load_int               1
    iadd                  
-   034                    10
+   istore                 10
    load_int               50
    load_int               50
    load_int               0
@@ -670,31 +674,31 @@ LABEL603:
    widget_put_textcolor  
    load_int               1
    1115                  
-   033                    9
+   iload                  9
    int_to_string         
    1112                  
-   035                   
+   sload                  0
    load_string            "<br>"
    load_string            "Available yield: "
-   033                    9
+   iload                  9
    int_to_string         
    037                    3
    concat_string         
-   036                   
+   sstore                
 LABEL642:
    load_int               526
    load_int               -2147483645
    load_int               -1
    load_int               11731149
-   035                   
+   sload                  0
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   033                    6
+   iload                  6
    2412                  
    load_int               40
    load_int               11731149
    load_string            "I"
-   033                    6
+   iload                  6
    2404                  
    return                

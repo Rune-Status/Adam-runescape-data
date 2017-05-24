@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    3
+.string_stack_count 3
+.int_var_count      4
+.string_var_count   4
+   iload                  0
    load_int               -1
    if_icmpeq              LABEL4
    jump                   LABEL6
@@ -9,18 +13,18 @@ LABEL6:
    load_int               105
    load_int               49
    load_int               892
-   033                   
+   iload                  0
    3408                  
    load_int               1
    if_icmpeq              LABEL14
    jump                   LABEL30
 LABEL14:
-   033                   
+   iload                  0
    load_int               106
    if_icmpne              LABEL18
    jump                   LABEL30
 LABEL18:
-   033                   
+   iload                  0
    load_int               105
    if_icmpeq              LABEL22
    jump                   LABEL28
@@ -37,10 +41,10 @@ LABEL28:
    return                
 LABEL30:
    load_int               -1
-   034                    3
+   istore                 3
    load_string            ""
-   036                    3
-   033                   
+   sstore                 3
+   iload                  0
    switch                
       1: LABEL97
       2: LABEL37
@@ -59,11 +63,11 @@ LABEL30:
       91: LABEL133
    jump                   LABEL380
 LABEL37:
-   035                   
+   sload                  0
    string_remove_html    
-   036                    3
-   035                    2
-   035                    3
+   sstore                 3
+   sload                  2
+   sload                  3
    4107                  
    load_int               0
    if_icmpeq              LABEL46
@@ -72,7 +76,7 @@ LABEL46:
    load_int               1
    return                
 LABEL48:
-   035                    3
+   sload                  3
    3623                  
    load_int               1
    if_icmpeq              LABEL53
@@ -82,11 +86,11 @@ LABEL53:
    return                
 LABEL55:
    5000                  
-   034                    3
-   033                    3
+   istore                 3
+   iload                  3
    load_int               2
    if_icmpeq              LABEL64
-   033                    3
+   iload                  3
    load_int               3
    if_icmpeq              LABEL64
    jump                   LABEL66
@@ -100,7 +104,7 @@ LABEL66:
    if_icmpgt              LABEL71
    jump                   LABEL81
 LABEL71:
-   035                    1
+   sload                  1
    tolowercase           
    5022                  
    load_int               0
@@ -112,12 +116,12 @@ LABEL79:
    load_int               0
    return                
 LABEL81:
-   033                    3
+   iload                  3
    load_int               1
    if_icmpeq              LABEL85
    jump                   LABEL94
 LABEL85:
-   035                   
+   sload                  0
    3609                  
    load_int               1
    if_icmpeq              LABEL90
@@ -133,11 +137,11 @@ LABEL94:
    return                
    jump                   LABEL380
 LABEL97:
-   035                   
+   sload                  0
    string_remove_html    
-   036                    3
-   035                    2
-   035                    3
+   sstore                 3
+   sload                  2
+   sload                  3
    4107                  
    load_int               0
    if_icmpeq              LABEL106
@@ -146,7 +150,7 @@ LABEL106:
    load_int               1
    return                
 LABEL108:
-   035                    3
+   sload                  3
    3623                  
    load_int               1
    if_icmpeq              LABEL113
@@ -161,7 +165,7 @@ LABEL115:
    if_icmpgt              LABEL120
    jump                   LABEL130
 LABEL120:
-   035                    1
+   sload                  1
    tolowercase           
    5022                  
    load_int               0
@@ -177,8 +181,8 @@ LABEL130:
    return                
    jump                   LABEL380
 LABEL133:
-   035                    2
-   035                   
+   sload                  2
+   sload                  0
    string_remove_html    
    4107                  
    load_int               0
@@ -188,7 +192,7 @@ LABEL140:
    load_int               1
    return                
 LABEL142:
-   035                   
+   sload                  0
    string_remove_html    
    3623                  
    load_int               1
@@ -212,7 +216,7 @@ LABEL156:
    if_icmpgt              LABEL161
    jump                   LABEL171
 LABEL161:
-   035                    1
+   sload                  1
    tolowercase           
    5022                  
    load_int               0
@@ -228,7 +232,7 @@ LABEL171:
    return                
    jump                   LABEL380
 LABEL174:
-   033                    1
+   iload                  1
    042                    175
    if_icmplt              LABEL178
    jump                   LABEL180
@@ -236,7 +240,7 @@ LABEL178:
    load_int               0
    return                
 LABEL180:
-   035                   
+   sload                  0
    string_remove_html    
    3623                  
    load_int               1
@@ -251,14 +255,14 @@ LABEL188:
    if_icmpeq              LABEL192
    jump                   LABEL204
 LABEL192:
-   033                    2
+   iload                  2
    load_int               0
    if_icmpeq              LABEL196
    jump                   LABEL204
 LABEL196:
-   033                   
-   035                   
-   040                    210
+   iload                  0
+   sload                  0
+   invoke                 210
    load_int               0
    if_icmpeq              LABEL202
    jump                   LABEL204
@@ -279,7 +283,7 @@ LABEL210:
    if_icmpeq              LABEL214
    jump                   LABEL221
 LABEL214:
-   035                   
+   sload                  0
    3609                  
    load_int               1
    if_icmpeq              LABEL219
@@ -292,7 +296,7 @@ LABEL221:
    return                
    jump                   LABEL380
 LABEL224:
-   035                   
+   sload                  0
    string_remove_html    
    3623                  
    load_int               1
@@ -315,7 +319,7 @@ LABEL238:
    if_icmpeq              LABEL242
    jump                   LABEL249
 LABEL242:
-   035                   
+   sload                  0
    3609                  
    load_int               1
    if_icmpeq              LABEL247
@@ -328,7 +332,7 @@ LABEL249:
    return                
    jump                   LABEL380
 LABEL252:
-   033                    1
+   iload                  1
    042                    175
    if_icmplt              LABEL256
    jump                   LABEL258
@@ -336,7 +340,7 @@ LABEL256:
    load_int               0
    return                
 LABEL258:
-   033                   
+   iload                  0
    load_int               5
    if_icmpeq              LABEL262
    jump                   LABEL274
@@ -347,7 +351,7 @@ LABEL262:
    jump                   LABEL274
 LABEL266:
    get_gamecycle         
-   033                    1
+   iload                  1
    isub                  
    load_int               500
    if_icmpge              LABEL272
@@ -361,14 +365,14 @@ LABEL274:
    if_icmpeq              LABEL278
    jump                   LABEL290
 LABEL278:
-   033                    2
+   iload                  2
    load_int               0
    if_icmpeq              LABEL282
    jump                   LABEL290
 LABEL282:
-   033                   
-   035                   
-   040                    210
+   iload                  0
+   sload                  0
+   invoke                 210
    load_int               0
    if_icmpeq              LABEL288
    jump                   LABEL290
@@ -388,7 +392,7 @@ LABEL296:
    return                
    jump                   LABEL380
 LABEL299:
-   033                    1
+   iload                  1
    042                    175
    if_icmplt              LABEL303
    jump                   LABEL305
@@ -401,14 +405,14 @@ LABEL305:
    if_icmpeq              LABEL309
    jump                   LABEL321
 LABEL309:
-   033                    2
+   iload                  2
    load_int               0
    if_icmpeq              LABEL313
    jump                   LABEL321
 LABEL313:
-   033                   
-   035                   
-   040                    210
+   iload                  0
+   sload                  0
+   invoke                 210
    load_int               0
    if_icmpeq              LABEL319
    jump                   LABEL321
@@ -420,7 +424,7 @@ LABEL321:
    return                
    jump                   LABEL380
 LABEL324:
-   035                   
+   sload                  0
    string_remove_html    
    3623                  
    load_int               1
@@ -443,7 +447,7 @@ LABEL338:
    if_icmpeq              LABEL342
    jump                   LABEL349
 LABEL342:
-   035                   
+   sload                  0
    3609                  
    load_int               1
    if_icmpeq              LABEL347
@@ -480,7 +484,7 @@ LABEL367:
    return                
    jump                   LABEL380
 LABEL370:
-   035                   
+   sload                  0
    string_remove_html    
    3623                  
    load_int               0

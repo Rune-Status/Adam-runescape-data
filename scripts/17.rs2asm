@@ -1,7 +1,11 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
    load_int               2
-   033                   
+   iload                  0
    widget_put_borderthickness_widget
-   033                   
+   iload                  0
    2800                  
    load_int               4
    test_bit              
@@ -10,7 +14,7 @@
    jump                   LABEL13
 LABEL10:
    load_int               3
-   040                    900
-   040                    916
+   invoke                 900
+   invoke                 916
 LABEL13:
    return                

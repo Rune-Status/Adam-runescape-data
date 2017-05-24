@@ -1,15 +1,19 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    load_int               0
-   034                   
+   istore                
    load_int               1
-   034                    1
+   istore                 1
    load_int               105
    load_int               83
    load_int               681
-   033                    1
+   iload                  1
    3408                  
-   034                    2
+   istore                 2
 LABEL10:
-   033                    2
+   iload                  2
    load_int               -1
    if_icmpne              LABEL14
    jump                   LABEL38
@@ -17,31 +21,31 @@ LABEL14:
    load_int               83
    load_int               49
    load_int               1497
-   033                    2
+   iload                  2
    3408                  
    load_int               0
    if_icmpeq              LABEL22
    jump                   LABEL27
 LABEL22:
-   033                   
-   033                    2
+   iload                  0
+   iload                  2
    get_realskilllevels   
    iadd                  
-   034                   
+   istore                
 LABEL27:
-   033                    1
+   iload                  1
    load_int               1
    iadd                  
-   034                    1
+   istore                 1
    load_int               105
    load_int               83
    load_int               681
-   033                    1
+   iload                  1
    3408                  
-   034                    2
+   istore                 2
    jump                   LABEL10
 LABEL38:
-   033                   
+   iload                  0
    return                
    load_int               0
    return                

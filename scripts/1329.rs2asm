@@ -1,15 +1,19 @@
+.int_stack_count    6
+.string_stack_count 1
+.int_var_count      8
+.string_var_count   1
    load_int               18
-   034                    6
+   istore                 6
    load_int               6
-   034                    7
-   033                    4
-   034                    4
-   033                    2
+   istore                 7
+   iload                  4
+   istore                 4
+   iload                  2
    load_int               6
-   033                    3
+   iload                  3
    100                   
-   033                    4
-   033                    5
+   iload                  4
+   iload                  5
    load_int               0
    load_int               0
    1000                  
@@ -18,16 +22,16 @@
    load_int               0
    load_int               0
    1001                  
-   033                    4
+   iload                  4
    load_int               6
    iadd                  
    widget_get_width      
    iadd                  
-   034                    4
+   istore                 4
    load_int               105
    load_int               109
    load_int               1316
-   033                    3
+   iload                  3
    3408                  
    widget_put_modelid_1  
    load_int               0
@@ -39,12 +43,12 @@
    1109                  
    load_int               6613
    1110                  
-   033                    1
+   iload                  1
    load_int               4
-   033                    3
+   iload                  3
    100                    1
-   033                    4
-   033                    5
+   iload                  4
+   iload                  5
    load_int               0
    load_int               0
    1000                   1
@@ -61,42 +65,42 @@
    load_int               0
    load_int               0
    1114                   1
-   035                   
+   sload                  0
    1112                   1
-   033                    4
+   iload                  4
    widget_get_width       1
    iadd                  
-   034                    4
-   033                    4
+   istore                 4
+   iload                  4
    widget_get_width      
    iadd                  
-   033                    7
+   iload                  7
    iadd                  
    widget_get_width       1
    iadd                  
-   033                   
+   iload                  0
    widget_get_width_widget
    if_icmpgt              LABEL80
    jump                   LABEL87
 LABEL80:
    load_int               15
-   034                    4
-   033                    5
+   istore                 4
+   iload                  5
    load_int               80
    iadd                  
-   034                    5
+   istore                 5
    jump                   LABEL91
 LABEL87:
-   033                    4
-   033                    6
+   iload                  4
+   iload                  6
    iadd                  
-   034                    4
+   istore                 4
 LABEL91:
-   033                    3
+   iload                  3
    load_int               1
    iadd                  
-   033                    4
-   033                    5
+   iload                  4
+   iload                  5
    return                
    load_int               0
    load_int               0

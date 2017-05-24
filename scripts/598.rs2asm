@@ -1,64 +1,68 @@
-   033                    2
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  2
    load_int               3000
    modulo                
    load_int               50
    idiv                  
-   034                    3
-   033                    3
+   istore                 3
+   iload                  3
    load_int               10
    if_icmpge              LABEL10
    jump                   LABEL20
 LABEL10:
-   033                    2
+   iload                  2
    load_int               3000
    idiv                  
    int_to_string         
    load_string            ":"
-   033                    3
+   iload                  3
    int_to_string         
    037                    3
    1112                  
    jump                   LABEL29
 LABEL20:
-   033                    2
+   iload                  2
    load_int               3000
    idiv                  
    int_to_string         
    load_string            ":0"
-   033                    3
+   iload                  3
    int_to_string         
    037                    3
    1112                  
 LABEL29:
    load_int               597
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    1702                  
-   033                    2
+   iload                  2
    load_string            "IIii"
-   033                   
+   iload                  0
    2408                  
-   033                    2
+   iload                  2
    load_int               500
    if_icmpgt              LABEL41
    jump                   LABEL43
 LABEL41:
    load_int               500
-   034                    2
+   istore                 2
 LABEL43:
    load_int               255
    load_int               0
-   033                    2
+   iload                  2
    load_int               0
    load_int               500
    load_int               152
    4006                  
    load_int               0
-   033                    2
+   iload                  2
    load_int               0
    load_int               500
    load_int               31
    4006                  
-   040                    246
+   invoke                 246
    widget_put_textcolor  
    return                

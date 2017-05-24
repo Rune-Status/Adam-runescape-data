@@ -1,25 +1,29 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
    load_int               589
-   033                   
-   033                    1
-   033                    2
+   iload                  0
+   iload                  1
+   iload                  2
    025                    4285
    load_int               92
    load_int               1
    load_string            "IiIiY"
-   033                   
+   iload                  0
    2407                  
    load_int               589
-   033                   
-   033                    1
-   033                    2
+   iload                  0
+   iload                  1
+   iload                  2
    025                    4285
    load_string            "IiIi"
-   033                   
+   iload                  0
    2408                  
    load_int               -1
-   034                    4
+   istore                 4
    025                    4285
-   033                    3
+   iload                  3
    if_icmpne              LABEL24
    jump                   LABEL113
 LABEL24:
@@ -28,21 +32,21 @@ LABEL24:
    if_icmpeq              LABEL28
    jump                   LABEL68
 LABEL28:
-   033                    2
-   040                    198
-   034                    4
-   033                    2
+   iload                  2
+   invoke                 198
+   istore                 4
+   iload                  2
    load_int               4
-   033                    4
+   iload                  4
    100                   
    load_int               0
    load_int               0
    load_int               0
    load_int               0
    1000                  
-   033                    2
+   iload                  2
    widget_get_width_widget
-   033                    2
+   iload                  2
    widget_get_height_widget
    load_int               0
    load_int               0
@@ -61,29 +65,29 @@ LABEL28:
    1112                  
    load_int               -1
    load_string            ""
-   033                    2
+   iload                  2
    2412                  
    load_int               -1
    load_string            ""
-   033                    2
+   iload                  2
    2404                  
    jump                   LABEL113
 LABEL68:
-   033                    2
-   040                    208
-   034                    4
-   033                    2
+   iload                  2
+   invoke                 208
+   istore                 4
+   iload                  2
    load_int               4
-   033                    4
+   iload                  4
    100                   
    load_int               0
    load_int               0
    load_int               0
    load_int               0
    1000                  
-   033                    2
+   iload                  2
    widget_get_width_widget
-   033                    2
+   iload                  2
    widget_get_height_widget
    load_int               0
    load_int               0
@@ -101,18 +105,18 @@ LABEL68:
    load_string            "Accept"
    1112                  
    load_int               85
-   033                    2
-   033                    4
+   iload                  2
+   iload                  4
    load_int               16777215
    load_string            "Iii"
-   033                    2
+   iload                  2
    2412                  
    load_int               85
-   033                    2
-   033                    4
+   iload                  2
+   iload                  4
    load_int               16750623
    load_string            "Iii"
-   033                    2
+   iload                  2
    2404                  
 LABEL113:
    025                    4271
@@ -130,8 +134,8 @@ LABEL121:
    if_icmpeq              LABEL125
    jump                   LABEL140
 LABEL125:
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL131
@@ -144,7 +148,7 @@ LABEL131:
    1112                  
 LABEL136:
    load_int               1
-   033                    2
+   iload                  2
    widget_put_hidden_widget
    return                
 LABEL140:
@@ -153,8 +157,8 @@ LABEL140:
    if_icmpeq              LABEL144
    jump                   LABEL159
 LABEL144:
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL150
@@ -167,7 +171,7 @@ LABEL150:
    1112                  
 LABEL155:
    load_int               1
-   033                    2
+   iload                  2
    widget_put_hidden_widget
    return                
 LABEL159:
@@ -181,8 +185,8 @@ LABEL163:
    if_icmpeq              LABEL167
    jump                   LABEL182
 LABEL167:
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL173
@@ -195,7 +199,7 @@ LABEL173:
    1112                  
 LABEL178:
    load_int               1
-   033                    2
+   iload                  2
    widget_put_hidden_widget
    return                
 LABEL182:
@@ -209,8 +213,8 @@ LABEL186:
    if_icmpeq              LABEL190
    jump                   LABEL205
 LABEL190:
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL196
@@ -223,7 +227,7 @@ LABEL196:
    1112                  
 LABEL201:
    load_int               1
-   033                    2
+   iload                  2
    widget_put_hidden_widget
    return                
 LABEL205:
@@ -241,8 +245,8 @@ LABEL209:
    if_icmpeq              LABEL217
    jump                   LABEL232
 LABEL217:
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL223
@@ -255,12 +259,12 @@ LABEL223:
    1112                  
 LABEL228:
    load_int               1
-   033                    2
+   iload                  2
    widget_put_hidden_widget
    return                
 LABEL232:
    load_int               0
-   034                    5
+   istore                 5
    042                    59
    load_int               0
    if_icmpge              LABEL238
@@ -269,19 +273,19 @@ LABEL238:
    get_gamecycle         
    042                    59
    isub                  
-   034                    5
-   033                    5
+   istore                 5
+   iload                  5
    load_int               250
    if_icmplt              LABEL246
    jump                   LABEL272
 LABEL246:
-   033                    5
+   iload                  5
    load_int               0
    if_icmpge              LABEL250
    jump                   LABEL272
 LABEL250:
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL256
@@ -290,7 +294,7 @@ LABEL256:
    load_string            "Your opponent has made changes!"
    load_string            "<br>"
    load_int               250
-   033                    5
+   iload                  5
    isub                  
    load_int               50
    idiv                  
@@ -301,12 +305,12 @@ LABEL256:
    1112                  
 LABEL268:
    load_int               1
-   033                    2
+   iload                  2
    widget_put_hidden_widget
    return                
 LABEL272:
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL278
@@ -316,6 +320,6 @@ LABEL278:
    1112                  
 LABEL280:
    load_int               0
-   033                    2
+   iload                  2
    widget_put_hidden_widget
    return                

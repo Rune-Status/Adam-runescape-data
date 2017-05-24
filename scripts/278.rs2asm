@@ -1,15 +1,19 @@
-   033                   
+.int_stack_count    7
+.string_stack_count 0
+.int_var_count      7
+.string_var_count   0
+   iload                  0
    load_int               -1
    if_icmpne              LABEL4
    jump                   LABEL130
 LABEL4:
    widget_put_actions_null
-   033                   
+   iload                  0
    load_int               20594
    if_icmpeq              LABEL9
    jump                   LABEL33
 LABEL9:
-   033                   
+   iload                  0
    load_int               -1
    1200                  
    load_int               7
@@ -26,21 +30,21 @@ LABEL9:
    load_int               -2147483642
    load_int               -2147483641
    load_int               0
-   033                    3
-   033                    4
-   033                    5
-   033                    6
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
    load_string            "IiIiiIIII"
    1410                  
    jump                   LABEL111
 LABEL33:
-   033                   
+   iload                  0
    4209                  
-   033                   
+   iload                  0
    if_icmpne              LABEL38
    jump                   LABEL59
 LABEL38:
-   033                   
+   iload                  0
    load_int               0
    1200                  
    load_int               8
@@ -54,16 +58,16 @@ LABEL38:
    load_int               -2147483642
    load_int               -2147483641
    load_int               120
-   033                    3
-   033                    4
-   033                    5
-   033                    6
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
    load_string            "IiIiiIIII"
    1410                  
    jump                   LABEL111
 LABEL59:
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    1200                  
    load_int               1
    load_string            "Withdraw-1"
@@ -112,10 +116,10 @@ LABEL97:
    load_int               -2147483642
    load_int               -2147483641
    load_int               0
-   033                    3
-   033                    4
-   033                    5
-   033                    6
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
    load_string            "IiIiiIIII"
    1410                  
 LABEL111:
@@ -123,7 +127,7 @@ LABEL111:
    load_string            "Examine"
    1300                  
    load_string            "<col=ff9040>"
-   033                   
+   iload                  0
    get_item_name         
    load_string            "</col>"
    037                    3
@@ -133,7 +137,7 @@ LABEL111:
    load_int               -2147483643
    load_int               -2147483647
    load_int               -2147483646
-   033                    3
+   iload                  3
    load_int               0
    load_string            "IiiiIi"
    1405                  

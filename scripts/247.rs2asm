@@ -1,12 +1,16 @@
-   033                    2
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  2
    divide_by_16384       
-   034                    3
-   033                    3
-   033                   
+   istore                 3
+   iload                  3
+   iload                  0
    divide_by_16384       
    if_icmplt              LABEL12
-   033                    3
-   033                    1
+   iload                  3
+   iload                  1
    divide_by_16384       
    if_icmpgt              LABEL12
    jump                   LABEL14
@@ -14,15 +18,15 @@ LABEL12:
    load_int               0
    return                
 LABEL14:
-   033                    2
+   iload                  2
    right_shift_28        
-   034                    3
-   033                    3
-   033                   
+   istore                 3
+   iload                  3
+   iload                  0
    right_shift_28        
    if_icmplt              LABEL26
-   033                    3
-   033                    1
+   iload                  3
+   iload                  1
    right_shift_28        
    if_icmpgt              LABEL26
    jump                   LABEL28
@@ -30,15 +34,15 @@ LABEL26:
    load_int               0
    return                
 LABEL28:
-   033                    2
+   iload                  2
    and_16384             
-   034                    3
-   033                    3
-   033                   
+   istore                 3
+   iload                  3
+   iload                  0
    and_16384             
    if_icmplt              LABEL40
-   033                    3
-   033                    1
+   iload                  3
+   iload                  1
    and_16384             
    if_icmpgt              LABEL40
    jump                   LABEL42

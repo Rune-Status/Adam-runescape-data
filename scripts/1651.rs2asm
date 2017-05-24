@@ -1,13 +1,17 @@
-   033                   
+.int_stack_count    5
+.string_stack_count 2
+.int_var_count      5
+.string_var_count   2
+   iload                  0
    load_int               1
    if_icmpeq              LABEL13
-   033                    1
+   iload                  1
    load_int               -1
    if_icmpne              LABEL7
    jump                   LABEL63
 LABEL7:
-   035                    1
-   033                    1
+   sload                  1
+   iload                  1
    string_indexof        
    load_int               -1
    if_icmpne              LABEL13
@@ -17,8 +21,8 @@ LABEL13:
    load_int               1
    load_int               0
    3200                  
-   033                    2
-   033                    4
+   iload                  2
+   iload                  4
    200                   
    load_int               1
    if_icmpeq              LABEL23
@@ -31,35 +35,35 @@ LABEL23:
 LABEL27:
    load_int               -1
    load_string            ""
-   033                    2
+   iload                  2
    2412                  
    load_int               -1
    load_string            ""
-   033                    2
+   iload                  2
    2404                  
-   033                    2
+   iload                  2
    widget_put_actions_null_widget
    load_int               -1
    load_string            ""
-   033                    2
+   iload                  2
    2409                  
    load_int               -1
    load_string            ""
-   033                    2
+   iload                  2
    2419                  
    load_int               1652
-   033                    2
-   035                   
-   033                    3
-   035                    1
+   iload                  2
+   sload                  0
+   iload                  3
+   sload                  1
    get_gamecycle         
    load_int               40
    iadd                  
    load_string            "Isisi"
-   033                    2
+   iload                  2
    2408                  
    load_int               38273024
-   033                    3
+   iload                  3
    200                   
    load_int               1
    if_icmpeq              LABEL62

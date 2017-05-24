@@ -1,29 +1,33 @@
-   033                   
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   iload                  0
    widget_get_opacity_widget
    load_int               240
    if_icmplt              LABEL5
    jump                   LABEL12
 LABEL5:
-   033                   
+   iload                  0
    widget_get_opacity_widget
    load_int               5
    iadd                  
-   033                   
+   iload                  0
    widget_put_opacity_widget
    return                
 LABEL12:
    load_int               105
    load_int               105
    load_int               1279
-   033                    1
+   iload                  1
    3408                  
-   033                   
+   iload                  0
    widget_put_textcolor_widget
    load_int               -1
    load_string            ""
-   033                   
+   iload                  0
    2408                  
    load_int               0
-   033                   
+   iload                  0
    widget_put_opacity_widget
    return                

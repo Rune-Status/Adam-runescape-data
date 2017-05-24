@@ -1,10 +1,14 @@
-   033                   
+.int_stack_count    8
+.string_stack_count 1
+.int_var_count      8
+.string_var_count   1
+   iload                  0
    load_int               5
-   033                    2
+   iload                  2
    100                   
-   033                   
+   iload                  0
    load_int               4
-   033                    2
+   iload                  2
    load_int               1
    iadd                  
    100                    1
@@ -18,12 +22,12 @@
    load_int               0
    load_int               0
    1001                   1
-   033                    3
+   iload                  3
    load_int               0
    load_int               0
    load_int               0
    1000                  
-   033                    3
+   iload                  3
    load_int               0
    load_int               0
    load_int               0
@@ -38,10 +42,10 @@
    widget_put_textcolor   1
    load_int               1
    1115                   1
-   035                   
+   sload                  0
    1112                   1
-   033                    1
-   033                    7
+   iload                  1
+   iload                  7
    if_icmpne              LABEL46
    jump                   LABEL72
 LABEL46:
@@ -60,14 +64,14 @@ LABEL46:
    load_string            "Iii"
    1404                  
    load_int               1
-   035                   
+   sload                  0
    1300                  
    load_int               307
-   033                   
-   033                    4
-   033                    5
-   033                    6
-   033                    1
+   iload                  0
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  1
    load_string            "IIIII"
    1409                  
    jump                   LABEL74
@@ -75,10 +79,10 @@ LABEL72:
    load_int               813
    widget_put_textureid  
 LABEL74:
-   033                    2
+   iload                  2
    load_int               2
    iadd                  
-   033                    3
+   iload                  3
    load_int               90
    iadd                  
    return                

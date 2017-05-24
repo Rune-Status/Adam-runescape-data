@@ -1,15 +1,19 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   0
    load_int               0
-   034                    4
+   istore                 4
    load_int               0
-   034                    5
+   istore                 5
    load_int               0
-   034                    6
+   istore                 6
    load_int               0
-   034                    7
+   istore                 7
    load_int               0
-   034                    8
-   033                   
-   033                    1
+   istore                 8
+   iload                  0
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL16
@@ -18,69 +22,69 @@ LABEL16:
    load_int               105
    load_int               105
    load_int               1279
-   033                    2
+   iload                  2
    3408                  
-   033                    3
+   iload                  3
    get_gamecycle         
    isub                  
-   034                    5
-   034                    4
-   033                    5
+   istore                 5
+   istore                 4
+   iload                  5
    load_int               0
    if_icmple              LABEL30
    jump                   LABEL36
 LABEL30:
-   033                    4
+   iload                  4
    widget_put_textcolor  
    load_int               -1
    load_string            ""
    1408                  
    return                
 LABEL36:
-   033                    5
+   iload                  5
    load_int               30
    if_icmpgt              LABEL40
    jump                   LABEL42
 LABEL40:
    load_int               30
-   034                    5
+   istore                 5
 LABEL42:
-   033                    4
-   040                    2
-   034                    8
-   034                    7
-   034                    6
-   033                    6
+   iload                  4
+   invoke                 2
+   istore                 8
+   istore                 7
+   istore                 6
+   iload                  6
    load_int               0
-   033                    5
-   load_int               0
-   load_int               30
-   load_int               255
-   033                    6
-   isub                  
-   4006                  
-   iadd                  
-   033                    7
-   load_int               0
-   033                    5
+   iload                  5
    load_int               0
    load_int               30
    load_int               255
-   033                    7
+   iload                  6
    isub                  
    4006                  
    iadd                  
-   033                    8
+   iload                  7
    load_int               0
-   033                    5
+   iload                  5
    load_int               0
    load_int               30
    load_int               255
-   033                    8
+   iload                  7
    isub                  
    4006                  
    iadd                  
-   040                    246
+   iload                  8
+   load_int               0
+   iload                  5
+   load_int               0
+   load_int               30
+   load_int               255
+   iload                  8
+   isub                  
+   4006                  
+   iadd                  
+   invoke                 246
    widget_put_textcolor  
 LABEL79:
    return                

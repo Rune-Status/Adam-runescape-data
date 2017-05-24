@@ -1,16 +1,20 @@
+.int_stack_count    35
+.string_stack_count 1
+.int_var_count      46
+.string_var_count   4
    load_int               22609931
    widget_get_width_widget
-   034                    35
-   033                    35
+   istore                 35
+   iload                  35
    load_int               3
    load_int               2
    imul                  
    isub                  
-   034                    36
+   istore                 36
    042                    43
-   034                    37
+   istore                 37
    042                    49
-   034                    38
+   istore                 38
    load_int               22609931
    load_int               3
    042                    43
@@ -20,7 +24,7 @@
    iadd                  
    043                    43
    load_int               0
-   033                    38
+   iload                  38
    load_int               0
    load_int               0
    1000                  
@@ -39,7 +43,7 @@
    iadd                  
    043                    43
    load_int               0
-   033                    38
+   iload                  38
    load_int               0
    load_int               0
    1000                  
@@ -56,7 +60,7 @@
    iadd                  
    043                    43
    load_int               1
-   033                    38
+   iload                  38
    load_int               1
    iadd                  
    load_int               0
@@ -71,27 +75,27 @@
    iadd                  
    043                    49
    load_string            ""
-   036                    1
-   035                   
-   040                    632
-   036                   
-   036                    1
-   035                    1
-   033                    36
+   sstore                 1
+   sload                  0
+   invoke                 632
+   sstore                
+   sstore                 1
+   sload                  1
+   iload                  36
    load_int               494
    4108                  
    load_int               10
    imul                  
    load_int               2
    iadd                  
-   034                    39
-   033                    39
+   istore                 39
+   iload                  39
    load_int               15
    if_icmplt              LABEL91
    jump                   LABEL93
 LABEL91:
    load_int               15
-   034                    39
+   istore                 39
 LABEL93:
    load_int               22609931
    load_int               4
@@ -106,13 +110,13 @@ LABEL93:
    load_int               0
    load_int               0
    1000                  
-   033                    36
-   033                    39
+   iload                  36
+   iload                  39
    load_int               0
    load_int               0
    1001                  
    042                    49
-   033                    39
+   iload                  39
    iadd                  
    043                    49
    load_int               16750623
@@ -125,21 +129,21 @@ LABEL93:
    1114                  
    load_int               1
    1115                  
-   035                    1
+   sload                  1
    1112                  
-   035                   
-   040                    632
-   036                   
-   036                    1
-   035                    1
-   033                    36
+   sload                  0
+   invoke                 632
+   sstore                
+   sstore                 1
+   sload                  1
+   iload                  36
    load_int               495
    4108                  
    load_int               12
    imul                  
    load_int               5
    iadd                  
-   034                    39
+   istore                 39
    load_int               22609931
    load_int               4
    042                    43
@@ -153,13 +157,13 @@ LABEL93:
    load_int               0
    load_int               0
    1000                  
-   033                    36
-   033                    39
+   iload                  36
+   iload                  39
    load_int               0
    load_int               0
    1001                  
    042                    49
-   033                    39
+   iload                  39
    iadd                  
    043                    49
    load_int               16777215
@@ -172,129 +176,129 @@ LABEL93:
    1114                  
    load_int               1
    1115                  
-   035                    1
+   sload                  1
    1112                  
    load_string            ""
-   036                    2
-   035                   
-   040                    632
-   036                   
-   036                    1
-   035                   
-   040                    632
-   036                   
-   036                    2
-   035                    1
-   035                    2
+   sstore                 2
+   sload                  0
+   invoke                 632
+   sstore                
+   sstore                 1
+   sload                  0
+   invoke                 632
+   sstore                
+   sstore                 2
+   sload                  1
+   sload                  2
    load_int               22609931
-   033                    36
+   iload                  36
    load_int               3
    load_int               494
    load_int               494
    load_int               10
    load_int               2
-   040                    611
-   035                   
-   036                    3
+   invoke                 611
+   sload                  0
+   sstore                 3
    load_int               40
    load_int               1
    iadd                  
    044                    105
    load_int               0
-   033                    3
+   iload                  3
    046                   
    load_int               1
-   033                    4
+   iload                  4
    046                   
    load_int               2
-   033                    5
+   iload                  5
    046                   
    load_int               3
-   033                    6
+   iload                  6
    046                   
    load_int               4
-   033                    7
+   iload                  7
    046                   
    load_int               5
-   033                    8
+   iload                  8
    046                   
    load_int               6
-   033                    9
+   iload                  9
    046                   
    load_int               7
-   033                    10
+   iload                  10
    046                   
    load_int               8
-   033                    11
+   iload                  11
    046                   
    load_int               9
-   033                    12
+   iload                  12
    046                   
    load_int               10
-   033                    13
+   iload                  13
    046                   
    load_int               11
-   033                    14
+   iload                  14
    046                   
    load_int               12
-   033                    15
+   iload                  15
    046                   
    load_int               13
-   033                    16
+   iload                  16
    046                   
    load_int               14
-   033                    17
+   iload                  17
    046                   
    load_int               15
-   033                    18
+   iload                  18
    046                   
    load_int               16
-   033                    19
+   iload                  19
    046                   
    load_int               17
-   033                    20
+   iload                  20
    046                   
    load_int               18
-   033                    21
+   iload                  21
    046                   
    load_int               19
-   033                    22
+   iload                  22
    046                   
    load_int               20
-   033                    23
+   iload                  23
    046                   
    load_int               21
-   033                    24
+   iload                  24
    046                   
    load_int               22
-   033                    25
+   iload                  25
    046                   
    load_int               23
-   033                    26
+   iload                  26
    046                   
    load_int               24
-   033                    27
+   iload                  27
    046                   
    load_int               25
-   033                    28
+   iload                  28
    046                   
    load_int               26
-   033                    29
+   iload                  29
    046                   
    load_int               27
-   033                    30
+   iload                  30
    046                   
    load_int               28
-   033                    31
+   iload                  31
    046                   
    load_int               29
-   033                    32
+   iload                  32
    046                   
    load_int               30
-   033                    33
+   iload                  33
    046                   
    load_int               31
-   033                    34
+   iload                  34
    046                   
    load_int               38
    load_int               0
@@ -306,22 +310,22 @@ LABEL93:
    load_int               -1
    046                   
    load_int               0
-   034                    40
+   istore                 40
    load_int               0
-   034                    41
+   istore                 41
 LABEL309:
-   033                    41
-   033                    1
+   iload                  41
+   iload                  1
    if_icmplt              LABEL313
    jump                   LABEL358
 LABEL313:
-   035                   
-   040                    632
-   036                   
-   036                    1
+   sload                  0
+   invoke                 632
+   sstore                
+   sstore                 1
    load_int               38
-   035                    1
-   033                    36
+   sload                  1
+   iload                  36
    load_int               494
    4109                  
    046                   
@@ -337,12 +341,12 @@ LABEL329:
    045                   
    046                   
 LABEL333:
-   033                   
+   iload                  0
    load_int               -1
    if_icmpeq              LABEL337
    jump                   LABEL353
 LABEL337:
-   035                    1
+   sload                  1
    tolowercase           
    load_string            "skip question"
    4107                  
@@ -351,42 +355,42 @@ LABEL337:
    jump                   LABEL348
 LABEL344:
    load_int               40
-   033                    41
+   iload                  41
    046                   
    jump                   LABEL353
 LABEL348:
-   033                    40
-   033                    41
+   iload                  40
+   iload                  41
    045                   
    iadd                  
-   034                    40
+   istore                 40
 LABEL353:
-   033                    41
+   iload                  41
    load_int               1
    iadd                  
-   034                    41
+   istore                 41
    jump                   LABEL309
 LABEL358:
-   033                   
+   iload                  0
    load_int               -1
    if_icmpne              LABEL362
    jump                   LABEL364
 LABEL362:
-   033                   
-   034                    40
+   iload                  0
+   istore                 40
 LABEL364:
-   033                    40
+   iload                  40
    load_int               0
    if_icmple              LABEL368
    jump                   LABEL370
 LABEL368:
    load_int               1
-   034                    40
+   istore                 40
 LABEL370:
-   033                    1
+   iload                  1
    044                    65641
    load_int               1000
-   034                    42
+   istore                 42
    load_int               32
    load_int               2147483647
    046                   
@@ -406,29 +410,29 @@ LABEL370:
    load_int               -1
    046                   
    load_int               0
-   034                    41
+   istore                 41
 LABEL394:
-   033                    41
-   033                    1
+   iload                  41
+   iload                  1
    if_icmplt              LABEL398
    jump                   LABEL520
 LABEL398:
-   033                    41
+   iload                  41
    load_int               40
    045                   
    if_icmpne              LABEL403
    jump                   LABEL515
 LABEL403:
-   033                    41
+   iload                  41
    load_int               0
-   033                    41
+   iload                  41
    045                   
    load_int               0
-   033                    40
+   iload                  40
    load_int               2000
    4006                  
    046                    1
-   033                    41
+   iload                  41
    045                    1
    load_int               2
    modulo                
@@ -436,16 +440,16 @@ LABEL403:
    if_icmpeq              LABEL419
    jump                   LABEL443
 LABEL419:
-   033                   
+   iload                  0
    load_int               -1
    if_icmpne              LABEL437
-   033                    1
+   iload                  1
    load_int               3
    if_icmpne              LABEL437
-   033                    41
+   iload                  41
    load_int               0
    if_icmpne              LABEL437
-   033                    41
+   iload                  41
    045                    1
    load_int               75
    load_int               20
@@ -455,36 +459,36 @@ LABEL419:
    if_icmpne              LABEL437
    jump                   LABEL443
 LABEL437:
-   033                    41
-   033                    41
+   iload                  41
+   iload                  41
    045                    1
    load_int               1
    iadd                  
    046                    1
 LABEL443:
-   033                    41
-   033                    41
+   iload                  41
+   iload                  41
    045                    1
    load_int               2
    idiv                  
    046                    1
-   033                    41
+   iload                  41
    045                   
    load_int               0
    if_icmpgt              LABEL454
    jump                   LABEL515
 LABEL454:
-   033                   
+   iload                  0
    load_int               -1
    if_icmpeq              LABEL458
    jump                   LABEL489
 LABEL458:
-   033                    42
-   033                    41
+   iload                  42
+   iload                  41
    045                    1
    isub                  
-   034                    42
-   033                    41
+   istore                 42
+   iload                  41
    045                   
    load_int               32
    045                   
@@ -492,18 +496,18 @@ LABEL458:
    jump                   LABEL480
 LABEL469:
    load_int               32
-   033                    41
+   iload                  41
    045                   
    046                   
    load_int               33
-   033                    41
+   iload                  41
    046                   
    load_int               34
    load_int               -1
    046                   
    jump                   LABEL489
 LABEL480:
-   033                    41
+   iload                  41
    045                   
    load_int               32
    045                   
@@ -511,10 +515,10 @@ LABEL480:
    jump                   LABEL489
 LABEL486:
    load_int               34
-   033                    41
+   iload                  41
    046                   
 LABEL489:
-   033                    41
+   iload                  41
    045                   
    load_int               35
    045                   
@@ -522,18 +526,18 @@ LABEL489:
    jump                   LABEL506
 LABEL495:
    load_int               35
-   033                    41
+   iload                  41
    045                   
    046                   
    load_int               36
-   033                    41
+   iload                  41
    046                   
    load_int               37
    load_int               -1
    046                   
    jump                   LABEL515
 LABEL506:
-   033                    41
+   iload                  41
    045                   
    load_int               35
    045                   
@@ -541,21 +545,21 @@ LABEL506:
    jump                   LABEL515
 LABEL512:
    load_int               37
-   033                    41
+   iload                  41
    046                   
 LABEL515:
-   033                    41
+   iload                  41
    load_int               1
    iadd                  
-   034                    41
+   istore                 41
    jump                   LABEL394
 LABEL520:
-   033                   
+   iload                  0
    load_int               -1
    if_icmpeq              LABEL524
    jump                   LABEL546
 LABEL524:
-   033                    42
+   iload                  42
    load_int               0
    if_icmpgt              LABEL528
    jump                   LABEL546
@@ -577,7 +581,7 @@ LABEL538:
    load_int               33
    045                   
    045                    1
-   033                    42
+   iload                  42
    iadd                  
    046                    1
 LABEL546:
@@ -601,57 +605,57 @@ LABEL559:
    load_int               230
    046                   
 LABEL562:
-   033                    35
+   iload                  35
    load_int               3
    load_int               95
    iadd                  
    isub                  
-   034                    43
+   istore                 43
    load_int               3
    load_int               39
    045                   
    iadd                  
    load_int               5
    iadd                  
-   034                    44
-   033                    43
-   033                    44
+   istore                 44
+   iload                  43
+   iload                  44
    isub                  
    load_int               5
    isub                  
-   034                    45
-   035                    3
-   036                   
+   istore                 45
+   sload                  3
+   sstore                
    load_int               0
-   034                    41
+   istore                 41
 LABEL585:
-   033                    41
-   033                    1
+   iload                  41
+   iload                  1
    if_icmplt              LABEL589
    jump                   LABEL842
 LABEL589:
-   035                   
-   040                    632
-   036                   
-   036                    1
-   033                    41
+   sload                  0
+   invoke                 632
+   sstore                
+   sstore                 1
+   iload                  41
    load_int               0
    if_icmpeq              LABEL597
    jump                   LABEL600
 LABEL597:
-   035                    1
-   036                    2
+   sload                  1
+   sstore                 2
    jump                   LABEL649
 LABEL600:
-   033                    41
+   iload                  41
    load_int               1
    if_icmpeq              LABEL604
    jump                   LABEL649
 LABEL604:
-   033                    1
+   iload                  1
    load_int               2
    if_icmpeq              LABEL616
-   033                    1
+   iload                  1
    load_int               3
    if_icmpeq              LABEL611
    jump                   LABEL649
@@ -662,12 +666,12 @@ LABEL611:
    if_icmpeq              LABEL616
    jump                   LABEL649
 LABEL616:
-   033                   
+   iload                  0
    load_int               -1
    if_icmpeq              LABEL620
    jump                   LABEL649
 LABEL620:
-   035                    2
+   sload                  2
    tolowercase           
    load_string            "yes"
    4107                  
@@ -675,7 +679,7 @@ LABEL620:
    if_icmpeq              LABEL627
    jump                   LABEL649
 LABEL627:
-   035                    1
+   sload                  1
    tolowercase           
    load_string            "no"
    4107                  
@@ -692,7 +696,7 @@ LABEL634:
    jump                   LABEL649
 LABEL641:
    load_int               22609931
-   033                    37
+   iload                  37
    200                   
    load_int               1
    if_icmpeq              LABEL647
@@ -701,7 +705,7 @@ LABEL647:
    load_int               65280
    widget_put_textcolor  
 LABEL649:
-   035                    1
+   sload                  1
    load_int               39
    045                   
    load_int               494
@@ -710,14 +714,14 @@ LABEL649:
    imul                  
    load_int               2
    iadd                  
-   034                    39
-   033                    39
+   istore                 39
+   iload                  39
    load_int               15
    if_icmplt              LABEL663
    jump                   LABEL665
 LABEL663:
    load_int               15
-   034                    39
+   istore                 39
 LABEL665:
    load_int               22609931
    load_int               4
@@ -740,24 +744,24 @@ LABEL665:
    load_int               0
    load_int               0
    1000                  
-   033                    43
+   iload                  43
    042                    49
    load_int               0
    load_int               0
    1000                   1
    load_int               39
    045                   
-   033                    39
+   iload                  39
    load_int               0
    load_int               0
    1001                  
    load_int               95
-   033                    39
+   iload                  39
    load_int               0
    load_int               0
    1001                   1
-   033                    2
-   033                    41
+   iload                  2
+   iload                  41
    test_bit              
    load_int               1
    if_icmpeq              LABEL708
@@ -769,7 +773,7 @@ LABEL708:
    widget_put_textcolor   1
    jump                   LABEL738
 LABEL713:
-   033                    41
+   iload                  41
    load_int               40
    045                   
    if_icmpeq              LABEL718
@@ -781,7 +785,7 @@ LABEL718:
    widget_put_textcolor   1
    jump                   LABEL738
 LABEL723:
-   033                    41
+   iload                  41
    load_int               2
    modulo                
    load_int               0
@@ -815,32 +819,32 @@ LABEL738:
    1115                  
    load_int               1
    1115                   1
-   035                    1
+   sload                  1
    1112                  
    load_string            ","
-   036                    1
-   033                    41
+   sstore                 1
+   iload                  41
    load_int               40
    045                   
    if_icmpne              LABEL763
    jump                   LABEL825
 LABEL763:
-   033                    41
+   iload                  41
    045                    1
    load_int               10
    idiv                  
    int_to_string         
    load_string            "."
-   033                    41
+   iload                  41
    045                    1
    load_int               10
    modulo                
    int_to_string         
    load_string            "% ("
-   033                    41
+   iload                  41
    045                   
-   035                    1
-   040                    46
+   sload                  1
+   invoke                 46
    load_string            ")"
    037                    6
    1112                   1
@@ -852,9 +856,9 @@ LABEL763:
    load_int               1
    iadd                  
    043                    43
-   033                    44
+   iload                  44
    042                    49
-   033                    39
+   iload                  39
    load_int               11
    isub                  
    load_int               2
@@ -864,17 +868,17 @@ LABEL763:
    load_int               0
    1000                  
    load_int               0
-   033                    41
+   iload                  41
    045                   
    load_int               0
-   033                    40
-   033                    45
+   iload                  40
+   iload                  45
    4006                  
    load_int               11
    load_int               0
    load_int               0
    1001                  
-   033                    41
+   iload                  41
    load_int               36
    045                   
    if_icmpeq              LABEL817
@@ -892,22 +896,22 @@ LABEL822:
    jump                   LABEL833
 LABEL825:
    load_string            "("
-   033                    41
+   iload                  41
    045                   
-   035                    1
-   040                    46
+   sload                  1
+   invoke                 46
    load_string            ")"
    037                    3
    1112                   1
 LABEL833:
-   033                    41
+   iload                  41
    load_int               1
    iadd                  
    042                    49
-   033                    39
+   iload                  39
    iadd                  
    043                    49
-   034                    41
+   istore                 41
    jump                   LABEL585
 LABEL842:
    042                    49
@@ -915,24 +919,24 @@ LABEL842:
    iadd                  
    043                    49
    042                    49
-   033                    38
+   iload                  38
    isub                  
-   034                    39
+   istore                 39
    load_int               22609931
-   033                    37
+   iload                  37
    200                   
    load_int               1
    if_icmpeq              LABEL856
    jump                   LABEL861
 LABEL856:
-   033                    35
-   033                    39
+   iload                  35
+   iload                  39
    load_int               0
    load_int               0
    1001                  
 LABEL861:
    load_int               22609931
-   033                    37
+   iload                  37
    load_int               1
    iadd                  
    200                   
@@ -940,14 +944,14 @@ LABEL861:
    if_icmpeq              LABEL869
    jump                   LABEL874
 LABEL869:
-   033                    35
-   033                    39
+   iload                  35
+   iload                  39
    load_int               0
    load_int               0
    1001                  
 LABEL874:
    load_int               22609931
-   033                    37
+   iload                  37
    load_int               2
    iadd                  
    200                   
@@ -955,10 +959,10 @@ LABEL874:
    if_icmpeq              LABEL882
    jump                   LABEL891
 LABEL882:
-   033                    35
+   iload                  35
    load_int               2
    isub                  
-   033                    39
+   iload                  39
    load_int               2
    isub                  
    load_int               0

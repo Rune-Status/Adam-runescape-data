@@ -1,3 +1,7 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   1
    042                    5
    load_int               14
    if_icmpeq              LABEL4
@@ -8,9 +12,9 @@ LABEL4:
    return                
 LABEL7:
    load_int               -1
-   034                   
+   istore                
    load_string            ""
-   036                   
+   sstore                
    047                    22
    string_length         
    load_int               0
@@ -112,13 +116,13 @@ LABEL88:
    load_int               1
    5016                  
    5001                  
-   040                    178
-   040                    553
-   034                   
-   033                   
-   040                    84
-   033                   
-   040                    89
+   invoke                 178
+   invoke                 553
+   istore                
+   iload                  0
+   invoke                 84
+   iload                  0
+   invoke                 89
 LABEL99:
    025                    4394
    load_int               1
@@ -144,7 +148,7 @@ LABEL112:
    jump                   LABEL120
 LABEL116:
    047                    22
-   040                    212
+   invoke                 212
    3104                  
    jump                   LABEL197
 LABEL120:
@@ -199,17 +203,17 @@ LABEL159:
    load_int               0
    load_int               9
    string_substring      
-   036                   
+   sstore                
    jump                   LABEL167
 LABEL165:
    047                    22
-   036                   
+   sstore                
 LABEL167:
-   035                   
+   sload                  0
    tolowercase           
    5021                  
-   040                    553
-   040                    84
+   invoke                 553
+   invoke                 84
    jump                   LABEL197
 LABEL173:
    042                    5
@@ -221,7 +225,7 @@ LABEL177:
    load_int               0
    043                    62
    048                    28
-   040                    95
+   invoke                 95
    load_int               552
    load_int               -2147483645
    load_int               1
@@ -237,7 +241,7 @@ LABEL189:
 LABEL193:
    load_int               0
    load_int               1
-   040                    299
+   invoke                 299
    return                
 LABEL197:
    jump                   LABEL212
@@ -260,5 +264,5 @@ LABEL211:
 LABEL212:
    load_int               1
    load_int               1
-   040                    299
+   invoke                 299
    return                

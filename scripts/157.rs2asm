@@ -1,62 +1,66 @@
-   033                    1
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
+   iload                  1
    widget_get_scrollheight_widget
-   033                    1
+   iload                  1
    widget_get_height_widget
    isub                  
-   034                    4
-   033                    2
+   istore                 4
+   iload                  2
    load_int               0
    if_icmplt              LABEL10
    jump                   LABEL12
 LABEL10:
    load_int               0
-   034                    2
+   istore                 2
 LABEL12:
-   033                    2
-   033                    4
+   iload                  2
+   iload                  4
    if_icmpgt              LABEL16
    jump                   LABEL18
 LABEL16:
-   033                    4
-   034                    2
+   iload                  4
+   istore                 2
 LABEL18:
    load_int               0
-   033                    2
-   033                    1
+   iload                  2
+   iload                  1
    widget_put_scroll_widget
    load_int               0
-   034                    5
-   033                   
+   istore                 5
+   iload                  0
    load_int               1
    200                   
    load_int               1
    if_icmpeq              LABEL30
    jump                   LABEL78
 LABEL30:
-   033                   
+   iload                  0
    widget_get_height_widget
    load_int               32
    isub                  
    widget_get_height     
    isub                  
-   034                    5
-   033                    3
+   istore                 5
+   iload                  3
    load_int               1
    if_icmpeq              LABEL41
    jump                   LABEL78
 LABEL41:
    load_int               0
    load_int               16
-   033                    5
-   033                    2
+   iload                  5
+   iload                  2
    imul                  
-   033                    4
+   iload                  4
    idiv                  
    iadd                  
    load_int               1
    load_int               0
    1000                  
-   033                   
+   iload                  0
    load_int               2
    200                    1
    load_int               1
@@ -69,7 +73,7 @@ LABEL58:
    load_int               0
    1000                   1
 LABEL63:
-   033                   
+   iload                  0
    load_int               3
    200                    1
    load_int               1

@@ -1,27 +1,31 @@
-   033                   
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
+   iload                  0
    widget_get_width_widget
-   034                    4
-   033                   
+   istore                 4
+   iload                  0
    widget_get_height_widget
-   034                    5
-   033                    4
-   033                    1
+   istore                 5
+   iload                  4
+   iload                  1
    if_icmpeq              LABEL10
    jump                   LABEL15
 LABEL10:
-   033                    5
-   033                    2
+   iload                  5
+   iload                  2
    if_icmpeq              LABEL14
    jump                   LABEL15
 LABEL14:
    return                
 LABEL15:
-   033                    4
+   iload                  4
    load_int               700
    if_icmpgt              LABEL19
    jump                   LABEL37
 LABEL19:
-   033                    5
+   iload                  5
    load_int               500
    if_icmpgt              LABEL23
    jump                   LABEL30
@@ -30,7 +34,7 @@ LABEL23:
    load_int               500
    load_int               0
    load_int               0
-   033                    3
+   iload                  3
    2001                  
    jump                   LABEL36
 LABEL30:
@@ -38,12 +42,12 @@ LABEL30:
    load_int               0
    load_int               0
    load_int               1
-   033                    3
+   iload                  3
    2001                  
 LABEL36:
    jump                   LABEL54
 LABEL37:
-   033                    5
+   iload                  5
    load_int               500
    if_icmpgt              LABEL41
    jump                   LABEL48
@@ -52,7 +56,7 @@ LABEL41:
    load_int               500
    load_int               1
    load_int               0
-   033                    3
+   iload                  3
    2001                  
    jump                   LABEL54
 LABEL48:
@@ -60,15 +64,15 @@ LABEL48:
    load_int               0
    load_int               1
    load_int               1
-   033                    3
+   iload                  3
    2001                  
 LABEL54:
    load_int               938
-   033                   
-   033                    4
-   033                    5
-   033                    3
+   iload                  0
+   iload                  4
+   iload                  5
+   iload                  3
    load_string            "IiiI"
-   033                   
+   iload                  0
    2408                  
    return                

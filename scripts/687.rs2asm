@@ -1,18 +1,22 @@
-   033                    1
+.int_stack_count    13
+.string_stack_count 0
+.int_var_count      13
+.string_var_count   0
+   iload                  1
    load_string            "Iron Man"
    load_string            "Iron Woman"
    switch_male_or_female 
    load_string            " Setup"
    037                    2
    load_int               0
-   040                    228
+   invoke                 228
    pop_int               
    load_string            "Iron Man"
    load_string            "Iron Woman"
    switch_male_or_female 
    load_string            " Mode"
    037                    2
-   033                    2
+   iload                  2
    2112                  
    load_string            "<col=ffffff>"
    load_string            "Standard "
@@ -27,7 +31,7 @@
    switch_male_or_female 
    load_string            " cannot trade, stake, receive PK loot, scavenge dropped items, nor play certain multiplayer minigames."
    037                    8
-   033                    3
+   iload                  3
    2112                  
    load_string            "<col=ffffff>"
    load_string            "Hardcore "
@@ -50,7 +54,7 @@
    switch_male_or_female 
    load_string            "."
    037                    12
-   033                    4
+   iload                  4
    2112                  
    load_string            "<col=ffffff>"
    load_string            "Ultimate "
@@ -69,7 +73,7 @@
    switch_male_or_female 
    load_string            " cannot use banks, nor retain any items on death in dangerous areas."
    037                    10
-   033                    5
+   iload                  5
    2112                  
    load_string            "<col=ffffff>"
    load_string            "None"
@@ -80,7 +84,7 @@
    switch_male_or_female 
    load_string            " restrictions will apply to this account."
    037                    6
-   033                    6
+   iload                  6
    2112                  
    load_string            "<col=ffffff>"
    load_string            "PIN"
@@ -95,7 +99,7 @@
    int_to_string         
    load_string            "-day delay, in case you change your mind."
    037                    9
-   033                    7
+   iload                  7
    2112                  
    load_string            "<col=ffffff>"
    load_string            "Permanent"
@@ -106,7 +110,7 @@
    switch_male_or_female 
    load_string            " restrictions can never be removed."
    037                    6
-   033                    8
+   iload                  8
    2112                  
    load_string            "<col=ffffff>"
    load_string            "Deactivation settings"
@@ -118,7 +122,7 @@
    switch_male_or_female 
    load_string            " status."
    037                    7
-   033                    11
+   iload                  11
    2112                  
    025                    1777
    load_int               0
@@ -130,23 +134,23 @@ LABEL126:
    load_string            "</col>"
    load_string            " - None."
    037                    4
-   033                    12
+   iload                  12
    2112                  
    jump                  
 LABEL134:
-   033                   
-   033                    9
-   033                    10
-   040                    689
+   iload                  0
+   iload                  9
+   iload                  10
+   invoke                 689
    load_int               688
-   033                   
-   033                    9
-   033                    10
+   iload                  0
+   iload                  9
+   iload                  10
    load_int               499
    load_int               281
    load_int               1425
    load_int               3
    load_string            "IIIY"
-   033                   
+   iload                  0
    2407                  
    return                

@@ -1,7 +1,11 @@
-   033                   
+.int_stack_count    20
+.string_stack_count 0
+.int_var_count      20
+.string_var_count   0
+   iload                  0
    load_int               0
    if_icmplt              LABEL7
-   033                   
+   iload                  0
    load_int               10
    if_icmpge              LABEL7
    jump                   LABEL8
@@ -12,99 +16,99 @@ LABEL8:
    load_int               1
    load_int               0
    3200                  
-   033                    1
+   iload                  1
    load_int               3
    if_icmpeq              LABEL16
    jump                   LABEL44
 LABEL16:
-   033                    2
-   033                   
+   iload                  2
+   iload                  0
    iadd                  
-   034                    2
-   033                    2
+   istore                 2
+   iload                  2
    int_to_string         
    3104                  
    load_int               -1
    load_int               -1
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   033                    11
-   033                    12
-   033                    13
-   033                    14
-   033                    15
-   033                    16
-   033                    17
-   033                    18
-   033                    19
-   040                    653
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   iload                  13
+   iload                  14
+   iload                  15
+   iload                  16
+   iload                  17
+   iload                  18
+   iload                  19
+   invoke                 653
    return                
 LABEL44:
-   033                    1
+   iload                  1
    load_int               2
    if_icmpeq              LABEL48
    jump                   LABEL55
 LABEL48:
-   033                    2
+   iload                  2
    load_int               10
-   033                   
+   iload                  0
    imul                  
    iadd                  
-   034                    2
+   istore                 2
    jump                   LABEL76
 LABEL55:
-   033                    1
+   iload                  1
    load_int               1
    if_icmpeq              LABEL59
    jump                   LABEL66
 LABEL59:
-   033                    2
+   iload                  2
    load_int               100
-   033                   
+   iload                  0
    imul                  
    iadd                  
-   034                    2
+   istore                 2
    jump                   LABEL76
 LABEL66:
-   033                    1
+   iload                  1
    load_int               0
    if_icmpeq              LABEL70
    jump                   LABEL75
 LABEL70:
    load_int               1000
-   033                   
+   iload                  0
    imul                  
-   034                    2
+   istore                 2
    jump                   LABEL76
 LABEL75:
    return                
 LABEL76:
-   033                    1
+   iload                  1
    load_int               1
    iadd                  
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   033                    11
-   033                    12
-   033                    13
-   033                    14
-   033                    15
-   033                    16
-   033                    17
-   033                    18
-   033                    19
-   040                    653
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   iload                  13
+   iload                  14
+   iload                  15
+   iload                  16
+   iload                  17
+   iload                  18
+   iload                  19
+   invoke                 653
    return                

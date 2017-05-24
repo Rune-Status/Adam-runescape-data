@@ -1,21 +1,25 @@
-   035                   
+.int_stack_count    0
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   3
+   sload                  0
    4111                  
-   036                   
-   035                   
+   sstore                
+   sload                  0
    string_length         
-   034                   
+   istore                
    load_int               0
-   034                    1
-   033                   
+   istore                 1
+   iload                  0
    load_int               0
    if_icmpgt              LABEL12
    jump                   LABEL25
 LABEL12:
-   035                   
-   033                   
+   sload                  0
+   iload                  0
    load_int               1
    isub                  
-   033                   
+   iload                  0
    string_substring      
    load_string            "|"
    4107                  
@@ -24,53 +28,53 @@ LABEL12:
    jump                   LABEL25
 LABEL23:
    load_int               1
-   034                    1
+   istore                 1
 LABEL25:
    load_string            ""
-   036                    1
+   sstore                 1
    load_string            ""
-   036                    2
+   sstore                 2
 LABEL29:
-   035                   
+   sload                  0
    string_length         
    load_int               0
    if_icmpgt              LABEL34
    jump                   LABEL53
 LABEL34:
-   035                   
-   040                    632
-   036                   
-   036                    2
-   035                    1
+   sload                  0
+   invoke                 632
+   sstore                
+   sstore                 2
+   sload                  1
    string_length         
    load_int               0
    if_icmpgt              LABEL43
    jump                   LABEL50
 LABEL43:
-   035                    1
+   sload                  1
    load_string            "<br>"
-   035                    2
+   sload                  2
    concat_string         
    concat_string         
-   036                    1
+   sstore                 1
    jump                   LABEL52
 LABEL50:
-   035                    2
-   036                    1
+   sload                  2
+   sstore                 1
 LABEL52:
    jump                   LABEL29
 LABEL53:
-   033                    1
+   iload                  1
    load_int               1
    if_icmpeq              LABEL57
    jump                   LABEL61
 LABEL57:
-   035                    1
+   sload                  1
    load_string            "<br>"
    concat_string         
    return                
 LABEL61:
-   035                    1
+   sload                  1
    return                
    load_string            ""
    return                

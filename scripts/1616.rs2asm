@@ -1,6 +1,10 @@
-   033                    1
-   040                    1624
-   033                    2
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  1
+   invoke                 1624
+   iload                  2
    102                   
    025                    5509
    load_int               1
@@ -11,21 +15,21 @@
    jump                   LABEL23
 LABEL11:
    load_int               1
-   033                   
+   iload                  0
    widget_put_hidden_widget
    load_int               -1
    load_string            ""
-   033                    2
+   iload                  2
    2409                  
    load_int               -1
    load_string            ""
-   033                    2
+   iload                  2
    2408                  
    return                
 LABEL23:
    load_int               0
-   033                   
+   iload                  0
    widget_put_hidden_widget
-   033                    2
-   040                    1617
+   iload                  2
+   invoke                 1617
    return                

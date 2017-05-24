@@ -1,5 +1,9 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   1
    load_string            "Enable (1 coin)"
-   036                   
+   sstore                
    025                    5399
    load_int               0
    if_icmpeq              LABEL9
@@ -17,14 +21,14 @@ LABEL9:
    1702                  
    load_int               16777215
    load_string            "Iii"
-   033                   
+   iload                  0
    2412                  
    load_int               85
    load_int               -2147483645
    1702                  
    load_int               10461087
    load_string            "Iii"
-   033                   
+   iload                  0
    2404                  
    025                    5400
    load_int               0
@@ -39,34 +43,34 @@ LABEL35:
    load_string            "Enable ("
    025                    5400
    load_string            ","
-   040                    46
+   invoke                 46
    load_string            " coins)"
    037                    3
-   036                   
+   sstore                
 LABEL42:
    load_int               1
-   035                   
-   033                   
+   sload                  0
+   iload                  0
    2300                  
    jump                   LABEL51
 LABEL47:
    load_int               1
    load_string            "Enable"
-   033                   
+   iload                  0
    2300                  
 LABEL51:
    load_int               2
    load_string            ""
-   033                   
+   iload                  0
    2300                  
    load_int               1473
    load_int               -2147483644
    load_int               0
    025                    5400
-   033                   
+   iload                  0
    1702                  
    load_string            "i1iIi"
-   033                   
+   iload                  0
    2409                  
    jump                   LABEL111
 LABEL65:
@@ -79,7 +83,7 @@ LABEL65:
 LABEL71:
    025                    5400
    load_string            ","
-   040                    46
+   invoke                 46
    load_string            " coins"
    037                    2
    1112                  
@@ -90,38 +94,38 @@ LABEL78:
 LABEL80:
    load_int               1
    load_string            "Disable"
-   033                   
+   iload                  0
    2300                  
    load_int               2
    load_string            "Change"
-   033                   
+   iload                  0
    2300                  
    load_int               85
    load_int               -2147483645
    1702                  
    load_int               16777215
    load_string            "Iii"
-   033                   
+   iload                  0
    2412                  
    load_int               85
    load_int               -2147483645
    1702                  
    load_int               16750623
    load_string            "Iii"
-   033                   
+   iload                  0
    2404                  
    load_int               1473
    load_int               -2147483644
    load_int               1
    load_int               0
-   033                   
+   iload                  0
    1702                  
    load_string            "i1iIi"
-   033                   
+   iload                  0
    2409                  
 LABEL111:
    load_int               -1
    load_string            ""
-   033                   
+   iload                  0
    2408                  
    return                

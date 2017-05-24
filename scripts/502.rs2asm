@@ -1,6 +1,10 @@
-   033                   
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  0
    102                   
-   033                    2
+   iload                  2
    102                   
    025                    4146
    load_int               1
@@ -8,9 +12,9 @@
    jump                   LABEL23
 LABEL8:
    load_string            "Select hairstyle"
-   033                    1
+   iload                  1
    2112                  
-   033                   
+   iload                  0
    load_int               881
    load_int               882
    load_int               -1
@@ -20,7 +24,7 @@ LABEL8:
    load_int               180
    load_int               1
    load_int               1
-   040                    499
+   invoke                 499
    jump                   LABEL65
 LABEL23:
    025                    4146
@@ -29,9 +33,9 @@ LABEL23:
    jump                   LABEL42
 LABEL27:
    load_string            "Select facial hair"
-   033                    1
+   iload                  1
    2112                  
-   033                   
+   iload                  0
    load_int               884
    load_int               885
    load_int               886
@@ -41,7 +45,7 @@ LABEL27:
    load_int               180
    load_int               1
    load_int               1
-   040                    499
+   invoke                 499
    jump                   LABEL65
 LABEL42:
    025                    4146
@@ -50,9 +54,9 @@ LABEL42:
    jump                   LABEL61
 LABEL46:
    load_string            "Select hairstyle"
-   033                    1
+   iload                  1
    2112                  
-   033                   
+   iload                  0
    load_int               888
    load_int               889
    load_int               -1
@@ -62,37 +66,37 @@ LABEL46:
    load_int               150
    load_int               1
    load_int               1
-   040                    499
+   invoke                 499
    jump                   LABEL65
 LABEL61:
    load_string            "Please try again later."
-   033                    1
+   iload                  1
    2112                  
    return                
 LABEL65:
    load_int               0
-   034                    3
+   istore                 3
 LABEL67:
-   033                    3
+   iload                  3
    load_int               25
    if_icmplt              LABEL71
    jump                   LABEL123
 LABEL71:
-   033                    2
+   iload                  2
    load_int               3
-   033                    3
+   iload                  3
    100                   
    load_int               25
    load_int               25
    load_int               0
    load_int               0
    1001                  
-   033                    3
+   iload                  3
    load_int               13
    if_icmplt              LABEL84
    jump                   LABEL92
 LABEL84:
-   033                    3
+   iload                  3
    load_int               25
    imul                  
    load_int               0
@@ -101,7 +105,7 @@ LABEL84:
    1000                  
    jump                   LABEL103
 LABEL92:
-   033                    3
+   iload                  3
    load_int               13
    isub                  
    load_int               25
@@ -118,33 +122,33 @@ LABEL103:
    load_int               105
    load_int               105
    load_int               890
-   033                    3
+   iload                  3
    3408                  
    widget_put_textcolor  
    load_int               1
    load_int               105
    load_int               115
    load_int               891
-   033                    3
+   iload                  3
    3408                  
    1300                  
-   033                    3
+   iload                  3
    load_int               1
    iadd                  
-   034                    3
+   istore                 3
    jump                   LABEL67
 LABEL123:
    load_int               0
-   034                    3
+   istore                 3
 LABEL125:
-   033                    3
+   iload                  3
    load_int               25
    if_icmplt              LABEL129
    jump                   LABEL182
 LABEL129:
-   033                    2
+   iload                  2
    load_int               5
-   033                    3
+   iload                  3
    load_int               25
    iadd                  
    100                   
@@ -153,12 +157,12 @@ LABEL129:
    load_int               0
    load_int               0
    1001                  
-   033                    3
+   iload                  3
    load_int               13
    if_icmplt              LABEL144
    jump                   LABEL152
 LABEL144:
-   033                    3
+   iload                  3
    load_int               25
    imul                  
    load_int               0
@@ -167,7 +171,7 @@ LABEL144:
    1000                  
    jump                   LABEL163
 LABEL152:
-   033                    3
+   iload                  3
    load_int               13
    isub                  
    load_int               25
@@ -181,22 +185,22 @@ LABEL152:
 LABEL163:
    load_int               442
    widget_put_textureid  
-   033                    3
+   iload                  3
    load_int               3
-   040                    501
+   invoke                 501
    load_int               500
    load_int               -2147483645
    load_int               -2147483643
-   033                    3
+   iload                  3
    load_int               3
    load_int               263
    load_int               1
    load_string            "IiiiY"
    1407                  
-   033                    3
+   iload                  3
    load_int               1
    iadd                  
-   034                    3
+   istore                 3
    jump                   LABEL125
 LABEL182:
    return                

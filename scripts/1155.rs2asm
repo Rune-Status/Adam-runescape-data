@@ -1,43 +1,47 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    load_int               563
    3304                  
-   034                    1
+   istore                 1
    load_int               0
-   034                    2
+   istore                 2
 LABEL5:
-   033                    1
+   iload                  1
    load_int               0
    if_icmpgt              LABEL9
    jump                   LABEL34
 LABEL9:
-   033                    1
+   iload                  1
    load_int               1
    isub                  
-   034                    1
-   033                   
-   033                    1
+   istore                 1
+   iload                  0
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL19
    jump                   LABEL27
 LABEL19:
    load_int               563
-   033                    1
+   iload                  1
    3301                  
    load_int               563
-   033                    1
+   iload                  1
    3302                  
-   033                   
-   040                    1156
+   iload                  0
+   invoke                 1156
 LABEL27:
-   033                    2
+   iload                  2
    load_int               563
-   033                    1
+   iload                  1
    3302                  
    iadd                  
-   034                    2
+   istore                 2
    jump                   LABEL5
 LABEL34:
-   033                    2
+   iload                  2
    int_to_string         
    load_int               15073293
    2112                  

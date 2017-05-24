@@ -1,15 +1,19 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   1
    load_string            "Resizable mode side-panel:"
    load_string            "<br>"
    load_string            "Opaque"
    037                    3
-   036                   
+   sstore                
    025                    4609
    load_int               1
    if_icmpeq              LABEL9
    jump                   LABEL13
 LABEL9:
    load_int               761
-   033                   
+   iload                  0
    widget_put_textureid_widget
    jump                   LABEL21
 LABEL13:
@@ -17,20 +21,20 @@ LABEL13:
    load_string            "<br>"
    load_string            "Transparent"
    037                    3
-   036                   
+   sstore                
    load_int               762
-   033                   
+   iload                  0
    widget_put_textureid_widget
 LABEL21:
    load_int               526
-   033                   
+   iload                  0
    load_int               -1
-   033                    1
-   035                   
+   iload                  1
+   sload                  0
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   033                   
+   iload                  0
    2412                  
    load_int               0
    043                    2

@@ -1,3 +1,7 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    get_gamecycle         
    load_int               10
    modulo                
@@ -12,7 +16,7 @@ LABEL7:
    if_icmpeq              LABEL11
    jump                   LABEL17
 LABEL11:
-   033                   
+   iload                  0
    load_int               1
    if_icmpeq              LABEL15
    jump                   LABEL16
@@ -21,14 +25,14 @@ LABEL15:
 LABEL16:
    jump                   LABEL22
 LABEL17:
-   033                   
+   iload                  0
    load_int               0
    if_icmpeq              LABEL21
    jump                   LABEL22
 LABEL21:
    return                
 LABEL22:
-   033                    1
-   033                    2
-   040                    534
+   iload                  1
+   iload                  2
+   invoke                 534
    return                

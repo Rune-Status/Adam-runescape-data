@@ -1,53 +1,57 @@
-   033                    1
+.int_stack_count    2
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
+   iload                  1
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL9
 LABEL4:
    load_int               1
    load_string            "Buy for 1 ticket"
-   033                   
+   iload                  0
    2300                  
    jump                   LABEL18
 LABEL9:
    load_int               1
    load_string            "Buy for "
-   033                    1
+   iload                  1
    load_string            ","
-   040                    46
+   invoke                 46
    load_string            " tickets"
    037                    3
-   033                   
+   iload                  0
    2300                  
 LABEL18:
-   033                   
-   035                   
-   033                    1
+   iload                  0
+   sload                  0
+   iload                  1
    load_int               0
-   040                    1595
+   invoke                 1595
    load_int               1459
-   033                   
-   035                   
-   033                    1
+   iload                  0
+   sload                  0
+   iload                  1
    load_int               0
    load_int               93
    load_int               1
    load_string            "Isi1Y"
-   033                   
+   iload                  0
    2414                  
    load_int               1459
-   033                   
-   035                   
-   033                    1
+   iload                  0
+   sload                  0
+   iload                  1
    load_int               1
    load_string            "Isi1"
-   033                   
+   iload                  0
    2412                  
    load_int               1459
-   033                   
-   035                   
-   033                    1
+   iload                  0
+   sload                  0
+   iload                  1
    load_int               0
    load_string            "Isi1"
-   033                   
+   iload                  0
    2404                  
    return                

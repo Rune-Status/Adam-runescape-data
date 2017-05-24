@@ -1,82 +1,86 @@
-   033                    4
-   033                    2
+.int_stack_count    5
+.string_stack_count 0
+.int_var_count      14
+.string_var_count   0
+   iload                  4
+   iload                  2
    if_icmple              LABEL4
    jump                   LABEL6
 LABEL4:
-   033                   
+   iload                  0
    return                
 LABEL6:
-   033                    4
-   033                    3
+   iload                  4
+   iload                  3
    if_icmpge              LABEL10
    jump                   LABEL12
 LABEL10:
-   033                    1
+   iload                  1
    return                
 LABEL12:
-   033                   
+   iload                  0
    load_int               256
    idiv                  
    load_int               256
    idiv                  
-   034                    5
-   033                    1
+   istore                 5
+   iload                  1
    load_int               256
    idiv                  
    load_int               256
    idiv                  
-   034                    6
-   033                   
-   load_int               256
-   idiv                  
-   load_int               255
-   and                   
-   034                    7
-   033                    1
+   istore                 6
+   iload                  0
    load_int               256
    idiv                  
    load_int               255
    and                   
-   034                    8
-   033                   
+   istore                 7
+   iload                  1
+   load_int               256
+   idiv                  
    load_int               255
    and                   
-   034                    9
-   033                    1
+   istore                 8
+   iload                  0
    load_int               255
    and                   
-   034                    10
-   033                    5
-   033                    6
-   033                    2
-   033                    3
-   033                    4
+   istore                 9
+   iload                  1
+   load_int               255
+   and                   
+   istore                 10
+   iload                  5
+   iload                  6
+   iload                  2
+   iload                  3
+   iload                  4
    4006                  
-   034                    11
-   033                    7
-   033                    8
-   033                    2
-   033                    3
-   033                    4
+   istore                 11
+   iload                  7
+   iload                  8
+   iload                  2
+   iload                  3
+   iload                  4
    4006                  
-   034                    12
-   033                    9
-   033                    10
-   033                    2
-   033                    3
-   033                    4
+   istore                 12
+   iload                  9
+   iload                  10
+   iload                  2
+   iload                  3
+   iload                  4
    4006                  
-   034                    13
-   033                    11
+   istore                 13
+   iload                  11
    load_int               256
    imul                  
    load_int               256
    imul                  
-   033                    12
+   iload                  12
    load_int               256
    imul                  
    iadd                  
-   033                    13
+   iload                  13
    iadd                  
    return                
    load_int               0

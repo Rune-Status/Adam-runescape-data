@@ -1,56 +1,60 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      8
+.string_var_count   0
    load_int               1120
-   034                    4
+   istore                 4
    load_int               1121
-   034                    5
-   033                    2
-   033                    3
+   istore                 5
+   iload                  2
+   iload                  3
    200                    1
    load_int               1
    if_icmpeq              LABEL10
    jump                   LABEL12
 LABEL10:
-   033                    4
+   iload                  4
    widget_put_textureid   1
 LABEL12:
-   033                    1
-   033                   
+   iload                  1
+   iload                  0
    3301                  
-   034                    6
+   istore                 6
    load_int               0
-   034                    7
-   033                    6
+   istore                 7
+   iload                  6
    load_int               -1
    if_icmpne              LABEL22
    jump                   LABEL85
 LABEL22:
-   033                    1
-   033                   
+   iload                  1
+   iload                  0
    3302                  
-   034                    7
+   istore                 7
    load_int               0
    widget_put_hidden     
    widget_put_actions_null
    load_int               229
    load_int               -2147483645
-   033                    3
-   033                    5
+   iload                  3
+   iload                  5
    load_int               -1
    load_string            "IidI"
    1412                  
    load_int               229
    load_int               -2147483645
-   033                    3
-   033                    4
+   iload                  3
+   iload                  4
    load_int               -1
    load_string            "IidI"
    1404                  
-   033                    6
+   iload                  6
    get_item_note_1       
-   033                    6
+   iload                  6
    if_icmpne              LABEL48
    jump                   LABEL66
 LABEL48:
-   033                    7
+   iload                  7
    load_int               1
    if_icmpeq              LABEL52
    jump                   LABEL59
@@ -82,11 +86,11 @@ LABEL69:
    load_int               10
    load_string            "Examine"
    1300                  
-   033                    6
-   033                    7
+   iload                  6
+   iload                  7
    1200                  
    load_string            "<col=ff9040>"
-   033                    6
+   iload                  6
    get_item_name         
    load_string            "</col>"
    037                    3

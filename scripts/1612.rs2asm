@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    3
+.string_stack_count 1
+.int_var_count      4
+.string_var_count   1
+   iload                  0
    load_int               1
    if_icmpne              LABEL4
    jump                   LABEL5
@@ -9,15 +13,15 @@ LABEL5:
    load_int               1
    load_int               0
    3200                  
-   033                    1
+   iload                  1
    102                   
-   033                    1
+   iload                  1
    load_int               0
-   040                    836
-   034                    3
-   033                    1
+   invoke                 836
+   istore                 3
+   iload                  1
    load_int               4
-   033                    3
+   iload                  3
    100                   
    load_int               0
    load_int               0
@@ -31,7 +35,7 @@ LABEL5:
    1001                  
    load_int               16750623
    widget_put_textcolor  
-   033                    2
+   iload                  2
    widget_put_fontid     
    load_int               1
    load_int               1
@@ -43,26 +47,26 @@ LABEL5:
    1112                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2412                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2404                  
-   033                    1
+   iload                  1
    widget_put_actions_null_widget
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2409                  
    load_int               1613
-   033                    1
-   035                   
-   033                    2
+   iload                  1
+   sload                  0
+   iload                  2
    get_gamecycle         
    load_int               20
    iadd                  
    load_string            "Isdi"
-   033                    1
+   iload                  1
    2408                  
    return                

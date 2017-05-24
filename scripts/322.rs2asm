@@ -1,12 +1,16 @@
+.int_stack_count    8
+.string_stack_count 0
+.int_var_count      11
+.string_var_count   1
    load_int               -1
-   034                    8
+   istore                 8
    load_string            "Choose an item from the shop."
-   036                   
+   sstore                
    load_int               0
-   034                    9
+   istore                 9
    load_int               0
-   034                    10
-   033                   
+   istore                 10
+   iload                  0
    load_int               1
    if_icmple              LABEL12
    jump                   LABEL133
@@ -16,35 +20,35 @@ LABEL12:
    load_int               0
    3200                  
    load_int               1
-   033                    3
+   iload                  3
    widget_put_hidden_widget
    load_int               0
-   033                    4
+   iload                  4
    widget_put_hidden_widget
-   033                    6
+   iload                  6
    102                   
    load_int               92
    load_int               165
    load_int               0
    load_int               0
-   033                    7
+   iload                  7
    2000                  
    load_int               1
-   033                    6
+   iload                  6
    widget_put_hidden_widget
    load_int               105
    load_int               79
    load_int               840
-   033                    2
+   iload                  2
    3408                  
-   034                    8
-   033                    8
+   istore                 8
+   iload                  8
    load_int               -1
    if_icmpne              LABEL43
    jump                   LABEL114
 LABEL43:
    load_string            "<u=ff981f>"
-   033                    8
+   iload                  8
    get_item_name         
    load_string            "</u>"
    load_string            "<br>"
@@ -52,105 +56,105 @@ LABEL43:
    load_int               111
    load_int               115
    load_int               843
-   033                    8
+   iload                  8
    3408                  
    load_string            "<br>"
    load_string            "<br>"
    037                    8
-   036                   
+   sstore                
    load_int               111
    load_int               105
    load_int               842
-   033                    8
+   iload                  8
    3408                  
-   034                    9
+   istore                 9
    load_int               111
    load_int               105
    load_int               841
-   033                    8
+   iload                  8
    3408                  
-   034                    10
-   033                    9
+   istore                 10
+   iload                  9
    load_int               1
    if_icmpne              LABEL74
    jump                   LABEL98
 LABEL74:
-   033                    10
+   iload                  10
    load_int               1
    if_icmpgt              LABEL78
    jump                   LABEL89
 LABEL78:
-   035                   
+   sload                  0
    load_string            "Cost: "
-   033                    9
+   iload                  9
    int_to_string         
    load_string            " points for "
-   033                    10
+   iload                  10
    int_to_string         
    037                    4
    concat_string         
-   036                   
+   sstore                
    jump                   LABEL97
 LABEL89:
-   035                   
+   sload                  0
    load_string            "Cost: "
-   033                    9
+   iload                  9
    int_to_string         
    load_string            " points each"
    037                    3
    concat_string         
-   036                   
+   sstore                
 LABEL97:
    jump                   LABEL114
 LABEL98:
-   033                    10
+   iload                  10
    load_int               1
    if_icmpgt              LABEL102
    jump                   LABEL110
 LABEL102:
-   035                   
+   sload                  0
    load_string            "Cost: 1 point for "
-   033                    10
+   iload                  10
    int_to_string         
    037                    2
    concat_string         
-   036                   
+   sstore                
    jump                   LABEL114
 LABEL110:
-   035                   
+   sload                  0
    load_string            "Cost: 1 point each"
    concat_string         
-   036                   
+   sstore                
 LABEL114:
-   035                   
-   033                    5
+   sload                  0
+   iload                  5
    2112                  
    load_int               1
    load_string            "Back"
-   033                    7
+   iload                  7
    2300                  
    load_int               319
    load_int               0
    load_int               -2147483644
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
    load_string            "1iIIIII"
-   033                    7
+   iload                  7
    2409                  
    return                
 LABEL133:
-   033                   
+   iload                  0
    load_int               10
    if_icmpge              LABEL137
    jump                   LABEL138
 LABEL137:
    return                
 LABEL138:
-   033                    1
-   033                    2
+   iload                  1
+   iload                  2
    200                   
    load_int               1
    if_icmpeq              LABEL144
@@ -163,8 +167,8 @@ LABEL144:
    load_int               0
    3200                  
    load_int               326
-   033                    1
-   033                    2
+   iload                  1
+   iload                  2
    get_gamecycle         
    load_int               10
    iadd                  

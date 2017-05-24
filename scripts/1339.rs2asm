@@ -1,102 +1,106 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   0
    load_int               0
-   034                    1
-   033                   
+   istore                 1
+   iload                  0
    widget_get_width_widget
-   034                    2
+   istore                 2
    load_int               0
-   034                    3
+   istore                 3
    load_int               -1
-   034                    4
+   istore                 4
    load_int               8
-   034                    5
+   istore                 5
    load_int               5
-   034                    6
-   033                    2
+   istore                 6
+   iload                  2
    load_int               36
-   033                    6
+   iload                  6
    imul                  
    isub                  
-   033                    6
+   iload                  6
    load_int               1
    iadd                  
    idiv                  
-   034                    7
-   033                   
+   istore                 7
+   iload                  0
    widget_get_height_widget
    load_int               32
-   033                    6
+   iload                  6
    imul                  
    isub                  
-   033                    5
+   iload                  5
    isub                  
-   033                    6
+   iload                  6
    load_int               1
    iadd                  
    idiv                  
-   034                    8
-   033                   
+   istore                 8
+   iload                  0
    102                   
 LABEL38:
-   033                    1
+   iload                  1
    load_int               25
    if_icmplt              LABEL42
    jump                   LABEL95
 LABEL42:
    get_settings           1356
-   033                    1
+   iload                  1
    test_bit              
    load_int               1
    if_icmpeq              LABEL48
    jump                   LABEL51
 LABEL48:
    load_int               20356
-   034                    4
+   istore                 4
    jump                   LABEL53
 LABEL51:
    load_int               20357
-   034                    4
+   istore                 4
 LABEL53:
-   033                   
+   iload                  0
    load_int               5
-   033                    1
+   iload                  1
    100                   
    load_int               36
    load_int               32
    load_int               0
    load_int               0
    1001                  
-   033                    7
-   033                    1
-   033                    6
+   iload                  7
+   iload                  1
+   iload                  6
    modulo                
    load_int               36
-   033                    7
+   iload                  7
    iadd                  
    imul                  
    iadd                  
    load_int               1
    iadd                  
-   033                    5
-   033                    1
-   033                    6
+   iload                  5
+   iload                  1
+   iload                  6
    idiv                  
    load_int               32
-   033                    8
+   iload                  8
    iadd                  
    imul                  
    iadd                  
    load_int               0
    load_int               0
    1000                  
-   033                    4
+   iload                  4
    load_int               0
    1205                  
    load_int               1
    widget_put_borderthickness
-   033                    1
+   iload                  1
    load_int               1
    iadd                  
-   034                    1
+   istore                 1
    jump                   LABEL38
 LABEL95:
    return                

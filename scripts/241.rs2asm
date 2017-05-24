@@ -1,34 +1,38 @@
-   033                    1
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  1
    load_int               1
    1200                  
-   033                    1
-   040                    19
-   034                    3
-   033                    3
-   033                    2
+   iload                  1
+   invoke                 19
+   istore                 3
+   iload                  3
+   iload                  2
    if_icmpge              LABEL10
    jump                   LABEL32
 LABEL10:
    load_int               65280
    widget_put_textcolor   1
-   033                   
+   iload                  0
    load_int               1
    if_icmpeq              LABEL16
    jump                   LABEL24
 LABEL16:
-   033                    2
+   iload                  2
    int_to_string         
    load_string            "/"
-   033                    2
+   iload                  2
    int_to_string         
    037                    3
    1112                   1
    jump                   LABEL31
 LABEL24:
-   033                    3
-   040                    20
+   iload                  3
+   invoke                 20
    load_string            "/"
-   033                    2
+   iload                  2
    int_to_string         
    037                    3
    1112                   1
@@ -37,10 +41,10 @@ LABEL31:
 LABEL32:
    load_int               16711680
    widget_put_textcolor   1
-   033                    3
-   040                    20
+   iload                  3
+   invoke                 20
    load_string            "/"
-   033                    2
+   iload                  2
    int_to_string         
    037                    3
    1112                   1

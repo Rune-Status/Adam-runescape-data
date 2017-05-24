@@ -1,10 +1,14 @@
-   033                   
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   2
+   iload                  0
    load_int               1
    if_icmplt              LABEL10
-   033                    2
+   iload                  2
    load_int               -1
    if_icmpeq              LABEL10
-   033                   
+   iload                  0
    load_int               31
    if_icmpgt              LABEL10
    jump                   LABEL11
@@ -12,56 +16,56 @@ LABEL10:
    return                
 LABEL11:
    load_string            ""
-   036                   
+   sstore                
    load_string            ""
-   036                    1
-   033                    2
+   sstore                 1
+   iload                  2
    load_int               6
    200                   
    load_int               1
    if_icmpeq              LABEL21
    jump                   LABEL59
 LABEL21:
-   033                   
+   iload                  0
    load_int               9
    if_icmple              LABEL25
    jump                   LABEL29
 LABEL25:
-   033                   
+   iload                  0
    int_to_string         
-   036                   
+   sstore                
    jump                   LABEL45
 LABEL29:
    load_int               105
    load_int               115
    load_int               1401
-   033                   
+   iload                  0
    load_int               9
    isub                  
    3408                  
    load_int               105
    load_int               115
    load_int               1402
-   033                   
+   iload                  0
    load_int               9
    isub                  
    3408                  
-   036                    1
-   036                   
+   sstore                 1
+   sstore                
 LABEL45:
-   035                   
+   sload                  0
    load_string            ":"
    037                    2
    1112                  
    load_int               1632
    load_int               -2147483639
-   033                    1
+   iload                  1
    load_int               -2147483645
-   035                   
-   035                    1
+   sload                  0
+   sload                  1
    load_int               0
    load_string            "ziIssi"
-   033                    2
+   iload                  2
    2419                  
 LABEL59:
    return                

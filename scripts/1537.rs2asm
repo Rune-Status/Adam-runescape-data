@@ -1,23 +1,27 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   2
    025                    5426
    int_to_string         
    load_int               3
-   040                    1503
-   036                   
+   invoke                 1503
+   sstore                
    025                    5427
    int_to_string         
    load_int               4
-   040                    1503
-   036                    1
+   invoke                 1503
+   sstore                 1
    load_int               0
-   034                   
+   istore                
 LABEL12:
-   033                   
+   iload                  0
    042                    178
    if_icmplt              LABEL16
    jump                   LABEL83
 LABEL16:
    load_int               33226762
-   033                   
+   iload                  0
    load_int               6
    imul                  
    load_int               4
@@ -28,7 +32,7 @@ LABEL16:
    jump                   LABEL47
 LABEL26:
    load_int               33226762
-   033                   
+   iload                  0
    load_int               6
    imul                  
    load_int               2
@@ -39,7 +43,7 @@ LABEL26:
    jump                   LABEL47
 LABEL36:
    widget_get_text       
-   035                   
+   sload                  0
    4107                  
    load_int               0
    if_icmplt              LABEL42
@@ -53,7 +57,7 @@ LABEL45:
    widget_put_textcolor   1
 LABEL47:
    load_int               33226762
-   033                   
+   iload                  0
    load_int               6
    imul                  
    load_int               5
@@ -64,7 +68,7 @@ LABEL47:
    jump                   LABEL78
 LABEL57:
    load_int               33226762
-   033                   
+   iload                  0
    load_int               6
    imul                  
    load_int               3
@@ -75,7 +79,7 @@ LABEL57:
    jump                   LABEL78
 LABEL67:
    widget_get_text       
-   035                    1
+   sload                  1
    4107                  
    load_int               0
    if_icmplt              LABEL73
@@ -88,10 +92,10 @@ LABEL76:
    load_int               16750623
    widget_put_textcolor   1
 LABEL78:
-   033                   
+   iload                  0
    load_int               1
    iadd                  
-   034                   
+   istore                
    jump                   LABEL12
 LABEL83:
    return                

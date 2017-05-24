@@ -1,20 +1,24 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   1
    load_string            ","
-   036                   
+   sstore                
    load_string            "Points:"
    load_string            "<br>"
-   033                    1
-   035                   
-   040                    46
+   iload                  1
+   sload                  0
+   invoke                 46
    037                    3
-   036                   
-   035                   
+   sstore                
+   sload                  0
    load_int               512
    load_int               494
    4109                  
    load_int               8
    iadd                  
-   034                    2
-   035                   
+   istore                 2
+   sload                  0
    load_int               512
    load_int               494
    4108                  
@@ -24,8 +28,8 @@
    iadd                  
    load_int               8
    iadd                  
-   034                    3
-   033                   
+   istore                 3
+   iload                  0
    load_int               0
    200                   
    load_int               1
@@ -37,13 +41,13 @@ LABEL33:
    load_int               2
    load_int               0
    1000                  
-   033                    2
-   033                    3
+   iload                  2
+   iload                  3
    load_int               0
    load_int               0
    1001                  
 LABEL43:
-   033                   
+   iload                  0
    load_int               1
    200                   
    load_int               1
@@ -55,13 +59,13 @@ LABEL49:
    load_int               2
    load_int               0
    1000                  
-   033                    2
-   033                    3
+   iload                  2
+   iload                  3
    load_int               0
    load_int               0
    1001                  
 LABEL59:
-   033                   
+   iload                  0
    load_int               2
    200                   
    load_int               1
@@ -73,17 +77,17 @@ LABEL65:
    load_int               2
    load_int               0
    1000                  
-   033                    2
+   iload                  2
    load_int               2
    isub                  
-   033                    3
+   iload                  3
    load_int               2
    isub                  
    load_int               0
    load_int               0
    1001                  
 LABEL79:
-   033                   
+   iload                  0
    load_int               3
    200                   
    load_int               1
@@ -95,17 +99,17 @@ LABEL85:
    load_int               2
    load_int               0
    1000                  
-   033                    2
-   033                    3
+   iload                  2
+   iload                  3
    load_int               0
    load_int               0
    1001                  
-   035                   
+   sload                  0
    1112                  
    load_int               257
    load_int               -2147483645
    load_int               -2147483643
-   033                    1
+   iload                  1
    load_int               1059
    load_int               1
    load_string            "IiiY"

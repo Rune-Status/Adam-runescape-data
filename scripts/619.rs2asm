@@ -1,6 +1,10 @@
+.int_stack_count    2
+.string_stack_count 1
+.int_var_count      5
+.string_var_count   1
    load_int               73
    load_int               73
-   040                    900
+   invoke                 900
    load_int               10551308
    3408                  
    2702                  
@@ -10,28 +14,28 @@
 LABEL9:
    return                
 LABEL10:
-   033                   
+   iload                  0
    load_int               256
    idiv                  
-   034                    2
-   033                   
+   istore                 2
+   iload                  0
    load_int               1
    test_bit              
-   040                    633
-   034                    3
-   033                   
+   invoke                 633
+   istore                 3
+   iload                  0
    load_int               252
    and                   
    load_int               4
    idiv                  
-   034                    4
-   033                    2
-   035                   
-   040                    601
-   033                    2
-   033                    3
-   035                   
-   033                    4
-   033                    1
-   040                    621
+   istore                 4
+   iload                  2
+   sload                  0
+   invoke                 601
+   iload                  2
+   iload                  3
+   sload                  0
+   iload                  4
+   iload                  1
+   invoke                 621
    return                

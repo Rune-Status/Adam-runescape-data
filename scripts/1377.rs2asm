@@ -1,56 +1,60 @@
+.int_stack_count    4
+.string_stack_count 1
+.int_var_count      6
+.string_var_count   1
    load_int               105
    load_int               99
-   033                    1
-   033                   
+   iload                  1
+   iload                  0
    3408                  
-   034                    4
+   istore                 4
    load_int               99
    load_int               111
-   033                    2
-   033                    4
+   iload                  2
+   iload                  4
    3408                  
-   034                    5
-   033                    5
+   istore                 5
+   iload                  5
    load_int               8245
    if_icmpne              LABEL16
    jump                   LABEL46
 LABEL16:
-   033                    3
+   iload                  3
    load_int               0
    if_icmpgt              LABEL20
    jump                   LABEL31
 LABEL20:
-   035                   
+   sload                  0
    load_string            ", "
-   033                    5
+   iload                  5
    get_item_name         
    load_string            " "
    load_string            "?"
-   040                    1299
+   invoke                 1299
    037                    2
    concat_string         
-   036                   
+   sstore                
    jump                   LABEL42
 LABEL31:
-   035                   
+   sload                  0
    load_string            "<br>"
    load_string            "<col=4f4f4f>"
-   033                    5
+   iload                  5
    get_item_name         
    load_string            " "
    load_string            "?"
-   040                    1299
+   invoke                 1299
    037                    3
    concat_string         
-   036                   
+   sstore                
 LABEL42:
-   033                    3
+   iload                  3
    load_int               1
    iadd                  
-   034                    3
+   istore                 3
 LABEL46:
-   035                   
-   033                    3
+   sload                  0
+   iload                  3
    return                
    load_string            ""
    load_int               0

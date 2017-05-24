@@ -1,16 +1,20 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    025                    5605
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL13
 LABEL4:
-   033                   
-   040                    1594
-   033                    1
+   iload                  0
+   invoke                 1594
+   iload                  1
    load_string            "Look up name"
-   040                    1672
-   033                    2
+   invoke                 1672
+   iload                  2
    load_string            "---"
-   040                    1677
+   invoke                 1677
    jump                   LABEL91
 LABEL13:
    025                    5605
@@ -19,16 +23,16 @@ LABEL13:
    jump                   LABEL29
 LABEL17:
    load_int               1593
-   033                   
+   iload                  0
    load_string            "I"
-   033                   
+   iload                  0
    2408                  
-   033                    1
+   iload                  1
    load_string            "Look up name"
-   040                    1677
-   033                    2
+   invoke                 1677
+   iload                  2
    load_string            "---"
-   040                    1677
+   invoke                 1677
    jump                   LABEL91
 LABEL29:
    025                    5605
@@ -36,11 +40,11 @@ LABEL29:
    if_icmpeq              LABEL33
    jump                   LABEL64
 LABEL33:
-   033                   
-   040                    1594
-   033                    1
+   iload                  0
+   invoke                 1594
+   iload                  1
    load_string            "Another name"
-   040                    1672
+   invoke                 1672
    025                    5606
    load_int               1
    if_icmpeq              LABEL42
@@ -60,17 +64,17 @@ LABEL51:
    load_string            "-"
    048                    137
 LABEL53:
-   033                    2
+   iload                  2
    load_string            "<col=00ff00>"
    047                    137
    load_string            "</col>"
    037                    3
-   040                    1672
+   invoke                 1672
    jump                   LABEL63
 LABEL60:
-   033                    2
+   iload                  2
    load_string            "---"
-   040                    1677
+   invoke                 1677
 LABEL63:
    jump                   LABEL91
 LABEL64:
@@ -80,28 +84,28 @@ LABEL64:
    jump                   LABEL80
 LABEL68:
    load_int               1593
-   033                   
+   iload                  0
    load_string            "I"
-   033                   
+   iload                  0
    2408                  
-   033                    1
+   iload                  1
    load_string            "Another name"
-   040                    1677
-   033                    2
+   invoke                 1677
+   iload                  2
    load_string            "---"
-   040                    1677
+   invoke                 1677
    jump                   LABEL91
 LABEL80:
    load_int               1593
-   033                   
+   iload                  0
    load_string            "I"
-   033                   
+   iload                  0
    2408                  
-   033                    1
+   iload                  1
    load_string            "Look up name"
-   040                    1677
-   033                    2
+   invoke                 1677
+   iload                  2
    load_string            "---"
-   040                    1677
+   invoke                 1677
 LABEL91:
    return                

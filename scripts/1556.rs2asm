@@ -1,6 +1,10 @@
-   033                   
+.int_stack_count    4
+.string_stack_count 1
+.int_var_count      4
+.string_var_count   1
+   iload                  0
    102                   
-   033                   
+   iload                  0
    load_int               5
    load_int               0
    100                   
@@ -15,7 +19,7 @@
    load_int               1
    1000                  
    042                    181
-   033                    2
+   iload                  2
    if_icmpeq              LABEL20
    jump                   LABEL48
 LABEL20:
@@ -28,9 +32,9 @@ LABEL20:
    1702                  
    load_int               120
    load_int               32768015
-   035                   
+   sload                  0
    load_string            "IiiIs"
-   033                   
+   iload                  0
    2412                  
    load_int               244
    load_int               -2147483645
@@ -38,18 +42,18 @@ LABEL20:
    load_int               0
    load_int               32768015
    load_string            "IiiI"
-   033                   
+   iload                  0
    2404                  
    load_int               1557
-   033                    1
-   033                    3
+   iload                  1
+   iload                  3
    load_string            "ii"
-   033                   
+   iload                  0
    2400                  
    jump                   LABEL107
 LABEL48:
    042                    181
-   033                    1
+   iload                  1
    if_icmpeq              LABEL52
    jump                   LABEL80
 LABEL52:
@@ -62,9 +66,9 @@ LABEL52:
    1702                  
    load_int               120
    load_int               32768015
-   035                   
+   sload                  0
    load_string            "IiiIs"
-   033                   
+   iload                  0
    2412                  
    load_int               244
    load_int               -2147483645
@@ -72,13 +76,13 @@ LABEL52:
    load_int               0
    load_int               32768015
    load_string            "IiiI"
-   033                   
+   iload                  0
    2404                  
    load_int               1557
-   033                    2
-   033                    3
+   iload                  2
+   iload                  3
    load_string            "ii"
-   033                   
+   iload                  0
    2400                  
    jump                   LABEL107
 LABEL80:
@@ -91,9 +95,9 @@ LABEL80:
    1702                  
    load_int               200
    load_int               32768015
-   035                   
+   sload                  0
    load_string            "IiiIs"
-   033                   
+   iload                  0
    2412                  
    load_int               244
    load_int               -2147483645
@@ -101,16 +105,16 @@ LABEL80:
    load_int               100
    load_int               32768015
    load_string            "IiiI"
-   033                   
+   iload                  0
    2404                  
    load_int               1557
-   033                    1
-   033                    3
+   iload                  1
+   iload                  3
    load_string            "ii"
-   033                   
+   iload                  0
    2400                  
 LABEL107:
    load_int               0
-   033                   
+   iload                  0
    widget_put_hidden_widget
    return                

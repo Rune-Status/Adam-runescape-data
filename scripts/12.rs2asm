@@ -1,23 +1,27 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
    025                    1538
    load_int               0
    if_icmpeq              LABEL4
    jump                   LABEL21
 LABEL4:
    load_string            "---"
-   033                    1
+   iload                  1
    2112                  
    load_int               1095
-   033                   
+   iload                  0
    widget_put_textureid_widget
    load_int               12746
    load_int               1
-   033                    2
+   iload                  2
    2205                  
    load_int               120
-   033                    2
+   iload                  2
    widget_put_opacity_widget
    load_string            ""
-   033                    3
+   iload                  3
    2112                  
    return                
 LABEL21:
@@ -27,10 +31,10 @@ LABEL21:
    jump                   LABEL32
 LABEL25:
    load_string            "Wealth: V. Low"
-   033                    1
+   iload                  1
    2112                  
    load_int               1096
-   033                   
+   iload                  0
    widget_put_textureid_widget
    jump                   LABEL71
 LABEL32:
@@ -40,10 +44,10 @@ LABEL32:
    jump                   LABEL43
 LABEL36:
    load_string            "Wealth: Low"
-   033                    1
+   iload                  1
    2112                  
    load_int               528
-   033                   
+   iload                  0
    widget_put_textureid_widget
    jump                   LABEL71
 LABEL43:
@@ -53,10 +57,10 @@ LABEL43:
    jump                   LABEL54
 LABEL47:
    load_string            "Wealth: Medium"
-   033                    1
+   iload                  1
    2112                  
    load_int               527
-   033                   
+   iload                  0
    widget_put_textureid_widget
    jump                   LABEL71
 LABEL54:
@@ -66,18 +70,18 @@ LABEL54:
    jump                   LABEL65
 LABEL58:
    load_string            "Wealth: High"
-   033                    1
+   iload                  1
    2112                  
    load_int               526
-   033                   
+   iload                  0
    widget_put_textureid_widget
    jump                   LABEL71
 LABEL65:
    load_string            "Wealth: V. High!"
-   033                    1
+   iload                  1
    2112                  
    load_int               525
-   033                   
+   iload                  0
    widget_put_textureid_widget
 LABEL71:
    load_int               105
@@ -85,34 +89,34 @@ LABEL71:
    load_int               1701
    025                    4162
    3408                  
-   034                    4
-   033                    4
+   istore                 4
+   iload                  4
    load_int               -1
    if_icmpne              LABEL81
    jump                   LABEL93
 LABEL81:
-   033                    4
+   iload                  4
    load_int               1
-   033                    2
+   iload                  2
    2205                  
    load_int               0
-   033                    2
+   iload                  2
    widget_put_opacity_widget
    025                    4162
    int_to_string         
-   033                    3
+   iload                  3
    2112                  
    jump                   LABEL103
 LABEL93:
    load_int               12746
    load_int               1
-   033                    2
+   iload                  2
    2205                  
    load_int               120
-   033                    2
+   iload                  2
    widget_put_opacity_widget
    load_string            "---"
-   033                    3
+   iload                  3
    2112                  
 LABEL103:
    return                

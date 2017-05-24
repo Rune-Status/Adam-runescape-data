@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  0
    load_int               0
    200                   
    load_int               1
@@ -17,10 +21,10 @@ LABEL6:
    1001                  
 LABEL16:
    load_int               0
-   034                    2
+   istore                 2
    load_int               0
-   034                    3
-   033                   
+   istore                 3
+   iload                  0
    load_int               1
    200                    1
    load_int               1
@@ -32,55 +36,55 @@ LABEL26:
    load_int               1
    load_int               0
    1000                   1
-   033                    1
+   iload                  1
    widget_get_scrollheight_widget
-   034                    2
-   033                    2
+   istore                 2
+   iload                  2
    load_int               0
    if_icmple              LABEL38
    jump                   LABEL41
 LABEL38:
-   033                    1
+   iload                  1
    widget_get_height_widget
-   034                    2
+   istore                 2
 LABEL41:
-   033                    2
+   iload                  2
    load_int               0
    if_icmpgt              LABEL45
    jump                   LABEL56
 LABEL45:
-   033                   
+   iload                  0
    widget_get_height_widget
    load_int               32
    isub                  
-   033                    1
+   iload                  1
    widget_get_height_widget
    imul                  
-   033                    2
+   iload                  2
    idiv                  
-   034                    3
+   istore                 3
    jump                   LABEL61
 LABEL56:
-   033                   
+   iload                  0
    widget_get_height_widget
    load_int               32
    isub                  
-   034                    3
+   istore                 3
 LABEL61:
-   033                    3
+   iload                  3
    load_int               10
    if_icmplt              LABEL65
    jump                   LABEL67
 LABEL65:
    load_int               10
-   034                    3
+   istore                 3
 LABEL67:
    load_int               0
-   033                    3
+   iload                  3
    load_int               1
    load_int               0
    1001                   1
-   033                   
+   iload                  0
    load_int               2
    200                   
    load_int               1
@@ -98,7 +102,7 @@ LABEL78:
    load_int               0
    1001                  
 LABEL88:
-   033                   
+   iload                  0
    load_int               3
    200                   
    load_int               1
@@ -120,7 +124,7 @@ LABEL94:
    load_int               0
    1001                  
 LABEL108:
-   033                   
+   iload                  0
    load_int               4
    200                   
    load_int               1
@@ -138,7 +142,7 @@ LABEL114:
    load_int               0
    1001                  
 LABEL124:
-   033                   
+   iload                  0
    load_int               5
    200                   
    load_int               1

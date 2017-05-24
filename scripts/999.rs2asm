@@ -1,14 +1,18 @@
+.int_stack_count    7
+.string_stack_count 0
+.int_var_count      27
+.string_var_count   4
    load_int               0
    043                    2
    load_int               -1
-   034                    7
+   istore                 7
    025                    4697
    load_int               31
    if_icmpeq              LABEL8
    jump                   LABEL11
 LABEL8:
    042                    72
-   034                    7
+   istore                 7
    jump                   LABEL24
 LABEL11:
    025                    4697
@@ -17,7 +21,7 @@ LABEL11:
    jump                   LABEL18
 LABEL15:
    load_int               -1
-   034                    7
+   istore                 7
    jump                   LABEL24
 LABEL18:
    load_int               105
@@ -25,17 +29,17 @@ LABEL18:
    load_int               681
    025                    4697
    3408                  
-   034                    7
+   istore                 7
 LABEL24:
    load_int               -1
-   034                    8
+   istore                 8
    025                    4698
    load_int               31
    if_icmpeq              LABEL30
    jump                   LABEL33
 LABEL30:
    042                    72
-   034                    8
+   istore                 8
    jump                   LABEL46
 LABEL33:
    025                    4698
@@ -44,7 +48,7 @@ LABEL33:
    jump                   LABEL40
 LABEL37:
    load_int               -1
-   034                    8
+   istore                 8
    jump                   LABEL46
 LABEL40:
    load_int               105
@@ -52,129 +56,129 @@ LABEL40:
    load_int               681
    025                    4698
    3408                  
-   034                    8
+   istore                 8
 LABEL46:
    load_int               0
-   034                    9
+   istore                 9
    load_string            ","
-   036                   
+   sstore                
    load_string            ""
-   036                    1
+   sstore                 1
    load_string            ""
-   036                    2
+   sstore                 2
    load_string            ""
-   036                    3
+   sstore                 3
    load_int               0
-   034                    10
+   istore                 10
    load_int               0
-   034                    11
+   istore                 11
    load_int               0
-   034                    12
+   istore                 12
    load_int               0
-   034                    13
+   istore                 13
    load_int               0
-   034                    14
+   istore                 14
    load_int               0
-   034                    15
+   istore                 15
    load_int               0
-   034                    16
+   istore                 16
    load_int               0
-   034                    17
+   istore                 17
    load_int               0
-   034                    18
-   033                    7
+   istore                 18
+   iload                  7
    load_int               -1
    if_icmpne              LABEL78
    jump                   LABEL211
 LABEL78:
    load_int               1
-   034                    9
+   istore                 9
    load_int               83
    load_int               100
    load_int               255
-   033                    7
+   iload                  7
    3408                  
-   033                    1
+   iload                  1
    widget_put_textureid_widget
-   033                    7
-   040                    1002
-   034                    11
-   034                    10
-   033                    7
+   iload                  7
+   invoke                 1002
+   istore                 11
+   istore                 10
+   iload                  7
    get_skillexperiences  
-   034                    12
-   033                    11
+   istore                 12
+   iload                  11
    load_int               -1
    if_icmpeq              LABEL98
    jump                   LABEL150
 LABEL98:
-   033                    12
-   033                    10
+   iload                  12
+   iload                  10
    isub                  
-   034                    15
-   033                    15
+   istore                 15
+   iload                  15
    load_int               0
    if_icmpge              LABEL106
    jump                   LABEL135
 LABEL106:
-   033                    15
-   035                   
-   040                    46
-   036                    3
+   iload                  15
+   sload                  0
+   invoke                 46
+   sstore                 3
    load_string            "+"
-   035                    3
+   sload                  3
    037                    2
-   033                    2
+   iload                  2
    2112                  
    load_int               83
    load_int               115
    load_int               680
-   033                    7
+   iload                  7
    3408                  
    load_string            " tracker:|Tracking from:|Total XP:"
    037                    2
-   036                    1
-   035                    3
+   sstore                 1
+   sload                  3
    load_string            "|"
-   033                    10
-   035                   
-   040                    46
+   iload                  10
+   sload                  0
+   invoke                 46
    load_string            "|"
-   033                    12
-   035                   
-   040                    46
+   iload                  12
+   sload                  0
+   invoke                 46
    037                    5
-   036                    2
+   sstore                 2
    jump                   LABEL149
 LABEL135:
    load_string            "N/A"
-   033                    2
+   iload                  2
    2112                  
    load_string            "Your "
    load_int               83
    load_int               115
    load_int               680
-   033                    7
+   iload                  7
    3408                  
    load_string            " tracker is invalid."
    load_string            "<br>"
    load_string            "Set a lower starting point."
    037                    5
-   036                    1
+   sstore                 1
 LABEL149:
    jump                   LABEL210
 LABEL150:
-   033                    12
-   035                   
-   040                    46
-   036                    3
-   035                    3
-   033                    2
+   iload                  12
+   sload                  0
+   invoke                 46
+   sstore                 3
+   sload                  3
+   iload                  2
    2112                  
-   033                    7
+   iload                  7
    get_realskilllevels   
-   034                    13
-   033                    13
+   istore                 13
+   iload                  13
    load_int               99
    if_icmplt              LABEL164
    jump                   LABEL200
@@ -182,15 +186,15 @@ LABEL164:
    load_int               105
    load_int               105
    load_int               256
-   033                    13
+   iload                  13
    load_int               1
    iadd                  
    3408                  
-   034                    14
+   istore                 14
    load_int               83
    load_int               115
    load_int               680
-   033                    7
+   iload                  7
    3408                  
    load_string            " XP:|"
    load_string            "<col=7f7f7f>"
@@ -198,34 +202,34 @@ LABEL164:
    load_string            "</col>"
    load_string            "|Remaining:"
    037                    6
-   036                    1
-   035                    3
+   sstore                 1
+   sload                  3
    load_string            "|"
    load_string            "<col=7f7f7f>"
-   033                    14
-   035                   
-   040                    46
+   iload                  14
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    load_string            "|"
-   033                    14
-   033                    12
+   iload                  14
+   iload                  12
    isub                  
-   035                   
-   040                    46
+   sload                  0
+   invoke                 46
    037                    7
-   036                    2
+   sstore                 2
    jump                   LABEL210
 LABEL200:
    load_int               83
    load_int               115
    load_int               680
-   033                    7
+   iload                  7
    3408                  
    load_string            " XP:"
    037                    2
-   036                    1
-   035                    3
-   036                    2
+   sstore                 1
+   sload                  3
+   sstore                 2
 LABEL210:
    jump                   LABEL363
 LABEL211:
@@ -235,173 +239,173 @@ LABEL211:
    jump                   LABEL228
 LABEL215:
    load_int               -1
-   033                    1
+   iload                  1
    widget_put_textureid_widget
    load_string            ""
-   033                    2
+   iload                  2
    2112                  
    load_string            ""
    load_string            ""
-   036                    2
-   036                    1
-   033                    6
-   040                    41
+   sstore                 2
+   sstore                 1
+   iload                  6
+   invoke                 41
    jump                   LABEL363
 LABEL228:
    load_int               1
-   034                    9
+   istore                 9
    load_int               222
-   033                    1
+   iload                  1
    widget_put_textureid_widget
-   040                    1008
-   034                    16
-   034                    17
+   invoke                 1008
+   istore                 16
+   istore                 17
    get_settings           1252
    load_int               -1
    if_icmpeq              LABEL240
    jump                   LABEL352
 LABEL240:
-   033                    16
+   iload                  16
    load_int               1000
    modulo                
-   034                    15
-   033                    17
+   istore                 15
+   iload                  17
    load_int               10
    load_int               6
    pow                   
    imul                  
-   033                    16
+   iload                  16
    load_int               1000
    idiv                  
    iadd                  
-   034                    18
-   033                    18
+   istore                 18
+   iload                  18
    get_settings           1228
    if_icmpgt              LABEL258
    jump                   LABEL300
 LABEL258:
-   033                    18
+   iload                  18
    get_settings           1228
    isub                  
-   035                   
-   040                    46
-   035                   
-   033                    15
-   040                    47
+   sload                  0
+   invoke                 46
+   sload                  0
+   iload                  15
+   invoke                 47
    037                    3
-   036                    3
+   sstore                 3
    load_string            "+"
-   035                    3
+   sload                  3
    037                    2
-   033                    2
+   iload                  2
    2112                  
    load_string            "Total XP tracker:|Tracking from:|Total XP:"
-   036                    1
+   sstore                 1
    get_settings           1228
    load_int               0
    if_icmpgt              LABEL279
    jump                   LABEL292
 LABEL279:
-   035                    3
+   sload                  3
    load_string            "|"
    get_settings           1228
-   035                   
-   040                    46
-   035                   
+   sload                  0
+   invoke                 46
+   sload                  0
    load_string            "000|"
-   033                    17
-   033                    16
-   040                    1009
+   iload                  17
+   iload                  16
+   invoke                 1009
    037                    6
-   036                    2
+   sstore                 2
    jump                   LABEL299
 LABEL292:
-   035                    3
+   sload                  3
    load_string            "|0|"
-   033                    17
-   033                    16
-   040                    1009
+   iload                  17
+   iload                  16
+   invoke                 1009
    037                    3
-   036                    2
+   sstore                 2
 LABEL299:
    jump                   LABEL351
 LABEL300:
-   033                    18
+   iload                  18
    get_settings           1228
    if_icmpeq              LABEL304
    jump                   LABEL343
 LABEL304:
-   033                    15
+   iload                  15
    load_int               0
    if_icmpge              LABEL308
    jump                   LABEL343
 LABEL308:
-   033                    15
+   iload                  15
    int_to_string         
-   036                    3
+   sstore                 3
    load_string            "+"
-   035                    3
+   sload                  3
    037                    2
-   033                    2
+   iload                  2
    2112                  
    load_string            "Total XP tracker:|Tracking from:|Total XP:"
-   036                    1
+   sstore                 1
    get_settings           1228
    load_int               0
    if_icmpgt              LABEL322
    jump                   LABEL335
 LABEL322:
-   035                    3
+   sload                  3
    load_string            "|"
    get_settings           1228
-   035                   
-   040                    46
-   035                   
+   sload                  0
+   invoke                 46
+   sload                  0
    load_string            "000|"
-   033                    17
-   033                    16
-   040                    1009
+   iload                  17
+   iload                  16
+   invoke                 1009
    037                    6
-   036                    2
+   sstore                 2
    jump                   LABEL342
 LABEL335:
-   035                    3
+   sload                  3
    load_string            "|0|"
-   033                    17
-   033                    16
-   040                    1009
+   iload                  17
+   iload                  16
+   invoke                 1009
    037                    3
-   036                    2
+   sstore                 2
 LABEL342:
    jump                   LABEL351
 LABEL343:
    load_string            "N/A"
-   033                    2
+   iload                  2
    2112                  
    load_string            "Your Total XP tracker is invalid."
    load_string            "<br>"
    load_string            "Set a lower starting point."
    037                    3
-   036                    1
+   sstore                 1
 LABEL351:
    jump                   LABEL363
 LABEL352:
-   033                    17
-   033                    16
-   040                    1009
-   036                    3
-   035                    3
-   033                    2
+   iload                  17
+   iload                  16
+   invoke                 1009
+   sstore                 3
+   sload                  3
+   iload                  2
    2112                  
    load_string            "Total XP:"
-   036                    1
-   035                    3
-   036                    2
+   sstore                 1
+   sload                  3
+   sstore                 2
 LABEL363:
-   033                    2
+   iload                  2
    widget_get_parentid_widget
-   034                    19
-   035                    2
+   istore                 19
+   sload                  2
    string_length         
    load_int               0
    if_icmpgt              LABEL371
@@ -410,17 +414,17 @@ LABEL371:
    load_int               992
    load_int               -2147483645
    load_int               -1
-   033                    6
-   035                    1
-   035                    2
+   iload                  6
+   sload                  1
+   sload                  2
    load_int               495
    load_int               0
    load_string            "IiIssfi"
-   033                    19
+   iload                  19
    2412                  
    jump                   LABEL403
 LABEL383:
-   035                    1
+   sload                  1
    string_length         
    load_int               0
    if_icmpgt              LABEL388
@@ -429,74 +433,74 @@ LABEL388:
    load_int               526
    load_int               -2147483645
    load_int               -1
-   033                    6
-   035                    1
+   iload                  6
+   sload                  1
    load_int               0
    load_int               512
    load_string            "IiIsii"
-   033                    19
+   iload                  19
    2412                  
    jump                   LABEL403
 LABEL399:
    load_int               -1
    load_string            ""
-   033                    19
+   iload                  19
    2412                  
 LABEL403:
    load_int               40
-   033                    6
+   iload                  6
    load_string            "I"
-   033                    19
+   iload                  19
    2404                  
    load_int               0
-   034                    20
+   istore                 20
    load_int               0
-   034                    21
+   istore                 21
    load_int               0
-   034                    22
+   istore                 22
    load_int               0
-   034                    23
+   istore                 23
    load_int               0
-   034                    24
+   istore                 24
    load_int               0
-   034                    25
+   istore                 25
    load_int               0
-   034                    26
-   033                    8
+   istore                 26
+   iload                  8
    load_int               -1
    if_icmpne              LABEL426
    jump                   LABEL584
 LABEL426:
    load_int               1
-   034                    20
-   033                    8
+   istore                 20
+   iload                  8
    get_skillexperiences  
-   034                    12
-   033                    8
-   040                    1002
-   034                    11
-   034                    10
-   033                    11
+   istore                 12
+   iload                  8
+   invoke                 1002
+   istore                 11
+   istore                 10
+   iload                  11
    load_int               -1
    if_icmpne              LABEL439
    jump                   LABEL504
 LABEL439:
-   033                    11
-   033                    10
+   iload                  11
+   iload                  10
    if_icmpgt              LABEL443
    jump                   LABEL504
 LABEL443:
-   033                    4
-   033                    10
-   033                    12
-   033                    11
+   iload                  4
+   iload                  10
+   iload                  12
+   iload                  11
    load_int               1
-   040                    1000
-   034                    21
+   invoke                 1000
+   istore                 21
    load_int               83
    load_int               115
    load_int               680
-   033                    8
+   iload                  8
    3408                  
    load_string            " goal|"
    load_string            "<col=7f7f7f>"
@@ -507,82 +511,82 @@ LABEL443:
    load_string            "End:"
    load_string            "</col>"
    037                    9
-   036                    1
-   033                    21
-   040                    1001
+   sstore                 1
+   iload                  21
+   invoke                 1001
    load_string            "|"
    load_string            "<col=7f7f7f>"
-   033                    10
-   035                   
-   040                    46
+   iload                  10
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    load_string            "|"
-   033                    12
-   035                   
-   040                    46
+   iload                  12
+   sload                  0
+   invoke                 46
    load_string            "|"
    load_string            "<col=7f7f7f>"
-   033                    11
-   035                   
-   040                    46
+   iload                  11
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    037                    11
-   036                    2
-   033                    12
-   033                    11
+   sstore                 2
+   iload                  12
+   iload                  11
    if_icmplt              LABEL489
    jump                   LABEL503
 LABEL489:
-   035                    1
+   sload                  1
    load_string            "|Remaining:"
    concat_string         
-   036                    1
-   035                    2
+   sstore                 1
+   sload                  2
    load_string            "|"
-   033                    11
-   033                    12
+   iload                  11
+   iload                  12
    isub                  
-   035                   
-   040                    46
+   sload                  0
+   invoke                 46
    037                    2
    concat_string         
-   036                    2
+   sstore                 2
 LABEL503:
    jump                   LABEL583
 LABEL504:
-   033                    8
+   iload                  8
    get_realskilllevels   
-   034                    13
-   033                    13
+   istore                 13
+   iload                  13
    load_int               1
    iadd                  
-   034                    22
-   033                    22
+   istore                 22
+   iload                  22
    load_int               99
    if_icmpgt              LABEL515
    jump                   LABEL517
 LABEL515:
    load_int               99
-   034                    22
+   istore                 22
 LABEL517:
    load_int               105
    load_int               105
    load_int               256
-   033                    22
+   iload                  22
    3408                  
-   034                    14
-   033                    4
+   istore                 14
+   iload                  4
    load_int               105
    load_int               105
    load_int               256
-   033                    13
+   iload                  13
    3408                  
-   033                    12
-   033                    14
+   iload                  12
+   iload                  14
    load_int               0
-   040                    1000
-   034                    21
-   033                    13
+   invoke                 1000
+   istore                 21
+   iload                  13
    load_int               99
    if_icmplt              LABEL538
    jump                   LABEL571
@@ -590,7 +594,7 @@ LABEL538:
    load_int               83
    load_int               115
    load_int               680
-   033                    8
+   iload                  8
    3408                  
    load_string            "|Current XP:|"
    load_string            "<col=7f7f7f>"
@@ -598,41 +602,41 @@ LABEL538:
    load_string            "</col>"
    load_string            "|Remaining:"
    037                    6
-   036                    1
-   033                    21
-   040                    1001
+   sstore                 1
+   iload                  21
+   invoke                 1001
    load_string            "|"
-   033                    12
-   035                   
-   040                    46
+   iload                  12
+   sload                  0
+   invoke                 46
    load_string            "|"
    load_string            "<col=7f7f7f>"
-   033                    14
-   035                   
-   040                    46
+   iload                  14
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    load_string            "|"
-   033                    14
-   033                    12
+   iload                  14
+   iload                  12
    isub                  
-   035                   
-   040                    46
+   sload                  0
+   invoke                 46
    037                    9
-   036                    2
+   sstore                 2
    jump                   LABEL583
 LABEL571:
    load_int               83
    load_int               115
    load_int               680
-   033                    8
+   iload                  8
    3408                  
    load_string            " XP:"
    037                    2
-   036                    1
-   033                    12
-   035                   
-   040                    46
-   036                    2
+   sstore                 1
+   iload                  12
+   sload                  0
+   invoke                 46
+   sstore                 2
 LABEL583:
    jump                   LABEL812
 LABEL584:
@@ -642,10 +646,10 @@ LABEL584:
    jump                   LABEL806
 LABEL588:
    load_int               1
-   034                    20
-   040                    1008
-   034                    16
-   034                    17
+   istore                 20
+   invoke                 1008
+   istore                 16
+   istore                 17
    get_settings           1252
    load_int               -1
    if_icmpne              LABEL597
@@ -656,7 +660,7 @@ LABEL597:
    if_icmpgt              LABEL601
    jump                   LABEL792
 LABEL601:
-   033                    17
+   iload                  17
    load_int               2
    if_icmplt              LABEL605
    jump                   LABEL641
@@ -668,112 +672,112 @@ LABEL605:
    if_icmple              LABEL611
    jump                   LABEL641
 LABEL611:
-   033                    4
+   iload                  4
    get_settings           1228
    load_int               1000
    imul                  
-   033                    17
+   iload                  17
    load_int               10
    load_int               9
    pow                   
    imul                  
-   033                    16
+   iload                  16
    iadd                  
    get_settings           1252
    load_int               1000
    imul                  
    load_int               1
-   040                    1000
-   034                    21
+   invoke                 1000
+   istore                 21
    get_settings           1252
    load_int               1000
    imul                  
-   033                    17
+   iload                  17
    load_int               10
    load_int               9
    pow                   
    imul                  
-   033                    16
+   iload                  16
    iadd                  
    isub                  
-   034                    24
+   istore                 24
    jump                   LABEL713
 LABEL641:
-   033                    17
+   iload                  17
    load_int               10
    load_int               6
    pow                   
    imul                  
-   033                    16
+   iload                  16
    load_int               1000
    idiv                  
    iadd                  
-   034                    25
-   033                    4
+   istore                 25
+   iload                  4
    get_settings           1228
-   033                    25
+   iload                  25
    get_settings           1252
    load_int               1
-   040                    1000
-   034                    21
-   033                    25
+   invoke                 1000
+   istore                 21
+   iload                  25
    get_settings           1252
    if_icmplt              LABEL662
    jump                   LABEL713
 LABEL662:
    get_settings           1252
-   033                    25
+   iload                  25
    isub                  
-   034                    24
-   033                    16
+   istore                 24
+   iload                  16
    load_int               1000
    modulo                
-   034                    26
-   033                    26
+   istore                 26
+   iload                  26
    load_int               0
    if_icmpgt              LABEL674
    jump                   LABEL699
 LABEL674:
-   033                    24
+   iload                  24
    load_int               1
    isub                  
-   034                    24
-   033                    24
+   istore                 24
+   iload                  24
    load_int               10
    load_int               6
    pow                   
    idiv                  
-   034                    23
-   033                    24
+   istore                 23
+   iload                  24
    load_int               10
    load_int               6
    pow                   
    modulo                
    load_int               1000
    imul                  
-   034                    24
-   033                    24
+   istore                 24
+   iload                  24
    load_int               1000
-   033                    26
+   iload                  26
    isub                  
    iadd                  
-   034                    24
+   istore                 24
    jump                   LABEL713
 LABEL699:
-   033                    24
+   iload                  24
    load_int               10
    load_int               6
    pow                   
    idiv                  
-   034                    23
-   033                    24
+   istore                 23
+   iload                  24
    load_int               10
    load_int               6
    pow                   
    modulo                
    load_int               1000
    imul                  
-   034                    24
+   istore                 24
 LABEL713:
    load_string            "Total XP goal|"
    load_string            "<col=7f7f7f>"
@@ -784,79 +788,79 @@ LABEL713:
    load_string            "End:"
    load_string            "</col>"
    037                    8
-   036                    1
+   sstore                 1
    get_settings           1228
    load_int               0
    if_icmpgt              LABEL727
    jump                   LABEL752
 LABEL727:
-   033                    21
-   040                    1001
+   iload                  21
+   invoke                 1001
    load_string            "|"
    load_string            "<col=7f7f7f>"
    get_settings           1228
-   035                   
-   040                    46
-   035                   
+   sload                  0
+   invoke                 46
+   sload                  0
    load_string            "000"
    load_string            "</col>"
    load_string            "|"
-   033                    17
-   033                    16
-   040                    1009
+   iload                  17
+   iload                  16
+   invoke                 1009
    load_string            "|"
    load_string            "<col=7f7f7f>"
    get_settings           1252
-   035                   
-   040                    46
-   035                   
+   sload                  0
+   invoke                 46
+   sload                  0
    load_string            "000"
    load_string            "</col>"
    037                    15
-   036                    2
+   sstore                 2
    jump                   LABEL772
 LABEL752:
-   033                    21
-   040                    1001
+   iload                  21
+   invoke                 1001
    load_string            "|"
    load_string            "<col=7f7f7f>"
    load_string            "0"
    load_string            "</col>"
    load_string            "|"
-   033                    17
-   033                    16
-   040                    1009
+   iload                  17
+   iload                  16
+   invoke                 1009
    load_string            "|"
    load_string            "<col=7f7f7f>"
    get_settings           1252
-   035                   
-   040                    46
-   035                   
+   sload                  0
+   invoke                 46
+   sload                  0
    load_string            "000"
    load_string            "</col>"
    037                    13
-   036                    2
+   sstore                 2
 LABEL772:
-   033                    23
+   iload                  23
    load_int               0
    if_icmpgt              LABEL779
-   033                    24
+   iload                  24
    load_int               0
    if_icmpgt              LABEL779
    jump                   LABEL791
 LABEL779:
-   035                    1
+   sload                  1
    load_string            "|Remaining:"
    concat_string         
-   036                    1
-   035                    2
+   sstore                 1
+   sload                  2
    load_string            "|"
-   033                    23
-   033                    24
-   040                    1009
+   iload                  23
+   iload                  24
+   invoke                 1009
    037                    2
    concat_string         
-   036                    2
+   sstore                 2
 LABEL791:
    jump                   LABEL805
 LABEL792:
@@ -864,26 +868,26 @@ LABEL792:
    load_int               0
    load_int               1
    load_int               1
-   033                    4
+   iload                  4
    2001                  
    load_int               6316128
-   033                    4
+   iload                  4
    widget_put_textcolor_widget
    load_string            "Use the setup menu to set a Total XP goal."
    load_string            ""
-   036                    2
-   036                    1
+   sstore                 2
+   sstore                 1
 LABEL805:
    jump                   LABEL812
 LABEL806:
    load_string            ""
    load_string            ""
-   036                    2
-   036                    1
-   033                    6
-   040                    41
+   sstore                 2
+   sstore                 1
+   iload                  6
+   invoke                 41
 LABEL812:
-   035                    2
+   sload                  2
    string_length         
    load_int               0
    if_icmpgt              LABEL817
@@ -892,17 +896,17 @@ LABEL817:
    load_int               992
    load_int               -2147483645
    load_int               -1
-   033                    6
-   035                    1
-   035                    2
+   iload                  6
+   sload                  1
+   sload                  2
    load_int               495
    load_int               0
    load_string            "IiIssfi"
-   033                    3
+   iload                  3
    2412                  
    jump                   LABEL849
 LABEL829:
-   035                    1
+   sload                  1
    string_length         
    load_int               0
    if_icmpgt              LABEL834
@@ -911,137 +915,137 @@ LABEL834:
    load_int               526
    load_int               -2147483645
    load_int               -1
-   033                    6
-   035                    1
+   iload                  6
+   sload                  1
    load_int               0
    load_int               512
    load_string            "IiIsii"
-   033                    3
+   iload                  3
    2412                  
    jump                   LABEL849
 LABEL845:
    load_int               -1
    load_string            ""
-   033                    3
+   iload                  3
    2412                  
 LABEL849:
    load_int               40
-   033                    6
+   iload                  6
    load_string            "I"
-   033                    3
+   iload                  3
    2404                  
-   033                    9
+   iload                  9
    load_int               1
    if_icmpeq              LABEL858
    jump                   LABEL909
 LABEL858:
    load_int               0
-   033                    19
+   iload                  19
    widget_put_hidden_widget
    load_int               0
    load_int               0
    load_int               1
    load_int               0
-   033                    19
+   iload                  19
    2000                  
    load_int               0
    load_int               29
    load_int               1
    load_int               0
-   033                    19
+   iload                  19
    2001                  
-   033                    20
+   iload                  20
    load_int               1
    if_icmpeq              LABEL877
    jump                   LABEL896
 LABEL877:
    load_int               0
-   033                    3
+   iload                  3
    widget_put_hidden_widget
    load_int               0
    load_int               28
    load_int               1
    load_int               0
-   033                    3
+   iload                  3
    2000                  
    load_int               0
-   033                   
+   iload                  0
    widget_get_relativey_widget
    load_int               38
    iadd                  
    load_int               1
    load_int               0
-   033                    5
+   iload                  5
    2000                  
    jump                   LABEL908
 LABEL896:
    load_int               1
-   033                    3
+   iload                  3
    widget_put_hidden_widget
    load_int               0
-   033                   
+   iload                  0
    widget_get_relativey_widget
    load_int               29
    iadd                  
    load_int               1
    load_int               0
-   033                    5
+   iload                  5
    2000                  
 LABEL908:
    jump                   LABEL960
 LABEL909:
-   033                    20
+   iload                  20
    load_int               1
    if_icmpeq              LABEL913
    jump                   LABEL947
 LABEL913:
    load_int               0
-   033                    19
+   iload                  19
    widget_put_hidden_widget
    load_int               0
    load_int               5
    load_int               1
    load_int               0
-   033                    19
+   iload                  19
    2000                  
    load_int               0
    load_int               4
    load_int               1
    load_int               0
-   033                    19
+   iload                  19
    2001                  
    load_int               0
-   033                    3
+   iload                  3
    widget_put_hidden_widget
    load_int               0
    load_int               7
    load_int               1
    load_int               0
-   033                    3
+   iload                  3
    2000                  
    load_int               0
-   033                   
+   iload                  0
    widget_get_relativey_widget
    load_int               17
    iadd                  
    load_int               1
    load_int               0
-   033                    5
+   iload                  5
    2000                  
    jump                   LABEL960
 LABEL947:
    load_int               1
-   033                    19
+   iload                  19
    widget_put_hidden_widget
    load_int               1
-   033                    3
+   iload                  3
    widget_put_hidden_widget
    load_int               0
-   033                   
+   iload                  0
    widget_get_relativey_widget
    load_int               1
    load_int               0
-   033                    5
+   iload                  5
    2000                  
 LABEL960:
    return                

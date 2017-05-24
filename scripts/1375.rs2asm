@@ -1,3 +1,7 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
    025                    2176
    load_int               1
    if_icmpeq              LABEL4
@@ -12,20 +16,20 @@ LABEL4:
    1702                   1
    load_int               16777215
    load_string            "Iii"
-   033                   
+   iload                  0
    2412                  
    load_int               85
    load_int               -2147483645
    1702                   1
    load_int               16750623
    load_string            "Iii"
-   033                   
+   iload                  0
    2404                  
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
-   033                   
+   iload                  0
    2409                  
    jump                   LABEL45
 LABEL29:
@@ -35,15 +39,15 @@ LABEL29:
    widget_put_textcolor   1
    load_int               -1
    load_string            ""
-   033                   
+   iload                  0
    2412                  
    load_int               -1
    load_string            ""
-   033                   
+   iload                  0
    2404                  
    load_int               -1
    load_string            ""
-   033                   
+   iload                  0
    2409                  
 LABEL45:
    return                

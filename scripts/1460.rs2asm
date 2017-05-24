@@ -1,17 +1,21 @@
+.int_stack_count    6
+.string_stack_count 0
+.int_var_count      8
+.string_var_count   0
    load_int               93
    3304                  
-   034                    6
+   istore                 6
    load_int               0
-   034                    7
+   istore                 7
 LABEL5:
-   033                    7
-   033                    6
+   iload                  7
+   iload                  6
    if_icmplt              LABEL9
    jump                   LABEL47
 LABEL9:
-   033                    4
+   iload                  4
    load_int               5
-   033                    7
+   iload                  7
    100                   
    load_int               1
    widget_put_hidden     
@@ -20,14 +24,14 @@ LABEL9:
    load_int               0
    load_int               0
    1001                  
-   033                    7
+   iload                  7
    load_int               4
    modulo                
    load_int               36
    load_int               8
    iadd                  
    imul                  
-   033                    7
+   iload                  7
    load_int               4
    idiv                  
    load_int               32
@@ -42,41 +46,41 @@ LABEL9:
    load_int               10
    load_string            "Examine"
    1300                  
-   033                    7
+   iload                  7
    load_int               1
    iadd                  
-   034                    7
+   istore                 7
    jump                   LABEL5
 LABEL47:
-   033                    4
-   033                    6
-   040                    1462
+   iload                  4
+   iload                  6
+   invoke                 1462
    load_int               1461
-   033                    4
-   033                    6
+   iload                  4
+   iload                  6
    load_int               93
    load_int               1
    load_string            "IiY"
-   033                   
+   iload                  0
    2414                  
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   040                    1464
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   invoke                 1464
    load_int               1463
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
    load_int               318
    load_int               925
    load_int               2
    load_string            "IIIIIiY"
-   033                   
+   iload                  0
    2407                  
    return                

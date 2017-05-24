@@ -1,3 +1,7 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
    025                    4692
    load_int               2
    if_icmpeq              LABEL7
@@ -10,7 +14,7 @@ LABEL7:
    load_int               2
    load_int               1
    load_int               0
-   033                   
+   iload                  0
    2000                  
    jump                   LABEL20
 LABEL14:
@@ -18,19 +22,19 @@ LABEL14:
    load_int               2
    load_int               2
    load_int               0
-   033                   
+   iload                  0
    2000                  
 LABEL20:
    load_int               -1
-   034                    1
+   istore                 1
    025                    619
    load_int               1
    if_icmpeq              LABEL26
    jump                   LABEL58
 LABEL26:
-   040                    900
-   034                    1
-   033                    1
+   invoke                 900
+   istore                 1
+   iload                  1
    load_int               -1
    if_icmpeq              LABEL32
    jump                   LABEL33
@@ -39,7 +43,7 @@ LABEL32:
 LABEL33:
    load_int               73
    load_int               73
-   033                    1
+   iload                  1
    load_int               10551299
    3408                  
    2702                  
@@ -47,7 +51,7 @@ LABEL33:
    if_icmpeq              LABEL50
    load_int               73
    load_int               73
-   033                    1
+   iload                  1
    load_int               10551302
    3408                  
    2702                  
@@ -56,18 +60,18 @@ LABEL33:
    jump                   LABEL54
 LABEL50:
    load_int               1
-   033                   
+   iload                  0
    widget_put_hidden_widget
    jump                   LABEL57
 LABEL54:
    load_int               0
-   033                   
+   iload                  0
    widget_put_hidden_widget
 LABEL57:
    jump                   LABEL61
 LABEL58:
    load_int               1
-   033                   
+   iload                  0
    widget_put_hidden_widget
 LABEL61:
    return                

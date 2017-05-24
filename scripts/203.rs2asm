@@ -1,37 +1,41 @@
-   033                    3
-   033                    4
+.int_stack_count    10
+.string_stack_count 2
+.int_var_count      14
+.string_var_count   2
+   iload                  3
+   iload                  4
    isub                  
-   034                    10
-   035                   
+   istore                 10
+   sload                  0
    load_int               2147483647
    load_int               495
    4109                  
    load_int               3
    iadd                  
-   034                    11
-   033                    10
-   033                    11
+   istore                 11
+   iload                  10
+   iload                  11
    isub                  
-   034                    12
-   035                    1
-   033                    12
+   istore                 12
+   sload                  1
+   iload                  12
    load_int               495
    4108                  
-   033                    5
+   iload                  5
    imul                  
-   034                    13
-   033                    7
+   istore                 13
+   iload                  7
    load_int               0
    if_icmpeq              LABEL26
    jump                   LABEL30
 LABEL26:
-   033                    6
-   033                    13
+   iload                  6
+   iload                  13
    isub                  
-   034                    6
+   istore                 6
 LABEL30:
-   033                    2
-   033                   
+   iload                  2
+   iload                  0
    load_int               2
    imul                  
    200                   
@@ -39,8 +43,8 @@ LABEL30:
    if_icmpeq              LABEL38
    jump                   LABEL98
 LABEL38:
-   033                    2
-   033                   
+   iload                  2
+   iload                  0
    load_int               2
    imul                  
    load_int               1
@@ -50,58 +54,58 @@ LABEL38:
    if_icmpeq              LABEL48
    jump                   LABEL98
 LABEL48:
-   033                    10
-   033                    13
+   iload                  10
+   iload                  13
    load_int               0
    load_int               0
-   033                    1
+   iload                  1
    2001                  
-   033                    4
-   033                    6
+   iload                  4
+   iload                  6
    load_int               0
-   033                    7
-   033                    1
+   iload                  7
+   iload                  1
    2000                  
    load_int               0
    widget_put_hidden     
-   033                    10
-   033                    13
+   iload                  10
+   iload                  13
    load_int               0
    load_int               0
    1001                  
-   033                    4
-   033                    6
+   iload                  4
+   iload                  6
    load_int               0
-   033                    7
+   iload                  7
    1000                  
-   035                   
+   sload                  0
    1112                  
-   033                    8
+   iload                  8
    widget_put_textcolor  
-   033                    9
+   iload                  9
    1115                  
    load_int               0
    widget_put_hidden      1
-   033                    12
-   033                    13
+   iload                  12
+   iload                  13
    load_int               0
    load_int               0
    1001                   1
-   033                    4
-   033                    11
+   iload                  4
+   iload                  11
    iadd                  
-   033                    6
+   iload                  6
    load_int               0
-   033                    7
+   iload                  7
    1000                   1
-   035                    1
+   sload                  1
    1112                   1
-   033                    8
+   iload                  8
    widget_put_textcolor   1
-   033                    9
+   iload                  9
    1115                   1
 LABEL98:
-   033                    13
+   iload                  13
    return                
    load_int               0
    return                

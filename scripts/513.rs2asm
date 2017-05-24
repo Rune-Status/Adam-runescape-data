@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   iload                  0
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL7
@@ -8,21 +12,21 @@ LABEL4:
    return                
 LABEL7:
    load_int               0
-   034                    1
-   033                   
+   istore                 1
+   iload                  0
    load_int               2
    if_icmpeq              LABEL13
    jump                   LABEL20
 LABEL13:
    025                    4171
-   034                    1
-   033                    1
-   033                    1
+   istore                 1
+   iload                  1
+   iload                  1
    025                    4172
    iadd                  
    return                
 LABEL20:
-   033                   
+   iload                  0
    load_int               3
    if_icmpeq              LABEL24
    jump                   LABEL33
@@ -30,14 +34,14 @@ LABEL24:
    025                    4171
    025                    4172
    iadd                  
-   034                    1
-   033                    1
-   033                    1
+   istore                 1
+   iload                  1
+   iload                  1
    025                    4173
    iadd                  
    return                
 LABEL33:
-   033                   
+   iload                  0
    load_int               4
    if_icmpeq              LABEL37
    jump                   LABEL48
@@ -47,14 +51,14 @@ LABEL37:
    iadd                  
    025                    4173
    iadd                  
-   034                    1
-   033                    1
-   033                    1
+   istore                 1
+   iload                  1
+   iload                  1
    025                    4174
    iadd                  
    return                
 LABEL48:
-   033                   
+   iload                  0
    load_int               5
    if_icmpeq              LABEL52
    jump                   LABEL65
@@ -66,14 +70,14 @@ LABEL52:
    iadd                  
    025                    4174
    iadd                  
-   034                    1
-   033                    1
-   033                    1
+   istore                 1
+   iload                  1
+   iload                  1
    025                    4175
    iadd                  
    return                
 LABEL65:
-   033                   
+   iload                  0
    load_int               6
    if_icmpeq              LABEL69
    jump                   LABEL84
@@ -87,14 +91,14 @@ LABEL69:
    iadd                  
    025                    4175
    iadd                  
-   034                    1
-   033                    1
-   033                    1
+   istore                 1
+   iload                  1
+   iload                  1
    025                    4176
    iadd                  
    return                
 LABEL84:
-   033                   
+   iload                  0
    load_int               7
    if_icmpeq              LABEL88
    jump                   LABEL105
@@ -110,14 +114,14 @@ LABEL88:
    iadd                  
    025                    4176
    iadd                  
-   034                    1
-   033                    1
-   033                    1
+   istore                 1
+   iload                  1
+   iload                  1
    025                    4177
    iadd                  
    return                
 LABEL105:
-   033                   
+   iload                  0
    load_int               8
    if_icmpeq              LABEL109
    jump                   LABEL128
@@ -135,14 +139,14 @@ LABEL109:
    iadd                  
    025                    4177
    iadd                  
-   034                    1
-   033                    1
-   033                    1
+   istore                 1
+   iload                  1
+   iload                  1
    025                    4178
    iadd                  
    return                
 LABEL128:
-   033                   
+   iload                  0
    load_int               9
    if_icmpeq              LABEL132
    jump                   LABEL153
@@ -162,9 +166,9 @@ LABEL132:
    iadd                  
    025                    4178
    iadd                  
-   034                    1
-   033                    1
-   033                    1
+   istore                 1
+   iload                  1
+   iload                  1
    025                    4179
    iadd                  
    return                
@@ -186,8 +190,8 @@ LABEL153:
    iadd                  
    025                    4179
    iadd                  
-   034                    1
-   033                    1
+   istore                 1
+   iload                  1
    load_int               800
    return                
    load_int               0

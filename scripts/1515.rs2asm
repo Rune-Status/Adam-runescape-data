@@ -1,54 +1,58 @@
-   033                    2
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  2
    load_int               25
    if_icmpge              LABEL4
    jump                   LABEL23
 LABEL4:
-   033                    1
-   033                    3
+   iload                  1
+   iload                  3
    widget_put_opacity_widget
    load_int               -1
    load_string            ""
-   033                    3
+   iload                  3
    2408                  
-   033                    1
+   iload                  1
    load_int               255
    if_icmpge              LABEL15
    jump                   LABEL19
 LABEL15:
    load_int               1
-   033                    3
+   iload                  3
    widget_put_hidden_widget
    jump                   LABEL22
 LABEL19:
    load_int               0
-   033                    3
+   iload                  3
    widget_put_hidden_widget
 LABEL22:
    return                
 LABEL23:
    load_int               0
-   033                    3
+   iload                  3
    widget_put_hidden_widget
-   033                   
+   iload                  0
    load_int               0
-   033                    2
+   iload                  2
    load_int               0
    load_int               25
-   033                    1
-   033                   
+   iload                  1
+   iload                  0
    isub                  
    4006                  
    iadd                  
-   033                    3
+   iload                  3
    widget_put_opacity_widget
    load_int               1514
-   033                   
-   033                    1
-   033                    2
+   iload                  0
+   iload                  1
+   iload                  2
    load_int               1
    iadd                  
-   033                    3
+   iload                  3
    load_string            "iiiI"
-   033                    3
+   iload                  3
    2408                  
    return                

@@ -1,16 +1,20 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   1
    047                    22
    tolowercase           
-   036                   
-   035                   
+   sstore                
+   sload                  0
    string_length         
    load_int               16
    if_icmple              LABEL8
    jump                   LABEL10
 LABEL8:
-   035                   
+   sload                  0
    return                
 LABEL10:
-   035                   
+   sload                  0
    load_int               0
    load_int               15
    string_substring      

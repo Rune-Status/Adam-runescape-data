@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    2
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
+   iload                  0
    load_int               1
    if_icmpne              LABEL4
    jump                   LABEL5
@@ -9,29 +13,29 @@ LABEL5:
    load_int               1
    load_int               0
    3200                  
-   033                    1
-   035                   
+   iload                  1
+   sload                  0
    load_int               1
-   040                    1676
+   invoke                 1676
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2412                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2404                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2409                  
    load_int               1674
    load_int               -2147483645
-   035                   
+   sload                  0
    get_gamecycle         
    load_int               40
    iadd                  
    load_string            "Isi"
-   033                    1
+   iload                  1
    2408                  
    return                

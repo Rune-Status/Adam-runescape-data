@@ -1,21 +1,25 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    get_settings           18
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL11
 LABEL4:
    load_int               186
-   033                   
+   iload                  0
    widget_put_textureid_widget
    load_int               185
-   033                    1
+   iload                  1
    widget_put_textureid_widget
    jump                   LABEL17
 LABEL11:
    load_int               185
-   033                   
+   iload                  0
    widget_put_textureid_widget
    load_int               186
-   033                    1
+   iload                  1
    widget_put_textureid_widget
 LABEL17:
    025                    4137
@@ -24,12 +28,12 @@ LABEL17:
    jump                   LABEL25
 LABEL21:
    load_int               186
-   033                    2
+   iload                  2
    widget_put_textureid_widget
    jump                   LABEL28
 LABEL25:
    load_int               185
-   033                    2
+   iload                  2
    widget_put_textureid_widget
 LABEL28:
    return                

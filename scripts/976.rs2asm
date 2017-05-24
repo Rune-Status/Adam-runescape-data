@@ -1,9 +1,13 @@
-   033                    1
+.int_stack_count    2
+.string_stack_count 1
+.int_var_count      6
+.string_var_count   1
+   iload                  1
    load_int               -1
    if_icmpeq              LABEL4
    jump                   LABEL61
 LABEL4:
-   033                   
+   iload                  0
    load_int               0
    200                   
    load_int               1
@@ -13,7 +17,7 @@ LABEL10:
    load_int               1
    widget_put_hidden     
 LABEL12:
-   033                   
+   iload                  0
    load_int               1
    200                   
    load_int               1
@@ -23,7 +27,7 @@ LABEL18:
    load_string            ""
    1112                  
 LABEL20:
-   033                   
+   iload                  0
    load_int               2
    200                   
    load_int               1
@@ -33,7 +37,7 @@ LABEL26:
    load_int               1
    widget_put_hidden     
 LABEL28:
-   033                   
+   iload                  0
    load_int               3
    200                   
    load_int               1
@@ -43,7 +47,7 @@ LABEL34:
    load_int               1
    widget_put_hidden     
 LABEL36:
-   033                   
+   iload                  0
    load_int               4
    200                   
    load_int               1
@@ -53,7 +57,7 @@ LABEL42:
    load_string            ""
    1112                  
 LABEL44:
-   033                   
+   iload                  0
    load_int               5
    200                   
    load_int               1
@@ -63,7 +67,7 @@ LABEL50:
    load_string            ""
    1112                  
 LABEL52:
-   033                   
+   iload                  0
    load_int               6
    200                   
    load_int               1
@@ -75,7 +79,7 @@ LABEL58:
 LABEL60:
    return                
 LABEL61:
-   033                   
+   iload                  0
    load_int               0
    200                   
    load_int               1
@@ -85,17 +89,17 @@ LABEL67:
    load_int               0
    widget_put_hidden     
 LABEL69:
-   033                   
+   iload                  0
    load_int               1
    200                   
    load_int               1
    if_icmpeq              LABEL75
    jump                   LABEL77
 LABEL75:
-   035                   
+   sload                  0
    1112                  
 LABEL77:
-   033                   
+   iload                  0
    load_int               2
    200                   
    load_int               1
@@ -105,39 +109,39 @@ LABEL83:
    load_int               0
    widget_put_hidden     
 LABEL85:
-   033                    1
+   iload                  1
    load_int               30
    test_bit              
-   034                    2
-   033                    1
+   istore                 2
+   iload                  1
    load_int               30
    clear_bit             
-   034                    1
-   033                    1
+   istore                 1
+   iload                  1
    load_int               1023
    and                   
-   034                    3
-   033                    1
+   istore                 3
+   iload                  1
    load_int               2
    load_int               10
    pow                   
    idiv                  
-   034                    1
-   033                    1
+   istore                 1
+   iload                  1
    load_int               1023
    and                   
-   034                    4
-   033                    1
+   istore                 4
+   iload                  1
    load_int               2
    load_int               10
    pow                   
    idiv                  
-   034                    1
-   033                    1
+   istore                 1
+   iload                  1
    load_int               1023
    and                   
-   034                    5
-   033                   
+   istore                 5
+   iload                  0
    load_int               3
    200                   
    load_int               1
@@ -146,7 +150,7 @@ LABEL85:
 LABEL123:
    load_int               0
    widget_put_hidden     
-   033                    2
+   iload                  2
    load_int               1
    if_icmpeq              LABEL129
    jump                   LABEL132
@@ -158,7 +162,7 @@ LABEL132:
    load_int               8323072
    widget_put_textcolor  
 LABEL134:
-   033                    3
+   iload                  3
    load_int               99
    if_icmpge              LABEL138
    jump                   LABEL144
@@ -172,7 +176,7 @@ LABEL138:
 LABEL144:
    load_int               25
    load_int               0
-   033                    3
+   iload                  3
    load_int               0
    load_int               99
    load_int               16384
@@ -181,38 +185,38 @@ LABEL144:
    load_int               2
    1001                  
 LABEL154:
-   033                   
+   iload                  0
    load_int               4
    200                   
    load_int               1
    if_icmpeq              LABEL160
    jump                   LABEL163
 LABEL160:
-   033                    3
+   iload                  3
    int_to_string         
    1112                  
 LABEL163:
-   033                   
+   iload                  0
    load_int               5
    200                   
    load_int               1
    if_icmpeq              LABEL169
    jump                   LABEL174
 LABEL169:
-   033                    4
+   iload                  4
    int_to_string         
    load_string            "%"
    037                    2
    1112                  
 LABEL174:
-   033                   
+   iload                  0
    load_int               6
    200                   
    load_int               1
    if_icmpeq              LABEL180
    jump                   LABEL183
 LABEL180:
-   033                    5
+   iload                  5
    int_to_string         
    1112                  
 LABEL183:

@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    8
+.string_stack_count 1
+.int_var_count      8
+.string_var_count   1
+   iload                  0
    load_int               1
    if_icmpne              LABEL4
    jump                   LABEL5
@@ -9,8 +13,8 @@ LABEL5:
    load_int               1
    load_int               0
    3200                  
-   033                    1
-   033                    2
+   iload                  1
+   iload                  2
    200                   
    load_int               1
    if_icmpeq              LABEL15
@@ -21,37 +25,37 @@ LABEL15:
    load_int               200
    widget_put_opacity    
 LABEL19:
-   033                    1
+   iload                  1
    widget_put_actions_null_widget
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2409                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2412                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2404                  
    load_int               1569
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   035                   
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   sload                  0
    get_gamecycle         
    load_int               80
    iadd                  
    load_string            "Iiiiiiisi"
-   033                    1
+   iload                  1
    2408                  
    load_int               32702477
-   033                    7
+   iload                  7
    200                   
    load_int               1
    if_icmpeq              LABEL54

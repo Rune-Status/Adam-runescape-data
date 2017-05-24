@@ -1,32 +1,36 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   1
    load_int               105
    load_int               115
    load_int               108
-   033                    2
+   iload                  2
    3408                  
-   036                   
+   sstore                
    load_int               105
    load_int               83
    load_int               681
-   033                    2
+   iload                  2
    3408                  
-   034                    4
+   istore                 4
    load_int               1
    load_string            "View "
    load_string            "<col=ff981f>"
-   035                   
+   sload                  0
    load_string            "</col>"
    load_string            " guide"
    037                    5
-   033                   
+   iload                  0
    2300                  
    load_int               40
-   033                    1
+   iload                  1
    load_string            "I"
-   033                   
+   iload                  0
    2404                  
-   033                   
+   iload                  0
    102                   
-   033                   
+   iload                  0
    load_int               5
    load_int               0
    100                   
@@ -42,7 +46,7 @@
    1001                  
    load_int               174
    widget_put_textureid  
-   033                   
+   iload                  0
    load_int               5
    load_int               1
    100                   
@@ -58,12 +62,12 @@
    1001                  
    load_int               175
    widget_put_textureid  
-   033                   
+   iload                  0
    load_int               5
    load_int               2
    100                   
    load_int               3
-   033                    3
+   iload                  3
    iadd                  
    load_int               4
    load_int               0
@@ -77,14 +81,14 @@
    load_int               83
    load_int               100
    load_int               255
-   033                    4
+   iload                  4
    3408                  
    widget_put_textureid  
-   033                   
+   iload                  0
    load_int               4
    load_int               3
    100                   
-   033                   
+   iload                  0
    load_int               4
    load_int               4
    100                    1
@@ -128,33 +132,33 @@
    1115                  
    load_int               1
    1115                   1
-   033                    4
-   033                   
-   035                   
-   033                    1
-   040                    395
+   iload                  4
+   iload                  0
+   sload                  0
+   iload                  1
+   invoke                 395
    load_int               394
-   033                    4
-   033                   
-   035                   
+   iload                  4
+   iload                  0
+   sload                  0
    1702                  
    1702                   1
-   033                    1
-   033                    4
+   iload                  1
+   iload                  4
    load_int               1
    load_string            "SIsiiIY"
-   033                   
+   iload                  0
    2415                  
    load_int               394
-   033                    4
-   033                   
-   035                   
+   iload                  4
+   iload                  0
+   sload                  0
    1702                  
    1702                   1
-   033                    1
+   iload                  1
    load_int               427
    load_int               1
    load_string            "SIsiiIY"
-   033                   
+   iload                  0
    2407                  
    return                

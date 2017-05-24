@@ -1,35 +1,39 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
    load_string            "<col=ff9040>"
-   033                    1
+   iload                  1
    get_item_name         
    037                    2
-   033                   
+   iload                  0
    widget_put_name_widget
-   033                   
+   iload                  0
    widget_get_width_widget
-   034                    2
-   033                   
+   istore                 2
+   iload                  0
    widget_get_height_widget
    load_int               30
    isub                  
-   034                    3
-   033                   
+   istore                 3
+   iload                  0
    102                   
    load_int               0
-   034                    4
-   033                   
+   istore                 4
+   iload                  0
    load_int               6
-   033                    4
+   iload                  4
    100                   
-   033                    4
+   iload                  4
    load_int               1
    iadd                  
-   034                    4
-   033                    3
-   033                    3
+   istore                 4
+   iload                  3
+   iload                  3
    load_int               0
    load_int               0
    1001                  
-   033                    1
+   iload                  1
    load_int               11787
    if_icmpeq              LABEL35
    jump                   LABEL66
@@ -39,21 +43,21 @@ LABEL35:
    load_int               0
    load_int               0
    1000                  
-   033                   
+   iload                  0
    load_int               6
-   033                    4
+   iload                  4
    100                    1
-   033                    4
+   iload                  4
    load_int               1
    iadd                  
-   034                    4
-   033                    3
-   033                    3
+   istore                 4
+   iload                  3
+   iload                  3
    load_int               0
    load_int               0
    1001                   1
-   033                    2
-   033                    3
+   iload                  2
+   iload                  3
    load_int               15
    iadd                  
    isub                  
@@ -66,7 +70,7 @@ LABEL35:
    1200                   1
    jump                   LABEL110
 LABEL66:
-   033                    1
+   iload                  1
    load_int               3053
    if_icmpeq              LABEL70
    jump                   LABEL101
@@ -76,21 +80,21 @@ LABEL70:
    load_int               0
    load_int               0
    1000                  
-   033                   
+   iload                  0
    load_int               6
-   033                    4
+   iload                  4
    100                    1
-   033                    4
+   iload                  4
    load_int               1
    iadd                  
-   034                    4
-   033                    3
-   033                    3
+   istore                 4
+   iload                  3
+   iload                  3
    load_int               0
    load_int               0
    1001                   1
-   033                    2
-   033                    3
+   iload                  2
+   iload                  3
    load_int               15
    iadd                  
    isub                  
@@ -103,8 +107,8 @@ LABEL70:
    1200                   1
    jump                   LABEL110
 LABEL101:
-   033                    2
-   033                    3
+   iload                  2
+   iload                  3
    isub                  
    load_int               2
    idiv                  
@@ -113,24 +117,24 @@ LABEL101:
    load_int               0
    1000                  
 LABEL110:
-   033                    1
+   iload                  1
    load_int               1
    1200                  
-   033                   
+   iload                  0
    load_int               5
-   033                    4
+   iload                  4
    100                   
-   033                    4
+   iload                  4
    load_int               1
    iadd                  
-   034                    4
+   istore                 4
    load_int               0
    load_int               0
    load_int               0
    load_int               0
    1000                  
-   033                    2
-   033                    3
+   iload                  2
+   iload                  3
    load_int               0
    load_int               0
    1001                  
@@ -146,7 +150,7 @@ LABEL110:
    load_int               190
    load_int               -1
    load_string            "IiiI"
-   033                   
+   iload                  0
    2403                  
    load_int               244
    load_int               -2147483645
@@ -154,23 +158,23 @@ LABEL110:
    load_int               255
    load_int               -1
    load_string            "IiiI"
-   033                   
+   iload                  0
    2404                  
-   033                   
+   iload                  0
    load_int               4
-   033                    4
+   iload                  4
    100                   
-   033                    4
+   iload                  4
    load_int               1
    iadd                  
-   034                    4
-   033                    2
+   istore                 4
+   iload                  2
    load_int               30
    load_int               0
    load_int               0
    1001                  
    load_int               0
-   033                    3
+   iload                  3
    load_int               0
    load_int               0
    1000                  
@@ -182,19 +186,19 @@ LABEL110:
    load_int               1
    load_int               0
    1114                  
-   033                    1
+   iload                  1
    get_item_name         
    1112                  
-   033                   
-   033                    1
-   040                    332
+   iload                  0
+   iload                  1
+   invoke                 332
    load_int               331
    load_int               -2147483645
    1702                  
-   033                    1
+   iload                  1
    load_int               93
    load_int               1
    load_string            "IioY"
-   033                   
+   iload                  0
    2414                  
    return                

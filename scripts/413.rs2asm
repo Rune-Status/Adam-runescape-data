@@ -1,21 +1,25 @@
-   033                   
+.int_stack_count    6
+.string_stack_count 1
+.int_var_count      6
+.string_var_count   1
+   iload                  0
    load_int               32
    if_icmplt              LABEL4
    jump                   LABEL9
 LABEL4:
    get_settings           1076
-   033                   
+   iload                  0
    test_bit              
    load_int               1
    if_icmpeq              LABEL21
 LABEL9:
-   033                   
+   iload                  0
    load_int               32
    if_icmpge              LABEL13
    jump                   LABEL86
 LABEL13:
    get_settings           1344
-   033                   
+   iload                  0
    load_int               32
    modulo                
    test_bit              
@@ -23,7 +27,7 @@ LABEL13:
    if_icmpeq              LABEL21
    jump                   LABEL86
 LABEL21:
-   033                   
+   iload                  0
    load_int               35
    if_icmpeq              LABEL25
    jump                   LABEL53
@@ -48,13 +52,13 @@ LABEL35:
 LABEL40:
    load_int               414
    load_int               0
-   033                   
-   035                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
+   iload                  0
+   sload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
    load_int               -1
    load_string            "1isIIIIIi"
    1409                   1
@@ -65,7 +69,7 @@ LABEL53:
    load_int               105
    load_int               49
    load_int               854
-   033                   
+   iload                  0
    3408                  
    load_int               1
    if_icmpeq              LABEL63
@@ -76,13 +80,13 @@ LABEL63:
    1300                   1
    load_int               414
    load_int               0
-   033                   
-   035                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
+   iload                  0
+   sload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
    load_int               -1
    load_string            "1isIIIIIi"
    1409                   1
@@ -104,13 +108,13 @@ LABEL86:
    1300                   1
    load_int               414
    load_int               1
-   033                   
-   035                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
+   iload                  0
+   sload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
    load_int               -1
    load_string            "1isIIIIIi"
    1409                   1

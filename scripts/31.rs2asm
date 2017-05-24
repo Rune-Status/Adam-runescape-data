@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    8
+.string_stack_count 0
+.int_var_count      10
+.string_var_count   0
+   iload                  0
    load_int               5
    load_int               0
    100                   
@@ -12,19 +16,19 @@
    load_int               1
    load_int               1
    1001                  
-   033                    2
+   iload                  2
    widget_put_textureid  
    load_int               0
    1107                  
    load_int               34
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_int               -2147483646
    load_string            "IIi"
    1400                  
    load_int               1
    1005                  
-   033                   
+   iload                  0
    load_int               5
    load_int               1
    100                    1
@@ -33,80 +37,80 @@
    load_int               1
    load_int               0
    1000                   1
-   033                    1
+   iload                  1
    widget_get_scrollheight_widget
-   034                    8
-   033                    8
+   istore                 8
+   iload                  8
    load_int               0
    if_icmple              LABEL42
    jump                   LABEL45
 LABEL42:
-   033                    1
+   iload                  1
    widget_get_height_widget
-   034                    8
+   istore                 8
 LABEL45:
    load_int               0
-   034                    9
-   033                    8
+   istore                 9
+   iload                  8
    load_int               0
    if_icmpgt              LABEL51
    jump                   LABEL62
 LABEL51:
-   033                   
+   iload                  0
    widget_get_height_widget
    load_int               32
    isub                  
-   033                    1
+   iload                  1
    widget_get_height_widget
    imul                  
-   033                    8
+   iload                  8
    idiv                  
-   034                    9
+   istore                 9
    jump                   LABEL67
 LABEL62:
-   033                   
+   iload                  0
    widget_get_height_widget
    load_int               32
    isub                  
-   034                    9
+   istore                 9
 LABEL67:
-   033                    9
+   iload                  9
    load_int               10
    if_icmplt              LABEL71
    jump                   LABEL73
 LABEL71:
    load_int               10
-   034                    9
+   istore                 9
 LABEL73:
    load_int               0
-   033                    9
+   iload                  9
    load_int               1
    load_int               0
    1001                   1
-   033                    4
+   iload                  4
    widget_put_textureid   1
    load_int               0
    1107                   1
-   033                   
+   iload                  0
    load_int               0
    widget_put_drag_parent 1
    load_int               35
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_int               -2147483646
    load_int               0
    load_string            "IIi1"
    1405                   1
    load_int               35
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_int               -2147483646
    load_int               1
    load_string            "IIi1"
    1410                   1
    load_int               1
    1302                   1
-   033                   
+   iload                  0
    load_int               5
    load_int               2
    100                   
@@ -120,11 +124,11 @@ LABEL73:
    load_int               1
    load_int               0
    1001                  
-   033                    3
+   iload                  3
    widget_put_textureid  
    load_int               0
    1107                  
-   033                   
+   iload                  0
    load_int               5
    load_int               3
    100                   
@@ -142,11 +146,11 @@ LABEL73:
    load_int               1
    load_int               0
    1001                  
-   033                    5
+   iload                  5
    widget_put_textureid  
    load_int               0
    1107                  
-   033                   
+   iload                  0
    load_int               5
    load_int               4
    100                   
@@ -160,18 +164,18 @@ LABEL73:
    load_int               1
    load_int               0
    1001                  
-   033                    6
+   iload                  6
    widget_put_textureid  
    load_int               0
    1107                  
    load_int               32
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_string            "II"
    1401                  
    load_int               1
    1005                  
-   033                   
+   iload                  0
    load_int               5
    load_int               5
    100                   
@@ -185,29 +189,29 @@ LABEL73:
    load_int               1
    load_int               0
    1001                  
-   033                    7
+   iload                  7
    widget_put_textureid  
    load_int               0
    1107                  
    load_int               33
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_string            "II"
    1401                  
    load_int               1
    1005                  
    load_int               36
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_int               -2147483646
    load_string            "IIi"
-   033                   
+   iload                  0
    2417                  
    load_int               36
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_int               -2147483646
    load_string            "IIi"
-   033                    1
+   iload                  1
    2417                  
    return                

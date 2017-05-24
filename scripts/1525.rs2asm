@@ -1,40 +1,44 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   1
    load_int               33226759
    load_int               0
    load_int               1
    load_string            "Sort by name"
-   033                   
-   040                    1527
+   iload                  0
+   invoke                 1527
    load_int               33226760
    load_int               2
    load_int               3
    load_string            "Sort by combat level"
-   033                   
-   040                    1527
+   iload                  0
+   invoke                 1527
    load_int               33226761
    load_int               4
    load_int               5
    load_string            "Sort by skill total"
-   033                   
-   040                    1527
+   iload                  0
+   invoke                 1527
    load_int               100
    044                    105
    load_int               0
-   034                    1
+   istore                 1
    load_int               0
-   034                    2
+   istore                 2
 LABEL24:
-   033                    2
+   iload                  2
    load_int               0
    if_icmpeq              LABEL28
    jump                   LABEL51
 LABEL28:
-   033                    1
+   iload                  1
    load_int               100
    if_icmplt              LABEL32
    jump                   LABEL51
 LABEL32:
    load_int               33226762
-   033                    1
+   iload                  1
    load_int               6
    imul                  
    200                   
@@ -42,23 +46,23 @@ LABEL32:
    if_icmpeq              LABEL40
    jump                   LABEL48
 LABEL40:
-   033                    1
-   033                    1
+   iload                  1
+   iload                  1
    046                   
-   033                    1
+   iload                  1
    load_int               1
    iadd                  
-   034                    1
+   istore                 1
    jump                   LABEL50
 LABEL48:
    load_int               1
-   034                    2
+   istore                 2
 LABEL50:
    jump                   LABEL24
 LABEL51:
    load_string            ""
-   036                   
-   033                    1
+   sstore                
+   iload                  1
    load_int               2
    if_icmpge              LABEL57
    jump                   LABEL94
@@ -73,11 +77,11 @@ LABEL57:
 LABEL64:
    load_int               0
    load_int               0
-   033                    1
+   iload                  1
    load_int               1
    isub                  
    load_int               4
-   040                    1526
+   invoke                 1526
    jump                   LABEL94
 LABEL72:
    042                    181
@@ -90,25 +94,25 @@ LABEL72:
 LABEL79:
    load_int               0
    load_int               0
-   033                    1
+   iload                  1
    load_int               1
    isub                  
    load_int               5
-   040                    1526
+   invoke                 1526
    jump                   LABEL94
 LABEL87:
    load_int               0
    load_int               0
-   033                    1
+   iload                  1
    load_int               1
    isub                  
    load_int               1
-   040                    1526
+   invoke                 1526
 LABEL94:
    load_int               0
-   034                    3
+   istore                 3
    load_int               0
-   034                    4
+   istore                 4
    042                    181
    load_int               3
    if_icmpeq              LABEL108
@@ -120,20 +124,20 @@ LABEL94:
    if_icmpeq              LABEL108
    jump                   LABEL192
 LABEL108:
-   033                    1
-   034                    3
+   iload                  1
+   istore                 3
 LABEL110:
-   033                    3
+   iload                  3
    load_int               0
    if_icmpgt              LABEL114
    jump                   LABEL191
 LABEL114:
-   033                    3
+   iload                  3
    load_int               1
    isub                  
-   034                    3
+   istore                 3
    load_int               33226762
-   033                    3
+   iload                  3
    045                   
    load_int               6
    imul                  
@@ -143,19 +147,19 @@ LABEL114:
    jump                   LABEL138
 LABEL127:
    widget_get_relativex  
-   033                    4
+   iload                  4
    load_int               0
    load_int               0
    1000                  
-   033                    3
-   033                    3
+   iload                  3
+   iload                  3
    045                   
-   033                   
+   iload                  0
    load_int               1
-   040                    1518
+   invoke                 1518
 LABEL138:
    load_int               33226762
-   033                    3
+   iload                  3
    045                   
    load_int               6
    imul                  
@@ -167,13 +171,13 @@ LABEL138:
    jump                   LABEL154
 LABEL149:
    widget_get_relativex  
-   033                    4
+   iload                  4
    load_int               0
    load_int               0
    1000                  
 LABEL154:
    load_int               33226762
-   033                    3
+   iload                  3
    045                   
    load_int               6
    imul                  
@@ -185,13 +189,13 @@ LABEL154:
    jump                   LABEL170
 LABEL165:
    widget_get_relativex  
-   033                    4
+   iload                  4
    load_int               0
    load_int               0
    1000                  
 LABEL170:
    load_int               33226762
-   033                    3
+   iload                  3
    045                   
    load_int               6
    imul                  
@@ -203,26 +207,26 @@ LABEL170:
    jump                   LABEL186
 LABEL181:
    widget_get_relativex  
-   033                    4
+   iload                  4
    load_int               0
    load_int               0
    1000                  
 LABEL186:
-   033                    4
+   iload                  4
    load_int               14
    iadd                  
-   034                    4
+   istore                 4
    jump                   LABEL110
 LABEL191:
    jump                   LABEL273
 LABEL192:
-   033                    3
-   033                    1
+   iload                  3
+   iload                  1
    if_icmplt              LABEL196
    jump                   LABEL273
 LABEL196:
    load_int               33226762
-   033                    3
+   iload                  3
    045                   
    load_int               6
    imul                  
@@ -232,19 +236,19 @@ LABEL196:
    jump                   LABEL216
 LABEL205:
    widget_get_relativex  
-   033                    4
+   iload                  4
    load_int               0
    load_int               0
    1000                  
-   033                    3
-   033                    3
+   iload                  3
+   iload                  3
    045                   
-   033                   
+   iload                  0
    load_int               1
-   040                    1518
+   invoke                 1518
 LABEL216:
    load_int               33226762
-   033                    3
+   iload                  3
    045                   
    load_int               6
    imul                  
@@ -256,13 +260,13 @@ LABEL216:
    jump                   LABEL232
 LABEL227:
    widget_get_relativex  
-   033                    4
+   iload                  4
    load_int               0
    load_int               0
    1000                  
 LABEL232:
    load_int               33226762
-   033                    3
+   iload                  3
    045                   
    load_int               6
    imul                  
@@ -274,13 +278,13 @@ LABEL232:
    jump                   LABEL248
 LABEL243:
    widget_get_relativex  
-   033                    4
+   iload                  4
    load_int               0
    load_int               0
    1000                  
 LABEL248:
    load_int               33226762
-   033                    3
+   iload                  3
    045                   
    load_int               6
    imul                  
@@ -292,19 +296,19 @@ LABEL248:
    jump                   LABEL264
 LABEL259:
    widget_get_relativex  
-   033                    4
+   iload                  4
    load_int               0
    load_int               0
    1000                  
 LABEL264:
-   033                    4
+   iload                  4
    load_int               14
    iadd                  
-   034                    4
-   033                    3
+   istore                 4
+   iload                  3
    load_int               1
    iadd                  
-   034                    3
+   istore                 3
    jump                   LABEL192
 LABEL273:
    return                

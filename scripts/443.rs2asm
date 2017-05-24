@@ -1,32 +1,36 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    load_int               0
-   034                    1
+   istore                 1
    load_int               105
    load_int               79
    load_int               852
-   033                    1
+   iload                  1
    3408                  
-   034                    2
+   istore                 2
 LABEL8:
-   033                    2
+   iload                  2
    load_int               -1
    if_icmpne              LABEL12
    jump                   LABEL66
 LABEL12:
-   033                   
+   iload                  0
    load_int               5
-   033                    1
+   iload                  1
    100                   
    load_int               36
    load_int               32
    load_int               0
    load_int               0
    1001                  
-   033                    1
+   iload                  1
    load_int               8
    modulo                
    load_int               46
    imul                  
-   033                    1
+   iload                  1
    load_int               8
    idiv                  
    load_int               50
@@ -34,11 +38,11 @@ LABEL12:
    load_int               0
    load_int               0
    1000                  
-   033                    2
+   iload                  2
    load_int               1
    1200                  
    load_string            "<col=ff9040>"
-   033                    2
+   iload                  2
    get_item_name         
    037                    2
    widget_put_name       
@@ -55,16 +59,16 @@ LABEL12:
    1117                  
    load_int               1
    widget_put_borderthickness
-   033                    1
+   iload                  1
    load_int               1
    iadd                  
-   034                    1
+   istore                 1
    load_int               105
    load_int               79
    load_int               852
-   033                    1
+   iload                  1
    3408                  
-   034                    2
+   istore                 2
    jump                   LABEL8
 LABEL66:
    return                

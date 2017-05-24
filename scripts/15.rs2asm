@@ -1,3 +1,7 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
    load_int               5898286
    widget_get_hidden_widget
    load_int               0
@@ -5,58 +9,58 @@
    jump                   LABEL9
 LABEL5:
    load_string            ""
-   033                   
+   iload                  0
    2112                  
    return                
 LABEL9:
-   033                    1
+   iload                  1
    get_gamecycle         
-   033                    2
+   iload                  2
    isub                  
    load_int               50
    idiv                  
    isub                  
-   034                    3
-   033                    3
+   istore                 3
+   iload                  3
    load_int               0
    if_icmple              LABEL21
    jump                   LABEL25
 LABEL21:
    load_string            "Hurry!"
-   033                   
+   iload                  0
    2112                  
    return                
 LABEL25:
-   033                    3
+   iload                  3
    load_int               60
    idiv                  
-   034                    4
-   033                    3
+   istore                 4
+   iload                  3
    load_int               60
    modulo                
-   034                    3
-   033                    3
+   istore                 3
+   iload                  3
    load_int               10
    if_icmpge              LABEL37
    jump                   LABEL46
 LABEL37:
-   033                    4
+   iload                  4
    int_to_string         
    load_string            ":"
-   033                    3
+   iload                  3
    int_to_string         
    037                    3
-   033                   
+   iload                  0
    2112                  
    jump                   LABEL54
 LABEL46:
-   033                    4
+   iload                  4
    int_to_string         
    load_string            ":0"
-   033                    3
+   iload                  3
    int_to_string         
    037                    3
-   033                   
+   iload                  0
    2112                  
 LABEL54:
    return                

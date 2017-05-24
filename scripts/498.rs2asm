@@ -1,38 +1,42 @@
+.int_stack_count    0
+.string_stack_count 2
+.int_var_count      3
+.string_var_count   2
    load_int               24903684
    widget_get_width_widget
-   034                   
-   035                   
-   033                   
+   istore                
+   sload                  0
+   iload                  0
    load_int               495
    4108                  
-   034                    1
-   035                    1
-   033                   
+   istore                 1
+   sload                  1
+   iload                  0
    load_int               495
    4108                  
-   034                    2
-   033                    2
-   033                    1
+   istore                 2
+   iload                  2
+   iload                  1
    if_icmpgt              LABEL17
    jump                   LABEL19
 LABEL17:
-   033                    2
-   034                    1
+   iload                  2
+   istore                 1
 LABEL19:
-   033                    1
+   iload                  1
    load_int               12
    imul                  
    load_int               3
    iadd                  
-   034                    1
-   033                    1
+   istore                 1
+   iload                  1
    load_int               24903684
    widget_get_height_widget
    if_icmpgt              LABEL30
    jump                   LABEL35
 LABEL30:
    load_int               0
-   033                    1
+   iload                  1
    load_int               24903684
    widget_put_scrollwidthheight_widget
    jump                   LABEL39
@@ -42,22 +46,22 @@ LABEL35:
    load_int               24903684
    widget_put_scrollwidthheight_widget
 LABEL39:
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_int               0
    load_int               0
    load_int               24903683
    2001                  
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_int               0
    load_int               0
    load_int               24903686
    2001                  
-   035                   
+   sload                  0
    load_int               24903683
    2112                  
-   035                    1
+   sload                  1
    load_int               24903686
    2112                  
    load_int               24903685
@@ -68,5 +72,5 @@ LABEL39:
    load_int               791
    load_int               773
    load_int               788
-   040                    31
+   invoke                 31
    return                

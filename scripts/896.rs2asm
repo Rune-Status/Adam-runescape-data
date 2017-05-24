@@ -1,6 +1,10 @@
-   040                    900
-   034                    1
-   033                    1
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   invoke                 900
+   istore                 1
+   iload                  1
    load_int               -1
    if_icmpeq              LABEL6
    jump                   LABEL7
@@ -9,20 +13,20 @@ LABEL6:
 LABEL7:
    load_int               73
    load_int               73
-   033                    1
+   iload                  1
    load_int               10551299
    3408                  
-   034                    2
-   033                    2
+   istore                 2
+   iload                  2
    load_int               -1
    if_icmpeq              LABEL17
    jump                   LABEL18
 LABEL17:
    return                
 LABEL18:
-   033                    2
+   iload                  2
    102                   
-   033                    2
+   iload                  2
    load_int               6
    load_int               0
    100                   
@@ -40,13 +44,13 @@ LABEL18:
    widget_put_modelid_1  
    load_int               3320
    1110                  
-   033                    2
-   040                    898
+   iload                  2
+   invoke                 898
    load_int               897
    load_int               -2147483645
    load_int               -2147483643
    get_gamecycle         
-   033                   
+   iload                  0
    iadd                  
    load_string            "Iii"
    1408                  

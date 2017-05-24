@@ -1,6 +1,10 @@
-   040                    900
-   034                   
-   033                   
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   invoke                 900
+   istore                
+   iload                  0
    load_int               -1
    if_icmpeq              LABEL6
    jump                   LABEL7
@@ -9,20 +13,20 @@ LABEL6:
 LABEL7:
    load_int               73
    load_int               73
-   033                   
+   iload                  0
    load_int               10551299
    3408                  
-   034                    1
-   033                    1
+   istore                 1
+   iload                  1
    load_int               -1
    if_icmpeq              LABEL17
    jump                   LABEL18
 LABEL17:
    return                
 LABEL18:
-   033                    1
+   iload                  1
    102                   
-   033                    1
+   iload                  1
    load_int               3
    load_int               0
    100                   
@@ -46,9 +50,9 @@ LABEL18:
    get_gamecycle         
    load_string            "Iii"
    1408                  
-   033                    1
+   iload                  1
    load_int               0
-   040                    1316
+   invoke                 1316
    load_int               2982
    load_int               1
    load_int               10

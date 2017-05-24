@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  0
    load_int               1
    if_icmpne              LABEL4
    jump                   LABEL5
@@ -9,15 +13,15 @@ LABEL5:
    load_int               1
    load_int               0
    3200                  
-   033                    1
+   iload                  1
    102                   
-   033                    1
+   iload                  1
    load_int               0
-   040                    836
-   034                    2
-   033                    1
+   invoke                 836
+   istore                 2
+   iload                  1
    load_int               4
-   033                    2
+   iload                  2
    100                   
    load_int               0
    load_int               0
@@ -43,19 +47,19 @@ LABEL5:
    1112                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2403                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2404                  
    load_int               1
    load_string            ""
-   033                    1
+   iload                  1
    2300                  
    load_int               -1
    load_string            ""
-   033                    1
+   iload                  1
    2409                  
    load_int               1415
    get_gamecycle         
@@ -63,6 +67,6 @@ LABEL5:
    iadd                  
    load_int               -2147483645
    load_string            "iI"
-   033                    1
+   iload                  1
    2408                  
    return                

@@ -1,3 +1,7 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
    047                    24
    string_length         
    load_int               0
@@ -8,7 +12,7 @@ LABEL5:
    load_int               1
    load_int               0
    3200                  
-   033                   
+   iload                  0
    load_int               7
    if_icmpeq              LABEL13
    jump                   LABEL22
@@ -25,7 +29,7 @@ LABEL19:
    jump                   LABEL26
 LABEL22:
    047                    24
-   033                   
+   iload                  0
    042                    6
    5002                  
 LABEL26:
@@ -37,7 +41,7 @@ LABEL30:
    047                    24
    add_ignore            
 LABEL32:
-   033                   
+   iload                  0
    load_int               7
    if_icmpeq              LABEL36
    jump                   LABEL38

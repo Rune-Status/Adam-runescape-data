@@ -1,19 +1,23 @@
-   033                   
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  0
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL23
 LABEL4:
-   033                    1
+   iload                  1
    load_int               -1
-   033                    2
+   iload                  2
    load_string            "Drag stacks of items to this"
    load_string            "<br>"
    load_string            "incinerator to destroy them."
    037                    3
    load_int               25
    load_int               512
-   040                    837
-   033                    1
+   invoke                 837
+   iload                  1
    load_int               1
    200                    1
    load_int               1
@@ -25,9 +29,9 @@ LABEL20:
 LABEL22:
    jump                   LABEL33
 LABEL23:
-   033                    2
-   040                    41
-   033                    1
+   iload                  2
+   invoke                 41
+   iload                  1
    load_int               1
    200                    1
    load_int               1

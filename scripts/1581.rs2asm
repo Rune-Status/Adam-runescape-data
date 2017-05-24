@@ -1,43 +1,47 @@
-   033                   
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  0
    102                   
    load_int               -1
-   034                    2
+   istore                 2
    load_int               0
-   034                    3
+   istore                 3
 LABEL6:
-   033                    3
-   033                    1
+   iload                  3
+   iload                  1
    if_icmplt              LABEL10
    jump                   LABEL36
 LABEL10:
-   033                   
+   iload                  0
    load_int               5
-   033                    3
+   iload                  3
    100                   
    load_int               581
-   033                    3
+   iload                  3
    3301                  
-   034                    2
-   033                    2
+   istore                 2
+   iload                  2
    load_int               -1
    if_icmpne              LABEL22
    jump                   LABEL29
 LABEL22:
-   033                    2
+   iload                  2
    load_int               581
-   033                    3
+   iload                  3
    3302                  
-   033                    3
-   040                    1582
+   iload                  3
+   invoke                 1582
    jump                   LABEL31
 LABEL29:
    load_int               1
    widget_put_hidden     
 LABEL31:
-   033                    3
+   iload                  3
    load_int               1
    iadd                  
-   034                    3
+   istore                 3
    jump                   LABEL6
 LABEL36:
    025                    5457
@@ -45,13 +49,13 @@ LABEL36:
    if_icmpeq              LABEL40
    jump                   LABEL48
 LABEL40:
-   033                   
+   iload                  0
    load_int               5
-   033                    3
+   iload                  3
    100                   
    load_int               20899
    load_int               1
-   033                    3
-   040                    1582
+   iload                  3
+   invoke                 1582
 LABEL48:
    return                

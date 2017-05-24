@@ -1,5 +1,9 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   1
    load_string            "Enable a head-up display that shows your house favour while you're in Kourend. It is automatically hidden while other head-up displays are active."
-   036                   
+   sstore                
    025                    619
    load_int               1
    if_icmpeq              LABEL6
@@ -9,24 +13,24 @@ LABEL6:
    widget_put_textureid  
    load_int               1
    load_string            "Disable"
-   033                   
+   iload                  0
    2300                  
    load_string            "Disable the head-up display that shows your house favour while you're in Kourend. It is automatically hidden while other head-up displays are active."
-   036                   
+   sstore                
    jump                   LABEL21
 LABEL15:
    load_int               698
    widget_put_textureid  
    load_int               1
    load_string            "Enable"
-   033                   
+   iload                  0
    2300                  
 LABEL21:
    load_int               526
    load_int               -2147483645
    load_int               -2147483643
-   033                    1
-   035                   
+   iload                  1
+   sload                  0
    load_int               25
    load_int               190
    load_string            "IiIsii"

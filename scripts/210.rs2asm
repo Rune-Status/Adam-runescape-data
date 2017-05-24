@@ -1,3 +1,7 @@
+.int_stack_count    1
+.string_stack_count 1
+.int_var_count      1
+.string_var_count   2
    042                    41
    load_int               5
    if_icmpne              LABEL4
@@ -16,31 +20,31 @@ LABEL11:
    return                
 LABEL13:
    load_string            ""
-   036                    1
-   033                   
+   sstore                 1
+   iload                  0
    load_int               2
    if_icmpeq              LABEL34
-   033                   
+   iload                  0
    load_int               1
    if_icmpeq              LABEL34
-   033                   
+   iload                  0
    load_int               3
    if_icmpeq              LABEL34
-   033                   
+   iload                  0
    load_int               6
    if_icmpeq              LABEL34
-   033                   
+   iload                  0
    load_int               7
    if_icmpeq              LABEL34
-   033                   
+   iload                  0
    load_int               9
    if_icmpeq              LABEL34
    jump                   LABEL79
 LABEL34:
-   035                   
+   sload                  0
    string_remove_html    
-   036                    1
-   035                    1
+   sstore                 1
+   sload                  1
    get_localplayer_name  
    string_remove_html    
    4107                  
@@ -51,7 +55,7 @@ LABEL44:
    load_int               1
    return                
 LABEL46:
-   035                    1
+   sload                  1
    047                    25
    string_remove_html    
    4107                  
@@ -59,10 +63,10 @@ LABEL46:
    if_icmpeq              LABEL53
    jump                   LABEL79
 LABEL53:
-   033                   
+   iload                  0
    load_int               1
    if_icmpeq              LABEL60
-   033                   
+   iload                  0
    load_int               7
    if_icmpeq              LABEL60
    jump                   LABEL62
@@ -83,7 +87,7 @@ LABEL68:
    if_icmpeq              LABEL72
    jump                   LABEL79
 LABEL72:
-   035                   
+   sload                  0
    3609                  
    load_int               1
    if_icmpeq              LABEL77

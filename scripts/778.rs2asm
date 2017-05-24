@@ -1,4 +1,8 @@
-   033                    1
+.int_stack_count    17
+.string_stack_count 0
+.int_var_count      18
+.string_var_count   0
+   iload                  1
    load_int               1
    if_icmpne              LABEL7
    get_settings           1151
@@ -9,8 +13,8 @@ LABEL7:
    return                
 LABEL8:
    load_int               0
-   034                    17
-   033                   
+   istore                 17
+   iload                  0
    load_int               1
    if_icmpeq              LABEL14
    jump                   LABEL27
@@ -31,7 +35,7 @@ LABEL22:
    3200                  
    jump                   LABEL105
 LABEL27:
-   033                   
+   iload                  0
    load_int               -1
    if_icmpeq              LABEL31
    jump                   LABEL44
@@ -52,7 +56,7 @@ LABEL39:
    3200                  
    jump                   LABEL105
 LABEL44:
-   033                   
+   iload                  0
    load_int               5
    if_icmpeq              LABEL48
    jump                   LABEL76
@@ -60,17 +64,17 @@ LABEL48:
    025                    4398
    load_int               20
    idiv                  
-   034                    17
-   033                    17
+   istore                 17
+   iload                  17
    load_int               0
    if_icmple              LABEL56
    jump                   LABEL58
 LABEL56:
    load_int               1
-   034                    17
+   istore                 17
 LABEL58:
    load_int               2147483647
-   033                    17
+   iload                  17
    isub                  
    025                    4398
    if_icmplt              LABEL64
@@ -81,7 +85,7 @@ LABEL64:
    jump                   LABEL71
 LABEL67:
    025                    4398
-   033                    17
+   iload                  17
    iadd                  
    027                    4398
 LABEL71:
@@ -91,7 +95,7 @@ LABEL71:
    3200                  
    jump                   LABEL105
 LABEL76:
-   033                   
+   iload                  0
    load_int               -5
    if_icmpeq              LABEL80
    jump                   LABEL105
@@ -99,16 +103,16 @@ LABEL80:
    025                    4398
    load_int               20
    idiv                  
-   034                    17
-   033                    17
+   istore                 17
+   iload                  17
    load_int               0
    if_icmple              LABEL88
    jump                   LABEL90
 LABEL88:
    load_int               1
-   034                    17
+   istore                 17
 LABEL90:
-   033                    17
+   iload                  17
    025                    4398
    if_icmpge              LABEL94
    jump                   LABEL97
@@ -118,7 +122,7 @@ LABEL94:
    jump                   LABEL101
 LABEL97:
    025                    4398
-   033                    17
+   iload                  17
    isub                  
    027                    4398
 LABEL101:
@@ -127,20 +131,20 @@ LABEL101:
    load_int               0
    3200                  
 LABEL105:
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   033                    11
-   033                    12
-   033                    13
-   033                    14
-   033                    15
-   033                    16
-   040                    779
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   iload                  13
+   iload                  14
+   iload                  15
+   iload                  16
+   invoke                 779
    return                

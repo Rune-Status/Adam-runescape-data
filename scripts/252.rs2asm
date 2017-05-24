@@ -1,21 +1,25 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      7
+.string_var_count   1
    load_int               -1
-   034                    3
+   istore                 3
    load_int               -1
-   034                    4
+   istore                 4
    load_int               -1
-   034                    5
+   istore                 5
    load_int               0
-   034                    6
+   istore                 6
    load_string            ""
-   036                   
-   033                   
-   033                    1
+   sstore                
+   iload                  0
+   iload                  1
    200                   
    load_int               1
    if_icmpeq              LABEL16
    jump                   LABEL157
 LABEL16:
-   033                   
+   iload                  0
    widget_get_width_widget
    load_int               14
    load_int               0
@@ -23,7 +27,7 @@ LABEL16:
    1001                  
    load_int               0
    load_int               32
-   033                    2
+   iload                  2
    load_int               15
    imul                  
    iadd                  
@@ -41,36 +45,36 @@ LABEL16:
    load_int               105
    load_int               115
    load_int               812
-   033                    1
+   iload                  1
    3408                  
-   036                   
-   035                   
+   sstore                
+   sload                  0
    1112                  
    load_int               1
    load_string            "Play"
    1300                  
    load_string            "<col=ff9040>"
-   035                   
+   sload                  0
    037                    2
    widget_put_name       
    load_int               105
    load_int               99
    load_int               819
-   033                    1
+   iload                  1
    3408                  
-   034                    3
-   033                    3
+   istore                 3
+   iload                  3
    load_int               -1
    if_icmpne              LABEL64
    jump                   LABEL146
 LABEL64:
-   033                    3
+   iload                  3
    divide_by_16384       
-   033                    3
+   iload                  3
    and_16384             
-   034                    5
-   034                    4
-   033                    4
+   istore                 5
+   istore                 4
+   iload                  4
    switch                
       1: LABEL73
       2: LABEL76
@@ -92,84 +96,84 @@ LABEL64:
    jump                   LABEL123
 LABEL73:
    get_settings           20
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL76:
    get_settings           21
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL79:
    get_settings           22
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL82:
    get_settings           23
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL85:
    get_settings           24
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL88:
    get_settings           25
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL91:
    get_settings           298
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL94:
    get_settings           311
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL97:
    get_settings           346
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL100:
    get_settings           414
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL103:
    get_settings           464
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL106:
    get_settings           598
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL109:
    get_settings           662
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL112:
    get_settings           721
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL115:
    get_settings           906
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL118:
    get_settings           1009
-   034                    6
+   istore                 6
    jump                   LABEL123
 LABEL121:
    get_settings           1338
-   034                    6
+   istore                 6
 LABEL123:
-   033                    6
-   033                    5
+   iload                  6
+   iload                  5
    test_bit              
    load_int               1
    if_icmpeq              LABEL129
    jump                   LABEL132
 LABEL129:
    load_int               65280
-   040                    314
+   invoke                 314
    jump                   LABEL145
 LABEL132:
-   033                    1
+   iload                  1
    load_int               331
    if_icmpeq              LABEL136
    jump                   LABEL143
@@ -180,16 +184,16 @@ LABEL136:
    jump                   LABEL143
 LABEL140:
    load_int               65280
-   040                    314
+   invoke                 314
    jump                   LABEL145
 LABEL143:
    load_int               16711680
-   040                    314
+   invoke                 314
 LABEL145:
    jump                   LABEL148
 LABEL146:
    load_int               65280
-   040                    314
+   invoke                 314
 LABEL148:
    load_int               85
    load_int               -2147483645

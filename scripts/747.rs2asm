@@ -1,52 +1,56 @@
+.int_stack_count    14
+.string_stack_count 0
+.int_var_count      15
+.string_var_count   0
    load_string            "Loading..."
-   033                    1
+   iload                  1
    2112                  
    load_int               0
    load_int               0
-   033                    2
+   iload                  2
    widget_put_scroll_widget
    load_int               1
-   033                    2
+   iload                  2
    widget_put_hidden_widget
-   033                    3
+   iload                  3
    102                   
-   033                    3
-   033                    2
+   iload                  3
+   iload                  2
    load_int               792
    load_int               789
    load_int               790
    load_int               791
    load_int               773
    load_int               788
-   040                    31
+   invoke                 31
    load_int               1
-   033                    5
+   iload                  5
    widget_put_hidden_widget
    load_int               1
-   033                    6
+   iload                  6
    widget_put_hidden_widget
    load_int               1
-   033                    7
+   iload                  7
    widget_put_hidden_widget
    load_int               1
-   033                    8
+   iload                  8
    widget_put_hidden_widget
    load_int               1
-   033                    9
+   iload                  9
    widget_put_hidden_widget
-   033                    4
+   iload                  4
    102                   
    load_int               0
-   034                    14
+   istore                 14
 LABEL40:
-   033                    14
+   iload                  14
    load_int               420
    if_icmple              LABEL44
    jump                   LABEL85
 LABEL44:
-   033                    4
+   iload                  4
    load_int               5
-   033                    14
+   iload                  14
    100                   
    load_int               0
    load_int               16
@@ -59,13 +63,13 @@ LABEL44:
    load_int               2
    load_string            "Favourite"
    1300                  
-   033                    14
+   iload                  14
    load_int               300
    if_icmpgt              LABEL63
    jump                   LABEL72
 LABEL63:
    load_string            "<col=ff9040>"
-   033                    14
+   iload                  14
    load_int               300
    isub                  
    int_to_string         
@@ -75,7 +79,7 @@ LABEL63:
    jump                   LABEL78
 LABEL72:
    load_string            "<col=ff9040>"
-   033                    14
+   iload                  14
    int_to_string         
    load_string            "</col>"
    037                    3
@@ -83,28 +87,28 @@ LABEL72:
 LABEL78:
    load_int               1
    widget_put_hidden     
-   033                    14
+   iload                  14
    load_int               1
    iadd                  
-   034                    14
+   istore                 14
    jump                   LABEL40
 LABEL85:
    load_int               841
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   033                    11
-   033                    12
-   033                    13
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   iload                  13
    load_string            "IIIIIIIIIIIIII"
-   033                   
+   iload                  0
    2408                  
    return                

@@ -1,3 +1,7 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      8
+.string_var_count   0
    load_int               300
    load_int               8454145
    widget_get_height_widget
@@ -20,43 +24,43 @@
    load_int               8454157
    102                   
    load_int               0
-   034                    4
+   istore                 4
    load_int               0
-   034                    5
+   istore                 5
    load_int               0
-   034                    6
+   istore                 6
    load_int               0
-   034                    7
+   istore                 7
 LABEL29:
-   033                    7
+   iload                  7
    load_int               31
    if_icmple              LABEL33
    jump                   LABEL137
 LABEL33:
-   033                   
-   033                    1
-   033                    7
-   040                    1260
+   iload                  0
+   iload                  1
+   iload                  7
+   invoke                 1260
    load_int               1
    if_icmpeq              LABEL40
    jump                   LABEL132
 LABEL40:
    load_int               8454157
    load_int               5
-   033                    4
+   iload                  4
    100                   
-   033                    4
+   iload                  4
    load_int               1
    iadd                  
-   034                    4
+   istore                 4
    load_int               8454157
    load_int               4
-   033                    4
+   iload                  4
    100                    1
-   033                    4
+   iload                  4
    load_int               1
    iadd                  
-   034                    4
+   istore                 4
    load_int               0
    load_int               17
    load_int               1
@@ -68,16 +72,16 @@ LABEL40:
    load_int               0
    1001                   1
    load_int               0
-   033                    6
+   iload                  6
    load_int               1
    load_int               0
    1000                  
    load_int               0
-   033                    6
+   iload                  6
    load_int               1
    load_int               0
    1000                   1
-   033                    5
+   iload                  5
    load_int               2
    modulo                
    load_int               0
@@ -103,10 +107,10 @@ LABEL87:
    load_int               1
    load_int               0
    1114                   1
-   033                    2
-   033                    3
-   033                    7
-   040                    1260
+   iload                  2
+   iload                  3
+   iload                  7
+   invoke                 1260
    load_int               1
    if_icmpeq              LABEL106
    jump                   LABEL113
@@ -114,7 +118,7 @@ LABEL106:
    load_int               105
    load_int               115
    load_int               804
-   033                    7
+   iload                  7
    3408                  
    1112                   1
    jump                   LABEL124
@@ -124,29 +128,29 @@ LABEL113:
    load_int               105
    load_int               115
    load_int               804
-   033                    7
+   iload                  7
    3408                  
    load_string            "</col>"
    load_string            "</str>"
    037                    5
    1112                   1
 LABEL124:
-   033                    5
+   iload                  5
    load_int               17
    iadd                  
-   033                    6
+   iload                  6
    load_int               17
    iadd                  
-   034                    6
-   034                    5
+   istore                 6
+   istore                 5
 LABEL132:
-   033                    7
+   iload                  7
    load_int               1
    iadd                  
-   034                    7
+   istore                 7
    jump                   LABEL29
 LABEL137:
-   033                    6
+   iload                  6
    load_int               8454157
    widget_get_height_widget
    if_icmpgt              LABEL142
@@ -157,7 +161,7 @@ LABEL142:
    load_int               8454157
    widget_put_scroll_widget
    load_int               0
-   033                    6
+   iload                  6
    load_int               8454157
    widget_put_scrollwidthheight_widget
    jump                   LABEL181
@@ -172,14 +176,14 @@ LABEL151:
    widget_put_scrollwidthheight_widget
    load_int               8454157
    load_int               5
-   033                    4
+   iload                  4
    100                   
-   033                    4
+   iload                  4
    load_int               1
    iadd                  
-   034                    4
+   istore                 4
    load_int               0
-   033                    6
+   iload                  6
    load_int               1
    load_int               1
    1001                  
@@ -201,20 +205,20 @@ LABEL181:
    load_int               791
    load_int               773
    load_int               788
-   040                    31
-   033                    5
+   invoke                 31
+   iload                  5
    load_int               0
    if_icmple              LABEL194
    jump                   LABEL222
 LABEL194:
    load_int               8454157
    load_int               4
-   033                    4
+   iload                  4
    100                   
-   033                    4
+   iload                  4
    load_int               1
    iadd                  
-   034                    4
+   istore                 4
    load_int               0
    load_int               0
    load_int               1

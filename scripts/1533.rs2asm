@@ -1,47 +1,51 @@
+.int_stack_count    1
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
    load_int               0
-   034                    1
-   033                   
+   istore                 1
+   iload                  0
    load_int               33226764
    if_icmpeq              LABEL6
    jump                   LABEL9
 LABEL6:
    025                    5433
-   034                    1
+   istore                 1
    jump                   LABEL22
 LABEL9:
-   033                   
+   iload                  0
    load_int               33226768
    if_icmpeq              LABEL13
    jump                   LABEL16
 LABEL13:
    025                    5426
-   034                    1
+   istore                 1
    jump                   LABEL22
 LABEL16:
-   033                   
+   iload                  0
    load_int               33226772
    if_icmpeq              LABEL20
    jump                   LABEL22
 LABEL20:
    025                    5427
-   034                    1
+   istore                 1
 LABEL22:
-   033                    1
+   iload                  1
    load_int               0
    if_icmpgt              LABEL26
    jump                   LABEL35
 LABEL26:
-   035                   
+   sload                  0
    load_string            ": "
    load_string            "<col=ffffff>"
-   033                    1
+   iload                  1
    int_to_string         
    load_string            "</col>"
    037                    5
    1112                  
    jump                   LABEL39
 LABEL35:
-   035                   
+   sload                  0
    load_string            ": ---"
    037                    2
    1112                  

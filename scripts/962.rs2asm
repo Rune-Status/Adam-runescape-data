@@ -1,8 +1,12 @@
-   033                    1
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      8
+.string_var_count   0
+   iload                  1
    102                   
-   033                    2
+   iload                  2
    102                   
-   033                    1
+   iload                  1
    widget_get_width_widget
    load_int               10
    load_int               36
@@ -12,35 +16,35 @@
    load_int               1
    isub                  
    idiv                  
-   034                    4
+   istore                 4
    load_int               32
    load_int               10
    iadd                  
-   034                    5
+   istore                 5
    load_int               0
-   034                    6
+   istore                 6
    load_int               105
    load_int               79
    load_int               1124
-   033                    6
+   iload                  6
    3408                  
-   034                    7
+   istore                 7
 LABEL27:
-   033                    7
+   iload                  7
    load_int               -1
    if_icmpne              LABEL31
    jump                   LABEL93
 LABEL31:
-   033                    1
+   iload                  1
    load_int               5
-   033                    6
+   iload                  6
    100                   
    load_int               36
    load_int               32
    load_int               0
    load_int               0
    1001                  
-   033                    7
+   iload                  7
    load_int               10000
    1205                  
    load_int               3355443
@@ -50,7 +54,7 @@ LABEL31:
    load_int               1
    load_string            "Take"
    1300                  
-   033                    7
+   iload                  7
    get_item_stackable    
    load_int               0
    if_icmpeq              LABEL55
@@ -70,7 +74,7 @@ LABEL61:
    load_string            "Examine"
    1300                  
    load_string            "<col=ff9040>"
-   033                    7
+   iload                  7
    get_item_name         
    load_string            "</col>"
    037                    3
@@ -84,21 +88,21 @@ LABEL61:
    1409                  
    load_int               1
    widget_put_hidden     
-   033                    6
+   iload                  6
    load_int               1
    iadd                  
-   034                    6
+   istore                 6
    load_int               105
    load_int               79
    load_int               1124
-   033                    6
+   iload                  6
    3408                  
-   034                    7
+   istore                 7
    jump                   LABEL27
 LABEL93:
-   033                    1
+   iload                  1
    load_int               4
-   033                    6
+   iload                  6
    100                   
    load_int               0
    load_int               50
@@ -124,28 +128,28 @@ LABEL93:
    1112                  
    load_int               1
    widget_put_hidden     
-   033                    2
-   033                    1
+   iload                  2
+   iload                  1
    load_int               792
    load_int               789
    load_int               790
    load_int               791
    load_int               773
    load_int               788
-   040                    31
-   040                    514
+   invoke                 31
+   invoke                 514
    load_int               1
    if_icmpeq              LABEL134
    jump                   LABEL137
 LABEL134:
    load_int               1
    load_int               1
-   040                    299
+   invoke                 299
 LABEL137:
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   040                    965
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   invoke                 965
    return                

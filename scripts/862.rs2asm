@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  0
    load_int               1
    if_icmpne              LABEL4
    jump                   LABEL5
@@ -9,11 +13,11 @@ LABEL5:
    load_int               1
    load_int               0
    3200                  
-   033                    1
+   iload                  1
    102                   
-   033                    1
+   iload                  1
    load_int               0
-   040                    836
+   invoke                 836
    pop_int               
    load_int               16777215
    load_int               8323085
@@ -27,15 +31,15 @@ LABEL5:
    load_int               8323084
    2404                  
    load_int               863
-   033                    1
+   iload                  1
    get_gamecycle         
    load_int               20
    iadd                  
    load_string            "Ii"
-   033                    1
+   iload                  1
    2408                  
-   033                    2
-   033                    3
+   iload                  2
+   iload                  3
    200                   
    load_int               1
    if_icmpeq              LABEL40

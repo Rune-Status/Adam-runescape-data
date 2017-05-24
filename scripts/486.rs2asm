@@ -1,13 +1,17 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    load_int               6
    get_boostedskilllevels
-   033                    1
+   iload                  1
    if_icmpge              LABEL5
    jump                   LABEL25
 LABEL5:
    load_int               65280
    widget_put_textcolor   1
    load_int               93
-   033                    2
+   iload                  2
    3303                  
    load_int               0
    if_icmpgt              LABEL13
@@ -17,13 +21,13 @@ LABEL13:
    widget_put_textcolor  
    load_int               1
    load_string            "Enchant Bolts"
-   033                   
+   iload                  0
    2300                  
    jump                   LABEL24
 LABEL20:
    load_int               16750623
    widget_put_textcolor  
-   033                   
+   iload                  0
    widget_put_actions_null_widget
 LABEL24:
    jump                   LABEL40
@@ -31,7 +35,7 @@ LABEL25:
    load_int               16750623
    widget_put_textcolor   1
    load_int               93
-   033                    2
+   iload                  2
    3303                  
    load_int               0
    if_icmpgt              LABEL33
@@ -44,7 +48,7 @@ LABEL36:
    load_int               16750623
    widget_put_textcolor  
 LABEL38:
-   033                   
+   iload                  0
    widget_put_actions_null_widget
 LABEL40:
    return                

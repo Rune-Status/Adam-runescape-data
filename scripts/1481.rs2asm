@@ -1,3 +1,7 @@
+.int_stack_count    6
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
    load_int               1
    load_int               32309252
    widget_put_hidden_widget
@@ -28,8 +32,8 @@
    load_int               1
    load_int               32309261
    widget_put_hidden_widget
-   033                   
-   033                    2
+   iload                  0
+   iload                  2
    if_icmpeq              LABEL34
    jump                   LABEL41
 LABEL34:
@@ -41,8 +45,8 @@ LABEL34:
    widget_put_hidden_widget
    jump                   LABEL82
 LABEL41:
-   033                   
-   033                    3
+   iload                  0
+   iload                  3
    if_icmpeq              LABEL45
    jump                   LABEL52
 LABEL45:
@@ -54,8 +58,8 @@ LABEL45:
    widget_put_hidden_widget
    jump                   LABEL82
 LABEL52:
-   033                   
-   033                    4
+   iload                  0
+   iload                  4
    if_icmpeq              LABEL56
    jump                   LABEL63
 LABEL56:
@@ -67,8 +71,8 @@ LABEL56:
    widget_put_hidden_widget
    jump                   LABEL82
 LABEL63:
-   033                   
-   033                    5
+   iload                  0
+   iload                  5
    if_icmpeq              LABEL67
    jump                   LABEL74
 LABEL67:
@@ -80,8 +84,8 @@ LABEL67:
    widget_put_hidden_widget
    jump                   LABEL82
 LABEL74:
-   033                    1
-   034                   
+   iload                  1
+   istore                
    load_int               0
    load_int               32309252
    widget_put_hidden_widget
@@ -89,49 +93,49 @@ LABEL74:
    load_int               32309253
    widget_put_hidden_widget
 LABEL82:
-   033                    1
+   iload                  1
    load_string            "Easy"
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   040                    1482
-   033                    2
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   invoke                 1482
+   iload                  2
    load_string            "Medium"
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   040                    1482
-   033                    3
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   invoke                 1482
+   iload                  3
    load_string            "Hard"
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   040                    1482
-   033                    4
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   invoke                 1482
+   iload                  4
    load_string            "Elite"
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   040                    1482
-   033                    5
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   invoke                 1482
+   iload                  5
    load_string            "Master"
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   040                    1482
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   invoke                 1482
    return                

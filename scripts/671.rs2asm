@@ -1,8 +1,12 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
    widget_put_actions_null
    load_int               -1
    load_string            ""
    1408                  
-   033                   
+   iload                  0
    load_int               -1
    if_icmpne              LABEL8
    jump                   LABEL93
@@ -10,7 +14,7 @@ LABEL8:
    load_int               111
    load_int               105
    load_int               55
-   033                   
+   iload                  0
    3408                  
    load_int               0
    if_icmpne              LABEL16
@@ -18,11 +22,11 @@ LABEL8:
 LABEL16:
    load_int               0
    widget_put_opacity    
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    1200                  
    load_string            "<col=ff9040>"
-   033                   
+   iload                  0
    get_item_name         
    load_string            "</col>"
    037                    3
@@ -62,11 +66,11 @@ LABEL16:
 LABEL59:
    load_int               150
    widget_put_opacity    
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    1200                  
    load_string            "<col=ff9040>"
-   033                   
+   iload                  0
    get_item_name         
    load_string            "</col>"
    037                    3

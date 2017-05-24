@@ -1,7 +1,11 @@
-   033                   
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   2
+   iload                  0
    load_int               -1
    if_icmpeq              LABEL7
-   033                    1
+   iload                  1
    load_int               0
    if_icmpeq              LABEL7
    jump                   LABEL9
@@ -9,82 +13,82 @@ LABEL7:
    load_string            ""
    return                
 LABEL9:
-   033                    1
+   iload                  1
    load_int               1
    if_icmpeq              LABEL13
    jump                   LABEL16
 LABEL13:
-   033                   
+   iload                  0
    get_item_name         
    return                
 LABEL16:
    load_string            ""
-   036                   
-   033                    1
+   sstore                
+   iload                  1
    load_int               100000
    if_icmplt              LABEL22
    jump                   LABEL34
 LABEL22:
-   033                    1
+   iload                  1
    load_string            ","
-   040                    46
-   036                   
-   033                   
+   invoke                 46
+   sstore                
+   iload                  0
    get_item_name         
    load_string            "<col=ffffff>"
    load_string            " x "
    load_string            "<col=ffff00>"
-   035                   
+   sload                  0
    037                    5
    return                
 LABEL34:
    load_string            ""
-   036                    1
-   033                    1
+   sstore                 1
+   iload                  1
    load_int               10000000
    if_icmplt              LABEL40
    jump                   LABEL61
 LABEL40:
-   033                    1
+   iload                  1
    load_string            ","
-   040                    46
-   036                   
-   033                    1
+   invoke                 46
+   sstore                
+   iload                  1
    load_int               1000
    idiv                  
    load_string            ","
-   040                    46
-   036                    1
-   033                   
+   invoke                 46
+   sstore                 1
+   iload                  0
    get_item_name         
    load_string            "<col=ffffff>"
    load_string            " x "
    load_string            "<col=ffffff>"
-   035                    1
+   sload                  1
    load_string            "K ("
-   035                   
+   sload                  0
    load_string            ")"
    037                    8
    return                
 LABEL61:
-   033                    1
+   iload                  1
    load_string            ","
-   040                    46
-   036                   
-   033                    1
+   invoke                 46
+   sstore                
+   iload                  1
    load_int               1000000
    idiv                  
    load_string            ","
-   040                    46
-   036                    1
-   033                   
+   invoke                 46
+   sstore                 1
+   iload                  0
    get_item_name         
    load_string            "<col=ffffff>"
    load_string            " x "
    load_string            "<col=00ff80>"
-   035                    1
+   sload                  1
    load_string            "M ("
-   035                   
+   sload                  0
    load_string            ")"
    037                    8
    return                

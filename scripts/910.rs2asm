@@ -1,3 +1,7 @@
+.int_stack_count    5
+.string_stack_count 0
+.int_var_count      11
+.string_var_count   0
    042                    172
    load_int               -1
    if_icmple              LABEL15
@@ -6,7 +10,7 @@
    if_icmple              LABEL15
    load_int               73
    load_int               73
-   033                   
+   iload                  0
    load_int               10551308
    3408                  
    2702                  
@@ -14,41 +18,41 @@
    if_icmpeq              LABEL15
    jump                   LABEL18
 LABEL15:
-   033                    1
+   iload                  1
    102                   
    return                
 LABEL18:
-   033                    2
+   iload                  2
    widget_get_width_widget
-   034                    5
-   033                    2
+   istore                 5
+   iload                  2
    widget_get_height_widget
-   034                    6
-   033                    5
+   istore                 6
+   iload                  5
    load_int               512
    isub                  
    load_int               2
    idiv                  
-   034                    7
-   033                    6
+   istore                 7
+   iload                  6
    load_int               334
    isub                  
    load_int               2
    idiv                  
-   034                    8
-   033                    5
-   033                    7
+   istore                 8
+   iload                  5
+   iload                  7
    load_int               512
    iadd                  
    isub                  
-   034                    9
-   033                    6
-   033                    8
+   istore                 9
+   iload                  6
+   iload                  8
    load_int               334
    iadd                  
    isub                  
-   034                    10
-   033                    1
+   istore                 10
+   iload                  1
    load_int               0
    042                    172
    042                    173
@@ -57,11 +61,11 @@ LABEL18:
    load_int               0
    load_int               0
    load_int               0
-   033                    8
+   iload                  8
    load_int               1
    load_int               0
-   040                    911
-   033                    1
+   invoke                 911
+   iload                  1
    load_int               1
    042                    172
    042                    173
@@ -70,38 +74,38 @@ LABEL18:
    load_int               0
    load_int               2
    load_int               0
-   033                    10
-   033                    4
+   iload                  10
+   iload                  4
    iadd                  
    load_int               1
    load_int               0
-   040                    911
-   033                    1
+   invoke                 911
+   iload                  1
    load_int               2
    042                    172
    042                    173
    load_int               0
-   033                    8
+   iload                  8
    load_int               0
    load_int               0
-   033                    7
+   iload                  7
    load_int               334
    load_int               0
    load_int               0
-   040                    911
-   033                    1
+   invoke                 911
+   iload                  1
    load_int               3
    042                    172
    042                    173
    load_int               0
-   033                    8
+   iload                  8
    load_int               2
    load_int               0
-   033                    9
-   033                    3
+   iload                  9
+   iload                  3
    iadd                  
    load_int               334
    load_int               0
    load_int               0
-   040                    911
+   invoke                 911
    return                

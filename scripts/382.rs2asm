@@ -1,5 +1,9 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   1
    load_string            ""
-   036                   
+   sstore                
    get_settings           173
    load_int               0
    if_icmple              LABEL6
@@ -10,9 +14,9 @@ LABEL6:
    int_to_string         
    load_string            "%"
    037                    3
-   036                   
+   sstore                
    load_int               761
-   033                   
+   iload                  0
    widget_put_textureid_widget
    jump                   LABEL25
 LABEL16:
@@ -21,26 +25,26 @@ LABEL16:
    int_to_string         
    load_string            "%"
    037                    3
-   036                   
+   sstore                
    load_int               762
-   033                   
+   iload                  0
    widget_put_textureid_widget
 LABEL25:
    load_int               526
-   033                   
+   iload                  0
    load_int               -1
-   033                    2
-   035                   
+   iload                  2
+   sload                  0
    load_int               25
    load_int               190
    load_string            "IiIsii"
-   033                   
+   iload                  0
    2412                  
    get_energy            
    int_to_string         
    load_string            "%"
    037                    2
-   033                    1
+   iload                  1
    2112                  
    load_int               0
    043                    2

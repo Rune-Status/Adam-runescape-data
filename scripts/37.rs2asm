@@ -1,192 +1,196 @@
-   033                    1
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
+   iload                  1
    widget_get_scrollheight_widget
-   033                    1
+   iload                  1
    widget_get_height_widget
    isub                  
-   034                    4
-   033                    4
+   istore                 4
+   iload                  4
    load_int               0
    if_icmpeq              LABEL10
    jump                   LABEL12
 LABEL10:
    load_int               1
-   034                    4
+   istore                 4
 LABEL12:
-   033                    2
+   iload                  2
    load_int               0
    if_icmplt              LABEL16
    jump                   LABEL18
 LABEL16:
    load_int               0
-   034                    2
+   istore                 2
 LABEL18:
-   033                    2
-   033                    4
+   iload                  2
+   iload                  4
    if_icmpgt              LABEL22
    jump                   LABEL24
 LABEL22:
-   033                    4
-   034                    2
+   iload                  4
+   istore                 2
 LABEL24:
    load_int               0
-   033                    2
-   033                    1
+   iload                  2
+   iload                  1
    widget_put_scroll_widget
-   033                    1
+   iload                  1
    load_int               10616875
    if_icmpeq              LABEL32
    jump                   LABEL36
 LABEL32:
-   033                    1
+   iload                  1
    widget_get_scrolly_widget
    043                    7
    jump                   LABEL135
 LABEL36:
-   033                    1
+   iload                  1
    load_int               26148870
    if_icmpeq              LABEL40
    jump                   LABEL44
 LABEL40:
-   033                    1
+   iload                  1
    widget_get_scrolly_widget
    043                    10
    jump                   LABEL135
 LABEL44:
-   033                    1
+   iload                  1
    load_int               28114952
    if_icmpeq              LABEL48
    jump                   LABEL52
 LABEL48:
-   033                    1
+   iload                  1
    widget_get_scrolly_widget
    043                    9
    jump                   LABEL135
 LABEL52:
-   033                    1
+   iload                  1
    load_int               786444
    if_icmpeq              LABEL56
    jump                   LABEL60
 LABEL56:
-   033                    1
+   iload                  1
    widget_get_scrolly_widget
    043                    51
    jump                   LABEL135
 LABEL60:
-   033                    1
+   iload                  1
    load_int               24969223
    if_icmpeq              LABEL64
    jump                   LABEL68
 LABEL64:
-   033                    1
+   iload                  1
    widget_get_scrolly_widget
    043                   
    jump                   LABEL135
 LABEL68:
-   033                    1
+   iload                  1
    load_int               4521991
    if_icmpeq              LABEL72
    jump                   LABEL76
 LABEL72:
-   033                    1
+   iload                  1
    widget_get_scrolly_widget
    043                    69
    jump                   LABEL135
 LABEL76:
-   033                    1
+   iload                  1
    load_int               38797314
    if_icmpeq              LABEL83
-   033                    1
+   iload                  1
    load_int               30015491
    if_icmpeq              LABEL83
    jump                   LABEL87
 LABEL83:
-   033                    1
+   iload                  1
    widget_get_scrolly_widget
    043                    58
    jump                   LABEL135
 LABEL87:
-   033                    1
+   iload                  1
    load_int               22609931
    if_icmpeq              LABEL94
-   033                    1
+   iload                  1
    load_int               26214410
    if_icmpeq              LABEL94
    jump                   LABEL98
 LABEL94:
-   033                    1
+   iload                  1
    widget_get_scrolly_widget
    043                    63
    jump                   LABEL135
 LABEL98:
-   033                    1
+   iload                  1
    load_int               11730949
    if_icmpeq              LABEL102
    jump                   LABEL106
 LABEL102:
-   033                    1
+   iload                  1
    widget_get_scrolly_widget
    043                    77
    jump                   LABEL135
 LABEL106:
-   033                    1
+   iload                  1
    load_int               4915202
    if_icmpeq              LABEL110
    jump                   LABEL114
 LABEL110:
-   033                    1
+   iload                  1
    widget_get_scrolly_widget
    043                    80
    jump                   LABEL135
 LABEL114:
-   033                    1
+   iload                  1
    load_int               8454157
    if_icmpeq              LABEL118
    jump                   LABEL122
 LABEL118:
-   033                    1
+   iload                  1
    widget_get_scrolly_widget
    043                    138
    jump                   LABEL135
 LABEL122:
-   033                    1
+   iload                  1
    load_int               32702477
    if_icmpeq              LABEL132
-   033                    1
+   iload                  1
    load_int               33226762
    if_icmpeq              LABEL132
-   033                    1
+   iload                  1
    load_int               32768010
    if_icmpeq              LABEL132
    jump                   LABEL135
 LABEL132:
-   033                    1
+   iload                  1
    widget_get_scrolly_widget
    043                    179
 LABEL135:
-   033                   
+   iload                  0
    widget_get_height_widget
    load_int               32
    isub                  
    widget_get_height     
    isub                  
-   034                    5
-   033                    3
+   istore                 5
+   iload                  3
    load_int               1
    if_icmpeq              LABEL146
    jump                   LABEL183
 LABEL146:
    load_int               0
    load_int               16
-   033                    5
-   033                    2
+   iload                  5
+   iload                  2
    imul                  
-   033                    4
+   iload                  4
    idiv                  
    iadd                  
    load_int               1
    load_int               0
    1000                  
-   033                   
+   iload                  0
    load_int               2
    200                    1
    load_int               1
@@ -199,7 +203,7 @@ LABEL163:
    load_int               0
    1000                   1
 LABEL168:
-   033                   
+   iload                  0
    load_int               3
    200                    1
    load_int               1

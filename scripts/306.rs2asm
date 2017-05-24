@@ -1,67 +1,71 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      10
+.string_var_count   1
+   iload                  0
    102                   
    load_string            "Click on an item to imbue it."
-   036                   
-   033                   
+   sstore                
+   iload                  0
    widget_get_width_widget
-   034                    1
-   035                   
-   033                    1
+   istore                 1
+   sload                  0
+   iload                  1
    load_int               495
    4108                  
    load_int               12
    imul                  
    load_int               5
    iadd                  
-   034                    2
-   033                    1
+   istore                 2
+   iload                  1
    load_int               7
    idiv                  
-   034                    3
-   033                    3
+   istore                 3
+   iload                  3
    load_int               36
    isub                  
    load_int               2
    idiv                  
-   034                    4
+   istore                 4
    load_int               32
    load_int               20
    iadd                  
-   034                    5
+   istore                 5
    load_int               0
-   034                    6
+   istore                 6
    load_int               93
    3304                  
-   034                    7
+   istore                 7
    load_int               0
-   034                    8
+   istore                 8
    load_int               -1
-   034                    9
+   istore                 9
 LABEL39:
-   033                    6
-   033                    7
+   iload                  6
+   iload                  7
    if_icmplt              LABEL43
    jump                   LABEL173
 LABEL43:
    load_int               93
-   033                    6
+   iload                  6
    3301                  
-   034                    9
-   033                   
+   istore                 9
+   iload                  0
    load_int               5
-   033                    6
+   iload                  6
    load_int               2
    imul                  
    100                   
-   033                   
+   iload                  0
    load_int               4
-   033                    6
+   iload                  6
    load_int               2
    imul                  
    load_int               1
    iadd                  
    100                    1
-   033                    9
+   iload                  9
    load_int               -1
    if_icmpne              LABEL65
    jump                   LABEL164
@@ -69,24 +73,24 @@ LABEL65:
    load_int               111
    load_int               79
    load_int               815
-   033                    9
+   iload                  9
    3408                  
    load_int               -1
    if_icmpne              LABEL73
    jump                   LABEL159
 LABEL73:
-   033                    4
-   033                    8
+   iload                  4
+   iload                  8
    load_int               7
    modulo                
-   033                    3
+   iload                  3
    imul                  
    iadd                  
-   033                    2
-   033                    8
+   iload                  2
+   iload                  8
    load_int               7
    idiv                  
-   033                    5
+   iload                  5
    imul                  
    iadd                  
    load_int               0
@@ -97,9 +101,9 @@ LABEL73:
    load_int               0
    load_int               0
    1001                  
-   033                    9
+   iload                  9
    load_int               93
-   033                    6
+   iload                  6
    3302                  
    1200                  
    load_int               3355443
@@ -113,7 +117,7 @@ LABEL73:
    load_string            "Examine"
    1300                  
    load_string            "<col=ff9040>"
-   033                    9
+   iload                  9
    get_item_name         
    037                    2
    widget_put_name       
@@ -153,13 +157,13 @@ LABEL73:
    load_int               0
    load_int               0
    1114                   1
-   033                    9
-   040                    275
+   iload                  9
+   invoke                 275
    1112                   1
-   033                    8
+   iload                  8
    load_int               1
    iadd                  
-   034                    8
+   istore                 8
    jump                   LABEL163
 LABEL159:
    load_int               1
@@ -174,20 +178,20 @@ LABEL164:
    load_int               1
    widget_put_hidden      1
 LABEL168:
-   033                    6
+   iload                  6
    load_int               1
    iadd                  
-   034                    6
+   istore                 6
    jump                   LABEL39
 LABEL173:
-   033                   
+   iload                  0
    load_int               4
-   033                    6
+   iload                  6
    load_int               2
    imul                  
    100                   
-   033                    1
-   033                    2
+   iload                  1
+   iload                  2
    load_int               0
    load_int               0
    1001                  
@@ -206,31 +210,31 @@ LABEL173:
    1114                  
    load_int               1
    1115                  
-   035                   
+   sload                  0
    1112                  
-   033                    8
+   iload                  8
    load_int               0
    if_icmple              LABEL205
    jump                   LABEL244
 LABEL205:
-   033                   
+   iload                  0
    load_int               4
-   033                    6
+   iload                  6
    load_int               2
    imul                  
    load_int               1
    iadd                  
    100                   
-   033                    1
-   033                   
+   iload                  1
+   iload                  0
    widget_get_height_widget
-   033                    2
+   iload                  2
    isub                  
    load_int               0
    load_int               0
    1001                  
    load_int               0
-   033                    2
+   iload                  2
    load_int               0
    load_int               0
    1000                  

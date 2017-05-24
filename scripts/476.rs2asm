@@ -1,38 +1,42 @@
+.int_stack_count    5
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
    get_settings           261
-   033                    3
+   iload                  3
    if_icmpge              LABEL4
    jump                   LABEL28
 LABEL4:
    get_settings           262
-   033                    4
+   iload                  4
    if_icmpge              LABEL8
    jump                   LABEL28
 LABEL8:
-   033                    2
-   033                   
+   iload                  2
+   iload                  0
    widget_put_modelid_1_widget
    load_int               1
    load_string            "Make-1"
-   033                   
+   iload                  0
    2300                  
    load_int               2
    load_string            "Make-5"
-   033                   
+   iload                  0
    2300                  
    load_int               3
    load_string            "Make-All"
-   033                   
+   iload                  0
    2300                  
    load_int               4
    load_string            "Make-X"
-   033                   
+   iload                  0
    2300                  
    jump                   LABEL33
 LABEL28:
-   033                    1
-   033                   
+   iload                  1
+   iload                  0
    widget_put_modelid_1_widget
-   033                   
+   iload                  0
    widget_put_actions_null_widget
 LABEL33:
    return                
