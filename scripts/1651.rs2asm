@@ -8,15 +8,29 @@
    iload                  1
    load_int               -1
    if_icmpne              LABEL7
-   jump                   LABEL63
+   jump                   LABEL74
 LABEL7:
    sload                  1
    iload                  1
    string_indexof        
    load_int               -1
    if_icmpne              LABEL13
-   jump                   LABEL63
+   jump                   LABEL74
 LABEL13:
+   iload                  0
+   load_int               1
+   if_icmpne              LABEL17
+   jump                   LABEL24
+LABEL17:
+   load_int               584
+   load_int               -1
+   invoke                 1701
+   load_int               0
+   if_icmpeq              LABEL23
+   jump                   LABEL24
+LABEL23:
+   return                
+LABEL24:
    load_int               2266
    load_int               1
    load_int               0
@@ -25,14 +39,14 @@ LABEL13:
    iload                  4
    200                   
    load_int               1
-   if_icmpeq              LABEL23
-   jump                   LABEL27
-LABEL23:
+   if_icmpeq              LABEL34
+   jump                   LABEL38
+LABEL34:
    load_int               16777215
    widget_put_textcolor  
    load_string            "..."
    1112                  
-LABEL27:
+LABEL38:
    load_int               -1
    load_string            ""
    iload                  2
@@ -66,9 +80,9 @@ LABEL27:
    iload                  3
    200                   
    load_int               1
-   if_icmpeq              LABEL62
-   jump                   LABEL63
-LABEL62:
+   if_icmpeq              LABEL73
+   jump                   LABEL74
+LABEL73:
    1121                  
-LABEL63:
+LABEL74:
    return                

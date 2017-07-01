@@ -1,0 +1,139 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   2
+   iload                  2
+   iload                  3
+   iadd                  
+   load_int               2
+   idiv                  
+   istore                 4
+   iload                  4
+   045                   
+   istore                 5
+   iload                  4
+   iload                  3
+   045                   
+   046                   
+   iload                  3
+   iload                  5
+   046                   
+   iload                  2
+   istore                 6
+   iload                  2
+   istore                 7
+   load_int               -1
+   istore                 8
+   load_string            ""
+   sstore                
+   load_string            ""
+   sstore                 1
+LABEL26:
+   iload                  7
+   iload                  3
+   if_icmplt              LABEL30
+   jump                   LABEL86
+LABEL30:
+   iload                  1
+   iload                  7
+   045                   
+   load_int               4
+   imul                  
+   load_int               3
+   iadd                  
+   200                   
+   load_int               1
+   if_icmpeq              LABEL41
+   jump                   LABEL44
+LABEL41:
+   widget_get_text       
+   sstore                
+   jump                   LABEL46
+LABEL44:
+   load_string            ""
+   sstore                
+LABEL46:
+   iload                  1
+   iload                  5
+   load_int               4
+   imul                  
+   load_int               3
+   iadd                  
+   200                   
+   load_int               1
+   if_icmpeq              LABEL56
+   jump                   LABEL59
+LABEL56:
+   widget_get_text       
+   sstore                 1
+   jump                   LABEL61
+LABEL59:
+   load_string            ""
+   sstore                 1
+LABEL61:
+   sload                  0
+   sload                  1
+   4107                  
+   load_int               0
+   if_icmple              LABEL67
+   jump                   LABEL81
+LABEL67:
+   iload                  7
+   045                   
+   istore                 8
+   iload                  7
+   iload                  6
+   045                   
+   046                   
+   iload                  6
+   iload                  8
+   046                   
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+LABEL81:
+   iload                  7
+   load_int               1
+   iadd                  
+   istore                 7
+   jump                   LABEL26
+LABEL86:
+   iload                  3
+   iload                  6
+   045                   
+   046                   
+   iload                  6
+   iload                  5
+   046                   
+   iload                  2
+   iload                  6
+   load_int               1
+   isub                  
+   if_icmplt              LABEL99
+   jump                   LABEL106
+LABEL99:
+   load_int               0
+   iload                  1
+   iload                  2
+   iload                  6
+   load_int               1
+   isub                  
+   invoke                 1731
+LABEL106:
+   iload                  6
+   load_int               1
+   iadd                  
+   iload                  3
+   if_icmplt              LABEL112
+   jump                   LABEL119
+LABEL112:
+   load_int               0
+   iload                  1
+   iload                  6
+   load_int               1
+   iadd                  
+   iload                  3
+   invoke                 1731
+LABEL119:
+   return                

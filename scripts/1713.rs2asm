@@ -1,0 +1,128 @@
+.int_stack_count    9
+.string_stack_count 0
+.int_var_count      13
+.string_var_count   0
+   042                    189
+   istore                 9
+   load_int               -1
+   043                    189
+   6616                  
+   iload                  0
+   if_icmpne              LABEL8
+   jump                   LABEL33
+LABEL8:
+   iload                  1
+   iload                  3
+   invoke                 1710
+   6605                  
+   load_int               0
+   if_icmpeq              LABEL15
+   jump                   LABEL16
+LABEL15:
+   return                
+LABEL16:
+   iload                  1
+   iload                  2
+   200                   
+   load_int               1
+   if_icmpeq              LABEL22
+   jump                   LABEL32
+LABEL22:
+   6616                  
+   load_int               -1
+   iload                  1
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   invoke                 1712
+LABEL32:
+   return                
+LABEL33:
+   iload                  9
+   load_int               -1
+   if_icmpeq              LABEL37
+   jump                   LABEL38
+LABEL37:
+   return                
+LABEL38:
+   iload                  1
+   iload                  3
+   invoke                 1710
+   6605                  
+   load_int               0
+   if_icmpeq              LABEL45
+   jump                   LABEL46
+LABEL45:
+   return                
+LABEL46:
+   load_int               -1
+   istore                 10
+   load_int               0
+   istore                 11
+   load_int               105
+   load_int               96
+   load_int               1697
+   iload                  11
+   3408                  
+   istore                 12
+LABEL56:
+   iload                  12
+   load_int               -1
+   if_icmpne              LABEL60
+   jump                   LABEL103
+LABEL60:
+   iload                  12
+   iload                  9
+   invoke                 1715
+   istore                 10
+   iload                  10
+   load_int               -1
+   if_icmpne              LABEL68
+   jump                   LABEL92
+LABEL68:
+   6616                  
+   iload                  12
+   if_icmpne              LABEL72
+   jump                   LABEL89
+LABEL72:
+   iload                  1
+   iload                  2
+   200                   
+   load_int               1
+   if_icmpeq              LABEL78
+   jump                   LABEL88
+LABEL78:
+   iload                  12
+   iload                  10
+   iload                  1
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   invoke                 1712
+LABEL88:
+   jump                   LABEL91
+LABEL89:
+   iload                  10
+   6608                  
+LABEL91:
+   return                
+LABEL92:
+   iload                  11
+   load_int               1
+   iadd                  
+   istore                 11
+   load_int               105
+   load_int               96
+   load_int               1697
+   iload                  11
+   3408                  
+   istore                 12
+   jump                   LABEL56
+LABEL103:
+   return                

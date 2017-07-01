@@ -1,9 +1,9 @@
-.int_stack_count    2
+.int_stack_count    3
 .string_stack_count 0
-.int_var_count      4
+.int_var_count      5
 .string_var_count   0
    iload                  0
-   load_int               0
+   load_int               4
    200                   
    load_int               1
    if_icmpeq              LABEL6
@@ -12,6 +12,42 @@ LABEL6:
    load_int               0
    load_int               0
    load_int               1
+   load_int               0
+   1000                  
+   load_int               0
+   load_int               16
+   load_int               1
+   load_int               0
+   1001                  
+LABEL16:
+   iload                  0
+   load_int               5
+   200                   
+   load_int               1
+   if_icmpeq              LABEL22
+   jump                   LABEL32
+LABEL22:
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               2
+   1000                  
+   load_int               0
+   load_int               16
+   load_int               1
+   load_int               0
+   1001                  
+LABEL32:
+   iload                  0
+   load_int               0
+   200                   
+   load_int               1
+   if_icmpeq              LABEL38
+   jump                   LABEL48
+LABEL38:
+   load_int               0
+   load_int               0
+   load_int               1
    load_int               1
    1000                  
    load_int               0
@@ -19,40 +55,40 @@ LABEL6:
    load_int               1
    load_int               1
    1001                  
-LABEL16:
-   load_int               0
-   istore                 2
+LABEL48:
    load_int               0
    istore                 3
+   load_int               0
+   istore                 4
    iload                  0
    load_int               1
-   200                    1
+   200                   
    load_int               1
-   if_icmpeq              LABEL26
-   jump                   LABEL108
-LABEL26:
+   if_icmpeq              LABEL58
+   jump                   LABEL145
+LABEL58:
    load_int               0
    load_int               16
    load_int               1
    load_int               0
-   1000                   1
+   1000                  
    iload                  1
    widget_get_scrollheight_widget
-   istore                 2
-   iload                  2
+   istore                 3
+   iload                  3
    load_int               0
-   if_icmple              LABEL38
-   jump                   LABEL41
-LABEL38:
+   if_icmple              LABEL70
+   jump                   LABEL73
+LABEL70:
    iload                  1
    widget_get_height_widget
-   istore                 2
-LABEL41:
-   iload                  2
+   istore                 3
+LABEL73:
+   iload                  3
    load_int               0
-   if_icmpgt              LABEL45
-   jump                   LABEL56
-LABEL45:
+   if_icmpgt              LABEL77
+   jump                   LABEL88
+LABEL77:
    iload                  0
    widget_get_height_widget
    load_int               32
@@ -60,104 +96,74 @@ LABEL45:
    iload                  1
    widget_get_height_widget
    imul                  
-   iload                  2
+   iload                  3
    idiv                  
-   istore                 3
-   jump                   LABEL61
-LABEL56:
+   istore                 4
+   jump                   LABEL93
+LABEL88:
    iload                  0
    widget_get_height_widget
    load_int               32
    isub                  
-   istore                 3
-LABEL61:
-   iload                  3
+   istore                 4
+LABEL93:
+   iload                  4
    load_int               10
-   if_icmplt              LABEL65
-   jump                   LABEL67
-LABEL65:
+   if_icmplt              LABEL97
+   jump                   LABEL99
+LABEL97:
    load_int               10
-   istore                 3
-LABEL67:
+   istore                 4
+LABEL99:
    load_int               0
-   iload                  3
+   iload                  4
    load_int               1
    load_int               0
-   1001                   1
+   1001                  
    iload                  0
    load_int               2
-   200                   
+   200                    1
    load_int               1
-   if_icmpeq              LABEL78
-   jump                   LABEL88
-LABEL78:
+   if_icmpeq              LABEL110
+   jump                   LABEL120
+LABEL110:
    load_int               0
-   widget_get_relativey   1
+   widget_get_relativey  
    load_int               1
    load_int               0
-   1000                  
+   1000                   1
    load_int               0
    load_int               5
    load_int               1
    load_int               0
-   1001                  
-LABEL88:
+   1001                   1
+LABEL120:
    iload                  0
    load_int               3
-   200                   
+   200                    1
    load_int               1
-   if_icmpeq              LABEL94
-   jump                   LABEL108
-LABEL94:
+   if_icmpeq              LABEL126
+   jump                   LABEL140
+LABEL126:
    load_int               0
-   widget_get_relativey   1
-   widget_get_height      1
+   widget_get_relativey  
+   iload                  4
    iadd                  
    load_int               5
    isub                  
    load_int               1
    load_int               0
-   1000                  
+   1000                   1
    load_int               0
    load_int               5
    load_int               1
    load_int               0
-   1001                  
-LABEL108:
-   iload                  0
-   load_int               4
-   200                   
-   load_int               1
-   if_icmpeq              LABEL114
-   jump                   LABEL124
-LABEL114:
-   load_int               0
-   load_int               0
-   load_int               1
-   load_int               0
-   1000                  
-   load_int               0
-   load_int               16
-   load_int               1
-   load_int               0
-   1001                  
-LABEL124:
-   iload                  0
-   load_int               5
-   200                   
-   load_int               1
-   if_icmpeq              LABEL130
-   jump                   LABEL140
-LABEL130:
-   load_int               0
-   load_int               0
-   load_int               1
-   load_int               2
-   1000                  
-   load_int               0
-   load_int               16
-   load_int               1
-   load_int               0
-   1001                  
+   1001                   1
 LABEL140:
+   iload                  0
+   iload                  1
+   iload                  2
+   load_int               1
+   invoke                 37
+LABEL145:
    return                

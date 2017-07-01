@@ -1,52 +1,37 @@
-.int_stack_count    0
+.int_stack_count    6
 .string_stack_count 0
-.int_var_count      0
+.int_var_count      6
 .string_var_count   0
-   get_settings           1204
+   load_int               736
+   load_int               0
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  5
+   iload                  3
+   iload                  4
+   load_int               1227
    load_int               1
-   if_icmpeq              LABEL4
-   jump                   LABEL6
-LABEL4:
+   load_string            "iIIIIIIY"
+   load_int               39059456
+   2407                  
+   load_int               738
+   iload                  3
+   iload                  4
+   load_int               1575
+   load_int               1
+   load_string            "IIY"
+   iload                  3
+   2407                  
+   load_int               0
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  5
+   iload                  3
+   iload                  4
    invoke                 737
-   jump                   LABEL35
-LABEL6:
-   get_settings           1204
-   load_int               2
-   if_icmpeq              LABEL10
-   jump                   LABEL12
-LABEL10:
+   iload                  3
+   iload                  4
    invoke                 739
-   jump                   LABEL35
-LABEL12:
-   get_settings           1204
-   load_int               3
-   if_icmpeq              LABEL16
-   jump                   LABEL18
-LABEL16:
-   invoke                 741
-   jump                   LABEL35
-LABEL18:
-   get_settings           1204
-   load_int               5
-   if_icmpeq              LABEL22
-   jump                   LABEL24
-LABEL22:
-   invoke                 1492
-   jump                   LABEL35
-LABEL24:
-   get_settings           1204
-   load_int               6
-   if_icmpeq              LABEL28
-   jump                   LABEL30
-LABEL28:
-   invoke                 1494
-   jump                   LABEL35
-LABEL30:
-   get_settings           1204
-   load_int               7
-   if_icmpeq              LABEL34
-   jump                   LABEL35
-LABEL34:
-   invoke                 1496
-LABEL35:
    return                

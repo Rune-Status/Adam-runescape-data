@@ -2,10 +2,19 @@
 .string_stack_count 0
 .int_var_count      7
 .string_var_count   0
+   load_int               -1
+   load_int               -1
+   invoke                 1701
+   load_int               0
+   if_icmpeq              LABEL6
+   jump                   LABEL7
+LABEL6:
+   return                
+LABEL7:
    load_int               73
    load_int               73
    iload                  1
-   load_int               10551308
+   load_int               10551309
    3408                  
    istore                 3
    load_int               105
@@ -22,49 +31,49 @@
    istore                 4
    iload                  3
    load_int               -1
-   if_icmpne              LABEL22
-   jump                   LABEL42
-LABEL22:
+   if_icmpne              LABEL29
+   jump                   LABEL49
+LABEL29:
    iload                  0
    load_int               13
-   if_icmpeq              LABEL26
-   jump                   LABEL42
-LABEL26:
+   if_icmpeq              LABEL33
+   jump                   LABEL49
+LABEL33:
    025                    4681
    load_int               1
-   if_icmpeq              LABEL30
-   jump                   LABEL42
-LABEL30:
+   if_icmpeq              LABEL37
+   jump                   LABEL49
+LABEL37:
    iload                  4
    2702                  
    load_int               1
-   if_icmpeq              LABEL35
-   jump                   LABEL42
-LABEL35:
+   if_icmpeq              LABEL42
+   jump                   LABEL49
+LABEL42:
    iload                  3
    2702                  
    load_int               1
-   if_icmpeq              LABEL40
-   jump                   LABEL42
-LABEL40:
+   if_icmpeq              LABEL47
+   jump                   LABEL49
+LABEL47:
    3103                  
    return                
-LABEL42:
+LABEL49:
    iload                  0
    invoke                 986
    istore                 5
    iload                  5
    load_int               -1
-   if_icmpeq              LABEL54
+   if_icmpeq              LABEL61
    iload                  5
    025                    3756
    load_int               1
    isub                  
-   if_icmpeq              LABEL54
-   jump                   LABEL55
-LABEL54:
+   if_icmpeq              LABEL61
+   jump                   LABEL62
+LABEL61:
    return                
-LABEL55:
+LABEL62:
    load_int               105
    load_int               73
    load_int               1137
@@ -80,12 +89,12 @@ LABEL55:
    iload                  6
    2702                  
    load_int               1
-   if_icmpeq              LABEL72
-   jump                   LABEL76
-LABEL72:
+   if_icmpeq              LABEL79
+   jump                   LABEL83
+LABEL79:
    iload                  1
    iload                  5
    iload                  2
    invoke                 71
-LABEL76:
+LABEL83:
    return                

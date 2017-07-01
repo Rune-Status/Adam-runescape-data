@@ -1,0 +1,81 @@
+.int_stack_count    12
+.string_stack_count 0
+.int_var_count      15
+.string_var_count   0
+   iload                  1
+   widget_get_width_widget
+   istore                 12
+   iload                  1
+   widget_get_height_widget
+   istore                 13
+   iload                  12
+   iload                  4
+   if_icmpeq              LABEL10
+   jump                   LABEL15
+LABEL10:
+   iload                  13
+   iload                  5
+   if_icmpeq              LABEL14
+   jump                   LABEL15
+LABEL14:
+   return                
+LABEL15:
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  9
+   invoke                 1745
+   iload                  1
+   widget_get_width_widget
+   iload                  1
+   widget_get_height_widget
+   istore                 13
+   istore                 12
+   iload                  7
+   iload                  6
+   042                    182
+   invoke                 231
+   load_int               200
+   iload                  12
+   iload                  8
+   isub                  
+   load_int               2
+   idiv                  
+   load_int               54
+   isub                  
+   invoke                 1046
+   istore                 14
+   iload                  14
+   load_int               20
+   load_int               0
+   load_int               0
+   iload                  10
+   2001                  
+   iload                  10
+   iload                  11
+   200                    1
+   load_int               1
+   if_icmpeq              LABEL53
+   jump                   LABEL55
+LABEL53:
+   iload                  14
+   invoke                 1739
+LABEL55:
+   load_int               1740
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  12
+   iload                  13
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   load_string            "IIIIiiIIiiIi"
+   iload                  0
+   2408                  
+   return                

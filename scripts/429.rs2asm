@@ -20,27 +20,44 @@ LABEL4:
    2414                  
 LABEL15:
    iload                  0
+   load_int               4155
+   if_icmpeq              LABEL19
+   jump                   LABEL29
+LABEL19:
+   load_int               93
+   load_int               21270
+   3303                  
+   load_int               0
+   if_icmpgt              LABEL25
+   jump                   LABEL29
+LABEL25:
+   load_int               21270
+   load_int               21268
+   istore                 1
+   istore                
+LABEL29:
+   iload                  0
    load_int               -1
-   if_icmpeq              LABEL24
+   if_icmpeq              LABEL38
    load_int               93
    iload                  0
    3303                  
    load_int               0
-   if_icmpgt              LABEL24
-   jump                   LABEL62
-LABEL24:
+   if_icmpgt              LABEL38
+   jump                   LABEL76
+LABEL38:
    load_int               93
    load_int               2357
    3303                  
    load_int               0
-   if_icmpgt              LABEL35
+   if_icmpgt              LABEL49
    load_int               93
    load_int               2365
    3303                  
    load_int               0
-   if_icmpgt              LABEL35
-   jump                   LABEL62
-LABEL35:
+   if_icmpgt              LABEL49
+   jump                   LABEL76
+LABEL49:
    iload                  1
    load_int               1
    iload                  3
@@ -67,13 +84,13 @@ LABEL35:
    load_string            "Make-X"
    iload                  3
    2300                  
-   jump                   LABEL68
-LABEL62:
+   jump                   LABEL82
+LABEL76:
    iload                  2
    load_int               1
    iload                  3
    2200                  
    iload                  3
    widget_put_actions_null_widget
-LABEL68:
+LABEL82:
    return                

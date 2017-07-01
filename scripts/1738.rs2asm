@@ -1,0 +1,189 @@
+.int_stack_count    1
+.string_stack_count 1
+.int_var_count      7
+.string_var_count   3
+   load_int               -1
+   istore                 1
+   load_int               -1
+   istore                 2
+   load_int               0
+   istore                 3
+   load_int               0
+   istore                 4
+   load_string            ""
+   sstore                 1
+   load_int               0
+   istore                 5
+   load_string            ""
+   sstore                 2
+   load_int               -1
+   istore                 6
+   sload                  0
+   string_length         
+   load_int               0
+   if_icmpgt              LABEL21
+   jump                   LABEL33
+LABEL21:
+   sload                  0
+   1112                   1
+   load_int               -1
+   load_string            ""
+   1419                  
+   load_int               0
+   get_gamecycle         
+   load_int               2
+   iadd                  
+   043                    187
+   043                    190
+   jump                   LABEL160
+LABEL33:
+   047                    138
+   string_length         
+   istore                 3
+   iload                  3
+   load_int               0
+   if_icmpgt              LABEL40
+   jump                   LABEL144
+LABEL40:
+   iload                  3
+   load_int               1
+   if_icmpgt              LABEL44
+   jump                   LABEL129
+LABEL44:
+   6639                  
+   istore                 2
+   istore                 1
+LABEL47:
+   iload                  6
+   load_int               -1
+   if_icmpeq              LABEL51
+   jump                   LABEL129
+LABEL51:
+   iload                  1
+   load_int               -1
+   if_icmpne              LABEL55
+   jump                   LABEL129
+LABEL55:
+   iload                  1
+   6693                  
+   sstore                 1
+   sload                  1
+   string_length         
+   istore                 4
+   iload                  4
+   load_int               0
+   if_icmpgt              LABEL65
+   jump                   LABEL125
+LABEL65:
+   sload                  1
+   load_string            "<br>"
+   load_string            " "
+   invoke                 1299
+   sstore                 1
+   sload                  1
+   string_length         
+   istore                 4
+   sload                  1
+   tolowercase           
+   047                    138
+   tolowercase           
+   load_int               0
+   string_indexof_from   
+   istore                 5
+   iload                  5
+   load_int               -1
+   if_icmpne              LABEL84
+   jump                   LABEL125
+LABEL84:
+   iload                  5
+   load_int               0
+   if_icmpgt              LABEL88
+   jump                   LABEL95
+LABEL88:
+   load_string            "<col=ff0000>"
+   sload                  1
+   load_int               0
+   iload                  5
+   string_substring      
+   037                    2
+   sstore                 2
+LABEL95:
+   sload                  2
+   load_string            "<col=ffffff>"
+   sload                  1
+   iload                  5
+   iload                  5
+   iload                  3
+   iadd                  
+   string_substring      
+   037                    2
+   concat_string         
+   sstore                 2
+   iload                  5
+   iload                  3
+   iadd                  
+   iload                  4
+   if_icmplt              LABEL112
+   jump                   LABEL123
+LABEL112:
+   sload                  2
+   load_string            "<col=ff0000>"
+   sload                  1
+   iload                  5
+   iload                  3
+   iadd                  
+   iload                  4
+   string_substring      
+   037                    2
+   concat_string         
+   sstore                 2
+LABEL123:
+   iload                  2
+   istore                 6
+LABEL125:
+   6640                  
+   istore                 2
+   istore                 1
+   jump                   LABEL47
+LABEL129:
+   iload                  6
+   load_int               -1
+   if_icmpne              LABEL133
+   jump                   LABEL136
+LABEL133:
+   sload                  2
+   1112                   1
+   jump                   LABEL143
+LABEL136:
+   load_string            "<col=ffffff>"
+   047                    138
+   load_string            "<col=ff0000>"
+   load_string            "*"
+   load_string            "</col>"
+   037                    5
+   1112                   1
+LABEL143:
+   jump                   LABEL149
+LABEL144:
+   load_string            "<col=ff0000>"
+   load_string            "*"
+   load_string            "</col>"
+   037                    3
+   1112                   1
+LABEL149:
+   load_int               1737
+   load_int               -2147483640
+   load_int               -2147483639
+   iload                  0
+   1702                  
+   1702                   1
+   iload                  6
+   load_string            "izIiic"
+   1419                  
+   load_int               1
+   043                    190
+LABEL160:
+   iload                  0
+   widget_get_width_widget
+   invoke                 1739
+   return                

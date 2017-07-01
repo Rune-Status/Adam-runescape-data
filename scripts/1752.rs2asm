@@ -1,0 +1,68 @@
+.int_stack_count    7
+.string_stack_count 0
+.int_var_count      11
+.string_var_count   0
+   load_int               0
+   istore                 7
+   load_int               0
+   istore                 8
+   iload                  1
+   load_int               1
+   if_icmpeq              LABEL8
+   jump                   LABEL15
+LABEL8:
+   iload                  0
+   divide_by_16384       
+   istore                 7
+   iload                  0
+   and_16384             
+   istore                 8
+   jump                   LABEL19
+LABEL15:
+   iload                  0
+   6617                  
+   istore                 8
+   istore                 7
+LABEL19:
+   iload                  2
+   widget_get_width_widget
+   istore                 9
+   iload                  2
+   widget_get_height_widget
+   istore                 10
+   iload                  9
+   iload                  5
+   iload                  6
+   isub                  
+   iload                  7
+   iload                  6
+   isub                  
+   4018                  
+   istore                 7
+   iload                  10
+   iload                  3
+   iload                  4
+   isub                  
+   iload                  8
+   iload                  4
+   isub                  
+   4018                  
+   istore                 8
+   iload                  7
+   iload                  9
+   load_int               2
+   idiv                  
+   isub                  
+   istore                 7
+   iload                  10
+   load_int               2
+   idiv                  
+   iload                  8
+   isub                  
+   istore                 8
+   iload                  7
+   iload                  8
+   return                
+   load_int               0
+   load_int               0
+   return                

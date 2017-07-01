@@ -9,23 +9,32 @@
 LABEL4:
    return                
 LABEL5:
+   load_int               458
+   load_int               -1
+   invoke                 1701
+   load_int               0
+   if_icmpeq              LABEL11
+   jump                   LABEL12
+LABEL11:
+   return                
+LABEL12:
    iload                  0
    load_int               -1
-   if_icmpne              LABEL9
-   jump                   LABEL60
-LABEL9:
+   if_icmpne              LABEL16
+   jump                   LABEL67
+LABEL16:
    sload                  0
    iload                  0
    string_indexof        
    load_int               -1
-   if_icmpne              LABEL20
+   if_icmpne              LABEL27
    sload                  1
    iload                  0
    string_indexof        
    load_int               -1
-   if_icmpne              LABEL20
-   jump                   LABEL60
-LABEL20:
+   if_icmpne              LABEL27
+   jump                   LABEL67
+LABEL27:
    load_int               1632
    load_int               -2147483639
    iload                  1
@@ -42,9 +51,9 @@ LABEL20:
    load_int               4
    200                   
    load_int               1
-   if_icmpeq              LABEL38
-   jump                   LABEL49
-LABEL38:
+   if_icmpeq              LABEL45
+   jump                   LABEL56
+LABEL45:
    load_int               120
    widget_put_opacity    
    load_int               488
@@ -56,7 +65,7 @@ LABEL38:
    iadd                  
    load_string            "Iiii"
    1408                  
-LABEL49:
+LABEL56:
    load_int               2266
    load_int               1
    load_int               0
@@ -65,9 +74,9 @@ LABEL49:
    iload                  1
    200                   
    load_int               1
-   if_icmpeq              LABEL59
-   jump                   LABEL60
-LABEL59:
+   if_icmpeq              LABEL66
+   jump                   LABEL67
+LABEL66:
    1121                  
-LABEL60:
+LABEL67:
    return                

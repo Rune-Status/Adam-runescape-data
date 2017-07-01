@@ -2,43 +2,52 @@
 .string_stack_count 0
 .int_var_count      3
 .string_var_count   0
-   invoke                 900
-   istore                 1
-   iload                  1
    load_int               -1
+   load_int               -1
+   invoke                 1701
+   load_int               0
    if_icmpeq              LABEL6
    jump                   LABEL7
 LABEL6:
    return                
 LABEL7:
+   invoke                 900
+   istore                 1
+   iload                  1
+   load_int               -1
+   if_icmpeq              LABEL13
+   jump                   LABEL14
+LABEL13:
+   return                
+LABEL14:
    load_int               73
    load_int               73
    iload                  1
-   load_int               10551308
+   load_int               10551309
    3408                  
    istore                 2
    iload                  2
    load_int               -1
-   if_icmpne              LABEL17
-   jump                   LABEL32
-LABEL17:
+   if_icmpne              LABEL24
+   jump                   LABEL39
+LABEL24:
    iload                  0
    load_int               13
-   if_icmpeq              LABEL21
-   jump                   LABEL32
-LABEL21:
+   if_icmpeq              LABEL28
+   jump                   LABEL39
+LABEL28:
    025                    4681
    load_int               1
-   if_icmpeq              LABEL25
-   jump                   LABEL32
-LABEL25:
+   if_icmpeq              LABEL32
+   jump                   LABEL39
+LABEL32:
    iload                  2
    2702                  
    load_int               1
-   if_icmpeq              LABEL30
-   jump                   LABEL32
-LABEL30:
+   if_icmpeq              LABEL37
+   jump                   LABEL39
+LABEL37:
    3103                  
    return                
-LABEL32:
+LABEL39:
    return                
