@@ -4,35 +4,35 @@
 .string_var_count   1
    load_string            ""
    sstore                
-   025                    4820
-   025                    4821
+   get_varbit             4820
+   get_varbit             4821
    if_icmpgt              LABEL6
    jump                   LABEL18
 LABEL6:
    load_string            "<col=ffffff>"
-   025                    4820
+   get_varbit             4820
    load_string            ","
    invoke                 46
    load_string            "</col>"
    load_string            "<br>"
-   025                    4821
+   get_varbit             4821
    load_string            ","
    invoke                 46
    037                    5
    sstore                
    jump                   LABEL43
 LABEL18:
-   025                    4820
-   025                    4821
+   get_varbit             4820
+   get_varbit             4821
    if_icmplt              LABEL22
    jump                   LABEL34
 LABEL22:
-   025                    4820
+   get_varbit             4820
    load_string            ","
    invoke                 46
    load_string            "<br>"
    load_string            "<col=ffffff>"
-   025                    4821
+   get_varbit             4821
    load_string            ","
    invoke                 46
    load_string            "</col>"
@@ -40,17 +40,17 @@ LABEL22:
    sstore                
    jump                   LABEL43
 LABEL34:
-   025                    4820
+   get_varbit             4820
    load_string            ","
    invoke                 46
    load_string            "<br>"
-   025                    4821
+   get_varbit             4821
    load_string            ","
    invoke                 46
    037                    3
    sstore                
 LABEL43:
-   025                    4822
+   get_varbit             4822
    load_int               2147483647
    if_icmpge              LABEL47
    jump                   LABEL60
@@ -69,7 +69,7 @@ LABEL47:
    sstore                
    jump                   LABEL130
 LABEL60:
-   025                    4822
+   get_varbit             4822
    load_int               1
    if_icmpgt              LABEL64
    jump                   LABEL81
@@ -84,7 +84,7 @@ LABEL64:
    widget_put_text_widget
    sload                  0
    load_string            "<br>"
-   025                    4822
+   get_varbit             4822
    int_to_string         
    load_string            " mins"
    037                    3
@@ -92,7 +92,7 @@ LABEL64:
    sstore                
    jump                   LABEL130
 LABEL81:
-   025                    4822
+   get_varbit             4822
    load_int               1
    if_icmpeq              LABEL85
    jump                   LABEL100
@@ -113,8 +113,8 @@ LABEL85:
    sstore                
    jump                   LABEL130
 LABEL100:
-   025                    4820
-   025                    4821
+   get_varbit             4820
+   get_varbit             4821
    if_icmpeq              LABEL104
    jump                   LABEL118
 LABEL104:

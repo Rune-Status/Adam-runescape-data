@@ -19,15 +19,15 @@ LABEL8:
    if_icmpeq              LABEL14
    jump                   LABEL27
 LABEL14:
-   025                    4398
+   get_varbit             4398
    load_int               2147483647
    if_icmplt              LABEL18
    jump                   LABEL22
 LABEL18:
-   025                    4398
+   get_varbit             4398
    load_int               1
    iadd                  
-   027                    4398
+   set_varbit             4398
 LABEL22:
    load_int               3929
    load_int               1
@@ -40,15 +40,15 @@ LABEL27:
    if_icmpeq              LABEL31
    jump                   LABEL44
 LABEL31:
-   025                    4398
+   get_varbit             4398
    load_int               1
    if_icmpgt              LABEL35
    jump                   LABEL39
 LABEL35:
-   025                    4398
+   get_varbit             4398
    load_int               1
    isub                  
-   027                    4398
+   set_varbit             4398
 LABEL39:
    load_int               3930
    load_int               1
@@ -61,7 +61,7 @@ LABEL44:
    if_icmpeq              LABEL48
    jump                   LABEL76
 LABEL48:
-   025                    4398
+   get_varbit             4398
    load_int               20
    idiv                  
    istore                 17
@@ -76,18 +76,18 @@ LABEL58:
    load_int               2147483647
    iload                  17
    isub                  
-   025                    4398
+   get_varbit             4398
    if_icmplt              LABEL64
    jump                   LABEL67
 LABEL64:
    load_int               2147483647
-   027                    4398
+   set_varbit             4398
    jump                   LABEL71
 LABEL67:
-   025                    4398
+   get_varbit             4398
    iload                  17
    iadd                  
-   027                    4398
+   set_varbit             4398
 LABEL71:
    load_int               3929
    load_int               1
@@ -100,7 +100,7 @@ LABEL76:
    if_icmpeq              LABEL80
    jump                   LABEL105
 LABEL80:
-   025                    4398
+   get_varbit             4398
    load_int               20
    idiv                  
    istore                 17
@@ -113,18 +113,18 @@ LABEL88:
    istore                 17
 LABEL90:
    iload                  17
-   025                    4398
+   get_varbit             4398
    if_icmpge              LABEL94
    jump                   LABEL97
 LABEL94:
    load_int               1
-   027                    4398
+   set_varbit             4398
    jump                   LABEL101
 LABEL97:
-   025                    4398
+   get_varbit             4398
    iload                  17
    isub                  
-   027                    4398
+   set_varbit             4398
 LABEL101:
    load_int               3930
    load_int               1

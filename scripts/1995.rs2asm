@@ -45,7 +45,7 @@ LABEL32:
    jump                   LABEL39
 LABEL36:
    load_int               45
-   027                    5799
+   set_varbit             5799
    jump                   LABEL52
 LABEL39:
    iload                  2
@@ -54,7 +54,7 @@ LABEL39:
    jump                   LABEL46
 LABEL43:
    load_int               45
-   027                    5799
+   set_varbit             5799
    jump                   LABEL52
 LABEL46:
    iload                  2
@@ -63,19 +63,19 @@ LABEL46:
    jump                   LABEL52
 LABEL50:
    load_int               45
-   027                    5799
+   set_varbit             5799
 LABEL52:
    iload                  3
    iload                  1
    if_icmplt              LABEL56
    jump                   LABEL59
 LABEL56:
-   025                    5799
+   get_varbit             5799
    istore                 4
    jump                   LABEL63
 LABEL59:
    load_int               0
-   025                    5799
+   get_varbit             5799
    isub                  
    istore                 4
 LABEL63:

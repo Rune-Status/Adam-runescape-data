@@ -13,17 +13,17 @@ LABEL5:
    load_int               1
    load_int               0
    3200                  
-   025                    4181
+   get_varbit             4181
    load_int               0
    if_icmpeq              LABEL13
    jump                   LABEL16
 LABEL13:
    load_int               1
-   027                    4181
+   set_varbit             4181
    jump                   LABEL18
 LABEL16:
    load_int               0
-   027                    4181
+   set_varbit             4181
 LABEL18:
    iload                  1
    iload                  2

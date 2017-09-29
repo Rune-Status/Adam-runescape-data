@@ -3,7 +3,7 @@
 .int_var_count      31
 .string_var_count   0
    load_string            "Points: "
-   025                    4893
+   get_varbit             4893
    load_string            ","
    invoke                 46
    037                    2
@@ -56,7 +56,7 @@ LABEL45:
    load_string            "ii"
    iload                  1
    2409                  
-   025                    4893
+   get_varbit             4893
    iload                  23
    if_icmplt              LABEL55
    jump                   LABEL59
@@ -103,7 +103,7 @@ LABEL86:
    load_string            "ii"
    iload                  5
    2409                  
-   025                    4893
+   get_varbit             4893
    iload                  23
    if_icmplt              LABEL99
    get_settings           263
@@ -120,7 +120,7 @@ LABEL103:
    iload                  6
    widget_put_textcolor_widget
 LABEL106:
-   025                    5557
+   get_varbit             5557
    load_int               0
    if_icmpeq              LABEL110
    jump                   LABEL132
@@ -135,7 +135,7 @@ LABEL110:
    load_string            "Buy Auto-weed: 50"
    iload                  20
    widget_put_text_widget
-   025                    4893
+   get_varbit             4893
    load_int               50
    if_icmplt              LABEL124
    jump                   LABEL128
@@ -151,7 +151,7 @@ LABEL128:
 LABEL131:
    jump                   LABEL169
 LABEL132:
-   025                    5557
+   get_varbit             5557
    load_int               1
    if_icmpeq              LABEL136
    jump                   LABEL153
@@ -259,7 +259,7 @@ LABEL216:
    load_string            "ii"
    iload                  7
    2409                  
-   025                    4893
+   get_varbit             4893
    iload                  23
    if_icmplt              LABEL238
    jump                   LABEL242
@@ -291,7 +291,7 @@ LABEL245:
    load_string            "ii"
    iload                  10
    2409                  
-   025                    4893
+   get_varbit             4893
    iload                  23
    if_icmplt              LABEL267
    jump                   LABEL271
@@ -323,7 +323,7 @@ LABEL274:
    load_string            "ii"
    iload                  13
    2409                  
-   025                    4893
+   get_varbit             4893
    iload                  23
    if_icmplt              LABEL296
    jump                   LABEL300
@@ -355,7 +355,7 @@ LABEL303:
    load_string            "ii"
    iload                  16
    2409                  
-   025                    4893
+   get_varbit             4893
    iload                  23
    if_icmplt              LABEL325
    jump                   LABEL329
@@ -417,7 +417,7 @@ LABEL367:
    iload                  30
    load_int               20747
    if_icmpne              LABEL382
-   025                    5370
+   get_varbit             5370
    load_int               2
    if_icmpge              LABEL382
    jump                   LABEL515
@@ -487,7 +487,7 @@ LABEL382:
    iload                  23
    int_to_string         
    widget_put_text        1
-   025                    4893
+   get_varbit             4893
    iload                  23
    if_icmplt              LABEL451
    jump                   LABEL454

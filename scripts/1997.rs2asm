@@ -6,7 +6,7 @@
    load_int               16384
    load_int               0
    load_int               1000
-   025                    5811
+   get_varbit             5811
    4006                  
    load_int               0
    load_int               2
@@ -19,7 +19,7 @@
    if_icmpeq              LABEL16
    jump                   LABEL26
 LABEL16:
-   025                    5811
+   get_varbit             5811
    load_int               0
    if_icmpne              LABEL20
    jump                   LABEL26
@@ -31,7 +31,7 @@ LABEL20:
    iload                  0
    2001                  
 LABEL26:
-   025                    5811
+   get_varbit             5811
    load_int               0
    if_icmpeq              LABEL30
    jump                   LABEL37
@@ -45,7 +45,7 @@ LABEL30:
    return                
 LABEL37:
    load_string            "Oxygen Level: "
-   025                    5811
+   get_varbit             5811
    load_int               10
    idiv                  
    int_to_string         
@@ -53,7 +53,7 @@ LABEL37:
    037                    3
    iload                  1
    widget_put_text_widget
-   025                    5811
+   get_varbit             5811
    load_int               100
    if_icmple              LABEL50
    jump                   LABEL62

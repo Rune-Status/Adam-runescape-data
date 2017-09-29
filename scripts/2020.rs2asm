@@ -8,40 +8,40 @@
    sstore                 1
    load_string            "C: -%"
    sstore                 2
-   025                    5941
+   get_varbit             5941
    load_int               2
    if_icmpge              LABEL10
    jump                   LABEL37
 LABEL10:
-   025                    5939
+   get_varbit             5939
    load_int               127
    if_icmpne              LABEL14
    jump                   LABEL19
 LABEL14:
    load_string            "A: "
-   025                    5939
+   get_varbit             5939
    invoke                 2023
    037                    2
    sstore                
 LABEL19:
-   025                    5940
+   get_varbit             5940
    load_int               127
    if_icmpne              LABEL23
    jump                   LABEL28
 LABEL23:
    load_string            "B: "
-   025                    5940
+   get_varbit             5940
    invoke                 2023
    037                    2
    sstore                 1
 LABEL28:
-   025                    5942
+   get_varbit             5942
    load_int               127
    if_icmpne              LABEL32
    jump                   LABEL37
 LABEL32:
    load_string            "C: "
-   025                    5942
+   get_varbit             5942
    invoke                 2023
    037                    2
    sstore                 2

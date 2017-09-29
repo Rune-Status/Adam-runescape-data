@@ -18,12 +18,12 @@ LABEL5:
    if_icmpeq              LABEL13
    jump                   LABEL20
 LABEL13:
-   025                    3985
+   get_varbit             3985
    iload                  2
    iadd                  
    load_int               4
    modulo                
-   027                    3985
+   set_varbit             3985
    jump                   LABEL41
 LABEL20:
    iload                  1
@@ -31,12 +31,12 @@ LABEL20:
    if_icmpeq              LABEL24
    jump                   LABEL31
 LABEL24:
-   025                    3986
+   get_varbit             3986
    iload                  2
    iadd                  
    load_int               4
    modulo                
-   027                    3986
+   set_varbit             3986
    jump                   LABEL41
 LABEL31:
    iload                  1
@@ -44,11 +44,11 @@ LABEL31:
    if_icmpeq              LABEL35
    jump                   LABEL41
 LABEL35:
-   025                    3987
+   get_varbit             3987
    iload                  2
    iadd                  
    load_int               4
    modulo                
-   027                    3987
+   set_varbit             3987
 LABEL41:
    return                

@@ -9,7 +9,7 @@
    if_icmpeq              LABEL6
    jump                   LABEL68
 LABEL6:
-   025                    5399
+   get_varbit             5399
    load_int               0
    if_icmpeq              LABEL10
    jump                   LABEL65
@@ -76,7 +76,7 @@ LABEL49:
 LABEL64:
    return                
 LABEL65:
-   025                    5402
+   get_varbit             5402
    istore                 5
    jump                   LABEL74
 LABEL68:
@@ -85,7 +85,7 @@ LABEL68:
    if_icmpeq              LABEL72
    jump                   LABEL74
 LABEL72:
-   025                    4930
+   get_varbit             4930
    istore                 5
 LABEL74:
    iload                  5

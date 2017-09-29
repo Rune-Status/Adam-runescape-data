@@ -576,10 +576,10 @@ LABEL513:
    load_string            "Leave Chat"
    iload                  8
    widget_put_text_widget
-   025                    5432
+   get_varbit             5432
    load_int               1
    if_icmpeq              LABEL535
-   025                    4289
+   get_varbit             4289
    load_int               0
    if_icmpne              LABEL535
    jump                   LABEL546

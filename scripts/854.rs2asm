@@ -29,31 +29,31 @@ LABEL14:
    if_icmpeq              LABEL22
    jump                   LABEL32
 LABEL22:
-   025                    2570
+   get_varbit             2570
    load_int               0
    if_icmpeq              LABEL26
    jump                   LABEL29
 LABEL26:
    load_int               1
-   027                    2570
+   set_varbit             2570
    jump                   LABEL31
 LABEL29:
    load_int               0
-   027                    2570
+   set_varbit             2570
 LABEL31:
    jump                   LABEL41
 LABEL32:
-   025                    4608
+   get_varbit             4608
    load_int               0
    if_icmpeq              LABEL36
    jump                   LABEL39
 LABEL36:
    load_int               1
-   027                    4608
+   set_varbit             4608
    jump                   LABEL41
 LABEL39:
    load_int               0
-   027                    4608
+   set_varbit             4608
 LABEL41:
    iload                  2
    iload                  3

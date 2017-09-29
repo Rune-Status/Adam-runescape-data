@@ -2,7 +2,7 @@
 .string_stack_count 0
 .int_var_count      0
 .string_var_count   0
-   025                    4854
+   get_varbit             4854
    load_int               0
    if_icmple              LABEL4
    jump                   LABEL6
@@ -10,7 +10,7 @@ LABEL4:
    load_string            ""
    return                
 LABEL6:
-   025                    4854
+   get_varbit             4854
    load_int               255
    if_icmpge              LABEL10
    jump                   LABEL18
@@ -18,13 +18,13 @@ LABEL10:
    load_int               105
    load_int               115
    load_int               1245
-   025                    4855
+   get_varbit             4855
    3408                  
    load_string            " Ages!"
    037                    2
    return                
 LABEL18:
-   025                    4854
+   get_varbit             4854
    load_int               2
    modulo                
    load_int               1
@@ -34,10 +34,10 @@ LABEL24:
    load_int               105
    load_int               115
    load_int               1245
-   025                    4855
+   get_varbit             4855
    3408                  
    load_string            " "
-   025                    4854
+   get_varbit             4854
    load_int               2
    idiv                  
    int_to_string         
@@ -48,10 +48,10 @@ LABEL37:
    load_int               105
    load_int               115
    load_int               1245
-   025                    4855
+   get_varbit             4855
    3408                  
    load_string            " "
-   025                    4854
+   get_varbit             4854
    load_int               2
    idiv                  
    int_to_string         

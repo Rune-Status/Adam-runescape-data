@@ -78,14 +78,14 @@ LABEL59:
    load_int               3
    load_string            "Withdraw-10"
    1300                  
-   025                    3960
+   get_varbit             3960
    load_int               0
    if_icmpgt              LABEL75
    jump                   LABEL81
 LABEL75:
    load_int               4
    load_string            "Withdraw-"
-   025                    3960
+   get_varbit             3960
    int_to_string         
    037                    2
    1300                  
@@ -99,7 +99,7 @@ LABEL81:
    load_int               7
    load_string            "Withdraw-All-but-1"
    1300                  
-   025                    3755
+   get_varbit             3755
    load_int               0
    if_icmpeq              LABEL94
    jump                   LABEL97

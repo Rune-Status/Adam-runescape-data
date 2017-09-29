@@ -2,7 +2,7 @@
 .string_stack_count 0
 .int_var_count      7
 .string_var_count   0
-   025                    4901
+   get_varbit             4901
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL9
@@ -13,7 +13,7 @@ LABEL4:
    2205                  
    jump                   LABEL31
 LABEL9:
-   025                    4901
+   get_varbit             4901
    load_int               2
    if_icmpeq              LABEL13
    jump                   LABEL18
@@ -24,7 +24,7 @@ LABEL13:
    2205                  
    jump                   LABEL31
 LABEL18:
-   025                    4901
+   get_varbit             4901
    load_int               3
    if_icmpeq              LABEL22
    jump                   LABEL27
@@ -42,12 +42,12 @@ LABEL27:
 LABEL31:
    load_int               100
    istore                 3
-   025                    4900
+   get_varbit             4900
    load_int               100
    if_icmple              LABEL37
    jump                   LABEL39
 LABEL37:
-   025                    4900
+   get_varbit             4900
    istore                 3
 LABEL39:
    iload                  3
@@ -92,13 +92,13 @@ LABEL72:
    iload                  1
    widget_put_textcolor_widget
    load_string            "Points: "
-   025                    4893
+   get_varbit             4893
    load_string            ","
    invoke                 46
    037                    2
    iload                  2
    widget_put_text_widget
-   025                    4893
+   get_varbit             4893
    load_int               1000
    if_icmpge              LABEL89
    jump                   LABEL93

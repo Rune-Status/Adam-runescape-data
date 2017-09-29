@@ -4,10 +4,10 @@
 .string_var_count   0
    load_int               1
    043                    198
-   025                    5811
+   get_varbit             5811
    load_int               100
    if_icmpge              LABEL9
-   025                    5811
+   get_varbit             5811
    load_int               0
    if_icmpeq              LABEL9
    jump                   LABEL19
@@ -31,14 +31,14 @@ LABEL19:
    istore                 6
    load_int               180
    istore                 7
-   025                    5811
+   get_varbit             5811
    load_int               50
    if_icmplt              LABEL31
    jump                   LABEL37
 LABEL31:
    load_int               2
    istore                 4
-   025                    5811
+   get_varbit             5811
    load_int               2
    imul                  
    istore                 5

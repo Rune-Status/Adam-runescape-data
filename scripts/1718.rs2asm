@@ -33,23 +33,23 @@ LABEL21:
    if_icmpeq              LABEL27
    jump                   LABEL48
 LABEL27:
-   025                    5640
+   get_varbit             5640
    iload                  2
    test_bit              
    load_int               1
    if_icmpeq              LABEL33
    jump                   LABEL38
 LABEL33:
-   025                    5640
+   get_varbit             5640
    iload                  2
    clear_bit             
-   027                    5640
+   set_varbit             5640
    jump                   LABEL42
 LABEL38:
-   025                    5640
+   get_varbit             5640
    iload                  2
    set_bit               
-   027                    5640
+   set_varbit             5640
 LABEL42:
    iload                  1
    iload                  2

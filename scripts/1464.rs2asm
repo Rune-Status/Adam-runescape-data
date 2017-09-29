@@ -10,7 +10,7 @@
    widget_put_opacity_widget
    load_string            "Low-Alchemy"
    sstore                
-   025                    5398
+   get_varbit             5398
    load_int               1
    if_icmpeq              LABEL12
    jump                   LABEL54
@@ -100,13 +100,13 @@ LABEL54:
 LABEL93:
    load_string            "Charges: "
    load_int               30
-   025                    4554
+   get_varbit             4554
    isub                  
    int_to_string         
    037                    2
    iload                  4
    widget_put_text_widget
-   025                    4554
+   get_varbit             4554
    load_int               30
    if_icmplt              LABEL105
    jump                   LABEL109

@@ -23,17 +23,17 @@ LABEL11:
    if_icmpeq              LABEL17
    jump                   LABEL62
 LABEL17:
-   025                    4101
+   get_varbit             4101
    iload                  1
    test_bit              
    load_int               1
    if_icmpeq              LABEL23
    jump                   LABEL32
 LABEL23:
-   025                    4101
+   get_varbit             4101
    iload                  1
    clear_bit             
-   027                    4101
+   set_varbit             4101
    iload                  1
    iload                  2
    iload                  5
@@ -66,10 +66,10 @@ LABEL47:
    send_game_message     
    return                
 LABEL54:
-   025                    4101
+   get_varbit             4101
    iload                  1
    set_bit               
-   027                    4101
+   set_varbit             4101
    iload                  1
    iload                  2
    iload                  5

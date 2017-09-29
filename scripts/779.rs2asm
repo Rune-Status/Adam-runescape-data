@@ -2,7 +2,7 @@
 .string_stack_count 0
 .int_var_count      16
 .string_var_count   1
-   025                    4397
+   get_varbit             4397
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL65
@@ -179,7 +179,7 @@ LABEL138:
    jump                   LABEL147
 LABEL144:
    get_settings           1151
-   025                    4396
+   get_varbit             4396
    1205                  
 LABEL147:
    iload                  0
@@ -200,7 +200,7 @@ LABEL156:
    if_icmpeq              LABEL162
    jump                   LABEL166
 LABEL162:
-   025                    4396
+   get_varbit             4396
    sload                  0
    invoke                 46
    widget_put_text       
@@ -212,7 +212,7 @@ LABEL166:
    if_icmpeq              LABEL172
    jump                   LABEL185
 LABEL172:
-   025                    4398
+   get_varbit             4398
    load_int               1
    if_icmpeq              LABEL176
    jump                   LABEL179
@@ -221,22 +221,22 @@ LABEL176:
    widget_put_text       
    jump                   LABEL185
 LABEL179:
-   025                    4398
+   get_varbit             4398
    sload                  0
    invoke                 46
    load_string            " coins"
    037                    2
    widget_put_text       
 LABEL185:
-   025                    4396
+   get_varbit             4396
    load_int               0
    if_icmpgt              LABEL189
    jump                   LABEL211
 LABEL189:
    load_int               2147483647
-   025                    4396
+   get_varbit             4396
    idiv                  
-   025                    4398
+   get_varbit             4398
    if_icmplt              LABEL195
    jump                   LABEL211
 LABEL195:
@@ -259,8 +259,8 @@ LABEL206:
    invoke                 780
    jump                   LABEL273
 LABEL211:
-   025                    4396
-   025                    4398
+   get_varbit             4396
+   get_varbit             4398
    imul                  
    istore                 15
    iload                  0

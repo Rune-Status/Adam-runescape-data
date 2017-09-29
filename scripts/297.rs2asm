@@ -45,14 +45,14 @@ LABEL30:
    load_int               4
    load_string            "Deposit-10"
    1300                  
-   025                    3960
+   get_varbit             3960
    load_int               0
    if_icmpgt              LABEL43
    jump                   LABEL49
 LABEL43:
    load_int               5
    load_string            "Deposit-"
-   025                    3960
+   get_varbit             3960
    int_to_string         
    037                    2
    1300                  

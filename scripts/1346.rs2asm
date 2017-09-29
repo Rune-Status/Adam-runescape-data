@@ -5,12 +5,12 @@
    load_int               5898241
    widget_get_textcolor_widget
    istore                
-   025                    5320
+   get_varbit             5320
    load_int               0
    if_icmple              LABEL7
    jump                   LABEL19
 LABEL7:
-   025                    5316
+   get_varbit             5316
    load_int               0
    if_icmple              LABEL11
    jump                   LABEL19
@@ -55,7 +55,7 @@ LABEL19:
    istore                 9
    get_coordinates       
    divide_by_16384       
-   025                    5320
+   get_varbit             5320
    isub                  
    load_int               2
    pow                   
@@ -64,7 +64,7 @@ LABEL19:
    istore                 2
    get_coordinates       
    and_16384             
-   025                    5316
+   get_varbit             5316
    isub                  
    load_int               2
    pow                   
@@ -83,10 +83,10 @@ LABEL71:
    iload                  3
    istore                 1
 LABEL73:
-   025                    5317
+   get_varbit             5317
    load_int               8
    isub                  
-   025                    5317
+   get_varbit             5317
    load_int               8
    iadd                  
    istore                 5

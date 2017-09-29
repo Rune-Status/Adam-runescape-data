@@ -62,17 +62,17 @@ LABEL46:
    if_icmpeq              LABEL50
    jump                   LABEL64
 LABEL50:
-   025                    26
+   get_varbit             26
    load_int               0
    if_icmpeq              LABEL54
    jump                   LABEL57
 LABEL54:
    load_int               1
-   027                    26
+   set_varbit             26
    jump                   LABEL59
 LABEL57:
    load_int               0
-   027                    26
+   set_varbit             26
 LABEL59:
    invoke                 178
    iload                  2

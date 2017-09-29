@@ -12,7 +12,7 @@
    istore                 15
    iload                  15
    istore                 16
-   025                    5330
+   get_varbit             5330
    iload                  15
    if_icmpgt              LABEL14
    jump                   LABEL53
@@ -61,12 +61,12 @@ LABEL51:
 LABEL52:
    jump                   LABEL121
 LABEL53:
-   025                    5332
+   get_varbit             5332
    load_int               0
    if_icmpeq              LABEL57
    jump                   LABEL94
 LABEL57:
-   025                    5330
+   get_varbit             5330
    load_int               0
    if_icmpeq              LABEL61
    jump                   LABEL94
@@ -146,7 +146,7 @@ LABEL121:
    load_int               -1
    3408                  
    istore                 17
-   025                    5333
+   get_varbit             5333
    load_int               0
    if_icmple              LABEL131
    jump                   LABEL192
@@ -218,7 +218,7 @@ LABEL192:
    load_int               105
    load_int               111
    load_int               250
-   025                    5333
+   get_varbit             5333
    3408                  
    istore                 18
    iload                  18
@@ -228,7 +228,7 @@ LABEL192:
    load_int               105
    load_int               100
    load_int               1423
-   025                    5333
+   get_varbit             5333
    3408                  
    istore                 19
    iload                  19
@@ -236,7 +236,7 @@ LABEL192:
    widget_put_spriteid_widget
    load_int               16384
    load_int               4
-   025                    5331
+   get_varbit             5331
    isub                  
    imul                  
    load_int               65536
@@ -252,7 +252,7 @@ LABEL192:
    if_icmpeq              LABEL228
    jump                   LABEL241
 LABEL228:
-   025                    5330
+   get_varbit             5330
    load_int               0
    if_icmpne              LABEL232
    jump                   LABEL237
@@ -270,7 +270,7 @@ LABEL237:
 LABEL241:
    load_int               255
    istore                 21
-   025                    5335
+   get_varbit             5335
    load_int               0
    test_bit              
    load_int               1
@@ -279,12 +279,12 @@ LABEL241:
 LABEL249:
    load_int               150
    istore                 21
-   025                    5331
+   get_varbit             5331
    load_int               1
    if_icmpeq              LABEL255
    jump                   LABEL264
 LABEL255:
-   025                    5334
+   get_varbit             5334
    load_int               3
    test_bit              
    load_int               1
@@ -296,7 +296,7 @@ LABEL261:
 LABEL263:
    jump                   LABEL292
 LABEL264:
-   025                    5331
+   get_varbit             5331
    load_int               2
    if_icmpeq              LABEL268
    jump                   LABEL271
@@ -305,12 +305,12 @@ LABEL268:
    istore                 21
    jump                   LABEL292
 LABEL271:
-   025                    5331
+   get_varbit             5331
    load_int               3
    if_icmpeq              LABEL275
    jump                   LABEL284
 LABEL275:
-   025                    5334
+   get_varbit             5334
    load_int               1
    test_bit              
    load_int               1
@@ -322,7 +322,7 @@ LABEL281:
 LABEL283:
    jump                   LABEL292
 LABEL284:
-   025                    5334
+   get_varbit             5334
    load_int               0
    test_bit              
    load_int               1
@@ -337,7 +337,7 @@ LABEL292:
    widget_put_opacity_widget
    load_int               255
    istore                 21
-   025                    5335
+   get_varbit             5335
    load_int               2
    test_bit              
    load_int               1
@@ -346,12 +346,12 @@ LABEL292:
 LABEL303:
    load_int               150
    istore                 21
-   025                    5331
+   get_varbit             5331
    load_int               1
    if_icmpeq              LABEL309
    jump                   LABEL318
 LABEL309:
-   025                    5334
+   get_varbit             5334
    load_int               1
    test_bit              
    load_int               1
@@ -363,12 +363,12 @@ LABEL315:
 LABEL317:
    jump                   LABEL346
 LABEL318:
-   025                    5331
+   get_varbit             5331
    load_int               2
    if_icmpeq              LABEL322
    jump                   LABEL331
 LABEL322:
-   025                    5334
+   get_varbit             5334
    load_int               0
    test_bit              
    load_int               1
@@ -380,12 +380,12 @@ LABEL328:
 LABEL330:
    jump                   LABEL346
 LABEL331:
-   025                    5331
+   get_varbit             5331
    load_int               3
    if_icmpeq              LABEL335
    jump                   LABEL344
 LABEL335:
-   025                    5334
+   get_varbit             5334
    load_int               3
    test_bit              
    load_int               1
@@ -405,7 +405,7 @@ LABEL346:
    widget_put_opacity_widget
    load_int               255
    istore                 21
-   025                    5335
+   get_varbit             5335
    load_int               1
    test_bit              
    load_int               1
@@ -414,12 +414,12 @@ LABEL346:
 LABEL357:
    load_int               150
    istore                 21
-   025                    5331
+   get_varbit             5331
    load_int               1
    if_icmpeq              LABEL363
    jump                   LABEL372
 LABEL363:
-   025                    5334
+   get_varbit             5334
    load_int               0
    test_bit              
    load_int               1
@@ -431,12 +431,12 @@ LABEL369:
 LABEL371:
    jump                   LABEL400
 LABEL372:
-   025                    5331
+   get_varbit             5331
    load_int               2
    if_icmpeq              LABEL376
    jump                   LABEL385
 LABEL376:
-   025                    5334
+   get_varbit             5334
    load_int               3
    test_bit              
    load_int               1
@@ -448,7 +448,7 @@ LABEL382:
 LABEL384:
    jump                   LABEL400
 LABEL385:
-   025                    5331
+   get_varbit             5331
    load_int               3
    if_icmpeq              LABEL389
    jump                   LABEL392
@@ -457,7 +457,7 @@ LABEL389:
    istore                 21
    jump                   LABEL400
 LABEL392:
-   025                    5334
+   get_varbit             5334
    load_int               1
    test_bit              
    load_int               1
@@ -472,7 +472,7 @@ LABEL400:
    widget_put_opacity_widget
    load_int               255
    istore                 21
-   025                    5335
+   get_varbit             5335
    load_int               3
    test_bit              
    load_int               1
@@ -481,7 +481,7 @@ LABEL400:
 LABEL411:
    load_int               150
    istore                 21
-   025                    5331
+   get_varbit             5331
    load_int               1
    if_icmpeq              LABEL417
    jump                   LABEL420
@@ -490,12 +490,12 @@ LABEL417:
    istore                 21
    jump                   LABEL454
 LABEL420:
-   025                    5331
+   get_varbit             5331
    load_int               2
    if_icmpeq              LABEL424
    jump                   LABEL433
 LABEL424:
-   025                    5334
+   get_varbit             5334
    load_int               1
    test_bit              
    load_int               1
@@ -507,12 +507,12 @@ LABEL430:
 LABEL432:
    jump                   LABEL454
 LABEL433:
-   025                    5331
+   get_varbit             5331
    load_int               3
    if_icmpeq              LABEL437
    jump                   LABEL446
 LABEL437:
-   025                    5334
+   get_varbit             5334
    load_int               0
    test_bit              
    load_int               1
@@ -524,7 +524,7 @@ LABEL443:
 LABEL445:
    jump                   LABEL454
 LABEL446:
-   025                    5334
+   get_varbit             5334
    load_int               3
    test_bit              
    load_int               1
@@ -537,7 +537,7 @@ LABEL454:
    iload                  21
    iload                  5
    widget_put_opacity_widget
-   025                    5330
+   get_varbit             5330
    iload                  15
    if_icmpgt              LABEL461
    jump                   LABEL505
@@ -587,7 +587,7 @@ LABEL461:
    invoke                 1398
    return                
 LABEL505:
-   025                    5332
+   get_varbit             5332
    load_int               1
    if_icmpeq              LABEL509
    jump                   LABEL599

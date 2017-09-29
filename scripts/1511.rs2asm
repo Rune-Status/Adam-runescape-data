@@ -4,7 +4,7 @@
 .string_var_count   4
    load_string            "Total:"
    sstore                
-   025                    5431
+   get_varbit             5431
    load_string            ","
    invoke                 46
    sstore                 1
@@ -14,12 +14,12 @@
    sstore                 2
    load_string            ""
    sstore                 3
-   025                    5422
+   get_varbit             5422
    load_int               131071
    if_icmplt              LABEL16
    jump                   LABEL21
 LABEL16:
-   025                    5422
+   get_varbit             5422
    load_string            ","
    invoke                 46
    sstore                 3

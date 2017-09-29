@@ -27,7 +27,7 @@ LABEL13:
    imul                  
    load_int               1
    iadd                  
-   027                    5330
+   set_varbit             5330
    jump                   LABEL107
 LABEL24:
    iload                  1
@@ -36,7 +36,7 @@ LABEL24:
    jump                   LABEL31
 LABEL28:
    load_int               1
-   027                    5332
+   set_varbit             5332
    jump                   LABEL107
 LABEL31:
    iload                  1
@@ -44,12 +44,12 @@ LABEL31:
    if_icmpeq              LABEL35
    jump                   LABEL58
 LABEL35:
-   025                    5331
+   get_varbit             5331
    load_int               1
    iadd                  
    load_int               4
    modulo                
-   027                    5331
+   set_varbit             5331
    iload                  1
    load_int               0
    widget_load_child     
@@ -75,12 +75,12 @@ LABEL58:
    if_icmpeq              LABEL62
    jump                   LABEL85
 LABEL62:
-   025                    5331
+   get_varbit             5331
    load_int               3
    iadd                  
    load_int               4
    modulo                
-   027                    5331
+   set_varbit             5331
    iload                  1
    load_int               0
    widget_load_child     
@@ -107,7 +107,7 @@ LABEL85:
    jump                   LABEL92
 LABEL89:
    load_int               0
-   027                    5333
+   set_varbit             5333
    jump                   LABEL107
 LABEL92:
    iload                  1
@@ -117,8 +117,8 @@ LABEL92:
 LABEL96:
    load_int               0
    load_int               0
-   027                    5330
-   027                    5332
+   set_varbit             5330
+   set_varbit             5332
    jump                   LABEL107
 LABEL101:
    iload                  1
@@ -127,7 +127,7 @@ LABEL101:
    jump                   LABEL107
 LABEL105:
    load_int               0
-   027                    5332
+   set_varbit             5332
 LABEL107:
    iload                  2
    iload                  3

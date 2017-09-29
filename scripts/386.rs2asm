@@ -62,17 +62,17 @@ LABEL26:
    widget_put_hidden_widget
    jump                   LABEL439
 LABEL56:
-   025                    5314
+   get_varbit             5314
    load_int               1
    if_icmpeq              LABEL60
    jump                   LABEL88
 LABEL60:
-   025                    5320
+   get_varbit             5320
    load_int               0
    if_icmpgt              LABEL64
    jump                   LABEL80
 LABEL64:
-   025                    5316
+   get_varbit             5316
    load_int               0
    if_icmpgt              LABEL68
    jump                   LABEL80
@@ -110,12 +110,12 @@ LABEL92:
    load_int               16750623
    load_int               5898286
    widget_put_textcolor_widget
-   025                    4165
+   get_varbit             4165
    load_int               4
    if_icmpge              LABEL101
    jump                   LABEL136
 LABEL101:
-   025                    4165
+   get_varbit             4165
    load_int               5
    if_icmpgt              LABEL105
    jump                   LABEL113
@@ -129,7 +129,7 @@ LABEL105:
    widget_put_hidden_widget
    jump                   LABEL124
 LABEL113:
-   025                    4165
+   get_varbit             4165
    load_int               5
    if_icmpeq              LABEL117
    jump                   LABEL124
@@ -163,7 +163,7 @@ LABEL136:
    load_int               5898241
    widget_put_hidden_widget
 LABEL143:
-   025                    4965
+   get_varbit             4965
    load_int               0
    if_icmpgt              LABEL147
    jump                   LABEL192
@@ -186,17 +186,17 @@ LABEL147:
    load_int               0
    load_int               5898287
    widget_put_hidden_widget
-   025                    4965
+   get_varbit             4965
    load_int               60
    if_icmpge              LABEL169
    jump                   LABEL183
 LABEL169:
-   025                    4965
+   get_varbit             4965
    load_int               60
    idiv                  
    int_to_string         
    load_string            "h "
-   025                    4965
+   get_varbit             4965
    load_int               60
    modulo                
    int_to_string         
@@ -206,7 +206,7 @@ LABEL169:
    widget_put_text_widget
    jump                   LABEL191
 LABEL183:
-   025                    4965
+   get_varbit             4965
    load_int               60
    modulo                
    int_to_string         
@@ -222,7 +222,7 @@ LABEL192:
    if_icmpne              LABEL196
    jump                   LABEL257
 LABEL196:
-   025                    4854
+   get_varbit             4854
    load_int               0
    if_icmpgt              LABEL200
    jump                   LABEL230
@@ -287,7 +287,7 @@ LABEL230:
 LABEL256:
    jump                   LABEL301
 LABEL257:
-   025                    4854
+   get_varbit             4854
    load_int               0
    if_icmpgt              LABEL261
    jump                   LABEL283
@@ -364,12 +364,12 @@ LABEL309:
    load_int               1
    load_int               5898285
    widget_put_hidden_widget
-   025                    5701
+   get_varbit             5701
    load_int               1
    if_icmpge              LABEL333
    jump                   LABEL368
 LABEL333:
-   025                    5701
+   get_varbit             5701
    load_int               2
    if_icmpgt              LABEL337
    jump                   LABEL345
@@ -383,7 +383,7 @@ LABEL337:
    widget_put_hidden_widget
    jump                   LABEL356
 LABEL345:
-   025                    5701
+   get_varbit             5701
    load_int               2
    if_icmpeq              LABEL349
    jump                   LABEL356

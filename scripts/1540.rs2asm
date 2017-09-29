@@ -4,17 +4,17 @@
 .string_var_count   1
    load_string            "Party size: "
    load_string            "<col=ffffff>"
-   025                    5424
+   get_varbit             5424
    int_to_string         
    load_string            "</col>"
    037                    4
    widget_put_text       
-   025                    5425
+   get_varbit             5425
    load_int               0
    if_icmpeq              LABEL11
    jump                   LABEL21
 LABEL11:
-   025                    5423
+   get_varbit             5423
    load_int               1
    if_icmpeq              LABEL15
    jump                   LABEL18
@@ -28,7 +28,7 @@ LABEL18:
 LABEL20:
    jump                   LABEL47
 LABEL21:
-   025                    5425
+   get_varbit             5425
    load_int               1
    if_icmpeq              LABEL25
    jump                   LABEL28
@@ -37,7 +37,7 @@ LABEL25:
    widget_put_text        1
    jump                   LABEL47
 LABEL28:
-   025                    5425
+   get_varbit             5425
    load_int               2
    if_icmpeq              LABEL32
    jump                   LABEL35
@@ -46,7 +46,7 @@ LABEL32:
    widget_put_text        1
    jump                   LABEL47
 LABEL35:
-   025                    5425
+   get_varbit             5425
    load_int               3
    if_icmpeq              LABEL39
    jump                   LABEL42
@@ -63,12 +63,12 @@ LABEL42:
 LABEL47:
    load_string            "Start raid"
    sstore                
-   025                    5423
+   get_varbit             5423
    load_int               1
    if_icmpeq              LABEL53
    jump                   LABEL106
 LABEL53:
-   025                    5425
+   get_varbit             5425
    load_int               0
    if_icmpeq              LABEL57
    jump                   LABEL106

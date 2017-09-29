@@ -21,14 +21,14 @@ LABEL11:
    if_icmpeq              LABEL15
    jump                   LABEL20
 LABEL15:
-   025                    4965
+   get_varbit             4965
    load_int               0
    if_icmpgt              LABEL19
    jump                   LABEL20
 LABEL19:
    return                
 LABEL20:
-   025                    4143
+   get_varbit             4143
    load_int               0
    if_icmpeq              LABEL31
    invoke                 1138
