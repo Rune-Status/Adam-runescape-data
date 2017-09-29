@@ -1,0 +1,78 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      8
+.string_var_count   0
+   load_int               1
+   043                    198
+   025                    5811
+   load_int               100
+   if_icmpge              LABEL9
+   025                    5811
+   load_int               0
+   if_icmpeq              LABEL9
+   jump                   LABEL19
+LABEL9:
+   load_int               255
+   iload                  0
+   widget_put_opacity_widget
+   load_int               -1
+   load_string            ""
+   iload                  1
+   2408                  
+   load_int               0
+   043                    198
+   return                
+LABEL19:
+   load_int               1
+   istore                 4
+   load_int               100
+   istore                 5
+   load_int               255
+   istore                 6
+   load_int               180
+   istore                 7
+   025                    5811
+   load_int               50
+   if_icmplt              LABEL31
+   jump                   LABEL37
+LABEL31:
+   load_int               2
+   istore                 4
+   025                    5811
+   load_int               2
+   imul                  
+   istore                 5
+LABEL37:
+   iload                  3
+   iload                  0
+   widget_put_opacity_widget
+   get_gamecycle         
+   iload                  5
+   modulo                
+   iload                  5
+   load_int               2
+   idiv                  
+   if_icmple              LABEL48
+   jump                   LABEL52
+LABEL48:
+   load_int               0
+   iload                  4
+   isub                  
+   istore                 4
+LABEL52:
+   iload                  7
+   iload                  6
+   iload                  3
+   iload                  4
+   iadd                  
+   invoke                 1425
+   istore                 3
+   load_int               1999
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   load_string            "IIii"
+   iload                  1
+   2408                  
+   return                

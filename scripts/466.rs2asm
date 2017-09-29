@@ -4,13 +4,13 @@
 .string_var_count   0
    load_int               812
    iload                  2
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    load_int               -1
    load_string            ""
    iload                  2
    2408                  
    iload                  1
-   102                   
+   widget_unset_children 
    load_int               28
    load_int               1
    iadd                  
@@ -41,7 +41,7 @@ LABEL33:
    iload                  1
    load_int               5
    iload                  4
-   100                   
+   widget_create_child   
    load_int               0
    widget_put_hidden     
    load_int               255
@@ -63,7 +63,7 @@ LABEL54:
    iload                  1
    load_int               5
    iload                  4
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    load_int               0
@@ -121,7 +121,7 @@ LABEL94:
    iload                  1
    iload                  9
    045                   
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL113
    jump                   LABEL280
@@ -146,7 +146,7 @@ LABEL113:
    iload                  1
    load_int               5
    iload                  6
-   100                    1
+   widget_create_child    1
    iload                  6
    load_int               1
    iadd                  
@@ -248,14 +248,14 @@ LABEL226:
    widget_put_opacity     1
    load_int               244
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               0
    load_int               -1
    load_string            "IiiI"
    1403                  
    load_int               244
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               50
    load_int               -1
    load_string            "IiiI"
@@ -263,7 +263,7 @@ LABEL226:
    iload                  1
    load_int               5
    iload                  6
-   100                    1
+   widget_create_child    1
    iload                  6
    load_int               1
    iadd                  
@@ -285,7 +285,7 @@ LABEL226:
    iload                  9
    045                   
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               84
    load_int               1
    load_string            "iIiY"
@@ -295,7 +295,7 @@ LABEL226:
    iload                  9
    045                   
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_string            "iiIi"
    1409                  
 LABEL280:

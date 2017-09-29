@@ -2,7 +2,7 @@
 .string_stack_count 0
 .int_var_count      1
 .string_var_count   0
-   047                    24
+   get_varc_string        24
    string_length         
    load_int               0
    if_icmpgt              LABEL5
@@ -17,8 +17,8 @@ LABEL5:
    if_icmpeq              LABEL13
    jump                   LABEL22
 LABEL13:
-   047                    24
-   047                    136
+   get_varc_string        24
+   get_varc_string        136
    4107                  
    load_int               0
    if_icmpeq              LABEL19
@@ -28,17 +28,17 @@ LABEL19:
    send_game_message     
    jump                   LABEL26
 LABEL22:
-   047                    24
+   get_varc_string        24
    iload                  0
    042                    6
-   5002                  
+   report_player         
 LABEL26:
    042                    140
    load_int               1
    if_icmpeq              LABEL30
    jump                   LABEL32
 LABEL30:
-   047                    24
+   get_varc_string        24
    add_ignore            
 LABEL32:
    iload                  0
@@ -46,13 +46,13 @@ LABEL32:
    if_icmpeq              LABEL36
    jump                   LABEL38
 LABEL36:
-   047                    24
-   048                    136
+   get_varc_string        24
+   put_varc_string        136
 LABEL38:
-   3103                  
+   close_window          
    load_int               0
    load_string            ""
-   048                    24
+   put_varc_string        24
    043                    11
    return                
 LABEL44:

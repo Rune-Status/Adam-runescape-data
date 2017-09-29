@@ -20,13 +20,13 @@ LABEL5:
    iload                  0
    load_int               10551309
    3408                  
-   2702                  
+   widget_get_index_widget
    load_int               0
    if_icmpeq              LABEL20
    jump                   LABEL23
 LABEL20:
    iload                  1
-   102                   
+   widget_unset_children 
    return                
 LABEL23:
    iload                  2
@@ -35,6 +35,49 @@ LABEL23:
    iload                  2
    widget_get_height_widget
    istore                 6
+   load_int               0
+   istore                 7
+   load_int               0
+   istore                 8
+   load_int               0
+   istore                 9
+   load_int               0
+   istore                 10
+   iload                  0
+   load_int               1745
+   if_icmpeq              LABEL41
+   jump                   LABEL70
+LABEL41:
+   iload                  5
+   load_int               512
+   isub                  
+   load_int               2
+   idiv                  
+   load_int               5
+   iadd                  
+   istore                 7
+   iload                  6
+   load_int               334
+   isub                  
+   load_int               2
+   idiv                  
+   load_int               81
+   iadd                  
+   istore                 8
+   iload                  5
+   iload                  7
+   load_int               512
+   iadd                  
+   isub                  
+   istore                 9
+   iload                  6
+   iload                  8
+   load_int               334
+   iadd                  
+   isub                  
+   istore                 10
+   jump                   LABEL94
+LABEL70:
    iload                  5
    load_int               512
    isub                  
@@ -59,6 +102,7 @@ LABEL23:
    iadd                  
    isub                  
    istore                 10
+LABEL94:
    iload                  1
    load_int               0
    042                    172

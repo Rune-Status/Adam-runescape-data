@@ -6,11 +6,11 @@
    iload                  0
    widget_put_hidden_widget
    iload                  0
-   102                   
+   widget_unset_children 
    iload                  0
    load_int               4
    load_int               0
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               1
@@ -30,13 +30,13 @@
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    iload                  0
    sload                  0
    invoke                 1533
    load_int               1532
    iload                  0
-   1702                  
+   widget_get_index      
    sload                  0
    load_int               1430
    load_int               1432
@@ -50,7 +50,7 @@
    jump                   LABEL51
 LABEL46:
    iload                  0
-   1702                  
+   widget_get_index      
    sload                  0
    invoke                 1531
    jump                   LABEL65

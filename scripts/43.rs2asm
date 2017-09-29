@@ -7,22 +7,33 @@
    iload                  2
    load_int               1
    if_icmpeq              LABEL6
-   jump                   LABEL36
+   jump                   LABEL45
 LABEL6:
+   invoke                 900
+   load_int               1745
+   if_icmpeq              LABEL10
+   jump                   LABEL15
+LABEL10:
+   load_int               2277
+   load_int               1
+   load_int               0
+   3200                  
+   return                
+LABEL15:
    042                    75
    load_int               1
-   if_icmpeq              LABEL10
-   jump                   LABEL13
-LABEL10:
+   if_icmpeq              LABEL19
+   jump                   LABEL22
+LABEL19:
    load_int               0
    043                    75
-   jump                   LABEL17
-LABEL13:
+   jump                   LABEL26
+LABEL22:
    load_int               1
    043                    75
    load_string            "Click here to disable zooming using the mouse scroll wheel."
    sstore                
-LABEL17:
+LABEL26:
    042                    75
    iload                  1
    widget_put_hidden_widget
@@ -41,15 +52,15 @@ LABEL17:
    load_string            "I"
    iload                  0
    2404                  
-   jump                   LABEL43
-LABEL36:
+   jump                   LABEL52
+LABEL45:
    iload                  2
    load_int               2
-   if_icmpeq              LABEL40
-   jump                   LABEL43
-LABEL40:
+   if_icmpeq              LABEL49
+   jump                   LABEL52
+LABEL49:
    load_int               256
    load_int               320
    invoke                 42
-LABEL43:
+LABEL52:
    return                

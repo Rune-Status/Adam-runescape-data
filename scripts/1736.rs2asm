@@ -4,14 +4,14 @@
 .string_var_count   0
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL38
 LABEL6:
    iload                  0
    iload                  2
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL12
    jump                   LABEL38
@@ -21,7 +21,7 @@ LABEL12:
    load_int               0
    3200                  
    load_int               297
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               -1
    load_string            ""
    1412                  
@@ -33,12 +33,12 @@ LABEL12:
    1300                  
    load_int               1734
    iload                  0
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
    load_string            "Iii"
    1409                  
    load_string            ""
-   048                    138
+   put_varc_string        138
    load_string            ""
    iload                  0
    invoke                 1738

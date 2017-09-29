@@ -8,7 +8,7 @@
    int_to_string         
    load_string            "</col>"
    037                    4
-   1112                  
+   widget_put_text       
    025                    5425
    load_int               0
    if_icmpeq              LABEL11
@@ -20,11 +20,11 @@ LABEL11:
    jump                   LABEL18
 LABEL15:
    load_string            ""
-   1112                   1
+   widget_put_text        1
    jump                   LABEL20
 LABEL18:
    load_string            "Waiting for your leader to begin the raid..."
-   1112                   1
+   widget_put_text        1
 LABEL20:
    jump                   LABEL47
 LABEL21:
@@ -34,7 +34,7 @@ LABEL21:
    jump                   LABEL28
 LABEL25:
    load_string            "Your party is exploring the upper level..."
-   1112                   1
+   widget_put_text        1
    jump                   LABEL47
 LABEL28:
    025                    5425
@@ -43,7 +43,7 @@ LABEL28:
    jump                   LABEL35
 LABEL32:
    load_string            "Your party has reached the lower level..."
-   1112                   1
+   widget_put_text        1
    jump                   LABEL47
 LABEL35:
    025                    5425
@@ -52,14 +52,14 @@ LABEL35:
    jump                   LABEL42
 LABEL39:
    load_string            "Your party has reached the bottom..."
-   1112                   1
+   widget_put_text        1
    jump                   LABEL47
 LABEL42:
    load_string            "Get out! Get out!"
    load_string            "<br>"
    load_string            "GET OUT!"
    037                    3
-   1112                   1
+   widget_put_text        1
 LABEL47:
    load_string            "Start raid"
    sstore                
@@ -127,7 +127,7 @@ LABEL106:
    iload                  1
    widget_put_hidden_widget
    iload                  1
-   102                   
+   widget_unset_children 
    iload                  1
    widget_put_actions_null_widget
    load_int               -1

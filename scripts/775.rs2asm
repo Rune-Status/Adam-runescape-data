@@ -4,7 +4,7 @@
 .string_var_count   0
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL30
@@ -12,7 +12,7 @@ LABEL6:
    iload                  0
    load_int               5
    iload                  3
-   100                    1
+   widget_create_child    1
    iload                  3
    load_int               1
    iadd                  
@@ -32,7 +32,7 @@ LABEL6:
    load_int               0
    1000                   1
    iload                  2
-   widget_put_textureid   1
+   widget_put_spriteid    1
 LABEL30:
    iload                  3
    return                

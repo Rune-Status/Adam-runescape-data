@@ -739,11 +739,11 @@ LABEL604:
    iload                  7
    invoke                 1385
    iload                  5
-   102                   
+   widget_unset_children 
    iload                  5
    load_int               5
    load_int               0
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               1
@@ -759,7 +759,7 @@ LABEL604:
    load_int               1423
    iload                  10
    3408                  
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               16384
    load_int               4
    iload                  9
@@ -767,11 +767,11 @@ LABEL604:
    imul                  
    load_int               65536
    modulo                
-   1106                  
+   widget_put_textureid  
    iload                  5
    load_int               5
    load_int               1
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               1
@@ -783,7 +783,7 @@ LABEL604:
    load_int               1
    1000                  
    load_int               1040
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               1
    1107                  
    load_int               75
@@ -884,7 +884,7 @@ LABEL762:
    iload                  5
    load_int               5
    load_int               2
-   100                   
+   widget_create_child   
    load_int               17
    load_int               17
    load_int               0
@@ -896,12 +896,12 @@ LABEL762:
    load_int               0
    1000                  
    load_int               1210
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  0
    invoke                 1380
    load_int               1378
    load_int               -2147483645
-   1702                  
+   widget_get_index      
    iload                  0
    load_int               780
    load_int               1
@@ -911,7 +911,7 @@ LABEL762:
    load_int               1381
    load_int               1
    load_int               -2147483645
-   1702                  
+   widget_get_index      
    sload                  0
    load_string            "1Iis"
    iload                  5
@@ -919,7 +919,7 @@ LABEL762:
    load_int               1381
    load_int               0
    load_int               -2147483645
-   1702                  
+   widget_get_index      
    sload                  0
    load_string            "1Iis"
    iload                  5

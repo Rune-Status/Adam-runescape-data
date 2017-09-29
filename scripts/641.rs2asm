@@ -3,7 +3,7 @@
 .int_var_count      13
 .string_var_count   0
    iload                  0
-   102                   
+   widget_unset_children 
    iload                  0
    widget_get_width_widget
    istore                 3
@@ -30,14 +30,14 @@
    istore                 9
 LABEL26:
    iload                  9
-   load_int               36
+   load_int               37
    if_icmple              LABEL30
    jump                   LABEL121
 LABEL30:
    iload                  0
    load_int               5
    iload                  9
-   100                   
+   widget_create_child   
    iload                  9
    load_int               32
    if_icmplt              LABEL38
@@ -150,7 +150,7 @@ LABEL121:
    load_int               0
    istore                 11
    load_int               517
-   3304                  
+   get_inventory_size    
    istore                 12
 LABEL128:
    iload                  11
@@ -161,10 +161,10 @@ LABEL132:
    iload                  0
    load_int               5
    iload                  9
-   100                   
+   widget_create_child   
    load_int               517
    iload                  11
-   3301                  
+   get_itemcontainer_itemid
    istore                 10
    iload                  10
    load_int               -1

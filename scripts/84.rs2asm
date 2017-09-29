@@ -2,7 +2,7 @@
 .string_stack_count 0
 .int_var_count      14
 .string_var_count   12
-   load_int               10616875
+   load_int               10616876
    widget_get_width_widget
    istore                 1
    get_localplayer_name  
@@ -96,13 +96,13 @@ LABEL82:
    load_string            " "
    load_string            "<lt>"
    5022                  
-   4111                  
+   appendtags            
    tolowercase           
    load_string            "<gt>"
    037                    7
    iload                  7
    iload                  8
-   load_int               10616875
+   load_int               10616876
    iload                  1
    load_int               3
    load_int               14
@@ -153,7 +153,7 @@ LABEL136:
    jump                   LABEL497
 LABEL140:
    iload                  9
-   5004                  
+   get_chat_message      
    sstore                 11
    sstore                 10
    sstore                 9
@@ -204,7 +204,7 @@ LABEL166:
    037                    3
    iload                  7
    iload                  8
-   load_int               10616875
+   load_int               10616876
    iload                  1
    load_int               3
    load_int               14
@@ -225,7 +225,7 @@ LABEL186:
    037                    3
    iload                  7
    iload                  8
-   load_int               10616875
+   load_int               10616876
    iload                  1
    load_int               3
    load_int               14
@@ -247,7 +247,7 @@ LABEL206:
    037                    3
    iload                  7
    iload                  8
-   load_int               10616875
+   load_int               10616876
    iload                  1
    load_int               3
    load_int               14
@@ -265,7 +265,7 @@ LABEL227:
    037                    3
    iload                  7
    iload                  8
-   load_int               10616875
+   load_int               10616876
    iload                  1
    load_int               3
    load_int               14
@@ -283,7 +283,7 @@ LABEL244:
    037                    3
    iload                  7
    iload                  8
-   load_int               10616875
+   load_int               10616876
    iload                  1
    load_int               3
    load_int               14
@@ -322,7 +322,7 @@ LABEL276:
    037                    3
    iload                  7
    iload                  8
-   load_int               10616875
+   load_int               10616876
    iload                  1
    load_int               3
    load_int               14
@@ -340,7 +340,7 @@ LABEL297:
    037                    3
    iload                  7
    iload                  8
-   load_int               10616875
+   load_int               10616876
    iload                  1
    load_int               3
    load_int               14
@@ -366,7 +366,7 @@ LABEL314:
    037                    3
    iload                  7
    iload                  8
-   load_int               10616875
+   load_int               10616876
    iload                  1
    load_int               3
    load_int               14
@@ -385,7 +385,7 @@ LABEL339:
    sload                  11
    iload                  7
    iload                  8
-   load_int               10616875
+   load_int               10616876
    iload                  1
    load_int               3
    load_int               14
@@ -407,7 +407,7 @@ LABEL363:
    load_string            "jk :P"
    iload                  7
    iload                  8
-   load_int               10616875
+   load_int               10616876
    iload                  1
    load_int               3
    load_int               14
@@ -422,7 +422,7 @@ LABEL377:
    sload                  11
    iload                  7
    iload                  8
-   load_int               10616875
+   load_int               10616876
    iload                  1
    load_int               3
    load_int               14
@@ -438,7 +438,7 @@ LABEL391:
    sload                  11
    iload                  7
    iload                  8
-   load_int               10616875
+   load_int               10616876
    iload                  1
    load_int               3
    load_int               14
@@ -481,7 +481,7 @@ LABEL409:
    jump                   LABEL459
 LABEL421:
    sload                  9
-   3609                  
+   is_friend             
    load_int               1
    if_icmpeq              LABEL426
    jump                   LABEL431
@@ -515,7 +515,7 @@ LABEL447:
    if_icmpgt              LABEL451
    jump                   LABEL459
 LABEL451:
-   3618                  
+   get_clanchat_rank     
    3616                  
    if_icmpge              LABEL455
    jump                   LABEL459
@@ -564,7 +564,7 @@ LABEL479:
    istore                 8
 LABEL493:
    iload                  9
-   5019                  
+   get_messagenode_next_id
    istore                 9
    jump                   LABEL132
 LABEL497:
@@ -584,33 +584,33 @@ LABEL503:
    load_int               0
    iload                  8
    2001                  
-   load_int               10616875
+   load_int               10616876
    iload                  7
    load_int               2
    imul                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL519
    jump                   LABEL523
 LABEL519:
    load_string            ""
-   1112                  
+   widget_put_text       
    load_int               1
    widget_put_hidden     
 LABEL523:
-   load_int               10616875
+   load_int               10616876
    iload                  7
    load_int               2
    imul                  
    load_int               1
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL533
    jump                   LABEL537
 LABEL533:
    load_string            ""
-   1112                  
+   widget_put_text       
    load_int               1
    widget_put_hidden     
 LABEL537:
@@ -634,7 +634,7 @@ LABEL548:
    iload                  5
    isub                  
    istore                 5
-   load_int               10616875
+   load_int               10616876
    widget_get_height_widget
    istore                 13
    iload                  5
@@ -677,11 +677,11 @@ LABEL571:
    load_int               0
    iload                  8
    2000                  
-   load_int               10616875
+   load_int               10616876
    iload                  7
    load_int               2
    imul                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL603
    jump                   LABEL608
@@ -692,13 +692,13 @@ LABEL603:
    load_int               0
    1000                  
 LABEL608:
-   load_int               10616875
+   load_int               10616876
    iload                  7
    load_int               2
    imul                  
    load_int               1
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL618
    jump                   LABEL623
@@ -713,17 +713,17 @@ LABEL623:
 LABEL624:
    load_int               0
    iload                  13
-   load_int               10616875
+   load_int               10616876
    widget_put_scrollwidthheight_widget
-   load_int               10617376
-   load_int               10616875
+   load_int               10617377
+   load_int               10616876
    042                    7
    iload                  13
    042                    8
    isub                  
    iadd                  
    invoke                 72
-   load_int               10616875
+   load_int               10616876
    widget_get_scrolly_widget
    iload                  13
    043                    8

@@ -10,14 +10,22 @@ LABEL4:
    load_int               0
    return                
 LABEL6:
-   025                    4608
-   load_int               0
+   invoke                 900
+   load_int               1745
    if_icmpeq              LABEL10
    jump                   LABEL12
 LABEL10:
-   load_int               0
+   load_int               1
    return                
 LABEL12:
+   025                    4608
+   load_int               0
+   if_icmpeq              LABEL16
+   jump                   LABEL18
+LABEL16:
+   load_int               0
+   return                
+LABEL18:
    load_int               1
    return                
    load_int               -1

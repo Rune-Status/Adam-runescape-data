@@ -16,11 +16,11 @@ LABEL10:
    return                
 LABEL11:
    iload                  4
-   102                   
+   widget_unset_children 
    iload                  4
    load_int               4
    load_int               0
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    load_int               494
@@ -30,11 +30,11 @@ LABEL11:
    iload                  0
    invoke                 47
    037                    2
-   1112                  
+   widget_put_text       
    iload                  4
    load_int               4
    load_int               1
-   100                   
+   widget_create_child   
    load_int               56
    load_int               32
    load_int               0
@@ -50,7 +50,7 @@ LABEL11:
    load_int               494
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               0
    load_int               0
@@ -59,11 +59,11 @@ LABEL11:
    iload                  2
    int_to_string         
    037                    2
-   1112                  
+   widget_put_text       
    iload                  4
    load_int               4
    load_int               2
-   100                   
+   widget_create_child   
    load_int               56
    load_int               12
    load_int               1
@@ -79,7 +79,7 @@ LABEL11:
    load_int               494
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               0
    load_int               0
    load_int               0
@@ -91,11 +91,11 @@ LABEL11:
    sstore                
    sstore                 1
    sload                  1
-   1112                  
+   widget_put_text       
    iload                  4
    load_int               4
    load_int               3
-   100                   
+   widget_create_child   
    load_int               56
    load_int               12
    load_int               1
@@ -111,17 +111,17 @@ LABEL11:
    load_int               494
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               0
    load_int               0
    load_int               0
    1114                  
    sload                  0
-   1112                  
+   widget_put_text       
    iload                  4
    load_int               5
    load_int               4
-   100                   
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
@@ -136,7 +136,7 @@ LABEL11:
    load_int               1
    1205                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    load_int               1
@@ -159,14 +159,14 @@ LABEL11:
    iload                  0
    iload                  1
    load_int               -2147483645
-   1702                  
+   widget_get_index      
    load_string            "iioIi"
    iload                  4
    2409                  
    iload                  4
    load_int               5
    load_int               5
-   100                   
+   widget_create_child   
    load_int               16
    load_int               16
    load_int               0
@@ -178,7 +178,7 @@ LABEL11:
    load_int               0
    1000                  
    load_int               520
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  3
    load_int               1
    if_icmpeq              LABEL179
@@ -189,7 +189,7 @@ LABEL179:
    iload                  4
    load_int               4
    load_int               6
-   100                   
+   widget_create_child   
    load_int               56
    load_int               32
    load_int               0
@@ -205,13 +205,13 @@ LABEL179:
    load_int               494
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               0
    load_int               0
    load_int               0
    1114                  
    load_string            ""
-   1112                  
+   widget_put_text       
    jump                   LABEL210
 LABEL208:
    load_int               0

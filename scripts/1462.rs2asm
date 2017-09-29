@@ -18,14 +18,14 @@ LABEL8:
    istore                 3
    iload                  0
    iload                  3
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL18
    jump                   LABEL42
 LABEL18:
    load_int               93
    iload                  3
-   3301                  
+   get_itemcontainer_itemid
    istore                 2
    iload                  2
    load_int               -1
@@ -37,7 +37,7 @@ LABEL26:
    iload                  2
    load_int               93
    iload                  3
-   3302                  
+   get_itemcontainer_stacksize
    1200                  
    load_string            "<col=ff9040>"
    iload                  2

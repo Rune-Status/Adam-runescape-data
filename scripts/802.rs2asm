@@ -3,7 +3,7 @@
 .int_var_count      17
 .string_var_count   0
    load_int               15532034
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 3
 LABEL4:
@@ -15,7 +15,7 @@ LABEL8:
    load_int               15532034
    load_int               5
    iload                  3
-   100                   
+   widget_create_child   
    iload                  3
    load_int               1
    iadd                  
@@ -58,13 +58,13 @@ LABEL17:
 LABEL50:
    load_int               15532036
    iload                  2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL56
    jump                   LABEL58
 LABEL56:
    load_int               697
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL58:
    load_int               36
    load_int               10
@@ -98,7 +98,7 @@ LABEL82:
 LABEL86:
    iload                  0
    iload                  3
-   3301                  
+   get_itemcontainer_itemid
    istore                 7
    iload                  7
    load_int               -1
@@ -123,7 +123,7 @@ LABEL94:
    istore                 14
    load_int               15532034
    iload                  3
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL116
    jump                   LABEL144
@@ -168,7 +168,7 @@ LABEL144:
    load_int               15532034
    load_int               5
    iload                  6
-   100                   
+   widget_create_child   
    iload                  6
    load_int               1
    iadd                  
@@ -188,7 +188,7 @@ LABEL144:
    load_int               0
    1000                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    iload                  7
@@ -196,12 +196,12 @@ LABEL144:
    1205                  
    iload                  0
    iload                  3
-   3302                  
+   get_itemcontainer_stacksize
    istore                 8
    load_int               15532034
    load_int               4
    iload                  6
-   100                   
+   widget_create_child   
    iload                  6
    load_int               1
    iadd                  
@@ -229,7 +229,7 @@ LABEL144:
    load_int               494
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               1
    load_int               0
@@ -240,7 +240,7 @@ LABEL144:
    jump                   LABEL228
 LABEL225:
    load_string            "1 coin"
-   1112                  
+   widget_put_text       
    jump                   LABEL234
 LABEL228:
    iload                  8
@@ -248,13 +248,13 @@ LABEL228:
    invoke                 46
    load_string            " coins"
    037                    2
-   1112                  
+   widget_put_text       
 LABEL234:
    jump                   LABEL243
 LABEL235:
    load_int               15532034
    iload                  3
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL241
    jump                   LABEL243
@@ -272,13 +272,13 @@ LABEL248:
 LABEL249:
    load_int               15532036
    iload                  2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL255
    jump                   LABEL257
 LABEL255:
    load_int               699
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL257:
    iload                  4
    load_int               2
@@ -300,7 +300,7 @@ LABEL269:
 LABEL273:
    iload                  0
    iload                  3
-   3301                  
+   get_itemcontainer_itemid
    istore                 7
    iload                  7
    load_int               -1
@@ -325,7 +325,7 @@ LABEL293:
    load_int               15532034
    load_int               5
    iload                  6
-   100                   
+   widget_create_child   
    iload                  6
    load_int               1
    iadd                  
@@ -336,7 +336,7 @@ LABEL293:
    load_int               0
    1001                  
    load_int               1040
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               1
    1107                  
    iload                  3
@@ -369,7 +369,7 @@ LABEL331:
    istore                 16
    load_int               15532034
    iload                  3
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL341
    jump                   LABEL365
@@ -402,7 +402,7 @@ LABEL365:
    load_int               15532034
    load_int               5
    iload                  6
-   100                   
+   widget_create_child   
    iload                  6
    load_int               1
    iadd                  
@@ -418,7 +418,7 @@ LABEL365:
    load_int               0
    1000                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    iload                  7
@@ -427,7 +427,7 @@ LABEL365:
    load_int               15532034
    load_int               4
    iload                  6
-   100                   
+   widget_create_child   
    iload                  6
    load_int               1
    iadd                  
@@ -453,22 +453,22 @@ LABEL365:
    load_int               494
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               0
    load_int               0
    load_int               0
    1114                  
    iload                  7
    get_item_name         
-   1112                  
+   widget_put_text       
    iload                  0
    iload                  3
-   3302                  
+   get_itemcontainer_stacksize
    istore                 8
    load_int               15532034
    load_int               4
    iload                  6
-   100                   
+   widget_create_child   
    iload                  6
    load_int               1
    iadd                  
@@ -494,7 +494,7 @@ LABEL365:
    load_int               495
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               0
    load_int               2
    load_int               0
@@ -508,7 +508,7 @@ LABEL469:
    load_string            "1 coin"
    load_string            "</col>"
    037                    3
-   1112                  
+   widget_put_text       
    jump                   LABEL483
 LABEL475:
    load_string            "<col=ffffff>"
@@ -518,13 +518,13 @@ LABEL475:
    load_string            " coins"
    load_string            "</col>"
    037                    4
-   1112                  
+   widget_put_text       
 LABEL483:
    jump                   LABEL492
 LABEL484:
    load_int               15532034
    iload                  3
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL490
    jump                   LABEL492

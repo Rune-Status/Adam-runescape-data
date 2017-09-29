@@ -3,7 +3,7 @@
 .int_var_count      9
 .string_var_count   0
    iload                  1
-   102                   
+   widget_unset_children 
    load_int               0
    load_int               0
    iload                  1
@@ -32,7 +32,7 @@
    load_string            "IY"
    iload                  1
    2407                  
-   load_int               535
+   load_int               540
    044                    105
    load_int               0
    istore                 6
@@ -42,14 +42,14 @@
    istore                 8
 LABEL38:
    iload                  8
-   load_int               535
+   load_int               540
    if_icmple              LABEL42
    jump                   LABEL70
 LABEL42:
    iload                  1
    load_int               4
    iload                  8
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    load_int               105
@@ -115,7 +115,7 @@ LABEL99:
    istore                 7
    iload                  1
    iload                  7
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL108
    jump                   LABEL126
@@ -146,7 +146,7 @@ LABEL126:
    jump                   LABEL95
 LABEL131:
    iload                  0
-   102                   
+   widget_unset_children 
    iload                  0
    load_int               0
    invoke                 249
@@ -192,7 +192,7 @@ LABEL131:
    iload                  5
    2409                  
    iload                  2
-   102                   
+   widget_unset_children 
    iload                  2
    iload                  1
    load_int               792

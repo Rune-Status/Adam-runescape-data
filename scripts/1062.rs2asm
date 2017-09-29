@@ -39,31 +39,31 @@ LABEL26:
 LABEL29:
    iload                  0
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL35
    jump                   LABEL50
 LABEL35:
    iload                  0
    load_int               1
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL41
    jump                   LABEL50
 LABEL41:
    sload                  0
-   1112                  
+   widget_put_text       
    iload                  4
    widget_put_textcolor  
    iload                  4
    widget_put_textcolor   1
    iload                  2
    int_to_string         
-   1112                   1
+   widget_put_text        1
 LABEL50:
    iload                  0
    load_int               2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL56
    jump                   LABEL59

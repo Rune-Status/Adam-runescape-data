@@ -1,25 +1,42 @@
 .int_stack_count    1
 .string_stack_count 0
-.int_var_count      3
+.int_var_count      4
 .string_var_count   0
    load_int               0
    istore                 1
+   load_int               0
+   istore                 2
    load_int               105
    load_int               79
    load_int               852
-   iload                  1
-   3408                  
-   istore                 2
-LABEL8:
    iload                  2
+   3408                  
+   istore                 3
+LABEL10:
+   iload                  3
    load_int               -1
-   if_icmpne              LABEL12
-   jump                   LABEL66
-LABEL12:
+   if_icmpne              LABEL14
+   jump                   LABEL84
+LABEL14:
    iload                  0
    load_int               5
-   iload                  1
-   100                   
+   iload                  2
+   widget_create_child   
+   get_ismembers         
+   load_int               0
+   if_icmpeq              LABEL22
+   jump                   LABEL30
+LABEL22:
+   iload                  3
+   get_item_ismembers    
+   load_int               1
+   if_icmpeq              LABEL27
+   jump                   LABEL30
+LABEL27:
+   load_int               1
+   widget_put_hidden     
+   jump                   LABEL73
+LABEL30:
    load_int               36
    load_int               32
    load_int               0
@@ -38,11 +55,15 @@ LABEL12:
    load_int               0
    load_int               0
    1000                  
-   iload                  2
+   iload                  1
+   load_int               1
+   iadd                  
+   istore                 1
+   iload                  3
    load_int               1
    1200                  
    load_string            "<col=ff9040>"
-   iload                  2
+   iload                  3
    get_item_name         
    037                    2
    widget_put_name       
@@ -56,19 +77,20 @@ LABEL12:
    load_string            "Examine"
    1300                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
-   iload                  1
+LABEL73:
+   iload                  2
    load_int               1
    iadd                  
-   istore                 1
+   istore                 2
    load_int               105
    load_int               79
    load_int               852
-   iload                  1
+   iload                  2
    3408                  
-   istore                 2
-   jump                   LABEL8
-LABEL66:
+   istore                 3
+   jump                   LABEL10
+LABEL84:
    return                

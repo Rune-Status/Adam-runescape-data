@@ -60,7 +60,7 @@ LABEL26:
    load_int               1
    load_int               5898241
    widget_put_hidden_widget
-   jump                   LABEL368
+   jump                   LABEL439
 LABEL56:
    025                    5314
    load_int               1
@@ -98,7 +98,7 @@ LABEL80:
    load_int               5898241
    widget_put_hidden_widget
 LABEL87:
-   jump                   LABEL368
+   jump                   LABEL439
 LABEL88:
    invoke                 1138
    load_int               1
@@ -203,7 +203,7 @@ LABEL169:
    load_string            "m"
    037                    4
    load_int               5898287
-   2112                  
+   widget_put_text_widget
    jump                   LABEL191
 LABEL183:
    025                    4965
@@ -213,7 +213,7 @@ LABEL183:
    load_string            "min"
    037                    2
    load_int               5898287
-   2112                  
+   widget_put_text_widget
 LABEL191:
    jump                   LABEL301
 LABEL192:
@@ -255,7 +255,7 @@ LABEL200:
    widget_put_hidden_widget
    invoke                 1182
    load_int               5898287
-   2112                  
+   widget_put_text_widget
    jump                   LABEL256
 LABEL230:
    load_int               57
@@ -312,7 +312,7 @@ LABEL261:
    widget_put_hidden_widget
    invoke                 1182
    load_int               5898287
-   2112                  
+   widget_put_text_widget
    jump                   LABEL301
 LABEL283:
    load_int               57
@@ -337,8 +337,88 @@ LABEL301:
    load_int               1
    iload                  3
    invoke                 866
-   jump                   LABEL368
+   jump                   LABEL439
 LABEL305:
+   invoke                 1942
+   load_int               1
+   if_icmpeq              LABEL309
+   jump                   LABEL376
+LABEL309:
+   load_int               57
+   load_int               55
+   load_int               0
+   load_int               0
+   load_int               5898281
+   2001                  
+   load_int               13
+   istore                 4
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               2
+   load_int               5898286
+   2000                  
+   load_int               16776960
+   load_int               5898286
+   widget_put_textcolor_widget
+   load_int               1
+   load_int               5898285
+   widget_put_hidden_widget
+   025                    5701
+   load_int               1
+   if_icmpge              LABEL333
+   jump                   LABEL368
+LABEL333:
+   025                    5701
+   load_int               2
+   if_icmpgt              LABEL337
+   jump                   LABEL345
+LABEL337:
+   load_int               0
+   iload                  3
+   load_int               1
+   invoke                 1434
+   load_int               1
+   load_int               5898252
+   widget_put_hidden_widget
+   jump                   LABEL356
+LABEL345:
+   025                    5701
+   load_int               2
+   if_icmpeq              LABEL349
+   jump                   LABEL356
+LABEL349:
+   load_int               0
+   iload                  3
+   load_int               0
+   invoke                 1434
+   load_int               0
+   load_int               5898252
+   widget_put_hidden_widget
+LABEL356:
+   load_int               0
+   load_int               5898241
+   widget_put_hidden_widget
+   load_int               1
+   load_int               5898241
+   2125                  
+   load_int               1956
+   load_string            ""
+   load_int               5898241
+   2408                  
+   invoke                 1957
+   jump                   LABEL375
+LABEL368:
+   load_int               -1
+   load_string            ""
+   load_int               5898241
+   2408                  
+   load_int               1
+   load_int               5898241
+   widget_put_hidden_widget
+LABEL375:
+   jump                   LABEL439
+LABEL376:
    load_int               57
    load_int               55
    load_int               0
@@ -362,55 +442,55 @@ LABEL305:
    get_coordinates       
    invoke                 568
    load_int               1
-   if_icmpeq              LABEL330
-   jump                   LABEL348
-LABEL330:
+   if_icmpeq              LABEL401
+   jump                   LABEL419
+LABEL401:
    load_int               53482112
    load_int               860869271
    get_coordinates       
    invoke                 247
    load_int               1
-   if_icmpeq              LABEL337
-   jump                   LABEL341
-LABEL337:
+   if_icmpeq              LABEL408
+   jump                   LABEL412
+LABEL408:
    load_int               0
    load_int               5898283
    widget_put_opacity_widget
-   jump                   LABEL344
-LABEL341:
+   jump                   LABEL415
+LABEL412:
    load_int               255
    load_int               5898283
    widget_put_opacity_widget
-LABEL344:
+LABEL415:
    load_int               1
    iload                  3
    invoke                 866
-   jump                   LABEL362
-LABEL348:
+   jump                   LABEL433
+LABEL419:
    load_int               0
    load_int               5898283
    widget_put_opacity_widget
    invoke                 3
    load_int               1
-   if_icmpeq              LABEL355
-   jump                   LABEL359
-LABEL355:
+   if_icmpeq              LABEL426
+   jump                   LABEL430
+LABEL426:
    load_int               0
    iload                  3
    invoke                 866
-   jump                   LABEL362
-LABEL359:
+   jump                   LABEL433
+LABEL430:
    load_int               1
    iload                  3
    invoke                 866
-LABEL362:
+LABEL433:
    load_int               1
    load_int               5898287
    widget_put_hidden_widget
    load_int               1
    load_int               5898241
    widget_put_hidden_widget
-LABEL368:
+LABEL439:
    load_int               0
    iload                  4
    load_int               1
@@ -431,9 +511,9 @@ LABEL368:
    istore                 5
    iload                  5
    load_int               0
-   if_icmpgt              LABEL390
-   jump                   LABEL399
-LABEL390:
+   if_icmpgt              LABEL461
+   jump                   LABEL470
+LABEL461:
    load_int               29
    load_int               170
    iload                  4
@@ -442,13 +522,13 @@ LABEL390:
    load_int               0
    load_int               5898281
    2000                  
-   jump                   LABEL405
-LABEL399:
+   jump                   LABEL476
+LABEL470:
    load_int               0
    load_int               40
    load_int               2
    load_int               2
    load_int               5898281
    2000                  
-LABEL405:
+LABEL476:
    return                

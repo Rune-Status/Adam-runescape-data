@@ -30,7 +30,7 @@ LABEL15:
    load_int               25100291
    load_int               5
    iload                  5
-   100                   
+   widget_create_child   
    load_int               0
    iload                  7
    load_int               1
@@ -42,7 +42,7 @@ LABEL15:
    load_int               0
    1001                  
    load_int               1040
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               1
    1107                  
    iload                  0
@@ -126,7 +126,7 @@ LABEL98:
    load_int               25100291
    load_int               5
    iload                  5
-   100                   
+   widget_create_child   
    iload                  5
    load_int               1
    iadd                  
@@ -150,7 +150,7 @@ LABEL98:
    load_int               25100291
    load_int               4
    iload                  5
-   100                    1
+   widget_create_child    1
    iload                  5
    load_int               1
    iadd                  
@@ -174,7 +174,7 @@ LABEL98:
    load_int               494
    widget_put_fontid      1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_int               0
    load_int               1
    load_int               0
@@ -185,20 +185,20 @@ LABEL98:
    jump                   LABEL179
 LABEL174:
    load_int               1106
-   widget_put_textureid  
+   widget_put_spriteid   
    load_string            "Sold:"
-   1112                   1
+   widget_put_text        1
    jump                   LABEL183
 LABEL179:
    load_int               1108
-   widget_put_textureid  
+   widget_put_spriteid   
    load_string            "Bought:"
-   1112                   1
+   widget_put_text        1
 LABEL183:
    load_int               25100291
    load_int               4
    iload                  5
-   100                   
+   widget_create_child   
    iload                  5
    load_int               1
    iadd                  
@@ -222,7 +222,7 @@ LABEL183:
    load_int               495
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               1
    load_int               0
@@ -242,7 +242,7 @@ LABEL219:
    load_string            ","
    invoke                 46
    037                    6
-   1112                  
+   widget_put_text       
    jump                   LABEL237
 LABEL231:
    load_string            "<col=ffb83f>"
@@ -250,12 +250,12 @@ LABEL231:
    get_item_name         
    load_string            "</col>"
    037                    3
-   1112                  
+   widget_put_text       
 LABEL237:
    load_int               25100291
    load_int               5
    iload                  5
-   100                   
+   widget_create_child   
    iload                  5
    load_int               1
    iadd                  
@@ -277,7 +277,7 @@ LABEL237:
    iadd                  
    istore                 6
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    iload                  1
@@ -286,7 +286,7 @@ LABEL237:
    load_int               25100291
    load_int               4
    iload                  5
-   100                   
+   widget_create_child   
    iload                  5
    load_int               1
    iadd                  
@@ -306,7 +306,7 @@ LABEL237:
    load_int               494
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               1
    load_int               0
@@ -346,11 +346,11 @@ LABEL315:
    load_string            " each"
    load_string            "</col>"
    037                    7
-   1112                  
+   widget_put_text       
    jump                   LABEL331
 LABEL329:
    sload                  0
-   1112                  
+   widget_put_text       
 LABEL331:
    iload                  0
    load_int               1

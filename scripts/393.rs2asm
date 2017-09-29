@@ -29,11 +29,11 @@
    iload                  0
    2404                  
    iload                  0
-   102                   
+   widget_unset_children 
    iload                  0
    load_int               5
    load_int               0
-   100                   
+   widget_create_child   
    load_int               -2
    load_int               -2
    load_int               0
@@ -45,11 +45,11 @@
    load_int               0
    1001                  
    load_int               174
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  0
    load_int               5
    load_int               1
-   100                   
+   widget_create_child   
    load_int               28
    load_int               -2
    load_int               0
@@ -61,11 +61,11 @@
    load_int               0
    1001                  
    load_int               175
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  0
    load_int               5
    load_int               2
-   100                   
+   widget_create_child   
    load_int               3
    iload                  3
    iadd                  
@@ -83,15 +83,15 @@
    load_int               255
    iload                  4
    3408                  
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  0
    load_int               4
    load_int               3
-   100                   
+   widget_create_child   
    iload                  0
    load_int               4
    load_int               4
-   100                    1
+   widget_create_child    1
    load_int               32
    load_int               4
    load_int               0
@@ -129,23 +129,23 @@
    load_int               0
    1114                   1
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
-   1115                   1
-   iload                  4
-   iload                  0
-   sload                  0
-   iload                  1
-   invoke                 395
+   widget_put_text_shadowed 1
    load_int               394
    iload                  4
    iload                  0
    sload                  0
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
    iload                  1
    iload                  4
+   load_int               0
+   load_int               2
    load_int               1
+   load_int               4
+   load_int               6
+   load_int               6
    load_string            "SIsiiIY"
    iload                  0
    2415                  
@@ -153,12 +153,41 @@
    iload                  4
    iload                  0
    sload                  0
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
    iload                  1
    load_int               427
-   load_int               1
+   load_int               1588
+   load_int               1437
+   load_int               1438
+   load_int               1439
+   load_int               1436
+   load_int               1435
+   load_int               1440
+   load_int               1453
+   load_int               1447
+   load_int               1452
+   load_int               1443
+   load_int               1449
+   load_int               1441
+   load_int               1442
+   load_int               1444
+   load_int               1450
+   load_int               1457
+   load_int               1445
+   load_int               1446
+   load_int               1454
+   load_int               1455
+   load_int               1456
+   load_int               1451
+   load_int               1448
+   load_int               25
    load_string            "SIsiiIY"
    iload                  0
    2407                  
+   iload                  4
+   iload                  0
+   sload                  0
+   iload                  1
+   invoke                 395
    return                

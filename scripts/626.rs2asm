@@ -18,7 +18,7 @@
    load_int               22609931
    load_int               3
    042                    43
-   100                   
+   widget_create_child   
    042                    43
    load_int               1
    iadd                  
@@ -37,7 +37,7 @@
    load_int               22609931
    load_int               3
    042                    43
-   100                   
+   widget_create_child   
    042                    43
    load_int               1
    iadd                  
@@ -54,7 +54,7 @@
    load_int               22609931
    load_int               3
    042                    43
-   100                   
+   widget_create_child   
    042                    43
    load_int               1
    iadd                  
@@ -100,7 +100,7 @@ LABEL93:
    load_int               22609931
    load_int               4
    042                    43
-   100                   
+   widget_create_child   
    042                    43
    load_int               1
    iadd                  
@@ -128,9 +128,9 @@ LABEL93:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    sload                  1
-   1112                  
+   widget_put_text       
    sload                  0
    invoke                 632
    sstore                
@@ -147,7 +147,7 @@ LABEL93:
    load_int               22609931
    load_int               4
    042                    43
-   100                   
+   widget_create_child   
    042                    43
    load_int               1
    iadd                  
@@ -175,9 +175,9 @@ LABEL93:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    sload                  1
-   1112                  
+   widget_put_text       
    load_string            ""
    sstore                 2
    sload                  0
@@ -697,7 +697,7 @@ LABEL634:
 LABEL641:
    load_int               22609931
    iload                  37
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL647
    jump                   LABEL649
@@ -726,7 +726,7 @@ LABEL665:
    load_int               22609931
    load_int               4
    042                    43
-   100                   
+   widget_create_child   
    042                    43
    load_int               1
    iadd                  
@@ -734,7 +734,7 @@ LABEL665:
    load_int               22609931
    load_int               4
    042                    43
-   100                    1
+   widget_create_child    1
    042                    43
    load_int               1
    iadd                  
@@ -816,11 +816,11 @@ LABEL738:
    load_int               0
    1114                   1
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    sload                  1
-   1112                  
+   widget_put_text       
    load_string            ","
    sstore                 1
    iload                  41
@@ -847,11 +847,11 @@ LABEL763:
    invoke                 46
    load_string            ")"
    037                    6
-   1112                   1
+   widget_put_text        1
    load_int               22609931
    load_int               5
    042                    43
-   100                   
+   widget_create_child   
    042                    43
    load_int               1
    iadd                  
@@ -885,11 +885,11 @@ LABEL763:
    jump                   LABEL820
 LABEL817:
    load_int               897
-   widget_put_textureid  
+   widget_put_spriteid   
    jump                   LABEL822
 LABEL820:
    load_int               297
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL822:
    load_int               1
    1107                  
@@ -902,7 +902,7 @@ LABEL825:
    invoke                 46
    load_string            ")"
    037                    3
-   1112                   1
+   widget_put_text        1
 LABEL833:
    iload                  41
    load_int               1
@@ -924,7 +924,7 @@ LABEL842:
    istore                 39
    load_int               22609931
    iload                  37
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL856
    jump                   LABEL861
@@ -939,7 +939,7 @@ LABEL861:
    iload                  37
    load_int               1
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL869
    jump                   LABEL874
@@ -954,7 +954,7 @@ LABEL874:
    iload                  37
    load_int               2
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL882
    jump                   LABEL891

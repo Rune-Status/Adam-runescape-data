@@ -9,12 +9,12 @@
 LABEL4:
    load_string            "Trade modified"
    iload                  3
-   2112                  
+   widget_put_text_widget
    jump                   LABEL11
 LABEL8:
    load_string            ""
    iload                  3
-   2112                  
+   widget_put_text_widget
 LABEL11:
    025                    4375
    load_int               1
@@ -23,12 +23,12 @@ LABEL11:
 LABEL15:
    load_string            "Trade modified"
    iload                  5
-   2112                  
+   widget_put_text_widget
    jump                   LABEL22
 LABEL19:
    load_string            ""
    iload                  5
-   2112                  
+   widget_put_text_widget
 LABEL22:
    load_int               4
    044                    105
@@ -201,7 +201,7 @@ LABEL183:
 LABEL187:
    iload                  2
    iload                  15
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL193
    jump                   LABEL286
@@ -210,14 +210,14 @@ LABEL193:
    iload                  0
    iload                  15
    iadd                  
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL201
    jump                   LABEL286
 LABEL201:
    load_int               90
    iload                  15
-   3301                  
+   get_itemcontainer_itemid
    istore                 9
    iload                  9
    load_int               -1
@@ -226,7 +226,7 @@ LABEL201:
 LABEL209:
    load_int               90
    iload                  15
-   3302                  
+   get_itemcontainer_stacksize
    istore                 10
    load_int               0
    widget_put_hidden     
@@ -442,7 +442,7 @@ LABEL415:
 LABEL419:
    iload                  4
    iload                  15
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL425
    jump                   LABEL503
@@ -451,14 +451,14 @@ LABEL425:
    iload                  0
    iload                  15
    iadd                  
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL433
    jump                   LABEL503
 LABEL433:
    load_int               90
    iload                  15
-   3313                  
+   get_itemcontainer_itemid_2
    istore                 9
    iload                  9
    load_int               -1
@@ -467,7 +467,7 @@ LABEL433:
 LABEL441:
    load_int               90
    iload                  15
-   3314                  
+   get_itemcontainer_stacksize_2
    istore                 10
    load_int               0
    widget_put_hidden     

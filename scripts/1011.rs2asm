@@ -3,13 +3,13 @@
 .int_var_count      25
 .string_var_count   2
    iload                  0
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 24
    iload                  0
    load_int               5
    iload                  24
-   100                   
+   widget_create_child   
    iload                  24
    load_int               1
    iadd                  
@@ -25,7 +25,7 @@
    load_int               2
    1000                  
    load_int               297
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               1
    1107                  
    load_int               1030
@@ -57,7 +57,7 @@
    iload                  0
    load_int               3
    iload                  24
-   100                   
+   widget_create_child   
    iload                  24
    load_int               1
    iadd                  
@@ -92,7 +92,7 @@
    iload                  0
    load_int               3
    iload                  24
-   100                   
+   widget_create_child   
    iload                  24
    load_int               1
    iadd                  
@@ -114,7 +114,7 @@
    iload                  0
    load_int               5
    iload                  24
-   100                   
+   widget_create_child   
    iload                  24
    load_int               1
    iadd                  
@@ -132,7 +132,7 @@
    iload                  0
    load_int               4
    iload                  24
-   100                   
+   widget_create_child   
    iload                  24
    load_int               1
    iadd                  
@@ -150,7 +150,7 @@
    load_int               495
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               1
    load_int               0
@@ -158,7 +158,7 @@
    iload                  0
    load_int               4
    iload                  24
-   100                   
+   widget_create_child   
    iload                  24
    load_int               1
    iadd                  
@@ -176,7 +176,7 @@
    load_int               16750623
    widget_put_textcolor  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               496
    widget_put_fontid     
    load_int               1
@@ -184,7 +184,7 @@
    load_int               0
    1114                  
    sload                  0
-   1112                  
+   widget_put_text       
    iload                  0
    invoke                 1013
    return                

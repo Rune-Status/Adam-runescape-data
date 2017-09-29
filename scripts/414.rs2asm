@@ -13,7 +13,7 @@
    iload                  3
    widget_put_hidden_widget
    iload                  5
-   102                   
+   widget_unset_children 
    load_int               33
    load_int               165
    load_int               0
@@ -30,7 +30,7 @@
    load_string            ""
    sstore                 3
    iload                  1
-   load_int               38
+   load_int               39
    load_int               9
    iadd                  
    if_icmpeq              LABEL33
@@ -181,7 +181,7 @@ LABEL145:
 LABEL166:
    sload                  3
    iload                  4
-   2112                  
+   widget_put_text_widget
    load_int               0
    istore                 8
 LABEL171:
@@ -193,7 +193,7 @@ LABEL175:
    iload                  5
    load_int               3
    iload                  8
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    iload                  8
@@ -205,7 +205,7 @@ LABEL186:
    iload                  5
    load_int               3
    iload                  1
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               1

@@ -18,14 +18,14 @@ LABEL7:
 LABEL11:
    iload                  2
    iload                  3
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL17
    jump                   LABEL60
 LABEL17:
    iload                  2
    iload                  4
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL23
    jump                   LABEL60
@@ -64,12 +64,12 @@ LABEL44:
    invoke                 1735
    return                
 LABEL51:
-   047                    138
+   get_varc_string        138
    load_int               4
    iload                  0
    iload                  1
    invoke                 74
-   048                    138
+   put_varc_string        138
    load_string            ""
    iload                  2
    invoke                 1738

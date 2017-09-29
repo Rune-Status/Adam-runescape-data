@@ -8,30 +8,34 @@
    042                    5
    load_int               1
    if_icmpeq              LABEL7
-   jump                   LABEL30
+   jump                   LABEL34
 LABEL7:
    invoke                 677
    sload                  0
-   load_int               10616864
-   2112                  
-   load_string            "Click to continue"
    load_int               10616865
-   2112                  
+   widget_put_text_widget
+   load_string            "Click"
+   load_string            "Tap"
+   invoke                 1971
+   load_string            " to continue"
+   037                    2
+   load_int               10616866
+   widget_put_text_widget
    load_int               1
    load_int               1
    load_int               0
-   load_int               10616865
+   load_int               10616866
    2114                  
    load_int               1
    043                    5
    load_int               101
    load_int               1
    load_string            "i"
-   load_int               10616863
+   load_int               10616864
    2400                  
    load_int               -1
    load_string            ""
-   load_int               10616865
+   load_int               10616866
    2419                  
-LABEL30:
+LABEL34:
    return                

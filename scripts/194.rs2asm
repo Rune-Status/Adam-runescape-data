@@ -5,16 +5,25 @@
    iload                  0
    iload                  1
    if_icmpeq              LABEL4
-   jump                   LABEL11
+   jump                   LABEL18
 LABEL4:
    get_clanchatcount     
    load_int               0
    if_icmpgt              LABEL8
-   jump                   LABEL10
+   jump                   LABEL17
 LABEL8:
-   3620                  
-   jump                   LABEL11
-LABEL10:
+   invoke                 1942
+   load_int               1
+   if_icmpeq              LABEL12
+   jump                   LABEL15
+LABEL12:
+   load_string            "You can't leave your team's chat channel during Wilderness Wars."
+   send_game_message     
+   return                
+LABEL15:
+   part_clanchat         
+   jump                   LABEL18
+LABEL17:
    invoke                 111
-LABEL11:
+LABEL18:
    return                

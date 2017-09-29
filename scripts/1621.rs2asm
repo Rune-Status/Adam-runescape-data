@@ -20,7 +20,7 @@ LABEL10:
 LABEL14:
    iload                  0
    iload                  6
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL20
    jump                   LABEL138
@@ -28,7 +28,7 @@ LABEL20:
    widget_put_actions_null
    load_int               93
    iload                  6
-   3301                  
+   get_itemcontainer_itemid
    istore                 5
    025                    3459
    load_int               1
@@ -40,7 +40,7 @@ LABEL29:
    iload                  5
    load_int               93
    iload                  6
-   3302                  
+   get_itemcontainer_stacksize
    invoke                 1622
    load_int               10
    1303                  
@@ -58,7 +58,7 @@ LABEL45:
    iload                  5
    load_int               93
    iload                  6
-   3302                  
+   get_itemcontainer_stacksize
    1200                  
    load_string            "<col=ff9040>"
    iload                  5

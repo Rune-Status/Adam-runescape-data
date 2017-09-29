@@ -26,13 +26,13 @@ LABEL12:
    widget_get_height_widget
    istore                 5
    iload                  3
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 6
    iload                  3
    load_int               3
    iload                  6
-   100                   
+   widget_create_child   
    iload                  6
    load_int               1
    iadd                  
@@ -54,7 +54,7 @@ LABEL12:
    iload                  3
    load_int               4
    iload                  6
-   100                   
+   widget_create_child   
    iload                  6
    load_int               1
    iadd                  
@@ -99,21 +99,21 @@ LABEL74:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    sload                  1
-   1112                  
+   widget_put_text       
    load_int               13421823
    widget_put_textcolor  
    load_int               85
    load_int               -2147483645
-   1702                  
+   widget_get_index      
    load_int               15658751
    load_string            "Iii"
    iload                  3
    2403                  
    load_int               85
    load_int               -2147483645
-   1702                  
+   widget_get_index      
    load_int               13421823
    load_string            "Iii"
    iload                  3
@@ -121,7 +121,7 @@ LABEL74:
    iload                  3
    load_int               4
    iload                  6
-   100                   
+   widget_create_child   
    iload                  6
    load_int               1
    iadd                  
@@ -145,7 +145,7 @@ LABEL74:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               105
    load_int               111
    load_int               250
@@ -172,7 +172,7 @@ LABEL156:
    invoke                 46
    load_string            " coins"
    037                    2
-   1112                  
+   widget_put_text       
    iload                  7
    invoke                 651
    load_int               650

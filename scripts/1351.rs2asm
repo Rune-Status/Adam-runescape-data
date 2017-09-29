@@ -3,7 +3,7 @@
 .int_var_count      11
 .string_var_count   2
    iload                  0
-   102                   
+   widget_unset_children 
    iload                  3
    load_int               0
    if_icmple              LABEL6
@@ -33,7 +33,7 @@ LABEL24:
    iload                  0
    load_int               4
    iload                  9
-   100                   
+   widget_create_child   
    load_int               0
    load_int               15
    load_int               1
@@ -42,7 +42,7 @@ LABEL24:
    load_int               494
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               0
    load_int               0
    load_int               0
@@ -54,7 +54,7 @@ LABEL24:
    3408                  
    sstore                 1
    sload                  1
-   1112                  
+   widget_put_text       
    load_string            "<col=ff9040>"
    sload                  1
    load_string            "</col>"
@@ -105,7 +105,7 @@ LABEL89:
    045                   
    iload                  8
    modulo                
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL98
    jump                   LABEL103
@@ -129,7 +129,7 @@ LABEL112:
    iload                  0
    load_int               4
    iload                  9
-   100                   
+   widget_create_child   
    load_int               0
    load_int               20
    load_int               1
@@ -145,13 +145,13 @@ LABEL112:
    load_int               496
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               0
    load_int               0
    load_int               0
    1114                  
    sload                  0
-   1112                  
+   widget_put_text       
    load_int               0
    iload                  10
    load_int               1

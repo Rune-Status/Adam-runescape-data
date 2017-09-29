@@ -21,7 +21,7 @@ LABEL11:
    if_icmpeq              LABEL15
    jump                   LABEL37
 LABEL15:
-   047                    22
+   get_varc_string        22
    string_length         
    load_int               0
    if_icmple              LABEL20
@@ -32,8 +32,8 @@ LABEL20:
    if_icmpeq              LABEL24
    jump                   LABEL29
 LABEL24:
-   047                    128
-   048                    22
+   get_varc_string        128
+   put_varc_string        22
    sload                  0
    invoke                 222
    jump                   LABEL37
@@ -43,8 +43,8 @@ LABEL29:
    if_icmpeq              LABEL33
    jump                   LABEL37
 LABEL33:
-   047                    129
-   048                    22
+   get_varc_string        129
+   put_varc_string        22
    sload                  0
    invoke                 222
 LABEL37:
@@ -62,12 +62,12 @@ LABEL39:
    if_icmpeq              LABEL49
    jump                   LABEL56
 LABEL49:
-   047                    22
+   get_varc_string        22
    load_int               0
    iload                  0
    iload                  1
    invoke                 74
-   048                    22
+   put_varc_string        22
    jump                   LABEL122
 LABEL56:
    042                    5
@@ -75,12 +75,12 @@ LABEL56:
    if_icmpeq              LABEL60
    jump                   LABEL67
 LABEL60:
-   047                    22
+   get_varc_string        22
    load_int               1
    iload                  0
    iload                  1
    invoke                 74
-   048                    22
+   put_varc_string        22
    jump                   LABEL122
 LABEL67:
    042                    5
@@ -88,12 +88,12 @@ LABEL67:
    if_icmpeq              LABEL71
    jump                   LABEL79
 LABEL71:
-   047                    22
+   get_varc_string        22
    load_int               3
    iload                  0
    iload                  1
    invoke                 74
-   048                    22
+   put_varc_string        22
    invoke                 549
    jump                   LABEL122
 LABEL79:
@@ -102,12 +102,12 @@ LABEL79:
    if_icmpeq              LABEL83
    jump                   LABEL91
 LABEL83:
-   047                    22
+   get_varc_string        22
    load_int               0
    iload                  0
    iload                  1
    invoke                 74
-   048                    22
+   put_varc_string        22
    invoke                 551
    jump                   LABEL122
 LABEL91:
@@ -122,7 +122,7 @@ LABEL95:
    jump                   LABEL109
 LABEL99:
    load_int               -1
-   3115                  
+   item_price            
    load_int               2266
    load_int               1
    load_int               0
@@ -132,20 +132,20 @@ LABEL99:
    invoke                 299
    return                
 LABEL109:
-   047                    22
+   get_varc_string        22
    load_int               4
    iload                  0
    iload                  1
    invoke                 74
-   048                    22
+   put_varc_string        22
    jump                   LABEL122
 LABEL116:
-   047                    22
+   get_varc_string        22
    load_int               2
    iload                  0
    iload                  1
    invoke                 74
-   048                    22
+   put_varc_string        22
 LABEL122:
    sload                  0
    invoke                 222

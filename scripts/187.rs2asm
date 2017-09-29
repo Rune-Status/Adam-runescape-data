@@ -1,7 +1,7 @@
 .int_stack_count    1
 .string_stack_count 0
-.int_var_count      4
-.string_var_count   0
+.int_var_count      5
+.string_var_count   1
    load_int               0
    istore                 1
    get_ismembers         
@@ -17,7 +17,7 @@ LABEL9:
    load_int               906
    load_int               94
    load_int               3
-   3301                  
+   get_itemcontainer_itemid
    3408                  
    istore                 1
 LABEL17:
@@ -77,7 +77,7 @@ LABEL56:
    load_string            "%"
    037                    3
    load_int               38862882
-   2112                  
+   widget_put_text_widget
    iload                  0
    iload                  3
    iload                  2
@@ -96,4 +96,104 @@ LABEL77:
    load_int               38862881
    widget_put_modelid_1_widget
 LABEL80:
+   load_int               94
+   load_int               3
+   get_itemcontainer_itemid
+   istore                 4
+   load_int               111
+   load_int               115
+   load_int               1739
+   iload                  4
+   3408                  
+   load_string            " ("
+   load_int               111
+   load_int               105
+   load_int               906
+   iload                  4
+   3408                  
+   load_int               10
+   idiv                  
+   int_to_string         
+   load_string            "%)"
+   037                    4
+   sstore                
+   025                    5712
+   load_int               0
+   if_icmpeq              LABEL105
+   jump                   LABEL170
+LABEL105:
+   iload                  4
+   load_int               11235
+   if_icmpeq              LABEL121
+   iload                  4
+   load_int               20408
+   if_icmpeq              LABEL121
+   iload                  4
+   load_int               12765
+   if_icmpeq              LABEL121
+   iload                  4
+   load_int               12768
+   if_icmpeq              LABEL121
+   iload                  4
+   load_int               12767
+   if_icmpeq              LABEL121
+   jump                   LABEL154
+LABEL121:
+   load_int               94
+   load_int               13
+   get_itemcontainer_itemid
+   load_int               11212
+   if_icmpeq              LABEL142
+   load_int               94
+   load_int               13
+   get_itemcontainer_itemid
+   load_int               11227
+   if_icmpeq              LABEL142
+   load_int               94
+   load_int               13
+   get_itemcontainer_itemid
+   load_int               11228
+   if_icmpeq              LABEL142
+   load_int               94
+   load_int               13
+   get_itemcontainer_itemid
+   load_int               11229
+   if_icmpeq              LABEL142
+   jump                   LABEL154
+LABEL142:
+   load_string            "Descent of Dragons: Deal a double attack with dragon arrows that inflicts up to 50% more damage (minimum damage of 8 per hit). ("
+   load_int               111
+   load_int               105
+   load_int               906
+   iload                  4
+   3408                  
+   load_int               10
+   idiv                  
+   int_to_string         
+   load_string            "%)"
+   037                    3
+   sstore                
+LABEL154:
+   load_int               526
+   load_int               -2147483645
+   load_int               -1
+   load_int               38862883
+   sload                  0
+   load_int               25
+   load_int               160
+   load_string            "IiIsii"
+   load_int               38862877
+   2412                  
+   load_int               40
+   load_int               38862883
+   load_string            "I"
+   load_int               38862877
+   2404                  
+   jump                   LABEL174
+LABEL170:
+   load_int               -1
+   load_string            ""
+   load_int               38862877
+   2412                  
+LABEL174:
    return                

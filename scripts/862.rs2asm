@@ -14,7 +14,7 @@ LABEL5:
    load_int               0
    3200                  
    iload                  1
-   102                   
+   widget_unset_children 
    iload                  1
    load_int               0
    invoke                 836
@@ -40,11 +40,11 @@ LABEL5:
    2408                  
    iload                  2
    iload                  3
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL40
    jump                   LABEL41
 LABEL40:
-   1121                  
+   widget_advance_dialogue
 LABEL41:
    return                

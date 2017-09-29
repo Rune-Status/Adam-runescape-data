@@ -3,7 +3,7 @@
 .int_var_count      4
 .string_var_count   0
    iload                  0
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 2
 LABEL4:
@@ -15,7 +15,7 @@ LABEL8:
    iload                  0
    load_int               3
    iload                  2
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    iload                  2
@@ -177,7 +177,7 @@ LABEL19:
    invoke                 649
    istore                 3
    iload                  1
-   102                   
+   widget_unset_children 
    iload                  3
    iload                  0
    widget_get_height_widget

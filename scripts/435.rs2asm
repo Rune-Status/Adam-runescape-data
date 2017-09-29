@@ -22,14 +22,14 @@ LABEL10:
    sstore                
    sload                  0
    load_int               4980747
-   2112                  
+   widget_put_text_widget
    jump                   LABEL25
 LABEL20:
    load_int               0
    043                    64
    load_string            "Select a minigame..."
    load_int               4980747
-   2112                  
+   widget_put_text_widget
 LABEL25:
    load_int               105
    load_int               105
@@ -44,56 +44,69 @@ LABEL25:
 LABEL35:
    load_string            "---"
    load_int               4980761
-   2112                  
+   widget_put_text_widget
    load_int               16750623
    load_int               4980761
    widget_put_textcolor_widget
-   jump                   LABEL57
+   jump                   LABEL67
 LABEL42:
+   042                    64
+   load_int               4
+   if_icmpeq              LABEL46
+   jump                   LABEL52
+LABEL46:
+   042                    103
+   load_int               0
+   if_icmpeq              LABEL50
+   jump                   LABEL52
+LABEL50:
+   load_int               383
+   istore                
+LABEL52:
    iload                  0
    int_to_string         
    load_int               4980761
-   2112                  
-   get_world             
+   widget_put_text_widget
+   get_worldnum          
    iload                  0
-   if_icmpeq              LABEL50
-   jump                   LABEL54
-LABEL50:
-   load_int               65280
+   if_icmpeq              LABEL60
+   jump                   LABEL64
+LABEL60:
+   load_int               901389
    load_int               4980761
    widget_put_textcolor_widget
-   jump                   LABEL57
-LABEL54:
+   jump                   LABEL67
+LABEL64:
    load_int               16776960
    load_int               4980761
    widget_put_textcolor_widget
-LABEL57:
+LABEL67:
    load_int               4980765
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 1
-LABEL61:
+LABEL71:
    iload                  1
    042                    64
-   if_icmplt              LABEL65
-   jump                   LABEL76
-LABEL65:
+   if_icmplt              LABEL75
+   jump                   LABEL86
+LABEL75:
    load_int               4980765
    load_int               3
    iload                  1
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    iload                  1
    load_int               1
    iadd                  
    istore                 1
-   jump                   LABEL61
-LABEL76:
+   jump                   LABEL71
+LABEL86:
    load_int               4980765
    load_int               3
    042                    64
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               0
@@ -112,14 +125,14 @@ LABEL76:
    widget_put_opacity    
    042                    64
    load_int               0
-   if_icmpeq              LABEL100
-   jump                   LABEL104
-LABEL100:
+   if_icmpeq              LABEL110
+   jump                   LABEL114
+LABEL110:
    load_int               1
    load_string            "Teleport"
    1300                  
-   jump                   LABEL111
-LABEL104:
+   jump                   LABEL121
+LABEL114:
    load_int               1
    load_string            "Teleport to "
    load_string            "<col=ff8040>"
@@ -127,7 +140,7 @@ LABEL104:
    load_string            "</col>"
    037                    4
    1300                  
-LABEL111:
+LABEL121:
    load_int               0
    istore                 2
    get_clanchatowner     
@@ -141,23 +154,23 @@ LABEL111:
    iload                  3
    3408                  
    sstore                 2
-LABEL124:
+LABEL134:
    sload                  2
    string_length         
    load_int               0
-   if_icmpgt              LABEL129
-   jump                   LABEL148
-LABEL129:
+   if_icmpgt              LABEL139
+   jump                   LABEL158
+LABEL139:
    sload                  1
    sload                  2
    4107                  
    load_int               0
-   if_icmpeq              LABEL135
-   jump                   LABEL137
-LABEL135:
+   if_icmpeq              LABEL145
+   jump                   LABEL147
+LABEL145:
    iload                  3
    istore                 2
-LABEL137:
+LABEL147:
    iload                  3
    load_int               1
    iadd                  
@@ -168,32 +181,32 @@ LABEL137:
    iload                  3
    3408                  
    sstore                 2
-   jump                   LABEL124
-LABEL148:
+   jump                   LABEL134
+LABEL158:
    042                    64
    load_int               0
-   if_icmpeq              LABEL152
-   jump                   LABEL162
-LABEL152:
+   if_icmpeq              LABEL162
+   jump                   LABEL172
+LABEL162:
    load_string            "---"
    load_int               4980764
-   2112                  
+   widget_put_text_widget
    load_int               4980762
    widget_put_actions_null_widget
    load_int               -1
    load_string            ""
    load_int               4980762
    2409                  
-   jump                   LABEL201
-LABEL162:
+   jump                   LABEL211
+LABEL172:
    iload                  2
    042                    64
-   if_icmpne              LABEL166
-   jump                   LABEL184
-LABEL166:
+   if_icmpne              LABEL176
+   jump                   LABEL194
+LABEL176:
    load_string            "Join"
    load_int               4980764
-   2112                  
+   widget_put_text_widget
    load_int               1
    load_string            "Join "
    load_string            "<col=ff8040>"
@@ -208,11 +221,11 @@ LABEL166:
    load_string            "i"
    load_int               4980762
    2409                  
-   jump                   LABEL201
-LABEL184:
+   jump                   LABEL211
+LABEL194:
    load_string            "Leave"
    load_int               4980764
-   2112                  
+   widget_put_text_widget
    load_int               1
    load_string            "Leave "
    load_string            "<col=ff8040>"
@@ -227,15 +240,15 @@ LABEL184:
    load_string            "i"
    load_int               4980762
    2409                  
-LABEL201:
+LABEL211:
    load_int               0
    istore                 4
    load_int               0
    istore                 5
    load_int               4980757
-   102                   
+   widget_unset_children 
    load_int               4980751
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 1
    load_string            ""
@@ -253,12 +266,12 @@ LABEL201:
    load_int               4980753
    widget_get_hidden_widget
    load_int               1
-   if_icmpeq              LABEL228
-   jump                   LABEL613
-LABEL228:
+   if_icmpeq              LABEL238
+   jump                   LABEL623
+LABEL238:
    load_int               788
    load_int               4980759
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    load_int               0
    load_int               4980744
    widget_put_hidden_widget
@@ -279,12 +292,12 @@ LABEL228:
    widget_put_hidden_widget
    iload                  2
    load_int               0
-   if_icmpeq              LABEL256
+   if_icmpeq              LABEL266
    042                    64
    iload                  2
-   if_icmpne              LABEL256
-   jump                   LABEL354
-LABEL256:
+   if_icmpne              LABEL266
+   jump                   LABEL364
+LABEL266:
    load_int               0
    load_int               0
    load_int               4980751
@@ -296,7 +309,7 @@ LABEL256:
    load_int               4980751
    load_int               4
    iload                  1
-   100                   
+   widget_create_child   
    iload                  1
    load_int               1
    iadd                  
@@ -310,14 +323,14 @@ LABEL256:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    iload                  2
    load_int               0
-   if_icmpeq              LABEL286
-   jump                   LABEL300
-LABEL286:
+   if_icmpeq              LABEL296
+   jump                   LABEL310
+LABEL296:
    load_string            "You are not currently in a minigame chat-channel."
-   1112                  
+   widget_put_text       
    iload                  5
    load_int               4980751
    widget_get_height_widget
@@ -330,7 +343,7 @@ LABEL286:
    load_int               0
    1000                  
    return                
-LABEL300:
+LABEL310:
    load_string            "You are currently talking in the "
    load_string            "<col=ffffff>"
    load_int               105
@@ -367,7 +380,7 @@ LABEL300:
    load_int               0
    1000                  
    sload                  1
-   1112                  
+   widget_put_text       
    load_int               85
    load_int               -2147483645
    load_int               -2147483643
@@ -385,19 +398,19 @@ LABEL300:
    load_string            "i"
    1400                  
    return                
-LABEL354:
+LABEL364:
    3616                  
-   3618                  
+   get_clanchat_rank     
    istore                 8
    istore                 7
    get_clanchatcount     
    istore                 9
-LABEL360:
+LABEL370:
    iload                  9
    load_int               0
-   if_icmpgt              LABEL364
-   jump                   LABEL557
-LABEL364:
+   if_icmpgt              LABEL374
+   jump                   LABEL567
+LABEL374:
    iload                  9
    load_int               1
    isub                  
@@ -414,7 +427,7 @@ LABEL364:
    load_int               4980751
    load_int               4
    iload                  1
-   100                   
+   widget_create_child   
    iload                  1
    load_int               1
    iadd                  
@@ -422,7 +435,7 @@ LABEL364:
    load_int               4980751
    load_int               4
    iload                  1
-   100                    1
+   widget_create_child    1
    iload                  1
    load_int               1
    iadd                  
@@ -456,17 +469,17 @@ LABEL364:
    load_int               16777215
    widget_put_textcolor  
    iload                  0
-   get_world             
-   if_icmpeq              LABEL425
-   jump                   LABEL428
-LABEL425:
-   load_int               65280
+   get_worldnum          
+   if_icmpeq              LABEL435
+   jump                   LABEL438
+LABEL435:
+   load_int               901389
    widget_put_textcolor   1
-   jump                   LABEL430
-LABEL428:
+   jump                   LABEL440
+LABEL438:
    load_int               16776960
    widget_put_textcolor   1
-LABEL430:
+LABEL440:
    load_int               0
    load_int               0
    load_int               0
@@ -476,20 +489,20 @@ LABEL430:
    load_int               0
    1114                   1
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    sload                  3
-   1112                  
+   widget_put_text       
    load_string            "World "
    iload                  0
    int_to_string         
    037                    2
-   1112                   1
+   widget_put_text        1
    load_int               4980751
    load_int               5
    iload                  1
-   100                   
+   widget_create_child   
    iload                  1
    load_int               1
    iadd                  
@@ -511,11 +524,11 @@ LABEL430:
    load_int               706
    iload                  6
    3408                  
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               4980751
    load_int               3
    iload                  1
-   100                   
+   widget_create_child   
    iload                  1
    load_int               1
    iadd                  
@@ -542,35 +555,35 @@ LABEL430:
    iload                  9
    clanmember_isme       
    load_int               0
-   if_icmpeq              LABEL507
-   jump                   LABEL539
-LABEL507:
+   if_icmpeq              LABEL517
+   jump                   LABEL549
+LABEL517:
    sload                  3
-   3609                  
+   is_friend             
    load_int               1
-   if_icmpeq              LABEL512
-   jump                   LABEL518
-LABEL512:
+   if_icmpeq              LABEL522
+   jump                   LABEL528
+LABEL522:
    load_int               9
    load_string            "Remove friend "
    sload                  3
    037                    2
    1300                  
-   jump                   LABEL539
-LABEL518:
+   jump                   LABEL549
+LABEL528:
    sload                  3
-   3623                  
+   is_ignore             
    load_int               1
-   if_icmpeq              LABEL523
-   jump                   LABEL529
-LABEL523:
+   if_icmpeq              LABEL533
+   jump                   LABEL539
+LABEL533:
    load_int               10
    load_string            "Remove ignore "
    sload                  3
    037                    2
    1300                  
-   jump                   LABEL539
-LABEL529:
+   jump                   LABEL549
+LABEL539:
    load_int               7
    load_string            "Add friend "
    sload                  3
@@ -581,34 +594,34 @@ LABEL529:
    sload                  3
    037                    2
    1300                  
-LABEL539:
+LABEL549:
    iload                  8
    iload                  7
-   if_icmpge              LABEL543
-   jump                   LABEL552
-LABEL543:
+   if_icmpge              LABEL553
+   jump                   LABEL562
+LABEL553:
    iload                  8
    iload                  6
-   if_icmpgt              LABEL547
-   jump                   LABEL552
-LABEL547:
+   if_icmpgt              LABEL557
+   jump                   LABEL562
+LABEL557:
    load_int               6
    load_string            "Kick user "
    sload                  3
    037                    2
    1300                  
-LABEL552:
+LABEL562:
    iload                  10
    load_int               13
    iadd                  
    istore                 10
-   jump                   LABEL360
-LABEL557:
+   jump                   LABEL370
+LABEL567:
    iload                  10
    load_int               0
-   if_icmpgt              LABEL561
-   jump                   LABEL573
-LABEL561:
+   if_icmpgt              LABEL571
+   jump                   LABEL583
+LABEL571:
    load_int               4980751
    widget_get_scrolly_widget
    istore                 4
@@ -620,8 +633,8 @@ LABEL561:
    load_int               4980751
    iload                  4
    invoke                 72
-   jump                   LABEL612
-LABEL573:
+   jump                   LABEL622
+LABEL583:
    load_int               0
    load_int               0
    load_int               4980751
@@ -633,7 +646,7 @@ LABEL573:
    load_int               4980751
    load_int               4
    iload                  1
-   100                   
+   widget_create_child   
    iload                  1
    load_int               1
    iadd                  
@@ -658,15 +671,15 @@ LABEL573:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_string            "The channel is empty."
-   1112                  
-LABEL612:
+   widget_put_text       
+LABEL622:
    return                
-LABEL613:
+LABEL623:
    load_int               773
    load_int               4980759
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    load_int               1
    load_int               4980744
    widget_put_hidden_widget
@@ -692,7 +705,7 @@ LABEL613:
    load_int               4980757
    load_int               3
    iload                  1
-   100                   
+   widget_create_child   
    iload                  1
    load_int               1
    iadd                  
@@ -723,22 +736,22 @@ LABEL613:
    iload                  3
    3408                  
    sstore                 2
-LABEL672:
+LABEL682:
    sload                  2
    string_length         
    load_int               0
-   if_icmpgt              LABEL677
-   jump                   LABEL750
-LABEL677:
+   if_icmpgt              LABEL687
+   jump                   LABEL760
+LABEL687:
    042                    64
    iload                  3
-   if_icmpne              LABEL681
-   jump                   LABEL739
-LABEL681:
+   if_icmpne              LABEL691
+   jump                   LABEL749
+LABEL691:
    load_int               4980757
    load_int               4
    iload                  1
-   100                    1
+   widget_create_child    1
    iload                  1
    load_int               1
    iadd                  
@@ -762,24 +775,24 @@ LABEL681:
    load_int               0
    1114                   1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_int               105
    load_int               115
    load_int               848
    iload                  3
    3408                  
-   1112                   1
+   widget_put_text        1
    load_int               436
    load_int               -2147483645
    load_int               -2147483643
-   1702                  
+   widget_get_index      
    load_int               1
    load_string            "Iii1"
    1403                   1
    load_int               436
    load_int               -2147483645
    load_int               -2147483643
-   1702                  
+   widget_get_index      
    load_int               0
    load_string            "Iii1"
    1404                   1
@@ -793,7 +806,7 @@ LABEL681:
    load_int               12
    iadd                  
    istore                 10
-LABEL739:
+LABEL749:
    iload                  3
    load_int               1
    iadd                  
@@ -804,17 +817,17 @@ LABEL739:
    iload                  3
    3408                  
    sstore                 2
-   jump                   LABEL672
-LABEL750:
+   jump                   LABEL682
+LABEL760:
    042                    64
    load_int               0
-   if_icmpne              LABEL754
-   jump                   LABEL808
-LABEL754:
+   if_icmpne              LABEL764
+   jump                   LABEL818
+LABEL764:
    load_int               4980757
    load_int               4
    iload                  1
-   100                    1
+   widget_create_child    1
    iload                  1
    load_int               1
    iadd                  
@@ -838,20 +851,20 @@ LABEL754:
    load_int               0
    1114                   1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_string            "(none)"
-   1112                   1
+   widget_put_text        1
    load_int               436
    load_int               -2147483645
    load_int               -2147483643
-   1702                  
+   widget_get_index      
    load_int               1
    load_string            "Iii1"
    1403                   1
    load_int               436
    load_int               -2147483645
    load_int               -2147483643
-   1702                  
+   widget_get_index      
    load_int               0
    load_string            "Iii1"
    1404                   1
@@ -865,7 +878,7 @@ LABEL754:
    load_int               12
    iadd                  
    istore                 10
-LABEL808:
+LABEL818:
    load_int               0
    iload                  10
    load_int               4980757

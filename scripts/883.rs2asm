@@ -9,7 +9,7 @@
 LABEL4:
    load_string            "Waiting for players to join the other team."
    iload                  0
-   2112                  
+   widget_put_text_widget
    jump                   LABEL14
 LABEL8:
    load_string            "Time until next game starts: "
@@ -17,6 +17,6 @@ LABEL8:
    int_to_string         
    037                    2
    iload                  0
-   2112                  
+   widget_put_text_widget
 LABEL14:
    return                

@@ -8,7 +8,7 @@
    3200                  
    iload                  0
    iload                  2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL10
    jump                   LABEL24
@@ -17,7 +17,7 @@ LABEL10:
    load_string            "Loading..."
    load_string            "</col>"
    037                    3
-   1112                  
+   widget_put_text       
    load_int               629
    load_int               -2147483645
    load_int               -2147483643
@@ -30,11 +30,11 @@ LABEL10:
 LABEL24:
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL30
    jump                   LABEL31
 LABEL30:
-   1121                  
+   widget_advance_dialogue
 LABEL31:
    return                

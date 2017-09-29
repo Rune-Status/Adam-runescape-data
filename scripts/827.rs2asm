@@ -7,7 +7,7 @@
    load_int               0
    istore                 2
    load_int               93
-   3304                  
+   get_inventory_size    
    istore                 3
 LABEL7:
    iload                  3
@@ -21,7 +21,7 @@ LABEL11:
    istore                 3
    iload                  0
    iload                  3
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL21
    jump                   LABEL104
@@ -32,7 +32,7 @@ LABEL21:
    1408                  
    load_int               93
    iload                  3
-   3301                  
+   get_itemcontainer_itemid
    istore                 1
    iload                  1
    load_int               -1
@@ -44,7 +44,7 @@ LABEL33:
    iload                  1
    load_int               93
    iload                  3
-   3302                  
+   get_itemcontainer_stacksize
    1200                  
    load_int               111
    load_int               103

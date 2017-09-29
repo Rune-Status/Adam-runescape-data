@@ -3,9 +3,9 @@
 .int_var_count      19
 .string_var_count   0
    iload                  1
-   102                   
+   widget_unset_children 
    iload                  2
-   102                   
+   widget_unset_children 
    iload                  0
    widget_get_width_widget
    istore                 9
@@ -60,11 +60,11 @@ LABEL41:
    iload                  1
    load_int               5
    iload                  17
-   100                   
+   widget_create_child   
    iload                  2
    load_int               4
    iload                  17
-   100                    1
+   widget_create_child    1
    iload                  13
    iload                  12
    iadd                  
@@ -96,7 +96,7 @@ LABEL41:
    iadd                  
    istore                 15
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    load_int               111
@@ -115,7 +115,7 @@ LABEL41:
    load_int               495
    widget_put_fontid      1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_int               1
    load_int               1
    load_int               0
@@ -127,7 +127,7 @@ LABEL41:
    3408                  
    load_string            ","
    invoke                 46
-   1112                   1
+   widget_put_text        1
    iload                  16
    load_int               1
    if_icmpeq              LABEL128

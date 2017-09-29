@@ -14,13 +14,13 @@ LABEL5:
    if_icmpgt              LABEL10
    jump                   LABEL11
 LABEL10:
-   3620                  
+   part_clanchat         
 LABEL11:
    invoke                 680
    sload                  0
    string_remove_html    
-   048                    129
+   put_varc_string        129
    sload                  0
-   3619                  
+   join_clanchat         
 LABEL17:
    return                

@@ -24,7 +24,7 @@
    iload                  3
    2408                  
    iload                  3
-   102                   
+   widget_unset_children 
    iload                  0
    widget_get_width_widget
    istore                 6
@@ -56,7 +56,7 @@ LABEL50:
    iload                  3
    load_int               4
    load_int               0
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               0
@@ -78,12 +78,12 @@ LABEL50:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_string            "Loading friend list"
    load_string            "<br>"
    load_string            "Please wait"
    037                    3
-   1112                  
+   widget_put_text       
    jump                   LABEL308
 LABEL82:
    iload                  14
@@ -94,7 +94,7 @@ LABEL86:
    iload                  3
    load_int               4
    load_int               0
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               0
@@ -116,12 +116,12 @@ LABEL86:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_string            "Connecting to server"
    load_string            "<br>"
    load_string            "Please wait"
    037                    3
-   1112                  
+   widget_put_text       
    jump                   LABEL308
 LABEL118:
    iload                  3
@@ -159,7 +159,7 @@ LABEL140:
    iload                  3
    load_int               3
    iload                  10
-   100                   
+   widget_create_child   
    load_int               0
    iload                  13
    load_int               1
@@ -200,7 +200,7 @@ LABEL140:
    iload                  10
    load_int               1
    iadd                  
-   100                   
+   widget_create_child   
    iload                  7
    load_int               15
    load_int               0
@@ -215,9 +215,9 @@ LABEL140:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    sload                  0
-   1112                  
+   widget_put_text       
    load_int               1
    widget_put_hidden     
    iload                  3
@@ -225,16 +225,16 @@ LABEL140:
    iload                  10
    load_int               2
    iadd                  
-   100                    1
+   widget_create_child    1
    load_int               14
    load_int               14
    load_int               0
    load_int               0
    1001                   1
    load_int               1093
-   widget_put_textureid   1
+   widget_put_spriteid    1
    load_int               3355443
-   1117                   1
+   widget_put_sprite2     1
    sload                  1
    string_length         
    load_int               0
@@ -277,7 +277,7 @@ LABEL259:
    iload                  10
    load_int               3
    iadd                  
-   100                   
+   widget_create_child   
    iload                  12
    get_friend_rank       
    istore                 11
@@ -289,7 +289,7 @@ LABEL259:
    load_int               16777215
    widget_put_textcolor  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               0
    load_int               0
    load_int               0
@@ -303,7 +303,7 @@ LABEL259:
    iload                  10
    load_int               4
    iadd                  
-   100                    1
+   widget_create_child    1
    load_int               0
    load_int               0
    load_int               0

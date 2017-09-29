@@ -12,25 +12,25 @@ LABEL6:
    load_string            "<col=9090ff>"
    sstore                
    load_int               16777215
-   load_int               10616874
+   load_int               10616875
    widget_put_textcolor_widget
    load_int               1
-   load_int               10616874
-   2115                  
+   load_int               10616875
+   widget_put_text_shadowed_widget
    jump                   LABEL21
 LABEL15:
    load_int               0
-   load_int               10616874
+   load_int               10616875
    widget_put_textcolor_widget
    load_int               0
-   load_int               10616874
-   2115                  
+   load_int               10616875
+   widget_put_text_shadowed_widget
 LABEL21:
-   047                    1
+   get_varc_string        1
    string_length         
    istore                
-   047                    1
-   4111                  
+   get_varc_string        1
+   appendtags            
    sstore                 1
    load_string            ""
    sstore                 2
@@ -87,7 +87,7 @@ LABEL68:
    4109                  
    istore                 1
    iload                  1
-   load_int               10616874
+   load_int               10616875
    widget_get_width_widget
    if_icmpgt              LABEL78
    jump                   LABEL84
@@ -95,23 +95,23 @@ LABEL78:
    load_int               2
    load_int               2
    load_int               0
-   load_int               10616874
+   load_int               10616875
    2114                  
    jump                   LABEL89
 LABEL84:
    load_int               0
    load_int               2
    load_int               0
-   load_int               10616874
+   load_int               10616875
    2114                  
 LABEL89:
    sload                  3
-   load_int               10616874
-   2112                  
+   load_int               10616875
+   widget_put_text_widget
    load_int               3
    load_int               16
    load_int               1
    load_int               0
-   load_int               10616874
+   load_int               10616875
    2001                  
    return                

@@ -60,7 +60,7 @@ LABEL44:
 LABEL49:
    iload                  0
    load_int               0
-   3301                  
+   get_itemcontainer_itemid
    istore                 28
    iload                  28
    load_int               -1
@@ -69,7 +69,7 @@ LABEL49:
 LABEL57:
    iload                  0
    load_int               1
-   3301                  
+   get_itemcontainer_itemid
    istore                 28
 LABEL61:
    iload                  28
@@ -79,17 +79,17 @@ LABEL61:
 LABEL65:
    iload                  8
    iload                  15
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL71
    jump                   LABEL73
 LABEL71:
    load_string            "Empty"
-   1112                  
+   widget_put_text       
 LABEL73:
    iload                  8
    iload                  12
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL79
    jump                   LABEL81
@@ -99,7 +99,7 @@ LABEL79:
 LABEL81:
    iload                  8
    iload                  16
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL87
    jump                   LABEL89
@@ -109,7 +109,7 @@ LABEL87:
 LABEL89:
    iload                  8
    iload                  17
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL95
    jump                   LABEL97
@@ -119,7 +119,7 @@ LABEL95:
 LABEL97:
    iload                  8
    iload                  18
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL103
    jump                   LABEL105
@@ -129,7 +129,7 @@ LABEL103:
 LABEL105:
    iload                  8
    iload                  19
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL111
    jump                   LABEL113
@@ -139,7 +139,7 @@ LABEL111:
 LABEL113:
    iload                  8
    iload                  20
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL119
    jump                   LABEL121
@@ -149,7 +149,7 @@ LABEL119:
 LABEL121:
    iload                  8
    iload                  21
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL127
    jump                   LABEL129
@@ -159,7 +159,7 @@ LABEL127:
 LABEL129:
    iload                  8
    iload                  22
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL135
    jump                   LABEL137
@@ -169,7 +169,7 @@ LABEL135:
 LABEL137:
    iload                  8
    iload                  23
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL143
    jump                   LABEL145
@@ -179,7 +179,7 @@ LABEL143:
 LABEL145:
    iload                  8
    iload                  24
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL151
    jump                   LABEL153
@@ -189,7 +189,7 @@ LABEL151:
 LABEL153:
    iload                  8
    iload                  10
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL159
    jump                   LABEL161
@@ -199,7 +199,7 @@ LABEL159:
 LABEL161:
    iload                  8
    iload                  11
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL167
    jump                   LABEL169
@@ -209,14 +209,14 @@ LABEL167:
 LABEL169:
    iload                  8
    iload                  13
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL175
    jump                   LABEL346
 LABEL175:
    iload                  8
    iload                  14
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL181
    jump                   LABEL346
@@ -322,14 +322,14 @@ LABEL189:
    1412                   1
    iload                  8
    iload                  25
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL285
    jump                   LABEL299
 LABEL285:
    iload                  8
    iload                  26
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL291
    jump                   LABEL299
@@ -339,9 +339,9 @@ LABEL291:
    load_int               0
    widget_put_hidden      1
    iload                  32
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  34
-   widget_put_textureid   1
+   widget_put_spriteid    1
 LABEL299:
    jump                   LABEL346
 LABEL300:
@@ -373,14 +373,14 @@ LABEL300:
    1412                   1
    iload                  8
    iload                  25
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL332
    jump                   LABEL346
 LABEL332:
    iload                  8
    iload                  26
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL338
    jump                   LABEL346
@@ -390,16 +390,16 @@ LABEL338:
    load_int               0
    widget_put_hidden      1
    iload                  33
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  35
-   widget_put_textureid   1
+   widget_put_spriteid    1
 LABEL346:
    return                
 LABEL347:
    load_int               1
    iload                  0
    iload                  28
-   3303                  
+   get_itemcontainer_stacksizes_total
    istore                 29
    istore                 36
    jump                   LABEL376
@@ -431,17 +431,17 @@ LABEL374:
 LABEL376:
    iload                  8
    iload                  15
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL382
    jump                   LABEL384
 LABEL382:
    sload                  0
-   1112                  
+   widget_put_text       
 LABEL384:
    iload                  8
    iload                  10
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL390
    jump                   LABEL392
@@ -451,7 +451,7 @@ LABEL390:
 LABEL392:
    iload                  8
    iload                  11
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL398
    jump                   LABEL400
@@ -461,7 +461,7 @@ LABEL398:
 LABEL400:
    iload                  8
    iload                  13
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL406
    jump                   LABEL408
@@ -471,7 +471,7 @@ LABEL406:
 LABEL408:
    iload                  8
    iload                  14
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL414
    jump                   LABEL416
@@ -481,7 +481,7 @@ LABEL414:
 LABEL416:
    iload                  8
    iload                  25
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL422
    jump                   LABEL424
@@ -491,7 +491,7 @@ LABEL422:
 LABEL424:
    iload                  8
    iload                  26
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL430
    jump                   LABEL432
@@ -503,7 +503,7 @@ LABEL432:
    sstore                 2
    iload                  8
    iload                  12
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL440
    jump                   LABEL554
@@ -635,7 +635,7 @@ LABEL545:
 LABEL554:
    iload                  8
    iload                  16
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL560
    jump                   LABEL562
@@ -645,7 +645,7 @@ LABEL560:
 LABEL562:
    iload                  8
    iload                  17
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL568
    jump                   LABEL573
@@ -668,7 +668,7 @@ LABEL573:
    sstore                 4
    iload                  8
    iload                  18
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL589
    jump                   LABEL643
@@ -733,11 +733,11 @@ LABEL640:
    jump                   LABEL610
 LABEL641:
    sload                  3
-   1112                  
+   widget_put_text       
 LABEL643:
    iload                  8
    iload                  19
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL649
    jump                   LABEL671
@@ -755,7 +755,7 @@ LABEL653:
    jump                   LABEL662
 LABEL659:
    load_string            "1 coin"
-   1112                  
+   widget_put_text       
    jump                   LABEL668
 LABEL662:
    iload                  31
@@ -763,7 +763,7 @@ LABEL662:
    invoke                 46
    load_string            " coins"
    037                    2
-   1112                  
+   widget_put_text       
 LABEL668:
    jump                   LABEL671
 LABEL669:
@@ -772,7 +772,7 @@ LABEL669:
 LABEL671:
    iload                  8
    iload                  20
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL677
    jump                   LABEL679
@@ -782,7 +782,7 @@ LABEL677:
 LABEL679:
    iload                  8
    iload                  21
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL685
    jump                   LABEL687
@@ -792,7 +792,7 @@ LABEL685:
 LABEL687:
    iload                  8
    iload                  23
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL693
    jump                   LABEL695
@@ -802,7 +802,7 @@ LABEL693:
 LABEL695:
    iload                  8
    iload                  24
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL701
    jump                   LABEL703
@@ -812,7 +812,7 @@ LABEL701:
 LABEL703:
    iload                  8
    iload                  22
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL709
    jump                   LABEL717

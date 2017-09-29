@@ -3,7 +3,7 @@
 .int_var_count      6
 .string_var_count   0
    iload                  0
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 1
    iload                  0
@@ -27,7 +27,7 @@
    iload                  0
    load_int               5
    iload                  1
-   100                   
+   widget_create_child   
    iload                  1
    load_int               1
    iadd                  
@@ -43,11 +43,11 @@
    load_int               0
    1000                  
    load_int               1120
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  0
    load_int               5
    iload                  1
-   100                   
+   widget_create_child   
    iload                  1
    load_int               1
    iadd                  
@@ -67,11 +67,11 @@
    load_int               0
    1000                  
    load_int               1120
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  0
    load_int               5
    iload                  1
-   100                   
+   widget_create_child   
    iload                  1
    load_int               1
    iadd                  
@@ -91,7 +91,7 @@
    load_int               0
    1000                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    load_int               487
@@ -104,7 +104,7 @@
    iload                  0
    load_int               5
    iload                  1
-   100                    1
+   widget_create_child    1
    iload                  1
    load_int               1
    iadd                  
@@ -128,7 +128,7 @@
    load_int               0
    1000                   1
    load_int               3355443
-   1117                   1
+   widget_put_sprite2     1
    load_int               1
    widget_put_borderthickness 1
    load_int               487
@@ -142,8 +142,8 @@
    invoke                 818
    load_int               817
    iload                  0
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
    load_int               518
    load_int               519
    load_int               520
@@ -158,8 +158,8 @@
    2414                  
    load_int               817
    iload                  0
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
    load_int               375
    load_int               1
    load_string            "IiiY"

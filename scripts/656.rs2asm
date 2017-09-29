@@ -8,7 +8,7 @@
    025                    4371
    3408                  
    iload                  0
-   2112                  
+   widget_put_text_widget
    load_int               0
    istore                 8
    load_int               0
@@ -42,7 +42,7 @@ LABEL30:
 LABEL35:
    sload                  0
    iload                  11
-   2112                  
+   widget_put_text_widget
    025                    4372
    iload                  9
    if_icmpeq              LABEL42
@@ -57,12 +57,12 @@ LABEL46:
    load_string            " - Members Only"
    concat_string         
    iload                  1
-   2112                  
+   widget_put_text_widget
    jump                   LABEL55
 LABEL52:
    sload                  0
    iload                  1
-   2112                  
+   widget_put_text_widget
 LABEL55:
    iload                  9
    istore                 8
@@ -197,11 +197,11 @@ LABEL160:
    jump                   LABEL156
 LABEL174:
    iload                  2
-   102                   
+   widget_unset_children 
    iload                  3
-   102                   
+   widget_unset_children 
    iload                  4
-   102                   
+   widget_unset_children 
    iload                  2
    widget_get_width_widget
    load_int               28

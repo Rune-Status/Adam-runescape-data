@@ -11,14 +11,14 @@ LABEL4:
 LABEL5:
    iload                  1
    iload                  2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL11
    jump                   LABEL52
 LABEL11:
    iload                  1
    iload                  3
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL17
    jump                   LABEL52
@@ -27,7 +27,7 @@ LABEL17:
    load_string            ""
    1408                  
    load_string            "Destroy"
-   1112                   1
+   widget_put_text        1
    load_int               16750623
    widget_put_textcolor   1
    load_int               85

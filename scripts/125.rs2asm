@@ -68,7 +68,7 @@ LABEL47:
    iload                  7
    invoke                 1669
    iload                  4
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 9
    load_int               0
@@ -95,7 +95,7 @@ LABEL82:
    load_string            "Please wait..."
    037                    3
    iload                  6
-   2112                  
+   widget_put_text_widget
    load_int               1
    iload                  0
    widget_put_hidden_widget
@@ -111,7 +111,7 @@ LABEL96:
    load_string            "Please wait..."
    037                    3
    iload                  6
-   2112                  
+   widget_put_text_widget
    load_int               1
    iload                  0
    widget_put_hidden_widget
@@ -119,7 +119,7 @@ LABEL96:
 LABEL106:
    load_string            ""
    iload                  6
-   2112                  
+   widget_put_text_widget
    load_int               0
    iload                  0
    widget_put_hidden_widget
@@ -143,9 +143,9 @@ LABEL116:
    iload                  4
    load_int               4
    iload                  10
-   100                   
+   widget_create_child   
    sload                  0
-   1112                  
+   widget_put_text       
    load_int               0
    load_int               15
    load_int               1
@@ -160,7 +160,7 @@ LABEL116:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_string            "<col=ff9040>"
    sload                  0
    load_string            "</col>"
@@ -202,16 +202,16 @@ LABEL173:
    iload                  10
    load_int               1
    iadd                  
-   100                    1
+   widget_create_child    1
    load_int               14
    load_int               14
    load_int               0
    load_int               0
    1001                   1
    load_int               1093
-   widget_put_textureid   1
+   widget_put_spriteid    1
    load_int               3355443
-   1117                   1
+   widget_put_sprite2     1
    sload                  1
    string_length         
    load_int               0
@@ -252,7 +252,7 @@ LABEL228:
    iload                  10
    load_int               2
    iadd                  
-   100                   
+   widget_create_child   
    load_int               0
    load_int               15
    load_int               1
@@ -265,20 +265,20 @@ LABEL228:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    iload                  11
    load_int               0
    if_icmpeq              LABEL251
    jump                   LABEL256
 LABEL251:
    load_string            "Offline"
-   1112                  
+   widget_put_text       
    load_int               16711680
    widget_put_textcolor  
    jump                   LABEL289
 LABEL256:
    iload                  11
-   get_world             
+   get_worldnum          
    if_icmpeq              LABEL260
    jump                   LABEL268
 LABEL260:
@@ -286,8 +286,8 @@ LABEL260:
    iload                  11
    int_to_string         
    037                    2
-   1112                  
-   load_int               65280
+   widget_put_text       
+   load_int               901389
    widget_put_textcolor  
    jump                   LABEL289
 LABEL268:
@@ -303,7 +303,7 @@ LABEL272:
    isub                  
    int_to_string         
    037                    3
-   1112                  
+   widget_put_text       
    jump                   LABEL287
 LABEL281:
    load_string            "<col=ffff00>"
@@ -311,7 +311,7 @@ LABEL281:
    iload                  11
    int_to_string         
    037                    3
-   1112                  
+   widget_put_text       
 LABEL287:
    load_int               16776960
    widget_put_textcolor  
@@ -321,7 +321,7 @@ LABEL289:
    iload                  10
    load_int               3
    iadd                  
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               0
@@ -335,13 +335,13 @@ LABEL289:
    invoke                 1503
    iload                  9
    concat_int            
-   1112                  
+   widget_put_text       
    iload                  4
    load_int               4
    iload                  10
    load_int               4
    iadd                  
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               0
@@ -362,11 +362,11 @@ LABEL330:
    load_string            "zzzzzzzzzzzzzzz"
    sload                  0
    concat_string         
-   1112                  
+   widget_put_text       
    jump                   LABEL337
 LABEL335:
    sload                  0
-   1112                  
+   widget_put_text       
 LABEL337:
    jump                   LABEL349
 LABEL338:
@@ -378,11 +378,11 @@ LABEL342:
    load_string            "zzzzzzzzzzzzzzz"
    sload                  0
    concat_string         
-   1112                  
+   widget_put_text       
    jump                   LABEL349
 LABEL347:
    sload                  0
-   1112                  
+   widget_put_text       
 LABEL349:
    iload                  9
    load_int               1
@@ -457,7 +457,7 @@ LABEL405:
    iload                  4
    iload                  9
    045                   
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL416
    jump                   LABEL440
@@ -467,7 +467,7 @@ LABEL416:
    045                   
    load_int               1
    iadd                  
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL425
    jump                   LABEL440
@@ -493,7 +493,7 @@ LABEL440:
    045                   
    load_int               2
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL449
    jump                   LABEL454
@@ -523,7 +523,7 @@ LABEL466:
    iload                  4
    iload                  9
    045                   
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL473
    jump                   LABEL497
@@ -533,7 +533,7 @@ LABEL473:
    045                   
    load_int               1
    iadd                  
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL482
    jump                   LABEL497
@@ -559,7 +559,7 @@ LABEL497:
    045                   
    load_int               2
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL506
    jump                   LABEL511

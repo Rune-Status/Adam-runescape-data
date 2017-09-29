@@ -7,7 +7,7 @@
    invoke                 900
    load_int               10551309
    3408                  
-   2702                  
+   widget_get_index_widget
    load_int               0
    if_icmpeq              LABEL9
    jump                   LABEL10
@@ -49,7 +49,7 @@ LABEL16:
    042                    178
    load_int               6
    imul                  
-   100                   
+   widget_create_child   
    load_int               0
    load_int               14
    load_int               1
@@ -94,7 +94,7 @@ LABEL16:
    imul                  
    load_int               1
    iadd                  
-   100                   
+   widget_create_child   
    iload                  2
    load_int               14
    load_int               0
@@ -114,9 +114,9 @@ LABEL16:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    sload                  1
-   1112                  
+   widget_put_text       
    iload                  2
    istore                 3
    load_int               33226760
@@ -129,7 +129,7 @@ LABEL16:
    imul                  
    load_int               2
    iadd                  
-   100                   
+   widget_create_child   
    iload                  2
    load_int               14
    load_int               0
@@ -149,9 +149,9 @@ LABEL16:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    sload                  2
-   1112                  
+   widget_put_text       
    load_int               33226762
    load_int               4
    042                    178
@@ -159,7 +159,7 @@ LABEL16:
    imul                  
    load_int               3
    iadd                  
-   100                   
+   widget_create_child   
    iload                  3
    iload                  2
    iadd                  
@@ -181,9 +181,9 @@ LABEL16:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    sload                  3
-   1112                  
+   widget_put_text       
    load_int               33226762
    load_int               4
    042                    178
@@ -191,7 +191,7 @@ LABEL16:
    imul                  
    load_int               4
    iadd                  
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    load_int               16750623
@@ -203,13 +203,13 @@ LABEL16:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    sload                  2
    load_int               3
    invoke                 1503
    042                    178
    concat_int            
-   1112                  
+   widget_put_text       
    load_int               33226762
    load_int               4
    042                    178
@@ -217,7 +217,7 @@ LABEL16:
    imul                  
    load_int               5
    iadd                  
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    load_int               16750623
@@ -229,13 +229,13 @@ LABEL16:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    sload                  3
    load_int               4
    invoke                 1503
    042                    178
    concat_int            
-   1112                  
+   widget_put_text       
    042                    178
    load_int               1
    iadd                  

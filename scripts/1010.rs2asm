@@ -319,7 +319,7 @@
    iload                  0
    2407                  
    iload                  25
-   102                   
+   widget_unset_children 
    load_int               23
    044                    83
    load_int               0
@@ -333,7 +333,7 @@ LABEL326:
    iload                  25
    load_int               3
    iload                  46
-   100                   
+   widget_create_child   
    load_int               0
    load_int               25
    load_int               1
@@ -502,7 +502,7 @@ LABEL482:
    iload                  25
    load_int               5
    iload                  46
-   100                   
+   widget_create_child   
    iload                  46
    load_int               1
    iadd                  
@@ -528,16 +528,16 @@ LABEL508:
    iload                  48
    045                   
    3408                  
-   widget_put_textureid  
+   widget_put_spriteid   
    jump                   LABEL518
 LABEL516:
    load_int               222
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL518:
    iload                  25
    load_int               4
    iload                  46
-   100                   
+   widget_create_child   
    iload                  46
    load_int               1
    iadd                  
@@ -561,7 +561,7 @@ LABEL518:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    iload                  48
    load_int               23
    if_icmplt              LABEL550
@@ -573,16 +573,16 @@ LABEL550:
    iload                  48
    045                   
    3408                  
-   1112                  
+   widget_put_text       
    jump                   LABEL560
 LABEL558:
    load_string            "Total XP"
-   1112                  
+   widget_put_text       
 LABEL560:
    iload                  25
    load_int               4
    iload                  46
-   100                   
+   widget_create_child   
    iload                  46
    load_int               1
    iadd                  
@@ -606,7 +606,7 @@ LABEL560:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    iload                  48
    load_int               1
    iadd                  
@@ -614,7 +614,7 @@ LABEL560:
    jump                   LABEL478
 LABEL593:
    iload                  26
-   102                   
+   widget_unset_children 
    load_int               0
    load_int               0
    iload                  25
@@ -661,11 +661,11 @@ LABEL619:
    iload                  27
    widget_put_hidden_widget
    iload                  27
-   102                   
+   widget_unset_children 
    iload                  27
    load_int               4
    load_int               0
-   100                   
+   widget_create_child   
    load_int               10
    load_int               20
    load_int               1
@@ -685,7 +685,7 @@ LABEL619:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               -1
    iload                  27
    load_int               1

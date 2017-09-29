@@ -5,13 +5,13 @@
    iload                  0
    load_int               5
    iload                  2
-   100                   
+   widget_create_child   
    iload                  0
    load_int               4
    iload                  2
    load_int               1
    iadd                  
-   100                    1
+   widget_create_child    1
    load_int               85
    load_int               22
    load_int               0
@@ -41,25 +41,25 @@
    load_int               16750623
    widget_put_textcolor   1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    sload                  0
-   1112                   1
+   widget_put_text        1
    iload                  1
    iload                  7
    if_icmpne              LABEL46
    jump                   LABEL72
 LABEL46:
    load_int               812
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               85
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               16777215
    load_string            "Iii"
    1403                  
    load_int               85
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               16750623
    load_string            "Iii"
    1404                  
@@ -77,7 +77,7 @@ LABEL46:
    jump                   LABEL74
 LABEL72:
    load_int               813
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL74:
    iload                  2
    load_int               2

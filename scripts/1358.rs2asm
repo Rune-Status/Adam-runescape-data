@@ -277,7 +277,7 @@ LABEL209:
    load_int               0
    return                
 LABEL211:
-   jump                   LABEL2286
+   jump                   LABEL2326
 LABEL212:
    iload                  0
    load_int               20
@@ -548,7 +548,7 @@ LABEL418:
    load_int               0
    return                
 LABEL420:
-   jump                   LABEL2286
+   jump                   LABEL2326
 LABEL421:
    iload                  0
    load_int               30
@@ -815,7 +815,7 @@ LABEL623:
    load_int               0
    return                
 LABEL625:
-   jump                   LABEL2286
+   jump                   LABEL2326
 LABEL626:
    iload                  0
    load_int               40
@@ -1082,7 +1082,7 @@ LABEL828:
    load_int               0
    return                
 LABEL830:
-   jump                   LABEL2286
+   jump                   LABEL2326
 LABEL831:
    iload                  0
    load_int               50
@@ -1349,7 +1349,7 @@ LABEL1033:
    load_int               0
    return                
 LABEL1035:
-   jump                   LABEL2286
+   jump                   LABEL2326
 LABEL1036:
    iload                  0
    load_int               60
@@ -1616,7 +1616,7 @@ LABEL1238:
    load_int               0
    return                
 LABEL1240:
-   jump                   LABEL2286
+   jump                   LABEL2326
 LABEL1241:
    iload                  0
    load_int               70
@@ -1883,7 +1883,7 @@ LABEL1443:
    load_int               0
    return                
 LABEL1445:
-   jump                   LABEL2286
+   jump                   LABEL2326
 LABEL1446:
    iload                  0
    load_int               80
@@ -2150,7 +2150,7 @@ LABEL1648:
    load_int               0
    return                
 LABEL1650:
-   jump                   LABEL2286
+   jump                   LABEL2326
 LABEL1651:
    iload                  0
    load_int               90
@@ -2420,7 +2420,7 @@ LABEL1856:
    load_int               0
    return                
 LABEL1858:
-   jump                   LABEL2286
+   jump                   LABEL2326
 LABEL1859:
    iload                  0
    load_int               100
@@ -2689,7 +2689,7 @@ LABEL2063:
    load_int               0
    return                
 LABEL2065:
-   jump                   LABEL2286
+   jump                   LABEL2326
 LABEL2066:
    iload                  0
    load_int               100
@@ -2977,6 +2977,58 @@ LABEL2284:
    load_int               0
    return                
 LABEL2286:
+   iload                  0
+   load_int               111
+   if_icmpeq              LABEL2290
+   jump                   LABEL2306
+LABEL2290:
+   get_settings           714
+   load_int               6
+   if_icmpge              LABEL2294
+   jump                   LABEL2297
+LABEL2294:
+   load_int               2
+   return                
+   jump                   LABEL2306
+LABEL2297:
+   get_settings           714
+   load_int               4
+   if_icmplt              LABEL2301
+   jump                   LABEL2304
+LABEL2301:
+   load_int               1
+   return                
+   jump                   LABEL2306
+LABEL2304:
+   load_int               0
+   return                
+LABEL2306:
+   iload                  0
+   load_int               112
+   if_icmpeq              LABEL2310
+   jump                   LABEL2326
+LABEL2310:
+   025                    5795
+   load_int               50
+   if_icmpge              LABEL2314
+   jump                   LABEL2317
+LABEL2314:
+   load_int               2
+   return                
+   jump                   LABEL2326
+LABEL2317:
+   025                    5795
+   load_int               0
+   if_icmpeq              LABEL2321
+   jump                   LABEL2324
+LABEL2321:
+   load_int               1
+   return                
+   jump                   LABEL2326
+LABEL2324:
+   load_int               0
+   return                
+LABEL2326:
    load_int               1
    return                
    load_int               0

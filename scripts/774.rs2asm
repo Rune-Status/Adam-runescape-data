@@ -4,7 +4,7 @@
 .string_var_count   1
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL36
@@ -12,7 +12,7 @@ LABEL6:
    iload                  0
    load_int               4
    iload                  2
-   100                    1
+   widget_create_child    1
    iload                  2
    load_int               1
    iadd                  
@@ -32,13 +32,13 @@ LABEL6:
    load_int               494
    widget_put_fontid      1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_int               1
    load_int               1
    load_int               0
    1114                   1
    sload                  0
-   1112                   1
+   widget_put_text        1
 LABEL36:
    iload                  2
    return                

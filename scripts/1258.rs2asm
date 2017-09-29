@@ -15,20 +15,20 @@ LABEL5:
    3200                  
    iload                  2
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL15
    jump                   LABEL33
 LABEL15:
    iload                  2
    iload                  3
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL21
    jump                   LABEL32
 LABEL21:
    load_string            "---"
-   1112                   1
+   widget_put_text        1
    load_int               1259
    get_gamecycle         
    load_int               60
@@ -39,6 +39,6 @@ LABEL21:
    load_string            "iIis"
    1408                   1
 LABEL32:
-   1121                  
+   widget_advance_dialogue
 LABEL33:
    return                

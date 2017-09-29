@@ -3,7 +3,7 @@
 .int_var_count      3
 .string_var_count   2
    load_int               15532033
-   102                   
+   widget_unset_children 
    load_int               15532033
    load_string            "Grand Exchange: "
    sload                  0
@@ -12,7 +12,7 @@
    invoke                 228
    pop_int               
    load_int               15532035
-   102                   
+   widget_unset_children 
    load_int               15532035
    load_int               15532034
    load_int               792
@@ -23,11 +23,11 @@
    load_int               788
    invoke                 31
    load_int               15532036
-   102                   
+   widget_unset_children 
    load_int               15532036
    load_int               5
    load_int               0
-   100                   
+   widget_create_child   
    load_int               17
    load_int               17
    load_int               0
@@ -56,7 +56,7 @@
    load_int               15532036
    load_int               4
    load_int               1
-   100                    1
+   widget_create_child    1
    iload                  1
    load_int               17
    load_int               0
@@ -71,14 +71,14 @@
    widget_put_textcolor   1
    load_int               85
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               16777215
    load_string            "Iii"
    load_int               15532036
    2403                  
    load_int               85
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               16750623
    load_string            "Iii"
    load_int               15532036
@@ -86,20 +86,20 @@
    load_int               495
    widget_put_fontid      1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_int               2
    load_int               1
    load_int               0
    1114                   1
    sload                  1
-   1112                   1
+   widget_put_text        1
    iload                  0
-   3304                  
+   get_inventory_size    
    istore                 2
    load_int               800
    iload                  0
    iload                  2
-   1702                  
+   widget_get_index      
    iload                  0
    load_int               1
    load_string            "viiY"
@@ -108,7 +108,7 @@
    load_int               800
    iload                  0
    iload                  2
-   1702                  
+   widget_get_index      
    load_int               499
    load_int               1
    load_string            "viiY"
@@ -118,12 +118,12 @@
    load_int               -2147483644
    iload                  0
    iload                  2
-   1702                  
+   widget_get_index      
    load_string            "ivii"
    load_int               15532036
    2409                  
    iload                  0
    iload                  2
-   1702                  
+   widget_get_index      
    invoke                 802
    return                

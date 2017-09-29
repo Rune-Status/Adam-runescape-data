@@ -30,7 +30,7 @@
    idiv                  
    istore                 4
    load_int               30408706
-   102                   
+   widget_unset_children 
    load_int               -1
    istore                 5
    load_int               0
@@ -40,7 +40,7 @@
    load_int               -1
    istore                 8
    load_int               90
-   3304                  
+   get_inventory_size    
    istore                 9
    iload                  9
    044                    105
@@ -139,10 +139,10 @@ LABEL132:
    load_int               30408706
    load_int               5
    iload                  10
-   100                   
+   widget_create_child   
    load_int               90
    iload                  10
-   3301                  
+   get_itemcontainer_itemid
    istore                 8
    iload                  8
    load_int               -1
@@ -178,13 +178,13 @@ LABEL144:
    load_int               0
    1000                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    iload                  8
    load_int               90
    iload                  10
-   3302                  
+   get_itemcontainer_stacksize
    1200                  
    load_int               1
    load_string            "Remove"
@@ -246,10 +246,10 @@ LABEL230:
 LABEL234:
    load_int               90
    iload                  10
-   3301                  
+   get_itemcontainer_itemid
    load_int               90
    iload                  10
-   3302                  
+   get_itemcontainer_stacksize
    istore                 11
    istore                 8
    iload                  8
@@ -277,7 +277,7 @@ LABEL250:
    load_int               30408706
    load_int               4
    iload                  13
-   100                   
+   widget_create_child   
    iload                  13
    load_int               1
    iadd                  
@@ -301,7 +301,7 @@ LABEL250:
    load_int               494
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               0
    load_int               0
@@ -353,7 +353,7 @@ LABEL321:
    sload                  0
    invoke                 46
    037                    6
-   1112                  
+   widget_put_text       
    jump                   LABEL347
 LABEL337:
    iload                  11
@@ -365,7 +365,7 @@ LABEL337:
    sload                  0
    invoke                 46
    037                    3
-   1112                  
+   widget_put_text       
 LABEL347:
    jump                   LABEL353
 LABEL348:
@@ -373,7 +373,7 @@ LABEL348:
    045                   
    sload                  0
    invoke                 46
-   1112                  
+   widget_put_text       
 LABEL353:
    iload                  10
    load_int               1

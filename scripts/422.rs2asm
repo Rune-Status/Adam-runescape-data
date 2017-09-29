@@ -3,7 +3,7 @@
 .int_var_count      9
 .string_var_count   1
    iload                  0
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 7
    load_int               0
@@ -34,7 +34,7 @@ LABEL16:
    sload                  0
    037                    3
    iload                  1
-   2112                  
+   widget_put_text_widget
    jump                   LABEL51
 LABEL32:
    get_settings           261
@@ -52,12 +52,12 @@ LABEL36:
    istore                 8
    sload                  0
    iload                  1
-   2112                  
+   widget_put_text_widget
    jump                   LABEL51
 LABEL48:
    load_string            "None"
    iload                  1
-   2112                  
+   widget_put_text_widget
 LABEL51:
    jump                   LABEL79
 LABEL52:
@@ -85,17 +85,17 @@ LABEL60:
    sload                  0
    037                    3
    iload                  1
-   2112                  
+   widget_put_text_widget
    jump                   LABEL79
 LABEL76:
    load_string            "None"
    iload                  1
-   2112                  
+   widget_put_text_widget
 LABEL79:
    iload                  0
    load_int               5
    iload                  7
-   100                   
+   widget_create_child   
    iload                  7
    load_int               1
    iadd                  
@@ -103,7 +103,7 @@ LABEL79:
    iload                  0
    load_int               4
    iload                  7
-   100                    1
+   widget_create_child    1
    iload                  7
    load_int               1
    iadd                  
@@ -129,7 +129,7 @@ LABEL79:
    load_int               0
    1000                   1
    load_int               812
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               494
    widget_put_fontid      1
    load_int               1
@@ -137,9 +137,9 @@ LABEL79:
    load_int               0
    1114                   1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_string            "Cancel task"
-   1112                   1
+   widget_put_text        1
    iload                  8
    load_int               1
    if_icmpeq              LABEL131
@@ -149,13 +149,13 @@ LABEL131:
    widget_put_textcolor   1
    load_int               85
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               16777215
    load_string            "Iii"
    1403                  
    load_int               85
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               16750623
    load_string            "Iii"
    1404                  
@@ -180,7 +180,7 @@ LABEL161:
    iload                  0
    load_int               5
    iload                  7
-   100                   
+   widget_create_child   
    iload                  7
    load_int               1
    iadd                  
@@ -188,7 +188,7 @@ LABEL161:
    iload                  0
    load_int               4
    iload                  7
-   100                    1
+   widget_create_child    1
    iload                  7
    load_int               1
    iadd                  
@@ -214,7 +214,7 @@ LABEL161:
    load_int               0
    1000                   1
    load_int               812
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               494
    widget_put_fontid      1
    load_int               1
@@ -222,35 +222,40 @@ LABEL161:
    load_int               0
    1114                   1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_string            "Block task"
-   1112                   1
+   widget_put_text        1
    iload                  8
    load_int               1
    if_icmpeq              LABEL213
-   jump                   LABEL249
+   jump                   LABEL253
 LABEL213:
    get_settings           262
    load_int               97
    if_icmpne              LABEL217
-   jump                   LABEL249
+   jump                   LABEL253
 LABEL217:
    get_settings           262
-   load_int               98
+   load_int               105
    if_icmpne              LABEL221
-   jump                   LABEL249
+   jump                   LABEL253
 LABEL221:
+   get_settings           262
+   load_int               98
+   if_icmpne              LABEL225
+   jump                   LABEL253
+LABEL225:
    load_int               16750623
    widget_put_textcolor   1
    load_int               85
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               16777215
    load_string            "Iii"
    1403                  
    load_int               85
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               16750623
    load_string            "Iii"
    1404                  
@@ -267,9 +272,9 @@ LABEL221:
    iload                  6
    load_string            "s1IIIII"
    1409                  
-   jump                   LABEL251
-LABEL249:
+   jump                   LABEL255
+LABEL253:
    load_int               8342543
    widget_put_textcolor   1
-LABEL251:
+LABEL255:
    return                

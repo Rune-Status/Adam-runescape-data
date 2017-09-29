@@ -1,0 +1,61 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   1
+   load_int               105
+   load_int               115
+   load_int               860
+   iload                  2
+   3408                  
+   sstore                
+   load_string            "Level "
+   load_int               105
+   load_int               105
+   load_int               861
+   iload                  2
+   3408                  
+   int_to_string         
+   load_string            "<br>"
+   037                    3
+   sload                  0
+   concat_string         
+   sstore                
+   sload                  0
+   load_string            "<br>"
+   load_int               105
+   load_int               115
+   load_int               862
+   iload                  2
+   3408                  
+   037                    2
+   concat_string         
+   sstore                
+   025                    5711
+   load_int               0
+   if_icmpeq              LABEL32
+   jump                   LABEL49
+LABEL32:
+   load_int               38
+   load_int               -2147483645
+   iload                  0
+   sload                  0
+   load_int               25
+   iload                  1
+   widget_get_parentid_widget
+   widget_get_width_widget
+   load_string            "IIsii"
+   iload                  1
+   2412                  
+   load_int               40
+   iload                  0
+   load_string            "I"
+   iload                  1
+   2404                  
+   jump                   LABEL53
+LABEL49:
+   load_int               -1
+   load_string            ""
+   iload                  1
+   2412                  
+LABEL53:
+   return                

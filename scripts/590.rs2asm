@@ -38,7 +38,7 @@ LABEL28:
    iload                  2
    load_int               4
    iload                  4
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               0
@@ -60,9 +60,9 @@ LABEL28:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_string            "Waiting"
-   1112                  
+   widget_put_text       
    load_int               -1
    load_string            ""
    iload                  2
@@ -79,7 +79,7 @@ LABEL68:
    iload                  2
    load_int               4
    iload                  4
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               0
@@ -101,9 +101,9 @@ LABEL68:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_string            "Accept"
-   1112                  
+   widget_put_text       
    load_int               85
    iload                  2
    iload                  4
@@ -136,7 +136,7 @@ LABEL121:
 LABEL125:
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL131
    jump                   LABEL136
@@ -145,7 +145,7 @@ LABEL131:
    load_string            "If you turn off all forms of combat, your battle will be mighty peculiar."
    load_string            "</col>"
    037                    3
-   1112                  
+   widget_put_text       
 LABEL136:
    load_int               1
    iload                  2
@@ -159,7 +159,7 @@ LABEL140:
 LABEL144:
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL150
    jump                   LABEL155
@@ -168,7 +168,7 @@ LABEL150:
    load_string            "You can't have a proper battle with only the Bind, Snare and Entangle spells."
    load_string            "</col>"
    037                    3
-   1112                  
+   widget_put_text       
 LABEL155:
    load_int               1
    iload                  2
@@ -187,7 +187,7 @@ LABEL163:
 LABEL167:
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL173
    jump                   LABEL178
@@ -196,7 +196,7 @@ LABEL173:
    load_string            "The Trident of the Seas is enabled against players, yet its spell is forbidden by the Magic restrictions."
    load_string            "</col>"
    037                    3
-   1112                  
+   widget_put_text       
 LABEL178:
    load_int               1
    iload                  2
@@ -215,7 +215,7 @@ LABEL186:
 LABEL190:
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL196
    jump                   LABEL201
@@ -224,7 +224,7 @@ LABEL196:
    load_string            "It seems odd to restrict Magic to just the binding spells when you've disabled their binding effects."
    load_string            "</col>"
    037                    3
-   1112                  
+   widget_put_text       
 LABEL201:
    load_int               1
    iload                  2
@@ -247,7 +247,7 @@ LABEL209:
 LABEL217:
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL223
    jump                   LABEL228
@@ -256,7 +256,7 @@ LABEL223:
    load_string            "That's a members-only arena."
    load_string            "</col>"
    037                    3
-   1112                  
+   widget_put_text       
 LABEL228:
    load_int               1
    iload                  2
@@ -286,7 +286,7 @@ LABEL246:
 LABEL250:
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL256
    jump                   LABEL268
@@ -302,7 +302,7 @@ LABEL256:
    iadd                  
    int_to_string         
    037                    3
-   1112                  
+   widget_put_text       
 LABEL268:
    load_int               1
    iload                  2
@@ -311,13 +311,13 @@ LABEL268:
 LABEL272:
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL278
    jump                   LABEL280
 LABEL278:
    load_string            ""
-   1112                  
+   widget_put_text       
 LABEL280:
    load_int               0
    iload                  2

@@ -1,12 +1,14 @@
-.int_stack_count    12
-.string_stack_count 0
-.int_var_count      12
-.string_var_count   0
+.int_stack_count    13
+.string_stack_count 2
+.int_var_count      13
+.string_var_count   2
    iload                  0
    iload                  1
    iload                  2
    iload                  3
    iload                  4
+   sload                  0
+   sload                  1
    iload                  5
    iload                  6
    iload                  7
@@ -14,54 +16,55 @@
    iload                  9
    iload                  10
    iload                  11
+   iload                  12
    invoke                 21
    iload                  0
    load_int               14286849
-   if_icmpeq              LABEL26
+   if_icmpeq              LABEL29
    iload                  0
    load_int               14286941
-   if_icmpeq              LABEL26
+   if_icmpeq              LABEL29
    iload                  0
    load_int               14286943
-   if_icmpeq              LABEL26
+   if_icmpeq              LABEL29
    iload                  0
    load_int               14286989
-   if_icmpeq              LABEL26
-   jump                   LABEL40
-LABEL26:
+   if_icmpeq              LABEL29
+   jump                   LABEL43
+LABEL29:
    025                    1771
    load_int               1
-   if_icmpeq              LABEL30
-   jump                   LABEL35
-LABEL30:
+   if_icmpeq              LABEL33
+   jump                   LABEL38
+LABEL33:
    load_int               10
    load_string            "Animation"
    iload                  0
    2300                  
-   jump                   LABEL39
-LABEL35:
+   jump                   LABEL42
+LABEL38:
    load_int               10
    load_string            ""
    iload                  0
    2300                  
-LABEL39:
-   jump                   LABEL155
-LABEL40:
+LABEL42:
+   jump                   LABEL158
+LABEL43:
    iload                  0
    load_int               14286864
-   if_icmpeq              LABEL44
-   jump                   LABEL70
-LABEL44:
+   if_icmpeq              LABEL47
+   jump                   LABEL73
+LABEL47:
    025                    4585
    load_int               1
-   if_icmpeq              LABEL48
-   jump                   LABEL61
-LABEL48:
+   if_icmpeq              LABEL51
+   jump                   LABEL64
+LABEL51:
    get_ismembers         
    load_int               1
-   if_icmpeq              LABEL52
-   jump                   LABEL61
-LABEL52:
+   if_icmpeq              LABEL55
+   jump                   LABEL64
+LABEL55:
    load_int               1
    load_string            ""
    iload                  0
@@ -70,8 +73,8 @@ LABEL52:
    load_string            "Cast"
    iload                  0
    2300                  
-   jump                   LABEL69
-LABEL61:
+   jump                   LABEL72
+LABEL64:
    load_int               1
    load_string            "Cast"
    iload                  0
@@ -80,24 +83,24 @@ LABEL61:
    load_string            ""
    iload                  0
    2300                  
-LABEL69:
-   jump                   LABEL155
-LABEL70:
+LABEL72:
+   jump                   LABEL158
+LABEL73:
    iload                  0
    load_int               14286875
-   if_icmpeq              LABEL74
-   jump                   LABEL100
-LABEL74:
+   if_icmpeq              LABEL77
+   jump                   LABEL103
+LABEL77:
    025                    4560
    load_int               1
-   if_icmpeq              LABEL78
-   jump                   LABEL91
-LABEL78:
+   if_icmpeq              LABEL81
+   jump                   LABEL94
+LABEL81:
    get_ismembers         
    load_int               1
-   if_icmpeq              LABEL82
-   jump                   LABEL91
-LABEL82:
+   if_icmpeq              LABEL85
+   jump                   LABEL94
+LABEL85:
    load_int               1
    load_string            ""
    iload                  0
@@ -106,8 +109,8 @@ LABEL82:
    load_string            "Cast"
    iload                  0
    2300                  
-   jump                   LABEL99
-LABEL91:
+   jump                   LABEL102
+LABEL94:
    load_int               1
    load_string            "Cast"
    iload                  0
@@ -116,24 +119,24 @@ LABEL91:
    load_string            ""
    iload                  0
    2300                  
-LABEL99:
-   jump                   LABEL155
-LABEL100:
+LABEL102:
+   jump                   LABEL158
+LABEL103:
    iload                  0
    load_int               14286886
-   if_icmpeq              LABEL104
-   jump                   LABEL130
-LABEL104:
+   if_icmpeq              LABEL107
+   jump                   LABEL133
+LABEL107:
    025                    4548
    load_int               1
-   if_icmpeq              LABEL108
-   jump                   LABEL121
-LABEL108:
+   if_icmpeq              LABEL111
+   jump                   LABEL124
+LABEL111:
    get_ismembers         
    load_int               1
-   if_icmpeq              LABEL112
-   jump                   LABEL121
-LABEL112:
+   if_icmpeq              LABEL115
+   jump                   LABEL124
+LABEL115:
    load_int               1
    load_string            ""
    iload                  0
@@ -142,8 +145,8 @@ LABEL112:
    load_string            "Cast"
    iload                  0
    2300                  
-   jump                   LABEL129
-LABEL121:
+   jump                   LABEL132
+LABEL124:
    load_int               1
    load_string            "Cast"
    iload                  0
@@ -152,30 +155,30 @@ LABEL121:
    load_string            ""
    iload                  0
    2300                  
-LABEL129:
-   jump                   LABEL155
-LABEL130:
+LABEL132:
+   jump                   LABEL158
+LABEL133:
    iload                  0
    load_int               14286947
-   if_icmpeq              LABEL134
-   jump                   LABEL155
-LABEL134:
+   if_icmpeq              LABEL137
+   jump                   LABEL158
+LABEL137:
    025                    5006
    load_int               10
-   if_icmpeq              LABEL138
-   jump                   LABEL147
-LABEL138:
+   if_icmpeq              LABEL141
+   jump                   LABEL150
+LABEL141:
    025                    5037
    load_int               1
-   if_icmpeq              LABEL142
-   jump                   LABEL147
-LABEL142:
+   if_icmpeq              LABEL145
+   jump                   LABEL150
+LABEL145:
    load_int               2
    load_string            "Steve"
    iload                  0
    2300                  
-   jump                   LABEL155
-LABEL147:
+   jump                   LABEL158
+LABEL150:
    load_int               2
    load_int               105
    load_int               115
@@ -184,5 +187,5 @@ LABEL147:
    3408                  
    iload                  0
    2300                  
-LABEL155:
+LABEL158:
    return                

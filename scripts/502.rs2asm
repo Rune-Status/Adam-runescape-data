@@ -3,9 +3,9 @@
 .int_var_count      4
 .string_var_count   0
    iload                  0
-   102                   
+   widget_unset_children 
    iload                  2
-   102                   
+   widget_unset_children 
    025                    4146
    load_int               1
    if_icmpeq              LABEL8
@@ -13,7 +13,7 @@
 LABEL8:
    load_string            "Select hairstyle"
    iload                  1
-   2112                  
+   widget_put_text_widget
    iload                  0
    load_int               881
    load_int               882
@@ -34,7 +34,7 @@ LABEL23:
 LABEL27:
    load_string            "Select facial hair"
    iload                  1
-   2112                  
+   widget_put_text_widget
    iload                  0
    load_int               884
    load_int               885
@@ -55,7 +55,7 @@ LABEL42:
 LABEL46:
    load_string            "Select hairstyle"
    iload                  1
-   2112                  
+   widget_put_text_widget
    iload                  0
    load_int               888
    load_int               889
@@ -71,7 +71,7 @@ LABEL46:
 LABEL61:
    load_string            "Please try again later."
    iload                  1
-   2112                  
+   widget_put_text_widget
    return                
 LABEL65:
    load_int               0
@@ -85,7 +85,7 @@ LABEL71:
    iload                  2
    load_int               3
    iload                  3
-   100                   
+   widget_create_child   
    load_int               25
    load_int               25
    load_int               0
@@ -151,7 +151,7 @@ LABEL129:
    iload                  3
    load_int               25
    iadd                  
-   100                   
+   widget_create_child   
    load_int               25
    load_int               25
    load_int               0
@@ -184,7 +184,7 @@ LABEL152:
    1000                  
 LABEL163:
    load_int               442
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  3
    load_int               3
    invoke                 501

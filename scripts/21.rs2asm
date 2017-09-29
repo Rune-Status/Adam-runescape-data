@@ -1,274 +1,296 @@
-.int_stack_count    12
-.string_stack_count 0
-.int_var_count      12
-.string_var_count   0
+.int_stack_count    13
+.string_stack_count 2
+.int_var_count      13
+.string_var_count   2
+   load_int               10
+   iload                  0
+   iload                  1
+   iload                  4
+   sload                  0
+   sload                  1
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   load_string            "IIissoioioioi"
+   iload                  0
+   2412                  
+   load_int               11
+   iload                  1
+   load_string            "I"
+   iload                  0
+   2404                  
    iload                  0
    load_int               14286982
-   if_icmpeq              LABEL7
+   if_icmpeq              LABEL29
    iload                  0
    load_int               14286981
-   if_icmpeq              LABEL7
-   jump                   LABEL19
-LABEL7:
+   if_icmpeq              LABEL29
+   jump                   LABEL41
+LABEL29:
    025                    2451
    load_int               1
-   if_icmpeq              LABEL11
-   jump                   LABEL15
-LABEL11:
+   if_icmpeq              LABEL33
+   jump                   LABEL37
+LABEL33:
    load_int               150
    iload                  0
    widget_put_opacity_widget
-   jump                   LABEL18
-LABEL15:
+   jump                   LABEL40
+LABEL37:
    load_int               0
    iload                  0
    widget_put_opacity_widget
-LABEL18:
-   jump                   LABEL34
-LABEL19:
+LABEL40:
+   jump                   LABEL56
+LABEL41:
    iload                  0
    load_int               14286967
-   if_icmpeq              LABEL23
-   jump                   LABEL34
-LABEL23:
+   if_icmpeq              LABEL45
+   jump                   LABEL56
+LABEL45:
    025                    5438
    load_int               0
-   if_icmpgt              LABEL27
-   jump                   LABEL31
-LABEL27:
+   if_icmpgt              LABEL49
+   jump                   LABEL53
+LABEL49:
    load_int               150
    iload                  0
    widget_put_opacity_widget
-   jump                   LABEL34
-LABEL31:
+   jump                   LABEL56
+LABEL53:
    load_int               0
    iload                  0
    widget_put_opacity_widget
-LABEL34:
+LABEL56:
    load_int               6
    get_boostedskilllevels
+   iload                  4
+   if_icmplt              LABEL61
+   jump                   LABEL68
+LABEL61:
    iload                  3
-   if_icmplt              LABEL39
-   jump                   LABEL46
-LABEL39:
-   iload                  2
    iload                  0
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    load_int               0
    iload                  0
    widget_put_opacity_widget
    return                
-LABEL46:
+LABEL68:
    iload                  0
    load_int               14286862
-   if_icmpeq              LABEL50
-   jump                   LABEL103
-LABEL50:
+   if_icmpeq              LABEL72
+   jump                   LABEL125
+LABEL72:
    load_int               93
    load_int               13125
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               0
-   if_icmpgt              LABEL91
+   if_icmpgt              LABEL113
    load_int               93
    load_int               13126
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               0
-   if_icmpgt              LABEL91
+   if_icmpgt              LABEL113
    load_int               93
    load_int               13127
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               0
-   if_icmpgt              LABEL91
+   if_icmpgt              LABEL113
    load_int               94
    load_int               13125
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               0
-   if_icmpgt              LABEL91
+   if_icmpgt              LABEL113
    load_int               94
    load_int               13126
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               0
-   if_icmpgt              LABEL91
+   if_icmpgt              LABEL113
    load_int               94
    load_int               13127
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               0
-   if_icmpgt              LABEL91
+   if_icmpgt              LABEL113
    load_int               93
    load_int               13128
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               0
-   if_icmpgt              LABEL91
+   if_icmpgt              LABEL113
    load_int               94
    load_int               13128
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               0
-   if_icmpgt              LABEL91
-   jump                   LABEL103
-LABEL91:
+   if_icmpgt              LABEL113
+   jump                   LABEL125
+LABEL113:
    get_ismembers         
    load_int               1
-   if_icmpeq              LABEL95
-   jump                   LABEL103
-LABEL95:
+   if_icmpeq              LABEL117
+   jump                   LABEL125
+LABEL117:
    025                    4554
    load_int               30
-   if_icmplt              LABEL99
-   jump                   LABEL103
-LABEL99:
-   iload                  1
+   if_icmplt              LABEL121
+   jump                   LABEL125
+LABEL121:
+   iload                  2
    iload                  0
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    return                
-LABEL103:
+LABEL125:
    iload                  0
    load_int               14286883
-   if_icmpeq              LABEL107
-   jump                   LABEL130
-LABEL107:
+   if_icmpeq              LABEL129
+   jump                   LABEL152
+LABEL129:
    load_int               93
    load_int               13128
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               0
-   if_icmpgt              LABEL118
+   if_icmpgt              LABEL140
    load_int               94
    load_int               13128
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               0
-   if_icmpgt              LABEL118
-   jump                   LABEL130
-LABEL118:
+   if_icmpgt              LABEL140
+   jump                   LABEL152
+LABEL140:
    get_ismembers         
    load_int               1
-   if_icmpeq              LABEL122
-   jump                   LABEL130
-LABEL122:
+   if_icmpeq              LABEL144
+   jump                   LABEL152
+LABEL144:
    025                    4554
    load_int               30
-   if_icmplt              LABEL126
-   jump                   LABEL130
-LABEL126:
-   iload                  1
+   if_icmplt              LABEL148
+   jump                   LABEL152
+LABEL148:
+   iload                  2
    iload                  0
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    return                
-LABEL130:
-   iload                  4
-   load_int               -1
-   if_icmpne              LABEL134
-   jump                   LABEL146
-LABEL134:
-   iload                  4
-   invoke                 19
+LABEL152:
    iload                  5
-   if_icmplt              LABEL139
-   jump                   LABEL146
-LABEL139:
-   iload                  2
+   load_int               -1
+   if_icmpne              LABEL156
+   jump                   LABEL168
+LABEL156:
+   iload                  5
+   invoke                 19
+   iload                  6
+   if_icmplt              LABEL161
+   jump                   LABEL168
+LABEL161:
+   iload                  3
    iload                  0
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    load_int               0
    iload                  0
    widget_put_opacity_widget
    return                
-LABEL146:
-   iload                  6
-   load_int               -1
-   if_icmpne              LABEL150
-   jump                   LABEL162
-LABEL150:
-   iload                  6
-   invoke                 19
+LABEL168:
    iload                  7
-   if_icmplt              LABEL155
-   jump                   LABEL162
-LABEL155:
-   iload                  2
+   load_int               -1
+   if_icmpne              LABEL172
+   jump                   LABEL184
+LABEL172:
+   iload                  7
+   invoke                 19
+   iload                  8
+   if_icmplt              LABEL177
+   jump                   LABEL184
+LABEL177:
+   iload                  3
    iload                  0
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    load_int               0
    iload                  0
    widget_put_opacity_widget
    return                
-LABEL162:
-   iload                  8
-   load_int               -1
-   if_icmpne              LABEL166
-   jump                   LABEL178
-LABEL166:
-   iload                  8
-   invoke                 19
+LABEL184:
    iload                  9
-   if_icmplt              LABEL171
-   jump                   LABEL178
-LABEL171:
-   iload                  2
-   iload                  0
-   widget_put_textureid_widget
-   load_int               0
-   iload                  0
-   widget_put_opacity_widget
-   return                
-LABEL178:
-   iload                  10
    load_int               -1
-   if_icmpne              LABEL182
-   jump                   LABEL194
-LABEL182:
-   iload                  10
+   if_icmpne              LABEL188
+   jump                   LABEL200
+LABEL188:
+   iload                  9
    invoke                 19
-   iload                  11
-   if_icmplt              LABEL187
-   jump                   LABEL194
-LABEL187:
-   iload                  2
+   iload                  10
+   if_icmplt              LABEL193
+   jump                   LABEL200
+LABEL193:
+   iload                  3
    iload                  0
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    load_int               0
    iload                  0
    widget_put_opacity_widget
    return                
-LABEL194:
+LABEL200:
+   iload                  11
+   load_int               -1
+   if_icmpne              LABEL204
+   jump                   LABEL216
+LABEL204:
+   iload                  11
+   invoke                 19
+   iload                  12
+   if_icmplt              LABEL209
+   jump                   LABEL216
+LABEL209:
+   iload                  3
+   iload                  0
+   widget_put_spriteid_widget
+   load_int               0
+   iload                  0
+   widget_put_opacity_widget
+   return                
+LABEL216:
    iload                  0
    load_int               14286852
-   if_icmpeq              LABEL198
-   jump                   LABEL206
-LABEL198:
+   if_icmpeq              LABEL220
+   jump                   LABEL228
+LABEL220:
    get_ismembers         
    load_int               0
-   if_icmpeq              LABEL202
-   jump                   LABEL206
-LABEL202:
-   iload                  2
+   if_icmpeq              LABEL224
+   jump                   LABEL228
+LABEL224:
+   iload                  3
    iload                  0
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    return                
-LABEL206:
+LABEL228:
    iload                  0
    load_int               14286911
-   if_icmpeq              LABEL216
+   if_icmpeq              LABEL238
    iload                  0
    load_int               14286940
-   if_icmpeq              LABEL216
+   if_icmpeq              LABEL238
    iload                  0
    load_int               14286971
-   if_icmpeq              LABEL216
-   jump                   LABEL227
-LABEL216:
+   if_icmpeq              LABEL238
+   jump                   LABEL249
+LABEL238:
    025                    2010
    load_int               0
-   if_icmpeq              LABEL223
+   if_icmpeq              LABEL245
    025                    5604
    load_int               5
-   if_icmpge              LABEL223
-   jump                   LABEL227
-LABEL223:
+   if_icmpge              LABEL245
+   jump                   LABEL249
+LABEL245:
+   iload                  3
+   iload                  0
+   widget_put_spriteid_widget
+   return                
+LABEL249:
    iload                  2
    iload                  0
-   widget_put_textureid_widget
-   return                
-LABEL227:
-   iload                  1
-   iload                  0
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    return                

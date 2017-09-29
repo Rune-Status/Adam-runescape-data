@@ -4,11 +4,11 @@
 .string_var_count   1
    sload                  0
    load_int               5111810
-   2112                  
+   widget_put_text_widget
    load_int               5111812
-   102                   
+   widget_unset_children 
    load_int               5111813
-   102                   
+   widget_unset_children 
    load_int               5111812
    widget_get_width_widget
    load_int               10
@@ -32,7 +32,7 @@
    istore                 8
 LABEL28:
    iload                  8
-   load_int               82
+   load_int               85
    if_icmple              LABEL32
    jump                   LABEL173
 LABEL32:
@@ -109,7 +109,7 @@ LABEL86:
    load_int               5111812
    load_int               5
    iload                  8
-   100                   
+   widget_create_child   
    iload                  6
    load_int               1
    if_icmpeq              LABEL94
@@ -128,7 +128,7 @@ LABEL94:
 LABEL104:
    load_int               93
    iload                  7
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               0
    if_icmpeq              LABEL110
    jump                   LABEL113
@@ -153,7 +153,7 @@ LABEL115:
    load_int               0
    1000                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    iload                  7

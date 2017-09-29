@@ -5,45 +5,50 @@
    iload                  0
    load_int               6
    if_icmpeq              LABEL4
-   jump                   LABEL7
+   jump                   LABEL11
 LABEL4:
+   invoke                 1942
+   load_int               0
+   if_icmpeq              LABEL8
+   jump                   LABEL11
+LABEL8:
    sload                  0
    invoke                 215
-   jump                   LABEL34
-LABEL7:
+   jump                   LABEL38
+LABEL11:
    iload                  0
    load_int               7
-   if_icmpeq              LABEL11
-   jump                   LABEL14
-LABEL11:
+   if_icmpeq              LABEL15
+   jump                   LABEL18
+LABEL15:
    sload                  0
    add_friend            
-   jump                   LABEL34
-LABEL14:
+   jump                   LABEL38
+LABEL18:
    iload                  0
    load_int               8
-   if_icmpeq              LABEL18
-   jump                   LABEL21
-LABEL18:
+   if_icmpeq              LABEL22
+   jump                   LABEL25
+LABEL22:
    sload                  0
    add_ignore            
-   jump                   LABEL34
-LABEL21:
+   jump                   LABEL38
+LABEL25:
    iload                  0
    load_int               9
-   if_icmpeq              LABEL25
-   jump                   LABEL28
-LABEL25:
+   if_icmpeq              LABEL29
+   jump                   LABEL32
+LABEL29:
    sload                  0
    remove_friend         
-   jump                   LABEL34
-LABEL28:
+   jump                   LABEL38
+LABEL32:
    iload                  0
    load_int               10
-   if_icmpeq              LABEL32
-   jump                   LABEL34
-LABEL32:
+   if_icmpeq              LABEL36
+   jump                   LABEL38
+LABEL36:
    sload                  0
    remove_ignore         
-LABEL34:
+LABEL38:
    return                

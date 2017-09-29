@@ -85,7 +85,7 @@ LABEL54:
    widget_put_hidden_widget
 LABEL73:
    load_int               8454157
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 8
    iload                  6
@@ -101,7 +101,7 @@ LABEL85:
    load_int               8454157
    load_int               5
    iload                  8
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    iload                  8
@@ -173,7 +173,7 @@ LABEL149:
    load_int               8454157
    load_int               5
    iload                  8
-   100                   
+   widget_create_child   
    iload                  8
    load_int               1
    iadd                  
@@ -196,18 +196,18 @@ LABEL149:
    jump                   LABEL176
 LABEL173:
    load_int               297
-   widget_put_textureid  
+   widget_put_spriteid   
    jump                   LABEL178
 LABEL176:
    load_int               1040
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL178:
    load_int               1
    1107                  
    load_int               8454157
    load_int               4
    iload                  8
-   100                    1
+   widget_create_child    1
    iload                  8
    load_int               1
    iadd                  
@@ -225,7 +225,7 @@ LABEL178:
    load_int               495
    widget_put_fontid      1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_int               1
    load_int               1
    load_int               0
@@ -245,7 +245,7 @@ LABEL213:
    3408                  
    sstore                 2
    sload                  2
-   1112                   1
+   widget_put_text        1
    iload                  6
    load_int               -1
    if_icmpne              LABEL225
@@ -285,7 +285,7 @@ LABEL239:
    load_int               -2147483644
    iload                  15
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    sload                  2
    load_string            "iiIis"
    1409                  
@@ -328,7 +328,7 @@ LABEL239:
    load_int               8454157
    load_int               5
    iload                  8
-   100                    1
+   widget_create_child    1
    iload                  8
    load_int               1
    iadd                  
@@ -349,11 +349,11 @@ LABEL239:
    jump                   LABEL321
 LABEL318:
    load_int               698
-   widget_put_textureid   1
+   widget_put_spriteid    1
    jump                   LABEL323
 LABEL321:
    load_int               699
-   widget_put_textureid   1
+   widget_put_spriteid    1
 LABEL323:
    jump                   LABEL326
 LABEL324:
@@ -374,7 +374,7 @@ LABEL327:
    load_string            "</col>"
    load_string            "</str>"
    037                    5
-   1112                   1
+   widget_put_text        1
 LABEL340:
    iload                  12
    load_int               1
@@ -428,7 +428,7 @@ LABEL373:
    load_int               8454157
    load_int               5
    iload                  8
-   100                   
+   widget_create_child   
    iload                  8
    load_int               1
    iadd                  
@@ -444,7 +444,7 @@ LABEL373:
    load_int               2
    1000                  
    load_int               897
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               1
    1107                  
 LABEL405:

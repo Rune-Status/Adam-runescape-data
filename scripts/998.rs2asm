@@ -52,13 +52,13 @@ LABEL40:
    widget_put_hidden_widget
    iload                  6
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL49
    jump                   LABEL53
 LABEL49:
    load_string            ""
-   1112                  
+   widget_put_text       
    load_int               1
    widget_put_hidden     
 LABEL53:
@@ -69,12 +69,12 @@ LABEL53:
 LABEL57:
    iload                  6
    iload                  7
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL63
    jump                   LABEL64
 LABEL63:
-   101                   
+   widget_destroy_child  
 LABEL64:
    iload                  7
    load_int               1

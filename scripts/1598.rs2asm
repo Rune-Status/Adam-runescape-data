@@ -115,10 +115,19 @@ LABEL84:
    if_icmpeq              LABEL88
    jump                   LABEL91
 LABEL88:
-   load_string            "Other"
+   load_string            "Birdhouses"
    load_int               1
    return                
 LABEL91:
+   iload                  0
+   load_int               13
+   if_icmpeq              LABEL95
+   jump                   LABEL98
+LABEL95:
+   load_string            "Other"
+   load_int               1
+   return                
+LABEL98:
    load_string            ""
    load_int               -1
    return                

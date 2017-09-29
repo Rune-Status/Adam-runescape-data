@@ -55,18 +55,18 @@ LABEL42:
    if_icmpeq              LABEL46
    jump                   LABEL60
 LABEL46:
-   047                    137
+   get_varc_string        137
    string_length         
    load_int               0
    if_icmple              LABEL51
    jump                   LABEL53
 LABEL51:
    load_string            "-"
-   048                    137
+   put_varc_string        137
 LABEL53:
    iload                  2
    load_string            "<col=00ff00>"
-   047                    137
+   get_varc_string        137
    load_string            "</col>"
    037                    3
    invoke                 1672

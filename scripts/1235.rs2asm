@@ -59,7 +59,7 @@
    iload                  28
    043                    109
    iload                  0
-   3304                  
+   get_inventory_size    
    istore                 29
    iload                  29
    044                    105
@@ -161,7 +161,7 @@ LABEL151:
    istore                 29
    load_int               5308421
    iload                  29
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL161
    jump                   LABEL197
@@ -179,7 +179,7 @@ LABEL165:
 LABEL170:
    load_int               93
    iload                  29
-   3301                  
+   get_itemcontainer_itemid
    load_int               -1
    if_icmpne              LABEL176
    jump                   LABEL190
@@ -201,7 +201,7 @@ LABEL176:
 LABEL190:
    iload                  0
    iload                  29
-   3302                  
+   get_itemcontainer_stacksize
    iload                  29
    045                   
    load_int               5308423

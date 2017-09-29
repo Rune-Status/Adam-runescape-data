@@ -140,7 +140,7 @@ LABEL105:
    load_int               0
    return                
 LABEL107:
-   jump                   LABEL253
+   jump                   LABEL233
 LABEL108:
    iload                  0
    load_int               10
@@ -204,8 +204,8 @@ LABEL152:
    if_icmpeq              LABEL156
    jump                   LABEL172
 LABEL156:
-   get_settings           714
-   load_int               6
+   025                    1344
+   load_int               3
    if_icmpge              LABEL160
    jump                   LABEL163
 LABEL160:
@@ -213,9 +213,9 @@ LABEL160:
    return                
    jump                   LABEL172
 LABEL163:
-   get_settings           714
-   load_int               4
-   if_icmplt              LABEL167
+   025                    1344
+   load_int               0
+   if_icmple              LABEL167
    jump                   LABEL170
 LABEL167:
    load_int               1
@@ -230,8 +230,8 @@ LABEL172:
    if_icmpeq              LABEL176
    jump                   LABEL192
 LABEL176:
-   025                    1344
-   load_int               3
+   get_settings           267
+   load_int               8
    if_icmpge              LABEL180
    jump                   LABEL183
 LABEL180:
@@ -239,7 +239,7 @@ LABEL180:
    return                
    jump                   LABEL192
 LABEL183:
-   025                    1344
+   get_settings           267
    load_int               0
    if_icmple              LABEL187
    jump                   LABEL190
@@ -256,8 +256,8 @@ LABEL192:
    if_icmpeq              LABEL196
    jump                   LABEL212
 LABEL196:
-   get_settings           267
-   load_int               8
+   025                    3290
+   load_int               3
    if_icmpge              LABEL200
    jump                   LABEL203
 LABEL200:
@@ -265,7 +265,7 @@ LABEL200:
    return                
    jump                   LABEL212
 LABEL203:
-   get_settings           267
+   025                    3290
    load_int               0
    if_icmple              LABEL207
    jump                   LABEL210
@@ -277,14 +277,14 @@ LABEL210:
    load_int               0
    return                
 LABEL212:
-   jump                   LABEL253
+   jump                   LABEL233
 LABEL213:
    iload                  0
    load_int               10
    if_icmpeq              LABEL217
    jump                   LABEL233
 LABEL217:
-   025                    3290
+   025                    5347
    load_int               3
    if_icmpge              LABEL221
    jump                   LABEL224
@@ -293,7 +293,7 @@ LABEL221:
    return                
    jump                   LABEL233
 LABEL224:
-   025                    3290
+   025                    5347
    load_int               0
    if_icmple              LABEL228
    jump                   LABEL231
@@ -305,32 +305,6 @@ LABEL231:
    load_int               0
    return                
 LABEL233:
-   iload                  0
-   load_int               11
-   if_icmpeq              LABEL237
-   jump                   LABEL253
-LABEL237:
-   025                    5347
-   load_int               3
-   if_icmpge              LABEL241
-   jump                   LABEL244
-LABEL241:
-   load_int               2
-   return                
-   jump                   LABEL253
-LABEL244:
-   025                    5347
-   load_int               0
-   if_icmple              LABEL248
-   jump                   LABEL251
-LABEL248:
-   load_int               1
-   return                
-   jump                   LABEL253
-LABEL251:
-   load_int               0
-   return                
-LABEL253:
    load_int               1
    return                
    load_int               0

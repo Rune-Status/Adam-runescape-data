@@ -1,0 +1,16 @@
+.int_stack_count    0
+.string_stack_count 2
+.int_var_count      0
+.string_var_count   2
+   invoke                 1972
+   load_int               1
+   if_icmpeq              LABEL4
+   jump                   LABEL6
+LABEL4:
+   sload                  1
+   return                
+LABEL6:
+   sload                  0
+   return                
+   load_string            ""
+   return                

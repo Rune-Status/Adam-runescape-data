@@ -7,12 +7,12 @@
    if_icmpeq              LABEL4
    jump                   LABEL5
 LABEL4:
-   3103                  
+   close_window          
 LABEL5:
    invoke                 677
    load_string            "Enter the player name whose channel you wish to join:"
-   load_int               10616864
-   2112                  
+   load_int               10616865
+   widget_put_text_widget
    load_int               10
    043                    5
    load_string            ""
@@ -24,10 +24,10 @@ LABEL5:
    load_int               -2147483639
    sload                  0
    load_string            "izs"
-   load_int               10616865
+   load_int               10616866
    2419                  
    invoke                 680
-   047                    129
+   get_varc_string        129
    string_length         
    load_int               0
    if_icmpgt              LABEL28
@@ -38,13 +38,20 @@ LABEL28:
    load_string            "Last name:"
    load_string            "</col>"
    load_string            " "
-   047                    129
+   get_varc_string        129
    037                    5
-   1112                  
+   widget_put_text       
    load_int               682
    load_int               10
-   047                    129
+   get_varc_string        129
    load_string            "is"
    1400                  
 LABEL41:
+   invoke                 1972
+   load_int               1
+   if_icmpeq              LABEL45
+   jump                   LABEL46
+LABEL45:
+   invoke                 1983
+LABEL46:
    return                

@@ -1,0 +1,79 @@
+.int_stack_count    7
+.string_stack_count 0
+.int_var_count      7
+.string_var_count   0
+   iload                  3
+   load_int               0
+   if_icmplt              LABEL4
+   jump                   LABEL7
+LABEL4:
+   load_int               0
+   istore                 3
+   jump                   LABEL13
+LABEL7:
+   iload                  3
+   load_int               255
+   if_icmpgt              LABEL11
+   jump                   LABEL13
+LABEL11:
+   load_int               255
+   istore                 3
+LABEL13:
+   iload                  5
+   load_int               0
+   if_icmplt              LABEL17
+   jump                   LABEL20
+LABEL17:
+   load_int               0
+   istore                 5
+   jump                   LABEL26
+LABEL20:
+   iload                  5
+   load_int               255
+   if_icmpgt              LABEL24
+   jump                   LABEL26
+LABEL24:
+   load_int               255
+   istore                 5
+LABEL26:
+   iload                  6
+   load_int               0
+   if_icmple              LABEL30
+   jump                   LABEL41
+LABEL30:
+   iload                  4
+   iload                  1
+   widget_put_textcolor_widget
+   iload                  5
+   iload                  1
+   widget_put_opacity_widget
+   load_int               -1
+   load_string            ""
+   iload                  0
+   2408                  
+   return                
+LABEL41:
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  6
+   invoke                 2002
+   load_int               2001
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   get_gamecycle         
+   iload                  6
+   iadd                  
+   load_string            "IIiiiiii"
+   iload                  0
+   2408                  
+   return                

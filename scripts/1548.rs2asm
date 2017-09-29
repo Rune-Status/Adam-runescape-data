@@ -7,7 +7,7 @@
    invoke                 900
    load_int               10551366
    3408                  
-   2702                  
+   widget_get_index_widget
    load_int               0
    if_icmpeq              LABEL9
    jump                   LABEL10
@@ -41,7 +41,7 @@ LABEL16:
    iload                  0
    load_int               7
    imul                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL39
    jump                   LABEL51
@@ -73,7 +73,7 @@ LABEL51:
    imul                  
    load_int               1
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL69
    jump                   LABEL138
@@ -156,7 +156,7 @@ LABEL130:
    1404                  
 LABEL136:
    sload                  1
-   1112                  
+   widget_put_text       
 LABEL138:
    load_int               32768010
    iload                  0
@@ -164,13 +164,13 @@ LABEL138:
    imul                  
    load_int               2
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL148
    jump                   LABEL150
 LABEL148:
    sload                  3
-   1112                  
+   widget_put_text       
 LABEL150:
    load_int               32768010
    iload                  0
@@ -178,13 +178,13 @@ LABEL150:
    imul                  
    load_int               3
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL160
    jump                   LABEL162
 LABEL160:
    sload                  0
-   1112                  
+   widget_put_text       
 LABEL162:
    load_int               32768010
    iload                  0
@@ -192,13 +192,13 @@ LABEL162:
    imul                  
    load_int               4
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL172
    jump                   LABEL174
 LABEL172:
    sload                  2
-   1112                  
+   widget_put_text       
 LABEL174:
    load_int               32768010
    iload                  0
@@ -206,7 +206,7 @@ LABEL174:
    imul                  
    load_int               5
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL184
    jump                   LABEL190
@@ -216,7 +216,7 @@ LABEL184:
    invoke                 1503
    iload                  0
    concat_int            
-   1112                  
+   widget_put_text       
 LABEL190:
    load_int               32768010
    iload                  0
@@ -224,7 +224,7 @@ LABEL190:
    imul                  
    load_int               6
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL200
    jump                   LABEL206
@@ -234,6 +234,6 @@ LABEL200:
    invoke                 1503
    iload                  0
    concat_int            
-   1112                  
+   widget_put_text       
 LABEL206:
    return                

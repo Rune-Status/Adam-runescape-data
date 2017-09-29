@@ -3,7 +3,7 @@
 .int_var_count      11
 .string_var_count   0
    iload                  0
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 8
    load_int               -1
@@ -76,7 +76,7 @@ LABEL55:
 LABEL60:
    return                
 LABEL61:
-   load_int               38
+   load_int               39
    iload                  9
    iadd                  
    istore                 9
@@ -85,7 +85,7 @@ LABEL61:
    iload                  0
    load_int               4
    iload                  10
-   100                   
+   widget_create_child   
    iload                  10
    load_int               1
    iadd                  
@@ -105,7 +105,7 @@ LABEL61:
    load_int               495
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               0
    load_int               1
    load_int               0
@@ -115,11 +115,11 @@ LABEL61:
    int_to_string         
    load_string            ":"
    037                    3
-   1112                  
+   widget_put_text       
    iload                  0
    load_int               4
    iload                  10
-   100                   
+   widget_create_child   
    iload                  10
    load_int               1
    iadd                  
@@ -135,7 +135,7 @@ LABEL61:
    load_int               1
    1001                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               1
    load_int               0
@@ -163,7 +163,7 @@ LABEL137:
    load_string            "<br>"
    load_string            "elite diary to use this slot."
    037                    3
-   1112                  
+   widget_put_text       
    jump                   LABEL153
 LABEL147:
    load_int               16750623
@@ -171,7 +171,7 @@ LABEL147:
    load_int               495
    widget_put_fontid     
    load_string            "Empty"
-   1112                  
+   widget_put_text       
 LABEL153:
    jump                   LABEL175
 LABEL154:
@@ -189,7 +189,7 @@ LABEL158:
    int_to_string         
    load_string            " QP to use this slot."
    037                    3
-   1112                  
+   widget_put_text       
    jump                   LABEL175
 LABEL169:
    load_int               16750623
@@ -197,7 +197,7 @@ LABEL169:
    load_int               495
    widget_put_fontid     
    load_string            "Empty"
-   1112                  
+   widget_put_text       
 LABEL175:
    jump                   LABEL186
 LABEL176:
@@ -210,12 +210,12 @@ LABEL176:
    load_int               693
    iload                  8
    3408                  
-   1112                  
+   widget_put_text       
 LABEL186:
    iload                  0
    load_int               5
    iload                  10
-   100                   
+   widget_create_child   
    iload                  10
    load_int               1
    iadd                  
@@ -223,7 +223,7 @@ LABEL186:
    iload                  0
    load_int               4
    iload                  10
-   100                    1
+   widget_create_child    1
    iload                  10
    load_int               1
    iadd                  
@@ -249,7 +249,7 @@ LABEL186:
    load_int               1
    1000                   1
    load_int               812
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               494
    widget_put_fontid      1
    load_int               1
@@ -257,9 +257,9 @@ LABEL186:
    load_int               0
    1114                   1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_string            "Unblock task"
-   1112                   1
+   widget_put_text        1
    iload                  8
    load_int               0
    if_icmpne              LABEL238
@@ -269,13 +269,13 @@ LABEL238:
    widget_put_textcolor   1
    load_int               85
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               16777215
    load_string            "Iii"
    1403                  
    load_int               85
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               16750623
    load_string            "Iii"
    1404                  

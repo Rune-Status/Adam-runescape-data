@@ -36,26 +36,43 @@ LABEL25:
 LABEL29:
    load_int               90
    istore                 4
-   jump                   LABEL46
+   jump                   LABEL59
 LABEL32:
-   042                    139
-   load_int               0
-   if_icmple              LABEL36
-   jump                   LABEL40
+   025                    5667
+   load_int               1
+   if_icmpeq              LABEL36
+   jump                   LABEL45
 LABEL36:
+   042                    139
+   load_int               1
+   if_icmple              LABEL40
+   jump                   LABEL44
+LABEL40:
    iload                  2
    iload                  2
    load_int               0
    return                
-LABEL40:
+LABEL44:
+   jump                   LABEL59
+LABEL45:
+   042                    139
+   load_int               0
+   if_icmple              LABEL49
+   jump                   LABEL53
+LABEL49:
+   iload                  2
+   iload                  2
+   load_int               0
+   return                
+LABEL53:
    042                    139
    load_int               1
-   if_icmple              LABEL44
-   jump                   LABEL46
-LABEL44:
+   if_icmple              LABEL57
+   jump                   LABEL59
+LABEL57:
    load_int               75
    istore                 4
-LABEL46:
+LABEL59:
    iload                  1
    get_skillexperiences  
    istore                 5
@@ -66,22 +83,22 @@ LABEL46:
    istore                 6
    iload                  2
    istore                 7
-LABEL56:
+LABEL69:
    load_int               105
    load_int               105
    load_int               256
    iload                  7
    3408                  
    iload                  6
-   if_icmpgt              LABEL64
-   jump                   LABEL69
-LABEL64:
+   if_icmpgt              LABEL77
+   jump                   LABEL82
+LABEL77:
    iload                  7
    load_int               1
    isub                  
    istore                 7
-   jump                   LABEL56
-LABEL69:
+   jump                   LABEL69
+LABEL82:
    load_int               105
    load_int               105
    load_int               1240
@@ -90,20 +107,20 @@ LABEL69:
    istore                 8
    iload                  2
    iload                  8
-   if_icmplt              LABEL79
-   jump                   LABEL81
-LABEL79:
+   if_icmplt              LABEL92
+   jump                   LABEL94
+LABEL92:
    iload                  2
    istore                 8
-LABEL81:
+LABEL94:
    iload                  8
    iload                  7
-   if_icmpgt              LABEL85
-   jump                   LABEL87
-LABEL85:
+   if_icmpgt              LABEL98
+   jump                   LABEL100
+LABEL98:
    iload                  8
    istore                 7
-LABEL87:
+LABEL100:
    load_int               105
    load_int               105
    load_int               256
@@ -112,20 +129,20 @@ LABEL87:
    istore                 9
    iload                  5
    iload                  9
-   if_icmplt              LABEL97
-   jump                   LABEL99
-LABEL97:
+   if_icmplt              LABEL110
+   jump                   LABEL112
+LABEL110:
    iload                  5
    istore                 9
-LABEL99:
+LABEL112:
    iload                  9
    iload                  6
-   if_icmpgt              LABEL103
-   jump                   LABEL105
-LABEL103:
+   if_icmpgt              LABEL116
+   jump                   LABEL118
+LABEL116:
    iload                  9
    istore                 6
-LABEL105:
+LABEL118:
    iload                  2
    iload                  7
    iload                  5

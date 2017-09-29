@@ -3,7 +3,7 @@
 .int_var_count      7
 .string_var_count   1
    iload                  2
-   102                   
+   widget_unset_children 
    iload                  2
    load_int               0
    invoke                 836
@@ -11,7 +11,7 @@
    iload                  2
    load_int               5
    iload                  5
-   100                   
+   widget_create_child   
    iload                  5
    load_int               1
    iadd                  
@@ -27,11 +27,11 @@
    load_int               1
    1000                  
    load_int               1043
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  2
    load_int               4
    iload                  5
-   100                   
+   widget_create_child   
    iload                  5
    load_int               1
    iadd                  
@@ -47,14 +47,14 @@
    load_int               1
    1000                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               495
    widget_put_fontid     
    load_int               1
    load_int               1
    load_int               0
    1114                  
-   047                    22
+   get_varc_string        22
    tolowercase           
    string_remove_html    
    sstore                
@@ -70,7 +70,7 @@ LABEL63:
    load_int               0
    load_int               9
    string_substring      
-   1112                  
+   widget_put_text       
    jump                   LABEL81
 LABEL69:
    iload                  6
@@ -79,14 +79,14 @@ LABEL69:
    jump                   LABEL76
 LABEL73:
    sload                  0
-   1112                  
+   widget_put_text       
    jump                   LABEL81
 LABEL76:
    load_string            "<lt>"
    load_string            "Search term"
    load_string            "<gt>"
    037                    3
-   1112                  
+   widget_put_text       
 LABEL81:
    load_int               16777215
    widget_put_textcolor  
@@ -116,7 +116,7 @@ LABEL81:
    iload                  0
    iload                  1
    iload                  2
-   047                    22
+   get_varc_string        22
    iload                  3
    iload                  4
    load_string            "IIIsii"

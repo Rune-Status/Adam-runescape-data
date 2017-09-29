@@ -7,7 +7,7 @@
    invoke                 900
    load_int               10551366
    3408                  
-   2702                  
+   widget_get_index_widget
    load_int               0
    if_icmpeq              LABEL9
    jump                   LABEL10
@@ -15,7 +15,7 @@ LABEL9:
    return                
 LABEL10:
    load_int               32768010
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 1
    load_int               0
@@ -41,7 +41,7 @@ LABEL24:
    iload                  4
    load_int               7
    imul                  
-   100                   
+   widget_create_child   
    load_int               0
    load_int               13
    load_int               1
@@ -66,7 +66,7 @@ LABEL24:
    imul                  
    load_int               1
    iadd                  
-   100                   
+   widget_create_child   
    iload                  1
    load_int               13
    load_int               0
@@ -86,7 +86,7 @@ LABEL24:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    iload                  2
    iload                  1
    iadd                  
@@ -101,7 +101,7 @@ LABEL24:
    imul                  
    load_int               2
    iadd                  
-   100                   
+   widget_create_child   
    iload                  1
    load_int               13
    load_int               0
@@ -121,7 +121,7 @@ LABEL24:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    iload                  2
    iload                  1
    iadd                  
@@ -133,7 +133,7 @@ LABEL24:
    imul                  
    load_int               3
    iadd                  
-   100                   
+   widget_create_child   
    iload                  2
    load_int               13
    load_int               1
@@ -153,7 +153,7 @@ LABEL24:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               32768010
    load_int               4
    iload                  4
@@ -161,7 +161,7 @@ LABEL24:
    imul                  
    load_int               4
    iadd                  
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    load_int               16750623
@@ -173,7 +173,7 @@ LABEL24:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               32768010
    load_int               4
    iload                  4
@@ -181,7 +181,7 @@ LABEL24:
    imul                  
    load_int               5
    iadd                  
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    load_int               16750623
@@ -193,7 +193,7 @@ LABEL24:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               32768010
    load_int               4
    iload                  4
@@ -201,7 +201,7 @@ LABEL24:
    imul                  
    load_int               6
    iadd                  
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    load_int               16750623
@@ -213,7 +213,7 @@ LABEL24:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    iload                  4
    load_int               1
    iadd                  

@@ -19,13 +19,13 @@
    iload                  0
    2407                  
    iload                  2
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 3
    iload                  2
    load_int               5
    iload                  3
-   100                   
+   widget_create_child   
    iload                  3
    load_int               1
    iadd                  
@@ -43,7 +43,7 @@
    load_int               1
    1107                  
    load_int               297
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  2
    iload                  3
    invoke                 1192
@@ -51,7 +51,7 @@
    iload                  2
    load_int               4
    iload                  3
-   100                   
+   widget_create_child   
    iload                  3
    load_int               1
    iadd                  
@@ -59,7 +59,7 @@
    iload                  2
    load_int               4
    iload                  3
-   100                    1
+   widget_create_child    1
    iload                  3
    load_int               1
    iadd                  
@@ -93,9 +93,9 @@
    load_int               495
    widget_put_fontid      1
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_int               0
    load_int               1
    load_int               0
@@ -108,8 +108,8 @@
    invoke                 1511
    load_int               1510
    iload                  2
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
    load_int               1431
    load_int               1432
    load_int               2

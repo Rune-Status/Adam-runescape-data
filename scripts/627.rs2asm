@@ -7,7 +7,7 @@
    invoke                 900
    load_int               10551309
    3408                  
-   2702                  
+   widget_get_index_widget
    load_int               0
    if_icmpeq              LABEL9
    jump                   LABEL10
@@ -45,7 +45,7 @@ LABEL22:
    jump                   LABEL18
 LABEL37:
    load_int               20316170
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 4
 LABEL41:
@@ -57,7 +57,7 @@ LABEL45:
    load_int               20316170
    load_int               3
    iload                  4
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    iload                  4
@@ -86,7 +86,7 @@ LABEL71:
    load_int               20316170
    load_int               3
    iload                  4
-   100                   
+   widget_create_child   
    iload                  4
    load_int               1
    iadd                  
@@ -105,7 +105,7 @@ LABEL71:
    load_int               20316170
    load_int               4
    iload                  4
-   100                    1
+   widget_create_child    1
    iload                  4
    load_int               1
    iadd                  
@@ -124,13 +124,13 @@ LABEL71:
    load_int               0
    1114                   1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    sload                  0
    invoke                 632
    sstore                
    sstore                 2
    sload                  2
-   1112                   1
+   widget_put_text        1
    load_int               244
    load_int               -2147483645
    load_int               -2147483643
@@ -151,7 +151,7 @@ LABEL71:
    load_int               628
    load_int               -2147483645
    iload                  8
-   1702                   1
+   widget_get_index       1
    sload                  2
    load_string            "Iiis"
    1409                  
@@ -192,7 +192,7 @@ LABEL71:
    load_int               20316170
    load_int               4
    iload                  4
-   100                    1
+   widget_create_child    1
    iload                  4
    load_int               1
    iadd                  
@@ -216,9 +216,9 @@ LABEL71:
    load_int               0
    1114                   1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    sload                  2
-   1112                   1
+   widget_put_text        1
    iload                  5
    iload                  6
    iadd                  
@@ -259,7 +259,7 @@ LABEL238:
    iload                  5
    043                    49
    load_int               20316171
-   102                   
+   widget_unset_children 
    load_int               0
    load_int               0
    load_int               20316170

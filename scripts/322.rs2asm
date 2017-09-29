@@ -26,7 +26,7 @@ LABEL12:
    iload                  4
    widget_put_hidden_widget
    iload                  6
-   102                   
+   widget_unset_children 
    load_int               92
    load_int               165
    load_int               0
@@ -128,7 +128,7 @@ LABEL110:
 LABEL114:
    sload                  0
    iload                  5
-   2112                  
+   widget_put_text_widget
    load_int               1
    load_string            "Back"
    iload                  7
@@ -155,7 +155,7 @@ LABEL137:
 LABEL138:
    iload                  1
    iload                  2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL144
    jump                   LABEL158

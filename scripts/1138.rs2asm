@@ -1,29 +1,17 @@
 .int_stack_count    0
 .string_stack_count 0
-.int_var_count      1
+.int_var_count      0
 .string_var_count   0
    get_flags             
-   istore                
-   iload                  0
    load_int               29
    test_bit              
    load_int               1
-   if_icmpeq              LABEL18
-   iload                  0
-   load_int               30
-   test_bit              
-   load_int               1
-   if_icmpeq              LABEL18
-   iload                  0
-   load_int               26
-   test_bit              
-   load_int               1
-   if_icmpeq              LABEL18
-   jump                   LABEL20
-LABEL18:
+   if_icmpeq              LABEL6
+   jump                   LABEL8
+LABEL6:
    load_int               1
    return                
-LABEL20:
+LABEL8:
    load_int               0
    return                
    load_int               -1

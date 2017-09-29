@@ -3,7 +3,7 @@
 .int_var_count      2
 .string_var_count   0
    load_int               93
-   3304                  
+   get_inventory_size    
    istore                 1
 LABEL3:
    iload                  1
@@ -17,17 +17,17 @@ LABEL7:
    istore                 1
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL17
    jump                   LABEL24
 LABEL17:
    load_int               93
    iload                  1
-   3301                  
+   get_itemcontainer_itemid
    load_int               93
    iload                  1
-   3302                  
+   get_itemcontainer_stacksize
    invoke                 671
 LABEL24:
    jump                   LABEL3

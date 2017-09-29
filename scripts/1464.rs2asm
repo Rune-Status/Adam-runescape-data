@@ -19,10 +19,10 @@ LABEL12:
    sstore                
    load_string            "High Alchemy"
    iload                  2
-   2112                  
+   widget_put_text_widget
    load_int               75
    iload                  0
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    load_int               273
    load_int               -2147483645
    load_int               120
@@ -43,7 +43,7 @@ LABEL12:
    2409                  
    load_int               41
    iload                  1
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    load_int               -1
    load_string            ""
    iload                  1
@@ -60,10 +60,10 @@ LABEL12:
 LABEL54:
    load_string            "Low Alchemy"
    iload                  2
-   2112                  
+   widget_put_text_widget
    load_int               25
    iload                  0
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    load_int               -1
    load_string            ""
    iload                  0
@@ -78,7 +78,7 @@ LABEL54:
    2409                  
    load_int               91
    iload                  1
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    load_int               273
    load_int               -2147483645
    load_int               120
@@ -105,7 +105,7 @@ LABEL93:
    int_to_string         
    037                    2
    iload                  4
-   2112                  
+   widget_put_text_widget
    025                    4554
    load_int               30
    if_icmplt              LABEL105
@@ -134,7 +134,7 @@ LABEL118:
    istore                 6
    iload                  3
    iload                  6
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL128
    jump                   LABEL131

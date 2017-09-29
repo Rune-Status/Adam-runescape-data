@@ -13,7 +13,7 @@
 LABEL8:
    iload                  2
    iload                  7
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL14
    jump                   LABEL16
@@ -229,7 +229,7 @@ LABEL198:
 LABEL200:
    iload                  2
    iload                  7
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL206
    jump                   LABEL240
@@ -251,9 +251,9 @@ LABEL206:
    load_int               1
    1000                  
    iload                  10
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  13
-   1106                  
+   widget_put_textureid  
    iload                  14
    load_int               1
    if_icmpeq              LABEL230
@@ -275,7 +275,7 @@ LABEL240:
    iload                  2
    load_int               5
    iload                  7
-   100                   
+   widget_create_child   
    load_int               0
    widget_put_hidden     
    load_int               1
@@ -298,9 +298,9 @@ LABEL240:
    load_int               1
    1000                  
    iload                  10
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  13
-   1106                  
+   widget_put_textureid  
    iload                  14
    load_int               1
    if_icmpeq              LABEL273

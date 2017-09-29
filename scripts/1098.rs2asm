@@ -18,15 +18,15 @@ LABEL7:
    if_icmpeq              LABEL13
    jump                   LABEL50
 LABEL13:
-   047                    27
+   get_varc_string        27
    load_int               5
    iload                  0
    iload                  1
    invoke                 74
-   048                    27
-   047                    27
+   put_varc_string        27
+   get_varc_string        27
    sstore                
-   047                    27
+   get_varc_string        27
    string_length         
    load_int               0
    if_icmpgt              LABEL26
@@ -64,13 +64,13 @@ LABEL50:
    if_icmpeq              LABEL54
    jump                   LABEL63
 LABEL54:
-   047                    130
+   get_varc_string        130
    load_int               5
    iload                  0
    iload                  1
    invoke                 74
-   048                    130
-   047                    130
+   put_varc_string        130
+   get_varc_string        130
    sstore                
    jump                   LABEL64
 LABEL63:
@@ -109,14 +109,14 @@ LABEL91:
 LABEL93:
    iload                  2
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL99
    jump                   LABEL117
 LABEL99:
    iload                  2
    load_int               1
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL105
    jump                   LABEL117
@@ -132,7 +132,7 @@ LABEL105:
    load_int               0
    1001                   1
    sload                  0
-   1112                   1
+   widget_put_text        1
 LABEL117:
    iload                  8
    iload                  9

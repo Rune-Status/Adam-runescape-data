@@ -22,7 +22,7 @@
    load_int               8454153
    widget_put_hidden_widget
    load_int               8454157
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 4
    load_int               0
@@ -48,7 +48,7 @@ LABEL40:
    load_int               8454157
    load_int               5
    iload                  4
-   100                   
+   widget_create_child   
    iload                  4
    load_int               1
    iadd                  
@@ -56,7 +56,7 @@ LABEL40:
    load_int               8454157
    load_int               4
    iload                  4
-   100                    1
+   widget_create_child    1
    iload                  4
    load_int               1
    iadd                  
@@ -89,11 +89,11 @@ LABEL40:
    jump                   LABEL85
 LABEL82:
    load_int               297
-   widget_put_textureid  
+   widget_put_spriteid   
    jump                   LABEL87
 LABEL85:
    load_int               1040
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL87:
    load_int               1
    1107                  
@@ -102,7 +102,7 @@ LABEL87:
    load_int               495
    widget_put_fontid      1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_int               1
    load_int               1
    load_int               0
@@ -120,7 +120,7 @@ LABEL106:
    load_int               804
    iload                  7
    3408                  
-   1112                   1
+   widget_put_text        1
    jump                   LABEL124
 LABEL113:
    load_string            "<str>"
@@ -133,7 +133,7 @@ LABEL113:
    load_string            "</col>"
    load_string            "</str>"
    037                    5
-   1112                   1
+   widget_put_text        1
 LABEL124:
    iload                  5
    load_int               17
@@ -177,7 +177,7 @@ LABEL151:
    load_int               8454157
    load_int               5
    iload                  4
-   100                   
+   widget_create_child   
    iload                  4
    load_int               1
    iadd                  
@@ -193,7 +193,7 @@ LABEL151:
    load_int               2
    1000                  
    load_int               897
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               1
    1107                  
 LABEL181:
@@ -214,7 +214,7 @@ LABEL194:
    load_int               8454157
    load_int               4
    iload                  4
-   100                   
+   widget_create_child   
    iload                  4
    load_int               1
    iadd                  
@@ -232,12 +232,12 @@ LABEL194:
    load_int               495
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               1
    load_int               0
    1114                  
    load_string            "There are no quests left to show."
-   1112                  
+   widget_put_text       
 LABEL222:
    return                

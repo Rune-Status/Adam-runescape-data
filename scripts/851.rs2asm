@@ -14,10 +14,10 @@
 LABEL9:
    load_int               761
    iload                  0
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    iload                  1
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL18
    jump                   LABEL20
@@ -27,7 +27,7 @@ LABEL18:
 LABEL20:
    iload                  1
    load_int               1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL26
    jump                   LABEL28
@@ -37,13 +37,13 @@ LABEL26:
 LABEL28:
    iload                  1
    load_int               2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL34
    jump                   LABEL36
 LABEL34:
    load_int               697
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL36:
    load_int               -1
    load_string            ""
@@ -61,10 +61,10 @@ LABEL36:
 LABEL49:
    load_int               762
    iload                  0
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    iload                  1
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL58
    jump                   LABEL60
@@ -74,7 +74,7 @@ LABEL58:
 LABEL60:
    iload                  1
    load_int               1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL66
    jump                   LABEL68
@@ -96,13 +96,13 @@ LABEL72:
    sstore                
    iload                  1
    load_int               2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL85
    jump                   LABEL87
 LABEL85:
    load_int               698
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL87:
    jump                   LABEL103
 LABEL88:
@@ -115,13 +115,13 @@ LABEL88:
    sstore                
    iload                  1
    load_int               2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL101
    jump                   LABEL103
 LABEL101:
    load_int               699
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL103:
    load_int               121
    load_int               1

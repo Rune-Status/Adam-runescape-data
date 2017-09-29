@@ -10,7 +10,7 @@
    istore                 22
    iload                  9
    iload                  13
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL12
    jump                   LABEL377
@@ -27,7 +27,7 @@ LABEL16:
    iadd                  
    load_int               1
    iadd                  
-   100                   
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
@@ -45,7 +45,7 @@ LABEL16:
    load_int               0
    1000                  
    load_int               1081
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               20
    widget_put_opacity    
    load_int               1
@@ -96,7 +96,7 @@ LABEL79:
    iadd                  
    load_int               1
    iadd                  
-   100                   
+   widget_create_child   
    load_int               41
    load_int               40
    load_int               0
@@ -118,11 +118,11 @@ LABEL79:
    load_int               645
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               14997666
    widget_put_textcolor  
    sload                  0
-   1112                  
+   widget_put_text       
    load_int               511
    load_int               -2147483645
    load_int               -2147483643
@@ -168,7 +168,7 @@ LABEL146:
    iadd                  
    load_int               1
    iadd                  
-   100                   
+   widget_create_child   
    load_int               41
    load_int               35
    load_int               0
@@ -190,11 +190,11 @@ LABEL146:
    load_int               764
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               14997666
    widget_put_textcolor  
    sload                  0
-   1112                  
+   widget_put_text       
    load_int               511
    load_int               -2147483645
    load_int               -2147483643
@@ -224,7 +224,7 @@ LABEL146:
 LABEL212:
    load_int               95
    iload                  15
-   3301                  
+   get_itemcontainer_itemid
    istore                 21
    iload                  9
    load_int               5
@@ -233,7 +233,7 @@ LABEL212:
    iadd                  
    load_int               1
    iadd                  
-   100                   
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
@@ -253,7 +253,7 @@ LABEL212:
    load_int               0
    1000                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    iload                  21
@@ -264,7 +264,7 @@ LABEL250:
    iload                  21
    load_int               95
    iload                  15
-   3302                  
+   get_itemcontainer_stacksize
    1205                  
    iload                  21
    4209                  
@@ -346,7 +346,7 @@ LABEL320:
    iadd                  
    load_int               1
    iadd                  
-   100                   
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
@@ -364,7 +364,7 @@ LABEL320:
    load_int               0
    1000                  
    load_int               1082
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               20
    widget_put_opacity    
    load_int               1
@@ -380,7 +380,7 @@ LABEL320:
    load_int               2147483647
    1304                  
    load_int               1080
-   widget_put_textureid   1
+   widget_put_spriteid    1
    load_int               1
    istore                 16
    jump                   LABEL377
@@ -392,7 +392,7 @@ LABEL365:
    iadd                  
    load_int               1
    iadd                  
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    load_int               1

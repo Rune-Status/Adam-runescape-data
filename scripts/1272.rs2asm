@@ -14,13 +14,13 @@
    jump                   LABEL32
 LABEL10:
    iload                  4
-   load_int               800
+   load_int               816
    if_icmplt              LABEL14
    jump                   LABEL32
 LABEL14:
    load_int               95
    iload                  4
-   3301                  
+   get_itemcontainer_itemid
    istore                 2
    iload                  2
    4209                  
@@ -40,7 +40,7 @@ LABEL27:
    jump                   LABEL10
 LABEL32:
    iload                  0
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 5
    iload                  3
@@ -62,7 +62,7 @@ LABEL49:
    iload                  0
    load_int               5
    iload                  5
-   100                   
+   widget_create_child   
    iload                  5
    load_int               1
    iadd                  
@@ -78,7 +78,7 @@ LABEL49:
    load_int               1
    1000                  
    load_int               1342
-   widget_put_textureid  
+   widget_put_spriteid   
    load_string            "Release all placeholders"
    sstore                
    iload                  3
@@ -112,7 +112,7 @@ LABEL84:
    iload                  0
    load_int               4
    iload                  5
-   100                   
+   widget_create_child   
    iload                  6
    load_int               0
    load_int               0
@@ -124,7 +124,7 @@ LABEL84:
    load_int               1
    1000                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               1
    load_int               0
@@ -132,7 +132,7 @@ LABEL84:
    load_int               495
    widget_put_fontid     
    sload                  0
-   1112                  
+   widget_put_text       
    iload                  3
    load_int               0
    if_icmpgt              LABEL125

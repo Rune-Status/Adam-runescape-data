@@ -3,7 +3,7 @@
 .int_var_count      4
 .string_var_count   0
    iload                  0
-   102                   
+   widget_unset_children 
    load_int               -1
    istore                 2
    load_int               0
@@ -17,10 +17,10 @@ LABEL10:
    iload                  0
    load_int               5
    iload                  3
-   100                   
+   widget_create_child   
    load_int               581
    iload                  3
-   3301                  
+   get_itemcontainer_itemid
    istore                 2
    iload                  2
    load_int               -1
@@ -30,7 +30,7 @@ LABEL22:
    iload                  2
    load_int               581
    iload                  3
-   3302                  
+   get_itemcontainer_stacksize
    iload                  3
    invoke                 1582
    jump                   LABEL31
@@ -52,7 +52,7 @@ LABEL40:
    iload                  0
    load_int               5
    iload                  3
-   100                   
+   widget_create_child   
    load_int               20899
    load_int               1
    iload                  3

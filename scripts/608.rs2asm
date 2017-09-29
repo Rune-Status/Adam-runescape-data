@@ -10,24 +10,24 @@
    3200                  
    iload                  0
    iload                  2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL12
    jump                   LABEL34
 LABEL12:
    iload                  0
    iload                  3
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL18
    jump                   LABEL34
 LABEL18:
    load_int               813
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               16777215
    widget_put_textcolor   1
    load_string            "Loading..."
-   1112                   1
+   widget_put_text        1
    widget_put_actions_null
    load_int               -1
    load_string            ""

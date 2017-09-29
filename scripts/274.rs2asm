@@ -25,7 +25,7 @@ LABEL15:
    jump                   LABEL21
 LABEL19:
    load_string            ""
-   048                    22
+   put_varc_string        22
 LABEL21:
    iload                  0
    iload                  1
@@ -60,7 +60,7 @@ LABEL21:
    iload                  14
    2409                  
    iload                  7
-   102                   
+   widget_unset_children 
    iload                  7
    iload                  6
    load_int               792
@@ -102,21 +102,21 @@ LABEL21:
    iload                  12
    2407                  
    iload                  6
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 22
    load_int               0
    istore                 23
 LABEL101:
    iload                  23
-   load_int               800
+   load_int               816
    if_icmplt              LABEL105
    jump                   LABEL131
 LABEL105:
    iload                  6
    load_int               5
    iload                  22
-   100                   
+   widget_create_child   
    iload                  22
    load_int               1
    iadd                  
@@ -127,7 +127,7 @@ LABEL105:
    load_int               0
    1001                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    load_int               5
@@ -154,7 +154,7 @@ LABEL140:
    iload                  6
    load_int               5
    iload                  22
-   100                   
+   widget_create_child   
    iload                  22
    load_int               1
    iadd                  
@@ -165,7 +165,7 @@ LABEL140:
    load_int               0
    1001                  
    load_int               897
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               1
    1107                  
    iload                  23
@@ -185,7 +185,7 @@ LABEL168:
    iload                  6
    load_int               4
    iload                  22
-   100                   
+   widget_create_child   
    iload                  22
    load_int               1
    iadd                  
@@ -216,12 +216,12 @@ LABEL168:
    load_string            "Iii"
    1404                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_string            "Tab "
    iload                  23
    int_to_string         
    037                    2
-   1112                  
+   widget_put_text       
    load_int               1
    load_string            "View tab"
    1300                  
@@ -266,7 +266,7 @@ LABEL246:
    iload                  6
    load_int               3
    iload                  22
-   100                   
+   widget_create_child   
    iload                  22
    load_int               1
    iadd                  
@@ -364,15 +364,15 @@ LABEL336:
    invoke                 840
 LABEL343:
    iload                  18
-   102                   
+   widget_unset_children 
    iload                  18
    load_int               6
    load_int               0
-   100                   
+   widget_create_child   
    iload                  18
    load_int               6
    load_int               1
-   100                    1
+   widget_create_child    1
    load_int               0
    load_int               0
    load_int               1

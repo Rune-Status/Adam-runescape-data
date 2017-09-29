@@ -140,14 +140,14 @@ LABEL112:
    jump                   LABEL176
 LABEL126:
    load_int               14
-   5017                  
+   get_chatlinebuffer_length
    load_int               0
    if_icmpgt              LABEL131
    jump                   LABEL176
 LABEL131:
    load_int               14
    load_int               0
-   5003                  
+   get_chat_message_type 
    sstore                
    sstore                 2
    sstore                 1
@@ -227,7 +227,7 @@ LABEL199:
    jump                   LABEL349
 LABEL205:
    iload                  7
-   5004                  
+   get_chat_message      
    sstore                
    sstore                 2
    sstore                 1
@@ -346,7 +346,7 @@ LABEL308:
    iload                  5
    widget_put_name_widget
    sload                  1
-   3609                  
+   is_friend             
    load_int               1
    if_icmpeq              LABEL318
    jump                   LABEL323
@@ -383,7 +383,7 @@ LABEL335:
    istore                 5
 LABEL345:
    iload                  7
-   5019                  
+   get_messagenode_next_id
    istore                 7
    jump                   LABEL191
 LABEL349:
@@ -404,13 +404,13 @@ LABEL353:
    iload                  4
    load_int               2
    imul                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL369
    jump                   LABEL373
 LABEL369:
    load_string            ""
-   1112                  
+   widget_put_text       
    load_int               1
    widget_put_hidden     
 LABEL373:
@@ -420,13 +420,13 @@ LABEL373:
    imul                  
    load_int               1
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL383
    jump                   LABEL387
 LABEL383:
    load_string            ""
-   1112                  
+   widget_put_text       
    load_int               1
    widget_put_hidden     
 LABEL387:

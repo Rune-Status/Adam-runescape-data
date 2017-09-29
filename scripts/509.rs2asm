@@ -44,14 +44,14 @@ LABEL29:
 LABEL33:
    iload                  3
    iload                  0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL39
    jump                   LABEL94
 LABEL39:
    load_int               95
    iload                  0
-   3301                  
+   get_itemcontainer_itemid
    istore                 13
    iload                  13
    invoke                 279
@@ -64,7 +64,7 @@ LABEL48:
    iload                  13
    load_int               95
    iload                  0
-   3302                  
+   get_itemcontainer_stacksize
    iload                  3
    iload                  4
    iload                  5
@@ -133,14 +133,14 @@ LABEL109:
    jump                   LABEL155
 LABEL113:
    iload                  3
-   load_int               800
+   load_int               816
    load_int               9
    load_int               2
    imul                  
    iadd                  
    iload                  2
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL125
    jump                   LABEL155
@@ -182,14 +182,14 @@ LABEL155:
    jump                   LABEL178
 LABEL159:
    iload                  3
-   load_int               800
+   load_int               816
    load_int               9
    iadd                  
    iload                  2
    iadd                  
    load_int               1
    isub                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL171
    jump                   LABEL178

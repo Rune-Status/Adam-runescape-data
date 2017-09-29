@@ -9,19 +9,19 @@
 LABEL4:
    load_string            "Trade modified"
    iload                  6
-   2112                  
+   widget_put_text_widget
    jump                   LABEL11
 LABEL8:
    load_string            ""
    iload                  6
-   2112                  
+   widget_put_text_widget
 LABEL11:
    iload                  3
-   102                   
+   widget_unset_children 
    iload                  4
-   102                   
+   widget_unset_children 
    iload                  5
-   102                   
+   widget_unset_children 
    iload                  0
    load_int               1
    iadd                  
@@ -46,7 +46,7 @@ LABEL33:
 LABEL37:
    load_int               90
    iload                  11
-   3301                  
+   get_itemcontainer_itemid
    load_int               -1
    if_icmpne              LABEL43
    jump                   LABEL47
@@ -58,7 +58,7 @@ LABEL43:
 LABEL47:
    load_int               90
    iload                  11
-   3313                  
+   get_itemcontainer_itemid_2
    load_int               -1
    if_icmpne              LABEL53
    jump                   LABEL58
@@ -136,7 +136,7 @@ LABEL110:
 LABEL114:
    load_int               90
    iload                  11
-   3301                  
+   get_itemcontainer_itemid
    istore                 12
    iload                  12
    load_int               -1
@@ -146,7 +146,7 @@ LABEL122:
    iload                  3
    load_int               4
    iload                  17
-   100                   
+   widget_create_child   
    iload                  13
    load_int               17
    load_int               0
@@ -159,11 +159,11 @@ LABEL122:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    iload                  12
    load_int               90
    iload                  11
-   3302                  
+   get_itemcontainer_stacksize
    invoke                 769
    sstore                
    iload                  9
@@ -252,7 +252,7 @@ LABEL209:
    1000                  
 LABEL216:
    sload                  0
-   1112                  
+   widget_put_text       
    iload                  17
    load_int               1
    iadd                  
@@ -260,7 +260,7 @@ LABEL216:
 LABEL222:
    load_int               90
    iload                  11
-   3313                  
+   get_itemcontainer_itemid_2
    istore                 12
    iload                  11
    invoke                 148
@@ -273,7 +273,7 @@ LABEL233:
    iload                  4
    load_int               4
    iload                  18
-   100                   
+   widget_create_child   
    iload                  14
    load_int               17
    load_int               0
@@ -286,11 +286,11 @@ LABEL233:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    iload                  12
    load_int               90
    iload                  11
-   3314                  
+   get_itemcontainer_stacksize_2
    invoke                 769
    sstore                
    iload                  10
@@ -385,7 +385,7 @@ LABEL322:
    istore                 15
 LABEL333:
    sload                  0
-   1112                  
+   widget_put_text       
    iload                  20
    iload                  8
    if_icmpgt              LABEL339
@@ -394,7 +394,7 @@ LABEL339:
    iload                  5
    load_int               3
    iload                  19
-   100                    1
+   widget_create_child    1
    iload                  14
    load_int               12
    load_int               0
@@ -424,7 +424,7 @@ LABEL339:
    iload                  5
    load_int               3
    iload                  19
-   100                    1
+   widget_create_child    1
    iload                  14
    load_int               12
    load_int               0
@@ -489,7 +489,7 @@ LABEL427:
    iload                  3
    load_int               4
    load_int               0
-   100                   
+   widget_create_child   
    iload                  1
    load_int               17
    load_int               0
@@ -507,9 +507,9 @@ LABEL427:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_string            "Absolutely nothing!"
-   1112                  
+   widget_put_text       
    load_int               496
    widget_put_fontid     
    iload                  17
@@ -525,7 +525,7 @@ LABEL461:
    iload                  4
    load_int               4
    load_int               0
-   100                   
+   widget_create_child   
    iload                  1
    load_int               17
    load_int               0
@@ -543,9 +543,9 @@ LABEL461:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_string            "Absolutely nothing!"
-   1112                  
+   widget_put_text       
    load_int               496
    widget_put_fontid     
    iload                  18
@@ -565,7 +565,7 @@ LABEL495:
    iload                  5
    load_int               3
    iload                  19
-   100                   
+   widget_create_child   
    iload                  19
    load_int               1
    iadd                  
@@ -573,7 +573,7 @@ LABEL495:
    iload                  5
    load_int               3
    iload                  19
-   100                    1
+   widget_create_child    1
    iload                  19
    load_int               1
    iadd                  

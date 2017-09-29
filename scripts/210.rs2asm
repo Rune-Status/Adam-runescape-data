@@ -10,7 +10,7 @@ LABEL4:
    load_int               0
    return                
 LABEL6:
-   047                    25
+   get_varc_string        25
    string_length         
    load_int               0
    if_icmple              LABEL11
@@ -56,7 +56,7 @@ LABEL44:
    return                
 LABEL46:
    sload                  1
-   047                    25
+   get_varc_string        25
    string_remove_html    
    4107                  
    load_int               0
@@ -88,7 +88,7 @@ LABEL68:
    jump                   LABEL79
 LABEL72:
    sload                  0
-   3609                  
+   is_friend             
    load_int               1
    if_icmpeq              LABEL77
    jump                   LABEL79

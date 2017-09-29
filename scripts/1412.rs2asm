@@ -3,7 +3,7 @@
 .int_var_count      9
 .string_var_count   2
    iload                  1
-   102                   
+   widget_unset_children 
    load_int               0
    iload                  0
    load_int               1
@@ -50,7 +50,7 @@ LABEL39:
    iload                  1
    load_int               4
    iload                  7
-   100                   
+   widget_create_child   
    load_int               0
    load_int               18
    load_int               1
@@ -59,7 +59,7 @@ LABEL39:
    load_int               495
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               1
    load_int               0
@@ -69,7 +69,7 @@ LABEL39:
    iload                  3
    iload                  7
    3408                  
-   1112                  
+   widget_put_text       
    load_int               1
    int_to_string         
    load_int               0
@@ -104,7 +104,7 @@ LABEL89:
    widget_put_textcolor  
    jump                   LABEL94
 LABEL92:
-   load_int               65280
+   load_int               901389
    widget_put_textcolor  
 LABEL94:
    iload                  7
@@ -142,7 +142,7 @@ LABEL121:
    iload                  1
    iload                  7
    045                   
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL128
    jump                   LABEL133
@@ -166,7 +166,7 @@ LABEL142:
    iload                  1
    load_int               4
    iload                  7
-   100                   
+   widget_create_child   
    load_int               0
    load_int               25
    load_int               1
@@ -183,13 +183,13 @@ LABEL142:
    load_int               496
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               1
    load_int               0
    1114                  
    sload                  0
-   1112                  
+   widget_put_text       
    load_int               0
    iload                  8
    load_int               1

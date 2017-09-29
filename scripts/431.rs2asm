@@ -3,7 +3,7 @@
 .int_var_count      7
 .string_var_count   1
    iload                  0
-   102                   
+   widget_unset_children 
    iload                  1
    load_int               -1
    if_icmpeq              LABEL6
@@ -39,7 +39,7 @@ LABEL26:
    iload                  0
    load_int               4
    load_int               0
-   100                   
+   widget_create_child   
    iload                  4
    load_int               13
    load_int               0
@@ -74,16 +74,16 @@ LABEL63:
    load_int               0
    widget_put_textcolor  
    load_int               0
-   1115                  
+   widget_put_text_shadowed
    jump                   LABEL72
 LABEL68:
    load_int               16777215
    widget_put_textcolor  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
 LABEL72:
    sload                  0
-   1112                  
+   widget_put_text       
    load_int               111
    load_int               105
    load_int               845
@@ -93,7 +93,7 @@ LABEL72:
    iload                  0
    load_int               4
    load_int               1
-   100                   
+   widget_create_child   
    iload                  4
    load_int               13
    load_int               0
@@ -113,10 +113,10 @@ LABEL72:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               93
    iload                  3
-   3303                  
+   get_itemcontainer_stacksizes_total
    iload                  5
    if_icmplt              LABEL110
    jump                   LABEL113
@@ -134,19 +134,19 @@ LABEL115:
    jump                   LABEL122
 LABEL119:
    load_string            "1 bar"
-   1112                  
+   widget_put_text       
    jump                   LABEL127
 LABEL122:
    iload                  5
    int_to_string         
    load_string            " bars"
    037                    2
-   1112                  
+   widget_put_text       
 LABEL127:
    iload                  0
    load_int               5
    load_int               2
-   100                   
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
@@ -158,7 +158,7 @@ LABEL127:
    load_int               0
    1000                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    load_int               111

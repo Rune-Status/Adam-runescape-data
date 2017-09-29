@@ -20,7 +20,7 @@ LABEL6:
    iadd                  
    load_int               2
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL20
    jump                   LABEL28
@@ -107,7 +107,7 @@ LABEL84:
    widget_put_hidden_widget
    iload                  4
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL99
    jump                   LABEL112
@@ -122,11 +122,11 @@ LABEL103:
    load_int               680
    iload                  23
    3408                  
-   1112                  
+   widget_put_text       
    jump                   LABEL112
 LABEL110:
    load_string            "Total XP"
-   1112                  
+   widget_put_text       
 LABEL112:
    025                    4704
    load_int               1
@@ -135,33 +135,33 @@ LABEL112:
 LABEL116:
    iload                  5
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL122
    jump                   LABEL124
 LABEL122:
    load_int               697
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL124:
    iload                  6
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL130
    jump                   LABEL132
 LABEL130:
    load_int               699
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL132:
    iload                  7
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL138
    jump                   LABEL140
 LABEL138:
    load_int               697
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL140:
    load_int               0
    iload                  8
@@ -296,20 +296,20 @@ LABEL268:
    load_int               1
    invoke                 1028
    iload                  14
-   2112                  
+   widget_put_text_widget
    jump                   LABEL278
 LABEL274:
    get_settings           261
    invoke                 1029
    iload                  14
-   2112                  
+   widget_put_text_widget
 LABEL278:
    load_string            ""
    iload                  15
-   2112                  
+   widget_put_text_widget
    load_string            ""
    iload                  16
-   2112                  
+   widget_put_text_widget
    load_int               16750623
    iload                  17
    widget_put_textcolor_widget
@@ -370,33 +370,33 @@ LABEL336:
 LABEL340:
    iload                  5
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL346
    jump                   LABEL348
 LABEL346:
    load_int               697
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL348:
    iload                  6
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL354
    jump                   LABEL356
 LABEL354:
    load_int               697
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL356:
    iload                  7
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL362
    jump                   LABEL364
 LABEL362:
    load_int               699
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL364:
    load_int               0
    iload                  8
@@ -524,7 +524,7 @@ LABEL364:
    2409                  
    load_string            ""
    iload                  14
-   2112                  
+   widget_put_text_widget
    iload                  23
    load_int               -1
    if_icmpne              LABEL495
@@ -534,22 +534,22 @@ LABEL495:
    load_int               1
    invoke                 1028
    iload                  15
-   2112                  
+   widget_put_text_widget
    get_settings           262
    load_int               1
    invoke                 1028
    iload                  16
-   2112                  
+   widget_put_text_widget
    jump                   LABEL514
 LABEL506:
    get_settings           261
    invoke                 1029
    iload                  15
-   2112                  
+   widget_put_text_widget
    get_settings           262
    invoke                 1029
    iload                  16
-   2112                  
+   widget_put_text_widget
 LABEL514:
    load_int               8421504
    iload                  17
@@ -612,33 +612,33 @@ LABEL514:
 LABEL572:
    iload                  5
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL578
    jump                   LABEL580
 LABEL578:
    load_int               699
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL580:
    iload                  6
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL586
    jump                   LABEL588
 LABEL586:
    load_int               697
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL588:
    iload                  7
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL594
    jump                   LABEL596
 LABEL594:
    load_int               697
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL596:
    load_int               1
    iload                  8
@@ -766,13 +766,13 @@ LABEL596:
    2409                  
    load_string            ""
    iload                  14
-   2112                  
+   widget_put_text_widget
    load_string            ""
    iload                  15
-   2112                  
+   widget_put_text_widget
    load_string            ""
    iload                  16
-   2112                  
+   widget_put_text_widget
    load_int               8421504
    iload                  17
    widget_put_textcolor_widget

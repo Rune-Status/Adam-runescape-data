@@ -7,20 +7,23 @@
    istore                
    025                    4165
    load_int               4
-   if_icmplt              LABEL7
-   jump                   LABEL15
-LABEL7:
+   if_icmple              LABEL10
+   025                    4165
+   load_int               7
+   if_icmpge              LABEL10
+   jump                   LABEL18
+LABEL10:
    iload                  0
    load_int               0
-   if_icmpne              LABEL11
-   jump                   LABEL14
-LABEL11:
+   if_icmpne              LABEL14
+   jump                   LABEL17
+LABEL14:
    load_int               0
    load_int               5898241
    widget_put_textcolor_widget
-LABEL14:
+LABEL17:
    return                
-LABEL15:
+LABEL18:
    load_int               0
    istore                 1
    load_int               0
@@ -63,42 +66,38 @@ LABEL15:
    istore                 15
    025                    4991
    load_int               1
-   if_icmpeq              LABEL63
-   get_coordinates       
-   right_shift_28        
-   load_int               0
-   if_icmpgt              LABEL63
-   jump                   LABEL70
-LABEL63:
+   if_icmpeq              LABEL62
+   jump                   LABEL69
+LABEL62:
    iload                  7
    iload                  8
    iload                  9
    istore                 6
    istore                 5
    istore                 4
-   jump                   LABEL167
-LABEL70:
+   jump                   LABEL166
+LABEL69:
    025                    4991
    load_int               2
-   if_icmpeq              LABEL74
-   jump                   LABEL81
-LABEL74:
+   if_icmpeq              LABEL73
+   jump                   LABEL80
+LABEL73:
    iload                  10
    iload                  11
    iload                  12
    istore                 6
    istore                 5
    istore                 4
-   jump                   LABEL167
-LABEL81:
+   jump                   LABEL166
+LABEL80:
    025                    4165
    load_int               5
-   if_icmpge              LABEL85
-   jump                   LABEL167
-LABEL85:
+   if_icmpge              LABEL84
+   jump                   LABEL166
+LABEL84:
    get_coordinates       
    divide_by_16384       
-   load_int               53890862
+   load_int               48614740
    divide_by_16384       
    isub                  
    load_int               2
@@ -108,7 +107,7 @@ LABEL85:
    istore                 2
    get_coordinates       
    and_16384             
-   load_int               53890862
+   load_int               48614740
    and_16384             
    isub                  
    load_int               2
@@ -118,20 +117,20 @@ LABEL85:
    istore                 3
    iload                  2
    iload                  3
-   if_icmpgt              LABEL109
-   jump                   LABEL112
-LABEL109:
+   if_icmpgt              LABEL108
+   jump                   LABEL111
+LABEL108:
    iload                  2
    istore                 1
-   jump                   LABEL114
-LABEL112:
+   jump                   LABEL113
+LABEL111:
    iload                  3
    istore                 1
-LABEL114:
+LABEL113:
    025                    4989
    istore                 13
-   load_int               783
-   load_int               15
+   load_int               612
+   load_int               12
    isub                  
    load_int               6
    idiv                  
@@ -139,55 +138,55 @@ LABEL114:
    iload                  13
    iload                  15
    isub                  
-   load_int               15
+   load_int               12
    invoke                 1045
    istore                 14
    iload                  1
    iload                  14
-   if_icmplt              LABEL135
+   if_icmplt              LABEL134
    iload                  1
-   load_int               15
-   if_icmplt              LABEL135
-   jump                   LABEL142
-LABEL135:
+   load_int               12
+   if_icmplt              LABEL134
+   jump                   LABEL141
+LABEL134:
    load_int               0
    load_int               0
    load_int               0
    istore                 6
    istore                 5
    istore                 4
-   jump                   LABEL167
-LABEL142:
+   jump                   LABEL166
+LABEL141:
    iload                  1
    iload                  13
-   if_icmplt              LABEL146
-   jump                   LABEL157
-LABEL146:
+   if_icmplt              LABEL145
+   jump                   LABEL156
+LABEL145:
    iload                  1
    iload                  14
-   if_icmpge              LABEL150
-   jump                   LABEL157
-LABEL150:
+   if_icmpge              LABEL149
+   jump                   LABEL156
+LABEL149:
    iload                  10
    iload                  11
    iload                  12
    istore                 6
    istore                 5
    istore                 4
-   jump                   LABEL167
-LABEL157:
+   jump                   LABEL166
+LABEL156:
    iload                  1
    iload                  13
-   if_icmpge              LABEL161
-   jump                   LABEL167
-LABEL161:
+   if_icmpge              LABEL160
+   jump                   LABEL166
+LABEL160:
    iload                  7
    iload                  8
    iload                  9
    istore                 6
    istore                 5
    istore                 4
-LABEL167:
+LABEL166:
    load_int               0
    istore                 16
    load_int               0
@@ -201,67 +200,67 @@ LABEL167:
    istore                 16
    iload                  16
    iload                  4
-   if_icmplt              LABEL182
-   jump                   LABEL187
-LABEL182:
+   if_icmplt              LABEL181
+   jump                   LABEL186
+LABEL181:
    iload                  16
    load_int               1
    iadd                  
    istore                 16
-   jump                   LABEL195
-LABEL187:
+   jump                   LABEL194
+LABEL186:
    iload                  16
    iload                  4
-   if_icmpgt              LABEL191
-   jump                   LABEL195
-LABEL191:
+   if_icmpgt              LABEL190
+   jump                   LABEL194
+LABEL190:
    iload                  16
    load_int               1
    isub                  
    istore                 16
-LABEL195:
+LABEL194:
    iload                  17
    iload                  5
-   if_icmplt              LABEL199
-   jump                   LABEL204
-LABEL199:
+   if_icmplt              LABEL198
+   jump                   LABEL203
+LABEL198:
    iload                  17
    load_int               1
    iadd                  
    istore                 17
-   jump                   LABEL212
-LABEL204:
+   jump                   LABEL211
+LABEL203:
    iload                  17
    iload                  5
-   if_icmpgt              LABEL208
-   jump                   LABEL212
-LABEL208:
+   if_icmpgt              LABEL207
+   jump                   LABEL211
+LABEL207:
    iload                  17
    load_int               1
    isub                  
    istore                 17
-LABEL212:
+LABEL211:
    iload                  18
    iload                  6
-   if_icmplt              LABEL216
-   jump                   LABEL221
-LABEL216:
+   if_icmplt              LABEL215
+   jump                   LABEL220
+LABEL215:
    iload                  18
    load_int               1
    iadd                  
    istore                 18
-   jump                   LABEL229
-LABEL221:
+   jump                   LABEL228
+LABEL220:
    iload                  18
    iload                  6
-   if_icmpgt              LABEL225
-   jump                   LABEL229
-LABEL225:
+   if_icmpgt              LABEL224
+   jump                   LABEL228
+LABEL224:
    iload                  18
    load_int               1
    isub                  
    istore                 18
-LABEL229:
+LABEL228:
    iload                  16
    iload                  17
    iload                  18

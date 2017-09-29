@@ -4,14 +4,14 @@
 .string_var_count   9
    iload                  2
    iload                  3
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL170
 LABEL6:
    iload                  0
    iload                  1
-   3313                  
+   get_itemcontainer_itemid_2
    load_int               -1
    if_icmpne              LABEL12
    jump                   LABEL124
@@ -23,22 +23,22 @@ LABEL12:
 LABEL16:
    iload                  0
    iload                  1
-   3313                  
+   get_itemcontainer_itemid_2
    iload                  0
    iload                  1
-   3314                  
+   get_itemcontainer_stacksize_2
    1200                  
    jump                   LABEL29
 LABEL24:
    iload                  0
    iload                  1
-   3313                  
+   get_itemcontainer_itemid_2
    load_int               1
    1205                  
 LABEL29:
    iload                  0
    iload                  1
-   3313                  
+   get_itemcontainer_itemid_2
    get_item_name         
    widget_put_name       
    load_int               1
@@ -133,7 +133,7 @@ LABEL101:
    1410                  
 LABEL119:
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    jump                   LABEL170

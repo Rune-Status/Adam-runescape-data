@@ -3,15 +3,15 @@
 .int_var_count      6
 .string_var_count   3
    iload                  0
-   102                   
+   widget_unset_children 
    iload                  0
    load_int               3
    load_int               0
-   100                   
+   widget_create_child   
    iload                  0
    load_int               3
    load_int               1
-   100                    1
+   widget_create_child    1
    load_int               1
    widget_put_hidden     
    load_int               1
@@ -35,12 +35,12 @@
    iload                  2
    2409                  
    iload                  3
-   102                   
+   widget_unset_children 
    iload                  3
    load_int               3
    load_int               0
-   100                   
-   1702                  
+   widget_create_child   
+   widget_get_index      
    istore                 5
    load_int               1
    widget_put_hidden     
@@ -49,7 +49,7 @@
    iload                  3
    load_int               5
    load_int               1
-   100                   
+   widget_create_child   
    load_int               19
    load_int               19
    load_int               0
@@ -63,7 +63,7 @@
    iload                  3
    load_int               4
    load_int               2
-   100                    1
+   widget_create_child    1
    load_int               0
    load_int               0
    load_int               1
@@ -79,23 +79,23 @@
    load_int               495
    widget_put_fontid      1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_int               2
    load_int               1
    load_int               0
    1114                   1
    sload                  2
-   1112                   1
+   widget_put_text        1
    load_int               85
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               16777215
    load_string            "Iii"
    iload                  3
    2412                  
    load_int               85
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               16750623
    load_string            "Iii"
    iload                  3
@@ -121,7 +121,7 @@
    invoke                 1439
    load_int               1438
    iload                  3
-   1702                  
+   widget_get_index      
    iload                  4
    iload                  5
    load_int               1045

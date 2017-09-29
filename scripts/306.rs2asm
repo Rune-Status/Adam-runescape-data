@@ -3,7 +3,7 @@
 .int_var_count      10
 .string_var_count   1
    iload                  0
-   102                   
+   widget_unset_children 
    load_string            "Click on an item to imbue it."
    sstore                
    iload                  0
@@ -35,7 +35,7 @@
    load_int               0
    istore                 6
    load_int               93
-   3304                  
+   get_inventory_size    
    istore                 7
    load_int               0
    istore                 8
@@ -49,14 +49,14 @@ LABEL39:
 LABEL43:
    load_int               93
    iload                  6
-   3301                  
+   get_itemcontainer_itemid
    istore                 9
    iload                  0
    load_int               5
    iload                  6
    load_int               2
    imul                  
-   100                   
+   widget_create_child   
    iload                  0
    load_int               4
    iload                  6
@@ -64,7 +64,7 @@ LABEL43:
    imul                  
    load_int               1
    iadd                  
-   100                    1
+   widget_create_child    1
    iload                  9
    load_int               -1
    if_icmpne              LABEL65
@@ -104,10 +104,10 @@ LABEL73:
    iload                  9
    load_int               93
    iload                  6
-   3302                  
+   get_itemcontainer_stacksize
    1200                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    load_int               1
@@ -150,7 +150,7 @@ LABEL73:
    load_int               494
    widget_put_fontid      1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_int               16750623
    widget_put_textcolor   1
    load_int               1
@@ -159,7 +159,7 @@ LABEL73:
    1114                   1
    iload                  9
    invoke                 275
-   1112                   1
+   widget_put_text        1
    iload                  8
    load_int               1
    iadd                  
@@ -189,7 +189,7 @@ LABEL173:
    iload                  6
    load_int               2
    imul                  
-   100                   
+   widget_create_child   
    iload                  1
    iload                  2
    load_int               0
@@ -209,9 +209,9 @@ LABEL173:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    sload                  0
-   1112                  
+   widget_put_text       
    iload                  8
    load_int               0
    if_icmple              LABEL205
@@ -224,7 +224,7 @@ LABEL205:
    imul                  
    load_int               1
    iadd                  
-   100                   
+   widget_create_child   
    iload                  1
    iload                  0
    widget_get_height_widget
@@ -247,7 +247,7 @@ LABEL205:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_string            "There are no items in your inventory that can be imbued."
    load_string            "<br>"
    load_string            "<br>"
@@ -255,6 +255,6 @@ LABEL205:
    load_string            "<br>"
    load_string            "black masks, salve amulets & certain rings."
    037                    6
-   1112                  
+   widget_put_text       
 LABEL244:
    return                

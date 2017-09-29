@@ -9,7 +9,7 @@
 LABEL4:
    load_int               93
    load_int               5341
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               5341
    return                
 LABEL9:
@@ -20,7 +20,7 @@ LABEL9:
 LABEL13:
    load_int               93
    load_int               5343
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               5343
    return                
 LABEL18:
@@ -31,7 +31,7 @@ LABEL18:
 LABEL22:
    load_int               93
    load_int               952
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               952
    return                
 LABEL27:
@@ -44,7 +44,7 @@ LABEL27:
 LABEL33:
    load_int               93
    load_int               7409
-   3303                  
+   get_itemcontainer_stacksizes_total
    istore                 1
    iload                  1
    load_int               0
@@ -54,14 +54,14 @@ LABEL41:
    iload                  1
    load_int               93
    load_int               5329
-   3303                  
+   get_itemcontainer_stacksizes_total
    iadd                  
    load_int               7409
    return                
 LABEL48:
    load_int               93
    load_int               5329
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               5329
    return                
 LABEL53:
@@ -99,7 +99,7 @@ LABEL71:
 LABEL81:
    load_int               93
    iload                  3
-   3303                  
+   get_itemcontainer_stacksizes_total
    istore                 4
    iload                  4
    load_int               0
@@ -135,7 +135,7 @@ LABEL107:
 LABEL111:
    load_int               93
    load_int               5325
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               5325
    return                
 LABEL116:
@@ -146,7 +146,7 @@ LABEL116:
 LABEL120:
    load_int               93
    load_int               1925
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               1925
    return                
 LABEL125:
@@ -157,7 +157,7 @@ LABEL125:
 LABEL129:
    load_int               93
    load_int               6032
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               6032
    return                
 LABEL134:
@@ -168,10 +168,21 @@ LABEL134:
 LABEL138:
    load_int               93
    load_int               6034
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               6034
    return                
 LABEL143:
+   iload                  0
+   load_int               21483
+   if_icmpeq              LABEL147
+   jump                   LABEL152
+LABEL147:
+   load_int               93
+   load_int               21483
+   get_itemcontainer_stacksizes_total
+   load_int               21483
+   return                
+LABEL152:
    load_int               0
    load_int               -1
    return                

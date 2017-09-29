@@ -27,7 +27,7 @@ LABEL19:
    iload                  0
    load_int               2
    imul                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL27
    jump                   LABEL57
@@ -57,11 +57,11 @@ LABEL27:
    iload                  7
    1000                  
    sload                  0
-   1112                  
+   widget_put_text       
    iload                  8
    widget_put_textcolor  
    iload                  9
-   1115                  
+   widget_put_text_shadowed
 LABEL57:
    iload                  2
    iload                  0
@@ -69,13 +69,13 @@ LABEL57:
    imul                  
    load_int               1
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL67
    jump                   LABEL71
 LABEL67:
    load_string            ""
-   1112                  
+   widget_put_text       
    load_int               1
    widget_put_hidden     
 LABEL71:

@@ -8,7 +8,7 @@
    jump                   LABEL6
 LABEL4:
    sload                  0
-   048                    24
+   put_varc_string        24
 LABEL6:
    load_int               133
    load_int               -2147483640
@@ -16,13 +16,13 @@ LABEL6:
    load_string            "iz"
    load_int               36241415
    2419                  
-   047                    24
-   4111                  
+   get_varc_string        24
+   appendtags            
    load_string            "<col=ffff00>"
    load_string            "|"
    037                    3
    load_int               36241415
-   2112                  
+   widget_put_text_widget
    load_int               1
    load_int               0
    load_int               1
@@ -32,7 +32,7 @@ LABEL6:
    3323                  
    load_int               1
    if_icmpeq              LABEL32
-   3316                  
+   get_rights            
    load_int               0
    if_icmpgt              LABEL32
    jump                   LABEL41
@@ -49,7 +49,7 @@ LABEL32:
 LABEL41:
    load_int               1215
    load_int               36241423
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    load_int               12303291
    load_int               36241422
    widget_put_textcolor_widget
@@ -61,7 +61,7 @@ LABEL51:
    load_int               36241420
    042                    140
    invoke                 1326
-   load_int               10616863
+   load_int               10616864
    widget_get_hidden_widget
    load_int               0
    if_icmpeq              LABEL59
@@ -73,4 +73,11 @@ LABEL59:
 LABEL62:
    load_int               0
    invoke                 927
+   invoke                 1972
+   load_int               1
+   if_icmpeq              LABEL68
+   jump                   LABEL69
+LABEL68:
+   invoke                 1983
+LABEL69:
    return                

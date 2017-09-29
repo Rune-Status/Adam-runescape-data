@@ -3,7 +3,7 @@
 .int_var_count      4
 .string_var_count   3
    load_int               8519683
-   102                   
+   widget_unset_children 
    load_int               -1
    istore                
    load_int               1040
@@ -19,7 +19,7 @@ LABEL12:
    load_int               8519683
    load_int               5
    iload                  2
-   100                   
+   widget_create_child   
    load_int               0
    load_int               15
    load_int               1
@@ -47,7 +47,7 @@ LABEL37:
    istore                
 LABEL39:
    iload                  0
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               1
    1107                  
    load_int               229
@@ -96,7 +96,7 @@ LABEL74:
 LABEL83:
    load_int               8519683
    iload                  2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL89
    jump                   LABEL143
@@ -116,7 +116,7 @@ LABEL89:
    load_int               8519683
    load_int               4
    iload                  3
-   100                    1
+   widget_create_child    1
    load_int               1267
    load_int               -2147483644
    sload                  1
@@ -149,12 +149,12 @@ LABEL89:
    load_int               0
    1114                   1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    sload                  1
    load_string            " "
    sload                  2
    037                    3
-   1112                   1
+   widget_put_text        1
 LABEL143:
    iload                  2
    load_int               1

@@ -4,7 +4,7 @@
 .string_var_count   0
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL8
@@ -14,7 +14,7 @@ LABEL6:
 LABEL8:
    iload                  0
    iload                  3
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL14
    jump                   LABEL63
@@ -39,7 +39,7 @@ LABEL22:
    load_string            ","
    invoke                 46
    037                    6
-   1112                   1
+   widget_put_text        1
    jump                   LABEL45
 LABEL34:
    load_string            "<col=ffb83f>"
@@ -52,7 +52,7 @@ LABEL34:
    load_string            ","
    invoke                 46
    037                    6
-   1112                   1
+   widget_put_text        1
 LABEL45:
    jump                   LABEL63
 LABEL46:
@@ -66,7 +66,7 @@ LABEL50:
    get_item_name         
    load_string            "</col>"
    037                    3
-   1112                   1
+   widget_put_text        1
    jump                   LABEL63
 LABEL57:
    load_string            "<col=ffb83f>"
@@ -74,6 +74,6 @@ LABEL57:
    get_item_name         
    load_string            "</col>"
    037                    3
-   1112                   1
+   widget_put_text        1
 LABEL63:
    return                

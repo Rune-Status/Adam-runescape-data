@@ -4,7 +4,7 @@
 .string_var_count   3
    sload                  1
    load_int               262167
-   2112                  
+   widget_put_text_widget
    load_int               0
    istore                 4
    load_int               0
@@ -34,12 +34,12 @@
 LABEL29:
    load_int               93
    load_int               13190
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               0
    if_icmpgt              LABEL40
    load_int               93
    load_int               13192
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               0
    if_icmpgt              LABEL40
    jump                   LABEL42
@@ -54,7 +54,7 @@ LABEL42:
 LABEL46:
    load_int               584
    iload                  10
-   3301                  
+   get_itemcontainer_itemid
    istore                 6
    iload                  6
    load_int               -1
@@ -63,7 +63,7 @@ LABEL46:
 LABEL54:
    load_int               584
    iload                  10
-   3302                  
+   get_itemcontainer_stacksize
    istore                 7
 LABEL58:
    iload                  10
@@ -104,7 +104,7 @@ LABEL86:
    load_int               262162
    load_int               5
    iload                  4
-   100                   
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
@@ -146,7 +146,7 @@ LABEL111:
    load_string            "1is"
    1409                  
    load_int               1118481
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    iload                  4
@@ -165,13 +165,13 @@ LABEL141:
 LABEL143:
    iload                  4
    load_int               468
-   3304                  
+   get_inventory_size    
    if_icmplt              LABEL148
    jump                   LABEL342
 LABEL148:
    load_int               468
    iload                  4
-   3301                  
+   get_itemcontainer_itemid
    istore                 6
    iload                  6
    load_int               -1
@@ -181,7 +181,7 @@ LABEL156:
    load_int               262165
    load_int               5
    iload                  5
-   100                   
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
@@ -207,7 +207,7 @@ LABEL156:
    iload                  6
    load_int               468
    iload                  4
-   3302                  
+   get_itemcontainer_stacksize
    1200                  
    load_string            "<col=ff981f>"
    iload                  6
@@ -221,13 +221,13 @@ LABEL156:
    load_int               0
    load_int               468
    iload                  4
-   3302                  
+   get_itemcontainer_stacksize
    iload                  6
    get_item_name         
    load_string            "1is"
    1409                  
    load_int               1118481
-   1117                  
+   widget_put_sprite2    
    load_int               111
    load_int               49
    load_int               879
@@ -286,11 +286,11 @@ LABEL252:
    load_int               2147483647
    load_int               94
    iload                  6
-   3303                  
+   get_itemcontainer_stacksizes_total
    isub                  
    load_int               93
    iload                  6
-   3303                  
+   get_itemcontainer_stacksizes_total
    isub                  
    iload                  12
    iadd                  
@@ -307,7 +307,7 @@ LABEL272:
    load_int               262165
    load_int               5
    iload                  5
-   100                   
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
@@ -349,7 +349,7 @@ LABEL272:
    load_string            "1is"
    1409                  
    load_int               1118481
-   1117                  
+   widget_put_sprite2    
    load_int               111
    load_int               49
    load_int               879
@@ -540,7 +540,7 @@ LABEL474:
 LABEL484:
    sload                  2
    load_int               262173
-   2112                  
+   widget_put_text_widget
    load_string            "<col=ffcc33>"
    load_string            "Max items kept on death :"
    load_string            "<br>"
@@ -552,7 +552,7 @@ LABEL484:
    load_string            " ~"
    037                    8
    load_int               262174
-   2112                  
+   widget_put_text_widget
    iload                  2
    load_int               0
    if_icmpgt              LABEL503
@@ -560,18 +560,18 @@ LABEL484:
 LABEL503:
    load_string            "Items you will keep on death:"
    load_int               262161
-   2112                  
+   widget_put_text_widget
    load_string            "Items you will lose on death:"
    load_int               262164
-   2112                  
+   widget_put_text_widget
    jump                   LABEL516
 LABEL510:
    load_string            "Items you will keep on death if not skulled:"
    load_int               262161
-   2112                  
+   widget_put_text_widget
    load_string            "Items you will lose on death if not skulled:"
    load_int               262164
-   2112                  
+   widget_put_text_widget
 LABEL516:
    jump                   LABEL557
 LABEL517:
@@ -586,7 +586,7 @@ LABEL517:
    widget_put_hidden_widget
    sload                  0
    load_int               262176
-   2112                  
+   widget_put_text_widget
    load_string            "The normal amount of items kept is "
    load_string            "three"
    load_string            "."
@@ -605,7 +605,7 @@ LABEL517:
    sstore                 2
    sload                  2
    load_int               262173
-   2112                  
+   widget_put_text_widget
    load_string            "<col=ffcc33>"
    load_string            "Max items kept on death :"
    load_string            "<br>"
@@ -614,6 +614,6 @@ LABEL517:
    load_string            "All items!"
    037                    6
    load_int               262174
-   2112                  
+   widget_put_text_widget
 LABEL557:
    return                

@@ -17,13 +17,13 @@
    isub                  
    istore                 3
    iload                  0
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 4
    iload                  0
    load_int               6
    iload                  4
-   100                   
+   widget_create_child   
    iload                  4
    load_int               1
    iadd                  
@@ -46,7 +46,7 @@ LABEL35:
    iload                  0
    load_int               6
    iload                  4
-   100                    1
+   widget_create_child    1
    iload                  4
    load_int               1
    iadd                  
@@ -83,7 +83,7 @@ LABEL70:
    iload                  0
    load_int               6
    iload                  4
-   100                    1
+   widget_create_child    1
    iload                  4
    load_int               1
    iadd                  
@@ -123,7 +123,7 @@ LABEL110:
    iload                  0
    load_int               5
    iload                  4
-   100                   
+   widget_create_child   
    iload                  4
    load_int               1
    iadd                  
@@ -139,14 +139,14 @@ LABEL110:
    load_int               0
    1001                  
    load_int               297
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               1
    1107                  
    load_int               255
    widget_put_opacity    
    load_int               244
    load_int               -2147483645
-   1702                  
+   widget_get_index      
    load_int               190
    load_int               -1
    load_string            "IiiI"
@@ -154,7 +154,7 @@ LABEL110:
    2403                  
    load_int               244
    load_int               -2147483645
-   1702                  
+   widget_get_index      
    load_int               255
    load_int               -1
    load_string            "IiiI"
@@ -163,7 +163,7 @@ LABEL110:
    iload                  0
    load_int               4
    iload                  4
-   100                   
+   widget_create_child   
    iload                  4
    load_int               1
    iadd                  
@@ -181,20 +181,20 @@ LABEL110:
    load_int               495
    widget_put_fontid     
    load_int               0
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               1
    load_int               0
    1114                  
    iload                  1
    get_item_name         
-   1112                  
+   widget_put_text       
    iload                  0
    iload                  1
    invoke                 332
    load_int               331
    load_int               -2147483645
-   1702                  
+   widget_get_index      
    iload                  1
    load_int               93
    load_int               1

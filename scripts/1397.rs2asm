@@ -28,7 +28,7 @@ LABEL18:
    istore                 16
    load_int               27656197
    iload                  16
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL28
    jump                   LABEL51
@@ -82,7 +82,7 @@ LABEL65:
    istore                 16
    load_int               27656197
    iload                  16
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL75
    jump                   LABEL92
@@ -120,7 +120,7 @@ LABEL98:
    istore                 16
    load_int               27656197
    iload                  16
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL108
    jump                   LABEL120
@@ -153,24 +153,24 @@ LABEL121:
 LABEL131:
    load_string            "---"
    iload                  0
-   2112                  
+   widget_put_text_widget
    load_int               -1
    iload                  1
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    load_int               0
    iload                  1
-   2106                  
+   widget_put_textureid_widget
    iload                  17
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL146
    jump                   LABEL150
 LABEL146:
    load_int               -1
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               0
-   1106                  
+   widget_put_textureid  
 LABEL150:
    load_int               255
    iload                  2
@@ -186,7 +186,7 @@ LABEL150:
    widget_put_opacity_widget
    load_string            "Select a room on the map."
    iload                  6
-   2112                  
+   widget_put_text_widget
    iload                  7
    load_string            "Move"
    load_int               0
@@ -224,7 +224,7 @@ LABEL192:
    iload                  18
    get_item_name         
    iload                  0
-   2112                  
+   widget_put_text_widget
    load_int               105
    load_int               100
    load_int               1423
@@ -233,7 +233,7 @@ LABEL192:
    istore                 19
    iload                  19
    iload                  1
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    load_int               16384
    load_int               4
    025                    5331
@@ -244,10 +244,10 @@ LABEL192:
    istore                 20
    iload                  20
    iload                  1
-   2106                  
+   widget_put_textureid_widget
    iload                  17
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL228
    jump                   LABEL241
@@ -258,15 +258,15 @@ LABEL228:
    jump                   LABEL237
 LABEL232:
    iload                  19
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  20
-   1106                  
+   widget_put_textureid  
    jump                   LABEL241
 LABEL237:
    load_int               -1
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               0
-   1106                  
+   widget_put_textureid  
 LABEL241:
    load_int               255
    istore                 21
@@ -544,7 +544,7 @@ LABEL454:
 LABEL461:
    load_string            "Use the map to select a position for the room."
    iload                  6
-   2112                  
+   widget_put_text_widget
    iload                  7
    load_string            "Move"
    load_int               1
@@ -594,7 +594,7 @@ LABEL505:
 LABEL509:
    load_string            "Choose an orientation for the room, then select 'Done'."
    iload                  6
-   2112                  
+   widget_put_text_widget
    iload                  7
    load_string            "Move"
    load_int               0
@@ -685,7 +685,7 @@ LABEL509:
 LABEL599:
    load_string            "Use the options to edit the room."
    iload                  6
-   2112                  
+   widget_put_text_widget
    iload                  7
    load_string            "Move"
    iload                  0

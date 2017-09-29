@@ -4,7 +4,7 @@
 .string_var_count   0
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL14
@@ -14,7 +14,7 @@ LABEL6:
    if_icmpge              LABEL10
    jump                   LABEL12
 LABEL10:
-   101                   
+   widget_destroy_child  
    jump                   LABEL14
 LABEL12:
    iload                  0

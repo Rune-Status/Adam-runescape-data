@@ -91,7 +91,7 @@ LABEL51:
 LABEL79:
    iload                  0
    load_int               3
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL85
    jump                   LABEL87
@@ -101,17 +101,17 @@ LABEL85:
 LABEL87:
    iload                  0
    load_int               7
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL93
    jump                   LABEL95
 LABEL93:
    load_int               698
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL95:
    iload                  0
    load_int               11
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL101
    jump                   LABEL106
@@ -120,19 +120,19 @@ LABEL101:
    load_string            "Hide tab bar"
    load_string            "</str>"
    037                    3
-   1112                  
+   widget_put_text       
 LABEL106:
    jump                   LABEL126
 LABEL107:
    iload                  0
    load_int               11
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL113
    jump                   LABEL115
 LABEL113:
    load_string            "Hide tab bar"
-   1112                  
+   widget_put_text       
 LABEL115:
    025                    4170
    load_int               3

@@ -22,7 +22,7 @@ LABEL8:
    027                    5411
    iload                  3
    iload                  4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL22
    jump                   LABEL24
@@ -43,7 +43,7 @@ LABEL29:
    3200                  
    iload                  3
    iload                  4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL39
    jump                   LABEL64
@@ -51,7 +51,7 @@ LABEL39:
    load_int               16777215
    widget_put_textcolor  
    load_string            "Set a value..."
-   1112                  
+   widget_put_text       
    load_int               -1
    load_string            ""
    iload                  3
@@ -66,7 +66,7 @@ LABEL39:
    2409                  
    load_int               1502
    iload                  3
-   1702                  
+   widget_get_index      
    get_gamecycle         
    load_int               100
    iadd                  
@@ -104,7 +104,7 @@ LABEL83:
    027                    5411
    iload                  3
    iload                  4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL93
    jump                   LABEL95
@@ -120,7 +120,7 @@ LABEL96:
    3200                  
    iload                  3
    iload                  4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL106
    jump                   LABEL131
@@ -128,7 +128,7 @@ LABEL106:
    load_int               16777215
    widget_put_textcolor  
    load_string            "Set a value..."
-   1112                  
+   widget_put_text       
    load_int               -1
    load_string            ""
    iload                  3
@@ -143,7 +143,7 @@ LABEL106:
    2409                  
    load_int               1502
    iload                  3
-   1702                  
+   widget_get_index      
    get_gamecycle         
    load_int               100
    iadd                  

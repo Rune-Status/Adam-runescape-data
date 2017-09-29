@@ -1,0 +1,62 @@
+.int_stack_count    5
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
+   get_gamecycle         
+   iload                  0
+   if_icmplt              LABEL4
+   jump                   LABEL5
+LABEL4:
+   return                
+LABEL5:
+   iload                  3
+   load_int               -1
+   if_icmpne              LABEL9
+   jump                   LABEL12
+LABEL9:
+   load_int               0
+   iload                  3
+   widget_put_hidden_widget
+LABEL12:
+   iload                  4
+   load_int               -1
+   if_icmpne              LABEL16
+   jump                   LABEL19
+LABEL16:
+   load_int               1
+   iload                  4
+   widget_put_hidden_widget
+LABEL19:
+   load_int               170
+   iload                  1
+   widget_put_spriteid_widget
+   load_int               -1
+   load_string            ""
+   iload                  1
+   2408                  
+   load_int               1988
+   load_int               1
+   iload                  2
+   iload                  3
+   iload                  4
+   load_string            "1III"
+   iload                  1
+   2412                  
+   load_int               1988
+   load_int               0
+   iload                  2
+   iload                  3
+   iload                  4
+   load_string            "1III"
+   iload                  1
+   2404                  
+   load_int               1989
+   load_int               -2147483644
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   load_string            "iIIII"
+   iload                  1
+   2409                  
+   return                

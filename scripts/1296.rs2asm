@@ -25,7 +25,7 @@
    iload                  16
    2200                  
    iload                  0
-   102                   
+   widget_unset_children 
    iload                  22
    load_int               13446
    046                   
@@ -178,7 +178,7 @@ LABEL152:
    int_to_string         
    037                    2
    iload                  17
-   2112                  
+   widget_put_text_widget
    load_int               6
    get_boostedskilllevels
    iload                  12
@@ -208,12 +208,12 @@ LABEL175:
 LABEL180:
    load_int               93
    load_int               13446
-   3303                  
+   get_itemcontainer_stacksizes_total
    int_to_string         
    load_string            "/1"
    037                    2
    iload                  18
-   2112                  
+   widget_put_text_widget
    load_int               0
    045                   
    load_int               0
@@ -223,7 +223,7 @@ LABEL180:
    load_int               93
    load_int               0
    045                   
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_int               0
    045                    1
    if_icmplt              LABEL202
@@ -232,7 +232,7 @@ LABEL202:
    iload                  0
    load_int               5
    load_int               0
-   100                   
+   widget_create_child   
    load_int               16
    load_int               16
    load_int               0
@@ -250,7 +250,7 @@ LABEL202:
    load_int               0
    1000                  
    load_int               299
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               13107200
    iload                  18
    widget_put_textcolor_widget
@@ -259,7 +259,7 @@ LABEL228:
    iload                  0
    load_int               5
    load_int               0
-   100                   
+   widget_create_child   
    load_int               17
    load_int               17
    load_int               0
@@ -277,7 +277,7 @@ LABEL228:
    load_int               0
    1000                  
    load_int               1210
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               16750623
    iload                  18
    widget_put_textcolor_widget
@@ -304,7 +304,7 @@ LABEL263:
    int_to_string         
    037                    3
    iload                  19
-   2112                  
+   widget_put_text_widget
    load_int               1
    045                   
    load_int               1
@@ -322,7 +322,7 @@ LABEL287:
    iload                  0
    load_int               5
    load_int               1
-   100                   
+   widget_create_child   
    load_int               16
    load_int               16
    load_int               0
@@ -340,7 +340,7 @@ LABEL287:
    load_int               0
    1000                  
    load_int               299
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               13107200
    iload                  19
    widget_put_textcolor_widget
@@ -349,7 +349,7 @@ LABEL313:
    iload                  0
    load_int               5
    load_int               1
-   100                   
+   widget_create_child   
    load_int               17
    load_int               17
    load_int               0
@@ -367,7 +367,7 @@ LABEL313:
    load_int               0
    1000                  
    load_int               1210
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               16750623
    iload                  19
    widget_put_textcolor_widget
@@ -376,7 +376,7 @@ LABEL338:
 LABEL339:
    load_string            ""
    iload                  19
-   2112                  
+   widget_put_text_widget
 LABEL342:
    load_int               2
    045                   
@@ -400,7 +400,7 @@ LABEL352:
    int_to_string         
    037                    3
    iload                  20
-   2112                  
+   widget_put_text_widget
    load_int               2
    045                   
    load_int               2
@@ -418,7 +418,7 @@ LABEL376:
    iload                  0
    load_int               5
    load_int               2
-   100                   
+   widget_create_child   
    load_int               16
    load_int               16
    load_int               0
@@ -436,7 +436,7 @@ LABEL376:
    load_int               0
    1000                  
    load_int               299
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               13107200
    iload                  20
    widget_put_textcolor_widget
@@ -445,7 +445,7 @@ LABEL402:
    iload                  0
    load_int               5
    load_int               2
-   100                   
+   widget_create_child   
    load_int               17
    load_int               17
    load_int               0
@@ -463,7 +463,7 @@ LABEL402:
    load_int               0
    1000                  
    load_int               1210
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               16750623
    iload                  20
    widget_put_textcolor_widget
@@ -472,7 +472,7 @@ LABEL427:
 LABEL428:
    load_string            ""
    iload                  20
-   2112                  
+   widget_put_text_widget
 LABEL431:
    load_int               3
    045                   
@@ -496,7 +496,7 @@ LABEL441:
    int_to_string         
    037                    3
    iload                  21
-   2112                  
+   widget_put_text_widget
    load_int               3
    045                   
    load_int               3
@@ -514,7 +514,7 @@ LABEL465:
    iload                  0
    load_int               5
    load_int               3
-   100                   
+   widget_create_child   
    load_int               16
    load_int               16
    load_int               0
@@ -532,7 +532,7 @@ LABEL465:
    load_int               0
    1000                  
    load_int               299
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               13107200
    iload                  21
    widget_put_textcolor_widget
@@ -541,7 +541,7 @@ LABEL491:
    iload                  0
    load_int               5
    load_int               3
-   100                   
+   widget_create_child   
    load_int               17
    load_int               17
    load_int               0
@@ -559,7 +559,7 @@ LABEL491:
    load_int               0
    1000                  
    load_int               1210
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               16750623
    iload                  21
    widget_put_textcolor_widget
@@ -568,6 +568,6 @@ LABEL516:
 LABEL517:
    load_string            ""
    iload                  21
-   2112                  
+   widget_put_text_widget
 LABEL520:
    return                

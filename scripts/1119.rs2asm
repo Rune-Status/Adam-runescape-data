@@ -65,7 +65,7 @@ LABEL51:
    idiv                  
    istore                 9
    iload                  4
-   102                   
+   widget_unset_children 
    load_int               0
    043                    2
    load_int               0
@@ -85,7 +85,7 @@ LABEL73:
    iload                  4
    load_int               3
    iload                  10
-   100                   
+   widget_create_child   
    iload                  10
    load_int               1
    iadd                  
@@ -123,7 +123,7 @@ LABEL107:
    iload                  4
    load_int               5
    iload                  10
-   100                   
+   widget_create_child   
    iload                  10
    load_int               1
    iadd                  
@@ -141,20 +141,20 @@ LABEL107:
    load_int               1
    1107                  
    load_int               1040
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL129:
    iload                  4
    iload                  10
    invoke                 715
    istore                 10
    iload                  6
-   102                   
+   widget_unset_children 
    load_int               0
    istore                 10
    iload                  6
    load_int               4
    iload                  10
-   100                   
+   widget_create_child   
    iload                  10
    load_int               1
    iadd                  
@@ -178,17 +178,17 @@ LABEL129:
    load_int               16750623
    widget_put_textcolor  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               105
    load_int               115
    load_int               1233
    iload                  0
    3408                  
-   1112                  
+   widget_put_text       
    iload                  6
    load_int               4
    iload                  10
-   100                   
+   widget_create_child   
    iload                  10
    load_int               1
    iadd                  
@@ -212,7 +212,7 @@ LABEL129:
    load_int               16750623
    widget_put_textcolor  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_string            ""
    sstore                
    iload                  1
@@ -239,7 +239,7 @@ LABEL215:
    sstore                
 LABEL221:
    sload                  0
-   1112                  
+   widget_put_text       
    iload                  6
    widget_get_height_widget
    istore                 11
@@ -259,7 +259,7 @@ LABEL238:
    iload                  6
    load_int               3
    iload                  10
-   100                   
+   widget_create_child   
    iload                  10
    load_int               1
    iadd                  
@@ -281,7 +281,7 @@ LABEL238:
    iload                  6
    load_int               3
    iload                  10
-   100                   
+   widget_create_child   
    iload                  10
    load_int               1
    iadd                  
@@ -301,7 +301,7 @@ LABEL238:
    iload                  6
    load_int               3
    iload                  10
-   100                    1
+   widget_create_child    1
    iload                  10
    load_int               1
    iadd                  
@@ -418,7 +418,7 @@ LABEL386:
    iload                  6
    load_int               5
    iload                  10
-   100                   
+   widget_create_child   
    iload                  10
    load_int               1
    iadd                  
@@ -434,7 +434,7 @@ LABEL386:
    load_int               2
    1000                  
    load_int               760
-   widget_put_textureid  
+   widget_put_spriteid   
    sload                  0
    load_string            "<br>"
    load_string            "A gardener is protecting this patch."
@@ -444,7 +444,7 @@ LABEL386:
    jump                   LABEL483
 LABEL413:
    iload                  3
-   load_int               7
+   load_int               8
    test_bit              
    load_int               1
    if_icmpeq              LABEL419
@@ -453,7 +453,7 @@ LABEL419:
    iload                  6
    load_int               5
    iload                  10
-   100                   
+   widget_create_child   
    iload                  10
    load_int               1
    iadd                  
@@ -469,7 +469,7 @@ LABEL419:
    load_int               2
    1000                  
    load_int               904
-   widget_put_textureid  
+   widget_put_spriteid   
    sload                  0
    load_string            "<br>"
    load_string            "A House in Kourend is protecting the patch as a favour."
@@ -488,7 +488,7 @@ LABEL452:
    iload                  6
    load_int               5
    iload                  10
-   100                   
+   widget_create_child   
    iload                  10
    load_int               1
    iadd                  
@@ -504,7 +504,7 @@ LABEL452:
    load_int               2
    1000                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    load_int               2472
@@ -531,7 +531,7 @@ LABEL493:
    iload                  6
    load_int               5
    iload                  10
-   100                   
+   widget_create_child   
    iload                  10
    load_int               1
    iadd                  
@@ -547,7 +547,7 @@ LABEL493:
    load_int               0
    1000                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    iload                  2
@@ -583,18 +583,23 @@ LABEL541:
    load_int               6
    test_bit              
    load_int               1
-   if_icmpeq              LABEL552
+   if_icmpeq              LABEL557
    iload                  3
    load_int               5
    test_bit              
    load_int               1
-   if_icmpeq              LABEL552
-   jump                   LABEL599
-LABEL552:
+   if_icmpeq              LABEL557
+   iload                  3
+   load_int               7
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL557
+   jump                   LABEL620
+LABEL557:
    iload                  6
    load_int               5
    iload                  10
-   100                   
+   widget_create_child   
    iload                  10
    load_int               1
    iadd                  
@@ -610,16 +615,34 @@ LABEL552:
    load_int               2
    1000                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
+   iload                  3
+   load_int               7
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL585
+   jump                   LABEL595
+LABEL585:
+   load_int               21483
+   load_int               1
+   1205                  
+   sload                  0
+   load_string            "<br>"
+   load_string            "The patch has been treated with ultracompost."
+   037                    2
+   concat_string         
+   sstore                
+   jump                   LABEL620
+LABEL595:
    iload                  3
    load_int               6
    test_bit              
    load_int               1
-   if_icmpeq              LABEL580
-   jump                   LABEL590
-LABEL580:
+   if_icmpeq              LABEL601
+   jump                   LABEL611
+LABEL601:
    load_int               6034
    load_int               1
    1205                  
@@ -629,8 +652,8 @@ LABEL580:
    037                    2
    concat_string         
    sstore                
-   jump                   LABEL599
-LABEL590:
+   jump                   LABEL620
+LABEL611:
    load_int               6032
    load_int               1
    1205                  
@@ -640,16 +663,16 @@ LABEL590:
    037                    2
    concat_string         
    sstore                
-LABEL599:
+LABEL620:
    iload                  9
    load_int               0
-   if_icmpgt              LABEL603
-   jump                   LABEL642
-LABEL603:
+   if_icmpgt              LABEL624
+   jump                   LABEL663
+LABEL624:
    iload                  6
    load_int               4
    iload                  10
-   100                   
+   widget_create_child   
    iload                  10
    load_int               1
    iadd                  
@@ -673,10 +696,10 @@ LABEL603:
    load_int               16758831
    widget_put_textcolor  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    iload                  9
    int_to_string         
-   1112                  
+   widget_put_text       
    sload                  0
    load_string            "<br>"
    load_string            "Available yield: "
@@ -685,11 +708,11 @@ LABEL603:
    037                    3
    concat_string         
    sstore                
-LABEL642:
+LABEL663:
    load_int               526
    load_int               -2147483645
    load_int               -1
-   load_int               11731149
+   load_int               11731164
    sload                  0
    load_int               25
    load_int               512
@@ -697,7 +720,7 @@ LABEL642:
    iload                  6
    2412                  
    load_int               40
-   load_int               11731149
+   load_int               11731164
    load_string            "I"
    iload                  6
    2404                  

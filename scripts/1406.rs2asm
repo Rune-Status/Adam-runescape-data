@@ -11,11 +11,11 @@ LABEL4:
    istore                
 LABEL6:
    load_int               30015490
-   102                   
+   widget_unset_children 
    load_int               30015490
    load_int               3
    load_int               0
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    iload                  0
@@ -36,7 +36,7 @@ LABEL24:
    load_int               30015490
    load_int               3
    iload                  2
-   100                   
+   widget_create_child   
    load_int               1
    widget_put_hidden     
    iload                  2
@@ -65,11 +65,11 @@ LABEL52:
    istore                 5
    istore                 4
    load_int               30015491
-   102                   
+   widget_unset_children 
    load_int               30015491
    load_int               4
    load_int               0
-   100                   
+   widget_create_child   
    load_int               0
    iload                  4
    load_int               1
@@ -85,13 +85,13 @@ LABEL52:
    load_int               495
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               0
    load_int               0
    load_int               0
    1114                  
    load_string            "Select a piece of furniture to build."
-   1112                  
+   widget_put_text       
    jump                   LABEL102
 LABEL85:
    iload                  0
@@ -215,7 +215,7 @@ LABEL181:
    invoke                 31
    load_int               30015523
    load_int               1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL196
    jump                   LABEL201
@@ -299,7 +299,7 @@ LABEL260:
 LABEL264:
    load_int               1
    043                    11
-   load_int               10616863
+   load_int               10616864
    widget_get_hidden_widget
    load_int               0
    if_icmpeq              LABEL271

@@ -4,14 +4,14 @@
 .string_var_count   2
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL39
 LABEL6:
    iload                  0
    iload                  2
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL12
    jump                   LABEL39
@@ -22,7 +22,7 @@ LABEL12:
    sload                  0
    load_string            "</u>"
    037                    3
-   1112                   1
+   widget_put_text        1
    load_int               614
    iload                  0
    iload                  1
@@ -50,5 +50,5 @@ LABEL39:
    3200                  
    sload                  1
    load_int               1
-   3113                  
+   open_url              
    return                

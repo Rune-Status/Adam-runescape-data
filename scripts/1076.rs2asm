@@ -18,14 +18,14 @@ LABEL10:
    iload                  7
    load_int               1
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL18
    jump                   LABEL96
 LABEL18:
    iload                  2
    iload                  7
-   3301                  
+   get_itemcontainer_itemid
    istore                 5
    iload                  5
    load_int               -1
@@ -37,7 +37,7 @@ LABEL26:
    iload                  5
    iload                  2
    iload                  7
-   3302                  
+   get_itemcontainer_stacksize
    1200                  
    iload                  5
    iload                  3
@@ -68,7 +68,7 @@ LABEL49:
 LABEL55:
    load_int               19660802
    load_int               0
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL61
    jump                   LABEL75
@@ -84,7 +84,7 @@ LABEL61:
    load_int               0
    1000                   1
    load_int               155
-   widget_put_textureid   1
+   widget_put_spriteid    1
    load_int               180
    widget_put_opacity     1
 LABEL75:

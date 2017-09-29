@@ -27,14 +27,14 @@ LABEL18:
    jump                   LABEL81
 LABEL22:
    iload                  5
-   5017                  
+   get_chatlinebuffer_length
    load_int               0
    if_icmpgt              LABEL27
    jump                   LABEL76
 LABEL27:
    iload                  5
    load_int               0
-   5003                  
+   get_chat_message_type 
    sstore                 2
    sstore                 1
    sstore                
@@ -70,7 +70,7 @@ LABEL53:
    istore                 4
    sload                  0
    string_remove_html    
-   048                   
+   put_varc_string       
 LABEL58:
    jump                   LABEL76
 LABEL59:

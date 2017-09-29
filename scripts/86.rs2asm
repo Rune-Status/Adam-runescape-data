@@ -12,7 +12,7 @@
 LABEL7:
    load_int               4
    sload                  1
-   3107                  
+   player_action         
    jump                   LABEL61
 LABEL11:
    iload                  0
@@ -22,7 +22,7 @@ LABEL11:
 LABEL15:
    load_int               1
    sload                  1
-   3107                  
+   player_action         
    jump                   LABEL61
 LABEL19:
    iload                  0
@@ -31,7 +31,7 @@ LABEL19:
    jump                   LABEL26
 LABEL23:
    sload                  1
-   048                    24
+   put_varc_string        24
    jump                   LABEL61
 LABEL26:
    iload                  0
@@ -44,7 +44,7 @@ LABEL30:
    jump                   LABEL61
 LABEL33:
    sload                  1
-   3609                  
+   is_friend             
    load_int               1
    if_icmpeq              LABEL38
    jump                   LABEL48

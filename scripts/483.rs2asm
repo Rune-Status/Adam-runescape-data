@@ -3,7 +3,7 @@
 .int_var_count      12
 .string_var_count   1
    iload                  0
-   102                   
+   widget_unset_children 
    iload                  0
    widget_get_width_widget
    istore                 10
@@ -12,7 +12,7 @@
    iload                  0
    load_int               4
    iload                  11
-   100                   
+   widget_create_child   
    iload                  11
    load_int               1
    iadd                  
@@ -20,7 +20,7 @@
    iload                  0
    load_int               4
    iload                  11
-   100                    1
+   widget_create_child    1
    iload                  11
    load_int               1
    iadd                  
@@ -58,24 +58,24 @@
    load_int               0
    1114                   1
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    sload                  0
-   1112                  
+   widget_put_text       
    load_string            "Magic "
    iload                  2
    int_to_string         
    037                    2
-   1112                   1
+   widget_put_text        1
    iload                  0
    iload                  2
    iload                  3
    invoke                 486
    load_int               485
    load_int               -2147483645
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
    iload                  2
    iload                  3
    load_int               6
@@ -85,8 +85,8 @@
    2415                  
    load_int               485
    load_int               -2147483645
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
    iload                  2
    iload                  3
    load_int               93
@@ -97,8 +97,8 @@
    2414                  
    load_int               485
    load_int               -2147483645
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
    iload                  2
    iload                  3
    load_int               638
@@ -112,7 +112,7 @@
    iload                  0
    load_int               6
    iload                  11
-   100                   
+   widget_create_child   
    iload                  11
    load_int               1
    iadd                  

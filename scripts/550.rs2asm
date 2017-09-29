@@ -7,13 +7,13 @@
    if_icmpeq              LABEL4
    jump                   LABEL5
 LABEL4:
-   3103                  
+   close_window          
 LABEL5:
    invoke                 677
    load_string            ""
    load_int               0
    043                    62
-   048                    28
+   put_varc_string        28
    invoke                 95
    load_int               13
    043                    5
@@ -27,6 +27,13 @@ LABEL5:
    load_int               -2147483639
    sload                  0
    load_string            "izs"
-   load_int               10616865
+   load_int               10616866
    2419                  
+   invoke                 1972
+   load_int               1
+   if_icmpeq              LABEL29
+   jump                   LABEL30
+LABEL29:
+   invoke                 1983
+LABEL30:
    return                

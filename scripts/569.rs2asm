@@ -3,7 +3,7 @@
 .int_var_count      3
 .string_var_count   1
    iload                  1
-   102                   
+   widget_unset_children 
    load_string            "Step over the line to fight!"
    sstore                
    sload                  0
@@ -22,7 +22,7 @@
    iload                  1
    load_int               5
    load_int               0
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               0
@@ -34,7 +34,7 @@
    load_int               0
    1001                  
    load_int               897
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               1
    1107                  
    load_int               100
@@ -44,7 +44,7 @@
    iload                  1
    load_int               1
    invoke                 575
-   100                   
+   widget_create_child   
    load_int               0
    load_int               3
    load_int               0
@@ -62,11 +62,11 @@
    load_int               645
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               16777120
    widget_put_textcolor  
    sload                  0
-   1112                  
+   widget_put_text       
    load_int               570
    iload                  1
    load_string            "I"

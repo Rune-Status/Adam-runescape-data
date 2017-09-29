@@ -4,7 +4,7 @@
 .string_var_count   0
    iload                  0
    load_int               4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL12
@@ -14,11 +14,11 @@ LABEL6:
    load_int               1246
    get_settings           1107
    3408                  
-   1112                  
+   widget_put_text       
 LABEL12:
    iload                  1
    load_int               4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL18
    jump                   LABEL24
@@ -28,6 +28,6 @@ LABEL18:
    load_int               1246
    get_settings           1306
    3408                  
-   1112                  
+   widget_put_text       
 LABEL24:
    return                

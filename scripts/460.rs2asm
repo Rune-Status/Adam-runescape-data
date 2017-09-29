@@ -3,7 +3,7 @@
 .int_var_count      3
 .string_var_count   1
    iload                  1
-   102                   
+   widget_unset_children 
    load_int               105
    load_int               115
    load_int               860
@@ -18,7 +18,7 @@
    iload                  1
    load_int               5
    load_int               0
-   100                   
+   widget_create_child   
    load_int               34
    load_int               34
    load_int               0
@@ -30,11 +30,11 @@
    load_int               0
    1000                  
    load_int               155
-   widget_put_textureid  
+   widget_put_spriteid   
    iload                  1
    load_int               5
    load_int               1
-   100                    1
+   widget_create_child    1
    load_int               30
    load_int               30
    load_int               0
@@ -47,167 +47,144 @@
    1000                   1
    iload                  0
    iload                  1
+   iload                  2
    invoke                 463
    iload                  0
    load_int               25
-   if_icmpeq              LABEL53
+   if_icmpeq              LABEL54
    iload                  0
    load_int               26
-   if_icmpeq              LABEL53
-   jump                   LABEL77
-LABEL53:
+   if_icmpeq              LABEL54
+   jump                   LABEL81
+LABEL54:
    load_int               461
    iload                  0
    iload                  1
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
+   iload                  2
    load_int               5
    load_int               1
    load_int               2
-   load_string            "iIiiY"
+   load_string            "iIiiIY"
    iload                  1
    2415                  
    load_int               461
    iload                  0
    iload                  1
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
+   iload                  2
    load_int               83
    load_int               1377
    load_int               1050
-   load_int               3
-   load_string            "iIiiY"
+   load_int               284
+   load_int               4
+   load_string            "iIiiIY"
    iload                  1
    2407                  
-   jump                   LABEL132
-LABEL77:
+   jump                   LABEL142
+LABEL81:
    iload                  0
    load_int               24
-   if_icmpeq              LABEL87
+   if_icmpeq              LABEL91
    iload                  0
    load_int               27
-   if_icmpeq              LABEL87
+   if_icmpeq              LABEL91
    iload                  0
    load_int               28
-   if_icmpeq              LABEL87
-   jump                   LABEL111
-LABEL87:
+   if_icmpeq              LABEL91
+   jump                   LABEL118
+LABEL91:
    load_int               461
    iload                  0
    iload                  1
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
+   iload                  2
    load_int               5
    load_int               1
    load_int               2
-   load_string            "iIiiY"
+   load_string            "iIiiIY"
    iload                  1
    2415                  
    load_int               461
    iload                  0
    iload                  1
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
+   iload                  2
    load_int               83
    load_int               1377
    load_int               1429
-   load_int               3
-   load_string            "iIiiY"
+   load_int               284
+   load_int               4
+   load_string            "iIiiIY"
    iload                  1
    2407                  
-   jump                   LABEL132
-LABEL111:
+   jump                   LABEL142
+LABEL118:
    load_int               461
    iload                  0
    iload                  1
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
+   iload                  2
    load_int               5
    load_int               1
-   load_string            "iIiiY"
+   load_string            "iIiiIY"
    iload                  1
    2415                  
    load_int               461
    iload                  0
    iload                  1
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
+   iload                  2
    load_int               83
    load_int               1377
-   load_int               2
-   load_string            "iIiiY"
+   load_int               284
+   load_int               3
+   load_string            "iIiiIY"
    iload                  1
    2407                  
-LABEL132:
+LABEL142:
    load_int               462
    load_int               -2147483644
    iload                  0
    iload                  1
-   1702                  
-   1702                   1
-   load_string            "iiIii"
+   widget_get_index      
+   widget_get_index       1
+   iload                  2
+   load_string            "iiIiiI"
    iload                  1
    2409                  
-   load_string            "Level "
-   load_int               105
-   load_int               105
-   load_int               861
-   iload                  0
-   3408                  
-   int_to_string         
-   load_string            "<br>"
-   037                    3
-   sload                  0
-   concat_string         
-   sstore                
-   sload                  0
-   load_string            "<br>"
-   load_int               105
-   load_int               115
-   load_int               862
-   iload                  0
-   3408                  
-   037                    2
-   concat_string         
-   sstore                
-   load_int               38
-   load_int               -2147483645
    iload                  2
-   sload                  0
-   load_int               25
    iload                  1
-   widget_get_parentid_widget
-   widget_get_width_widget
-   load_string            "IIsii"
-   iload                  1
-   2412                  
-   load_int               40
-   iload                  2
-   load_string            "I"
-   iload                  1
-   2404                  
+   iload                  0
+   invoke                 1966
    iload                  0
    load_int               8
-   if_icmpeq              LABEL183
-   jump                   LABEL212
-LABEL183:
+   if_icmpeq              LABEL160
+   jump                   LABEL189
+LABEL160:
    invoke                 451
    load_int               1
-   if_icmpeq              LABEL193
+   if_icmpeq              LABEL170
    invoke                 1138
    load_int               1
-   if_icmpeq              LABEL193
+   if_icmpeq              LABEL170
    025                    5314
    load_int               1
-   if_icmpeq              LABEL193
-   jump                   LABEL212
-LABEL193:
+   if_icmpeq              LABEL170
+   jump                   LABEL189
+LABEL170:
    load_int               100
    widget_put_opacity     1
    iload                  1
    load_int               5
    load_int               2
-   100                    1
+   widget_create_child    1
    load_int               25
    load_int               25
    load_int               0
@@ -219,10 +196,10 @@ LABEL193:
    load_int               0
    1000                   1
    load_int               1047
-   widget_put_textureid   1
-   jump                   LABEL214
-LABEL212:
+   widget_put_spriteid    1
+   jump                   LABEL191
+LABEL189:
    load_int               0
    widget_put_opacity     1
-LABEL214:
+LABEL191:
    return                

@@ -3,7 +3,7 @@
 .int_var_count      2
 .string_var_count   0
    iload                  0
-   102                   
+   widget_unset_children 
    get_settings           211
    load_int               0
    if_icmpeq              LABEL6
@@ -30,7 +30,7 @@ LABEL19:
    iload                  0
    load_int               4
    iload                  1
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               1
@@ -48,9 +48,9 @@ LABEL19:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_string            "Stop"
-   1112                  
+   widget_put_text       
    load_int               16750623
    widget_put_textcolor  
    load_int               85

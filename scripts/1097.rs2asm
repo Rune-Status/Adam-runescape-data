@@ -11,8 +11,8 @@
    if_icmpeq              LABEL8
    jump                   LABEL13
 LABEL8:
-   047                    27
-   047                    130
+   get_varc_string        27
+   get_varc_string        130
    sstore                 1
    sstore                
    jump                   LABEL23
@@ -22,8 +22,8 @@ LABEL13:
    if_icmpeq              LABEL17
    jump                   LABEL22
 LABEL17:
-   047                    130
-   047                    27
+   get_varc_string        130
+   get_varc_string        27
    sstore                 1
    sstore                
    jump                   LABEL23
@@ -59,14 +59,14 @@ LABEL46:
 LABEL48:
    iload                  2
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL54
    jump                   LABEL90
 LABEL54:
    iload                  2
    load_int               1
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL60
    jump                   LABEL90
@@ -85,7 +85,7 @@ LABEL60:
    widget_put_opacity    
    load_int               244
    iload                  2
-   1702                  
+   widget_get_index      
    load_int               100
    load_int               -1
    load_string            "IiiI"
@@ -93,14 +93,14 @@ LABEL60:
    2403                  
    load_int               244
    iload                  2
-   1702                  
+   widget_get_index      
    load_int               255
    load_int               -1
    load_string            "IiiI"
    iload                  2
    2404                  
    sload                  1
-   1112                   1
+   widget_put_text        1
 LABEL90:
    iload                  8
    iload                  9
@@ -165,14 +165,14 @@ LABEL144:
 LABEL146:
    iload                  0
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL152
    jump                   LABEL180
 LABEL152:
    iload                  0
    load_int               1
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL158
    jump                   LABEL180
@@ -198,7 +198,7 @@ LABEL158:
    iload                  0
    2404                  
    sload                  0
-   1112                   1
+   widget_put_text        1
 LABEL180:
    iload                  8
    iload                  9

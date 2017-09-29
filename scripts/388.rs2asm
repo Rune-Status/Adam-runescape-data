@@ -7,7 +7,7 @@
    invoke                 1138
    load_int               1
    if_icmpeq              LABEL6
-   jump                   LABEL34
+   jump                   LABEL49
 LABEL6:
    025                    4965
    load_int               0
@@ -16,52 +16,70 @@ LABEL6:
 LABEL10:
    load_string            "Protection"
    iload                  0
-   2112                  
-   jump                   LABEL33
-LABEL14:
-   042                    78
-   load_int               1
-   if_icmpeq              LABEL18
-   jump                   LABEL22
-LABEL18:
-   load_string            "Guarded"
-   iload                  0
-   2112                  
-   jump                   LABEL33
-LABEL22:
-   042                    78
-   load_int               2
-   if_icmpeq              LABEL26
-   jump                   LABEL30
-LABEL26:
-   load_string            "No PvP"
-   iload                  0
-   2112                  
-   jump                   LABEL33
-LABEL30:
-   load_string            "Deadman"
-   iload                  0
-   2112                  
-LABEL33:
+   widget_put_text_widget
    jump                   LABEL48
-LABEL34:
+LABEL14:
    iload                  1
    load_int               0
-   if_icmpgt              LABEL38
-   jump                   LABEL45
-LABEL38:
+   if_icmpgt              LABEL18
+   jump                   LABEL29
+LABEL18:
+   025                    5954
+   load_int               1
+   if_icmpeq              LABEL22
+   jump                   LABEL29
+LABEL22:
    load_string            "Level: "
    iload                  1
    int_to_string         
    037                    2
    iload                  0
-   2112                  
+   widget_put_text_widget
+   jump                   LABEL48
+LABEL29:
+   042                    78
+   load_int               1
+   if_icmpeq              LABEL33
+   jump                   LABEL37
+LABEL33:
+   load_string            "Guarded"
+   iload                  0
+   widget_put_text_widget
+   jump                   LABEL48
+LABEL37:
+   042                    78
+   load_int               2
+   if_icmpeq              LABEL41
+   jump                   LABEL45
+LABEL41:
+   load_string            "No PvP"
+   iload                  0
+   widget_put_text_widget
    jump                   LABEL48
 LABEL45:
+   load_string            "Deadman"
+   iload                  0
+   widget_put_text_widget
+LABEL48:
+   jump                   LABEL63
+LABEL49:
+   iload                  1
+   load_int               0
+   if_icmpgt              LABEL53
+   jump                   LABEL60
+LABEL53:
+   load_string            "Level: "
+   iload                  1
+   int_to_string         
+   037                    2
+   iload                  0
+   widget_put_text_widget
+   jump                   LABEL63
+LABEL60:
    load_string            ""
    iload                  0
-   2112                  
-LABEL48:
+   widget_put_text_widget
+LABEL63:
    iload                  1
    invoke                 387
    return                

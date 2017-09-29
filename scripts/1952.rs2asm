@@ -1,0 +1,70 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   1
+   load_int               39256108
+   widget_get_width_widget
+   istore                
+   load_int               39256108
+   widget_get_height_widget
+   istore                 1
+   iload                  0
+   istore                 2
+   get_settings           1604
+   istore                 3
+   iload                  3
+   int_to_string         
+   load_string            "/99"
+   037                    2
+   sstore                
+   iload                  3
+   load_int               99
+   iload                  2
+   4018                  
+   istore                 2
+   iload                  2
+   load_int               0
+   if_icmpeq              LABEL24
+   jump                   LABEL30
+LABEL24:
+   iload                  3
+   load_int               0
+   if_icmpgt              LABEL28
+   jump                   LABEL30
+LABEL28:
+   load_int               1
+   istore                 2
+LABEL30:
+   iload                  2
+   iload                  0
+   if_icmpeq              LABEL34
+   jump                   LABEL42
+LABEL34:
+   iload                  3
+   load_int               99
+   if_icmplt              LABEL38
+   jump                   LABEL42
+LABEL38:
+   iload                  2
+   load_int               1
+   isub                  
+   istore                 2
+LABEL42:
+   iload                  2
+   iload                  0
+   if_icmpgt              LABEL46
+   jump                   LABEL48
+LABEL46:
+   iload                  0
+   istore                 2
+LABEL48:
+   sload                  0
+   load_int               39256118
+   widget_put_text_widget
+   iload                  2
+   iload                  1
+   load_int               0
+   load_int               0
+   load_int               39256113
+   2001                  
+   return                

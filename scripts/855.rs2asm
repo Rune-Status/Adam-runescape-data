@@ -14,10 +14,10 @@
 LABEL9:
    load_int               761
    iload                  0
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    iload                  1
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL18
    jump                   LABEL20
@@ -27,7 +27,7 @@ LABEL18:
 LABEL20:
    iload                  1
    load_int               1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL26
    jump                   LABEL28
@@ -37,13 +37,13 @@ LABEL26:
 LABEL28:
    iload                  1
    load_int               2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL34
    jump                   LABEL36
 LABEL34:
    load_int               697
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL36:
    load_int               -1
    load_string            ""
@@ -57,14 +57,14 @@ LABEL36:
    load_string            ""
    iload                  1
    2409                  
-   jump                   LABEL124
+   jump                   LABEL130
 LABEL49:
    load_int               762
    iload                  0
-   widget_put_textureid_widget
+   widget_put_spriteid_widget
    iload                  1
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL58
    jump                   LABEL60
@@ -74,7 +74,7 @@ LABEL58:
 LABEL60:
    iload                  1
    load_int               1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL66
    jump                   LABEL68
@@ -85,44 +85,50 @@ LABEL68:
    025                    2570
    load_int               1
    if_icmpeq              LABEL72
-   jump                   LABEL88
+   jump                   LABEL91
 LABEL72:
    load_string            "Resizable mode chatbox:"
    load_string            "<br>"
    load_string            "Transparent"
    load_string            "<br>"
-   load_string            "Click-through is blocked"
-   037                    5
+   load_string            "Click"
+   load_string            "Tap"
+   invoke                 1971
+   load_string            "-through is blocked"
+   037                    6
    sstore                
    iload                  1
    load_int               2
-   200                   
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL85
-   jump                   LABEL87
-LABEL85:
-   load_int               698
-   widget_put_textureid  
-LABEL87:
-   jump                   LABEL103
+   if_icmpeq              LABEL88
+   jump                   LABEL90
 LABEL88:
+   load_int               698
+   widget_put_spriteid   
+LABEL90:
+   jump                   LABEL109
+LABEL91:
    load_string            "Resizable mode chatbox:"
    load_string            "<br>"
    load_string            "Transparent"
    load_string            "<br>"
-   load_string            "Click-through is permitted"
-   037                    5
+   load_string            "Click"
+   load_string            "Tap"
+   invoke                 1971
+   load_string            "-through is permitted"
+   037                    6
    sstore                
    iload                  1
    load_int               2
-   200                   
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL101
-   jump                   LABEL103
-LABEL101:
+   if_icmpeq              LABEL107
+   jump                   LABEL109
+LABEL107:
    load_int               699
-   widget_put_textureid  
-LABEL103:
+   widget_put_spriteid   
+LABEL109:
    load_int               121
    load_int               1
    load_int               -2147483645
@@ -144,7 +150,7 @@ LABEL103:
    load_string            "i1III"
    iload                  1
    2409                  
-LABEL124:
+LABEL130:
    load_int               526
    iload                  0
    load_int               -1

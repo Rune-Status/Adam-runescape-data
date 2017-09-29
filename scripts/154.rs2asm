@@ -6,14 +6,14 @@
    sstore                 9
    iload                  2
    iload                  3
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL8
    jump                   LABEL181
 LABEL8:
    iload                  0
    iload                  1
-   3301                  
+   get_itemcontainer_itemid
    load_int               -1
    if_icmpne              LABEL14
    jump                   LABEL135
@@ -21,16 +21,16 @@ LABEL14:
    load_string            "<col=ff981f>"
    iload                  0
    iload                  1
-   3301                  
+   get_itemcontainer_itemid
    get_item_name         
    037                    2
    sstore                 9
    iload                  0
    iload                  1
-   3301                  
+   get_itemcontainer_itemid
    iload                  0
    iload                  1
-   3302                  
+   get_itemcontainer_stacksize
    1200                  
    sload                  9
    widget_put_name       
@@ -144,7 +144,7 @@ LABEL123:
    1405                  
 LABEL130:
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    jump                   LABEL181

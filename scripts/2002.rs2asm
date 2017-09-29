@@ -1,0 +1,95 @@
+.int_stack_count    8
+.string_stack_count 0
+.int_var_count      17
+.string_var_count   0
+   iload                  7
+   load_int               0
+   if_icmple              LABEL4
+   jump                   LABEL15
+LABEL4:
+   iload                  4
+   iload                  1
+   widget_put_textcolor_widget
+   iload                  5
+   iload                  1
+   widget_put_opacity_widget
+   load_int               -1
+   load_string            ""
+   iload                  0
+   2408                  
+   return                
+LABEL15:
+   load_int               0
+   istore                 8
+   load_int               0
+   istore                 9
+   load_int               0
+   istore                 10
+   iload                  2
+   invoke                 2
+   istore                 10
+   istore                 9
+   istore                 8
+   load_int               0
+   istore                 11
+   load_int               0
+   istore                 12
+   load_int               0
+   istore                 13
+   iload                  4
+   invoke                 2
+   istore                 13
+   istore                 12
+   istore                 11
+   iload                  11
+   load_int               0
+   iload                  7
+   load_int               0
+   iload                  6
+   iload                  11
+   iload                  8
+   isub                  
+   4006                  
+   isub                  
+   istore                 14
+   iload                  12
+   load_int               0
+   iload                  7
+   load_int               0
+   iload                  6
+   iload                  12
+   iload                  9
+   isub                  
+   4006                  
+   isub                  
+   istore                 15
+   iload                  13
+   load_int               0
+   iload                  7
+   load_int               0
+   iload                  6
+   iload                  13
+   iload                  10
+   isub                  
+   4006                  
+   isub                  
+   istore                 16
+   iload                  14
+   iload                  15
+   iload                  16
+   invoke                 246
+   iload                  1
+   widget_put_textcolor_widget
+   iload                  5
+   load_int               0
+   iload                  7
+   load_int               0
+   iload                  6
+   iload                  5
+   iload                  3
+   isub                  
+   4006                  
+   isub                  
+   iload                  1
+   widget_put_opacity_widget
+   return                

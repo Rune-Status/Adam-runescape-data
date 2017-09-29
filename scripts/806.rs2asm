@@ -33,13 +33,13 @@ LABEL16:
    widget_put_hidden_widget
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL34
    jump                   LABEL36
 LABEL34:
    load_string            "Grand Exchange"
-   1112                  
+   widget_put_text       
 LABEL36:
    return                
 LABEL37:
@@ -66,13 +66,13 @@ LABEL48:
    widget_put_hidden_widget
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL63
    jump                   LABEL65
 LABEL63:
    load_string            "Grand Exchange: Set up offer"
-   1112                  
+   widget_put_text       
 LABEL65:
    return                
 LABEL66:
@@ -87,12 +87,12 @@ LABEL66:
    widget_put_hidden_widget
    iload                  0
    iload                  1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL81
    jump                   LABEL83
 LABEL81:
    load_string            "Grand Exchange: Offer status"
-   1112                  
+   widget_put_text       
 LABEL83:
    return                

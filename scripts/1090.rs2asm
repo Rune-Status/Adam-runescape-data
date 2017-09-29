@@ -3,7 +3,7 @@
 .int_var_count      21
 .string_var_count   3
    iload                  1
-   102                   
+   widget_unset_children 
    iload                  1
    widget_get_width_widget
    istore                 8
@@ -58,7 +58,7 @@ LABEL49:
    jump                   LABEL440
 LABEL53:
    iload                  20
-   load_int               38
+   load_int               39
    if_icmple              LABEL57
    jump                   LABEL440
 LABEL57:
@@ -168,7 +168,7 @@ LABEL148:
    iload                  1
    load_int               3
    iload                  12
-   100                    1
+   widget_create_child    1
    iload                  12
    load_int               1
    iadd                  
@@ -191,14 +191,14 @@ LABEL148:
    widget_put_opacity     1
    load_int               244
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               230
    load_int               -1
    load_string            "IiiI"
    1403                   1
    load_int               244
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               245
    load_int               -1
    load_string            "IiiI"
@@ -210,7 +210,7 @@ LABEL148:
    iload                  1
    load_int               3
    iload                  12
-   100                   
+   widget_create_child   
    iload                  12
    load_int               1
    iadd                  
@@ -232,7 +232,7 @@ LABEL148:
    iload                  1
    load_int               3
    iload                  12
-   100                   
+   widget_create_child   
    iload                  12
    load_int               1
    iadd                  
@@ -262,7 +262,7 @@ LABEL148:
    iload                  1
    load_int               5
    iload                  12
-   100                   
+   widget_create_child   
    iload                  12
    load_int               1
    iadd                  
@@ -282,7 +282,7 @@ LABEL148:
    load_int               0
    1001                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    load_int               105
@@ -295,7 +295,7 @@ LABEL148:
    iload                  1
    load_int               5
    iload                  12
-   100                   
+   widget_create_child   
    iload                  12
    load_int               1
    iadd                  
@@ -328,8 +328,8 @@ LABEL148:
    invoke                 413
    load_int               412
    load_int               -2147483645
-   1702                   1
-   1702                  
+   widget_get_index       1
+   widget_get_index      
    iload                  20
    sload                  2
    iload                  3
@@ -346,7 +346,7 @@ LABEL148:
    iload                  1
    load_int               4
    iload                  12
-   100                   
+   widget_create_child   
    iload                  12
    load_int               1
    iadd                  
@@ -376,17 +376,17 @@ LABEL148:
    load_int               495
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               1
    load_int               0
    1114                  
    sload                  1
-   1112                  
+   widget_put_text       
    iload                  1
    load_int               4
    iload                  12
-   100                   
+   widget_create_child   
    iload                  12
    load_int               1
    iadd                  
@@ -412,13 +412,13 @@ LABEL148:
    load_int               494
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               0
    load_int               1
    load_int               0
    1114                  
    sload                  0
-   1112                  
+   widget_put_text       
    iload                  19
    load_int               1
    iadd                  

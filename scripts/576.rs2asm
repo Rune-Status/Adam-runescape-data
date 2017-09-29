@@ -9,16 +9,16 @@
    3408                  
    istore                 6
    iload                  1
-   102                   
+   widget_unset_children 
    iload                  3
-   102                   
+   widget_unset_children 
    iload                  4
    load_int               -1
    if_icmpne              LABEL14
    jump                   LABEL16
 LABEL14:
    iload                  4
-   102                   
+   widget_unset_children 
 LABEL16:
    iload                  2
    iload                  3
@@ -58,7 +58,7 @@ LABEL47:
    iload                  11
    load_int               3
    imul                  
-   100                   
+   widget_create_child   
    load_int               0
    iload                  10
    load_int               0
@@ -111,7 +111,7 @@ LABEL47:
    imul                  
    load_int               1
    iadd                  
-   100                   
+   widget_create_child   
    load_int               0
    iload                  10
    load_int               0
@@ -129,7 +129,7 @@ LABEL47:
    imul                  
    load_int               2
    iadd                  
-   100                   
+   widget_create_child   
    load_int               17
    iload                  10
    load_int               1
@@ -145,7 +145,7 @@ LABEL47:
    load_int               0
    1001                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               495
    widget_put_fontid     
    load_int               0
@@ -175,16 +175,16 @@ LABEL162:
    sload                  0
    load_string            "</str>"
    037                    3
-   1112                  
+   widget_put_text       
    jump                   LABEL170
 LABEL168:
    sload                  0
-   1112                  
+   widget_put_text       
 LABEL170:
    jump                   LABEL173
 LABEL171:
    sload                  0
-   1112                  
+   widget_put_text       
 LABEL173:
    iload                  11
    load_int               1

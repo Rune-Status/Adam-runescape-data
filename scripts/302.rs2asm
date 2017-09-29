@@ -3,9 +3,9 @@
 .int_var_count      9
 .string_var_count   1
    iload                  0
-   102                   
+   widget_unset_children 
    iload                  1
-   102                   
+   widget_unset_children 
    iload                  0
    widget_get_width_widget
    istore                 2
@@ -42,7 +42,7 @@ LABEL33:
    iload                  6
    load_int               2
    imul                  
-   100                   
+   widget_create_child   
    iload                  0
    load_int               4
    iload                  6
@@ -50,7 +50,7 @@ LABEL33:
    imul                  
    load_int               1
    iadd                  
-   100                    1
+   widget_create_child    1
    iload                  4
    iload                  6
    load_int               7
@@ -145,7 +145,7 @@ LABEL133:
    iload                  6
    load_int               3
    imul                  
-   100                   
+   widget_create_child   
    iload                  1
    load_int               4
    iload                  6
@@ -153,7 +153,7 @@ LABEL133:
    imul                  
    load_int               1
    iadd                  
-   100                    1
+   widget_create_child    1
    iload                  4
    iload                  6
    load_int               7
@@ -187,7 +187,7 @@ LABEL133:
    imul                  
    load_int               2
    iadd                  
-   100                   
+   widget_create_child   
    load_int               36
    load_int               20
    load_int               0
@@ -205,7 +205,7 @@ LABEL133:
    load_int               16777215
    widget_put_textcolor  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               0
    load_int               0
@@ -237,7 +237,7 @@ LABEL224:
    iload                  6
    load_int               3
    imul                  
-   100                   
+   widget_create_child   
    iload                  2
    iload                  8
    load_int               0
@@ -257,7 +257,7 @@ LABEL224:
    load_int               0
    1114                  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    sload                  0
-   1112                  
+   widget_put_text       
    return                

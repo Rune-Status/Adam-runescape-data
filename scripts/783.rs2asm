@@ -50,7 +50,7 @@ LABEL33:
 LABEL37:
    iload                  1
    iload                  4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL43
    jump                   LABEL68
@@ -106,7 +106,7 @@ LABEL73:
    load_int               -1
    istore                 7
    load_int               93
-   3304                  
+   get_inventory_size    
    istore                 4
 LABEL92:
    iload                  4
@@ -120,7 +120,7 @@ LABEL96:
    istore                 4
    iload                  0
    iload                  4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL106
    jump                   LABEL172
@@ -145,7 +145,7 @@ LABEL106:
    1000                  
    load_int               93
    iload                  4
-   3301                  
+   get_itemcontainer_itemid
    istore                 7
    iload                  7
    load_int               -1
@@ -157,7 +157,7 @@ LABEL132:
    iload                  7
    load_int               93
    iload                  4
-   3302                  
+   get_itemcontainer_stacksize
    1200                  
    iload                  3
    load_int               1

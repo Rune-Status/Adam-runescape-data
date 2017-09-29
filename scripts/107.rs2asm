@@ -12,13 +12,13 @@ LABEL4:
    return                
 LABEL7:
    sload                  0
-   048                    23
+   put_varc_string        23
    invoke                 677
    load_string            "Enter message to send to "
-   047                    23
+   get_varc_string        23
    037                    2
-   load_int               10616864
-   2112                  
+   load_int               10616865
+   widget_put_text_widget
    load_int               6
    043                    5
    load_string            ""
@@ -30,6 +30,13 @@ LABEL7:
    load_int               -2147483639
    sload                  1
    load_string            "izs"
-   load_int               10616865
+   load_int               10616866
    2419                  
+   invoke                 1972
+   load_int               1
+   if_icmpeq              LABEL32
+   jump                   LABEL33
+LABEL32:
+   invoke                 1983
+LABEL33:
    return                

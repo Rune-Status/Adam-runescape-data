@@ -4,18 +4,40 @@
 .string_var_count   1
    load_string            ""
    sstore                
-   025                    4991
-   load_int               0
+   invoke                 1942
+   load_int               1
    if_icmpeq              LABEL6
-   jump                   LABEL12
+   jump                   LABEL16
 LABEL6:
+   025                    5703
+   load_int               0
+   if_icmpeq              LABEL10
+   jump                   LABEL16
+LABEL10:
    load_string            "<col=00ff00>"
    load_string            "When the timer hits 0:00 You will be safe here"
    load_string            "</col>"
    037                    3
    sstore                
-   jump                   LABEL23
-LABEL12:
+   jump                   LABEL41
+LABEL16:
+   invoke                 1942
+   load_int               0
+   if_icmpeq              LABEL20
+   jump                   LABEL30
+LABEL20:
+   025                    4991
+   load_int               0
+   if_icmpeq              LABEL24
+   jump                   LABEL30
+LABEL24:
+   load_string            "<col=00ff00>"
+   load_string            "When the timer hits 0:00 You will be safe here"
+   load_string            "</col>"
+   037                    3
+   sstore                
+   jump                   LABEL41
+LABEL30:
    load_string            "<col=ff981f>"
    load_string            "When the timer hits 0:00 YOU'LL "
    load_string            "</col>"
@@ -27,8 +49,8 @@ LABEL12:
    load_string            "</col>"
    037                    9
    sstore                
-LABEL23:
+LABEL41:
    sload                  0
    iload                  0
-   2112                  
+   widget_put_text_widget
    return                

@@ -37,7 +37,7 @@ LABEL24:
    3200                  
    iload                  2
    iload                  4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL34
    jump                   LABEL38
@@ -45,7 +45,7 @@ LABEL34:
    load_int               16777215
    widget_put_textcolor  
    load_string            "..."
-   1112                  
+   widget_put_text       
 LABEL38:
    load_int               -1
    load_string            ""
@@ -78,11 +78,11 @@ LABEL38:
    2408                  
    load_int               38273024
    iload                  3
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL73
    jump                   LABEL74
 LABEL73:
-   1121                  
+   widget_advance_dialogue
 LABEL74:
    return                

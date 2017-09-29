@@ -37,7 +37,7 @@ LABEL27:
    istore                 3
    load_string            " "
    sstore                
-   3611                  
+   get_clanchat_owner    
    sstore                 1
    load_string            "Opponents"
    sstore                 2
@@ -443,7 +443,7 @@ LABEL377:
    iload                  2
    load_int               3
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL385
    jump                   LABEL387
@@ -506,7 +506,7 @@ LABEL429:
    istore                 14
    iload                  1
    iload                  2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL443
    jump                   LABEL459
@@ -522,7 +522,7 @@ LABEL443:
    load_int               0
    1000                  
    sload                  0
-   1112                  
+   widget_put_text       
    iload                  14
    iload                  11
    iadd                  
@@ -532,7 +532,7 @@ LABEL459:
    iload                  2
    load_int               1
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL467
    jump                   LABEL505
@@ -570,7 +570,7 @@ LABEL487:
    load_int               0
    1000                  
    sload                  1
-   1112                  
+   widget_put_text       
    iload                  14
    iload                  12
    iadd                  
@@ -582,7 +582,7 @@ LABEL505:
    iload                  2
    load_int               2
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL513
    jump                   LABEL529
@@ -598,7 +598,7 @@ LABEL513:
    load_int               0
    1000                  
    sload                  2
-   1112                  
+   widget_put_text       
    iload                  14
    iload                  13
    iadd                  
@@ -608,7 +608,7 @@ LABEL529:
    iload                  2
    load_int               3
    iadd                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL537
    jump                   LABEL553
@@ -628,7 +628,7 @@ LABEL537:
    load_int               0
    1000                  
    sload                  5
-   1112                  
+   widget_put_text       
 LABEL553:
    iload                  14
    load_int               4
@@ -668,7 +668,7 @@ LABEL581:
    istore                 2
    iload                  1
    iload                  2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL591
    jump                   LABEL596

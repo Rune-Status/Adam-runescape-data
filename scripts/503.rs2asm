@@ -3,15 +3,15 @@
 .int_var_count      16
 .string_var_count   0
    iload                  3
-   102                   
+   widget_unset_children 
    iload                  3
    load_int               5
    load_int               0
-   100                   
+   widget_create_child   
    iload                  3
    load_int               5
    load_int               1
-   100                    1
+   widget_create_child    1
    load_int               0
    load_int               0
    load_int               0
@@ -33,12 +33,12 @@
    load_int               0
    1001                   1
    load_int               1083
-   widget_put_textureid   1
+   widget_put_spriteid    1
    load_int               1
    1107                   1
    load_int               244
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               75
    load_int               -1
    load_string            "IiiI"
@@ -46,7 +46,7 @@
    2412                  
    load_int               244
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               0
    load_int               -1
    load_string            "IiiI"
@@ -64,7 +64,7 @@ LABEL54:
    iload                  15
    widget_put_hidden_widget
    load_int               196
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               1
    load_string            "Dismiss menu"
    iload                  3
@@ -100,7 +100,7 @@ LABEL90:
 LABEL93:
    load_string            "Bank settings menu"
    iload                  7
-   2112                  
+   widget_put_text_widget
    jump                   LABEL143
 LABEL97:
    load_int               0
@@ -110,7 +110,7 @@ LABEL97:
    iload                  15
    widget_put_hidden_widget
    load_int               195
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               1
    load_string            "Show menu"
    iload                  3

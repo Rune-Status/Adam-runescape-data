@@ -47,7 +47,7 @@
    iload                  1
    2001                  
    iload                  1
-   102                   
+   widget_unset_children 
    sload                  1
    load_int               190
    load_int               494
@@ -58,7 +58,7 @@
    iload                  1
    load_int               4
    load_int               0
-   100                   
+   widget_create_child   
    iload                  6
    load_int               17
    load_int               0
@@ -74,13 +74,13 @@
    load_int               494
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               2
    load_int               1
    load_int               0
    1114                  
    sload                  1
-   1112                  
+   widget_put_text       
    load_int               1
    sload                  1
    1300                  
@@ -94,7 +94,7 @@
    iload                  1
    load_int               4
    load_int               1
-   100                   
+   widget_create_child   
    iload                  6
    load_int               17
    load_int               0
@@ -112,20 +112,20 @@
    load_int               494
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               2
    load_int               1
    load_int               0
    1114                  
    sload                  2
-   1112                  
+   widget_put_text       
    load_int               1
    sload                  2
    1300                  
    iload                  1
    load_int               4
    load_int               2
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               1
@@ -141,21 +141,21 @@
    load_int               495
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               0
    load_int               0
    load_int               0
    1114                  
    sload                  0
-   1112                  
+   widget_put_text       
    iload                  1
    load_int               5
    load_int               3
-   100                   
+   widget_create_child   
    iload                  1
    load_int               5
    load_int               4
-   100                    1
+   widget_create_child    1
    load_int               17
    load_int               17
    load_int               0
@@ -180,8 +180,8 @@
    1000                   1
    load_int               1467
    iload                  1
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
    iload                  3
    iload                  4
    load_int               1224
@@ -192,8 +192,8 @@
    iload                  1
    2407                  
    iload                  1
-   1702                  
-   1702                   1
+   widget_get_index      
+   widget_get_index       1
    iload                  3
    iload                  4
    invoke                 1468
