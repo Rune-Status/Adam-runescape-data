@@ -42,7 +42,7 @@ LABEL27:
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  4
    load_int               4
    modulo                
@@ -59,7 +59,7 @@ LABEL27:
    imul                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               1
    widget_put_borderthickness
    load_int               3355443
@@ -73,24 +73,24 @@ LABEL27:
    widget_put_opacity    
    load_int               1
    load_string            "Deposit-1"
-   1300                  
+   widget_put_action     
    load_int               2
    load_string            "Deposit-5"
-   1300                  
+   widget_put_action     
    load_int               3
    load_string            "Deposit-All"
-   1300                  
+   widget_put_action     
    load_int               4
    load_string            "Deposit-X"
-   1300                  
+   widget_put_action     
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
    iload                  2
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    jump                   LABEL90
 LABEL88:
@@ -116,18 +116,18 @@ LABEL99:
    load_int               0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  0
    widget_get_width_widget
    iload                  0
    widget_get_height_widget
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               495
    widget_put_fontid     
    load_int               1

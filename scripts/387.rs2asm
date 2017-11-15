@@ -4,7 +4,7 @@
 .string_var_count   0
    load_int               15
    istore                 1
-   042                    53
+   get_varc               53
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL10
@@ -14,11 +14,11 @@ LABEL6:
    iadd                  
    istore                 1
 LABEL10:
-   042                    52
+   get_varc               52
    iload                  1
    isub                  
    istore                 2
-   042                    52
+   get_varc               52
    iload                  1
    iadd                  
    istore                 3
@@ -41,7 +41,7 @@ LABEL30:
    istore                 2
    load_int               126
    istore                 3
-   042                    78
+   get_varc               78
    load_int               2
    if_icmpeq              LABEL38
    jump                   LABEL42
@@ -74,7 +74,7 @@ LABEL55:
    load_string            "-"
    iload                  3
    int_to_string         
-   037                    3
+   string_append          3
    load_int               5898285
    widget_put_text_widget
    return                

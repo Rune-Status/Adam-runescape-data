@@ -8,7 +8,7 @@
    load_int               115
    iload                  1
    iload                  10
-   3408                  
+   get_enum_value        
    sstore                
 LABEL8:
    sload                  0
@@ -22,14 +22,14 @@ LABEL13:
    iload                  10
    widget_create_child   
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               0
    widget_put_textcolor  
    load_int               255
    widget_put_opacity    
    load_int               1
    sload                  0
-   1300                  
+   widget_put_action     
    iload                  10
    load_int               1
    iadd                  
@@ -38,7 +38,7 @@ LABEL13:
    load_int               115
    iload                  1
    iload                  10
-   3408                  
+   get_enum_value        
    sstore                
    jump                   LABEL8
 LABEL37:
@@ -203,14 +203,14 @@ LABEL173:
    iload                  16
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  21
    iload                  14
    iadd                  
    iload                  22
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL185:
    iload                  0
    load_int               6
@@ -224,17 +224,17 @@ LABEL185:
    iload                  22
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  12
    iload                  16
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               105
    load_int               109
    iload                  2
    iload                  20
-   3408                  
+   get_enum_value        
    widget_put_modelid_1  
    load_int               0
    iload                  6
@@ -242,7 +242,7 @@ LABEL185:
    iload                  7
    load_int               0
    iload                  5
-   1109                  
+   widget_put_3d_rotation
    iload                  3
    load_int               -1
    if_icmpne              LABEL220
@@ -252,7 +252,7 @@ LABEL220:
    load_int               109
    iload                  3
    iload                  20
-   3408                  
+   get_enum_value        
    istore                 23
    iload                  23
    load_int               -1
@@ -271,12 +271,12 @@ LABEL230:
    iload                  22
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  12
    iload                  16
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  23
    widget_put_modelid_1  
    load_int               0
@@ -285,7 +285,7 @@ LABEL230:
    iload                  7
    load_int               0
    iload                  5
-   1109                  
+   widget_put_3d_rotation
 LABEL257:
    iload                  4
    load_int               -1
@@ -304,12 +304,12 @@ LABEL261:
    iload                  22
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  12
    iload                  16
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  4
    widget_put_modelid_1  
    load_int               0
@@ -318,7 +318,7 @@ LABEL261:
    iload                  7
    load_int               0
    iload                  5
-   1109                  
+   widget_put_3d_rotation
 LABEL288:
    iload                  0
    load_int               5
@@ -332,7 +332,7 @@ LABEL288:
    load_int               25
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  24
    load_int               1
    if_icmpeq              LABEL305
@@ -344,7 +344,7 @@ LABEL305:
    iload                  18
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    jump                   LABEL320
 LABEL313:
    iload                  21
@@ -353,7 +353,7 @@ LABEL313:
    iload                  17
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL320:
    load_int               442
    widget_put_spriteid   
@@ -369,7 +369,7 @@ LABEL320:
    load_int               262
    load_int               2
    load_string            "IiiiY"
-   1407                  
+   widget_put_config_listener
    iload                  20
    load_int               1
    iadd                  

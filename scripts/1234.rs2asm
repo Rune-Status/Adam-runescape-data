@@ -61,7 +61,7 @@ LABEL39:
    iload                  3
    sload                  1
    invoke                 46
-   037                    6
+   string_append          6
    sstore                
    jump                   LABEL63
 LABEL54:
@@ -72,7 +72,7 @@ LABEL54:
    iload                  1
    sload                  1
    invoke                 46
-   037                    3
+   string_append          3
    sstore                
 LABEL63:
    load_int               526
@@ -83,11 +83,11 @@ LABEL63:
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               40
    iload                  2
    load_string            "I"
-   1404                  
+   widget_put_mouse_exit_listener
    jump                   LABEL94
 LABEL77:
    iload                  1
@@ -102,19 +102,19 @@ LABEL77:
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               40
    iload                  2
    load_string            "I"
-   1404                  
+   widget_put_mouse_exit_listener
 LABEL94:
    jump                   LABEL101
 LABEL95:
    load_int               -1
    load_string            ""
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               -1
    load_string            ""
-   1404                  
+   widget_put_mouse_exit_listener
 LABEL101:
    return                

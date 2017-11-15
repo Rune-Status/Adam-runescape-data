@@ -21,7 +21,7 @@ LABEL6:
    load_int               0
    load_int               0
    iload                  1
-   2000                  
+   widget_put_position_widget
    jump                   LABEL35
 LABEL20:
    load_int               1
@@ -38,7 +38,7 @@ LABEL20:
    load_int               0
    load_int               0
    iload                  1
-   2000                  
+   widget_put_position_widget
 LABEL35:
    get_varbit             1777
    load_int               2
@@ -66,7 +66,7 @@ LABEL55:
    load_string            "Selected"
    load_string            "</col>"
    load_string            " - PIN."
-   037                    4
+   string_append          4
    load_int               14090274
    widget_put_text_widget
    jump                   LABEL70
@@ -75,7 +75,7 @@ LABEL63:
    load_string            "Selected"
    load_string            "</col>"
    load_string            " - Permanent."
-   037                    4
+   string_append          4
    load_int               14090274
    widget_put_text_widget
 LABEL70:
@@ -164,7 +164,7 @@ LABEL145:
    load_string            "Selected"
    load_string            "</col>"
    load_string            " - PIN."
-   037                    4
+   string_append          4
    load_int               14090274
    widget_put_text_widget
    jump                   LABEL160
@@ -173,7 +173,7 @@ LABEL153:
    load_string            "Selected"
    load_string            "</col>"
    load_string            " - Permanent."
-   037                    4
+   string_append          4
    load_int               14090274
    widget_put_text_widget
 LABEL160:
@@ -262,7 +262,7 @@ LABEL235:
    load_string            "Selected"
    load_string            "</col>"
    load_string            " - PIN."
-   037                    4
+   string_append          4
    load_int               14090274
    widget_put_text_widget
    jump                   LABEL250
@@ -271,7 +271,7 @@ LABEL243:
    load_string            "Selected"
    load_string            "</col>"
    load_string            " - Permanent."
-   037                    4
+   string_append          4
    load_int               14090274
    widget_put_text_widget
 LABEL250:
@@ -350,7 +350,7 @@ LABEL305:
    load_string            "Selected"
    load_string            "</col>"
    load_string            " - None."
-   037                    4
+   string_append          4
    load_int               14090274
    widget_put_text_widget
    load_int               -1

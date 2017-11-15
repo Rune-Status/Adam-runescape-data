@@ -27,7 +27,7 @@ LABEL16:
 LABEL20:
    load_int               1
    load_string            "View"
-   1300                  
+   widget_put_action     
    load_int               490
    load_int               -2147483644
    iload                  5
@@ -38,13 +38,13 @@ LABEL20:
 LABEL30:
    load_int               2
    load_string            "Deposit-1"
-   1300                  
+   widget_put_action     
    load_int               3
    load_string            "Deposit-5"
-   1300                  
+   widget_put_action     
    load_int               4
    load_string            "Deposit-10"
-   1300                  
+   widget_put_action     
    get_varbit             3960
    load_int               0
    if_icmpgt              LABEL43
@@ -54,20 +54,20 @@ LABEL43:
    load_string            "Deposit-"
    get_varbit             3960
    int_to_string         
-   037                    2
-   1300                  
+   string_append          2
+   widget_put_action     
 LABEL49:
    load_int               6
    load_string            "Deposit-X"
-   1300                  
+   widget_put_action     
    load_int               7
    load_string            "Deposit-All"
-   1300                  
+   widget_put_action     
    load_int               111
    load_int               115
    load_int               995
    iload                  0
-   3408                  
+   get_enum_value        
    sstore                
    sload                  0
    string_length         
@@ -77,16 +77,16 @@ LABEL49:
 LABEL66:
    load_int               9
    sload                  0
-   1300                  
+   widget_put_action     
 LABEL69:
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
    iload                  0
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    load_int               298
    load_int               -2147483645

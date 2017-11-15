@@ -48,18 +48,18 @@ LABEL29:
    istore                 13
    load_int               -1
    istore                 14
-   042                    188
+   get_varc               188
    iload                  6
    if_icmpne              LABEL46
    jump                   LABEL88
 LABEL46:
-   042                    188
+   get_varc               188
    load_int               -1
    if_icmpne              LABEL50
    jump                   LABEL88
 LABEL50:
    iload                  7
-   042                    188
+   get_varc               188
    invoke                 1715
    istore                 14
    iload                  14
@@ -122,7 +122,7 @@ LABEL100:
    if_icmpeq              LABEL104
    jump                   LABEL109
 LABEL104:
-   042                    188
+   get_varc               188
    iload                  6
    if_icmpeq              LABEL108
    jump                   LABEL109
@@ -136,10 +136,10 @@ LABEL109:
    iload                  11
    iload                  8
    iload                  9
-   042                    188
+   get_varc               188
    load_string            "IIiiiic"
    iload                  0
-   2408                  
+   widget_put_render_listener_widget
    iload                  11
    iload                  9
    load_int               2
@@ -252,22 +252,22 @@ LABEL226:
    iload                  28
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  27
    iload                  28
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    iload                  29
    iload                  30
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  29
    iload                  30
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    jump                   LABEL287
 LABEL247:
    iload                  1
@@ -283,9 +283,9 @@ LABEL247:
    load_int               16727871
    widget_put_textcolor   1
    load_int               0
-   1102                  
+   widget_put_filled     
    load_int               1
-   1102                   1
+   widget_put_filled      1
    load_int               100
    widget_put_opacity    
    load_int               200
@@ -294,21 +294,21 @@ LABEL247:
    iload                  28
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  27
    iload                  28
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    iload                  29
    iload                  30
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  29
    iload                  30
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
 LABEL287:
    return                

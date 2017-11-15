@@ -24,7 +24,7 @@ LABEL16:
    load_int               14
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               32
    iload                  2
@@ -33,7 +33,7 @@ LABEL16:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               495
    widget_put_fontid     
    load_int               1
@@ -41,27 +41,27 @@ LABEL16:
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               105
    load_int               115
    load_int               812
    iload                  1
-   3408                  
+   get_enum_value        
    sstore                
    sload                  0
    widget_put_text       
    load_int               1
    load_string            "Play"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
    sload                  0
-   037                    2
+   string_append          2
    widget_put_name       
    load_int               105
    load_int               99
    load_int               819
    iload                  1
-   3408                  
+   get_enum_value        
    istore                 3
    iload                  3
    load_int               -1
@@ -200,9 +200,9 @@ LABEL148:
    load_int               -2147483643
    load_int               16777215
    load_string            "Iii"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               -1
    load_string            ""
-   1408                  
+   widget_put_render_listener
 LABEL157:
    return                

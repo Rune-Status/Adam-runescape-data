@@ -41,7 +41,7 @@ LABEL30:
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  6
    load_int               3
    idiv                  
@@ -66,7 +66,7 @@ LABEL53:
    imul                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    jump                   LABEL80
 LABEL61:
    iload                  3
@@ -80,7 +80,7 @@ LABEL65:
    imul                  
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    jump                   LABEL80
 LABEL73:
    load_int               0
@@ -89,7 +89,7 @@ LABEL73:
    imul                  
    load_int               2
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL80:
    jump                   LABEL112
 LABEL81:
@@ -104,7 +104,7 @@ LABEL85:
    imul                  
    load_int               2
    load_int               0
-   1000                  
+   widget_put_position   
    jump                   LABEL112
 LABEL93:
    iload                  3
@@ -118,7 +118,7 @@ LABEL97:
    imul                  
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    jump                   LABEL112
 LABEL105:
    load_int               0
@@ -127,7 +127,7 @@ LABEL105:
    imul                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL112:
    load_int               3355443
    widget_put_sprite2    
@@ -140,12 +140,12 @@ LABEL112:
    1200                  
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
    iload                  5
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    jump                   LABEL133
 LABEL131:

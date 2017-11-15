@@ -17,7 +17,7 @@ LABEL8:
    load_string            "<col=2020ef>"
    sload                  0
    load_string            "</col>"
-   037                    5
+   string_append          5
    send_game_message     
    jump                   LABEL23
 LABEL16:
@@ -26,7 +26,7 @@ LABEL16:
    load_string            "<col=0000ff>"
    sload                  0
    load_string            "</col>"
-   037                    5
+   string_append          5
    send_game_message     
 LABEL23:
    jump                   LABEL27
@@ -36,5 +36,5 @@ LABEL24:
    chatbox_input         
 LABEL27:
    get_gamecycle         
-   043                    61
+   put_varc               61
    return                

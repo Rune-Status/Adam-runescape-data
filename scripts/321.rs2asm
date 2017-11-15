@@ -37,7 +37,7 @@
    load_int               79
    load_int               840
    iload                  17
-   3408                  
+   get_enum_value        
    istore                 18
 LABEL37:
    iload                  18
@@ -71,24 +71,24 @@ LABEL41:
    iload                  14
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  13
    iload                  14
    load_int               32
    iadd                  
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    load_int               36
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  10
    load_int               15
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    iload                  14
    load_int               32
    iadd                  
@@ -103,7 +103,7 @@ LABEL41:
    load_int               105
    load_int               841
    iload                  18
-   3408                  
+   get_enum_value        
    istore                 16
    iload                  18
    iload                  16
@@ -119,12 +119,12 @@ LABEL41:
    load_int               1
    load_int               1
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    load_int               111
    load_int               105
    load_int               842
    iload                  18
-   3408                  
+   get_enum_value        
    load_string            ","
    invoke                 46
    widget_put_text        1
@@ -135,24 +135,24 @@ LABEL41:
 LABEL128:
    load_int               2
    load_string            "Buy 1"
-   1300                  
+   widget_put_action     
    load_int               3
    load_string            "Buy 5"
-   1300                  
+   widget_put_action     
    load_int               4
    load_string            "Buy 10"
-   1300                  
+   widget_put_action     
    jump                   LABEL147
 LABEL138:
    load_int               2
    load_string            "Buy 1 set"
-   1300                  
+   widget_put_action     
    load_int               3
    load_string            "Buy 5 sets"
-   1300                  
+   widget_put_action     
    load_int               4
    load_string            "Buy 10 sets"
-   1300                  
+   widget_put_action     
 LABEL147:
    iload                  18
    load_int               13226
@@ -162,18 +162,18 @@ LABEL151:
    widget_put_actions_null
    load_int               2
    load_string            "Buy 1"
-   1300                  
+   widget_put_action     
 LABEL155:
    load_int               1
    load_string            "Info"
-   1300                  
+   widget_put_action     
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
    iload                  18
    get_item_name         
-   037                    2
+   string_append          2
    widget_put_name       
    load_int               322
    load_int               -2147483644
@@ -194,7 +194,7 @@ LABEL155:
    load_int               79
    load_int               840
    iload                  17
-   3408                  
+   get_enum_value        
    istore                 18
    jump                   LABEL37
 LABEL188:

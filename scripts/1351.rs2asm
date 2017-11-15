@@ -21,7 +21,7 @@ LABEL8:
    pow                   
    istore                 8
    iload                  3
-   044                    105
+   array_initialize       105
    load_int               0
    istore                 9
 LABEL20:
@@ -38,7 +38,7 @@ LABEL24:
    load_int               15
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               494
    widget_put_fontid     
    load_int               1
@@ -46,19 +46,19 @@ LABEL24:
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               105
    load_int               115
    iload                  1
    iload                  9
-   3408                  
+   get_enum_value        
    sstore                 1
    sload                  1
    widget_put_text       
    load_string            "<col=ff9040>"
    sload                  1
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    iload                  9
    iload                  7
@@ -66,10 +66,10 @@ LABEL24:
    imul                  
    iload                  9
    iadd                  
-   046                   
+   array_store           
    load_int               1
    load_string            "Read Journal:"
-   1300                  
+   widget_put_action     
    iload                  9
    load_int               1
    iadd                  
@@ -102,7 +102,7 @@ LABEL85:
 LABEL89:
    iload                  0
    iload                  9
-   045                   
+   array_load            
    iload                  8
    modulo                
    widget_load_child     
@@ -114,7 +114,7 @@ LABEL98:
    iload                  10
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL103:
    iload                  9
    load_int               1
@@ -134,12 +134,12 @@ LABEL112:
    load_int               20
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               16750623
    widget_put_textcolor  
    load_int               496
@@ -149,7 +149,7 @@ LABEL112:
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    sload                  0
    widget_put_text       
    load_int               0

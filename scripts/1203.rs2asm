@@ -3,7 +3,7 @@
 .int_var_count      27
 .string_var_count   0
    load_int               47
-   044                    105
+   array_initialize       105
    load_int               0
    istore                 13
    load_int               0
@@ -20,7 +20,7 @@ LABEL10:
    istore                 13
    iload                  14
    iload                  13
-   046                   
+   array_store           
    iload                  14
    load_int               1
    iadd                  
@@ -33,33 +33,33 @@ LABEL22:
    load_int               1
    isub                  
    invoke                 1214
-   042                    79
+   get_varc               79
    load_int               3
    if_icmpne              LABEL32
    jump                   LABEL50
 LABEL32:
-   042                    79
+   get_varc               79
    load_int               2
    if_icmpne              LABEL36
    jump                   LABEL50
 LABEL36:
-   042                    79
+   get_varc               79
    load_int               4
    if_icmpne              LABEL40
    jump                   LABEL50
 LABEL40:
-   042                    79
+   get_varc               79
    load_int               5
    if_icmpne              LABEL44
    jump                   LABEL50
 LABEL44:
-   042                    79
+   get_varc               79
    load_int               1
    if_icmpne              LABEL48
    jump                   LABEL50
 LABEL48:
    load_int               3
-   043                    79
+   put_varc               79
 LABEL50:
    load_string            "Favour"
    load_int               512
@@ -154,13 +154,13 @@ LABEL136:
    jump                   LABEL228
 LABEL140:
    iload                  14
-   045                   
+   array_load            
    istore                 13
    load_int               105
    load_int               105
    load_int               1269
    iload                  13
-   3408                  
+   get_enum_value        
    istore                 26
    iload                  26
    load_int               3

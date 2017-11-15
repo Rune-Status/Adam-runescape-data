@@ -60,7 +60,7 @@ LABEL31:
    load_string            " "
    iload                  5
    get_item_name         
-   037                    7
+   string_append          7
    sstore                
    load_string            "Are you "
    load_string            "<col=ffffff>"
@@ -69,7 +69,7 @@ LABEL31:
    load_string            " you"
    load_string            "<br>"
    load_string            "want to destroy it?"
-   037                    7
+   string_append          7
    sstore                 1
    iload                  7
    load_int               1
@@ -87,7 +87,7 @@ LABEL67:
    load_string            "all of them"
    load_string            "</col>"
    load_string            "?"
-   037                    11
+   string_append          11
    sstore                 1
 LABEL80:
    sload                  0
@@ -136,16 +136,16 @@ LABEL110:
    load_int               120
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               1040
    widget_put_spriteid   
    load_int               1
-   1107                  
+   widget_put_sprite_tiling
 LABEL132:
    iload                  6
    iload                  0
@@ -176,12 +176,12 @@ LABEL147:
    load_int               22
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               40
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    iload                  5
    iload                  7
    1200                  
@@ -189,7 +189,7 @@ LABEL147:
    iload                  5
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    iload                  3
    load_int               5
@@ -203,12 +203,12 @@ LABEL147:
    load_int               22
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    load_int               0
    load_int               40
    load_int               1
    load_int               1
-   1000                   1
+   widget_put_position    1
    load_int               812
    widget_put_spriteid    1
    iload                  3
@@ -223,16 +223,16 @@ LABEL147:
    load_int               22
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    load_int               0
    load_int               40
    load_int               1
    load_int               1
-   1000                   1
+   widget_put_position    1
    load_int               1
    load_int               1
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    load_int               494
    widget_put_fontid      1
    load_int               1
@@ -250,7 +250,7 @@ LABEL147:
    load_int               100
    iadd                  
    load_string            "iIiii"
-   1408                  
+   widget_put_render_listener
    iload                  3
    load_int               4
    iload                  6
@@ -263,18 +263,18 @@ LABEL147:
    load_int               20
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               -45
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               16750623
    widget_put_textcolor  
    load_int               1
    load_int               2
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               495
    widget_put_fontid     
    load_int               1
@@ -293,7 +293,7 @@ LABEL147:
    load_int               16
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  8
    load_int               2
    idiv                  
@@ -302,7 +302,7 @@ LABEL147:
    load_int               -44
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               831
    istore                 10
    iload                  10
@@ -313,7 +313,7 @@ LABEL147:
    iload                  10
    load_int               -1
    load_string            "IidI"
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               832
    istore                 10
    load_int               229
@@ -322,10 +322,10 @@ LABEL147:
    iload                  10
    load_int               -1
    load_string            "IidI"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               1
    load_string            "Close"
-   1300                  
+   widget_put_action     
    load_int               1319
    load_int               1
    iload                  3
@@ -357,22 +357,22 @@ LABEL147:
    load_int               120
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               80
    load_int               120
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    iload                  11
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    iload                  11
    load_int               0
    load_int               1
    load_int               1
-   1000                   1
+   widget_put_position    1
    load_int               9037
    widget_put_modelid_1  
    load_int               9056
@@ -383,16 +383,16 @@ LABEL147:
    load_int               220
    load_int               0
    load_int               2500
-   1109                  
+   widget_put_3d_rotation
    load_int               15
    load_int               400
    load_int               141
    load_int               220
    load_int               0
    load_int               2500
-   1109                   1
+   widget_put_3d_rotation 1
    load_int               2439
-   1110                   1
+   widget_put_animation   1
    iload                  3
    load_int               6
    iload                  6
@@ -405,7 +405,7 @@ LABEL147:
    load_int               40
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    iload                  8
    load_int               2
@@ -416,7 +416,7 @@ LABEL147:
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    iload                  5
    load_int               995
    if_icmpeq              LABEL407
@@ -452,18 +452,18 @@ LABEL419:
    load_int               120
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               16750623
    widget_put_textcolor  
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               495
    widget_put_fontid     
    load_int               1
@@ -482,16 +482,16 @@ LABEL419:
    load_int               120
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               921100
    widget_put_textcolor  
    load_int               0
-   1102                  
+   widget_put_filled     
    iload                  3
    load_int               3
    iload                  6
@@ -506,16 +506,16 @@ LABEL419:
    load_int               118
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               4671301
    widget_put_textcolor  
    load_int               0
-   1102                  
+   widget_put_filled     
    load_int               2266
    load_int               1
    load_int               0

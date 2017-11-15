@@ -32,12 +32,12 @@ LABEL22:
    load_string            "Level: "
    iload                  1
    int_to_string         
-   037                    2
+   string_append          2
    iload                  0
    widget_put_text_widget
    jump                   LABEL48
 LABEL29:
-   042                    78
+   get_varc               78
    load_int               1
    if_icmpeq              LABEL33
    jump                   LABEL37
@@ -47,7 +47,7 @@ LABEL33:
    widget_put_text_widget
    jump                   LABEL48
 LABEL37:
-   042                    78
+   get_varc               78
    load_int               2
    if_icmpeq              LABEL41
    jump                   LABEL45
@@ -71,7 +71,7 @@ LABEL53:
    load_string            "Level: "
    iload                  1
    int_to_string         
-   037                    2
+   string_append          2
    iload                  0
    widget_put_text_widget
    jump                   LABEL63

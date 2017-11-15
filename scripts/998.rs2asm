@@ -19,7 +19,7 @@ LABEL5:
    load_int               105
    load_int               1167
    get_varbit             4694
-   3408                  
+   get_enum_value        
    load_int               0
    if_icmpgt              LABEL19
    jump                   LABEL80
@@ -39,7 +39,7 @@ LABEL19:
    load_int               73
    load_int               1163
    iload                  5
-   3408                  
+   get_enum_value        
    istore                 6
 LABEL36:
    iload                  6
@@ -90,12 +90,12 @@ LABEL69:
    load_int               73
    load_int               1163
    iload                  5
-   3408                  
+   get_enum_value        
    istore                 6
    jump                   LABEL36
 LABEL80:
    load_int               -1
    load_string            ""
    iload                  0
-   2408                  
+   widget_put_render_listener_widget
    return                

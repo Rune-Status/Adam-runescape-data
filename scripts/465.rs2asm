@@ -9,15 +9,15 @@
    idiv                  
    istore                 3
    iload                  3
-   045                   
+   array_load            
    istore                 4
    iload                  3
    iload                  2
-   045                   
-   046                   
+   array_load            
+   array_store           
    iload                  2
    iload                  4
-   046                   
+   array_store           
    iload                  1
    istore                 5
    iload                  1
@@ -34,26 +34,26 @@ LABEL26:
    load_int               105
    load_int               861
    iload                  6
-   045                   
-   3408                  
+   array_load            
+   get_enum_value        
    load_int               105
    load_int               105
    load_int               861
    iload                  4
-   3408                  
+   get_enum_value        
    if_icmple              LABEL39
    jump                   LABEL53
 LABEL39:
    iload                  6
-   045                   
+   array_load            
    istore                 7
    iload                  6
    iload                  5
-   045                   
-   046                   
+   array_load            
+   array_store           
    iload                  5
    iload                  7
-   046                   
+   array_store           
    iload                  5
    load_int               1
    iadd                  
@@ -67,11 +67,11 @@ LABEL53:
 LABEL58:
    iload                  2
    iload                  5
-   045                   
-   046                   
+   array_load            
+   array_store           
    iload                  5
    iload                  4
-   046                   
+   array_store           
    iload                  1
    iload                  5
    load_int               1

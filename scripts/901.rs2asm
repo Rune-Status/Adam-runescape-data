@@ -24,14 +24,14 @@
    load_int               4
    load_string            "IgY"
    iload                  0
-   2407                  
+   widget_put_config_listener_widget
    load_int               0
    istore                 2
    load_int               105
    load_int               73
    load_int               1138
    iload                  2
-   3408                  
+   get_enum_value        
    istore                 3
 LABEL31:
    iload                  3
@@ -43,7 +43,7 @@ LABEL35:
    load_int               73
    iload                  1
    iload                  3
-   3408                  
+   get_enum_value        
    istore                 3
    iload                  3
    load_int               -1
@@ -55,7 +55,7 @@ LABEL45:
    load_int               115
    load_int               1141
    iload                  2
-   3408                  
+   get_enum_value        
    iload                  3
    2300                  
    load_int               914
@@ -74,11 +74,11 @@ LABEL60:
    load_int               73
    load_int               1138
    iload                  2
-   3408                  
+   get_enum_value        
    istore                 3
    jump                   LABEL31
 LABEL71:
-   042                    171
+   get_varc               171
    load_int               0
    if_icmple              LABEL75
    jump                   LABEL85
@@ -87,23 +87,23 @@ LABEL75:
    load_int               49
    load_int               1134
    iload                  1
-   3408                  
+   get_enum_value        
    load_int               0
    if_icmpeq              LABEL83
    jump                   LABEL85
 LABEL83:
    load_int               3
-   043                    171
+   put_varc               171
 LABEL85:
    load_int               -1
    load_int               -1
-   043                    173
-   043                    172
+   put_varc               173
+   put_varc               172
    load_int               73
    load_int               73
    iload                  1
    load_int               10551322
-   3408                  
+   get_enum_value        
    istore                 3
    iload                  3
    load_int               -1
@@ -124,24 +124,24 @@ LABEL99:
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1001                   1
+   widget_put_size        1
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                   1
+   widget_put_position    1
    load_int               1
-   1005                  
+   widget_put_no_click_through
    load_int               489
    load_int               0
    load_int               0
@@ -149,7 +149,7 @@ LABEL99:
    1400                  
    load_int               1
    load_string            "Look North"
-   1300                   1
+   widget_put_action      1
    load_int               1050
    load_int               -2147483644
    load_string            "i"
@@ -169,7 +169,7 @@ LABEL149:
    iload                  0
    iload                  1
    invoke                 908
-   042                    171
+   get_varc               171
    iload                  1
    invoke                 916
    return                

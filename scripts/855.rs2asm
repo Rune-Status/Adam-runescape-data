@@ -5,7 +5,7 @@
    load_string            "Resizable mode chatbox:"
    load_string            "<br>"
    load_string            "Opaque"
-   037                    3
+   string_append          3
    sstore                
    get_varbit             4608
    load_int               0
@@ -48,11 +48,11 @@ LABEL36:
    load_int               -1
    load_string            ""
    iload                  1
-   2412                  
+   widget_put_mouse_hover_listener_widget
    load_int               -1
    load_string            ""
    iload                  1
-   2404                  
+   widget_put_mouse_exit_listener_widget
    load_int               -1
    load_string            ""
    iload                  1
@@ -95,7 +95,7 @@ LABEL72:
    load_string            "Tap"
    invoke                 1971
    load_string            "-through is blocked"
-   037                    6
+   string_append          6
    sstore                
    iload                  1
    load_int               2
@@ -117,7 +117,7 @@ LABEL91:
    load_string            "Tap"
    invoke                 1971
    load_string            "-through is permitted"
-   037                    6
+   string_append          6
    sstore                
    iload                  1
    load_int               2
@@ -134,13 +134,13 @@ LABEL109:
    load_int               -2147483645
    load_string            "1I"
    iload                  1
-   2412                  
+   widget_put_mouse_hover_listener_widget
    load_int               121
    load_int               0
    load_int               -2147483645
    load_string            "1I"
    iload                  1
-   2404                  
+   widget_put_mouse_exit_listener_widget
    load_int               854
    load_int               -2147483644
    load_int               1
@@ -160,7 +160,7 @@ LABEL130:
    load_int               512
    load_string            "IiIsii"
    iload                  0
-   2412                  
+   widget_put_mouse_hover_listener_widget
    load_int               0
-   043                    2
+   put_varc               2
    return                

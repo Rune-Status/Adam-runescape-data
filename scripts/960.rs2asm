@@ -20,7 +20,7 @@ LABEL10:
    iload                  2
    load_int               1
    load_int               0
-   1000                   1
+   widget_put_position    1
    sload                  0
    string_length         
    load_int               0
@@ -36,12 +36,12 @@ LABEL22:
    load_int               25
    load_int               190
    load_string            "IiIsii"
-   1412                   1
+   widget_put_mouse_hover_listener 1
    jump                   LABEL36
 LABEL33:
    load_int               -1
    load_string            ""
-   1412                   1
+   widget_put_mouse_hover_listener 1
 LABEL36:
    jump                   LABEL58
 LABEL37:
@@ -61,13 +61,13 @@ LABEL42:
    load_int               190
    load_string            "IiIsii"
    iload                  3
-   2412                  
+   widget_put_mouse_hover_listener_widget
    jump                   LABEL58
 LABEL54:
    load_int               -1
    load_string            ""
    iload                  3
-   2412                  
+   widget_put_mouse_hover_listener_widget
 LABEL58:
    load_int               0
    istore                 17
@@ -93,7 +93,7 @@ LABEL75:
    load_int               105
    load_int               1496
    iload                  5
-   3408                  
+   get_enum_value        
    istore                 18
    iload                  6
    load_int               0
@@ -132,14 +132,14 @@ LABEL100:
    load_int               16
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    iload                  2
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               1
-   1102                  
+   widget_put_filled     
    iload                  17
    load_int               0
    if_icmpeq              LABEL124
@@ -167,14 +167,14 @@ LABEL138:
    load_int               200
    load_int               -1
    load_string            "IiiI"
-   1403                   1
+   widget_put_mouse_enter_listener 1
    load_int               244
    iload                  0
    widget_get_index      
    load_int               255
    iload                  16
    load_string            "IiiI"
-   1404                   1
+   widget_put_mouse_exit_listener 1
    load_int               970
    load_int               -2147483644
    load_int               6
@@ -189,7 +189,7 @@ LABEL158:
    load_int               -1
    load_string            "IiiI"
    iload                  3
-   2403                  
+   widget_put_mouse_enter_listener_widget
    load_int               244
    load_int               -2147483645
    widget_get_index      
@@ -197,7 +197,7 @@ LABEL158:
    iload                  16
    load_string            "IiiI"
    iload                  3
-   2404                  
+   widget_put_mouse_exit_listener_widget
    load_int               970
    load_int               -2147483644
    load_int               6
@@ -226,7 +226,7 @@ LABEL195:
    load_int               40
    iload                  16
    load_string            "I"
-   1404                   1
+   widget_put_mouse_exit_listener 1
    load_int               -1
    load_string            ""
    1409                   1
@@ -236,7 +236,7 @@ LABEL203:
    iload                  16
    load_string            "I"
    iload                  3
-   2404                  
+   widget_put_mouse_exit_listener_widget
    load_int               -1
    load_string            ""
    iload                  3
@@ -254,12 +254,12 @@ LABEL212:
    load_int               16
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    iload                  2
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  0
    load_int               4
    iload                  1
@@ -272,18 +272,18 @@ LABEL212:
    load_int               16
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    iload                  9
    iload                  2
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    load_int               495
    widget_put_fontid      1
    load_int               1
    load_int               2
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    load_int               1
    widget_put_text_shadowed 1
    iload                  5
@@ -429,19 +429,19 @@ LABEL359:
    load_int               15
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  9
    iload                  10
    iadd                  
    iload                  2
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               105
    load_int               100
    load_int               1125
    iload                  7
-   3408                  
+   get_enum_value        
    widget_put_spriteid   
    iload                  0
    load_int               4
@@ -455,12 +455,12 @@ LABEL359:
    load_int               16
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  13
    iload                  2
    load_int               2
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  17
    load_int               0
    if_icmpeq              LABEL407
@@ -478,7 +478,7 @@ LABEL412:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    iload                  8
@@ -562,12 +562,12 @@ LABEL480:
    load_int               16
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    iload                  2
    load_int               2
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  17
    load_int               1
    if_icmpeq              LABEL502
@@ -606,7 +606,7 @@ LABEL526:
    load_int               0
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    sload                  0

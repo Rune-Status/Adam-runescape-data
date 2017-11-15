@@ -16,7 +16,7 @@ LABEL7:
    if_icmpeq              LABEL11
    jump                   LABEL39
 LABEL11:
-   042                    56
+   get_varc               56
    load_int               1
    if_icmpeq              LABEL15
    jump                   LABEL37
@@ -27,7 +27,7 @@ LABEL15:
    if_icmple              LABEL20
    jump                   LABEL37
 LABEL20:
-   042                    5
+   get_varc               5
    load_int               8
    if_icmpeq              LABEL24
    jump                   LABEL29
@@ -38,7 +38,7 @@ LABEL24:
    invoke                 222
    jump                   LABEL37
 LABEL29:
-   042                    5
+   get_varc               5
    load_int               10
    if_icmpeq              LABEL33
    jump                   LABEL37
@@ -51,13 +51,13 @@ LABEL37:
    invoke                 681
    return                
 LABEL39:
-   042                    5
+   get_varc               5
    load_int               6
    if_icmpeq              LABEL49
-   042                    5
+   get_varc               5
    load_int               9
    if_icmpeq              LABEL49
-   042                    5
+   get_varc               5
    load_int               11
    if_icmpeq              LABEL49
    jump                   LABEL56
@@ -70,7 +70,7 @@ LABEL49:
    put_varc_string        22
    jump                   LABEL122
 LABEL56:
-   042                    5
+   get_varc               5
    load_int               7
    if_icmpeq              LABEL60
    jump                   LABEL67
@@ -83,7 +83,7 @@ LABEL60:
    put_varc_string        22
    jump                   LABEL122
 LABEL67:
-   042                    5
+   get_varc               5
    load_int               12
    if_icmpeq              LABEL71
    jump                   LABEL79
@@ -97,7 +97,7 @@ LABEL71:
    invoke                 549
    jump                   LABEL122
 LABEL79:
-   042                    5
+   get_varc               5
    load_int               13
    if_icmpeq              LABEL83
    jump                   LABEL91
@@ -111,7 +111,7 @@ LABEL83:
    invoke                 551
    jump                   LABEL122
 LABEL91:
-   042                    5
+   get_varc               5
    load_int               14
    if_icmpeq              LABEL95
    jump                   LABEL116

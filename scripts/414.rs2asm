@@ -19,7 +19,7 @@
    load_int               0
    load_int               0
    iload                  6
-   2000                  
+   widget_put_position_widget
    load_int               0
    iload                  5
    widget_put_hidden_widget
@@ -50,7 +50,7 @@ LABEL33:
    int_to_string         
    load_string            " points?"
    load_string            "</col>"
-   037                    13
+   string_append          13
    sstore                 3
    jump                   LABEL166
 LABEL50:
@@ -68,7 +68,7 @@ LABEL58:
    load_int               115
    load_int               834
    iload                  1
-   3408                  
+   get_enum_value        
    sstore                 1
    get_varbit             5362
    load_int               1
@@ -94,7 +94,7 @@ LABEL68:
    load_string            "<col=00ff00>"
    load_string            " as you have unlocked this previously."
    load_string            "</col>"
-   037                    17
+   string_append          17
    sstore                 3
    jump                   LABEL111
 LABEL90:
@@ -117,7 +117,7 @@ LABEL90:
    load_string            "<col=00ff00>"
    load_string            "."
    load_string            "</col>"
-   037                    17
+   string_append          17
    sstore                 3
 LABEL111:
    jump                   LABEL166
@@ -131,7 +131,7 @@ LABEL116:
    load_int               115
    load_int               834
    iload                  1
-   3408                  
+   get_enum_value        
    sstore                 1
    load_string            "Unlock"
    sstore                 2
@@ -149,11 +149,11 @@ LABEL116:
    load_int               105
    load_int               836
    iload                  1
-   3408                  
+   get_enum_value        
    int_to_string         
    load_string            " points?"
    load_string            "</col>"
-   037                    13
+   string_append          13
    sstore                 3
    jump                   LABEL166
 LABEL145:
@@ -161,7 +161,7 @@ LABEL145:
    load_int               115
    load_int               834
    iload                  1
-   3408                  
+   get_enum_value        
    sstore                 1
    load_string            "Disable"
    sstore                 2
@@ -176,7 +176,7 @@ LABEL145:
    load_string            "<col=ff0000>"
    load_string            "You will not get your points back."
    load_string            "</col>"
-   037                    11
+   string_append          11
    sstore                 3
 LABEL166:
    sload                  3
@@ -210,22 +210,22 @@ LABEL186:
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               255
    widget_put_opacity    
    load_int               1
    sload                  2
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
    sload                  1
-   037                    2
+   string_append          2
    widget_put_name       
    load_int               319
    load_int               1

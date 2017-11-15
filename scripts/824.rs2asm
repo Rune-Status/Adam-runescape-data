@@ -4,11 +4,11 @@
 .string_var_count   0
    load_int               -1
    load_string            ""
-   1408                  
+   widget_put_render_listener
    widget_put_actions_null
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    get_ismembers         
    load_int               0
    if_icmpeq              LABEL11
@@ -18,7 +18,7 @@ LABEL11:
    load_int               79
    iload                  0
    load_int               -1
-   3408                  
+   get_enum_value        
    get_item_ismembers    
    load_int               1
    if_icmpeq              LABEL20
@@ -41,7 +41,7 @@ LABEL26:
    load_int               79
    iload                  0
    iload                  3
-   3408                  
+   get_enum_value        
    istore                 4
 LABEL38:
    iload                  4
@@ -86,7 +86,7 @@ LABEL66:
    load_int               79
    iload                  0
    iload                  3
-   3408                  
+   get_enum_value        
    istore                 4
    jump                   LABEL38
 LABEL77:
@@ -111,7 +111,7 @@ LABEL85:
    1409                  
    load_int               1
    load_string            "Contents"
-   1300                  
+   widget_put_action     
    jump                   LABEL110
 LABEL98:
    load_int               0
@@ -125,6 +125,6 @@ LABEL98:
    1409                  
    load_int               1
    load_string            "Pack"
-   1300                  
+   widget_put_action     
 LABEL110:
    return                

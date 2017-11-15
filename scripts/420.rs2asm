@@ -3,9 +3,9 @@
 .int_var_count      7
 .string_var_count   8
    load_int               4
-   044                    105
+   array_initialize       105
    load_int               4
-   044                    65641
+   array_initialize       65641
    load_int               653
    istore                
    load_int               654
@@ -23,28 +23,28 @@ LABEL15:
    widget_put_hidden_widget
    load_int               0
    load_int               20
-   046                   
+   array_store           
    load_int               1
    load_int               20
-   046                   
+   array_store           
    load_int               2
    load_int               20
-   046                   
+   array_store           
    load_int               3
    load_int               20
-   046                   
+   array_store           
    load_int               0
    load_int               45
-   046                    1
+   array_store            1
    load_int               1
    load_int               80
-   046                    1
+   array_store            1
    load_int               2
    load_int               115
-   046                    1
+   array_store            1
    load_int               3
    load_int               150
-   046                    1
+   array_store            1
    load_int               72
    load_int               36
    load_int               0
@@ -98,25 +98,25 @@ LABEL15:
    load_int               0
    load_int               0
    load_int               38862853
-   2000                  
+   widget_put_position_widget
    load_int               20
    load_int               5
    load_int               0
    load_int               0
    load_int               38862857
-   2000                  
+   widget_put_position_widget
    load_int               20
    load_int               5
    load_int               0
    load_int               0
    load_int               38862861
-   2000                  
+   widget_put_position_widget
    load_int               20
    load_int               5
    load_int               0
    load_int               0
    load_int               38862865
-   2000                  
+   widget_put_position_widget
    load_int               34
    load_int               24
    load_int               0
@@ -128,25 +128,25 @@ LABEL15:
    load_int               0
    load_int               0
    load_int               38862854
-   2000                  
+   widget_put_position_widget
    load_int               0
    load_int               21
    load_int               0
    load_int               0
    load_int               38862858
-   2000                  
+   widget_put_position_widget
    load_int               0
    load_int               21
    load_int               0
    load_int               0
    load_int               38862862
-   2000                  
+   widget_put_position_widget
    load_int               0
    load_int               21
    load_int               0
    load_int               0
    load_int               38862866
-   2000                  
+   widget_put_position_widget
    load_int               293
    load_int               294
    istore                 1
@@ -158,28 +158,28 @@ LABEL149:
    widget_put_hidden_widget
    load_int               0
    load_int               20
-   046                   
+   array_store           
    load_int               1
    load_int               104
-   046                   
+   array_store           
    load_int               2
    load_int               20
-   046                   
+   array_store           
    load_int               3
    load_int               104
-   046                   
+   array_store           
    load_int               0
    load_int               45
-   046                    1
+   array_store            1
    load_int               1
    load_int               45
-   046                    1
+   array_store            1
    load_int               2
    load_int               98
-   046                    1
+   array_store            1
    load_int               3
    load_int               98
-   046                    1
+   array_store            1
    load_int               70
    load_int               46
    load_int               0
@@ -238,7 +238,7 @@ LABEL228:
    load_int               0
    load_int               0
    load_int               38862853
-   2000                  
+   widget_put_position_widget
    load_int               30
    load_int               30
    load_int               0
@@ -252,7 +252,7 @@ LABEL241:
    load_int               0
    load_int               0
    load_int               38862853
-   2000                  
+   widget_put_position_widget
    load_int               34
    load_int               24
    load_int               0
@@ -265,43 +265,43 @@ LABEL253:
    load_int               0
    load_int               0
    load_int               38862857
-   2000                  
+   widget_put_position_widget
    load_int               20
    load_int               5
    load_int               0
    load_int               0
    load_int               38862861
-   2000                  
+   widget_put_position_widget
    load_int               20
    load_int               5
    load_int               0
    load_int               0
    load_int               38862865
-   2000                  
+   widget_put_position_widget
    load_int               0
    load_int               30
    load_int               0
    load_int               0
    load_int               38862854
-   2000                  
+   widget_put_position_widget
    load_int               0
    load_int               30
    load_int               0
    load_int               0
    load_int               38862858
-   2000                  
+   widget_put_position_widget
    load_int               0
    load_int               30
    load_int               0
    load_int               0
    load_int               38862862
-   2000                  
+   widget_put_position_widget
    load_int               0
    load_int               30
    load_int               0
    load_int               0
    load_int               38862866
-   2000                  
+   widget_put_position_widget
 LABEL295:
    load_string            ""
    sstore                
@@ -338,7 +338,7 @@ LABEL323:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               234
    istore                 2
    sstore                 4
@@ -349,7 +349,7 @@ LABEL323:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               235
    istore                 3
    sstore                 5
@@ -360,7 +360,7 @@ LABEL323:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               236
    istore                 4
    sstore                 6
@@ -371,7 +371,7 @@ LABEL323:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               233
    istore                 5
    sstore                 7
@@ -389,7 +389,7 @@ LABEL372:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               255
    istore                 2
    sstore                 4
@@ -400,7 +400,7 @@ LABEL372:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               256
    istore                 3
    sstore                 5
@@ -411,7 +411,7 @@ LABEL372:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               253
    istore                 5
    sstore                 7
@@ -429,7 +429,7 @@ LABEL410:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               255
    istore                 2
    sstore                 4
@@ -440,7 +440,7 @@ LABEL410:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               256
    istore                 3
    sstore                 5
@@ -451,7 +451,7 @@ LABEL410:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               253
    istore                 5
    sstore                 7
@@ -467,7 +467,7 @@ LABEL448:
    load_string            "(Accurate)"
    load_string            "<br>"
    load_string            "(Ranged XP)"
-   037                    3
+   string_append          3
    load_int               268
    istore                 2
    sstore                 4
@@ -476,7 +476,7 @@ LABEL448:
    load_string            "(Rapid)"
    load_string            "<br>"
    load_string            "(Ranged XP)"
-   037                    3
+   string_append          3
    load_int               269
    istore                 3
    sstore                 5
@@ -487,7 +487,7 @@ LABEL448:
    load_string            "(Ranged XP)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               270
    istore                 5
    sstore                 7
@@ -505,7 +505,7 @@ LABEL482:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               279
    istore                 2
    sstore                 4
@@ -516,7 +516,7 @@ LABEL482:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               278
    istore                 3
    sstore                 5
@@ -527,7 +527,7 @@ LABEL482:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Shared XP)"
-   037                    5
+   string_append          5
    load_int               277
    istore                 4
    sstore                 6
@@ -538,7 +538,7 @@ LABEL482:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               280
    istore                 5
    sstore                 7
@@ -554,7 +554,7 @@ LABEL531:
    load_string            "(Accurate)"
    load_string            "<br>"
    load_string            "(Ranged XP)"
-   037                    3
+   string_append          3
    load_int               258
    istore                 2
    sstore                 4
@@ -563,7 +563,7 @@ LABEL531:
    load_string            "(Rapid)"
    load_string            "<br>"
    load_string            "(Ranged XP)"
-   037                    3
+   string_append          3
    load_int               259
    istore                 3
    sstore                 5
@@ -574,7 +574,7 @@ LABEL531:
    load_string            "(Ranged XP)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               260
    istore                 5
    sstore                 7
@@ -592,7 +592,7 @@ LABEL565:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               289
    istore                 2
    sstore                 4
@@ -603,7 +603,7 @@ LABEL565:
    load_string            "(Ranged)"
    load_string            "<br>"
    load_string            "(Ranged XP)"
-   037                    5
+   string_append          5
    load_int               290
    istore                 3
    sstore                 5
@@ -614,7 +614,7 @@ LABEL565:
    load_string            "(Magic)"
    load_string            "<br>"
    load_string            "(Magic XP)"
-   037                    5
+   string_append          5
    load_int               291
    istore                 4
    sstore                 6
@@ -630,7 +630,7 @@ LABEL603:
    load_string            "(Short fuse)"
    load_string            "<br>"
    load_string            "(Ranged XP)"
-   037                    3
+   string_append          3
    load_int               288
    istore                 2
    sstore                 4
@@ -639,7 +639,7 @@ LABEL603:
    load_string            "(Medium fuse)"
    load_string            "<br>"
    load_string            "(Ranged XP)"
-   037                    3
+   string_append          3
    load_int               282
    istore                 3
    sstore                 5
@@ -650,7 +650,7 @@ LABEL603:
    load_string            "(Ranged XP)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               281
    istore                 5
    sstore                 7
@@ -674,7 +674,7 @@ LABEL637:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               248
    istore                 3
    sstore                 5
@@ -692,7 +692,7 @@ LABEL659:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               239
    istore                 2
    sstore                 4
@@ -703,7 +703,7 @@ LABEL659:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               238
    istore                 3
    sstore                 5
@@ -714,7 +714,7 @@ LABEL659:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Shared XP)"
-   037                    5
+   string_append          5
    load_int               240
    istore                 4
    sstore                 6
@@ -725,7 +725,7 @@ LABEL659:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               237
    istore                 5
    sstore                 7
@@ -743,7 +743,7 @@ LABEL708:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               239
    istore                 2
    sstore                 4
@@ -754,7 +754,7 @@ LABEL708:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               238
    istore                 3
    sstore                 5
@@ -765,7 +765,7 @@ LABEL708:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               238
    istore                 4
    sstore                 6
@@ -776,7 +776,7 @@ LABEL708:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               237
    istore                 5
    sstore                 7
@@ -794,7 +794,7 @@ LABEL757:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               239
    istore                 2
    sstore                 4
@@ -805,7 +805,7 @@ LABEL757:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               238
    istore                 3
    sstore                 5
@@ -816,7 +816,7 @@ LABEL757:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               238
    istore                 4
    sstore                 6
@@ -827,7 +827,7 @@ LABEL757:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               237
    istore                 5
    sstore                 7
@@ -845,7 +845,7 @@ LABEL806:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               274
    istore                 2
    sstore                 4
@@ -856,7 +856,7 @@ LABEL806:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               276
    istore                 3
    sstore                 5
@@ -867,7 +867,7 @@ LABEL806:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               275
    istore                 4
    sstore                 6
@@ -878,7 +878,7 @@ LABEL806:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               273
    istore                 5
    sstore                 7
@@ -896,7 +896,7 @@ LABEL855:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Shared XP)"
-   037                    5
+   string_append          5
    load_int               284
    istore                 2
    sstore                 4
@@ -907,7 +907,7 @@ LABEL855:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               285
    istore                 3
    sstore                 5
@@ -918,7 +918,7 @@ LABEL855:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               283
    istore                 5
    sstore                 7
@@ -936,7 +936,7 @@ LABEL893:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Shared XP)"
-   037                    5
+   string_append          5
    load_int               284
    istore                 2
    sstore                 4
@@ -947,7 +947,7 @@ LABEL893:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               285
    istore                 3
    sstore                 5
@@ -958,7 +958,7 @@ LABEL893:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               283
    istore                 5
    sstore                 7
@@ -976,7 +976,7 @@ LABEL931:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               266
    istore                 2
    sstore                 4
@@ -987,7 +987,7 @@ LABEL931:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               267
    istore                 3
    sstore                 5
@@ -998,7 +998,7 @@ LABEL931:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               252
    istore                 5
    sstore                 7
@@ -1016,7 +1016,7 @@ LABEL969:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               272
    istore                 2
    sstore                 4
@@ -1027,7 +1027,7 @@ LABEL969:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               262
    istore                 3
    sstore                 5
@@ -1038,7 +1038,7 @@ LABEL969:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               271
    istore                 4
    sstore                 6
@@ -1049,7 +1049,7 @@ LABEL969:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               261
    istore                 5
    sstore                 7
@@ -1067,7 +1067,7 @@ LABEL1018:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Shared XP)"
-   037                    5
+   string_append          5
    load_int               241
    istore                 2
    sstore                 4
@@ -1078,7 +1078,7 @@ LABEL1018:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Shared XP)"
-   037                    5
+   string_append          5
    load_int               251
    istore                 3
    sstore                 5
@@ -1089,7 +1089,7 @@ LABEL1018:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Shared XP)"
-   037                    5
+   string_append          5
    load_int               242
    istore                 4
    sstore                 6
@@ -1100,7 +1100,7 @@ LABEL1018:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               250
    istore                 5
    sstore                 7
@@ -1118,7 +1118,7 @@ LABEL1067:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               241
    istore                 2
    sstore                 4
@@ -1129,7 +1129,7 @@ LABEL1067:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               251
    istore                 3
    sstore                 5
@@ -1140,7 +1140,7 @@ LABEL1067:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Shared XP)"
-   037                    5
+   string_append          5
    load_int               242
    istore                 4
    sstore                 6
@@ -1151,7 +1151,7 @@ LABEL1067:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               250
    istore                 5
    sstore                 7
@@ -1169,7 +1169,7 @@ LABEL1116:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               246
    istore                 2
    sstore                 4
@@ -1180,7 +1180,7 @@ LABEL1116:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               244
    istore                 3
    sstore                 5
@@ -1191,7 +1191,7 @@ LABEL1116:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Shared XP)"
-   037                    5
+   string_append          5
    load_int               245
    istore                 4
    sstore                 6
@@ -1202,7 +1202,7 @@ LABEL1116:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               243
    istore                 5
    sstore                 7
@@ -1220,7 +1220,7 @@ LABEL1165:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               240
    istore                 2
    sstore                 4
@@ -1231,7 +1231,7 @@ LABEL1165:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               239
    istore                 3
    sstore                 5
@@ -1242,7 +1242,7 @@ LABEL1165:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               238
    istore                 4
    sstore                 6
@@ -1253,7 +1253,7 @@ LABEL1165:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               237
    istore                 5
    sstore                 7
@@ -1271,7 +1271,7 @@ LABEL1214:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               266
    istore                 2
    sstore                 4
@@ -1282,7 +1282,7 @@ LABEL1214:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               267
    istore                 3
    sstore                 5
@@ -1293,7 +1293,7 @@ LABEL1214:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               252
    istore                 5
    sstore                 7
@@ -1311,7 +1311,7 @@ LABEL1252:
    load_string            "(Stab)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               266
    istore                 2
    sstore                 4
@@ -1322,7 +1322,7 @@ LABEL1252:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               267
    istore                 3
    sstore                 5
@@ -1333,7 +1333,7 @@ LABEL1252:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               252
    istore                 5
    sstore                 7
@@ -1349,7 +1349,7 @@ LABEL1290:
    load_string            "(Accurate)"
    load_string            "<br>"
    load_string            "(Ranged XP)"
-   037                    3
+   string_append          3
    load_int               263
    istore                 2
    sstore                 4
@@ -1358,7 +1358,7 @@ LABEL1290:
    load_string            "(Rapid)"
    load_string            "<br>"
    load_string            "(Ranged XP)"
-   037                    3
+   string_append          3
    load_int               264
    istore                 3
    sstore                 5
@@ -1369,7 +1369,7 @@ LABEL1290:
    load_string            "(Ranged XP)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               265
    istore                 5
    sstore                 7
@@ -1387,7 +1387,7 @@ LABEL1324:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               286
    istore                 2
    sstore                 4
@@ -1398,7 +1398,7 @@ LABEL1324:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Shared XP)"
-   037                    5
+   string_append          5
    load_int               287
    istore                 3
    sstore                 5
@@ -1409,7 +1409,7 @@ LABEL1324:
    load_string            "(Slash)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               286
    istore                 5
    sstore                 7
@@ -1425,7 +1425,7 @@ LABEL1362:
    load_string            "(Accurate)"
    load_string            "<br>"
    load_string            "(Magic XP)"
-   037                    3
+   string_append          3
    load_int               263
    istore                 2
    sstore                 4
@@ -1434,7 +1434,7 @@ LABEL1362:
    load_string            "(Accurate)"
    load_string            "<br>"
    load_string            "(Magic XP)"
-   037                    3
+   string_append          3
    load_int               263
    istore                 3
    sstore                 5
@@ -1445,7 +1445,7 @@ LABEL1362:
    load_string            "(Magic XP)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               265
    istore                 5
    sstore                 7
@@ -1463,7 +1463,7 @@ LABEL1396:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               254
    istore                 2
    sstore                 4
@@ -1482,7 +1482,7 @@ LABEL1414:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Attack XP)"
-   037                    5
+   string_append          5
    load_int               247
    istore                 2
    sstore                 4
@@ -1493,7 +1493,7 @@ LABEL1414:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Strength XP)"
-   037                    5
+   string_append          5
    load_int               248
    istore                 3
    sstore                 5
@@ -1504,7 +1504,7 @@ LABEL1414:
    load_string            "(Crush)"
    load_string            "<br>"
    load_string            "(Defence XP)"
-   037                    5
+   string_append          5
    load_int               249
    istore                 5
    sstore                 7
@@ -1528,13 +1528,13 @@ LABEL1460:
    load_int               38862851
    widget_put_hidden_widget
    iload                  6
-   045                   
+   array_load            
    iload                  6
-   045                    1
+   array_load             1
    load_int               0
    load_int               0
    load_int               38862851
-   2000                  
+   widget_put_position_widget
    iload                  6
    load_int               1
    iadd                  
@@ -1565,7 +1565,7 @@ LABEL1460:
    load_int               38862883
    load_string            "I"
    load_int               38862851
-   2404                  
+   widget_put_mouse_exit_listener_widget
    sload                  4
    string_length         
    load_int               0
@@ -1581,7 +1581,7 @@ LABEL1507:
    load_int               140
    load_string            "IiIsii"
    load_int               38862851
-   2412                  
+   widget_put_mouse_hover_listener_widget
 LABEL1517:
    jump                   LABEL1521
 LABEL1518:
@@ -1598,13 +1598,13 @@ LABEL1525:
    load_int               38862855
    widget_put_hidden_widget
    iload                  6
-   045                   
+   array_load            
    iload                  6
-   045                    1
+   array_load             1
    load_int               0
    load_int               0
    load_int               38862855
-   2000                  
+   widget_put_position_widget
    iload                  6
    load_int               1
    iadd                  
@@ -1635,7 +1635,7 @@ LABEL1525:
    load_int               38862883
    load_string            "I"
    load_int               38862855
-   2404                  
+   widget_put_mouse_exit_listener_widget
    sload                  5
    string_length         
    load_int               0
@@ -1651,7 +1651,7 @@ LABEL1572:
    load_int               140
    load_string            "IiIsii"
    load_int               38862855
-   2412                  
+   widget_put_mouse_hover_listener_widget
 LABEL1582:
    jump                   LABEL1586
 LABEL1583:
@@ -1668,13 +1668,13 @@ LABEL1590:
    load_int               38862859
    widget_put_hidden_widget
    iload                  6
-   045                   
+   array_load            
    iload                  6
-   045                    1
+   array_load             1
    load_int               0
    load_int               0
    load_int               38862859
-   2000                  
+   widget_put_position_widget
    iload                  6
    load_int               1
    iadd                  
@@ -1705,7 +1705,7 @@ LABEL1590:
    load_int               38862883
    load_string            "I"
    load_int               38862859
-   2404                  
+   widget_put_mouse_exit_listener_widget
    sload                  6
    string_length         
    load_int               0
@@ -1721,7 +1721,7 @@ LABEL1637:
    load_int               140
    load_string            "IiIsii"
    load_int               38862859
-   2412                  
+   widget_put_mouse_hover_listener_widget
 LABEL1647:
    jump                   LABEL1651
 LABEL1648:
@@ -1738,13 +1738,13 @@ LABEL1655:
    load_int               38862863
    widget_put_hidden_widget
    iload                  6
-   045                   
+   array_load            
    iload                  6
-   045                    1
+   array_load             1
    load_int               0
    load_int               0
    load_int               38862863
-   2000                  
+   widget_put_position_widget
    iload                  6
    load_int               1
    iadd                  
@@ -1775,7 +1775,7 @@ LABEL1655:
    load_int               38862883
    load_string            "I"
    load_int               38862863
-   2404                  
+   widget_put_mouse_exit_listener_widget
    sload                  7
    string_length         
    load_int               0
@@ -1791,7 +1791,7 @@ LABEL1702:
    load_int               140
    load_string            "IiIsii"
    load_int               38862863
-   2412                  
+   widget_put_mouse_hover_listener_widget
 LABEL1712:
    jump                   LABEL1716
 LABEL1713:

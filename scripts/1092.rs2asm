@@ -12,7 +12,7 @@
    load_int               105
    load_int               273
    iload                  8
-   3408                  
+   get_enum_value        
    istore                 9
 LABEL12:
    iload                  9
@@ -58,7 +58,7 @@ LABEL41:
    load_int               105
    load_int               836
    iload                  9
-   3408                  
+   get_enum_value        
    iadd                  
    istore                 7
    istore                 6
@@ -71,7 +71,7 @@ LABEL53:
    load_int               105
    load_int               273
    iload                  8
-   3408                  
+   get_enum_value        
    istore                 9
    jump                   LABEL12
 LABEL64:
@@ -93,12 +93,12 @@ LABEL64:
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               494
    widget_put_fontid     
    load_int               1
@@ -106,7 +106,7 @@ LABEL64:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_string            "Nothing more to extend"
    sstore                
    load_string            ""
@@ -149,7 +149,7 @@ LABEL125:
    load_string            ","
    invoke                 46
    load_string            " points"
-   037                    5
+   string_append          5
    sstore                
    jump                   LABEL143
 LABEL136:
@@ -158,7 +158,7 @@ LABEL136:
    load_string            ","
    invoke                 46
    load_string            " points"
-   037                    3
+   string_append          3
    sstore                
 LABEL143:
    load_int               16750623
@@ -170,13 +170,13 @@ LABEL143:
    load_int               0
    load_string            "Ii"
    iload                  0
-   2412                  
+   widget_put_mouse_hover_listener_widget
    load_int               1082
    load_int               -2147483645
    load_int               0
    load_string            "Ii"
    iload                  0
-   2404                  
+   widget_put_mouse_exit_listener_widget
    load_int               1
    load_string            "Extend"
    iload                  0
@@ -205,11 +205,11 @@ LABEL179:
    load_int               -1
    load_string            ""
    iload                  0
-   2412                  
+   widget_put_mouse_hover_listener_widget
    load_int               -1
    load_string            ""
    iload                  0
-   2404                  
+   widget_put_mouse_exit_listener_widget
    iload                  0
    widget_put_actions_null_widget
    load_int               -1

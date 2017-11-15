@@ -74,7 +74,7 @@ LABEL65:
    load_int               79
    load_int               815
    iload                  9
-   3408                  
+   get_enum_value        
    load_int               -1
    if_icmpne              LABEL73
    jump                   LABEL159
@@ -95,12 +95,12 @@ LABEL73:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               36
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  9
    load_int               93
    iload                  6
@@ -112,14 +112,14 @@ LABEL73:
    widget_put_borderthickness
    load_int               1
    load_string            "Imbue"
-   1300                  
+   widget_put_action     
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
    iload                  9
    get_item_name         
-   037                    2
+   string_append          2
    widget_put_name       
    load_int               244
    load_int               -2147483645
@@ -127,26 +127,26 @@ LABEL73:
    load_int               50
    load_int               -1
    load_string            "IiiI"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               244
    load_int               -2147483645
    load_int               -2147483643
    load_int               0
    load_int               -1
    load_string            "IiiI"
-   1404                  
+   widget_put_mouse_exit_listener
    widget_get_relativex  
    widget_get_relativey  
    load_int               32
    iadd                  
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    load_int               36
    load_int               15
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    load_int               494
    widget_put_fontid      1
    load_int               1
@@ -156,7 +156,7 @@ LABEL73:
    load_int               1
    load_int               0
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    iload                  9
    invoke                 275
    widget_put_text        1
@@ -194,12 +194,12 @@ LABEL173:
    iload                  2
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               495
    widget_put_fontid     
    load_int               16750623
@@ -207,7 +207,7 @@ LABEL173:
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    sload                  0
@@ -232,12 +232,12 @@ LABEL205:
    isub                  
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    iload                  2
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               496
    widget_put_fontid     
    load_int               16750623
@@ -245,7 +245,7 @@ LABEL205:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    load_string            "There are no items in your inventory that can be imbued."
@@ -254,7 +254,7 @@ LABEL205:
    load_string            "Dominic can imbue crystal bows, crystal shields,"
    load_string            "<br>"
    load_string            "black masks, salve amulets & certain rings."
-   037                    6
+   string_append          6
    widget_put_text       
 LABEL244:
    return                

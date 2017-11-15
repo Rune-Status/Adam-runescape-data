@@ -11,9 +11,9 @@ LABEL5:
    load_int               -1
    load_string            ""
    iload                  0
-   2408                  
+   widget_put_render_listener_widget
    load_int               0
-   043                    62
+   put_varc               62
    invoke                 95
    return                
 LABEL13:
@@ -27,9 +27,9 @@ LABEL17:
    load_int               0
    load_string            "I1"
    iload                  0
-   2408                  
+   widget_put_render_listener_widget
 LABEL23:
-   042                    62
+   get_varc               62
    load_int               1
    if_icmpeq              LABEL27
    jump                   LABEL28
@@ -50,7 +50,7 @@ LABEL32:
    invoke                 84
 LABEL39:
    get_gamecycle         
-   042                    61
+   get_varc               61
    isub                  
    load_int               150
    if_icmpge              LABEL48

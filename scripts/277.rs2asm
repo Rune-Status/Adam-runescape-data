@@ -121,7 +121,7 @@ LABEL80:
    load_int               2
    load_int               0
    iload                  2
-   2000                  
+   widget_put_position_widget
    jump                   LABEL137
 LABEL110:
    load_int               0
@@ -150,7 +150,7 @@ LABEL110:
    load_int               2
    load_int               0
    iload                  2
-   2000                  
+   widget_put_position_widget
 LABEL137:
    iload                  4
    iload                  3
@@ -597,7 +597,7 @@ LABEL544:
    load_string            "<col=ff0000>"
    sload                  0
    load_string            "</col>"
-   037                    4
+   string_append          4
    iload                  6
    widget_put_text_widget
    jump                   LABEL559
@@ -606,7 +606,7 @@ LABEL552:
    load_string            "<col=ff0000>"
    load_string            "*"
    load_string            "</col>"
-   037                    4
+   string_append          4
    iload                  6
    widget_put_text_widget
 LABEL559:
@@ -716,7 +716,7 @@ LABEL629:
    iload                  20
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  20
    load_int               32
    iadd                  
@@ -760,8 +760,8 @@ LABEL685:
    load_int               115
    load_int               207
    get_varbit             4150
-   3408                  
-   037                    2
+   get_enum_value        
+   string_append          2
    iload                  6
    widget_put_text_widget
    jump                   LABEL701
@@ -769,7 +769,7 @@ LABEL695:
    load_string            "Tab "
    get_varbit             4150
    int_to_string         
-   037                    2
+   string_append          2
    iload                  6
    widget_put_text_widget
 LABEL701:

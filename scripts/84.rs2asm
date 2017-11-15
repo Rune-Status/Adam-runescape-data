@@ -10,7 +10,7 @@
    sstore                
    load_int               0
    istore                 2
-   042                    41
+   get_varc               41
    load_int               3
    if_icmpeq              LABEL12
    jump                   LABEL14
@@ -74,12 +74,12 @@ LABEL58:
    load_int               73
    load_int               579
    iload                  7
-   3408                  
+   get_enum_value        
    istore                 8
-   042                    41
+   get_varc               41
    load_int               0
    if_icmpeq              LABEL77
-   042                    41
+   get_varc               41
    load_int               2
    if_icmpeq              LABEL77
    jump                   LABEL120
@@ -99,7 +99,7 @@ LABEL82:
    appendtags            
    tolowercase           
    load_string            "<gt>"
-   037                    7
+   string_append          7
    iload                  7
    iload                  8
    load_int               10616876
@@ -126,7 +126,7 @@ LABEL82:
    load_int               73
    load_int               579
    iload                  7
-   3408                  
+   get_enum_value        
    istore                 8
 LABEL120:
    iload                  0
@@ -197,11 +197,11 @@ LABEL163:
 LABEL166:
    sload                  9
    load_string            ":"
-   037                    2
+   string_append          2
    sload                  1
    sload                  11
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  7
    iload                  8
    load_int               10616876
@@ -218,11 +218,11 @@ LABEL166:
 LABEL186:
    sload                  9
    load_string            ":"
-   037                    2
+   string_append          2
    sload                  3
    sload                  11
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  7
    iload                  8
    load_int               10616876
@@ -240,11 +240,11 @@ LABEL206:
    load_string            "From?"
    sload                  9
    load_string            ":"
-   037                    3
+   string_append          3
    sload                  2
    sload                  11
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  7
    iload                  8
    load_int               10616876
@@ -262,7 +262,7 @@ LABEL227:
    sload                  7
    sload                  11
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  7
    iload                  8
    load_int               10616876
@@ -280,7 +280,7 @@ LABEL244:
    sload                  2
    sload                  11
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  7
    iload                  8
    load_int               10616876
@@ -303,23 +303,23 @@ LABEL264:
    iadd                  
    load_int               1
    iadd                  
-   043                    65
+   put_varc               65
    load_int               664
    load_int               0
    load_string            "1"
    load_int               10616832
-   2408                  
+   widget_put_render_listener_widget
 LABEL275:
    jump                   LABEL404
 LABEL276:
    load_string            "To?"
    sload                  9
    load_string            ":"
-   037                    3
+   string_append          3
    sload                  2
    sload                  11
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  7
    iload                  8
    load_int               10616876
@@ -337,7 +337,7 @@ LABEL297:
    sload                  8
    sload                  11
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  7
    iload                  8
    load_int               10616876
@@ -359,11 +359,11 @@ LABEL314:
    load_string            "]?"
    sload                  9
    load_string            ":"
-   037                    7
+   string_append          7
    sload                  6
    sload                  11
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  7
    iload                  8
    load_int               10616876
@@ -381,7 +381,7 @@ LABEL339:
    sload                  4
    load_string            "Broadcast:"
    load_string            "</col>"
-   037                    3
+   string_append          3
    sload                  11
    iload                  7
    iload                  8
@@ -469,7 +469,7 @@ LABEL404:
 LABEL409:
    load_string            "<col=ffffff>"
    sload                  9
-   037                    2
+   string_append          2
    iload                  8
    widget_put_name_widget
    sload                  0
@@ -529,7 +529,7 @@ LABEL459:
 LABEL460:
    load_string            "<col=ffffff>"
    sload                  9
-   037                    2
+   string_append          2
    iload                  8
    widget_put_name_widget
    load_int               1
@@ -540,7 +540,7 @@ LABEL460:
 LABEL470:
    load_string            "<col=ffffff>"
    sload                  9
-   037                    2
+   string_append          2
    iload                  8
    widget_put_name_widget
    load_int               2
@@ -560,7 +560,7 @@ LABEL479:
    load_int               73
    load_int               579
    iload                  7
-   3408                  
+   get_enum_value        
    istore                 8
 LABEL493:
    iload                  9
@@ -622,7 +622,7 @@ LABEL537:
    load_int               73
    load_int               579
    iload                  7
-   3408                  
+   get_enum_value        
    istore                 8
    jump                   LABEL499
 LABEL548:
@@ -661,7 +661,7 @@ LABEL571:
    load_int               73
    load_int               579
    iload                  7
-   3408                  
+   get_enum_value        
    istore                 8
    iload                  8
    widget_get_relativey_widget
@@ -676,7 +676,7 @@ LABEL571:
    load_int               0
    load_int               0
    iload                  8
-   2000                  
+   widget_put_position_widget
    load_int               10616876
    iload                  7
    load_int               2
@@ -690,7 +690,7 @@ LABEL603:
    iload                  5
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL608:
    load_int               10616876
    iload                  7
@@ -707,7 +707,7 @@ LABEL618:
    iload                  5
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL623:
    jump                   LABEL567
 LABEL624:
@@ -717,15 +717,15 @@ LABEL624:
    widget_put_scrollwidthheight_widget
    load_int               10617377
    load_int               10616876
-   042                    7
+   get_varc               7
    iload                  13
-   042                    8
+   get_varc               8
    isub                  
    iadd                  
    invoke                 72
    load_int               10616876
    widget_get_scrolly_widget
    iload                  13
-   043                    8
-   043                    7
+   put_varc               8
+   put_varc               7
    return                

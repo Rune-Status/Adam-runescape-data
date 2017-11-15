@@ -72,16 +72,16 @@ LABEL54:
    load_int               61
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               2
    iload                  9
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               3355443
    widget_put_textcolor  
    load_int               0
-   1102                  
+   widget_put_filled     
    iload                  4
    load_int               10165
    if_icmpeq              LABEL76
@@ -89,7 +89,7 @@ LABEL54:
 LABEL76:
    load_int               1
    load_string            "More"
-   1300                  
+   widget_put_action     
    jump                   LABEL103
 LABEL80:
    iload                  4
@@ -99,7 +99,7 @@ LABEL80:
 LABEL84:
    load_int               1
    load_string            "Back"
-   1300                  
+   widget_put_action     
    jump                   LABEL103
 LABEL88:
    iload                  10
@@ -109,15 +109,15 @@ LABEL88:
 LABEL92:
    load_int               1
    load_string            "Take"
-   1300                  
+   widget_put_action     
 LABEL95:
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
    iload                  4
    get_item_name         
-   037                    2
+   string_append          2
    widget_put_name       
 LABEL103:
    iload                  8
@@ -132,14 +132,14 @@ LABEL103:
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               16
    iload                  9
    load_int               14
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  4
    load_int               1
    1200                  
@@ -161,12 +161,12 @@ LABEL103:
    load_int               61
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               79
    iload                  9
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               495
    widget_put_fontid     
    load_int               16750623
@@ -176,12 +176,12 @@ LABEL103:
    load_int               0
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               111
    load_int               115
    load_int               380
    iload                  4
-   3408                  
+   get_enum_value        
    widget_put_text       
    iload                  8
    load_int               1
@@ -197,20 +197,20 @@ LABEL103:
    load_int               59
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               3
    iload                  9
    load_int               1
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               0
    widget_put_textcolor  
    load_int               164
    widget_put_opacity    
    load_int               1
-   1102                  
+   widget_put_filled     
    iload                  10
    load_int               1
    if_icmpeq              LABEL198
@@ -251,7 +251,7 @@ LABEL213:
    load_int               773
    load_int               788
    invoke                 31
-   042                    58
+   get_varc               58
    istore                 11
    iload                  3
    load_int               1
@@ -259,11 +259,11 @@ LABEL213:
    jump                   LABEL238
 LABEL236:
    load_int               0
-   043                    58
+   put_varc               58
 LABEL238:
    load_int               38797316
    load_int               38797314
-   042                    58
+   get_varc               58
    invoke                 72
    iload                  3
    load_int               0
@@ -271,6 +271,6 @@ LABEL238:
    jump                   LABEL248
 LABEL246:
    iload                  11
-   043                    58
+   put_varc               58
 LABEL248:
    return                

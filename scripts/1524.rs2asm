@@ -6,7 +6,7 @@
    load_int               73
    invoke                 900
    load_int               10551309
-   3408                  
+   get_enum_value        
    widget_get_index_widget
    load_int               0
    if_icmpeq              LABEL9
@@ -17,7 +17,7 @@ LABEL10:
    load_int               0
    load_int               33226762
    widget_put_hidden_widget
-   042                    178
+   get_varc               178
    load_int               14
    imul                  
    istore                 3
@@ -33,7 +33,7 @@ LABEL22:
    widget_put_scrollwidthheight_widget
    load_int               33226763
    load_int               33226762
-   042                    179
+   get_varc               179
    invoke                 72
    jump                   LABEL41
 LABEL31:
@@ -42,44 +42,44 @@ LABEL31:
    load_int               33226762
    widget_put_scrollwidthheight_widget
    load_int               0
-   043                    179
+   put_varc               179
    load_int               33226763
    load_int               33226762
    load_int               0
    invoke                 72
 LABEL41:
-   042                    181
+   get_varc               181
    load_int               0
    if_icmpne              LABEL45
    jump                   LABEL67
 LABEL45:
-   042                    181
+   get_varc               181
    load_int               1
    if_icmpne              LABEL49
    jump                   LABEL67
 LABEL49:
-   042                    181
+   get_varc               181
    load_int               2
    if_icmpne              LABEL53
    jump                   LABEL67
 LABEL53:
-   042                    181
+   get_varc               181
    load_int               3
    if_icmpne              LABEL57
    jump                   LABEL67
 LABEL57:
-   042                    181
+   get_varc               181
    load_int               4
    if_icmpne              LABEL61
    jump                   LABEL67
 LABEL61:
-   042                    181
+   get_varc               181
    load_int               5
    if_icmpne              LABEL65
    jump                   LABEL67
 LABEL65:
    load_int               0
-   043                    181
+   put_varc               181
 LABEL67:
    load_int               -1
    invoke                 1525
@@ -90,7 +90,7 @@ LABEL67:
    load_int               1
    load_string            "Y"
    load_int               33226762
-   2407                  
+   widget_put_config_listener_widget
    load_int               33226754
    sload                  0
    load_int               0
@@ -121,14 +121,14 @@ LABEL99:
    iload                  2
    int_to_string         
    load_string            ")"
-   037                    3
+   string_append          3
    sstore                 1
    jump                   LABEL111
 LABEL106:
    load_string            "<col=7f7f7f>"
    load_string            "Advertise (0)"
    load_string            "</col>"
-   037                    3
+   string_append          3
    sstore                 1
 LABEL111:
    load_int               33226780
@@ -144,7 +144,7 @@ LABEL111:
    load_string            "<col=ff0000>"
    load_string            "Disband"
    load_string            "</col>"
-   037                    3
+   string_append          3
    load_int               33226755
    load_int               1539
    load_int               -1
@@ -163,7 +163,7 @@ LABEL137:
    load_string            "<col=ff0000>"
    load_string            "Leave"
    load_string            "</col>"
-   037                    3
+   string_append          3
    load_int               33226755
    load_int               1539
    load_int               -1
@@ -177,7 +177,7 @@ LABEL150:
    load_string            "<col=00ff00>"
    load_string            "Join"
    load_string            "</col>"
-   037                    3
+   string_append          3
    load_int               33226755
    load_int               1539
    load_int               -1

@@ -3,7 +3,7 @@
 .int_var_count      4
 .string_var_count   0
    load_int               11
-   044                    105
+   array_initialize       105
    load_int               0
    istore                 2
 LABEL4:
@@ -18,12 +18,12 @@ LABEL8:
    widget_create_child   
    load_int               1
    load_string            "Open Journal"
-   1300                  
+   widget_put_action     
    load_int               105
    load_int               115
    load_int               595
    iload                  2
-   3408                  
+   get_enum_value        
    widget_put_text       
    load_int               494
    widget_put_fontid     
@@ -33,7 +33,7 @@ LABEL8:
    load_int               15
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               710
    load_int               -2147483645
    load_int               -2147483643
@@ -44,13 +44,13 @@ LABEL8:
    load_int               1002
    load_int               5
    load_string            "IiY"
-   1407                  
+   widget_put_config_listener
    iload                  0
    iload                  2
    invoke                 716
    iload                  2
    iload                  2
-   046                   
+   array_store           
    iload                  2
    load_int               1
    iadd                  
@@ -76,7 +76,7 @@ LABEL63:
 LABEL67:
    iload                  0
    iload                  2
-   045                   
+   array_load            
    widget_load_child     
    load_int               1
    if_icmpeq              LABEL74
@@ -86,7 +86,7 @@ LABEL74:
    iload                  3
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL79:
    iload                  2
    load_int               1

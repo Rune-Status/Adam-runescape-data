@@ -10,7 +10,7 @@
    sstore                 1
    get_localplayer_name  
    load_string            ":"
-   037                    2
+   string_append          2
    sstore                 2
    load_string            ""
    sstore                 3
@@ -28,7 +28,7 @@ LABEL21:
    load_string            "<col=ffa82f>"
    load_string            "Lots!"
    load_string            "</col>"
-   037                    3
+   string_append          3
    sstore                 3
 LABEL26:
    sload                  0
@@ -66,11 +66,11 @@ LABEL26:
    sload                  0
    load_string            "<br>"
    sload                  2
-   037                    3
+   string_append          3
    widget_put_text       
    sload                  1
    load_string            "<br>"
    sload                  3
-   037                    3
+   string_append          3
    widget_put_text        1
    return                

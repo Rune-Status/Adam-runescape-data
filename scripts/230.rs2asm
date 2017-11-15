@@ -135,7 +135,7 @@ LABEL115:
    load_int               25
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  7
    load_int               15
    if_icmplt              LABEL128
@@ -147,7 +147,7 @@ LABEL128:
    load_int               0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    jump                   LABEL147
 LABEL136:
    iload                  7
@@ -160,23 +160,23 @@ LABEL136:
    load_int               26
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL147:
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               105
    load_int               105
    iload                  5
    iload                  7
-   3408                  
+   get_enum_value        
    widget_put_textcolor  
    load_int               1
    load_int               105
    load_int               115
    iload                  6
    iload                  7
-   3408                  
-   1300                  
+   get_enum_value        
+   widget_put_action     
    iload                  7
    load_int               1
    iadd                  
@@ -201,7 +201,7 @@ LABEL173:
    load_int               25
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  7
    load_int               15
    if_icmplt              LABEL188
@@ -213,7 +213,7 @@ LABEL188:
    load_int               0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    jump                   LABEL207
 LABEL196:
    iload                  7
@@ -226,7 +226,7 @@ LABEL196:
    load_int               26
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL207:
    load_int               442
    widget_put_spriteid   
@@ -241,7 +241,7 @@ LABEL207:
    load_int               263
    load_int               1
    load_string            "IiiiY"
-   1407                  
+   widget_put_config_listener
    iload                  7
    load_int               1
    iadd                  

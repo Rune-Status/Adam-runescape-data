@@ -56,13 +56,13 @@ LABEL44:
    load_int               16
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               1
    load_string            "Switch"
-   1300                  
+   widget_put_action     
    load_int               2
    load_string            "Favourite"
-   1300                  
+   widget_put_action     
    iload                  14
    load_int               300
    if_icmpgt              LABEL63
@@ -74,7 +74,7 @@ LABEL63:
    isub                  
    int_to_string         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    jump                   LABEL78
 LABEL72:
@@ -82,7 +82,7 @@ LABEL72:
    iload                  14
    int_to_string         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
 LABEL78:
    load_int               1
@@ -110,5 +110,5 @@ LABEL85:
    iload                  13
    load_string            "IIIIIIIIIIIIII"
    iload                  0
-   2408                  
+   widget_put_render_listener_widget
    return                

@@ -22,7 +22,7 @@ LABEL16:
    load_int               -1
    load_string            ""
    iload                  0
-   2408                  
+   widget_put_render_listener_widget
    iload                  3
    load_int               1
    if_icmpeq              LABEL24
@@ -41,7 +41,7 @@ LABEL28:
 LABEL32:
    load_string            "There is 1 second remaining "
    sload                  0
-   037                    2
+   string_append          2
    load_int               14942210
    widget_put_text_widget
    jump                   LABEL46
@@ -51,7 +51,7 @@ LABEL38:
    int_to_string         
    load_string            " seconds remaining "
    sload                  0
-   037                    4
+   string_append          4
    load_int               14942210
    widget_put_text_widget
 LABEL46:

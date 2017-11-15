@@ -6,7 +6,7 @@
    load_int               103
    load_int               373
    iload                  0
-   3408                  
+   get_enum_value        
    istore                 6
    iload                  1
    widget_unset_children 
@@ -26,7 +26,7 @@ LABEL16:
    load_int               115
    iload                  0
    load_int               -1
-   3408                  
+   get_enum_value        
    invoke                 577
    iload                  3
    widget_get_width_widget
@@ -44,7 +44,7 @@ LABEL16:
    load_int               115
    iload                  0
    iload                  11
-   3408                  
+   get_enum_value        
    sstore                
 LABEL42:
    sload                  0
@@ -63,16 +63,16 @@ LABEL47:
    iload                  10
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  7
    load_int               17
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               16777215
    widget_put_textcolor  
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               255
    widget_put_opacity    
    load_int               244
@@ -81,7 +81,7 @@ LABEL47:
    load_int               220
    load_int               -1
    load_string            "IiiI"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               526
    load_int               -2147483645
    load_int               -2147483643
@@ -90,20 +90,20 @@ LABEL47:
    load_int               115
    iload                  6
    iload                  11
-   3408                  
+   get_enum_value        
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               586
    load_int               -2147483645
    load_int               -2147483643
    iload                  5
    load_string            "IiI"
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               1
    sload                  0
-   1300                  
+   widget_put_action     
    iload                  3
    load_int               5
    iload                  11
@@ -116,12 +116,12 @@ LABEL47:
    iload                  10
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               17
    load_int               17
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  3
    load_int               4
    iload                  11
@@ -136,14 +136,14 @@ LABEL47:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  7
    load_int               17
    isub                  
    load_int               16
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               1
    widget_put_text_shadowed
    load_int               495
@@ -151,7 +151,7 @@ LABEL47:
    load_int               0
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    iload                  0
    load_int               929
    if_icmpeq              LABEL150
@@ -166,7 +166,7 @@ LABEL154:
    load_int               49
    load_int               935
    iload                  11
-   3408                  
+   get_enum_value        
    load_int               1
    if_icmpeq              LABEL162
    jump                   LABEL168
@@ -174,7 +174,7 @@ LABEL162:
    load_string            "<str>"
    sload                  0
    load_string            "</str>"
-   037                    3
+   string_append          3
    widget_put_text       
    jump                   LABEL170
 LABEL168:
@@ -198,7 +198,7 @@ LABEL173:
    load_int               115
    iload                  0
    iload                  11
-   3408                  
+   get_enum_value        
    sstore                
    iload                  9
    load_int               0
@@ -273,5 +273,5 @@ LABEL234:
    load_int               1
    load_string            "gIIIiY"
    iload                  1
-   2407                  
+   widget_put_config_listener_widget
    return                

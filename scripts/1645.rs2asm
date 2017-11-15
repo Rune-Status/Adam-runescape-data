@@ -2,7 +2,7 @@
 .string_stack_count 0
 .int_var_count      8
 .string_var_count   1
-   042                    43
+   get_varc               43
    iload                  0
    if_icmplt              LABEL4
    jump                   LABEL5
@@ -35,16 +35,16 @@ LABEL15:
    iload                  7
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               0
    load_int               38
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               1040
    widget_put_spriteid   
    load_int               1
-   1107                  
+   widget_put_sprite_tiling
    iload                  0
    load_int               2
    modulo                
@@ -65,7 +65,7 @@ LABEL45:
    iload                  1
    iload                  3
    load_string            "Iiii1oi"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               1308
    load_int               25100291
    iload                  5
@@ -77,7 +77,7 @@ LABEL45:
    iload                  1
    iload                  3
    load_string            "Iiii1oi"
-   1404                  
+   widget_put_mouse_exit_listener
    jump                   LABEL98
 LABEL72:
    load_int               125
@@ -93,7 +93,7 @@ LABEL72:
    iload                  1
    iload                  3
    load_string            "Iiii1oi"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               1308
    load_int               25100291
    iload                  5
@@ -105,19 +105,19 @@ LABEL72:
    iload                  1
    iload                  3
    load_string            "Iiii1oi"
-   1404                  
+   widget_put_mouse_exit_listener
 LABEL98:
    load_int               1
    load_string            "Buy-offer"
-   1300                  
+   widget_put_action     
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
    iload                  1
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    iload                  5
    load_int               1
@@ -137,12 +137,12 @@ LABEL98:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               35
    load_int               35
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  6
    load_int               35
    iadd                  
@@ -159,12 +159,12 @@ LABEL98:
    iload                  7
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    load_int               45
    load_int               38
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    iload                  6
    load_int               45
    iadd                  
@@ -178,7 +178,7 @@ LABEL98:
    load_int               0
    load_int               1
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    iload                  2
    load_int               1
    if_icmpeq              LABEL174
@@ -207,12 +207,12 @@ LABEL183:
    iload                  7
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               170
    load_int               38
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  6
    load_int               170
    iadd                  
@@ -226,7 +226,7 @@ LABEL183:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    iload                  3
    load_int               2
    if_icmpge              LABEL219
@@ -241,7 +241,7 @@ LABEL219:
    iload                  3
    load_string            ","
    invoke                 46
-   037                    6
+   string_append          6
    widget_put_text       
    jump                   LABEL237
 LABEL231:
@@ -249,7 +249,7 @@ LABEL231:
    iload                  1
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_text       
 LABEL237:
    load_int               25100291
@@ -266,12 +266,12 @@ LABEL237:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               36
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  6
    load_int               36
    iadd                  
@@ -295,12 +295,12 @@ LABEL237:
    iload                  7
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  6
    load_int               38
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               16750623
    widget_put_textcolor  
    load_int               494
@@ -310,7 +310,7 @@ LABEL237:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_string            ""
    sstore                
    iload                  4
@@ -326,7 +326,7 @@ LABEL305:
    load_string            ","
    invoke                 46
    load_string            "?coins"
-   037                    2
+   string_append          2
    sstore                
 LABEL311:
    iload                  3
@@ -345,7 +345,7 @@ LABEL315:
    invoke                 46
    load_string            " each"
    load_string            "</col>"
-   037                    7
+   string_append          7
    widget_put_text       
    jump                   LABEL331
 LABEL329:
@@ -355,5 +355,5 @@ LABEL331:
    iload                  0
    load_int               1
    iadd                  
-   043                    43
+   put_varc               43
    return                

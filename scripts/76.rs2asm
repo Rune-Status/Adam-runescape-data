@@ -4,35 +4,35 @@
 .string_var_count   1
    load_string            "null"
    sstore                
-   042                    3
+   get_varc               3
    load_int               -1
    if_icmpne              LABEL6
    jump                   LABEL35
 LABEL6:
-   042                    3
+   get_varc               3
    load_int               1
    iadd                  
-   043                    3
-   042                    3
+   put_varc               3
+   get_varc               3
    load_int               20
    if_icmpge              LABEL14
    jump                   LABEL16
 LABEL14:
    load_int               0
-   043                    3
+   put_varc               3
 LABEL16:
-   042                    3
-   042                    4
+   get_varc               3
+   get_varc               4
    if_icmpeq              LABEL20
    jump                   LABEL25
 LABEL20:
    load_string            ""
    put_varc_string        1
    load_int               -1
-   043                    3
+   put_varc               3
    jump                   LABEL35
 LABEL25:
-   042                    3
+   get_varc               3
    invoke                 79
    sstore                
    sload                  0

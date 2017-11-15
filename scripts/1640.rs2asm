@@ -32,7 +32,7 @@ LABEL22:
    load_string            ":0"
    iload                  2
    int_to_string         
-   037                    3
+   string_append          3
    load_int               5898250
    widget_put_text_widget
    jump                   LABEL39
@@ -42,7 +42,7 @@ LABEL31:
    load_string            ":"
    iload                  2
    int_to_string         
-   037                    3
+   string_append          3
    load_int               5898250
    widget_put_text_widget
 LABEL39:
@@ -53,5 +53,5 @@ LABEL39:
    isub                  
    load_string            "Ii"
    iload                  0
-   2408                  
+   widget_put_render_listener_widget
    return                

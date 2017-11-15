@@ -6,7 +6,7 @@
    load_int               103
    load_int               373
    iload                  0
-   3408                  
+   get_enum_value        
    istore                 3
    iload                  1
    widget_unset_children 
@@ -21,17 +21,17 @@
    load_int               0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  4
    iload                  1
    widget_get_height_widget
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               897
    widget_put_spriteid   
    load_int               1
-   1107                  
+   widget_put_sprite_tiling
    iload                  1
    load_int               5
    load_int               1
@@ -40,20 +40,20 @@
    load_int               0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               25
    load_int               25
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               103
    load_int               100
    load_int               933
    iload                  0
-   3408                  
+   get_enum_value        
    widget_put_spriteid   
    load_int               0
-   1107                  
+   widget_put_sprite_tiling
    iload                  1
    load_int               4
    load_int               2
@@ -62,14 +62,14 @@
    load_int               0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  4
    load_int               25
    isub                  
    load_int               25
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               16750623
    widget_put_textcolor  
    load_int               1
@@ -79,12 +79,12 @@
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               105
    load_int               115
    iload                  0
    load_int               -1
-   3408                  
+   get_enum_value        
    widget_put_text       
    load_int               25
    istore                 5
@@ -94,7 +94,7 @@
    load_int               115
    iload                  0
    iload                  6
-   3408                  
+   get_enum_value        
    sstore                
 LABEL94:
    sload                  0
@@ -117,16 +117,16 @@ LABEL99:
    iload                  5
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  4
    load_int               17
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               16777215
    widget_put_textcolor  
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               255
    widget_put_opacity    
    load_int               244
@@ -135,7 +135,7 @@ LABEL99:
    load_int               220
    load_int               -1
    load_string            "IiiI"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               526
    load_int               -2147483645
    load_int               -2147483643
@@ -144,20 +144,20 @@ LABEL99:
    load_int               115
    iload                  3
    iload                  6
-   3408                  
+   get_enum_value        
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               586
    load_int               -2147483645
    load_int               -2147483643
    iload                  2
    load_string            "IiI"
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               1
    sload                  0
-   1300                  
+   widget_put_action     
    iload                  1
    load_int               5
    iload                  6
@@ -172,12 +172,12 @@ LABEL99:
    iload                  5
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               17
    load_int               17
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  1
    load_int               4
    iload                  6
@@ -194,14 +194,14 @@ LABEL99:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  4
    load_int               17
    isub                  
    load_int               16
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               1
    widget_put_text_shadowed
    load_int               495
@@ -209,7 +209,7 @@ LABEL99:
    load_int               0
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    sload                  0
    widget_put_text       
    iload                  6
@@ -224,7 +224,7 @@ LABEL99:
    load_int               115
    iload                  0
    iload                  6
-   3408                  
+   get_enum_value        
    sstore                
    jump                   LABEL94
 LABEL223:
@@ -244,5 +244,5 @@ LABEL223:
    load_int               1
    load_string            "gIIIiY"
    iload                  1
-   2407                  
+   widget_put_config_listener_widget
    return                

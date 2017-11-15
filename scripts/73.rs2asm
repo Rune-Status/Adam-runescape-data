@@ -242,7 +242,7 @@ LABEL186:
    invoke                 107
    return                
 LABEL189:
-   042                    60
+   get_varc               60
    get_gamecycle         
    if_icmpgt              LABEL193
    jump                   LABEL194
@@ -252,12 +252,12 @@ LABEL194:
    get_gamecycle         
    load_int               50
    iadd                  
-   043                    60
+   put_varc               60
    load_string            "That player was not found on your Friends list."
    send_game_message     
    return                
 LABEL201:
-   042                    60
+   get_varc               60
    get_gamecycle         
    if_icmpgt              LABEL205
    jump                   LABEL206
@@ -267,7 +267,7 @@ LABEL206:
    get_gamecycle         
    load_int               50
    iadd                  
-   043                    60
+   put_varc               60
    load_string            "You haven't received any messages to which you can reply."
    send_game_message     
    return                

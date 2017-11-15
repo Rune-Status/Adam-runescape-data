@@ -15,7 +15,7 @@ LABEL8:
    iload                  2
    get_item_name         
    load_string            "."
-   037                    2
+   string_append          2
    send_game_message     
 LABEL13:
    return                
@@ -37,7 +37,7 @@ LABEL20:
    load_int               10
    iadd                  
    load_string            "Iiii"
-   1408                  
+   widget_put_render_listener
 LABEL31:
    load_int               2266
    load_int               1

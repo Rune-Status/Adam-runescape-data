@@ -2,25 +2,25 @@
 .string_stack_count 1
 .int_var_count      12
 .string_var_count   1
-   042                    1
+   get_varc               1
    get_gamecycle         
    iload                  3
    iadd                  
    if_icmplt              LABEL6
    jump                   LABEL17
 LABEL6:
-   042                    1
+   get_varc               1
    get_gamecycle         
    if_icmplt              LABEL10
    jump                   LABEL12
 LABEL10:
    get_gamecycle         
-   043                    1
+   put_varc               1
 LABEL12:
-   042                    1
+   get_varc               1
    load_int               2
    iadd                  
-   043                    1
+   put_varc               1
    return                
 LABEL17:
    get_gamecycle         
@@ -28,8 +28,8 @@ LABEL17:
    iadd                  
    load_int               10
    iadd                  
-   043                    1
-   042                    2
+   put_varc               1
+   get_varc               2
    load_int               1
    if_icmpeq              LABEL31
    iload                  2
@@ -205,7 +205,7 @@ LABEL177:
    load_int               0
    load_int               0
    iload                  2
-   2000                  
+   widget_put_position_widget
    iload                  2
    widget_unset_children 
    iload                  2
@@ -216,14 +216,14 @@ LABEL177:
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               16777120
    widget_put_textcolor  
    iload                  2
@@ -234,14 +234,14 @@ LABEL177:
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               0
-   1102                  
+   widget_put_filled     
    load_int               0
    widget_put_textcolor  
    iload                  2
@@ -252,22 +252,22 @@ LABEL177:
    load_int               1
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               2
-   1000                  
+   widget_put_position   
    sload                  0
    widget_put_text       
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               495
    widget_put_fontid     
    load_int               0
    widget_put_textcolor  
    load_int               1
-   043                    2
+   put_varc               2
    return                

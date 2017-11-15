@@ -9,15 +9,15 @@
    idiv                  
    istore                 3
    iload                  3
-   045                   
+   array_load            
    istore                 4
    iload                  3
    iload                  2
-   045                   
-   046                   
+   array_load            
+   array_store           
    iload                  2
    iload                  4
-   046                   
+   array_store           
    iload                  1
    istore                 5
    iload                  1
@@ -31,7 +31,7 @@ LABEL22:
    jump                   LABEL56
 LABEL26:
    iload                  6
-   045                   
+   array_load            
    widget_get_text_widget
    tolowercase           
    iload                  4
@@ -43,15 +43,15 @@ LABEL26:
    jump                   LABEL51
 LABEL37:
    iload                  6
-   045                   
+   array_load            
    istore                 7
    iload                  6
    iload                  5
-   045                   
-   046                   
+   array_load            
+   array_store           
    iload                  5
    iload                  7
-   046                   
+   array_store           
    iload                  5
    load_int               1
    iadd                  
@@ -65,11 +65,11 @@ LABEL51:
 LABEL56:
    iload                  2
    iload                  5
-   045                   
-   046                   
+   array_load            
+   array_store           
    iload                  5
    iload                  4
-   046                   
+   array_store           
    iload                  1
    iload                  5
    load_int               1

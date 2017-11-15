@@ -8,13 +8,13 @@
    load_int               -1
    load_string            ""
    iload                  2
-   2408                  
+   widget_put_render_listener_widget
    iload                  1
    widget_unset_children 
    load_int               28
    load_int               1
    iadd                  
-   044                    105
+   array_initialize       105
    load_int               0
    istore                 3
    load_int               0
@@ -31,7 +31,7 @@ LABEL23:
    load_int               73
    load_int               859
    iload                  4
-   3408                  
+   get_enum_value        
    istore                 5
    iload                  5
    load_int               -1
@@ -50,10 +50,10 @@ LABEL33:
    load_int               34
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  3
    iload                  4
-   046                   
+   array_store           
    iload                  3
    load_int               1
    iadd                  
@@ -70,7 +70,7 @@ LABEL54:
    load_int               0
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
 LABEL65:
    iload                  4
    load_int               1
@@ -120,7 +120,7 @@ LABEL94:
    istore                 7
    iload                  1
    iload                  9
-   045                   
+   array_load            
    widget_load_child     
    load_int               1
    if_icmpeq              LABEL113
@@ -130,18 +130,18 @@ LABEL113:
    iload                  8
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               1
    load_string            "Toggle"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
    load_int               105
    load_int               115
    load_int               860
    iload                  9
-   045                   
-   3408                  
-   037                    2
+   array_load            
+   get_enum_value        
+   string_append          2
    widget_put_name       
    iload                  1
    load_int               5
@@ -155,7 +155,7 @@ LABEL113:
    load_int               30
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    iload                  7
    load_int               2
    iadd                  
@@ -164,85 +164,85 @@ LABEL113:
    iadd                  
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    iload                  9
-   045                   
+   array_load            
    invoke                 468
    iload                  9
-   045                   
+   array_load            
    load_int               25
    if_icmpeq              LABEL164
    iload                  9
-   045                   
+   array_load            
    load_int               26
    if_icmpeq              LABEL164
    jump                   LABEL184
 LABEL164:
    load_int               467
    iload                  9
-   045                   
+   array_load            
    load_int               -2147483645
    load_int               -2147483643
    load_int               5
    load_int               1
    load_int               2
    load_string            "iIiY"
-   1415                   1
+   widget_put_skill_listener 1
    load_int               467
    iload                  9
-   045                   
+   array_load            
    load_int               -2147483645
    load_int               -2147483643
    load_int               1050
    load_int               1
    load_string            "iIiY"
-   1407                   1
+   widget_put_config_listener 1
    jump                   LABEL226
 LABEL184:
    iload                  9
-   045                   
+   array_load            
    load_int               24
    if_icmpeq              LABEL197
    iload                  9
-   045                   
+   array_load            
    load_int               27
    if_icmpeq              LABEL197
    iload                  9
-   045                   
+   array_load            
    load_int               28
    if_icmpeq              LABEL197
    jump                   LABEL217
 LABEL197:
    load_int               467
    iload                  9
-   045                   
+   array_load            
    load_int               -2147483645
    load_int               -2147483643
    load_int               5
    load_int               1
    load_int               2
    load_string            "iIiY"
-   1415                   1
+   widget_put_skill_listener 1
    load_int               467
    iload                  9
-   045                   
+   array_load            
    load_int               -2147483645
    load_int               -2147483643
    load_int               1429
    load_int               1
    load_string            "iIiY"
-   1407                   1
+   widget_put_config_listener 1
    jump                   LABEL226
 LABEL217:
    load_int               467
    iload                  9
-   045                   
+   array_load            
    load_int               -2147483645
    load_int               -2147483643
    load_int               5
    load_int               1
    load_string            "iIiY"
-   1415                   1
+   widget_put_skill_listener 1
 LABEL226:
    load_int               50
    widget_put_opacity     1
@@ -252,14 +252,14 @@ LABEL226:
    load_int               0
    load_int               -1
    load_string            "IiiI"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               244
    load_int               -2147483645
    widget_get_index       1
    load_int               50
    load_int               -1
    load_string            "IiiI"
-   1404                  
+   widget_put_mouse_exit_listener
    iload                  1
    load_int               5
    iload                  6
@@ -272,28 +272,28 @@ LABEL226:
    load_int               36
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    iload                  7
    iload                  8
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    iload                  9
-   045                   
+   array_load            
    invoke                 471
    load_int               470
    iload                  9
-   045                   
+   array_load            
    load_int               -2147483645
    widget_get_index       1
    load_int               84
    load_int               1
    load_string            "iIiY"
-   1407                  
+   widget_put_config_listener
    load_int               469
    load_int               -2147483644
    iload                  9
-   045                   
+   array_load            
    load_int               -2147483645
    widget_get_index       1
    load_string            "iiIi"

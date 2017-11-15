@@ -7,16 +7,16 @@
    sstore                 1
    load_int               12
    istore                
-   042                    5
+   get_varc               5
    load_int               6
    if_icmpeq              LABEL18
-   042                    5
+   get_varc               5
    load_int               9
    if_icmpeq              LABEL18
-   042                    5
+   get_varc               5
    load_int               11
    if_icmpeq              LABEL18
-   042                    5
+   get_varc               5
    load_int               13
    if_icmpeq              LABEL18
    jump                   LABEL21
@@ -25,10 +25,10 @@ LABEL18:
    istore                
    jump                   LABEL47
 LABEL21:
-   042                    5
+   get_varc               5
    load_int               7
    if_icmpeq              LABEL28
-   042                    5
+   get_varc               5
    load_int               12
    if_icmpeq              LABEL28
    jump                   LABEL31
@@ -37,7 +37,7 @@ LABEL28:
    istore                
    jump                   LABEL47
 LABEL31:
-   042                    5
+   get_varc               5
    load_int               14
    if_icmpeq              LABEL35
    jump                   LABEL47
@@ -48,11 +48,11 @@ LABEL35:
    sload                  0
    load_string            "</col>"
    load_string            " "
-   037                    4
+   string_append          4
    sload                  1
    concat_string         
    load_int               20
-   043                    66
+   put_varc               66
    sstore                 1
 LABEL47:
    get_varc_string        22
@@ -79,14 +79,14 @@ LABEL64:
    load_int               1
    load_int               0
    load_int               10616866
-   2114                  
+   widget_put_text_alignment_widget
    jump                   LABEL75
 LABEL70:
    load_int               1
    load_int               1
    load_int               0
    load_int               10616866
-   2114                  
+   widget_put_text_alignment_widget
 LABEL75:
    sload                  1
    load_int               10616866

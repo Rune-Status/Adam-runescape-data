@@ -9,13 +9,13 @@
    if_icmpgt              LABEL6
    jump                   LABEL17
 LABEL6:
-   042                    184
+   get_varc               184
    load_int               1
    if_icmpne              LABEL10
    jump                   LABEL12
 LABEL10:
    load_int               0
-   043                    184
+   put_varc               184
 LABEL12:
    iload                  1
    load_string            "Sort by name"
@@ -59,7 +59,7 @@ LABEL29:
    iload                  7
    load_int               1
    invoke                 1045
-   044                    105
+   array_initialize       105
    load_int               0
    istore                 9
    iload                  7
@@ -70,7 +70,7 @@ LABEL59:
    load_string            "Loading ignore list"
    load_string            "<br>"
    load_string            "Please wait..."
-   037                    3
+   string_append          3
    iload                  5
    widget_put_text_widget
    load_int               1
@@ -92,7 +92,7 @@ LABEL75:
 LABEL79:
    iload                  8
    iload                  8
-   046                   
+   array_store           
    iload                  8
    get_ignore            
    sstore                 1
@@ -109,7 +109,7 @@ LABEL79:
    load_int               15
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               16777215
    widget_put_textcolor  
    load_int               495
@@ -117,17 +117,17 @@ LABEL79:
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    load_string            "<col=ff9040>"
    sload                  0
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    load_int               1
    load_string            "Delete"
-   1300                  
+   widget_put_action     
    load_int               130
    load_string            "event_opbase"
    load_string            "s"
@@ -144,7 +144,7 @@ LABEL79:
    load_int               14
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    load_int               1093
    widget_put_spriteid    1
    load_int               3355443
@@ -158,7 +158,7 @@ LABEL143:
    load_string            "Previous name:"
    load_string            "<br>"
    sload                  1
-   037                    3
+   string_append          3
    sstore                 1
    load_int               526
    load_int               -2147483645
@@ -168,11 +168,11 @@ LABEL143:
    load_int               25
    load_int               190
    load_string            "IiIsii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               40
    iload                  6
    load_string            "I"
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               0
    widget_put_hidden      1
    jump                   LABEL170
@@ -180,7 +180,7 @@ LABEL164:
    load_int               40
    iload                  6
    load_string            "I"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               1
    widget_put_hidden      1
 LABEL170:
@@ -195,10 +195,10 @@ LABEL175:
    if_icmpge              LABEL179
    jump                   LABEL193
 LABEL179:
-   042                    184
+   get_varc               184
    load_int               2
    if_icmpeq              LABEL186
-   042                    184
+   get_varc               184
    load_int               3
    if_icmpeq              LABEL186
    jump                   LABEL193
@@ -216,10 +216,10 @@ LABEL193:
    if_icmpge              LABEL197
    jump                   LABEL309
 LABEL197:
-   042                    184
+   get_varc               184
    load_int               3
    if_icmpeq              LABEL204
-   042                    184
+   get_varc               184
    load_int               1
    if_icmpeq              LABEL204
    jump                   LABEL255
@@ -238,7 +238,7 @@ LABEL210:
    istore                 8
    iload                  3
    iload                  8
-   045                   
+   array_load            
    load_int               2
    imul                  
    widget_load_child     
@@ -248,7 +248,7 @@ LABEL210:
 LABEL223:
    iload                  3
    iload                  8
-   045                   
+   array_load            
    load_int               2
    imul                  
    load_int               1
@@ -262,7 +262,7 @@ LABEL234:
    iload                  9
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    widget_get_text       
    load_int               190
    load_int               495
@@ -272,7 +272,7 @@ LABEL234:
    iload                  9
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
 LABEL249:
    iload                  9
    load_int               15
@@ -292,7 +292,7 @@ LABEL257:
 LABEL261:
    iload                  3
    iload                  8
-   045                   
+   array_load            
    load_int               2
    imul                  
    widget_load_child     
@@ -302,7 +302,7 @@ LABEL261:
 LABEL270:
    iload                  3
    iload                  8
-   045                   
+   array_load            
    load_int               2
    imul                  
    load_int               1
@@ -316,7 +316,7 @@ LABEL281:
    iload                  9
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    widget_get_text       
    load_int               190
    load_int               495
@@ -326,7 +326,7 @@ LABEL281:
    iload                  9
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
 LABEL296:
    iload                  9
    load_int               15

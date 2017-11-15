@@ -21,7 +21,7 @@
    iload                  0
    invoke                 1527
    load_int               100
-   044                    105
+   array_initialize       105
    load_int               0
    istore                 1
    load_int               0
@@ -48,7 +48,7 @@ LABEL32:
 LABEL40:
    iload                  1
    iload                  1
-   046                   
+   array_store           
    iload                  1
    load_int               1
    iadd                  
@@ -67,10 +67,10 @@ LABEL51:
    if_icmpge              LABEL57
    jump                   LABEL94
 LABEL57:
-   042                    181
+   get_varc               181
    load_int               2
    if_icmpeq              LABEL64
-   042                    181
+   get_varc               181
    load_int               3
    if_icmpeq              LABEL64
    jump                   LABEL72
@@ -84,10 +84,10 @@ LABEL64:
    invoke                 1526
    jump                   LABEL94
 LABEL72:
-   042                    181
+   get_varc               181
    load_int               4
    if_icmpeq              LABEL79
-   042                    181
+   get_varc               181
    load_int               5
    if_icmpeq              LABEL79
    jump                   LABEL87
@@ -113,13 +113,13 @@ LABEL94:
    istore                 3
    load_int               0
    istore                 4
-   042                    181
+   get_varc               181
    load_int               3
    if_icmpeq              LABEL108
-   042                    181
+   get_varc               181
    load_int               5
    if_icmpeq              LABEL108
-   042                    181
+   get_varc               181
    load_int               1
    if_icmpeq              LABEL108
    jump                   LABEL192
@@ -138,7 +138,7 @@ LABEL114:
    istore                 3
    load_int               33226762
    iload                  3
-   045                   
+   array_load            
    load_int               6
    imul                  
    widget_load_child     
@@ -150,17 +150,17 @@ LABEL127:
    iload                  4
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  3
    iload                  3
-   045                   
+   array_load            
    iload                  0
    load_int               1
    invoke                 1518
 LABEL138:
    load_int               33226762
    iload                  3
-   045                   
+   array_load            
    load_int               6
    imul                  
    load_int               1
@@ -174,11 +174,11 @@ LABEL149:
    iload                  4
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL154:
    load_int               33226762
    iload                  3
-   045                   
+   array_load            
    load_int               6
    imul                  
    load_int               2
@@ -192,11 +192,11 @@ LABEL165:
    iload                  4
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL170:
    load_int               33226762
    iload                  3
-   045                   
+   array_load            
    load_int               6
    imul                  
    load_int               3
@@ -210,7 +210,7 @@ LABEL181:
    iload                  4
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL186:
    iload                  4
    load_int               14
@@ -227,7 +227,7 @@ LABEL192:
 LABEL196:
    load_int               33226762
    iload                  3
-   045                   
+   array_load            
    load_int               6
    imul                  
    widget_load_child     
@@ -239,17 +239,17 @@ LABEL205:
    iload                  4
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  3
    iload                  3
-   045                   
+   array_load            
    iload                  0
    load_int               1
    invoke                 1518
 LABEL216:
    load_int               33226762
    iload                  3
-   045                   
+   array_load            
    load_int               6
    imul                  
    load_int               1
@@ -263,11 +263,11 @@ LABEL227:
    iload                  4
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL232:
    load_int               33226762
    iload                  3
-   045                   
+   array_load            
    load_int               6
    imul                  
    load_int               2
@@ -281,11 +281,11 @@ LABEL243:
    iload                  4
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL248:
    load_int               33226762
    iload                  3
-   045                   
+   array_load            
    load_int               6
    imul                  
    load_int               3
@@ -299,7 +299,7 @@ LABEL259:
    iload                  4
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL264:
    iload                  4
    load_int               14

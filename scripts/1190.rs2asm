@@ -18,26 +18,26 @@
    if_icmpeq              LABEL15
    jump                   LABEL31
 LABEL15:
-   042                    80
+   get_varc               80
    load_int               0
    if_icmplt              LABEL23
-   042                    80
+   get_varc               80
    iload                  0
    widget_get_scrollheight_widget
    if_icmpge              LABEL23
    jump                   LABEL25
 LABEL23:
    load_int               0
-   043                    80
+   put_varc               80
 LABEL25:
    iload                  1
    iload                  0
-   042                    80
+   get_varc               80
    load_int               1
    invoke                 37
    jump                   LABEL33
 LABEL31:
    load_int               0
-   043                    80
+   put_varc               80
 LABEL33:
    return                

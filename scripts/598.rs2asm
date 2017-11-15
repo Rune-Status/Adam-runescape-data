@@ -20,7 +20,7 @@ LABEL10:
    load_string            ":"
    iload                  3
    int_to_string         
-   037                    3
+   string_append          3
    widget_put_text       
    jump                   LABEL29
 LABEL20:
@@ -31,7 +31,7 @@ LABEL20:
    load_string            ":0"
    iload                  3
    int_to_string         
-   037                    3
+   string_append          3
    widget_put_text       
 LABEL29:
    load_int               597
@@ -41,7 +41,7 @@ LABEL29:
    iload                  2
    load_string            "IIii"
    iload                  0
-   2408                  
+   widget_put_render_listener_widget
    iload                  2
    load_int               500
    if_icmpgt              LABEL41

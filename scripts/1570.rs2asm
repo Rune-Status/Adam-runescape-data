@@ -33,7 +33,7 @@
    load_string            "Sort by age"
    invoke                 1572
    load_int               40
-   044                    105
+   array_initialize       105
    load_int               0
    istore                
    load_int               0
@@ -48,7 +48,7 @@ LABEL40:
    load_int               73
    load_int               1537
    iload                  0
-   3408                  
+   get_enum_value        
    load_int               0
    widget_load_child     
    load_int               1
@@ -57,7 +57,7 @@ LABEL40:
 LABEL50:
    iload                  0
    iload                  0
-   046                   
+   array_store           
    iload                  0
    load_int               1
    iadd                  
@@ -76,10 +76,10 @@ LABEL62:
    if_icmpge              LABEL68
    jump                   LABEL150
 LABEL68:
-   042                    180
+   get_varc               180
    load_int               2
    if_icmpeq              LABEL75
-   042                    180
+   get_varc               180
    load_int               3
    if_icmpeq              LABEL75
    jump                   LABEL83
@@ -93,10 +93,10 @@ LABEL75:
    invoke                 1571
    jump                   LABEL150
 LABEL83:
-   042                    180
+   get_varc               180
    load_int               4
    if_icmpeq              LABEL90
-   042                    180
+   get_varc               180
    load_int               5
    if_icmpeq              LABEL90
    jump                   LABEL98
@@ -110,10 +110,10 @@ LABEL90:
    invoke                 1571
    jump                   LABEL150
 LABEL98:
-   042                    180
+   get_varc               180
    load_int               6
    if_icmpeq              LABEL105
-   042                    180
+   get_varc               180
    load_int               7
    if_icmpeq              LABEL105
    jump                   LABEL113
@@ -127,10 +127,10 @@ LABEL105:
    invoke                 1571
    jump                   LABEL150
 LABEL113:
-   042                    180
+   get_varc               180
    load_int               8
    if_icmpeq              LABEL120
-   042                    180
+   get_varc               180
    load_int               9
    if_icmpeq              LABEL120
    jump                   LABEL128
@@ -144,10 +144,10 @@ LABEL120:
    invoke                 1571
    jump                   LABEL150
 LABEL128:
-   042                    180
+   get_varc               180
    load_int               10
    if_icmpeq              LABEL135
-   042                    180
+   get_varc               180
    load_int               11
    if_icmpeq              LABEL135
    jump                   LABEL143
@@ -177,22 +177,22 @@ LABEL150:
    istore                 4
    load_string            ""
    sstore                 1
-   042                    180
+   get_varc               180
    load_int               1
    if_icmpeq              LABEL177
-   042                    180
+   get_varc               180
    load_int               3
    if_icmpeq              LABEL177
-   042                    180
+   get_varc               180
    load_int               5
    if_icmpeq              LABEL177
-   042                    180
+   get_varc               180
    load_int               7
    if_icmpeq              LABEL177
-   042                    180
+   get_varc               180
    load_int               9
    if_icmpeq              LABEL177
-   042                    180
+   get_varc               180
    load_int               11
    if_icmpeq              LABEL177
    jump                   LABEL228
@@ -213,8 +213,8 @@ LABEL183:
    load_int               73
    load_int               1537
    iload                  2
-   045                   
-   3408                  
+   array_load            
+   get_enum_value        
    istore                 4
    iload                  4
    load_int               -1
@@ -226,7 +226,7 @@ LABEL198:
    load_int               1
    load_int               0
    iload                  4
-   2000                  
+   widget_put_position_widget
    iload                  4
    load_int               0
    widget_load_child     
@@ -244,7 +244,7 @@ LABEL216:
    iload                  2
    iload                  4
    iload                  2
-   045                   
+   array_load            
    widget_get_text        1
    invoke                 1567
 LABEL222:
@@ -265,8 +265,8 @@ LABEL232:
    load_int               73
    load_int               1537
    iload                  2
-   045                   
-   3408                  
+   array_load            
+   get_enum_value        
    istore                 4
    iload                  4
    load_int               -1
@@ -278,7 +278,7 @@ LABEL243:
    load_int               1
    load_int               0
    iload                  4
-   2000                  
+   widget_put_position_widget
    iload                  4
    load_int               0
    widget_load_child     
@@ -296,7 +296,7 @@ LABEL261:
    iload                  2
    iload                  4
    iload                  2
-   045                   
+   array_load            
    widget_get_text        1
    invoke                 1567
 LABEL267:

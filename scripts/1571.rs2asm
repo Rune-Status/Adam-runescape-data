@@ -9,15 +9,15 @@
    idiv                  
    istore                 4
    iload                  4
-   045                   
+   array_load            
    istore                 5
    iload                  4
    iload                  2
-   045                   
-   046                   
+   array_load            
+   array_store           
    iload                  2
    iload                  5
-   046                   
+   array_store           
    iload                  1
    istore                 6
    iload                  1
@@ -38,8 +38,8 @@ LABEL30:
    load_int               73
    load_int               1537
    iload                  7
-   045                   
-   3408                  
+   array_load            
+   get_enum_value        
    iload                  3
    widget_load_child     
    load_int               1
@@ -58,7 +58,7 @@ LABEL47:
    load_int               73
    load_int               1537
    iload                  5
-   3408                  
+   get_enum_value        
    iload                  3
    widget_load_child     
    load_int               1
@@ -81,15 +81,15 @@ LABEL63:
    jump                   LABEL83
 LABEL69:
    iload                  7
-   045                   
+   array_load            
    istore                 8
    iload                  7
    iload                  6
-   045                   
-   046                   
+   array_load            
+   array_store           
    iload                  6
    iload                  8
-   046                   
+   array_store           
    iload                  6
    load_int               1
    iadd                  
@@ -103,11 +103,11 @@ LABEL83:
 LABEL88:
    iload                  2
    iload                  6
-   045                   
-   046                   
+   array_load            
+   array_store           
    iload                  6
    iload                  5
-   046                   
+   array_store           
    iload                  1
    iload                  6
    load_int               1

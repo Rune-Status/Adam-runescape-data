@@ -22,7 +22,7 @@
    load_int               0
    istore                 10
    iload                  1
-   044                    111
+   array_initialize       111
    load_int               0
    istore                 11
    load_int               0
@@ -78,7 +78,7 @@ LABEL62:
 LABEL66:
    iload                  10
    iload                  6
-   046                   
+   array_store           
    iload                  7
    load_int               1
    isub                  
@@ -109,7 +109,7 @@ LABEL86:
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               5
    iload                  4
    load_int               40
@@ -118,9 +118,9 @@ LABEL86:
    load_int               25
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  4
-   045                   
+   array_load            
    istore                 6
    iload                  6
    load_int               -1
@@ -133,11 +133,11 @@ LABEL111:
    load_string            "<col=ff981f>"
    iload                  6
    get_item_name         
-   037                    2
+   string_append          2
    widget_put_name       
    load_int               1
    load_string            "Item:"
-   1300                  
+   widget_put_action     
    load_int               1603
    load_int               1
    load_int               1
@@ -186,7 +186,7 @@ LABEL156:
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               5
    iload                  5
    load_int               8
@@ -203,7 +203,7 @@ LABEL156:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  6
    load_int               468
    iload                  4
@@ -212,11 +212,11 @@ LABEL156:
    load_string            "<col=ff981f>"
    iload                  6
    get_item_name         
-   037                    2
+   string_append          2
    widget_put_name       
    load_int               1
    load_string            "Item:"
-   1300                  
+   widget_put_action     
    load_int               1603
    load_int               0
    load_int               468
@@ -232,7 +232,7 @@ LABEL156:
    load_int               49
    load_int               879
    iload                  6
-   3408                  
+   get_enum_value        
    load_int               1
    if_icmpeq              LABEL214
    jump                   LABEL219
@@ -267,7 +267,7 @@ LABEL234:
    jump                   LABEL252
 LABEL238:
    iload                  10
-   045                   
+   array_load            
    iload                  6
    if_icmpeq              LABEL243
    jump                   LABEL247
@@ -312,7 +312,7 @@ LABEL272:
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               5
    iload                  5
    load_int               8
@@ -329,18 +329,18 @@ LABEL272:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  6
    iload                  11
    1200                  
    load_string            "<col=ff981f>"
    iload                  6
    get_item_name         
-   037                    2
+   string_append          2
    widget_put_name       
    load_int               1
    load_string            "Item:"
-   1300                  
+   widget_put_action     
    load_int               1603
    load_int               0
    iload                  11
@@ -354,7 +354,7 @@ LABEL272:
    load_int               49
    load_int               879
    iload                  6
-   3408                  
+   get_enum_value        
    load_int               1
    if_icmpeq              LABEL326
    jump                   LABEL331
@@ -384,7 +384,7 @@ LABEL342:
    load_string            "."
    load_string            "<br>"
    load_string            "<br>"
-   037                    5
+   string_append          5
    sstore                 2
    iload                  3
    load_int               1
@@ -397,7 +397,7 @@ LABEL353:
    load_string            "Ultimate Iron Man"
    load_string            "<col=ff981f>"
    load_string            ", so you will always keep zero items."
-   037                    5
+   string_append          5
    concat_string         
    sstore                 2
    jump                   LABEL426
@@ -415,7 +415,7 @@ LABEL367:
    load_string            ". This reduces the items you keep from "
    load_string            "three"
    load_string            " to zero!"
-   037                    7
+   string_append          7
    concat_string         
    sstore                 2
    jump                   LABEL426
@@ -440,7 +440,7 @@ LABEL383:
    load_string            "Protect Items"
    load_string            "<col=ff981f>"
    load_string            " prayer active, which saves you one extra item!"
-   037                    14
+   string_append          14
    concat_string         
    sstore                 2
    jump                   LABEL426
@@ -469,7 +469,7 @@ LABEL417:
    load_string            "Protect Items"
    load_string            "<col=ff981f>"
    load_string            " prayer active, which saves you one extra item!"
-   037                    5
+   string_append          5
    concat_string         
    sstore                 2
 LABEL426:
@@ -504,7 +504,7 @@ LABEL441:
    load_string            "Bonds"
    load_string            "</col>"
    load_string            " are always protected."
-   037                    12
+   string_append          12
    concat_string         
    sstore                 2
    jump                   LABEL484
@@ -522,7 +522,7 @@ LABEL462:
    load_string            "white outline"
    load_string            "<col=ff981f>"
    load_string            " will always be lost."
-   037                    7
+   string_append          7
    concat_string         
    sstore                 2
    jump                   LABEL484
@@ -534,7 +534,7 @@ LABEL474:
    load_string            "Bonds"
    load_string            "</col>"
    load_string            " are always protected, so are not shown here."
-   037                    6
+   string_append          6
    concat_string         
    sstore                 2
 LABEL484:
@@ -550,7 +550,7 @@ LABEL484:
    iload                  1
    int_to_string         
    load_string            " ~"
-   037                    8
+   string_append          8
    load_int               262174
    widget_put_text_widget
    iload                  2
@@ -592,7 +592,7 @@ LABEL517:
    load_string            "."
    load_string            "<br>"
    load_string            "<br>"
-   037                    5
+   string_append          5
    sstore                 2
    sload                  2
    load_string            "You're in a "
@@ -600,7 +600,7 @@ LABEL517:
    load_string            "safe area"
    load_string            "<col=ff981f>"
    load_string            ". See information to the left for a more detailed description."
-   037                    5
+   string_append          5
    concat_string         
    sstore                 2
    sload                  2
@@ -612,7 +612,7 @@ LABEL517:
    load_string            "<br>"
    load_string            "<col=ffcc33>"
    load_string            "All items!"
-   037                    6
+   string_append          6
    load_int               262174
    widget_put_text_widget
 LABEL557:

@@ -9,15 +9,15 @@
    idiv                  
    istore                 4
    iload                  4
-   045                   
+   array_load            
    istore                 5
    iload                  4
    iload                  3
-   045                   
-   046                   
+   array_load            
+   array_store           
    iload                  3
    iload                  5
-   046                   
+   array_store           
    iload                  2
    istore                 6
    iload                  2
@@ -36,7 +36,7 @@ LABEL26:
 LABEL30:
    iload                  1
    iload                  7
-   045                   
+   array_load            
    widget_load_child     
    load_int               1
    if_icmpeq              LABEL37
@@ -73,15 +73,15 @@ LABEL53:
    jump                   LABEL75
 LABEL61:
    iload                  7
-   045                   
+   array_load            
    istore                 8
    iload                  7
    iload                  6
-   045                   
-   046                   
+   array_load            
+   array_store           
    iload                  6
    iload                  8
-   046                   
+   array_store           
    iload                  6
    load_int               1
    iadd                  
@@ -95,11 +95,11 @@ LABEL75:
 LABEL80:
    iload                  3
    iload                  6
-   045                   
-   046                   
+   array_load            
+   array_store           
    iload                  6
    iload                  5
-   046                   
+   array_store           
    iload                  2
    iload                  6
    load_int               1

@@ -32,7 +32,7 @@ LABEL12:
    load_int               0
    load_int               0
    iload                  7
-   2000                  
+   widget_put_position_widget
    load_int               1
    iload                  6
    widget_put_hidden_widget
@@ -40,7 +40,7 @@ LABEL12:
    load_int               79
    load_int               840
    iload                  2
-   3408                  
+   get_enum_value        
    istore                 8
    iload                  8
    load_int               -1
@@ -57,22 +57,22 @@ LABEL43:
    load_int               115
    load_int               843
    iload                  8
-   3408                  
+   get_enum_value        
    load_string            "<br>"
    load_string            "<br>"
-   037                    8
+   string_append          8
    sstore                
    load_int               111
    load_int               105
    load_int               842
    iload                  8
-   3408                  
+   get_enum_value        
    istore                 9
    load_int               111
    load_int               105
    load_int               841
    iload                  8
-   3408                  
+   get_enum_value        
    istore                 10
    iload                  9
    load_int               1
@@ -91,7 +91,7 @@ LABEL78:
    load_string            " points for "
    iload                  10
    int_to_string         
-   037                    4
+   string_append          4
    concat_string         
    sstore                
    jump                   LABEL97
@@ -101,7 +101,7 @@ LABEL89:
    iload                  9
    int_to_string         
    load_string            " points each"
-   037                    3
+   string_append          3
    concat_string         
    sstore                
 LABEL97:
@@ -116,7 +116,7 @@ LABEL102:
    load_string            "Cost: 1 point for "
    iload                  10
    int_to_string         
-   037                    2
+   string_append          2
    concat_string         
    sstore                
    jump                   LABEL114
@@ -173,6 +173,6 @@ LABEL144:
    load_int               10
    iadd                  
    load_string            "Iii"
-   1408                  
+   widget_put_render_listener
 LABEL158:
    return                

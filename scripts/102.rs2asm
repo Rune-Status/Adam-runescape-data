@@ -2,10 +2,10 @@
 .string_stack_count 1
 .int_var_count      0
 .string_var_count   1
-   042                    5
+   get_varc               5
    load_int               0
    if_icmple              LABEL7
-   042                    5
+   get_varc               5
    load_int               1
    if_icmpeq              LABEL7
    jump                   LABEL34
@@ -18,16 +18,16 @@ LABEL7:
    load_string            "Tap"
    invoke                 1971
    load_string            " to continue"
-   037                    2
+   string_append          2
    load_int               10616866
    widget_put_text_widget
    load_int               1
    load_int               1
    load_int               0
    load_int               10616866
-   2114                  
+   widget_put_text_alignment_widget
    load_int               1
-   043                    5
+   put_varc               5
    load_int               101
    load_int               1
    load_string            "i"

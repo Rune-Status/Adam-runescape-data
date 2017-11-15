@@ -44,7 +44,7 @@ LABEL35:
    iload                  9
    load_int               3
    if_icmplt              LABEL42
-   042                    103
+   get_varc               103
    load_int               1
    if_icmpeq              LABEL42
    jump                   LABEL44
@@ -236,16 +236,16 @@ LABEL189:
    load_string            "Buy"
    load_string            "</col>"
    load_string            " offer"
-   037                    5
-   1300                  
+   string_append          5
+   widget_put_action     
    load_int               1
    load_string            "Create "
    load_string            "<col=ff9040>"
    load_string            "Sell"
    load_string            "</col>"
    load_string            " offer"
-   037                    5
-   1300                   1
+   string_append          5
+   widget_put_action      1
    load_int               805
    load_int               -2147483644
    iload                  9
@@ -278,28 +278,28 @@ LABEL189:
    iload                  33
    load_int               -1
    load_string            "IidI"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               229
    iload                  8
    iload                  26
    iload                  35
    load_int               -1
    load_string            "IidI"
-   1403                   1
+   widget_put_mouse_enter_listener 1
    load_int               229
    iload                  8
    iload                  25
    iload                  32
    iload                  27
    load_string            "IidI"
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               229
    iload                  8
    iload                  26
    iload                  34
    iload                  27
    load_string            "IidI"
-   1404                   1
+   widget_put_mouse_exit_listener 1
    load_int               526
    load_int               -2147483645
    load_int               -2147483643
@@ -308,7 +308,7 @@ LABEL189:
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_string            "Offer to SELL items."
    sstore                 1
    load_int               526
@@ -319,7 +319,7 @@ LABEL189:
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   1412                   1
+   widget_put_mouse_hover_listener 1
    iload                  8
    iload                  25
    widget_load_child     
@@ -355,22 +355,22 @@ LABEL300:
    1409                   1
    load_int               -1
    load_string            ""
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               -1
    load_string            ""
-   1403                   1
+   widget_put_mouse_enter_listener 1
    load_int               -1
    load_string            ""
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               -1
    load_string            ""
-   1404                   1
+   widget_put_mouse_exit_listener 1
    load_int               -1
    load_string            ""
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               -1
    load_string            ""
-   1412                   1
+   widget_put_mouse_hover_listener 1
    iload                  8
    iload                  25
    widget_load_child     
@@ -518,18 +518,18 @@ LABEL440:
    load_int               245
    load_int               -1
    load_string            "IiiI"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               244
    iload                  8
    iload                  12
    load_int               255
    iload                  27
    load_string            "IiiI"
-   1404                  
+   widget_put_mouse_exit_listener
    widget_put_actions_null
    load_int               1
    load_string            "View offer"
-   1300                  
+   widget_put_action     
    iload                  36
    load_int               1
    if_icmpeq              LABEL466
@@ -562,7 +562,7 @@ LABEL479:
    iload                  29
    sload                  2
    invoke                 46
-   037                    6
+   string_append          6
    sstore                 1
    jump                   LABEL509
 LABEL493:
@@ -577,11 +577,11 @@ LABEL493:
    iload                  29
    sload                  2
    invoke                 46
-   037                    6
+   string_append          6
    sstore                 1
    load_int               2
    load_string            "Abort offer"
-   1300                  
+   widget_put_action     
 LABEL509:
    jump                   LABEL545
 LABEL510:
@@ -602,7 +602,7 @@ LABEL515:
    iload                  29
    sload                  2
    invoke                 46
-   037                    6
+   string_append          6
    sstore                 1
    jump                   LABEL545
 LABEL529:
@@ -617,11 +617,11 @@ LABEL529:
    iload                  29
    sload                  2
    invoke                 46
-   037                    6
+   string_append          6
    sstore                 1
    load_int               2
    load_string            "Abort offer"
-   1300                  
+   widget_put_action     
 LABEL545:
    load_int               526
    load_int               -2147483645
@@ -631,7 +631,7 @@ LABEL545:
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   1412                  
+   widget_put_mouse_hover_listener
 LABEL554:
    iload                  8
    iload                  16
@@ -762,7 +762,7 @@ LABEL662:
    load_string            ","
    invoke                 46
    load_string            " coins"
-   037                    2
+   string_append          2
    widget_put_text       
 LABEL668:
    jump                   LABEL671

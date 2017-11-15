@@ -9,7 +9,7 @@
    if_icmpeq              LABEL6
    jump                   LABEL62
 LABEL6:
-   042                    171
+   get_varc               171
    load_int               -1
    if_icmpne              LABEL10
    jump                   LABEL16
@@ -17,15 +17,15 @@ LABEL10:
    load_int               105
    load_int               73
    load_int               1137
-   042                    171
-   3408                  
+   get_varc               171
+   get_enum_value        
    istore                 1
 LABEL16:
    load_int               73
    load_int               73
    iload                  0
    load_int               10551362
-   3408                  
+   get_enum_value        
    widget_get_index_widget
    load_int               1
    if_icmpeq              LABEL37
@@ -38,7 +38,7 @@ LABEL28:
    load_int               73
    iload                  0
    iload                  1
-   3408                  
+   get_enum_value        
    widget_get_index_widget
    load_int               1
    if_icmpeq              LABEL37

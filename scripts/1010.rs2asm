@@ -11,7 +11,7 @@
    load_int               115
    load_int               1164
    load_int               -1
-   3408                  
+   get_enum_value        
    load_string            "Controls the position of the XP display and droplets."
    load_int               170
    iload                  1
@@ -42,7 +42,7 @@
    load_int               115
    load_int               1165
    load_int               -1
-   3408                  
+   get_enum_value        
    load_string            "Controls the text size used by the XP display and droplets."
    load_int               180
    iload                  1
@@ -73,7 +73,7 @@
    load_int               115
    load_int               1166
    load_int               -1
-   3408                  
+   get_enum_value        
    load_string            "Controls how long the XP display remains visible after each event."
    load_int               200
    iload                  1
@@ -116,7 +116,7 @@
    load_string            "tracker"
    load_string            "</col>"
    load_string            " has been set for the skill, the panel will show XP gained since the tracker's start point."
-   037                    15
+   string_append          15
    load_int               300
    iload                  1
    iload                  4
@@ -161,7 +161,7 @@
    load_string            "<br>"
    load_string            "<br>"
    load_string            "Otherwise it will show progress towards the next level."
-   037                    18
+   string_append          18
    load_int               300
    iload                  1
    iload                  4
@@ -191,7 +191,7 @@
    load_int               115
    load_int               1168
    load_int               -1
-   3408                  
+   get_enum_value        
    load_string            "Controls the text colour of the droplets."
    load_int               150
    iload                  1
@@ -222,7 +222,7 @@
    load_int               115
    load_int               1170
    load_int               -1
-   3408                  
+   get_enum_value        
    load_string            "When multiple skills increase together, their droplets may be grouped, within limits."
    load_int               300
    iload                  1
@@ -253,7 +253,7 @@
    load_int               115
    load_int               1140
    load_int               -1
-   3408                  
+   get_enum_value        
    load_string            "Droplet speed."
    load_int               200
    iload                  1
@@ -280,7 +280,7 @@
    invoke                 1011
    load_int               1
    iload                  5
-   2005                  
+   widget_put_no_click_through_widget
    load_int               1037
    iload                  4
    iload                  45
@@ -317,11 +317,11 @@
    load_int               1
    load_string            "IIIIIIIIY"
    iload                  0
-   2407                  
+   widget_put_config_listener_widget
    iload                  25
    widget_unset_children 
    load_int               23
-   044                    83
+   array_initialize       83
    load_int               0
    istore                 46
 LABEL322:
@@ -338,23 +338,23 @@ LABEL326:
    load_int               25
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    iload                  46
    load_int               25
    imul                  
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               1015
    load_int               -2147483645
    load_int               -2147483643
    load_int               16777215
    load_int               225
    load_string            "Iiii"
-   1403                  
+   widget_put_mouse_enter_listener
    iload                  46
    load_int               2
    modulo                
@@ -372,7 +372,7 @@ LABEL357:
    load_int               16777215
    load_int               255
    load_string            "Iiii"
-   1404                  
+   widget_put_mouse_exit_listener
    jump                   LABEL380
 LABEL369:
    load_int               0
@@ -385,11 +385,11 @@ LABEL369:
    load_int               0
    load_int               225
    load_string            "Iiii"
-   1404                  
+   widget_put_mouse_exit_listener
 LABEL380:
    load_int               1
    load_string            "Configure"
-   1300                  
+   widget_put_action     
    iload                  46
    load_int               23
    if_icmplt              LABEL387
@@ -402,23 +402,23 @@ LABEL387:
    iload                  46
    load_int               1
    iadd                  
-   3408                  
-   046                   
+   get_enum_value        
+   array_store           
    load_string            "<col=ff9040>"
    load_int               83
    load_int               115
    load_int               680
    iload                  46
-   045                   
-   3408                  
+   array_load            
+   get_enum_value        
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    load_int               1023
    load_int               -2147483644
    load_int               -2147483643
    iload                  46
-   045                   
+   array_load            
    iload                  3
    iload                  24
    iload                  25
@@ -448,7 +448,7 @@ LABEL436:
    load_string            "<col=ff9040>"
    load_string            "Total XP"
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    load_int               1023
    load_int               -2147483644
@@ -511,12 +511,12 @@ LABEL482:
    load_int               25
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    iload                  47
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  48
    load_int               23
    if_icmplt              LABEL508
@@ -526,8 +526,8 @@ LABEL508:
    load_int               100
    load_int               255
    iload                  48
-   045                   
-   3408                  
+   array_load            
+   get_enum_value        
    widget_put_spriteid   
    jump                   LABEL518
 LABEL516:
@@ -546,12 +546,12 @@ LABEL518:
    load_int               25
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               28
    iload                  47
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               16758847
    widget_put_textcolor  
    load_int               495
@@ -559,7 +559,7 @@ LABEL518:
    load_int               0
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    iload                  48
@@ -571,8 +571,8 @@ LABEL550:
    load_int               115
    load_int               680
    iload                  48
-   045                   
-   3408                  
+   array_load            
+   get_enum_value        
    widget_put_text       
    jump                   LABEL560
 LABEL558:
@@ -591,12 +591,12 @@ LABEL560:
    load_int               26
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    iload                  47
    load_int               2
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               16750623
    widget_put_textcolor  
    load_int               494
@@ -604,7 +604,7 @@ LABEL560:
    load_int               0
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    iload                  48
@@ -670,12 +670,12 @@ LABEL619:
    load_int               20
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               5
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               16750623
    widget_put_textcolor  
    load_int               496
@@ -683,7 +683,7 @@ LABEL619:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    load_int               -1
@@ -712,7 +712,7 @@ LABEL619:
    load_int               -2147483645
    load_string            "1isI"
    iload                  43
-   2403                  
+   widget_put_mouse_enter_listener_widget
    load_int               1017
    load_int               0
    load_int               16719904
@@ -720,7 +720,7 @@ LABEL619:
    load_int               -2147483645
    load_string            "1isI"
    iload                  43
-   2404                  
+   widget_put_mouse_exit_listener_widget
    load_int               1023
    load_int               -2147483644
    load_int               -1
@@ -765,7 +765,7 @@ LABEL619:
    load_int               -2147483645
    load_string            "1isI"
    iload                  44
-   2403                  
+   widget_put_mouse_enter_listener_widget
    load_int               1017
    load_int               0
    load_int               65280
@@ -773,7 +773,7 @@ LABEL619:
    load_int               -2147483645
    load_string            "1isI"
    iload                  44
-   2404                  
+   widget_put_mouse_exit_listener_widget
    load_int               1019
    load_int               -2147483644
    load_int               -2147483645
@@ -882,5 +882,5 @@ LABEL619:
    load_int               51
    load_string            "IIIIIIIIIIIIIIIIIIIIIIY"
    iload                  2
-   2407                  
+   widget_put_config_listener_widget
    return                

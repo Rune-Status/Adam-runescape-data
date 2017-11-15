@@ -4,12 +4,12 @@
 .string_var_count   4
    load_string            ""
    sstore                
-   042                    64
+   get_varc               64
    load_int               0
    if_icmpgt              LABEL6
    jump                   LABEL20
 LABEL6:
-   042                    64
+   get_varc               64
    load_int               18
    if_icmple              LABEL10
    jump                   LABEL20
@@ -17,8 +17,8 @@ LABEL10:
    load_int               105
    load_int               115
    load_int               848
-   042                    64
-   3408                  
+   get_varc               64
+   get_enum_value        
    sstore                
    sload                  0
    load_int               4980747
@@ -26,7 +26,7 @@ LABEL10:
    jump                   LABEL25
 LABEL20:
    load_int               0
-   043                    64
+   put_varc               64
    load_string            "Select a minigame..."
    load_int               4980747
    widget_put_text_widget
@@ -34,8 +34,8 @@ LABEL25:
    load_int               105
    load_int               105
    load_int               850
-   042                    64
-   3408                  
+   get_varc               64
+   get_enum_value        
    istore                
    iload                  0
    load_int               -1
@@ -50,12 +50,12 @@ LABEL35:
    widget_put_textcolor_widget
    jump                   LABEL67
 LABEL42:
-   042                    64
+   get_varc               64
    load_int               4
    if_icmpeq              LABEL46
    jump                   LABEL52
 LABEL46:
-   042                    103
+   get_varc               103
    load_int               0
    if_icmpeq              LABEL50
    jump                   LABEL52
@@ -87,7 +87,7 @@ LABEL67:
    istore                 1
 LABEL71:
    iload                  1
-   042                    64
+   get_varc               64
    if_icmplt              LABEL75
    jump                   LABEL86
 LABEL75:
@@ -105,32 +105,32 @@ LABEL75:
 LABEL86:
    load_int               4980765
    load_int               3
-   042                    64
+   get_varc               64
    widget_create_child   
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               4980765
    widget_get_width_widget
    load_int               4980765
    widget_get_height_widget
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               255
    widget_put_opacity    
-   042                    64
+   get_varc               64
    load_int               0
    if_icmpeq              LABEL110
    jump                   LABEL114
 LABEL110:
    load_int               1
    load_string            "Teleport"
-   1300                  
+   widget_put_action     
    jump                   LABEL121
 LABEL114:
    load_int               1
@@ -138,8 +138,8 @@ LABEL114:
    load_string            "<col=ff8040>"
    sload                  0
    load_string            "</col>"
-   037                    4
-   1300                  
+   string_append          4
+   widget_put_action     
 LABEL121:
    load_int               0
    istore                 2
@@ -152,7 +152,7 @@ LABEL121:
    load_int               115
    load_int               849
    iload                  3
-   3408                  
+   get_enum_value        
    sstore                 2
 LABEL134:
    sload                  2
@@ -179,11 +179,11 @@ LABEL147:
    load_int               115
    load_int               849
    iload                  3
-   3408                  
+   get_enum_value        
    sstore                 2
    jump                   LABEL134
 LABEL158:
-   042                    64
+   get_varc               64
    load_int               0
    if_icmpeq              LABEL162
    jump                   LABEL172
@@ -200,7 +200,7 @@ LABEL162:
    jump                   LABEL211
 LABEL172:
    iload                  2
-   042                    64
+   get_varc               64
    if_icmpne              LABEL176
    jump                   LABEL194
 LABEL176:
@@ -213,11 +213,11 @@ LABEL176:
    sload                  0
    load_string            "</col>"
    load_string            " channel"
-   037                    5
+   string_append          5
    load_int               4980762
    2300                  
    load_int               437
-   042                    64
+   get_varc               64
    load_string            "i"
    load_int               4980762
    2409                  
@@ -232,7 +232,7 @@ LABEL194:
    sload                  0
    load_string            "</col>"
    load_string            " channel"
-   037                    5
+   string_append          5
    load_int               4980762
    2300                  
    load_int               437
@@ -293,7 +293,7 @@ LABEL238:
    iload                  2
    load_int               0
    if_icmpeq              LABEL266
-   042                    64
+   get_varc               64
    iload                  2
    if_icmpne              LABEL266
    jump                   LABEL364
@@ -321,7 +321,7 @@ LABEL266:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    iload                  2
@@ -336,12 +336,12 @@ LABEL296:
    widget_get_height_widget
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    return                
 LABEL310:
    load_string            "You are currently talking in the "
@@ -350,10 +350,10 @@ LABEL310:
    load_int               115
    load_int               848
    iload                  2
-   3408                  
+   get_enum_value        
    load_string            "</col>"
    load_string            " channel."
-   037                    5
+   string_append          5
    sstore                 1
    sload                  1
    iload                  5
@@ -368,7 +368,7 @@ LABEL310:
    iload                  10
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               4980751
    widget_get_height_widget
@@ -378,7 +378,7 @@ LABEL310:
    idiv                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    sload                  1
    widget_put_text       
    load_int               85
@@ -386,13 +386,13 @@ LABEL310:
    load_int               -2147483643
    load_int               16758831
    load_string            "Iii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               85
    load_int               -2147483645
    load_int               -2147483643
    load_int               16750623
    load_string            "Iii"
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               124
    iload                  2
    load_string            "i"
@@ -446,22 +446,22 @@ LABEL374:
    load_int               13
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  5
    load_int               13
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    load_int               10
    iload                  10
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               0
    iload                  10
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    load_int               494
    widget_put_fontid     
    load_int               494
@@ -483,11 +483,11 @@ LABEL440:
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               2
    load_int               0
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    load_int               1
    widget_put_text_shadowed
    load_int               1
@@ -497,7 +497,7 @@ LABEL440:
    load_string            "World "
    iload                  0
    int_to_string         
-   037                    2
+   string_append          2
    widget_put_text        1
    load_int               4980751
    load_int               5
@@ -511,19 +511,19 @@ LABEL440:
    load_int               9
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    iload                  10
    load_int               1
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               105
    load_int               100
    load_int               706
    iload                  6
-   3408                  
+   get_enum_value        
    widget_put_spriteid   
    load_int               4980751
    load_int               3
@@ -537,14 +537,14 @@ LABEL440:
    load_int               13
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    iload                  10
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               255
    widget_put_opacity    
    load_int               214
@@ -567,8 +567,8 @@ LABEL522:
    load_int               9
    load_string            "Remove friend "
    sload                  3
-   037                    2
-   1300                  
+   string_append          2
+   widget_put_action     
    jump                   LABEL549
 LABEL528:
    sload                  3
@@ -580,20 +580,20 @@ LABEL533:
    load_int               10
    load_string            "Remove ignore "
    sload                  3
-   037                    2
-   1300                  
+   string_append          2
+   widget_put_action     
    jump                   LABEL549
 LABEL539:
    load_int               7
    load_string            "Add friend "
    sload                  3
-   037                    2
-   1300                  
+   string_append          2
+   widget_put_action     
    load_int               8
    load_string            "Add ignore "
    sload                  3
-   037                    2
-   1300                  
+   string_append          2
+   widget_put_action     
 LABEL549:
    iload                  8
    iload                  7
@@ -608,8 +608,8 @@ LABEL557:
    load_int               6
    load_string            "Kick user "
    sload                  3
-   037                    2
-   1300                  
+   string_append          2
+   widget_put_action     
 LABEL562:
    iload                  10
    load_int               13
@@ -656,12 +656,12 @@ LABEL583:
    widget_get_height_widget
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               495
    widget_put_fontid     
    load_int               16750623
@@ -669,7 +669,7 @@ LABEL583:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    load_string            "The channel is empty."
@@ -714,16 +714,16 @@ LABEL623:
    load_int               12
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               16777215
    widget_put_textcolor  
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               230
    widget_put_opacity    
    load_int               1
@@ -734,7 +734,7 @@ LABEL623:
    load_int               115
    load_int               849
    iload                  3
-   3408                  
+   get_enum_value        
    sstore                 2
 LABEL682:
    sload                  2
@@ -743,7 +743,7 @@ LABEL682:
    if_icmpgt              LABEL687
    jump                   LABEL760
 LABEL687:
-   042                    64
+   get_varc               64
    iload                  3
    if_icmpne              LABEL691
    jump                   LABEL749
@@ -760,12 +760,12 @@ LABEL691:
    load_int               12
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    load_int               6
    iload                  10
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    load_int               16750623
    widget_put_textcolor   1
    load_int               494
@@ -773,14 +773,14 @@ LABEL691:
    load_int               0
    load_int               0
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    load_int               1
    widget_put_text_shadowed 1
    load_int               105
    load_int               115
    load_int               848
    iload                  3
-   3408                  
+   get_enum_value        
    widget_put_text        1
    load_int               436
    load_int               -2147483645
@@ -788,20 +788,20 @@ LABEL691:
    widget_get_index      
    load_int               1
    load_string            "Iii1"
-   1403                   1
+   widget_put_mouse_enter_listener 1
    load_int               436
    load_int               -2147483645
    load_int               -2147483643
    widget_get_index      
    load_int               0
    load_string            "Iii1"
-   1404                   1
+   widget_put_mouse_exit_listener 1
    load_int               124
    iload                  3
    load_string            "i"
    1400                   1
    load_int               1
-   1005                   1
+   widget_put_no_click_through 1
    iload                  10
    load_int               12
    iadd                  
@@ -815,11 +815,11 @@ LABEL749:
    load_int               115
    load_int               849
    iload                  3
-   3408                  
+   get_enum_value        
    sstore                 2
    jump                   LABEL682
 LABEL760:
-   042                    64
+   get_varc               64
    load_int               0
    if_icmpne              LABEL764
    jump                   LABEL818
@@ -836,12 +836,12 @@ LABEL764:
    load_int               12
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    load_int               6
    iload                  10
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    load_int               16750623
    widget_put_textcolor   1
    load_int               494
@@ -849,7 +849,7 @@ LABEL764:
    load_int               0
    load_int               0
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    load_int               1
    widget_put_text_shadowed 1
    load_string            "(none)"
@@ -860,20 +860,20 @@ LABEL764:
    widget_get_index      
    load_int               1
    load_string            "Iii1"
-   1403                   1
+   widget_put_mouse_enter_listener 1
    load_int               436
    load_int               -2147483645
    load_int               -2147483643
    widget_get_index      
    load_int               0
    load_string            "Iii1"
-   1404                   1
+   widget_put_mouse_exit_listener 1
    load_int               124
    load_int               0
    load_string            "i"
    1400                   1
    load_int               1
-   1005                   1
+   widget_put_no_click_through 1
    iload                  10
    load_int               12
    iadd                  

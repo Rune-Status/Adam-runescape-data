@@ -18,7 +18,7 @@ LABEL9:
    load_int               94
    load_int               3
    get_itemcontainer_itemid
-   3408                  
+   get_enum_value        
    istore                 1
 LABEL17:
    iload                  1
@@ -75,7 +75,7 @@ LABEL56:
    idiv                  
    int_to_string         
    load_string            "%"
-   037                    3
+   string_append          3
    load_int               38862882
    widget_put_text_widget
    iload                  0
@@ -104,18 +104,18 @@ LABEL80:
    load_int               115
    load_int               1739
    iload                  4
-   3408                  
+   get_enum_value        
    load_string            " ("
    load_int               111
    load_int               105
    load_int               906
    iload                  4
-   3408                  
+   get_enum_value        
    load_int               10
    idiv                  
    int_to_string         
    load_string            "%)"
-   037                    4
+   string_append          4
    sstore                
    get_varbit             5712
    load_int               0
@@ -166,12 +166,12 @@ LABEL142:
    load_int               105
    load_int               906
    iload                  4
-   3408                  
+   get_enum_value        
    load_int               10
    idiv                  
    int_to_string         
    load_string            "%)"
-   037                    3
+   string_append          3
    sstore                
 LABEL154:
    load_int               526
@@ -183,17 +183,17 @@ LABEL154:
    load_int               160
    load_string            "IiIsii"
    load_int               38862877
-   2412                  
+   widget_put_mouse_hover_listener_widget
    load_int               40
    load_int               38862883
    load_string            "I"
    load_int               38862877
-   2404                  
+   widget_put_mouse_exit_listener_widget
    jump                   LABEL174
 LABEL170:
    load_int               -1
    load_string            ""
    load_int               38862877
-   2412                  
+   widget_put_mouse_hover_listener_widget
 LABEL174:
    return                

@@ -18,7 +18,7 @@
    load_int               1
    load_string            "IIIIIY"
    iload                  1
-   2414                  
+   widget_put_table_listener_widget
    load_int               36
    istore                 5
    load_int               32
@@ -39,7 +39,7 @@ LABEL31:
    load_int               111
    load_int               1521
    iload                  8
-   3408                  
+   get_enum_value        
    istore                 9
    iload                  0
    load_int               5
@@ -49,7 +49,7 @@ LABEL31:
    iload                  6
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               10
    load_int               20
    iload                  8
@@ -58,12 +58,12 @@ LABEL31:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               105
    load_int               111
    load_int               1521
    iload                  8
-   3408                  
+   get_enum_value        
    load_int               0
    1205                  
    load_int               93
@@ -98,7 +98,7 @@ LABEL84:
    load_int               111
    load_int               1521
    iload                  8
-   3408                  
+   get_enum_value        
    istore                 9
    iload                  0
    load_int               4
@@ -110,7 +110,7 @@ LABEL84:
    load_int               20
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  7
    load_int               15
    iload                  8
@@ -119,12 +119,12 @@ LABEL84:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               105
    load_int               115
    load_int               1522
    iload                  8
-   3408                  
+   get_enum_value        
    widget_put_text       
    load_int               496
    widget_put_fontid     
@@ -133,7 +133,7 @@ LABEL84:
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    iload                  8
    load_int               1
    iadd                  
@@ -152,7 +152,7 @@ LABEL135:
    load_int               111
    load_int               1521
    iload                  8
-   3408                  
+   get_enum_value        
    istore                 9
    iload                  0
    load_int               4
@@ -164,7 +164,7 @@ LABEL135:
    load_int               20
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  7
    load_int               35
    iload                  8
@@ -173,12 +173,12 @@ LABEL135:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               105
    load_int               115
    load_int               1523
    iload                  8
-   3408                  
+   get_enum_value        
    widget_put_text       
    load_int               495
    widget_put_fontid     
@@ -187,7 +187,7 @@ LABEL135:
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               93
    iload                  9
    get_itemcontainer_stacksizes_total
@@ -216,7 +216,7 @@ LABEL191:
    load_int               111
    load_int               1515
    iload                  8
-   3408                  
+   get_enum_value        
    istore                 10
    load_int               30
    istore                 11
@@ -240,7 +240,7 @@ LABEL213:
    iload                  6
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  7
    iload                  8
    load_int               3
@@ -251,18 +251,18 @@ LABEL213:
    iload                  11
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               111
    load_int               111
    load_int               1519
    iload                  10
-   3408                  
+   get_enum_value        
    istore                 12
    load_int               111
    load_int               105
    load_int               1520
    iload                  10
-   3408                  
+   get_enum_value        
    istore                 13
    iload                  12
    load_int               -1
@@ -300,7 +300,7 @@ LABEL265:
    load_string            "Requires "
    iload                  12
    get_item_name         
-   037                    10
+   string_append          10
    sstore                
    jump                   LABEL296
 LABEL281:
@@ -317,14 +317,14 @@ LABEL281:
    load_string            "Requires "
    iload                  12
    get_item_name         
-   037                    10
+   string_append          10
    sstore                
 LABEL296:
    load_int               111
    load_int               111
    load_int               1518
    iload                  10
-   3408                  
+   get_enum_value        
    load_int               0
    1205                  
    widget_put_actions_null
@@ -344,7 +344,7 @@ LABEL310:
    iload                  13
    int_to_string         
    load_string            " Crafting"
-   037                    6
+   string_append          6
    sstore                
    jump                   LABEL331
 LABEL321:
@@ -356,7 +356,7 @@ LABEL321:
    iload                  13
    int_to_string         
    load_string            " Crafting"
-   037                    6
+   string_append          6
    sstore                
 LABEL331:
    iload                  10
@@ -364,19 +364,19 @@ LABEL331:
    1205                  
    load_int               1
    load_string            "Craft 1"
-   1300                  
+   widget_put_action     
    load_int               2
    load_string            "Craft 5"
-   1300                  
+   widget_put_action     
    load_int               3
    load_string            "Craft 10"
-   1300                  
+   widget_put_action     
    load_int               4
    load_string            "Craft X"
-   1300                  
+   widget_put_action     
    load_int               5
    load_string            "Craft All"
-   1300                  
+   widget_put_action     
    iload                  10
    get_item_name         
    widget_put_name       
@@ -389,16 +389,16 @@ LABEL352:
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               40
    iload                  4
    load_string            "I"
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               111
    load_int               111
    load_int               1517
    iload                  10
-   3408                  
+   get_enum_value        
    istore                 9
    iload                  9
    load_int               -1
@@ -427,7 +427,7 @@ LABEL386:
    load_int               111
    load_int               1515
    iload                  8
-   3408                  
+   get_enum_value        
    istore                 10
    iload                  8
    load_int               3
@@ -449,7 +449,7 @@ LABEL407:
    load_int               111
    load_int               1516
    iload                  8
-   3408                  
+   get_enum_value        
    istore                 10
    iload                  10
    load_int               -1
@@ -462,7 +462,7 @@ LABEL420:
    load_int               111
    load_int               1517
    iload                  10
-   3408                  
+   get_enum_value        
    istore                 9
    load_int               8
    istore                 11
@@ -482,7 +482,7 @@ LABEL434:
    load_int               30
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  7
    iload                  8
    load_int               2
@@ -493,12 +493,12 @@ LABEL434:
    iload                  11
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               111
    load_int               115
    load_int               1682
    iload                  10
-   3408                  
+   get_enum_value        
    widget_put_text       
    load_int               495
    widget_put_fontid     
@@ -507,7 +507,7 @@ LABEL434:
    load_int               1
    load_int               2
    load_int               0
-   1114                  
+   widget_put_text_alignment
    iload                  8
    load_int               1
    iadd                  
@@ -516,13 +516,13 @@ LABEL434:
    load_int               111
    load_int               1516
    iload                  8
-   3408                  
+   get_enum_value        
    istore                 10
    load_int               111
    load_int               111
    load_int               1517
    iload                  10
-   3408                  
+   get_enum_value        
    istore                 9
    iload                  8
    load_int               2
@@ -546,7 +546,7 @@ LABEL495:
    load_int               111
    load_int               1516
    iload                  8
-   3408                  
+   get_enum_value        
    istore                 10
    iload                  10
    load_int               -1
@@ -559,7 +559,7 @@ LABEL510:
    load_int               111
    load_int               1517
    iload                  10
-   3408                  
+   get_enum_value        
    istore                 9
    load_int               35
    istore                 11
@@ -579,7 +579,7 @@ LABEL524:
    iload                  6
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  7
    iload                  8
    load_int               2
@@ -590,18 +590,18 @@ LABEL524:
    iload                  11
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               111
    load_int               111
    load_int               1517
    iload                  10
-   3408                  
+   get_enum_value        
    istore                 9
    load_int               111
    load_int               105
    load_int               1520
    iload                  10
-   3408                  
+   get_enum_value        
    istore                 13
    iload                  9
    load_int               -1
@@ -632,7 +632,7 @@ LABEL571:
    load_string            "<br>"
    load_string            "<col=800000>"
    load_string            "Requires mould"
-   037                    9
+   string_append          9
    sstore                
    jump                   LABEL598
 LABEL585:
@@ -647,7 +647,7 @@ LABEL585:
    load_string            "<br>"
    load_string            "<col=800000>"
    load_string            "Requires mould"
-   037                    9
+   string_append          9
    sstore                
 LABEL598:
    iload                  9
@@ -670,7 +670,7 @@ LABEL608:
    iload                  13
    int_to_string         
    load_string            " Crafting"
-   037                    6
+   string_append          6
    sstore                
    jump                   LABEL629
 LABEL619:
@@ -682,7 +682,7 @@ LABEL619:
    iload                  13
    int_to_string         
    load_string            " Crafting"
-   037                    6
+   string_append          6
    sstore                
 LABEL629:
    iload                  10
@@ -690,19 +690,19 @@ LABEL629:
    1205                  
    load_int               1
    load_string            "Craft 1"
-   1300                  
+   widget_put_action     
    load_int               2
    load_string            "Craft 5"
-   1300                  
+   widget_put_action     
    load_int               3
    load_string            "Craft 10"
-   1300                  
+   widget_put_action     
    load_int               4
    load_string            "Craft X"
-   1300                  
+   widget_put_action     
    load_int               5
    load_string            "Craft All"
-   1300                  
+   widget_put_action     
    iload                  10
    get_item_name         
    widget_put_name       
@@ -715,11 +715,11 @@ LABEL650:
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               40
    iload                  4
    load_string            "I"
-   1404                  
+   widget_put_mouse_exit_listener
    iload                  8
    load_int               1
    iadd                  
@@ -728,13 +728,13 @@ LABEL650:
    load_int               111
    load_int               1516
    iload                  8
-   3408                  
+   get_enum_value        
    istore                 10
    load_int               111
    load_int               111
    load_int               1517
    iload                  10
-   3408                  
+   get_enum_value        
    istore                 9
    iload                  8
    load_int               2

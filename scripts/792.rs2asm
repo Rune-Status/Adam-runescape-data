@@ -40,14 +40,14 @@ LABEL22:
    iload                  5
    load_int               -1
    load_string            "IidI"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               229
    load_int               -2147483645
    iload                  3
    iload                  4
    load_int               -1
    load_string            "IidI"
-   1404                  
+   widget_put_mouse_exit_listener
    iload                  6
    get_item_note_1       
    iload                  6
@@ -61,31 +61,31 @@ LABEL48:
 LABEL52:
    load_int               1
    load_string            "Collect-item"
-   1300                  
+   widget_put_action     
    load_int               2
    load_string            "Collect-note"
-   1300                  
+   widget_put_action     
    jump                   LABEL65
 LABEL59:
    load_int               1
    load_string            "Collect-notes"
-   1300                  
+   widget_put_action     
    load_int               2
    load_string            "Collect-items"
-   1300                  
+   widget_put_action     
 LABEL65:
    jump                   LABEL69
 LABEL66:
    load_int               2
    load_string            "Collect"
-   1300                  
+   widget_put_action     
 LABEL69:
    load_int               3
    load_string            "Bank"
-   1300                  
+   widget_put_action     
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    iload                  6
    iload                  7
    1200                  
@@ -93,7 +93,7 @@ LABEL69:
    iload                  6
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    jump                   LABEL94
 LABEL85:
@@ -102,9 +102,9 @@ LABEL85:
    widget_put_actions_null
    load_int               -1
    load_string            ""
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               -1
    load_string            ""
-   1404                  
+   widget_put_mouse_exit_listener
 LABEL94:
    return                

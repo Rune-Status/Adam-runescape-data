@@ -7,7 +7,7 @@
    load_int               0
    invoke                 228
    pop_int               
-   042                    51
+   get_varc               51
    istore                 21
    invoke                 514
    load_int               1
@@ -19,7 +19,7 @@ LABEL11:
    invoke                 299
    jump                   LABEL21
 LABEL15:
-   042                    5
+   get_varc               5
    load_int               0
    if_icmple              LABEL19
    jump                   LABEL21
@@ -80,7 +80,7 @@ LABEL21:
    load_int               1
    load_string            "IIY"
    iload                  9
-   2407                  
+   widget_put_config_listener_widget
    iload                  11
    invoke                 930
    load_int               929
@@ -89,7 +89,7 @@ LABEL21:
    load_int               1
    load_string            "IY"
    iload                  11
-   2407                  
+   widget_put_config_listener_widget
    iload                  12
    iload                  13
    invoke                 290
@@ -100,7 +100,7 @@ LABEL21:
    load_int               1
    load_string            "IIY"
    iload                  12
-   2407                  
+   widget_put_config_listener_widget
    iload                  6
    widget_unset_children 
    load_int               0
@@ -125,7 +125,7 @@ LABEL105:
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               3355443
    widget_put_sprite2    
    load_int               1
@@ -163,11 +163,11 @@ LABEL140:
    load_int               2
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               897
    widget_put_spriteid   
    load_int               1
-   1107                  
+   widget_put_sprite_tiling
    iload                  23
    load_int               1
    iadd                  
@@ -194,11 +194,11 @@ LABEL168:
    load_int               15
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               494
    widget_put_fontid     
    load_int               14997666
@@ -208,28 +208,28 @@ LABEL168:
    load_int               -2147483643
    load_int               16777215
    load_string            "Iii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               85
    load_int               -2147483645
    load_int               -2147483643
    load_int               14997666
    load_string            "Iii"
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               1
    widget_put_text_shadowed
    load_string            "Tab "
    iload                  23
    int_to_string         
-   037                    2
+   string_append          2
    widget_put_text       
    load_int               1
    load_string            "View tab"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
    iload                  23
    int_to_string         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    load_int               504
    iload                  0
@@ -275,9 +275,9 @@ LABEL246:
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               255
    widget_put_opacity    
    iload                  23
@@ -321,7 +321,7 @@ LABEL268:
    load_int               1
    load_string            "IIIIIIIIIIIIIY"
    iload                  6
-   2414                  
+   widget_put_table_listener_widget
    load_int               276
    iload                  0
    iload                  1
@@ -344,9 +344,9 @@ LABEL268:
    load_int               5
    load_string            "IIIIIIIIIIIIIY"
    iload                  6
-   2407                  
+   widget_put_config_listener_widget
    iload                  21
-   043                    51
+   put_varc               51
    iload                  0
    widget_get_parentid_widget
    istore                 25
@@ -377,22 +377,22 @@ LABEL343:
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1001                   1
+   widget_put_size        1
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                   1
+   widget_put_position    1
    load_int               9037
    widget_put_modelid_1  
    load_int               9056
@@ -403,16 +403,16 @@ LABEL343:
    load_int               220
    load_int               0
    load_int               3500
-   1109                  
+   widget_put_3d_rotation
    load_int               15
    load_int               300
    load_int               141
    load_int               220
    load_int               0
    load_int               3500
-   1109                   1
+   widget_put_3d_rotation 1
    load_int               2439
-   1110                   1
+   widget_put_animation   1
    load_int               1
    widget_put_hidden      1
    load_int               1312
@@ -421,12 +421,12 @@ LABEL343:
    iload                  20
    load_string            "1II"
    iload                  18
-   2412                  
+   widget_put_mouse_hover_listener_widget
    load_int               1312
    load_int               0
    iload                  18
    iload                  20
    load_string            "1II"
    iload                  18
-   2404                  
+   widget_put_mouse_exit_listener_widget
    return                

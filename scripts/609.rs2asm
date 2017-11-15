@@ -6,7 +6,7 @@
    load_int               73
    invoke                 900
    load_int               10551309
-   3408                  
+   get_enum_value        
    widget_get_index_widget
    load_int               0
    if_icmpeq              LABEL9
@@ -109,22 +109,22 @@ LABEL83:
    istore                 8
    iload                  6
    load_int               4
-   042                    43
+   get_varc               43
    widget_create_child   
-   042                    43
+   get_varc               43
    load_int               1
    iadd                  
-   043                    43
+   put_varc               43
    load_int               0
-   042                    49
+   get_varc               49
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  7
    iload                  8
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  9
    load_int               2
    modulo                
@@ -144,12 +144,12 @@ LABEL121:
    iload                  1
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    sload                  1
    widget_put_text       
-   042                    49
+   get_varc               49
    iload                  8
    iadd                  
    load_int               3
@@ -158,7 +158,7 @@ LABEL121:
    load_int               1
    iadd                  
    istore                 9
-   043                    49
+   put_varc               49
    sload                  0
    invoke                 632
    sstore                
@@ -170,9 +170,9 @@ LABEL146:
    if_icmpgt              LABEL150
    jump                   LABEL154
 LABEL150:
-   042                    49
+   get_varc               49
    load_int               3
    iadd                  
-   043                    49
+   put_varc               49
 LABEL154:
    return                

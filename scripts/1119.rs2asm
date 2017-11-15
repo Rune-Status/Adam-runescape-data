@@ -6,19 +6,19 @@
    load_int               73
    load_int               1235
    iload                  0
-   3408                  
+   get_enum_value        
    istore                 4
    load_int               105
    load_int               73
    load_int               1236
    iload                  0
-   3408                  
+   get_enum_value        
    istore                 5
    load_int               105
    load_int               73
    load_int               1237
    iload                  0
-   3408                  
+   get_enum_value        
    istore                 6
    iload                  4
    load_int               -1
@@ -67,7 +67,7 @@ LABEL51:
    iload                  4
    widget_unset_children 
    load_int               0
-   043                    2
+   put_varc               2
    load_int               0
    istore                 10
    iload                  3
@@ -94,14 +94,14 @@ LABEL73:
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               240
    widget_put_opacity    
    iload                  3
@@ -132,14 +132,14 @@ LABEL107:
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               1
-   1107                  
+   widget_put_sprite_tiling
    load_int               1040
    widget_put_spriteid   
 LABEL129:
@@ -163,18 +163,18 @@ LABEL129:
    load_int               20
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               496
    widget_put_fontid     
    load_int               1
    load_int               2
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               16750623
    widget_put_textcolor  
    load_int               1
@@ -183,7 +183,7 @@ LABEL129:
    load_int               115
    load_int               1233
    iload                  0
-   3408                  
+   get_enum_value        
    widget_put_text       
    iload                  6
    load_int               4
@@ -197,18 +197,18 @@ LABEL129:
    load_int               20
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               2
-   1000                  
+   widget_put_position   
    load_int               495
    widget_put_fontid     
    load_int               1
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               16750623
    widget_put_textcolor  
    load_int               1
@@ -227,7 +227,7 @@ LABEL208:
    load_int               115
    load_int               1234
    iload                  0
-   3408                  
+   get_enum_value        
    sstore                
    jump                   LABEL221
 LABEL215:
@@ -235,7 +235,7 @@ LABEL215:
    load_int               115
    load_int               1238
    iload                  1
-   3408                  
+   get_enum_value        
    sstore                
 LABEL221:
    sload                  0
@@ -268,14 +268,14 @@ LABEL238:
    iload                  12
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               10
    load_int               25
    load_int               0
    load_int               2
-   1000                  
+   widget_put_position   
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               0
    widget_put_textcolor  
    iload                  6
@@ -290,14 +290,14 @@ LABEL238:
    iload                  12
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               10
    load_int               25
    load_int               0
    load_int               2
-   1000                  
+   widget_put_position   
    load_int               0
-   1102                  
+   widget_put_filled     
    iload                  6
    load_int               3
    iload                  10
@@ -315,14 +315,14 @@ LABEL238:
    4006                  
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    load_int               12
    load_int               27
    load_int               0
    load_int               2
-   1000                   1
+   widget_put_position    1
    load_int               1
-   1102                   1
+   widget_put_filled      1
    sload                  0
    load_string            " (State: "
    iload                  7
@@ -331,7 +331,7 @@ LABEL238:
    iload                  8
    int_to_string         
    load_string            ")"
-   037                    5
+   string_append          5
    concat_string         
    sstore                
    iload                  3
@@ -352,7 +352,7 @@ LABEL322:
    load_string            "dead"
    load_string            "</col>"
    load_string            "."
-   037                    6
+   string_append          6
    concat_string         
    sstore                
    jump                   LABEL362
@@ -375,7 +375,7 @@ LABEL343:
    load_string            "diseased"
    load_string            "</col>"
    load_string            "."
-   037                    6
+   string_append          6
    concat_string         
    sstore                
    jump                   LABEL362
@@ -427,18 +427,18 @@ LABEL386:
    load_int               36
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               20
    load_int               1
    load_int               2
-   1000                  
+   widget_put_position   
    load_int               760
    widget_put_spriteid   
    sload                  0
    load_string            "<br>"
    load_string            "A gardener is protecting this patch."
-   037                    2
+   string_append          2
    concat_string         
    sstore                
    jump                   LABEL483
@@ -462,18 +462,18 @@ LABEL419:
    load_int               36
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               20
    load_int               1
    load_int               2
-   1000                  
+   widget_put_position   
    load_int               904
    widget_put_spriteid   
    sload                  0
    load_string            "<br>"
    load_string            "A House in Kourend is protecting the patch as a favour."
-   037                    2
+   string_append          2
    concat_string         
    sstore                
    jump                   LABEL483
@@ -497,12 +497,12 @@ LABEL452:
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               20
    load_int               1
    load_int               2
-   1000                  
+   widget_put_position   
    load_int               3355443
    widget_put_sprite2    
    load_int               1
@@ -513,7 +513,7 @@ LABEL452:
    sload                  0
    load_string            "<br>"
    load_string            "A nearby flower patch is providing protection."
-   037                    2
+   string_append          2
    concat_string         
    sstore                
 LABEL483:
@@ -540,12 +540,12 @@ LABEL493:
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               5
    load_int               20
    load_int               2
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               3355443
    widget_put_sprite2    
    load_int               1
@@ -562,7 +562,7 @@ LABEL520:
    sload                  0
    load_string            "<br>"
    load_string            "The patch has been watered."
-   037                    2
+   string_append          2
    concat_string         
    sstore                
    jump                   LABEL541
@@ -575,7 +575,7 @@ LABEL530:
    sload                  0
    load_string            "<br>"
    load_string            "The patch is dry."
-   037                    2
+   string_append          2
    concat_string         
    sstore                
 LABEL541:
@@ -608,12 +608,12 @@ LABEL557:
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               5
    load_int               20
    load_int               2
    load_int               2
-   1000                  
+   widget_put_position   
    load_int               3355443
    widget_put_sprite2    
    load_int               1
@@ -631,7 +631,7 @@ LABEL585:
    sload                  0
    load_string            "<br>"
    load_string            "The patch has been treated with ultracompost."
-   037                    2
+   string_append          2
    concat_string         
    sstore                
    jump                   LABEL620
@@ -649,7 +649,7 @@ LABEL601:
    sload                  0
    load_string            "<br>"
    load_string            "The patch has been treated with supercompost."
-   037                    2
+   string_append          2
    concat_string         
    sstore                
    jump                   LABEL620
@@ -660,7 +660,7 @@ LABEL611:
    sload                  0
    load_string            "<br>"
    load_string            "The patch has been treated with compost."
-   037                    2
+   string_append          2
    concat_string         
    sstore                
 LABEL620:
@@ -681,18 +681,18 @@ LABEL624:
    load_int               50
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               -35
    load_int               -30
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               645
    widget_put_fontid     
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               16758831
    widget_put_textcolor  
    load_int               1
@@ -705,7 +705,7 @@ LABEL624:
    load_string            "Available yield: "
    iload                  9
    int_to_string         
-   037                    3
+   string_append          3
    concat_string         
    sstore                
 LABEL663:
@@ -718,10 +718,10 @@ LABEL663:
    load_int               512
    load_string            "IiIsii"
    iload                  6
-   2412                  
+   widget_put_mouse_hover_listener_widget
    load_int               40
    load_int               11731164
    load_string            "I"
    iload                  6
-   2404                  
+   widget_put_mouse_exit_listener_widget
    return                

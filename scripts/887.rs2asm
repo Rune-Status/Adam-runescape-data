@@ -11,7 +11,7 @@ LABEL4:
    get_varbit             136
    int_to_string         
    load_string            "%"
-   037                    3
+   string_append          3
    iload                  0
    widget_put_text_widget
    jump                   LABEL21
@@ -22,7 +22,7 @@ LABEL12:
    int_to_string         
    load_string            "%"
    load_string            "</col>"
-   037                    5
+   string_append          5
    iload                  0
    widget_put_text_widget
 LABEL21:
@@ -34,7 +34,7 @@ LABEL25:
    load_string            "<col=ff0000>"
    load_string            "Unlocked"
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  1
    widget_put_text_widget
    jump                   LABEL35
@@ -51,7 +51,7 @@ LABEL39:
    load_string            "<col=ff0000>"
    load_string            "Cleared"
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  2
    widget_put_text_widget
    jump                   LABEL49
@@ -68,7 +68,7 @@ LABEL53:
    load_string            "<col=ff0000>"
    load_string            "Cleared"
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  3
    widget_put_text_widget
    jump                   LABEL63
@@ -85,7 +85,7 @@ LABEL67:
    load_string            "<col=ff0000>"
    load_string            "Destroyed"
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  4
    widget_put_text_widget
    jump                   LABEL77
@@ -112,7 +112,7 @@ LABEL89:
    load_string            "<col=ff0000>"
    load_string            "Taken"
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  5
    widget_put_text_widget
    jump                   LABEL110
@@ -125,7 +125,7 @@ LABEL100:
    load_string            "<col=ffff00>"
    load_string            "Dropped"
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  5
    widget_put_text_widget
    jump                   LABEL110
@@ -152,7 +152,7 @@ LABEL122:
    load_string            "<col=ff0000>"
    load_string            "Taken"
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  6
    widget_put_text_widget
    jump                   LABEL143
@@ -165,7 +165,7 @@ LABEL133:
    load_string            "<col=ffff00>"
    load_string            "Dropped"
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  6
    widget_put_text_widget
    jump                   LABEL143
@@ -177,19 +177,19 @@ LABEL143:
    get_varbit             145
    int_to_string         
    load_string            " = Saradomin"
-   037                    2
+   string_append          2
    iload                  7
    widget_put_text_widget
    load_string            "Zamorak = "
    get_varbit             155
    int_to_string         
-   037                    2
+   string_append          2
    iload                  8
    widget_put_text_widget
    get_settings           380
    int_to_string         
    load_string            " Min"
-   037                    2
+   string_append          2
    iload                  9
    widget_put_text_widget
    return                

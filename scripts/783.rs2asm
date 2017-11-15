@@ -12,7 +12,7 @@
    load_int               118
    load_int               150
    iload                  2
-   3408                  
+   get_enum_value        
    load_int               -1
    if_icmpeq              LABEL14
    jump                   LABEL17
@@ -75,7 +75,7 @@ LABEL47:
    load_int               240
    load_int               250
    load_string            "Iiiii"
-   1408                  
+   widget_put_render_listener
    load_int               0
    widget_put_hidden     
    jump                   LABEL68
@@ -142,7 +142,7 @@ LABEL106:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               93
    iload                  4
    get_itemcontainer_itemid
@@ -166,7 +166,7 @@ LABEL132:
 LABEL143:
    load_int               1
    load_string            "Offer"
-   1300                  
+   widget_put_action     
    load_int               487
    load_int               -2147483645
    load_int               -2147483643
@@ -182,12 +182,12 @@ LABEL154:
 LABEL157:
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
    iload                  7
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    jump                   LABEL172
 LABEL167:

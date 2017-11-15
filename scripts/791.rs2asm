@@ -77,12 +77,12 @@ LABEL59:
    widget_get_height     
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
 LABEL66:
    load_int               -1
    load_string            ""
    iload                  0
-   2412                  
+   widget_put_mouse_hover_listener_widget
    jump                   LABEL205
 LABEL71:
    iload                  1
@@ -129,7 +129,7 @@ LABEL100:
    iload                  13
    sload                  1
    invoke                 46
-   037                    6
+   string_append          6
    sstore                
    jump                   LABEL127
 LABEL114:
@@ -144,7 +144,7 @@ LABEL114:
    iload                  13
    sload                  1
    invoke                 46
-   037                    6
+   string_append          6
    sstore                
 LABEL127:
    jump                   LABEL170
@@ -178,7 +178,7 @@ LABEL143:
    iload                  13
    sload                  1
    invoke                 46
-   037                    6
+   string_append          6
    sstore                
    jump                   LABEL170
 LABEL157:
@@ -193,7 +193,7 @@ LABEL157:
    iload                  13
    sload                  1
    invoke                 46
-   037                    6
+   string_append          6
    sstore                
 LABEL170:
    load_int               526
@@ -205,7 +205,7 @@ LABEL170:
    load_int               512
    load_string            "IiIsii"
    iload                  0
-   2412                  
+   widget_put_mouse_hover_listener_widget
    iload                  0
    iload                  11
    widget_load_child     

@@ -8,12 +8,12 @@
    load_int               105
    load_int               1136
    invoke                 900
-   3408                  
+   get_enum_value        
    load_int               0
    if_icmpgt              LABEL10
    jump                   LABEL27
 LABEL10:
-   042                    41
+   get_varc               41
    load_int               -1
    if_icmpeq              LABEL14
    jump                   LABEL23
@@ -45,7 +45,7 @@ LABEL27:
    load_int               73
    load_int               580
    iload                  4
-   3408                  
+   get_enum_value        
    istore                 5
    load_int               0
    istore                 6
@@ -75,7 +75,7 @@ LABEL58:
    load_string            ":0"
    iload                  6
    int_to_string         
-   037                    4
+   string_append          4
    sstore                
    jump                   LABEL79
 LABEL69:
@@ -87,7 +87,7 @@ LABEL69:
    load_string            ":"
    iload                  6
    int_to_string         
-   037                    4
+   string_append          4
    sstore                
 LABEL79:
    iload                  2
@@ -121,7 +121,7 @@ LABEL79:
    load_int               73
    load_int               580
    iload                  4
-   3408                  
+   get_enum_value        
    istore                 5
 LABEL112:
    load_int               -1
@@ -132,7 +132,7 @@ LABEL112:
    sstore                 1
    load_string            ""
    sstore                 2
-   042                    55
+   get_varc               55
    get_gamecycle         
    load_int               3000
    isub                  
@@ -189,7 +189,7 @@ LABEL143:
    load_int               73
    load_int               580
    iload                  4
-   3408                  
+   get_enum_value        
    istore                 5
 LABEL176:
    iload                  0
@@ -201,7 +201,7 @@ LABEL176:
    if_icmpeq              LABEL184
    jump                   LABEL349
 LABEL184:
-   042                    41
+   get_varc               41
    load_int               -1
    if_icmpne              LABEL191
    get_varbit             4089
@@ -252,7 +252,7 @@ LABEL222:
    load_string            "From?"
    sload                  1
    load_string            ":"
-   037                    3
+   string_append          3
    sload                  0
    iload                  4
    iload                  5
@@ -273,7 +273,7 @@ LABEL242:
    load_string            "To?"
    sload                  1
    load_string            ":"
-   037                    3
+   string_append          3
    sload                  0
    iload                  4
    iload                  5
@@ -320,12 +320,12 @@ LABEL285:
    iadd                  
    load_int               1
    iadd                  
-   043                    65
+   put_varc               65
    load_int               664
    load_int               0
    load_string            "1"
    load_int               10616832
-   2408                  
+   widget_put_render_listener_widget
 LABEL296:
    iload                  5
    widget_put_actions_null_widget
@@ -342,7 +342,7 @@ LABEL296:
 LABEL308:
    load_string            "<col=ffffff>"
    sload                  1
-   037                    2
+   string_append          2
    iload                  5
    widget_put_name_widget
    sload                  1
@@ -379,7 +379,7 @@ LABEL335:
    load_int               73
    load_int               580
    iload                  4
-   3408                  
+   get_enum_value        
    istore                 5
 LABEL345:
    iload                  7
@@ -438,7 +438,7 @@ LABEL387:
    load_int               73
    load_int               580
    iload                  4
-   3408                  
+   get_enum_value        
    istore                 5
    jump                   LABEL349
 LABEL398:

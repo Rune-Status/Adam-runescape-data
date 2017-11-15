@@ -6,7 +6,7 @@
    load_int               73
    invoke                 900
    load_int               10551309
-   3408                  
+   get_enum_value        
    widget_get_index_widget
    load_int               0
    if_icmpeq              LABEL9
@@ -26,25 +26,25 @@ LABEL14:
    isub                  
    load_int               2
    idiv                  
-   042                    49
+   get_varc               49
    load_int               0
    load_int               0
    load_int               26214411
-   2000                  
-   042                    49
+   widget_put_position_widget
+   get_varc               49
    load_int               26214411
    widget_get_height_widget
    iadd                  
-   043                    49
+   put_varc               49
 LABEL31:
-   042                    49
+   get_varc               49
    iload                  0
    widget_get_height_widget
    if_icmpgt              LABEL36
    jump                   LABEL41
 LABEL36:
    load_int               0
-   042                    49
+   get_varc               49
    iload                  0
    widget_put_scrollwidthheight_widget
    jump                   LABEL45
@@ -66,7 +66,7 @@ LABEL51:
    iload                  0
    widget_put_scroll_widget
    load_int               0
-   043                    63
+   put_varc               63
    iload                  1
    iload                  0
    load_int               792
@@ -78,13 +78,13 @@ LABEL51:
    invoke                 31
    jump                   LABEL86
 LABEL67:
-   042                    63
+   get_varc               63
    load_int               0
    if_icmplt              LABEL71
    jump                   LABEL73
 LABEL71:
    load_int               0
-   043                    63
+   put_varc               63
 LABEL73:
    iload                  1
    iload                  0
@@ -97,7 +97,7 @@ LABEL73:
    invoke                 31
    iload                  1
    iload                  0
-   042                    63
+   get_varc               63
    invoke                 72
 LABEL86:
    load_int               0

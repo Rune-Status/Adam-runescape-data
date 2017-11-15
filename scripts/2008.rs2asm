@@ -24,7 +24,7 @@
    load_int               79
    load_int               1782
    iload                  4
-   3408                  
+   get_enum_value        
    istore                 12
 LABEL24:
    iload                  12
@@ -63,7 +63,7 @@ LABEL52:
    load_int               115
    load_int               1783
    iload                  12
-   3408                  
+   get_enum_value        
    load_string            ""
    4107                  
    load_int               0
@@ -97,12 +97,12 @@ LABEL79:
    iload                  7
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               100
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               495
    widget_put_fontid     
    load_int               1
@@ -110,14 +110,14 @@ LABEL79:
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               16750623
    widget_put_textcolor  
    load_int               111
    load_int               115
    load_int               1783
    iload                  12
-   3408                  
+   get_enum_value        
    widget_put_text       
    iload                  5
    load_int               1
@@ -135,12 +135,12 @@ LABEL113:
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  9
    iload                  7
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  12
    iload                  10
    1200                  
@@ -150,7 +150,7 @@ LABEL113:
    iload                  12
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    iload                  10
    load_int               0
@@ -163,22 +163,22 @@ LABEL145:
    widget_put_opacity    
    load_int               1
    load_string            "Withdraw"
-   1300                  
+   widget_put_action     
    load_int               2
    load_string            "Withdraw 5"
-   1300                  
+   widget_put_action     
    load_int               3
    load_string            "Withdraw 10"
-   1300                  
+   widget_put_action     
    load_int               4
    load_string            "Withdraw All"
-   1300                  
+   widget_put_action     
    load_int               5
    load_string            "Withdraw X"
-   1300                  
+   widget_put_action     
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    jump                   LABEL176
 LABEL168:
    load_int               0
@@ -188,7 +188,7 @@ LABEL168:
    widget_put_actions_null
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
 LABEL176:
    iload                  4
    load_int               1
@@ -207,7 +207,7 @@ LABEL176:
    load_int               79
    load_int               1782
    iload                  4
-   3408                  
+   get_enum_value        
    istore                 12
    jump                   LABEL24
 LABEL196:

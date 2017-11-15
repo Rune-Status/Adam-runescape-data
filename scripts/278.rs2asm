@@ -18,10 +18,10 @@ LABEL9:
    1200                  
    load_int               7
    load_string            "Clear-All"
-   1300                  
+   widget_put_action     
    load_int               8
    load_string            "Clear"
-   1300                  
+   widget_put_action     
    load_int               0
    widget_put_opacity    
    load_int               285
@@ -49,7 +49,7 @@ LABEL38:
    1200                  
    load_int               8
    load_string            "Release"
-   1300                  
+   widget_put_action     
    load_int               120
    widget_put_opacity    
    load_int               285
@@ -71,13 +71,13 @@ LABEL59:
    1200                  
    load_int               1
    load_string            "Withdraw-1"
-   1300                  
+   widget_put_action     
    load_int               2
    load_string            "Withdraw-5"
-   1300                  
+   widget_put_action     
    load_int               3
    load_string            "Withdraw-10"
-   1300                  
+   widget_put_action     
    get_varbit             3960
    load_int               0
    if_icmpgt              LABEL75
@@ -87,18 +87,18 @@ LABEL75:
    load_string            "Withdraw-"
    get_varbit             3960
    int_to_string         
-   037                    2
-   1300                  
+   string_append          2
+   widget_put_action     
 LABEL81:
    load_int               5
    load_string            "Withdraw-X"
-   1300                  
+   widget_put_action     
    load_int               6
    load_string            "Withdraw-All"
-   1300                  
+   widget_put_action     
    load_int               7
    load_string            "Withdraw-All-but-1"
-   1300                  
+   widget_put_action     
    get_varbit             3755
    load_int               0
    if_icmpeq              LABEL94
@@ -106,7 +106,7 @@ LABEL81:
 LABEL94:
    load_int               8
    load_string            "Placeholder"
-   1300                  
+   widget_put_action     
 LABEL97:
    load_int               0
    widget_put_opacity    
@@ -125,12 +125,12 @@ LABEL97:
 LABEL111:
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
    iload                  0
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    load_int               284
    load_int               -2147483645

@@ -35,7 +35,7 @@ LABEL18:
    load_int               15
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  2
    load_int               1
    if_icmpeq              LABEL35
@@ -45,7 +45,7 @@ LABEL35:
    iload                  6
    load_int               2
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  6
    load_int               15
    iadd                  
@@ -56,7 +56,7 @@ LABEL45:
    iload                  5
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  5
    load_int               15
    iadd                  
@@ -66,7 +66,7 @@ LABEL54:
    widget_put_opacity    
    load_int               1
    load_string            "Send report"
-   1300                  
+   widget_put_action     
    load_int               1123
    iload                  1
    load_string            "i"
@@ -76,13 +76,13 @@ LABEL54:
    load_int               -2147483643
    load_int               16711680
    load_string            "Iii"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               1122
    load_int               -2147483645
    load_int               -2147483643
    load_int               16777215
    load_string            "Iii"
-   1404                  
+   widget_put_mouse_exit_listener
    iload                  3
    load_int               4
    iload                  4
@@ -95,12 +95,12 @@ LABEL54:
    load_int               15
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    widget_get_relativex  
    widget_get_relativey  
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    load_int               16777215
    widget_put_textcolor   1
    load_int               494
@@ -108,13 +108,13 @@ LABEL54:
    load_int               2
    load_int               0
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    load_int               1
    widget_put_text_shadowed 1
    iload                  0
    int_to_string         
    load_string            ":"
-   037                    2
+   string_append          2
    widget_put_text        1
    iload                  3
    load_int               4
@@ -130,14 +130,14 @@ LABEL54:
    load_int               15
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    widget_get_relativex  
    load_int               20
    iadd                  
    widget_get_relativey  
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    load_int               16777215
    widget_put_textcolor   1
    load_int               494
@@ -145,7 +145,7 @@ LABEL54:
    load_int               0
    load_int               0
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    load_int               1
    widget_put_text_shadowed 1
    sload                  0

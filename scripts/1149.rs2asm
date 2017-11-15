@@ -19,7 +19,7 @@
 LABEL14:
    load_string            "There is 1 second remaining "
    sload                  0
-   037                    2
+   string_append          2
    load_int               14942210
    widget_put_text_widget
    jump                   LABEL28
@@ -29,7 +29,7 @@ LABEL20:
    int_to_string         
    load_string            " seconds remaining "
    sload                  0
-   037                    4
+   string_append          4
    load_int               14942210
    widget_put_text_widget
 LABEL28:
@@ -43,7 +43,7 @@ LABEL28:
    load_int               73
    invoke                 900
    load_int               10551325
-   3408                  
+   get_enum_value        
    istore                 4
    iload                  4
    load_int               -1
@@ -61,7 +61,7 @@ LABEL46:
    iload                  1
    load_string            "Isii1"
    iload                  4
-   2408                  
+   widget_put_render_listener_widget
    load_int               1597
    iload                  4
    load_string            "I"

@@ -19,7 +19,7 @@
    load_int               0
    load_int               0
    iload                  5
-   2000                  
+   widget_put_position_widget
    load_int               0
    iload                  4
    widget_put_hidden_widget
@@ -53,7 +53,7 @@ LABEL29:
    load_string            "<br>"
    load_string            "<br>"
    load_string            "If you unblock this creature in future, you will not get your points back."
-   037                    16
+   string_append          16
    sstore                 1
    jump                   LABEL73
 LABEL53:
@@ -75,7 +75,7 @@ LABEL53:
    int_to_string         
    load_string            " points"
    load_string            "</col>"
-   037                    13
+   string_append          13
    sstore                 1
 LABEL73:
    sload                  1
@@ -109,19 +109,19 @@ LABEL93:
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               255
    widget_put_opacity    
    load_int               1
    load_string            "Confirm"
-   1300                  
+   widget_put_action     
    load_int               319
    load_int               1
    load_int               -2147483644

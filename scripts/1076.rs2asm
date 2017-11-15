@@ -63,8 +63,8 @@ LABEL49:
    load_string            "Buy "
    iload                  4
    int_to_string         
-   037                    2
-   1300                  
+   string_append          2
+   widget_put_action     
 LABEL55:
    load_int               19660802
    load_int               0
@@ -77,12 +77,12 @@ LABEL61:
    load_int               34
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    widget_get_relativex  
    widget_get_relativey  
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    load_int               155
    widget_put_spriteid    1
    load_int               180
@@ -92,7 +92,7 @@ LABEL75:
    iload                  5
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    widget_get_relativey  
    istore                 6
@@ -109,7 +109,7 @@ LABEL84:
    widget_put_opacity    
    load_int               -1
    load_string            ""
-   1408                  
+   widget_put_render_listener
 LABEL96:
    iload                  7
    load_int               1

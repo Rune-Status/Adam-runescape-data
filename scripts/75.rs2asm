@@ -2,7 +2,7 @@
 .string_stack_count 0
 .int_var_count      1
 .string_var_count   1
-   042                    3
+   get_varc               3
    istore                
    load_string            "null"
    sstore                
@@ -11,11 +11,11 @@
    if_icmpeq              LABEL8
    jump                   LABEL10
 LABEL8:
-   042                    4
+   get_varc               4
    istore                
 LABEL10:
-   042                    3
-   042                    4
+   get_varc               3
+   get_varc               4
    if_icmpne              LABEL14
    jump                   LABEL36
 LABEL14:
@@ -43,6 +43,6 @@ LABEL32:
    sload                  0
    put_varc_string        1
    iload                  0
-   043                    3
+   put_varc               3
 LABEL36:
    return                

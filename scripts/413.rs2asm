@@ -41,14 +41,14 @@ LABEL29:
    widget_put_spriteid   
    load_int               1
    load_string            "Enable"
-   1300                   1
+   widget_put_action      1
    jump                   LABEL40
 LABEL35:
    load_int               1213
    widget_put_spriteid   
    load_int               1
    load_string            "Disable"
-   1300                   1
+   widget_put_action      1
 LABEL40:
    load_int               414
    load_int               0
@@ -70,14 +70,14 @@ LABEL53:
    load_int               49
    load_int               854
    iload                  0
-   3408                  
+   get_enum_value        
    load_int               1
    if_icmpeq              LABEL63
    jump                   LABEL79
 LABEL63:
    load_int               1
    load_string            "Disable"
-   1300                   1
+   widget_put_action      1
    load_int               414
    load_int               0
    iload                  0
@@ -94,7 +94,7 @@ LABEL63:
 LABEL79:
    load_int               1
    load_string            ""
-   1300                   1
+   widget_put_action      1
    load_int               -1
    load_string            ""
    1409                   1
@@ -105,7 +105,7 @@ LABEL86:
    widget_put_spriteid   
    load_int               1
    load_string            "Unlock"
-   1300                   1
+   widget_put_action      1
    load_int               414
    load_int               1
    iload                  0

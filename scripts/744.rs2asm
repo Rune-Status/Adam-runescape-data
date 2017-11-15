@@ -30,7 +30,7 @@ LABEL23:
    load_string            ":"
    iload                  2
    int_to_string         
-   037                    2
+   string_append          2
    concat_string         
    sstore                
    jump                   LABEL38
@@ -39,7 +39,7 @@ LABEL31:
    load_string            ":0"
    iload                  2
    int_to_string         
-   037                    2
+   string_append          2
    concat_string         
    sstore                
 LABEL38:
@@ -52,7 +52,7 @@ LABEL42:
    load_string            ":"
    iload                  3
    int_to_string         
-   037                    2
+   string_append          2
    concat_string         
    sstore                
    jump                   LABEL57
@@ -61,7 +61,7 @@ LABEL50:
    load_string            ":0"
    iload                  3
    int_to_string         
-   037                    2
+   string_append          2
    concat_string         
    sstore                
 LABEL57:
@@ -73,7 +73,7 @@ LABEL61:
    load_string            "<col=ff0000>"
    sload                  0
    load_string            "</col>"
-   037                    3
+   string_append          3
    sstore                
 LABEL66:
    sload                  0

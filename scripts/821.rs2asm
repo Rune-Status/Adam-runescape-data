@@ -10,7 +10,7 @@
    load_int               118
    load_int               150
    iload                  13
-   3408                  
+   get_enum_value        
    istore                 14
    iload                  14
    load_int               -1
@@ -253,7 +253,7 @@ LABEL207:
    sload                  0
    invoke                 46
    load_string            " coins"
-   037                    2
+   string_append          2
    widget_put_text       
 LABEL213:
    load_int               0
@@ -293,7 +293,7 @@ LABEL241:
    sload                  0
    invoke                 46
    load_string            " coins"
-   037                    2
+   string_append          2
    widget_put_text       
 LABEL247:
    load_int               1126
@@ -334,7 +334,7 @@ LABEL269:
    load_string            "one"
    load_string            "</col>"
    load_string            " coin."
-   037                    10
+   string_append          10
    widget_put_text       
    jump                   LABEL300
 LABEL284:
@@ -352,7 +352,7 @@ LABEL284:
    invoke                 46
    load_string            "</col>"
    load_string            " coins."
-   037                    10
+   string_append          10
    widget_put_text       
 LABEL300:
    jump                   LABEL336
@@ -374,7 +374,7 @@ LABEL305:
    load_string            "one"
    load_string            "</col>"
    load_string            " coin."
-   037                    10
+   string_append          10
    widget_put_text       
    jump                   LABEL336
 LABEL320:
@@ -392,7 +392,7 @@ LABEL320:
    invoke                 46
    load_string            "</col>"
    load_string            " coins."
-   037                    10
+   string_append          10
    widget_put_text       
 LABEL336:
    iload                  8
@@ -430,7 +430,7 @@ LABEL353:
    load_string            "one"
    load_string            "</col>"
    load_string            " coin."
-   037                    11
+   string_append          11
    widget_put_text       
    jump                   LABEL386
 LABEL369:
@@ -449,7 +449,7 @@ LABEL369:
    invoke                 46
    load_string            "</col>"
    load_string            " coins."
-   037                    11
+   string_append          11
    widget_put_text       
 LABEL386:
    jump                   LABEL424
@@ -472,7 +472,7 @@ LABEL391:
    load_string            "one"
    load_string            "</col>"
    load_string            " coin."
-   037                    11
+   string_append          11
    widget_put_text       
    jump                   LABEL424
 LABEL407:
@@ -491,7 +491,7 @@ LABEL407:
    invoke                 46
    load_string            "</col>"
    load_string            " coins."
-   037                    11
+   string_append          11
    widget_put_text       
 LABEL424:
    iload                  8
@@ -519,14 +519,14 @@ LABEL437:
    iload                  24
    load_int               -1
    load_string            "IidI"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               229
    load_int               -2147483645
    load_int               -2147483643
    iload                  23
    load_int               -1
    load_string            "IidI"
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               489
    load_int               -2147483644
    load_int               2
@@ -540,10 +540,10 @@ LABEL461:
    widget_put_spriteid   
    load_int               -1
    load_string            ""
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               -1
    load_string            ""
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               -1
    load_string            ""
    1409                  

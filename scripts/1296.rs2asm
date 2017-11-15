@@ -3,9 +3,9 @@
 .int_var_count      23
 .string_var_count   0
    load_int               4
-   044                    111
+   array_initialize       111
    load_int               4
-   044                    65641
+   array_initialize       65641
    load_int               0
    istore                 22
    load_int               -1
@@ -28,10 +28,10 @@
    widget_unset_children 
    iload                  22
    load_int               13446
-   046                   
+   array_store           
    iload                  22
    load_int               1
-   046                    1
+   array_store            1
    iload                  22
    load_int               1
    iadd                  
@@ -43,10 +43,10 @@
 LABEL38:
    iload                  22
    load_int               556
-   046                   
+   array_store           
    iload                  22
    iload                  2
-   046                    1
+   array_store            1
    iload                  22
    load_int               1
    iadd                  
@@ -59,10 +59,10 @@ LABEL48:
 LABEL52:
    iload                  22
    load_int               555
-   046                   
+   array_store           
    iload                  22
    iload                  3
-   046                    1
+   array_store            1
    iload                  22
    load_int               1
    iadd                  
@@ -80,10 +80,10 @@ LABEL66:
 LABEL70:
    iload                  22
    load_int               557
-   046                   
+   array_store           
    iload                  22
    iload                  4
-   046                    1
+   array_store            1
    iload                  22
    load_int               1
    iadd                  
@@ -101,10 +101,10 @@ LABEL84:
 LABEL88:
    iload                  22
    load_int               554
-   046                   
+   array_store           
    iload                  22
    iload                  5
-   046                    1
+   array_store            1
    iload                  22
    load_int               1
    iadd                  
@@ -122,10 +122,10 @@ LABEL102:
 LABEL106:
    iload                  22
    iload                  6
-   046                   
+   array_store           
    iload                  22
    iload                  7
-   046                    1
+   array_store            1
    iload                  22
    load_int               1
    iadd                  
@@ -143,10 +143,10 @@ LABEL120:
 LABEL124:
    iload                  22
    iload                  8
-   046                   
+   array_store           
    iload                  22
    iload                  9
-   046                    1
+   array_store            1
    iload                  22
    load_int               1
    iadd                  
@@ -164,10 +164,10 @@ LABEL138:
 LABEL142:
    iload                  22
    iload                  10
-   046                   
+   array_store           
    iload                  22
    iload                  11
-   046                    1
+   array_store            1
    iload                  22
    load_int               1
    iadd                  
@@ -176,7 +176,7 @@ LABEL152:
    load_string            "Magic level: "
    iload                  12
    int_to_string         
-   037                    2
+   string_append          2
    iload                  17
    widget_put_text_widget
    load_int               6
@@ -195,13 +195,13 @@ LABEL167:
    widget_put_textcolor_widget
 LABEL170:
    load_int               0
-   045                   
+   array_load            
    load_int               -1
    if_icmpne              LABEL175
    jump                   LABEL253
 LABEL175:
    load_int               0
-   045                    1
+   array_load             1
    load_int               0
    if_icmpgt              LABEL180
    jump                   LABEL253
@@ -211,21 +211,21 @@ LABEL180:
    get_itemcontainer_stacksizes_total
    int_to_string         
    load_string            "/1"
-   037                    2
+   string_append          2
    iload                  18
    widget_put_text_widget
    load_int               0
-   045                   
+   array_load            
    load_int               0
-   045                    1
+   array_load             1
    iload                  13
    2205                  
    load_int               93
    load_int               0
-   045                   
+   array_load            
    get_itemcontainer_stacksizes_total
    load_int               0
-   045                    1
+   array_load             1
    if_icmplt              LABEL202
    jump                   LABEL228
 LABEL202:
@@ -237,7 +237,7 @@ LABEL202:
    load_int               16
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  13
    widget_get_relativex_widget
    load_int               20
@@ -248,7 +248,7 @@ LABEL202:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               299
    widget_put_spriteid   
    load_int               13107200
@@ -264,7 +264,7 @@ LABEL228:
    load_int               17
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  13
    widget_get_relativex_widget
    load_int               20
@@ -275,7 +275,7 @@ LABEL228:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               1210
    widget_put_spriteid   
    load_int               16750623
@@ -283,39 +283,39 @@ LABEL228:
    widget_put_textcolor_widget
 LABEL253:
    load_int               1
-   045                   
+   array_load            
    load_int               -1
    if_icmpne              LABEL258
    jump                   LABEL339
 LABEL258:
    load_int               1
-   045                    1
+   array_load             1
    load_int               0
    if_icmpgt              LABEL263
    jump                   LABEL339
 LABEL263:
    load_int               1
-   045                   
+   array_load            
    invoke                 19
    invoke                 20
    load_string            "/"
    load_int               1
-   045                    1
+   array_load             1
    int_to_string         
-   037                    3
+   string_append          3
    iload                  19
    widget_put_text_widget
    load_int               1
-   045                   
+   array_load            
    load_int               1
-   045                    1
+   array_load             1
    iload                  14
    2205                  
    load_int               1
-   045                   
+   array_load            
    invoke                 19
    load_int               1
-   045                    1
+   array_load             1
    if_icmplt              LABEL287
    jump                   LABEL313
 LABEL287:
@@ -327,7 +327,7 @@ LABEL287:
    load_int               16
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  14
    widget_get_relativex_widget
    load_int               20
@@ -338,7 +338,7 @@ LABEL287:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               299
    widget_put_spriteid   
    load_int               13107200
@@ -354,7 +354,7 @@ LABEL313:
    load_int               17
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  14
    widget_get_relativex_widget
    load_int               20
@@ -365,7 +365,7 @@ LABEL313:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               1210
    widget_put_spriteid   
    load_int               16750623
@@ -379,39 +379,39 @@ LABEL339:
    widget_put_text_widget
 LABEL342:
    load_int               2
-   045                   
+   array_load            
    load_int               -1
    if_icmpne              LABEL347
    jump                   LABEL428
 LABEL347:
    load_int               2
-   045                    1
+   array_load             1
    load_int               0
    if_icmpgt              LABEL352
    jump                   LABEL428
 LABEL352:
    load_int               2
-   045                   
+   array_load            
    invoke                 19
    invoke                 20
    load_string            "/"
    load_int               2
-   045                    1
+   array_load             1
    int_to_string         
-   037                    3
+   string_append          3
    iload                  20
    widget_put_text_widget
    load_int               2
-   045                   
+   array_load            
    load_int               2
-   045                    1
+   array_load             1
    iload                  15
    2205                  
    load_int               2
-   045                   
+   array_load            
    invoke                 19
    load_int               2
-   045                    1
+   array_load             1
    if_icmplt              LABEL376
    jump                   LABEL402
 LABEL376:
@@ -423,7 +423,7 @@ LABEL376:
    load_int               16
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  15
    widget_get_relativex_widget
    load_int               20
@@ -434,7 +434,7 @@ LABEL376:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               299
    widget_put_spriteid   
    load_int               13107200
@@ -450,7 +450,7 @@ LABEL402:
    load_int               17
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  15
    widget_get_relativex_widget
    load_int               20
@@ -461,7 +461,7 @@ LABEL402:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               1210
    widget_put_spriteid   
    load_int               16750623
@@ -475,39 +475,39 @@ LABEL428:
    widget_put_text_widget
 LABEL431:
    load_int               3
-   045                   
+   array_load            
    load_int               -1
    if_icmpne              LABEL436
    jump                   LABEL517
 LABEL436:
    load_int               3
-   045                    1
+   array_load             1
    load_int               0
    if_icmpgt              LABEL441
    jump                   LABEL517
 LABEL441:
    load_int               3
-   045                   
+   array_load            
    invoke                 19
    invoke                 20
    load_string            "/"
    load_int               3
-   045                    1
+   array_load             1
    int_to_string         
-   037                    3
+   string_append          3
    iload                  21
    widget_put_text_widget
    load_int               3
-   045                   
+   array_load            
    load_int               3
-   045                    1
+   array_load             1
    iload                  16
    2205                  
    load_int               3
-   045                   
+   array_load            
    invoke                 19
    load_int               3
-   045                    1
+   array_load             1
    if_icmplt              LABEL465
    jump                   LABEL491
 LABEL465:
@@ -519,7 +519,7 @@ LABEL465:
    load_int               16
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  16
    widget_get_relativex_widget
    load_int               20
@@ -530,7 +530,7 @@ LABEL465:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               299
    widget_put_spriteid   
    load_int               13107200
@@ -546,7 +546,7 @@ LABEL491:
    load_int               17
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  16
    widget_get_relativex_widget
    load_int               20
@@ -557,7 +557,7 @@ LABEL491:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               1210
    widget_put_spriteid   
    load_int               16750623

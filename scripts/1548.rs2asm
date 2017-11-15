@@ -6,7 +6,7 @@
    load_int               73
    invoke                 900
    load_int               10551366
-   3408                  
+   get_enum_value        
    widget_get_index_widget
    load_int               0
    if_icmpeq              LABEL9
@@ -49,7 +49,7 @@ LABEL39:
    load_string            "<col=ff9040>"
    sload                  2
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    iload                  0
    load_int               0
@@ -104,11 +104,11 @@ LABEL85:
    load_int               25
    load_int               190
    load_string            "IiIsii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               40
    load_int               32768015
    load_string            "I"
-   1404                  
+   widget_put_mouse_exit_listener
 LABEL98:
    iload                  1
    load_int               1
@@ -150,10 +150,10 @@ LABEL129:
 LABEL130:
    load_int               -1
    load_string            ""
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               -1
    load_string            ""
-   1404                  
+   widget_put_mouse_exit_listener
 LABEL136:
    sload                  1
    widget_put_text       

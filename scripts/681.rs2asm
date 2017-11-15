@@ -2,13 +2,13 @@
 .string_stack_count 0
 .int_var_count      1
 .string_var_count   1
-   042                    5
+   get_varc               5
    load_int               14
    if_icmpeq              LABEL4
    jump                   LABEL7
 LABEL4:
    load_int               1
-   043                    66
+   put_varc               66
    return                
 LABEL7:
    invoke                 1972
@@ -28,17 +28,17 @@ LABEL12:
    if_icmpgt              LABEL21
    jump                   LABEL203
 LABEL21:
-   042                    5
+   get_varc               5
    load_int               1
    if_icmpeq              LABEL25
    jump                   LABEL26
 LABEL25:
    return                
 LABEL26:
-   042                    5
+   get_varc               5
    load_int               4
    if_icmpeq              LABEL33
-   042                    5
+   get_varc               5
    load_int               5
    if_icmpeq              LABEL33
    jump                   LABEL54
@@ -52,7 +52,7 @@ LABEL37:
    send_game_message     
    jump                   LABEL53
 LABEL40:
-   042                    5
+   get_varc               5
    load_int               4
    if_icmpeq              LABEL44
    jump                   LABEL47
@@ -61,7 +61,7 @@ LABEL44:
    add_ignore            
    jump                   LABEL53
 LABEL47:
-   042                    5
+   get_varc               5
    load_int               5
    if_icmpeq              LABEL51
    jump                   LABEL53
@@ -71,13 +71,13 @@ LABEL51:
 LABEL53:
    jump                   LABEL202
 LABEL54:
-   042                    5
+   get_varc               5
    load_int               2
    if_icmpeq              LABEL64
-   042                    5
+   get_varc               5
    load_int               3
    if_icmpeq              LABEL64
-   042                    5
+   get_varc               5
    load_int               6
    if_icmpeq              LABEL64
    jump                   LABEL117
@@ -91,7 +91,7 @@ LABEL68:
    send_game_message     
    jump                   LABEL116
 LABEL71:
-   042                    5
+   get_varc               5
    load_int               2
    if_icmpeq              LABEL75
    jump                   LABEL78
@@ -100,7 +100,7 @@ LABEL75:
    add_friend            
    jump                   LABEL116
 LABEL78:
-   042                    5
+   get_varc               5
    load_int               3
    if_icmpeq              LABEL82
    jump                   LABEL85
@@ -109,7 +109,7 @@ LABEL82:
    remove_friend         
    jump                   LABEL116
 LABEL85:
-   042                    5
+   get_varc               5
    load_int               6
    if_icmpeq              LABEL89
    jump                   LABEL116
@@ -145,11 +145,11 @@ LABEL111:
    privmsg               
 LABEL114:
    get_gamecycle         
-   043                    61
+   put_varc               61
 LABEL116:
    jump                   LABEL202
 LABEL117:
-   042                    5
+   get_varc               5
    load_int               7
    if_icmpeq              LABEL121
    jump                   LABEL125
@@ -159,7 +159,7 @@ LABEL121:
    numeric_input         
    jump                   LABEL202
 LABEL125:
-   042                    5
+   get_varc               5
    load_int               8
    if_icmpeq              LABEL129
    jump                   LABEL135
@@ -171,10 +171,10 @@ LABEL129:
    string_input_1        
    jump                   LABEL202
 LABEL135:
-   042                    5
+   get_varc               5
    load_int               9
    if_icmpeq              LABEL142
-   042                    5
+   get_varc               5
    load_int               15
    if_icmpeq              LABEL142
    jump                   LABEL145
@@ -183,7 +183,7 @@ LABEL142:
    string_input_2        
    jump                   LABEL202
 LABEL145:
-   042                    5
+   get_varc               5
    load_int               10
    if_icmpeq              LABEL149
    jump                   LABEL155
@@ -195,7 +195,7 @@ LABEL149:
    join_clanchat         
    jump                   LABEL202
 LABEL155:
-   042                    5
+   get_varc               5
    load_int               12
    if_icmpeq              LABEL159
    jump                   LABEL178
@@ -223,14 +223,14 @@ LABEL172:
    invoke                 84
    jump                   LABEL202
 LABEL178:
-   042                    5
+   get_varc               5
    load_int               13
    if_icmpeq              LABEL182
    jump                   LABEL194
 LABEL182:
    get_varc_string        22
    load_int               0
-   043                    62
+   put_varc               62
    put_varc_string        28
    invoke                 95
    load_int               552
@@ -238,10 +238,10 @@ LABEL182:
    load_int               1
    load_string            "I1"
    load_int               10616842
-   2408                  
+   widget_put_render_listener_widget
    jump                   LABEL202
 LABEL194:
-   042                    5
+   get_varc               5
    load_int               11
    if_icmpeq              LABEL198
    jump                   LABEL202
@@ -253,16 +253,16 @@ LABEL198:
 LABEL202:
    jump                   LABEL217
 LABEL203:
-   042                    5
+   get_varc               5
    load_int               7
    if_icmpeq              LABEL216
-   042                    5
+   get_varc               5
    load_int               8
    if_icmpeq              LABEL216
-   042                    5
+   get_varc               5
    load_int               9
    if_icmpeq              LABEL216
-   042                    5
+   get_varc               5
    load_int               15
    if_icmpeq              LABEL216
    jump                   LABEL217

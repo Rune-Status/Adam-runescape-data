@@ -12,21 +12,21 @@
    load_int               105
    load_int               1740
    iload                  5
-   3408                  
+   get_enum_value        
    int_to_string         
    load_string            " - "
    load_int               105
    load_int               115
    load_int               1741
    iload                  5
-   3408                  
-   037                    3
+   get_enum_value        
+   string_append          3
    sstore                
    load_int               105
    load_int               115
    load_int               1742
    iload                  5
-   3408                  
+   get_enum_value        
    sstore                 1
    load_int               0
    istore                 6
@@ -43,7 +43,7 @@ LABEL36:
    load_int               105
    load_int               1740
    iload                  5
-   3408                  
+   get_enum_value        
    load_int               0
    if_icmpgt              LABEL44
    jump                   LABEL307
@@ -82,24 +82,24 @@ LABEL65:
    load_int               115
    load_int               1743
    iload                  5
-   3408                  
+   get_enum_value        
    widget_put_text       
    load_int               40
    load_int               20
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               15
    iload                  7
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               496
    widget_put_fontid     
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               16750623
    widget_put_textcolor  
    load_int               1
@@ -120,7 +120,7 @@ LABEL65:
    load_int               115
    load_int               1744
    iload                  5
-   3408                  
+   get_enum_value        
    widget_put_text       
    load_int               40
    load_int               15
@@ -131,18 +131,18 @@ LABEL65:
    imul                  
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               15
    iload                  7
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               495
    widget_put_fontid     
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               16750623
    widget_put_textcolor  
    load_int               1
@@ -183,13 +183,13 @@ LABEL168:
    load_string            "<br>"
    load_string            "<str=ffffff>"
    sload                  1
-   037                    5
+   string_append          5
    widget_put_text       
    jump                   LABEL180
 LABEL176:
    load_string            "<str=ffffff>"
    sload                  0
-   037                    2
+   string_append          2
    widget_put_text       
 LABEL180:
    load_int               13421772
@@ -213,14 +213,14 @@ LABEL194:
    load_string            "<br>"
    load_string            "<str=ffffff>"
    sload                  1
-   037                    4
+   string_append          4
    widget_put_text       
    jump                   LABEL206
 LABEL201:
    sload                  0
    load_string            "<br>"
    sload                  1
-   037                    3
+   string_append          3
    widget_put_text       
 LABEL206:
    jump                   LABEL209
@@ -235,18 +235,18 @@ LABEL211:
    load_int               20
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               20
    iload                  7
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               495
    widget_put_fontid     
    load_int               0
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    widget_get_text       
@@ -260,7 +260,7 @@ LABEL211:
    imul                  
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  10
    load_int               1
    if_icmpeq              LABEL245
@@ -273,19 +273,19 @@ LABEL245:
    load_int               16777215
    widget_put_textcolor   1
    load_int               1
-   1102                   1
+   widget_put_filled      1
    load_int               245
    widget_put_opacity     1
    load_int               0
    widget_get_relativey  
    load_int               1
    load_int               0
-   1000                   1
+   widget_put_position    1
    load_int               0
    widget_get_height     
    load_int               1
    load_int               0
-   1001                   1
+   widget_put_size        1
    iload                  9
    load_int               1
    iadd                  
@@ -313,21 +313,21 @@ LABEL274:
    load_int               105
    load_int               1740
    iload                  5
-   3408                  
+   get_enum_value        
    int_to_string         
    load_string            " - "
    load_int               105
    load_int               115
    load_int               1741
    iload                  5
-   3408                  
-   037                    3
+   get_enum_value        
+   string_append          3
    sstore                
    load_int               105
    load_int               115
    load_int               1742
    iload                  5
-   3408                  
+   get_enum_value        
    sstore                 1
    jump                   LABEL36
 LABEL307:

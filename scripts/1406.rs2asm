@@ -21,7 +21,7 @@ LABEL6:
    iload                  0
    load_int               1
    iadd                  
-   044                    105
+   array_initialize       105
    load_int               1
    istore                 2
 LABEL20:
@@ -32,7 +32,7 @@ LABEL20:
 LABEL24:
    iload                  2
    iload                  2
-   046                   
+   array_store           
    load_int               30015490
    load_int               3
    iload                  2
@@ -74,12 +74,12 @@ LABEL52:
    iload                  4
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               16750623
    widget_put_textcolor  
    load_int               495
@@ -89,7 +89,7 @@ LABEL52:
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_string            "Select a piece of furniture to build."
    widget_put_text       
    jump                   LABEL102
@@ -135,8 +135,8 @@ LABEL116:
    load_int               73
    load_int               1461
    iload                  2
-   045                   
-   3408                  
+   array_load            
+   get_enum_value        
    istore                 6
    load_int               0
    iload                  6
@@ -146,7 +146,7 @@ LABEL116:
    load_int               0
    load_int               0
    iload                  6
-   2000                  
+   widget_put_position_widget
    iload                  1
    load_int               0
    if_icmpeq              LABEL136
@@ -154,7 +154,7 @@ LABEL116:
 LABEL136:
    iload                  2
    iload                  2
-   045                   
+   array_load            
    iload                  6
    invoke                 1631
 LABEL141:
@@ -202,7 +202,7 @@ LABEL175:
    load_int               30015491
    widget_put_scrollwidthheight_widget
    load_int               0
-   043                    58
+   put_varc               58
 LABEL181:
    load_int               30015523
    load_int               30015491
@@ -222,7 +222,7 @@ LABEL181:
 LABEL196:
    load_int               30015523
    load_int               30015491
-   042                    58
+   get_varc               58
    load_int               1
    invoke                 37
 LABEL201:
@@ -238,8 +238,8 @@ LABEL207:
    load_int               73
    load_int               1461
    iload                  2
-   045                   
-   3408                  
+   array_load            
+   get_enum_value        
    istore                 6
    load_int               0
    iload                  6
@@ -249,7 +249,7 @@ LABEL207:
    load_int               2
    load_int               0
    iload                  6
-   2000                  
+   widget_put_position_widget
    iload                  1
    load_int               0
    if_icmpeq              LABEL227
@@ -257,7 +257,7 @@ LABEL207:
 LABEL227:
    iload                  2
    iload                  2
-   045                   
+   array_load            
    iload                  6
    invoke                 1631
 LABEL232:
@@ -284,7 +284,7 @@ LABEL248:
    load_int               73
    load_int               1461
    iload                  2
-   3408                  
+   get_enum_value        
    widget_put_hidden_widget
    iload                  2
    load_int               1
@@ -298,7 +298,7 @@ LABEL260:
    jump                   LABEL276
 LABEL264:
    load_int               1
-   043                    11
+   put_varc               11
    load_int               10616864
    widget_get_hidden_widget
    load_int               0

@@ -32,16 +32,16 @@ LABEL22:
    widget_put_spriteid   
    load_int               1
    load_string            "View tab"
-   1300                  
+   widget_put_action     
    load_int               -1
    load_string            ""
    1409                  
    load_int               -1
    load_string            ""
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               -1
    load_string            ""
-   1404                  
+   widget_put_mouse_exit_listener
 LABEL36:
    jump                   LABEL91
 LABEL37:
@@ -57,7 +57,7 @@ LABEL43:
    load_int               79
    load_int               1244
    iload                  0
-   3408                  
+   get_enum_value        
    get_itemcontainer_stacksizes_total
    load_int               0
    if_icmple              LABEL53
@@ -67,23 +67,23 @@ LABEL53:
    widget_put_spriteid   
    load_int               1
    load_string            ""
-   1300                  
+   widget_put_action     
    load_int               -1
    load_string            ""
    1409                  
    load_int               -1
    load_string            ""
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               -1
    load_string            ""
-   1404                  
+   widget_put_mouse_exit_listener
    jump                   LABEL91
 LABEL68:
    load_int               1077
    widget_put_spriteid   
    load_int               1
    load_string            "View tab"
-   1300                  
+   widget_put_action     
    load_int               1173
    iload                  0
    load_string            "i"
@@ -94,14 +94,14 @@ LABEL68:
    iload                  3
    load_int               -1
    load_string            "IidI"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               229
    load_int               15335438
    iload                  0
    iload                  2
    load_int               -1
    load_string            "IidI"
-   1404                  
+   widget_put_mouse_exit_listener
 LABEL91:
    load_int               15335438
    load_int               5
@@ -117,7 +117,7 @@ LABEL99:
    load_int               79
    load_int               1244
    iload                  0
-   3408                  
+   get_enum_value        
    get_itemcontainer_stacksizes_total
    load_int               0
    if_icmple              LABEL109

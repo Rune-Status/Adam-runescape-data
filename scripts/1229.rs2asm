@@ -60,7 +60,7 @@ LABEL38:
    load_int               0
    load_int               2
    load_int               1
-   1001                  
+   widget_put_size       
    iload                  1
    load_int               0
    if_icmpgt              LABEL52
@@ -75,7 +75,7 @@ LABEL56:
    load_int               0
    load_int               0
    load_int               1
-   1001                  
+   widget_put_size       
 LABEL61:
    load_int               0
    iload                  1
@@ -94,7 +94,7 @@ LABEL61:
    modulo                
    int_to_string         
    load_string            "%"
-   037                    4
+   string_append          4
    widget_put_text        1
    load_int               0
    istore                 3

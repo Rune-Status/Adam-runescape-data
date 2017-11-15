@@ -37,7 +37,7 @@ LABEL29:
    load_int               79
    iload                  7
    iload                  6
-   3408                  
+   get_enum_value        
    istore                 8
 LABEL35:
    iload                  8
@@ -53,7 +53,7 @@ LABEL39:
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  8
    load_int               10000
    1205                  
@@ -63,7 +63,7 @@ LABEL39:
    widget_put_borderthickness
    load_int               1
    load_string            "Take"
-   1300                  
+   widget_put_action     
    iload                  8
    get_item_stackable    
    load_int               0
@@ -72,22 +72,22 @@ LABEL39:
 LABEL63:
    load_int               2
    load_string            "Take-5"
-   1300                  
+   widget_put_action     
    load_int               3
    load_string            "Take-10"
-   1300                  
+   widget_put_action     
 LABEL69:
    load_int               4
    load_string            "Take-X"
-   1300                  
+   widget_put_action     
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
    iload                  8
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    load_int               487
    load_int               -2147483645
@@ -106,7 +106,7 @@ LABEL69:
    load_int               79
    iload                  7
    iload                  6
-   3408                  
+   get_enum_value        
    istore                 8
    jump                   LABEL35
 LABEL101:
@@ -118,12 +118,12 @@ LABEL101:
    load_int               50
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               16750623
    widget_put_textcolor  
    load_int               1
@@ -133,7 +133,7 @@ LABEL101:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_string            "No matching items found."
    widget_put_text       
    load_int               1

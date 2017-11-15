@@ -10,20 +10,20 @@
    if_icmpgt              LABEL7
    jump                   LABEL20
 LABEL7:
-   042                    6
+   get_varc               6
    load_int               1
    if_icmpeq              LABEL11
    jump                   LABEL14
 LABEL11:
    load_int               0
-   043                    6
+   put_varc               6
    jump                   LABEL16
 LABEL14:
    load_int               1
-   043                    6
+   put_varc               6
 LABEL16:
    iload                  0
-   042                    6
+   get_varc               6
    invoke                 1326
    jump                   LABEL22
 LABEL20:

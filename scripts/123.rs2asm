@@ -5,7 +5,7 @@
    load_string            "Friends List - World "
    get_worldnum          
    int_to_string         
-   037                    2
+   string_append          2
    iload                  1
    widget_put_text_widget
    iload                  7
@@ -19,33 +19,33 @@
    load_int               773
    load_int               788
    invoke                 31
-   042                    183
+   get_varc               183
    load_int               1
    if_icmpne              LABEL21
    jump                   LABEL39
 LABEL21:
-   042                    183
+   get_varc               183
    load_int               2
    if_icmpne              LABEL25
    jump                   LABEL39
 LABEL25:
-   042                    183
+   get_varc               183
    load_int               3
    if_icmpne              LABEL29
    jump                   LABEL39
 LABEL29:
-   042                    183
+   get_varc               183
    load_int               4
    if_icmpne              LABEL33
    jump                   LABEL39
 LABEL33:
-   042                    183
+   get_varc               183
    load_int               5
    if_icmpne              LABEL37
    jump                   LABEL39
 LABEL37:
    load_int               0
-   043                    183
+   put_varc               183
 LABEL39:
    iload                  2
    iload                  3

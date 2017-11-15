@@ -50,7 +50,7 @@ LABEL37:
    idiv                  
    int_to_string         
    load_string            "%"
-   037                    3
+   string_append          3
    iload                  1
    widget_put_text_widget
    get_varbit             5811
@@ -58,7 +58,7 @@ LABEL37:
    if_icmple              LABEL50
    jump                   LABEL62
 LABEL50:
-   042                    198
+   get_varc               198
    load_int               1
    if_icmpne              LABEL54
    jump                   LABEL62
@@ -70,6 +70,6 @@ LABEL54:
    load_int               250
    load_string            "IIii"
    iload                  1
-   2408                  
+   widget_put_render_listener_widget
 LABEL62:
    return                

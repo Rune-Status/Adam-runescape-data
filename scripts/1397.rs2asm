@@ -36,7 +36,7 @@ LABEL28:
    widget_put_actions_null
    load_int               1
    load_string            "Select"
-   1300                  
+   widget_put_action     
    load_int               489
    load_int               -2147483644
    load_int               2
@@ -49,13 +49,13 @@ LABEL28:
    load_int               -2147483643
    load_int               16777215
    load_string            "Iii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               85
    load_int               -2147483645
    load_int               -2147483643
    load_int               9408399
    load_string            "Iii"
-   1404                  
+   widget_put_mouse_exit_listener
 LABEL51:
    jump                   LABEL14
 LABEL52:
@@ -90,7 +90,7 @@ LABEL75:
    widget_put_actions_null
    load_int               6
    load_string            "Add room"
-   1300                  
+   widget_put_action     
    load_int               489
    load_int               -2147483644
    load_int               64
@@ -100,10 +100,10 @@ LABEL75:
    widget_put_textcolor  
    load_int               -1
    load_string            ""
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               -1
    load_string            ""
-   1404                  
+   widget_put_mouse_exit_listener
 LABEL92:
    jump                   LABEL61
 LABEL93:
@@ -133,10 +133,10 @@ LABEL108:
    widget_put_textcolor  
    load_int               -1
    load_string            ""
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               -1
    load_string            ""
-   1404                  
+   widget_put_mouse_exit_listener
 LABEL120:
    jump                   LABEL94
 LABEL121:
@@ -144,7 +144,7 @@ LABEL121:
    load_int               73
    load_int               1424
    load_int               -1
-   3408                  
+   get_enum_value        
    istore                 17
    get_varbit             5333
    load_int               0
@@ -219,7 +219,7 @@ LABEL192:
    load_int               111
    load_int               250
    get_varbit             5333
-   3408                  
+   get_enum_value        
    istore                 18
    iload                  18
    get_item_name         
@@ -229,7 +229,7 @@ LABEL192:
    load_int               100
    load_int               1423
    get_varbit             5333
-   3408                  
+   get_enum_value        
    istore                 19
    iload                  19
    iload                  1

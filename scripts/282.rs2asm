@@ -10,7 +10,7 @@ LABEL4:
    load_int               179
    iload                  8
    widget_put_spriteid_widget
-   042                    5
+   get_varc               5
    load_int               11
    if_icmpeq              LABEL11
    jump                   LABEL29
@@ -31,13 +31,13 @@ LABEL11:
    iload                  12
    load_string            "IIIIIIIIIIIII"
    iload                  8
-   2408                  
+   widget_put_render_listener_widget
    jump                   LABEL33
 LABEL29:
    load_int               -1
    load_string            ""
    iload                  8
-   2408                  
+   widget_put_render_listener_widget
 LABEL33:
    jump                   LABEL41
 LABEL34:
@@ -47,6 +47,6 @@ LABEL34:
    load_int               -1
    load_string            ""
    iload                  8
-   2408                  
+   widget_put_render_listener_widget
 LABEL41:
    return                

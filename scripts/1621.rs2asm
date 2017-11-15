@@ -64,7 +64,7 @@ LABEL45:
    iload                  5
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    load_int               0
    load_int               0
@@ -74,7 +74,7 @@ LABEL45:
    load_int               111
    load_int               1666
    iload                  3
-   3408                  
+   get_enum_value        
    istore                 4
 LABEL68:
    iload                  2
@@ -103,7 +103,7 @@ LABEL82:
    load_int               111
    load_int               1666
    iload                  3
-   3408                  
+   get_enum_value        
    istore                 4
    jump                   LABEL68
 LABEL93:
@@ -114,22 +114,22 @@ LABEL93:
 LABEL97:
    load_int               1
    load_string            "Donate"
-   1300                  
+   widget_put_action     
    load_int               2
    load_string            "Donate-5"
-   1300                  
+   widget_put_action     
    load_int               3
    load_string            "Donate-10"
-   1300                  
+   widget_put_action     
    load_int               4
    load_string            "Donate-All"
-   1300                  
+   widget_put_action     
    load_int               5
    load_string            "Donate-X"
-   1300                  
+   widget_put_action     
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_int               0
    widget_put_opacity    
    load_int               177
@@ -142,7 +142,7 @@ LABEL97:
 LABEL124:
    load_int               10
    load_string            "Donate"
-   1300                  
+   widget_put_action     
    load_int               150
    widget_put_opacity    
    load_int               -1

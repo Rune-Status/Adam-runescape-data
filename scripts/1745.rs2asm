@@ -18,7 +18,7 @@ LABEL10:
    load_int               1
    load_int               1
    iload                  1
-   2000                  
+   widget_put_position_widget
    load_int               0
    load_int               0
    load_int               1
@@ -27,7 +27,7 @@ LABEL10:
    2001                  
    return                
 LABEL23:
-   042                    191
+   get_varc               191
    iload                  0
    widget_get_width_widget
    iload                  4
@@ -35,8 +35,8 @@ LABEL23:
    invoke                 1046
    load_int               0
    invoke                 1045
-   043                    191
-   042                    192
+   put_varc               191
+   get_varc               192
    iload                  0
    widget_get_height_widget
    load_int               280
@@ -44,49 +44,49 @@ LABEL23:
    invoke                 1046
    load_int               0
    invoke                 1045
-   043                    192
-   042                    193
-   042                    191
+   put_varc               192
+   get_varc               193
+   get_varc               191
    invoke                 1046
    load_int               0
    invoke                 1045
-   042                    194
-   042                    192
+   get_varc               194
+   get_varc               192
    invoke                 1046
    load_int               0
    invoke                 1045
-   043                    194
-   043                    193
-   042                    193
-   042                    194
+   put_varc               194
+   put_varc               193
+   get_varc               193
+   get_varc               194
    load_int               0
    load_int               0
    iload                  1
-   2000                  
-   042                    191
-   042                    192
+   widget_put_position_widget
+   get_varc               191
+   get_varc               192
    load_int               1
    load_int               1
    iload                  1
    2001                  
-   042                    191
+   get_varc               191
    load_int               6
    load_int               2
    imul                  
    iadd                  
    istore                 5
-   042                    192
+   get_varc               192
    load_int               6
    load_int               2
    imul                  
    iadd                  
    istore                 6
-   042                    191
-   042                    193
+   get_varc               191
+   get_varc               193
    isub                  
    istore                 7
-   042                    192
-   042                    194
+   get_varc               192
+   get_varc               194
    isub                  
    istore                 8
    load_int               0
@@ -109,26 +109,26 @@ LABEL99:
    load_int               6
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  5
    load_int               6
    load_int               1
    load_int               0
-   1001                   1
-   042                    193
+   widget_put_size        1
+   get_varc               193
    load_int               6
    iadd                  
    istore                 9
    iload                  9
-   042                    194
+   get_varc               194
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  9
    iload                  8
    load_int               0
    load_int               2
-   1000                   1
+   widget_put_position    1
    iload                  0
    iload                  1
    iload                  2
@@ -154,26 +154,26 @@ LABEL141:
    iload                  6
    load_int               0
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               6
    iload                  6
    load_int               0
    load_int               1
-   1001                   1
-   042                    194
+   widget_put_size        1
+   get_varc               194
    load_int               6
    iadd                  
    istore                 9
-   042                    193
+   get_varc               193
    iload                  9
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  7
    iload                  9
    load_int               2
    load_int               0
-   1000                   1
+   widget_put_position    1
    iload                  0
    iload                  1
    iload                  2
@@ -199,22 +199,22 @@ LABEL183:
    load_int               6
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               6
    load_int               6
    load_int               0
    load_int               0
-   1001                   1
-   042                    193
-   042                    194
+   widget_put_size        1
+   get_varc               193
+   get_varc               194
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  7
-   042                    194
+   get_varc               194
    load_int               2
    load_int               0
-   1000                   1
+   widget_put_position    1
    iload                  0
    iload                  1
    iload                  2
@@ -240,22 +240,22 @@ LABEL221:
    load_int               6
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               6
    load_int               6
    load_int               0
    load_int               0
-   1001                   1
-   042                    193
+   widget_put_size        1
+   get_varc               193
    iload                  8
    load_int               0
    load_int               2
-   1000                  
+   widget_put_position   
    iload                  7
    iload                  8
    load_int               2
    load_int               2
-   1000                   1
+   widget_put_position    1
    iload                  0
    iload                  1
    iload                  2

@@ -14,17 +14,17 @@ LABEL6:
    if_icmpeq              LABEL10
    jump                   LABEL17
 LABEL10:
-   042                    41
+   get_varc               41
    iload                  1
    if_icmpeq              LABEL14
    jump                   LABEL17
 LABEL14:
    load_int               -1
-   043                    41
+   put_varc               41
    jump                   LABEL19
 LABEL17:
    iload                  1
-   043                    41
+   put_varc               41
 LABEL19:
    invoke                 923
    iload                  1
@@ -181,23 +181,23 @@ LABEL142:
    if_icmpgt              LABEL147
    jump                   LABEL158
 LABEL147:
-   042                    62
+   get_varc               62
    load_int               1
    if_icmpeq              LABEL151
    jump                   LABEL154
 LABEL151:
    load_int               0
-   043                    62
+   put_varc               62
    jump                   LABEL156
 LABEL154:
    load_int               1
-   043                    62
+   put_varc               62
 LABEL156:
    invoke                 95
    jump                   LABEL161
 LABEL158:
    load_int               0
-   043                    62
+   put_varc               62
    invoke                 95
 LABEL161:
    jump                   LABEL176
@@ -213,7 +213,7 @@ LABEL166:
    jump                   LABEL176
 LABEL170:
    get_gamecycle         
-   043                    175
+   put_varc               175
    iload                  2
    invoke                 84
    iload                  2

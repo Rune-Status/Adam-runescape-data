@@ -15,7 +15,7 @@ LABEL6:
    load_int               73
    load_int               1537
    iload                  2
-   3408                  
+   get_enum_value        
    widget_put_hidden_widget
    iload                  2
    load_int               1
@@ -42,8 +42,8 @@ LABEL18:
    invoke                 31
    load_int               0
    get_gamecycle         
-   043                    59
-   043                    178
+   put_varc               59
+   put_varc               178
    iload                  0
    widget_unset_children 
    iload                  0
@@ -54,12 +54,12 @@ LABEL18:
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               8421504
    widget_put_textcolor  
    load_int               495
@@ -67,7 +67,7 @@ LABEL18:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    load_string            "Loading..."
@@ -83,7 +83,7 @@ LABEL18:
    load_int               105
    load_int               1538
    load_int               32702519
-   3408                  
+   get_enum_value        
    widget_create_child   
    load_int               1
    widget_put_hidden     
@@ -96,7 +96,7 @@ LABEL18:
    load_int               105
    load_int               1538
    load_int               32702521
-   3408                  
+   get_enum_value        
    widget_create_child   
    load_int               1
    widget_put_hidden     
@@ -112,5 +112,5 @@ LABEL18:
    load_int               1
    load_string            "Y"
    load_int               32702521
-   2407                  
+   widget_put_config_listener_widget
    return                

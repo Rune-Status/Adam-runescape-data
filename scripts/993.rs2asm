@@ -4,15 +4,15 @@
 .string_var_count   0
    load_int               0
    load_int               0
-   043                    71
-   043                    70
-   042                    76
+   put_varc               71
+   put_varc               70
+   get_varc               76
    load_int               0
    if_icmple              LABEL8
    jump                   LABEL10
 LABEL8:
    get_gamecycle         
-   043                    76
+   put_varc               76
 LABEL10:
    load_int               0
    istore                 8
@@ -20,7 +20,7 @@ LABEL10:
    load_int               73
    load_int               1163
    iload                  8
-   3408                  
+   get_enum_value        
    istore                 9
 LABEL18:
    iload                  9
@@ -39,7 +39,7 @@ LABEL22:
    load_int               2
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_string            ""
    widget_put_text       
    load_int               1
@@ -55,7 +55,7 @@ LABEL22:
    load_int               73
    load_int               1163
    iload                  8
-   3408                  
+   get_enum_value        
    istore                 9
    jump                   LABEL18
 LABEL52:
@@ -135,7 +135,7 @@ LABEL52:
    load_int               49
    load_string            "IIIIIIIIY"
    iload                  0
-   2407                  
+   widget_put_config_listener_widget
    iload                  0
    iload                  1
    iload                  2

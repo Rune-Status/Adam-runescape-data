@@ -18,7 +18,7 @@ LABEL6:
    get_varbit             4821
    load_string            ","
    invoke                 46
-   037                    5
+   string_append          5
    sstore                
    jump                   LABEL43
 LABEL18:
@@ -36,7 +36,7 @@ LABEL22:
    load_string            ","
    invoke                 46
    load_string            "</col>"
-   037                    5
+   string_append          5
    sstore                
    jump                   LABEL43
 LABEL34:
@@ -47,7 +47,7 @@ LABEL34:
    get_varbit             4821
    load_string            ","
    invoke                 46
-   037                    3
+   string_append          3
    sstore                
 LABEL43:
    get_varbit             4822
@@ -60,7 +60,7 @@ LABEL47:
    load_string            "Opponents:"
    load_string            "<br>"
    load_string            "Starting soon..."
-   037                    5
+   string_append          5
    iload                  0
    widget_put_text_widget
    sload                  0
@@ -79,7 +79,7 @@ LABEL64:
    load_string            "Opponents:"
    load_string            "<br>"
    load_string            "Time:"
-   037                    5
+   string_append          5
    iload                  0
    widget_put_text_widget
    sload                  0
@@ -87,7 +87,7 @@ LABEL64:
    get_varbit             4822
    int_to_string         
    load_string            " mins"
-   037                    3
+   string_append          3
    concat_string         
    sstore                
    jump                   LABEL130
@@ -102,13 +102,13 @@ LABEL85:
    load_string            "Opponents:"
    load_string            "<br>"
    load_string            "Time:"
-   037                    5
+   string_append          5
    iload                  0
    widget_put_text_widget
    sload                  0
    load_string            "<br>"
    load_string            "1 min"
-   037                    2
+   string_append          2
    concat_string         
    sstore                
    jump                   LABEL130
@@ -122,13 +122,13 @@ LABEL104:
    load_string            "<br>"
    load_string            "Opponents:"
    load_string            "<br>"
-   037                    4
+   string_append          4
    iload                  0
    widget_put_text_widget
    sload                  0
    load_string            "<br>"
    load_string            "Next kill wins!"
-   037                    2
+   string_append          2
    concat_string         
    sstore                
    jump                   LABEL130
@@ -138,7 +138,7 @@ LABEL118:
    load_string            "Opponents:"
    load_string            "<br>"
    load_string            "Ending..."
-   037                    5
+   string_append          5
    iload                  0
    widget_put_text_widget
    sload                  0

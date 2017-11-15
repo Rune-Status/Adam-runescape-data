@@ -6,17 +6,17 @@
    load_int               115
    load_int               860
    iload                  2
-   3408                  
+   get_enum_value        
    sstore                
    load_string            "Level "
    load_int               105
    load_int               105
    load_int               861
    iload                  2
-   3408                  
+   get_enum_value        
    int_to_string         
    load_string            "<br>"
-   037                    3
+   string_append          3
    sload                  0
    concat_string         
    sstore                
@@ -26,8 +26,8 @@
    load_int               115
    load_int               862
    iload                  2
-   3408                  
-   037                    2
+   get_enum_value        
+   string_append          2
    concat_string         
    sstore                
    get_varbit             5711
@@ -45,17 +45,17 @@ LABEL32:
    widget_get_width_widget
    load_string            "IIsii"
    iload                  1
-   2412                  
+   widget_put_mouse_hover_listener_widget
    load_int               40
    iload                  0
    load_string            "I"
    iload                  1
-   2404                  
+   widget_put_mouse_exit_listener_widget
    jump                   LABEL53
 LABEL49:
    load_int               -1
    load_string            ""
    iload                  1
-   2412                  
+   widget_put_mouse_hover_listener_widget
 LABEL53:
    return                

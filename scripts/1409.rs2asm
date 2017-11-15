@@ -22,22 +22,22 @@
    iload                  3
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               0
    iload                  3
    load_int               2
    load_int               0
-   1000                   1
+   widget_put_position    1
    load_int               80
    load_int               80
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               80
    load_int               80
    load_int               1
    load_int               0
-   1001                   1
+   widget_put_size        1
    iload                  3
    load_int               80
    iadd                  
@@ -46,7 +46,7 @@
    load_int               109
    load_int               1469
    iload                  0
-   3408                  
+   get_enum_value        
    istore                 4
    iload                  4
    load_int               -1
@@ -61,7 +61,7 @@ LABEL50:
    load_int               0
    load_int               0
    load_int               400
-   1109                  
+   widget_put_3d_rotation
    jump                   LABEL71
 LABEL60:
    load_int               3360
@@ -72,9 +72,9 @@ LABEL60:
    load_int               1955
    load_int               0
    load_int               1100
-   1109                  
+   widget_put_3d_rotation
    load_int               579
-   1110                  
+   widget_put_animation  
 LABEL71:
    load_int               16770720
    widget_put_textcolor   1
@@ -85,12 +85,12 @@ LABEL71:
    load_int               1
    load_int               1
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    load_int               111
    load_int               105
    load_int               139
    iload                  0
-   3408                  
+   get_enum_value        
    load_int               1
    isub                  
    istore                 5
@@ -116,9 +116,9 @@ LABEL103:
    load_int               115
    load_int               1470
    iload                  0
-   3408                  
+   get_enum_value        
    load_string            "</str>"
-   037                    3
+   string_append          3
    widget_put_text        1
    jump                   LABEL119
 LABEL113:
@@ -126,7 +126,7 @@ LABEL113:
    load_int               115
    load_int               1470
    iload                  0
-   3408                  
+   get_enum_value        
    widget_put_text        1
 LABEL119:
    iload                  2

@@ -6,7 +6,7 @@
    load_int               73
    invoke                 900
    load_int               10551309
-   3408                  
+   get_enum_value        
    widget_get_index_widget
    load_int               0
    if_icmpeq              LABEL9
@@ -40,13 +40,13 @@ LABEL16:
    invoke                 632
    sstore                
    sstore                 3
-   042                    178
+   get_varc               178
    load_int               14
    imul                  
    istore                 1
    load_int               33226762
    load_int               3
-   042                    178
+   get_varc               178
    load_int               6
    imul                  
    widget_create_child   
@@ -54,18 +54,18 @@ LABEL16:
    load_int               14
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    iload                  1
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               16777215
    widget_put_textcolor  
    load_int               1
-   1102                  
-   042                    178
-   042                    178
+   widget_put_filled     
+   get_varc               178
+   get_varc               178
    load_int               -1
    load_int               0
    invoke                 1518
@@ -75,11 +75,11 @@ LABEL16:
    load_string            "<col=ff9040>"
    sload                  4
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    load_int               1521
    load_int               -2147483644
-   042                    178
+   get_varc               178
    sload                  4
    sload                  0
    load_string            "iiss"
@@ -89,7 +89,7 @@ LABEL16:
    istore                 2
    load_int               33226762
    load_int               4
-   042                    178
+   get_varc               178
    load_int               6
    imul                  
    load_int               1
@@ -99,12 +99,12 @@ LABEL16:
    load_int               14
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    iload                  1
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               16750623
    widget_put_textcolor  
    load_int               494
@@ -112,7 +112,7 @@ LABEL16:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    sload                  1
@@ -124,7 +124,7 @@ LABEL16:
    istore                 2
    load_int               33226762
    load_int               4
-   042                    178
+   get_varc               178
    load_int               6
    imul                  
    load_int               2
@@ -134,12 +134,12 @@ LABEL16:
    load_int               14
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    iload                  3
    iload                  1
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               16750623
    widget_put_textcolor  
    load_int               494
@@ -147,14 +147,14 @@ LABEL16:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    sload                  2
    widget_put_text       
    load_int               33226762
    load_int               4
-   042                    178
+   get_varc               178
    load_int               6
    imul                  
    load_int               3
@@ -166,12 +166,12 @@ LABEL16:
    load_int               14
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    iload                  1
    load_int               2
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               16750623
    widget_put_textcolor  
    load_int               494
@@ -179,14 +179,14 @@ LABEL16:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    sload                  3
    widget_put_text       
    load_int               33226762
    load_int               4
-   042                    178
+   get_varc               178
    load_int               6
    imul                  
    load_int               4
@@ -201,18 +201,18 @@ LABEL16:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    sload                  2
    load_int               3
    invoke                 1503
-   042                    178
+   get_varc               178
    concat_int            
    widget_put_text       
    load_int               33226762
    load_int               4
-   042                    178
+   get_varc               178
    load_int               6
    imul                  
    load_int               5
@@ -227,17 +227,17 @@ LABEL16:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
    widget_put_text_shadowed
    sload                  3
    load_int               4
    invoke                 1503
-   042                    178
+   get_varc               178
    concat_int            
    widget_put_text       
-   042                    178
+   get_varc               178
    load_int               1
    iadd                  
-   043                    178
+   put_varc               178
    return                

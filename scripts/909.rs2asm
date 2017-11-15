@@ -6,37 +6,37 @@
    load_int               73
    iload                  1
    load_int               10551298
-   3408                  
+   get_enum_value        
    istore                 2
    load_int               73
    load_int               73
    iload                  1
    load_int               10551306
-   3408                  
+   get_enum_value        
    istore                 3
    load_int               73
    load_int               73
    iload                  1
    load_int               10551301
-   3408                  
+   get_enum_value        
    istore                 4
    load_int               73
    load_int               73
    iload                  1
    load_int               10551308
-   3408                  
+   get_enum_value        
    istore                 5
    load_int               103
    load_int               105
    load_int               1135
    iload                  1
-   3408                  
+   get_enum_value        
    istore                 6
    load_int               103
    load_int               105
    load_int               1136
    iload                  1
-   3408                  
+   get_enum_value        
    istore                 7
    load_int               0
    istore                 8
@@ -199,7 +199,7 @@ LABEL164:
    load_int               73
    iload                  1
    load_int               10551307
-   3408                  
+   get_enum_value        
    iload                  5
    iload                  6
    iload                  7
@@ -211,7 +211,7 @@ LABEL187:
    load_int               73
    iload                  1
    load_int               10551307
-   3408                  
+   get_enum_value        
    iload                  3
    load_int               0
    load_int               0
@@ -227,28 +227,28 @@ LABEL198:
    load_int               0
    load_int               0
    6202                  
-   042                    73
+   get_varc               73
    load_int               195
    if_icmpge              LABEL210
    jump                   LABEL226
 LABEL210:
-   042                    73
+   get_varc               73
    load_int               700
    if_icmple              LABEL214
    jump                   LABEL226
 LABEL214:
-   042                    74
+   get_varc               74
    load_int               175
    if_icmpge              LABEL218
    jump                   LABEL226
 LABEL218:
-   042                    74
+   get_varc               74
    load_int               715
    if_icmple              LABEL222
    jump                   LABEL226
 LABEL222:
-   042                    73
-   042                    74
+   get_varc               73
+   get_varc               74
    invoke                 42
    jump                   LABEL229
 LABEL226:
@@ -308,7 +308,7 @@ LABEL260:
    load_int               73
    iload                  1
    load_int               10551307
-   3408                  
+   get_enum_value        
    iload                  5
    iload                  6
    iload                  7
@@ -320,7 +320,7 @@ LABEL283:
    load_int               73
    iload                  1
    load_int               10551307
-   3408                  
+   get_enum_value        
    iload                  3
    load_int               0
    load_int               0
@@ -330,7 +330,7 @@ LABEL293:
    load_int               73
    iload                  1
    load_int               10551309
-   3408                  
+   get_enum_value        
    istore                 14
    iload                  14
    load_int               -1
@@ -348,7 +348,7 @@ LABEL307:
    if_icmpeq              LABEL312
    jump                   LABEL341
 LABEL312:
-   042                    173
+   get_varc               173
    load_int               -2
    if_icmpeq              LABEL316
    jump                   LABEL323
@@ -361,7 +361,7 @@ LABEL316:
    2001                  
    jump                   LABEL340
 LABEL323:
-   042                    173
+   get_varc               173
    load_int               -3
    if_icmpeq              LABEL327
    jump                   LABEL334
@@ -394,7 +394,7 @@ LABEL347:
    load_int               73
    iload                  1
    load_int               10551311
-   3408                  
+   get_enum_value        
    istore                 14
    iload                  14
    load_int               -1
@@ -405,7 +405,7 @@ LABEL357:
    load_int               73
    iload                  1
    load_int               10551303
-   3408                  
+   get_enum_value        
    widget_get_index_widget
    load_int               1
    if_icmpeq              LABEL366
@@ -421,7 +421,7 @@ LABEL370:
    load_int               2
    load_int               0
    iload                  14
-   2000                  
+   widget_put_position_widget
    jump                   LABEL383
 LABEL377:
    load_int               0
@@ -429,7 +429,7 @@ LABEL377:
    load_int               2
    load_int               0
    iload                  14
-   2000                  
+   widget_put_position_widget
 LABEL383:
    jump                   LABEL390
 LABEL384:
@@ -438,7 +438,7 @@ LABEL384:
    load_int               2
    load_int               0
    iload                  14
-   2000                  
+   widget_put_position_widget
 LABEL390:
    iload                  0
    iload                  1

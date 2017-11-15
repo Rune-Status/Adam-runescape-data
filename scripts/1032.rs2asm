@@ -5,7 +5,7 @@
    load_int               23
    load_int               1
    iadd                  
-   044                    105
+   array_initialize       105
    load_int               23
    load_int               3
    iadd                  
@@ -24,7 +24,7 @@ LABEL14:
 LABEL18:
    iload                  21
    iload                  21
-   046                   
+   array_store           
    iload                  0
    load_int               4
    iload                  21
@@ -147,7 +147,7 @@ LABEL71:
    istore                 21
    iload                  0
    iload                  21
-   045                   
+   array_load            
    load_int               1
    iadd                  
    widget_load_child     
@@ -161,7 +161,7 @@ LABEL147:
    imul                  
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  0
    iload                  10
    if_icmpeq              LABEL158
@@ -191,7 +191,7 @@ LABEL175:
    load_int               15
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    load_string            "Most recent"
    widget_put_text       
 LABEL182:
@@ -202,7 +202,7 @@ LABEL182:
 LABEL186:
    iload                  0
    iload                  21
-   045                   
+   array_load            
    load_int               1
    iadd                  
    widget_load_child     
@@ -218,13 +218,13 @@ LABEL195:
    imul                  
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               105
    load_int               115
    load_int               108
    iload                  21
-   045                   
-   3408                  
+   array_load            
+   get_enum_value        
    widget_put_text       
 LABEL211:
    iload                  21
@@ -250,7 +250,7 @@ LABEL224:
    imul                  
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    iload                  0
    iload                  12
    if_icmpeq              LABEL237

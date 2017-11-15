@@ -23,7 +23,7 @@ LABEL14:
    load_int               0
    load_int               5898281
    2001                  
-   042                    53
+   get_varc               53
    load_int               1
    if_icmpeq              LABEL24
    jump                   LABEL26
@@ -36,7 +36,7 @@ LABEL26:
    load_int               1
    load_int               2
    load_int               5898286
-   2000                  
+   widget_put_position_widget
    load_int               16750623
    load_int               5898286
    widget_put_textcolor_widget
@@ -48,7 +48,7 @@ LABEL26:
    load_int               1
    load_int               2
    load_int               5898285
-   2000                  
+   widget_put_position_widget
    invoke                 384
    invoke                 387
    load_int               1
@@ -86,14 +86,14 @@ LABEL68:
    load_int               1345
    load_string            ""
    load_int               5898241
-   2408                  
+   widget_put_render_listener_widget
    invoke                 1346
    jump                   LABEL87
 LABEL80:
    load_int               -1
    load_string            ""
    load_int               5898241
-   2408                  
+   widget_put_render_listener_widget
    load_int               1
    load_int               5898241
    widget_put_hidden_widget
@@ -151,14 +151,14 @@ LABEL124:
    load_int               245
    load_string            ""
    load_int               5898241
-   2408                  
+   widget_put_render_listener_widget
    invoke                 1261
    jump                   LABEL143
 LABEL136:
    load_int               -1
    load_string            ""
    load_int               5898241
-   2408                  
+   widget_put_render_listener_widget
    load_int               1
    load_int               5898241
    widget_put_hidden_widget
@@ -182,7 +182,7 @@ LABEL147:
    load_int               1
    load_int               2
    load_int               5898285
-   2000                  
+   widget_put_position_widget
    load_int               0
    load_int               5898287
    widget_put_hidden_widget
@@ -201,7 +201,7 @@ LABEL169:
    modulo                
    int_to_string         
    load_string            "m"
-   037                    4
+   string_append          4
    load_int               5898287
    widget_put_text_widget
    jump                   LABEL191
@@ -211,13 +211,13 @@ LABEL183:
    modulo                
    int_to_string         
    load_string            "min"
-   037                    2
+   string_append          2
    load_int               5898287
    widget_put_text_widget
 LABEL191:
    jump                   LABEL301
 LABEL192:
-   042                    78
+   get_varc               78
    load_int               2
    if_icmpne              LABEL196
    jump                   LABEL257
@@ -238,7 +238,7 @@ LABEL200:
    load_int               1
    load_int               2
    load_int               5898286
-   2000                  
+   widget_put_position_widget
    load_int               0
    load_int               5898285
    widget_put_hidden_widget
@@ -247,7 +247,7 @@ LABEL200:
    load_int               1
    load_int               2
    load_int               5898285
-   2000                  
+   widget_put_position_widget
    invoke                 384
    invoke                 387
    load_int               0
@@ -269,7 +269,7 @@ LABEL230:
    load_int               1
    load_int               2
    load_int               5898286
-   2000                  
+   widget_put_position_widget
    load_int               0
    load_int               5898285
    widget_put_hidden_widget
@@ -278,7 +278,7 @@ LABEL230:
    load_int               1
    load_int               2
    load_int               5898285
-   2000                  
+   widget_put_position_widget
    invoke                 384
    invoke                 387
    load_int               1
@@ -303,7 +303,7 @@ LABEL261:
    load_int               1
    load_int               2
    load_int               5898286
-   2000                  
+   widget_put_position_widget
    load_int               1
    load_int               5898285
    widget_put_hidden_widget
@@ -326,7 +326,7 @@ LABEL283:
    load_int               1
    load_int               2
    load_int               5898286
-   2000                  
+   widget_put_position_widget
    load_int               1
    load_int               5898285
    widget_put_hidden_widget
@@ -357,7 +357,7 @@ LABEL309:
    load_int               1
    load_int               2
    load_int               5898286
-   2000                  
+   widget_put_position_widget
    load_int               16776960
    load_int               5898286
    widget_put_textcolor_widget
@@ -405,14 +405,14 @@ LABEL356:
    load_int               1956
    load_string            ""
    load_int               5898241
-   2408                  
+   widget_put_render_listener_widget
    invoke                 1957
    jump                   LABEL375
 LABEL368:
    load_int               -1
    load_string            ""
    load_int               5898241
-   2408                  
+   widget_put_render_listener_widget
    load_int               1
    load_int               5898241
    widget_put_hidden_widget
@@ -432,7 +432,7 @@ LABEL376:
    load_int               1
    load_int               2
    load_int               5898286
-   2000                  
+   widget_put_position_widget
    load_int               16776960
    load_int               5898286
    widget_put_textcolor_widget
@@ -496,18 +496,18 @@ LABEL439:
    load_int               1
    load_int               0
    load_int               5898282
-   2000                  
+   widget_put_position_widget
    load_int               0
    iload                  4
    load_int               1
    load_int               0
    load_int               5898283
-   2000                  
+   widget_put_position_widget
    load_int               103
    load_int               105
    load_int               1135
    iload                  3
-   3408                  
+   get_enum_value        
    istore                 5
    iload                  5
    load_int               0
@@ -521,7 +521,7 @@ LABEL461:
    load_int               2
    load_int               0
    load_int               5898281
-   2000                  
+   widget_put_position_widget
    jump                   LABEL476
 LABEL470:
    load_int               0
@@ -529,6 +529,6 @@ LABEL470:
    load_int               2
    load_int               2
    load_int               5898281
-   2000                  
+   widget_put_position_widget
 LABEL476:
    return                

@@ -10,7 +10,7 @@
    load_int               1
    if_icmpeq              LABEL16
    iload                  1
-   042                    65
+   get_varc               65
    if_icmpeq              LABEL16
    iload                  1
    load_int               25
@@ -22,7 +22,7 @@ LABEL16:
    invoke                 553
    istore                 2
    iload                  1
-   042                    65
+   get_varc               65
    if_icmpeq              LABEL22
    jump                   LABEL24
 LABEL22:
@@ -31,13 +31,13 @@ LABEL22:
 LABEL24:
    iload                  2
    invoke                 89
-   042                    65
+   get_varc               65
    iload                  1
    if_icmpgt              LABEL38
    3317                  
    load_int               0
    if_icmpgt              LABEL38
-   042                    55
+   get_varc               55
    iload                  1
    load_int               3000
    isub                  
@@ -48,12 +48,12 @@ LABEL38:
    load_int               0
    load_string            "1"
    load_int               10616832
-   2408                  
+   widget_put_render_listener_widget
    jump                   LABEL48
 LABEL44:
    load_int               -1
    load_string            ""
    load_int               10616832
-   2408                  
+   widget_put_render_listener_widget
 LABEL48:
    return                

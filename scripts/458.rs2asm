@@ -5,7 +5,7 @@
    load_int               28
    load_int               1
    iadd                  
-   044                    105
+   array_initialize       105
    load_int               0
    istore                 3
    load_int               0
@@ -22,7 +22,7 @@ LABEL14:
    load_int               73
    load_int               859
    iload                  4
-   3408                  
+   get_enum_value        
    istore                 5
    iload                  5
    load_int               -1
@@ -31,7 +31,7 @@ LABEL14:
 LABEL24:
    iload                  3
    iload                  4
-   046                   
+   array_store           
    iload                  3
    load_int               1
    iadd                  
@@ -83,9 +83,9 @@ LABEL56:
    load_int               73
    load_int               859
    iload                  6
-   045                   
-   3408                  
-   2000                  
+   array_load            
+   get_enum_value        
+   widget_put_position_widget
    iload                  6
    load_int               1
    iadd                  
@@ -100,5 +100,5 @@ LABEL80:
    load_int               1
    load_string            "IY"
    iload                  1
-   2415                  
+   widget_put_skill_listener_widget
    return                

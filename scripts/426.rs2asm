@@ -94,12 +94,12 @@ LABEL61:
    load_int               0
    load_int               0
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               85
    load_int               0
    load_int               0
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               16750623
    widget_put_textcolor  
    load_int               495
@@ -109,12 +109,12 @@ LABEL61:
    load_int               0
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_string            "Slot "
    iload                  1
    int_to_string         
    load_string            ":"
-   037                    3
+   string_append          3
    widget_put_text       
    iload                  0
    load_int               4
@@ -128,18 +128,18 @@ LABEL61:
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               170
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               1
    widget_put_text_shadowed
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    iload                  8
    load_int               0
    if_icmpeq              LABEL129
@@ -162,7 +162,7 @@ LABEL137:
    load_string            "You must complete the Lumbridge & Draynor"
    load_string            "<br>"
    load_string            "elite diary to use this slot."
-   037                    3
+   string_append          3
    widget_put_text       
    jump                   LABEL153
 LABEL147:
@@ -188,7 +188,7 @@ LABEL158:
    iload                  2
    int_to_string         
    load_string            " QP to use this slot."
-   037                    3
+   string_append          3
    widget_put_text       
    jump                   LABEL175
 LABEL169:
@@ -209,7 +209,7 @@ LABEL176:
    load_int               115
    load_int               693
    iload                  8
-   3408                  
+   get_enum_value        
    widget_put_text       
 LABEL186:
    iload                  0
@@ -232,22 +232,22 @@ LABEL186:
    load_int               22
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               85
    load_int               22
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    load_int               0
    load_int               0
    load_int               2
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               0
    load_int               0
    load_int               2
    load_int               1
-   1000                   1
+   widget_put_position    1
    load_int               812
    widget_put_spriteid   
    load_int               494
@@ -255,7 +255,7 @@ LABEL186:
    load_int               1
    load_int               1
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    load_int               1
    widget_put_text_shadowed 1
    load_string            "Unblock task"
@@ -272,16 +272,16 @@ LABEL238:
    widget_get_index       1
    load_int               16777215
    load_string            "Iii"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               85
    load_int               -2147483645
    widget_get_index       1
    load_int               16750623
    load_string            "Iii"
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               1
    load_string            "Unblock"
-   1300                  
+   widget_put_action     
    load_int               427
    iload                  8
    iload                  9

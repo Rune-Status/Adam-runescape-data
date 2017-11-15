@@ -81,7 +81,7 @@
    iload                  15
    load_int               1
    invoke                 1045
-   044                    105
+   array_initialize       105
    iload                  2
    widget_get_width_widget
    istore                 16
@@ -109,7 +109,7 @@ LABEL99:
    istore                 10
    iload                  20
    iload                  10
-   046                   
+   array_store           
    iload                  20
    get_clan_member_name  
    sstore                
@@ -128,14 +128,14 @@ LABEL99:
    load_int               0
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    sload                  0
    widget_put_text       
    iload                  16
    load_int               15
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               16777215
    widget_put_textcolor  
    load_int               0
@@ -151,17 +151,17 @@ LABEL99:
    load_int               2
    load_int               1
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    load_string            "World "
    iload                  11
    int_to_string         
-   037                    2
+   string_append          2
    widget_put_text        1
    iload                  16
    load_int               15
    load_int               1
    load_int               0
-   1001                   1
+   widget_put_size        1
    iload                  11
    get_worldnum          
    if_icmpeq              LABEL162
@@ -186,12 +186,12 @@ LABEL167:
    load_int               9
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    load_int               105
    load_int               100
    load_int               706
    iload                  12
-   3408                  
+   get_enum_value        
    widget_put_spriteid    1
    iload                  20
    clanmember_isme       
@@ -208,13 +208,13 @@ LABEL196:
    load_int               9
    load_string            "Remove friend "
    sload                  0
-   037                    2
-   1300                  
+   string_append          2
+   widget_put_action     
    load_int               9
    load_string            "Remove friend "
    sload                  0
-   037                    2
-   1300                   1
+   string_append          2
+   widget_put_action      1
    jump                   LABEL243
 LABEL207:
    sload                  0
@@ -226,35 +226,35 @@ LABEL212:
    load_int               10
    load_string            "Remove ignore "
    sload                  0
-   037                    2
-   1300                  
+   string_append          2
+   widget_put_action     
    load_int               10
    load_string            "Remove ignore "
    sload                  0
-   037                    2
-   1300                   1
+   string_append          2
+   widget_put_action      1
    jump                   LABEL243
 LABEL223:
    load_int               7
    load_string            "Add friend "
    sload                  0
-   037                    2
-   1300                  
+   string_append          2
+   widget_put_action     
    load_int               7
    load_string            "Add friend "
    sload                  0
-   037                    2
-   1300                   1
+   string_append          2
+   widget_put_action      1
    load_int               8
    load_string            "Add ignore "
    sload                  0
-   037                    2
-   1300                  
+   string_append          2
+   widget_put_action     
    load_int               8
    load_string            "Add ignore "
    sload                  0
-   037                    2
-   1300                   1
+   string_append          2
+   widget_put_action      1
 LABEL243:
    invoke                 1942
    load_int               0
@@ -274,13 +274,13 @@ LABEL255:
    load_int               6
    load_string            "Kick user "
    sload                  0
-   037                    2
-   1300                  
+   string_append          2
+   widget_put_action     
    load_int               6
    load_string            "Kick user "
    sload                  0
-   037                    2
-   1300                   1
+   string_append          2
+   widget_put_action      1
 LABEL265:
    load_int               214
    sload                  0
@@ -302,7 +302,7 @@ LABEL265:
    load_int               0
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               1
    widget_put_hidden     
    iload                  11
@@ -322,7 +322,7 @@ LABEL265:
    load_int               0
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               1
    widget_put_hidden     
    iload                  12
@@ -343,10 +343,10 @@ LABEL320:
    if_icmpge              LABEL324
    jump                   LABEL371
 LABEL324:
-   042                    185
+   get_varc               185
    load_int               2
    if_icmpeq              LABEL331
-   042                    185
+   get_varc               185
    load_int               3
    if_icmpeq              LABEL331
    jump                   LABEL340
@@ -361,10 +361,10 @@ LABEL331:
    invoke                 1661
    jump                   LABEL371
 LABEL340:
-   042                    185
+   get_varc               185
    load_int               4
    if_icmpeq              LABEL347
-   042                    185
+   get_varc               185
    load_int               5
    if_icmpeq              LABEL347
    jump                   LABEL356
@@ -379,10 +379,10 @@ LABEL347:
    invoke                 1661
    jump                   LABEL371
 LABEL356:
-   042                    185
+   get_varc               185
    load_int               6
    if_icmpeq              LABEL363
-   042                    185
+   get_varc               185
    load_int               7
    if_icmpeq              LABEL363
    jump                   LABEL371
@@ -401,16 +401,16 @@ LABEL371:
    if_icmpge              LABEL375
    jump                   LABEL507
 LABEL375:
-   042                    185
+   get_varc               185
    load_int               3
    if_icmpeq              LABEL388
-   042                    185
+   get_varc               185
    load_int               5
    if_icmpeq              LABEL388
-   042                    185
+   get_varc               185
    load_int               7
    if_icmpeq              LABEL388
-   042                    185
+   get_varc               185
    load_int               1
    if_icmpeq              LABEL388
    jump                   LABEL446
@@ -429,7 +429,7 @@ LABEL394:
    istore                 20
    iload                  6
    iload                  20
-   045                   
+   array_load            
    widget_load_child     
    load_int               1
    if_icmpeq              LABEL405
@@ -439,11 +439,11 @@ LABEL405:
    iload                  19
    load_int               2
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL410:
    iload                  6
    iload                  20
-   045                   
+   array_load            
    load_int               1
    iadd                  
    widget_load_child     
@@ -455,11 +455,11 @@ LABEL419:
    iload                  19
    load_int               2
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL424:
    iload                  6
    iload                  20
-   045                   
+   array_load            
    load_int               2
    iadd                  
    widget_load_child     
@@ -473,7 +473,7 @@ LABEL433:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL440:
    iload                  19
    load_int               15
@@ -493,7 +493,7 @@ LABEL448:
 LABEL452:
    iload                  6
    iload                  20
-   045                   
+   array_load            
    widget_load_child     
    load_int               1
    if_icmpeq              LABEL459
@@ -503,11 +503,11 @@ LABEL459:
    iload                  19
    load_int               2
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL464:
    iload                  6
    iload                  20
-   045                   
+   array_load            
    load_int               1
    iadd                  
    widget_load_child     
@@ -519,11 +519,11 @@ LABEL473:
    iload                  19
    load_int               2
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL478:
    iload                  6
    iload                  20
-   045                   
+   array_load            
    load_int               2
    iadd                  
    widget_load_child     
@@ -537,7 +537,7 @@ LABEL487:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL494:
    iload                  19
    load_int               15
@@ -564,13 +564,13 @@ LABEL513:
    load_string            "<col=ffff64>"
    get_clanchat_owner    
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  0
    widget_put_text_widget
    load_string            "<col=ffffff>"
    get_clanchatowner     
    load_string            "</col>"
-   037                    3
+   string_append          3
    iload                  1
    widget_put_text_widget
    load_string            "Leave Chat"

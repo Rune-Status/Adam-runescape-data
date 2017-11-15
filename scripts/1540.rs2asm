@@ -7,7 +7,7 @@
    get_varbit             5424
    int_to_string         
    load_string            "</col>"
-   037                    4
+   string_append          4
    widget_put_text       
    get_varbit             5425
    load_int               0
@@ -58,7 +58,7 @@ LABEL42:
    load_string            "Get out! Get out!"
    load_string            "<br>"
    load_string            "GET OUT!"
-   037                    3
+   string_append          3
    widget_put_text        1
 LABEL47:
    load_string            "Start raid"
@@ -98,14 +98,14 @@ LABEL57:
    iload                  1
    load_string            "1sI"
    iload                  1
-   2412                  
+   widget_put_mouse_hover_listener_widget
    load_int               1541
    load_int               0
    sload                  0
    iload                  1
    load_string            "1sI"
    iload                  1
-   2404                  
+   widget_put_mouse_exit_listener_widget
    load_int               1543
    load_int               -2147483644
    sload                  0
@@ -116,7 +116,7 @@ LABEL57:
    load_int               -1
    load_string            ""
    iload                  1
-   2408                  
+   widget_put_render_listener_widget
    load_int               1
    sload                  0
    iload                  1
@@ -133,11 +133,11 @@ LABEL106:
    load_int               -1
    load_string            ""
    iload                  1
-   2412                  
+   widget_put_mouse_hover_listener_widget
    load_int               -1
    load_string            ""
    iload                  1
-   2404                  
+   widget_put_mouse_exit_listener_widget
    load_int               -1
    load_string            ""
    iload                  1
@@ -145,6 +145,6 @@ LABEL106:
    load_int               -1
    load_string            ""
    iload                  1
-   2408                  
+   widget_put_render_listener_widget
 LABEL129:
    return                

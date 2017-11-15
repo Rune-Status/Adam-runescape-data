@@ -9,7 +9,7 @@
    load_int               1
    load_int               0
    iload                  1
-   2000                  
+   widget_put_position_widget
    sload                  1
    string_length         
    istore                 5
@@ -38,7 +38,7 @@ LABEL29:
    load_int               0
    istore                 6
    iload                  2
-   044                    105
+   array_initialize       105
    load_int               0
    istore                 7
 LABEL35:
@@ -55,7 +55,7 @@ LABEL39:
    load_int               18
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               495
    widget_put_fontid     
    load_int               1
@@ -63,12 +63,12 @@ LABEL39:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               105
    load_int               115
    iload                  3
    iload                  7
-   3408                  
+   get_enum_value        
    widget_put_text       
    load_int               1
    int_to_string         
@@ -76,7 +76,7 @@ LABEL39:
    int_to_string         
    load_int               2
    int_to_string         
-   037                    3
+   string_append          3
    sload                  1
    iload                  7
    iload                  7
@@ -109,7 +109,7 @@ LABEL92:
 LABEL94:
    iload                  7
    iload                  7
-   046                   
+   array_store           
    iload                  7
    load_int               1
    iadd                  
@@ -141,7 +141,7 @@ LABEL117:
 LABEL121:
    iload                  1
    iload                  7
-   045                   
+   array_load            
    widget_load_child     
    load_int               1
    if_icmpeq              LABEL128
@@ -151,7 +151,7 @@ LABEL128:
    iload                  8
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL133:
    iload                  7
    load_int               1
@@ -171,12 +171,12 @@ LABEL142:
    load_int               25
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               30998536
    widget_get_textcolor_widget
    widget_put_textcolor  
@@ -187,7 +187,7 @@ LABEL142:
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    sload                  0
    widget_put_text       
    load_int               0
