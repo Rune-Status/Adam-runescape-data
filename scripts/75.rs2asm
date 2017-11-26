@@ -3,16 +3,16 @@
 .int_var_count      1
 .string_var_count   1
    get_varc               3
-   istore                
+   istore                 0
    load_string            "null"
-   sstore                
+   sstore                 0
    iload                  0
    load_int               -1
    if_icmpeq              LABEL8
    jump                   LABEL10
 LABEL8:
    get_varc               4
-   istore                
+   istore                 0
 LABEL10:
    get_varc               3
    get_varc               4
@@ -22,18 +22,18 @@ LABEL14:
    iload                  0
    load_int               1
    isub                  
-   istore                
+   istore                 0
    iload                  0
    load_int               0
    if_icmplt              LABEL22
    jump                   LABEL24
 LABEL22:
    load_int               19
-   istore                
+   istore                 0
 LABEL24:
    iload                  0
    invoke                 79
-   sstore                
+   sstore                 0
    sload                  0
    string_length         
    load_int               0

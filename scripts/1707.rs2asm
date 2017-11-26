@@ -121,13 +121,13 @@ LABEL102:
    load_int               1
    load_int               1
    iload                  19
-   2001                  
+   widget_put_size_widget
    load_int               6
    iload                  25
    load_int               1
    load_int               0
    iload                  9
-   2001                  
+   widget_put_size_widget
    load_int               78
    load_int               30
    invoke                 1045
@@ -141,7 +141,7 @@ LABEL102:
    load_int               0
    istore                 26
    load_string            ""
-   sstore                
+   sstore                 0
    load_int               0
    istore                 27
    load_int               105
@@ -168,7 +168,7 @@ LABEL146:
    load_int               1713
    iload                  28
    get_enum_value        
-   sstore                
+   sstore                 0
    iload                  20
    load_int               3
    iload                  24
@@ -246,7 +246,7 @@ LABEL146:
    sload                  0
    load_int               512
    load_int               495
-   4109                  
+   get_max_line_width    
    invoke                 1045
    istore                 27
    iload                  20
@@ -343,7 +343,7 @@ LABEL314:
 LABEL325:
    widget_get_text       
    invoke                 632
-   sstore                
+   sstore                 0
    sstore                 1
    sload                  1
    string_length         
@@ -356,7 +356,7 @@ LABEL336:
    sload                  1
    iload                  29
    int_to_string         
-   4107                  
+   string_compare        
    load_int               0
    if_icmpne              LABEL343
    jump                   LABEL454
@@ -466,14 +466,14 @@ LABEL405:
    load_int               1715
    iload                  33
    get_enum_value        
-   sstore                
+   sstore                 0
    sload                  0
    widget_put_text       
    iload                  27
    sload                  0
    load_int               512
    load_int               495
-   4109                  
+   get_max_line_width    
    invoke                 1045
    istore                 27
    iload                  33
@@ -955,7 +955,7 @@ LABEL546:
    load_int               0
    load_int               1
    iload                  4
-   2001                  
+   widget_put_size_widget
    load_int               0
    iload                  27
    iload                  2
@@ -1064,7 +1064,7 @@ LABEL546:
    load_int               0
    istore                 26
    istore                 27
-   sstore                
+   sstore                 0
    load_int               105
    load_int               96
    load_int               1697
@@ -1125,7 +1125,7 @@ LABEL1069:
    widget_put_text_alignment
    iload                  42
    6601                  
-   sstore                
+   sstore                 0
    sload                  0
    widget_put_text       
    load_int               1
@@ -1163,12 +1163,12 @@ LABEL1069:
    iload                  17
    iload                  18
    load_string            "i`IIIIIII"
-   1409                  
+   widget_put_option_click_listener
    iload                  27
    sload                  0
    load_int               512
    iload                  40
-   4109                  
+   get_max_line_width    
    invoke                 1045
    istore                 27
    iload                  42
@@ -1244,7 +1244,7 @@ LABEL1174:
    load_int               0
    load_int               0
    iload                  11
-   2001                  
+   widget_put_size_widget
    load_int               262
    iload                  27
    iadd                  
@@ -1305,7 +1305,7 @@ LABEL1246:
    load_int               0
    load_int               0
    iload                  14
-   2001                  
+   widget_put_size_widget
    iload                  16
    widget_unset_children 
    iload                  16
@@ -1413,13 +1413,13 @@ LABEL1319:
    iload                  15
    iload                  43
    load_string            "IIIi"
-   1400                  
+   widget_put_mouse_press_listener
    load_int               1709
    iload                  11
    iload                  12
    load_string            "II"
    iload                  13
-   2400                  
+   widget_put_mouse_press_listener_widget
    iload                  11
    load_int               3
    iload                  24

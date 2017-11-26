@@ -15,7 +15,7 @@ LABEL8:
    get_gamecycle         
    load_int               40
    modulo                
-   istore                
+   istore                 0
    iload                  0
    load_int               20
    if_icmplt              LABEL16
@@ -26,20 +26,20 @@ LABEL16:
    pow                   
    load_int               400
    load_int               8192
-   4018                  
+   scale                 
    return                
 LABEL23:
    load_int               40
    iload                  0
    isub                  
-   istore                
+   istore                 0
    load_int               16384
    iload                  0
    load_int               2
    pow                   
    load_int               400
    load_int               8192
-   4018                  
+   scale                 
    isub                  
    return                
    load_int               0

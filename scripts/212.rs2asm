@@ -7,7 +7,7 @@
    sstore                 1
    sload                  0
    string_length         
-   istore                
+   istore                 0
    iload                  0
    load_int               0
    if_icmple              LABEL10
@@ -26,7 +26,7 @@ LABEL16:
 LABEL18:
    sload                  0
    tolowercase           
-   sstore                
+   sstore                 0
    load_int               0
    istore                 1
    load_string            ""
@@ -50,7 +50,7 @@ LABEL33:
    sstore                 2
    sload                  2
    load_string            "k"
-   4107                  
+   string_compare        
    load_int               0
    if_icmpeq              LABEL46
    jump                   LABEL86
@@ -92,18 +92,18 @@ LABEL73:
    concat_string         
    sload                  4
    concat_string         
-   sstore                
+   sstore                 0
    iload                  0
    load_int               2
    iadd                  
-   istore                
+   istore                 0
    load_string            "0"
    sstore                 2
    jump                   LABEL131
 LABEL86:
    sload                  2
    load_string            "m"
-   4107                  
+   string_compare        
    load_int               0
    if_icmpeq              LABEL92
    jump                   LABEL131
@@ -145,11 +145,11 @@ LABEL119:
    concat_string         
    sload                  4
    concat_string         
-   sstore                
+   sstore                 0
    iload                  0
    load_int               5
    iadd                  
-   istore                
+   istore                 0
    load_string            "0"
    sstore                 2
 LABEL131:
@@ -189,7 +189,7 @@ LABEL150:
    load_int               1
    iadd                  
    string_substring      
-   4107                  
+   string_compare        
    istore                 2
    iload                  2
    load_int               0

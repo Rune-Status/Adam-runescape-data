@@ -3,25 +3,25 @@
 .int_var_count      4
 .string_var_count   1
    load_string            ","
-   sstore                
+   sstore                 0
    load_string            "Points:"
    load_string            "<br>"
    iload                  1
    sload                  0
    invoke                 46
    string_append          3
-   sstore                
+   sstore                 0
    sload                  0
    load_int               512
    load_int               494
-   4109                  
+   get_max_line_width    
    load_int               8
    iadd                  
    istore                 2
    sload                  0
    load_int               512
    load_int               494
-   4108                  
+   get_line_count        
    load_int               10
    imul                  
    load_int               2

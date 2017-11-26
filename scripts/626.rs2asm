@@ -78,12 +78,12 @@
    sstore                 1
    sload                  0
    invoke                 632
-   sstore                
+   sstore                 0
    sstore                 1
    sload                  1
    iload                  36
    load_int               494
-   4108                  
+   get_line_count        
    load_int               10
    imul                  
    load_int               2
@@ -133,12 +133,12 @@ LABEL93:
    widget_put_text       
    sload                  0
    invoke                 632
-   sstore                
+   sstore                 0
    sstore                 1
    sload                  1
    iload                  36
    load_int               495
-   4108                  
+   get_line_count        
    load_int               12
    imul                  
    load_int               5
@@ -182,11 +182,11 @@ LABEL93:
    sstore                 2
    sload                  0
    invoke                 632
-   sstore                
+   sstore                 0
    sstore                 1
    sload                  0
    invoke                 632
-   sstore                
+   sstore                 0
    sstore                 2
    sload                  1
    sload                  2
@@ -321,13 +321,13 @@ LABEL309:
 LABEL313:
    sload                  0
    invoke                 632
-   sstore                
+   sstore                 0
    sstore                 1
    load_int               38
    sload                  1
    iload                  36
    load_int               494
-   4109                  
+   get_max_line_width    
    array_store           
    load_int               38
    array_load            
@@ -349,7 +349,7 @@ LABEL337:
    sload                  1
    tolowercase           
    load_string            "skip question"
-   4107                  
+   string_compare        
    load_int               0
    if_icmpeq              LABEL344
    jump                   LABEL348
@@ -430,7 +430,7 @@ LABEL403:
    load_int               0
    iload                  40
    load_int               2000
-   4006                  
+   interpolate           
    array_store            1
    iload                  41
    array_load             1
@@ -625,7 +625,7 @@ LABEL562:
    isub                  
    istore                 45
    sload                  3
-   sstore                
+   sstore                 0
    load_int               0
    istore                 41
 LABEL585:
@@ -636,7 +636,7 @@ LABEL585:
 LABEL589:
    sload                  0
    invoke                 632
-   sstore                
+   sstore                 0
    sstore                 1
    iload                  41
    load_int               0
@@ -674,7 +674,7 @@ LABEL620:
    sload                  2
    tolowercase           
    load_string            "yes"
-   4107                  
+   string_compare        
    load_int               0
    if_icmpeq              LABEL627
    jump                   LABEL649
@@ -682,7 +682,7 @@ LABEL627:
    sload                  1
    tolowercase           
    load_string            "no"
-   4107                  
+   string_compare        
    load_int               0
    if_icmpeq              LABEL634
    jump                   LABEL649
@@ -709,7 +709,7 @@ LABEL649:
    load_int               39
    array_load            
    load_int               494
-   4108                  
+   get_line_count        
    load_int               10
    imul                  
    load_int               2
@@ -873,7 +873,7 @@ LABEL763:
    load_int               0
    iload                  40
    iload                  45
-   4006                  
+   interpolate           
    load_int               11
    load_int               0
    load_int               0

@@ -5,7 +5,7 @@
    load_int               -1
    istore                 8
    load_string            "Choose an item from the shop."
-   sstore                
+   sstore                 0
    load_int               0
    istore                 9
    load_int               0
@@ -18,7 +18,7 @@ LABEL12:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    load_int               1
    iload                  3
    widget_put_hidden_widget
@@ -61,7 +61,7 @@ LABEL43:
    load_string            "<br>"
    load_string            "<br>"
    string_append          8
-   sstore                
+   sstore                 0
    load_int               111
    load_int               105
    load_int               842
@@ -93,7 +93,7 @@ LABEL78:
    int_to_string         
    string_append          4
    concat_string         
-   sstore                
+   sstore                 0
    jump                   LABEL97
 LABEL89:
    sload                  0
@@ -103,7 +103,7 @@ LABEL89:
    load_string            " points each"
    string_append          3
    concat_string         
-   sstore                
+   sstore                 0
 LABEL97:
    jump                   LABEL114
 LABEL98:
@@ -118,13 +118,13 @@ LABEL102:
    int_to_string         
    string_append          2
    concat_string         
-   sstore                
+   sstore                 0
    jump                   LABEL114
 LABEL110:
    sload                  0
    load_string            "Cost: 1 point each"
    concat_string         
-   sstore                
+   sstore                 0
 LABEL114:
    sload                  0
    iload                  5
@@ -132,7 +132,7 @@ LABEL114:
    load_int               1
    load_string            "Back"
    iload                  7
-   2300                  
+   widget_put_action_widget
    load_int               319
    load_int               0
    load_int               -2147483644
@@ -143,7 +143,7 @@ LABEL114:
    iload                  7
    load_string            "1iIIIII"
    iload                  7
-   2409                  
+   widget_put_option_click_listener_widget
    return                
 LABEL133:
    iload                  0
@@ -165,7 +165,7 @@ LABEL144:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    load_int               326
    iload                  1
    iload                  2

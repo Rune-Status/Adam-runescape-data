@@ -35,11 +35,11 @@ LABEL22:
    load_int               0
    istore                 14
    load_string            ""
-   sstore                
+   sstore                 0
    load_string            ","
    sstore                 1
    iload                  1
-   3910                  
+   get_grandexchange_offer_not_started
    load_int               1
    if_icmpeq              LABEL37
    jump                   LABEL71
@@ -95,7 +95,7 @@ LABEL71:
    get_grandexchange_offer_quantitysold
    istore                 14
    iload                  1
-   3903                  
+   get_grandexchange_offer_is_selling
    load_int               1
    if_icmpeq              LABEL85
    jump                   LABEL128
@@ -113,7 +113,7 @@ LABEL91:
    widget_put_spriteid   
 LABEL95:
    iload                  1
-   3912                  
+   get_grandexchange_offer_done
    load_int               1
    if_icmpeq              LABEL100
    jump                   LABEL114
@@ -130,7 +130,7 @@ LABEL100:
    sload                  1
    invoke                 46
    string_append          6
-   sstore                
+   sstore                 0
    jump                   LABEL127
 LABEL114:
    load_string            "Selling: "
@@ -145,7 +145,7 @@ LABEL114:
    sload                  1
    invoke                 46
    string_append          6
-   sstore                
+   sstore                 0
 LABEL127:
    jump                   LABEL170
 LABEL128:
@@ -162,7 +162,7 @@ LABEL134:
    widget_put_spriteid   
 LABEL138:
    iload                  1
-   3912                  
+   get_grandexchange_offer_done
    load_int               1
    if_icmpeq              LABEL143
    jump                   LABEL157
@@ -179,7 +179,7 @@ LABEL143:
    sload                  1
    invoke                 46
    string_append          6
-   sstore                
+   sstore                 0
    jump                   LABEL170
 LABEL157:
    load_string            "Buying: "
@@ -194,7 +194,7 @@ LABEL157:
    sload                  1
    invoke                 46
    string_append          6
-   sstore                
+   sstore                 0
 LABEL170:
    load_int               526
    iload                  0

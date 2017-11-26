@@ -4,7 +4,7 @@
 .string_var_count   1
    load_int               39256111
    widget_get_width_widget
-   istore                
+   istore                 0
    load_int               39256111
    widget_get_height_widget
    istore                 1
@@ -16,11 +16,11 @@
    int_to_string         
    load_string            "/99"
    string_append          2
-   sstore                
+   sstore                 0
    iload                  3
    load_int               99
    iload                  2
-   4018                  
+   scale                 
    istore                 2
    iload                  2
    load_int               0
@@ -66,5 +66,5 @@ LABEL48:
    load_int               0
    load_int               0
    load_int               39256116
-   2001                  
+   widget_put_size_widget
    return                

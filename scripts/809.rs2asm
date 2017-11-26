@@ -4,7 +4,7 @@
 .string_var_count   1
    iload                  0
    widget_get_text_widget
-   sstore                
+   sstore                 0
    sload                  0
    string_length         
    load_int               0
@@ -28,7 +28,7 @@ LABEL14:
    widget_get_text_widget
    load_int               150
    load_int               494
-   4109                  
+   get_max_line_width    
    iadd                  
    istore                 1
    load_int               150
@@ -53,5 +53,5 @@ LABEL14:
    load_int               0
    load_int               0
    iload                  0
-   2001                  
+   widget_put_size_widget
    return                

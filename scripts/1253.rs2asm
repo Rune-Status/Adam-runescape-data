@@ -21,7 +21,7 @@ LABEL15:
    load_int               1
    load_string            "Take"
    iload                  0
-   2300                  
+   widget_put_action_widget
    iload                  3
    load_string            "<col=00ff00>"
    load_string            "Complete"
@@ -39,7 +39,7 @@ LABEL31:
    load_int               1
    load_string            "Take"
    iload                  0
-   2300                  
+   widget_put_action_widget
    load_string            "Incomplete"
    sstore                 1
    jump                   LABEL53
@@ -52,7 +52,7 @@ LABEL42:
    load_int               1
    load_string            "Retrieve"
    iload                  0
-   2300                  
+   widget_put_action_widget
    load_string            "Missing"
    sstore                 1
    jump                   LABEL53
@@ -60,7 +60,7 @@ LABEL49:
    load_int               1
    load_string            "Unlock"
    iload                  0
-   2300                  
+   widget_put_action_widget
 LABEL53:
    load_string            "<col=ff9040>"
    iload                  4
@@ -103,5 +103,5 @@ LABEL53:
    iload                  4
    load_string            "iIisooo"
    iload                  0
-   2409                  
+   widget_put_option_click_listener_widget
    return                

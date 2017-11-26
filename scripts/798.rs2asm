@@ -11,7 +11,7 @@
    load_int               0
    istore                 31
    load_string            "Cancelled"
-   sstore                
+   sstore                 0
    load_int               1108
    istore                 32
    load_int               1109
@@ -53,7 +53,7 @@ LABEL42:
    istore                 37
 LABEL44:
    iload                  9
-   3910                  
+   get_grandexchange_offer_not_started
    load_int               1
    if_icmpeq              LABEL49
    jump                   LABEL354
@@ -258,7 +258,7 @@ LABEL189:
    iload                  7
    iload                  27
    load_string            "iiiIiIIIII"
-   1409                  
+   widget_put_option_click_listener
    load_int               805
    load_int               -2147483644
    iload                  9
@@ -271,7 +271,7 @@ LABEL189:
    iload                  7
    iload                  27
    load_string            "iiiIiIIIII"
-   1409                   1
+   widget_put_option_click_listener 1
    load_int               229
    iload                  8
    iload                  25
@@ -349,10 +349,10 @@ LABEL300:
    widget_put_actions_null 1
    load_int               -1
    load_string            ""
-   1409                  
+   widget_put_option_click_listener
    load_int               -1
    load_string            ""
-   1409                   1
+   widget_put_option_click_listener 1
    load_int               -1
    load_string            ""
    widget_put_mouse_enter_listener
@@ -417,17 +417,17 @@ LABEL354:
    istore                 31
    istore                 30
    iload                  9
-   3903                  
+   get_grandexchange_offer_is_selling
    load_int               1
    if_icmpeq              LABEL371
    jump                   LABEL374
 LABEL371:
    load_string            "Sell"
-   sstore                
+   sstore                 0
    jump                   LABEL376
 LABEL374:
    load_string            "Buy"
-   sstore                
+   sstore                 0
 LABEL376:
    iload                  8
    iload                  15
@@ -540,13 +540,13 @@ LABEL466:
    jump                   LABEL545
 LABEL469:
    iload                  9
-   3903                  
+   get_grandexchange_offer_is_selling
    load_int               1
    if_icmpeq              LABEL474
    jump                   LABEL510
 LABEL474:
    iload                  9
-   3912                  
+   get_grandexchange_offer_done
    load_int               1
    if_icmpeq              LABEL479
    jump                   LABEL493
@@ -586,7 +586,7 @@ LABEL509:
    jump                   LABEL545
 LABEL510:
    iload                  9
-   3912                  
+   get_grandexchange_offer_done
    load_int               1
    if_icmpeq              LABEL515
    jump                   LABEL529
@@ -691,7 +691,7 @@ LABEL603:
    sload                  3
    iload                  38
    load_int               494
-   4109                  
+   get_max_line_width    
    iload                  38
    if_icmpgt              LABEL610
    jump                   LABEL641
@@ -720,7 +720,7 @@ LABEL618:
    sload                  4
    iload                  38
    load_int               494
-   4109                  
+   get_max_line_width    
    iload                  38
    if_icmple              LABEL636
    jump                   LABEL640

@@ -44,7 +44,7 @@ LABEL32:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    get_varc               54
    load_int               1
    if_icmpeq              LABEL40
@@ -138,7 +138,7 @@ LABEL114:
    widget_get_text_widget
    iload                  8
    load_int               495
-   4108                  
+   get_line_count        
    load_int               12
    imul                  
    load_int               5
@@ -158,13 +158,13 @@ LABEL114:
    load_int               0
    load_int               0
    iload                  5
-   2001                  
+   widget_put_size_widget
    iload                  8
    iload                  9
    load_int               0
    load_int               0
    iload                  7
-   2001                  
+   widget_put_size_widget
    load_int               20
    iload                  10
    load_int               0
@@ -246,7 +246,7 @@ LABEL213:
    load_int               1
    load_int               0
    iload                  4
-   2001                  
+   widget_put_size_widget
    load_int               0
    istore                 13
    load_int               -1
@@ -256,7 +256,7 @@ LABEL213:
    load_int               0
    istore                 15
    load_string            ""
-   sstore                
+   sstore                 0
 LABEL232:
    iload                  13
    load_int               64
@@ -375,13 +375,13 @@ LABEL321:
    iload                  13
    array_load            
    get_enum_value        
-   sstore                
+   sstore                 0
    iload                  13
    array_load            
    widget_get_text_widget
    iload                  8
    load_int               495
-   4108                  
+   get_line_count        
    load_int               12
    imul                  
    load_int               5
@@ -405,7 +405,7 @@ LABEL356:
    load_int               0
    iload                  13
    array_load            
-   2001                  
+   widget_put_size_widget
    load_int               20
    iload                  10
    load_int               0
@@ -478,7 +478,7 @@ LABEL356:
 LABEL432:
    load_int               24969355
    widget_get_text_widget
-   sstore                
+   sstore                 0
    sload                  0
    string_length         
    load_int               0
@@ -491,7 +491,7 @@ LABEL440:
    sload                  0
    iload                  8
    load_int               495
-   4108                  
+   get_line_count        
    load_int               12
    imul                  
    load_int               5
@@ -502,7 +502,7 @@ LABEL440:
    load_int               0
    load_int               0
    load_int               24969355
-   2001                  
+   widget_put_size_widget
    load_int               20
    iload                  10
    load_int               0

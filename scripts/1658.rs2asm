@@ -67,14 +67,14 @@
    load_int               0
    istore                 10
    load_string            ""
-   sstore                
+   sstore                 0
    load_int               -1
    istore                 11
    load_int               -1
    istore                 12
    get_clanchat_rank     
    istore                 13
-   3616                  
+   clanchat_kick_rank    
    istore                 14
    get_clanchatcount     
    istore                 15
@@ -112,7 +112,7 @@ LABEL99:
    array_store           
    iload                  20
    get_clan_member_name  
-   sstore                
+   sstore                 0
    iload                  20
    get_clan_member_world 
    istore                 11
@@ -286,12 +286,12 @@ LABEL265:
    sload                  0
    load_int               -2147483644
    load_string            "si"
-   1409                  
+   widget_put_option_click_listener
    load_int               214
    sload                  0
    load_int               -2147483644
    load_string            "si"
-   1409                   1
+   widget_put_option_click_listener 1
    iload                  6
    load_int               4
    iload                  10
@@ -587,25 +587,25 @@ LABEL535:
    load_int               6
    load_string            "Leave Chat"
    iload                  8
-   2300                  
+   widget_put_action_widget
    load_int               194
    load_int               -2147483644
    load_int               6
    load_string            "ii"
    iload                  8
-   2409                  
+   widget_put_option_click_listener_widget
    jump                   LABEL556
 LABEL546:
    load_int               1
    load_string            "Leave Chat"
    iload                  8
-   2300                  
+   widget_put_action_widget
    load_int               194
    load_int               -2147483644
    load_int               1
    load_string            "ii"
    iload                  8
-   2409                  
+   widget_put_option_click_listener_widget
 LABEL556:
    jump                   LABEL576
 LABEL557:
@@ -621,13 +621,13 @@ LABEL557:
    load_int               1
    load_string            "Join Chat"
    iload                  8
-   2300                  
+   widget_put_action_widget
    load_int               194
    load_int               -2147483644
    load_int               1
    load_string            "ii"
    iload                  8
-   2409                  
+   widget_put_option_click_listener_widget
 LABEL576:
    iload                  19
    iload                  6

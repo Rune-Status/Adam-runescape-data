@@ -16,7 +16,7 @@
    load_int               -1
    if_icmpeq              LABEL18
    iload                  13
-   3910                  
+   get_grandexchange_offer_not_started
    load_int               1
    if_icmpeq              LABEL18
    jump                   LABEL104
@@ -129,7 +129,7 @@ LABEL103:
    return                
 LABEL104:
    iload                  13
-   3903                  
+   get_grandexchange_offer_is_selling
    istore                 15
    iload                  13
    get_grandexchange_offer_itemid
@@ -163,10 +163,10 @@ LABEL125:
    get_grandexchange_offer_spent
    istore                 20
    iload                  13
-   3912                  
+   get_grandexchange_offer_done
    istore                 21
    load_string            ","
-   sstore                
+   sstore                 0
    iload                  0
    iload                  1
    widget_load_child     
@@ -504,7 +504,7 @@ LABEL430:
    load_int               0
    widget_put_hidden     
    iload                  13
-   3911                  
+   get_grandexchange_offer_status_2
    load_int               1
    if_icmpeq              LABEL437
    jump                   LABEL461
@@ -531,7 +531,7 @@ LABEL437:
    load_int               -2147483644
    load_int               2
    load_string            "ii"
-   1409                  
+   widget_put_option_click_listener
    jump                   LABEL474
 LABEL461:
    load_int               120
@@ -546,7 +546,7 @@ LABEL461:
    widget_put_mouse_exit_listener
    load_int               -1
    load_string            ""
-   1409                  
+   widget_put_option_click_listener
 LABEL474:
    iload                  8
    iload                  11

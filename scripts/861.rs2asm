@@ -46,7 +46,7 @@ LABEL25:
    load_int               1
    load_string            "Remove"
    load_int               8323084
-   2300                  
+   widget_put_action_widget
    load_string            "<col=ff9040>"
    iload                  0
    get_item_name         
@@ -61,7 +61,7 @@ LABEL25:
    widget_get_index      
    load_string            "iIIi"
    load_int               8323084
-   2409                  
+   widget_put_option_click_listener_widget
    jump                   LABEL77
 LABEL60:
    load_string            "---"
@@ -80,10 +80,10 @@ LABEL60:
    load_int               -1
    load_string            ""
    load_int               8323084
-   2409                  
+   widget_put_option_click_listener_widget
 LABEL77:
    load_string            ""
-   sstore                
+   sstore                 0
    load_int               8323073
    load_int               3
    load_int               1
@@ -120,7 +120,7 @@ LABEL99:
    load_int               1
    load_string            "Previous:"
    load_int               8323090
-   2300                  
+   widget_put_action_widget
    load_string            "<col=ff9040>"
    iload                  1
    get_item_name         
@@ -138,11 +138,11 @@ LABEL99:
    widget_get_index      
    load_string            "iImmIIi"
    load_int               8323090
-   2409                  
+   widget_put_option_click_listener_widget
    load_int               -1
    load_string            ""
    load_int               8323090
-   2400                  
+   widget_put_mouse_press_listener_widget
    jump                   LABEL162
 LABEL138:
    load_int               -1
@@ -161,17 +161,17 @@ LABEL138:
    jump                   LABEL155
 LABEL152:
    load_string            "This is the first key on your key ring."
-   sstore                
+   sstore                 0
    jump                   LABEL157
 LABEL155:
    load_string            "There are no more keys on your key ring."
-   sstore                
+   sstore                 0
 LABEL157:
    load_int               860
    sload                  0
    load_string            "s"
    load_int               8323090
-   2400                  
+   widget_put_mouse_press_listener_widget
 LABEL162:
    load_int               8323073
    load_int               3
@@ -209,7 +209,7 @@ LABEL182:
    load_int               1
    load_string            "Next:"
    load_int               8323087
-   2300                  
+   widget_put_action_widget
    load_string            "<col=ff9040>"
    iload                  2
    get_item_name         
@@ -227,11 +227,11 @@ LABEL182:
    widget_get_index      
    load_string            "iImmIIi"
    load_int               8323087
-   2409                  
+   widget_put_option_click_listener_widget
    load_int               -1
    load_string            ""
    load_int               8323087
-   2400                  
+   widget_put_mouse_press_listener_widget
    jump                   LABEL245
 LABEL221:
    load_int               -1
@@ -250,17 +250,17 @@ LABEL221:
    jump                   LABEL238
 LABEL235:
    load_string            "This is the last key on your key ring."
-   sstore                
+   sstore                 0
    jump                   LABEL240
 LABEL238:
    load_string            "There are no more keys on your key ring."
-   sstore                
+   sstore                 0
 LABEL240:
    load_int               860
    sload                  0
    load_string            "s"
    load_int               8323087
-   2400                  
+   widget_put_mouse_press_listener_widget
 LABEL245:
    load_string            "Key total: "
    iload                  3

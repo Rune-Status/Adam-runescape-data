@@ -16,7 +16,7 @@ LABEL10:
    return                
 LABEL11:
    load_string            ""
-   sstore                
+   sstore                 0
    load_string            ""
    sstore                 1
    iload                  2
@@ -33,7 +33,7 @@ LABEL21:
 LABEL25:
    iload                  0
    int_to_string         
-   sstore                
+   sstore                 0
    jump                   LABEL45
 LABEL29:
    load_int               105
@@ -51,7 +51,7 @@ LABEL29:
    isub                  
    get_enum_value        
    sstore                 1
-   sstore                
+   sstore                 0
 LABEL45:
    sload                  0
    load_string            ":"
@@ -66,6 +66,6 @@ LABEL45:
    load_int               0
    load_string            "ziIssi"
    iload                  2
-   2419                  
+   widget_put_key_listener_widget
 LABEL59:
    return                

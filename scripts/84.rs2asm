@@ -7,7 +7,7 @@
    istore                 1
    get_localplayer_name  
    string_remove_html    
-   sstore                
+   sstore                 0
    load_int               0
    istore                 2
    get_varc               41
@@ -475,7 +475,7 @@ LABEL409:
    sload                  0
    sload                  9
    string_remove_html    
-   4107                  
+   string_compare        
    load_int               0
    if_icmpne              LABEL421
    jump                   LABEL459
@@ -489,22 +489,22 @@ LABEL426:
    load_int               6
    load_string            "Message"
    iload                  8
-   2300                  
+   widget_put_action_widget
    jump                   LABEL439
 LABEL431:
    load_int               6
    load_string            "Add friend"
    iload                  8
-   2300                  
+   widget_put_action_widget
    load_int               7
    load_string            "Add ignore"
    iload                  8
-   2300                  
+   widget_put_action_widget
 LABEL439:
    load_int               8
    load_string            "Report"
    iload                  8
-   2300                  
+   widget_put_action_widget
    iload                  10
    load_int               9
    if_icmpeq              LABEL447
@@ -516,14 +516,14 @@ LABEL447:
    jump                   LABEL459
 LABEL451:
    get_clanchat_rank     
-   3616                  
+   clanchat_kick_rank    
    if_icmpge              LABEL455
    jump                   LABEL459
 LABEL455:
    load_int               9
    load_string            "Kick"
    iload                  8
-   2300                  
+   widget_put_action_widget
 LABEL459:
    jump                   LABEL479
 LABEL460:
@@ -535,7 +535,7 @@ LABEL460:
    load_int               1
    load_string            "Accept trade"
    iload                  8
-   2300                  
+   widget_put_action_widget
    jump                   LABEL479
 LABEL470:
    load_string            "<col=ffffff>"
@@ -546,7 +546,7 @@ LABEL470:
    load_int               2
    load_string            "Accept challenge"
    iload                  8
-   2300                  
+   widget_put_action_widget
 LABEL479:
    iload                  5
    iload                  6
@@ -583,7 +583,7 @@ LABEL503:
    load_int               0
    load_int               0
    iload                  8
-   2001                  
+   widget_put_size_widget
    load_int               10616876
    iload                  7
    load_int               2

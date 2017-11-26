@@ -12,7 +12,7 @@ LABEL6:
    return                
 LABEL7:
    load_string            ""
-   sstore                
+   sstore                 0
    iload                  2
    iload                  5
    if_icmpeq              LABEL13
@@ -25,7 +25,7 @@ LABEL13:
    invoke                 74
    put_varc_string        27
    get_varc_string        27
-   sstore                
+   sstore                 0
    get_varc_string        27
    string_length         
    load_int               0
@@ -35,15 +35,15 @@ LABEL26:
    load_int               1
    load_string            "Submit"
    iload                  7
-   2300                  
+   widget_put_action_widget
    load_int               1103
    load_string            ""
    iload                  7
-   2409                  
+   widget_put_option_click_listener_widget
    load_int               -1
    load_string            ""
    iload                  7
-   2400                  
+   widget_put_mouse_press_listener_widget
    jump                   LABEL49
 LABEL39:
    iload                  7
@@ -51,11 +51,11 @@ LABEL39:
    load_int               -1
    load_string            ""
    iload                  7
-   2409                  
+   widget_put_option_click_listener_widget
    load_int               1103
    load_string            ""
    iload                  7
-   2400                  
+   widget_put_mouse_press_listener_widget
 LABEL49:
    jump                   LABEL64
 LABEL50:
@@ -71,26 +71,26 @@ LABEL54:
    invoke                 74
    put_varc_string        130
    get_varc_string        130
-   sstore                
+   sstore                 0
    jump                   LABEL64
 LABEL63:
    return                
 LABEL64:
    sload                  0
    invoke                 1099
-   sstore                
+   sstore                 0
    sload                  0
    load_string            "<col=ffffff>"
    load_string            "*"
    load_string            "</col>"
    string_append          3
    concat_string         
-   sstore                
+   sstore                 0
    sload                  0
    iload                  2
    widget_get_width_widget
    load_int               495
-   4108                  
+   get_line_count        
    load_int               12
    imul                  
    load_int               5

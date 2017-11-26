@@ -4,10 +4,10 @@
 .string_var_count   3
    sload                  0
    appendtags            
-   sstore                
+   sstore                 0
    sload                  0
    string_length         
-   istore                
+   istore                 0
    load_int               0
    istore                 1
    iload                  0
@@ -22,7 +22,7 @@ LABEL12:
    iload                  0
    string_substring      
    load_string            "|"
-   4107                  
+   string_compare        
    load_int               0
    if_icmpeq              LABEL23
    jump                   LABEL25
@@ -43,7 +43,7 @@ LABEL29:
 LABEL34:
    sload                  0
    invoke                 632
-   sstore                
+   sstore                 0
    sstore                 2
    sload                  1
    string_length         

@@ -37,14 +37,14 @@ LABEL27:
    jump                   LABEL42
 LABEL31:
    get_clanchat_rank     
-   3616                  
+   clanchat_kick_rank    
    if_icmpge              LABEL35
    jump                   LABEL42
 LABEL35:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    sload                  0
    invoke                 215
    jump                   LABEL44
@@ -66,7 +66,7 @@ LABEL52:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    load_int               1
    load_int               33226777
    widget_put_hidden_widget
@@ -249,7 +249,7 @@ LABEL232:
    load_int               1522
    load_string            ""
    load_int               33226778
-   2400                  
+   widget_put_mouse_press_listener_widget
    iload                  1
    invoke                 1525
 LABEL238:

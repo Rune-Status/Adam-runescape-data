@@ -3,7 +3,7 @@
 .int_var_count      10
 .string_var_count   2
    load_string            ""
-   sstore                
+   sstore                 0
    load_string            ""
    sstore                 1
    iload                  0
@@ -14,7 +14,7 @@ LABEL8:
    get_varc_string        27
    get_varc_string        130
    sstore                 1
-   sstore                
+   sstore                 0
    jump                   LABEL23
 LABEL13:
    iload                  0
@@ -25,14 +25,14 @@ LABEL17:
    get_varc_string        130
    get_varc_string        27
    sstore                 1
-   sstore                
+   sstore                 0
    jump                   LABEL23
 LABEL22:
    return                
 LABEL23:
    sload                  0
    invoke                 1099
-   sstore                
+   sstore                 0
    sload                  1
    invoke                 1099
    sstore                 1
@@ -40,7 +40,7 @@ LABEL23:
    iload                  2
    widget_get_width_widget
    load_int               495
-   4108                  
+   get_line_count        
    load_int               12
    imul                  
    load_int               5
@@ -134,19 +134,19 @@ LABEL103:
    iload                  7
    load_string            "IIIIIIII"
    iload                  2
-   2400                  
+   widget_put_mouse_press_listener_widget
    sload                  0
    load_string            "<col=ffffff>"
    load_string            "*"
    load_string            "</col>"
    string_append          3
    concat_string         
-   sstore                
+   sstore                 0
    sload                  0
    iload                  0
    widget_get_width_widget
    load_int               495
-   4108                  
+   get_line_count        
    load_int               12
    imul                  
    load_int               5
@@ -223,7 +223,7 @@ LABEL193:
    load_int               -1
    load_string            ""
    iload                  0
-   2400                  
+   widget_put_mouse_press_listener_widget
    load_int               1098
    load_int               -2147483640
    load_int               -2147483639
@@ -235,5 +235,5 @@ LABEL193:
    iload                  7
    load_string            "izIIIIII"
    iload                  4
-   2419                  
+   widget_put_key_listener_widget
    return                

@@ -4,7 +4,7 @@
 .string_var_count   3
    sload                  1
    sload                  2
-   4107                  
+   string_compare        
    load_int               0
    if_icmpeq              LABEL6
    jump                   LABEL8
@@ -14,7 +14,7 @@ LABEL6:
 LABEL8:
    sload                  1
    string_length         
-   istore                
+   istore                 0
    iload                  0
    load_int               0
    if_icmple              LABEL15
@@ -52,7 +52,7 @@ LABEL28:
    iload                  1
    string_substring      
    concat_string         
-   sstore                
+   sstore                 0
    sload                  0
    sload                  1
    load_int               0

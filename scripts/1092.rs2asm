@@ -108,7 +108,7 @@ LABEL64:
    load_int               0
    widget_put_text_alignment
    load_string            "Nothing more to extend"
-   sstore                
+   sstore                 0
    load_string            ""
    sstore                 1
    iload                  6
@@ -131,7 +131,7 @@ LABEL112:
    load_int               0
    load_int               100
    iload                  7
-   4006                  
+   interpolate           
    istore                 7
    iload                  7
    load_int               2
@@ -150,7 +150,7 @@ LABEL125:
    invoke                 46
    load_string            " points"
    string_append          5
-   sstore                
+   sstore                 0
    jump                   LABEL143
 LABEL136:
    load_string            "Extend remaining task: "
@@ -159,7 +159,7 @@ LABEL136:
    invoke                 46
    load_string            " points"
    string_append          3
-   sstore                
+   sstore                 0
 LABEL143:
    load_int               16750623
    widget_put_textcolor  
@@ -180,7 +180,7 @@ LABEL143:
    load_int               1
    load_string            "Extend"
    iload                  0
-   2300                  
+   widget_put_action_widget
    load_int               414
    load_int               -1
    load_int               39
@@ -195,7 +195,7 @@ LABEL143:
    iload                  7
    load_string            "1isIIIIIi"
    iload                  0
-   2409                  
+   widget_put_option_click_listener_widget
    jump                   LABEL197
 LABEL179:
    load_int               8342543
@@ -215,14 +215,14 @@ LABEL179:
    load_int               -1
    load_string            ""
    iload                  0
-   2409                  
+   widget_put_option_click_listener_widget
 LABEL197:
    sload                  0
    iload                  0
    widget_get_parentid_widget
    widget_get_width_widget
    load_int               494
-   4109                  
+   get_max_line_width    
    load_int               20
    iadd                  
    iload                  0
@@ -230,5 +230,5 @@ LABEL197:
    load_int               0
    load_int               0
    iload                  0
-   2001                  
+   widget_put_size_widget
    return                

@@ -22,7 +22,7 @@ LABEL14:
    load_int               2277
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    load_string            "You can release placeholders by clicking on them."
    send_game_message     
    return                
@@ -61,7 +61,7 @@ LABEL31:
    iload                  5
    get_item_name         
    string_append          7
-   sstore                
+   sstore                 0
    load_string            "Are you "
    load_string            "<col=ffffff>"
    load_string            "sure"
@@ -93,14 +93,14 @@ LABEL80:
    sload                  0
    load_int               512
    load_int               495
-   4109                  
+   get_max_line_width    
    load_int               67
    iadd                  
    istore                 8
    sload                  1
    load_int               512
    load_int               495
-   4109                  
+   get_max_line_width    
    load_int               170
    iadd                  
    istore                 9
@@ -330,7 +330,7 @@ LABEL147:
    load_int               1
    iload                  3
    load_string            "iI"
-   1409                  
+   widget_put_option_click_listener
    iload                  8
    load_int               2
    idiv                  
@@ -519,5 +519,5 @@ LABEL419:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    return                

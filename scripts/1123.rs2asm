@@ -11,7 +11,7 @@ LABEL5:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    iload                  0
    load_int               7
    if_icmpeq              LABEL13
@@ -19,7 +19,7 @@ LABEL5:
 LABEL13:
    get_varc_string        24
    get_varc_string        136
-   4107                  
+   string_compare        
    load_int               0
    if_icmpeq              LABEL19
    jump                   LABEL22
@@ -59,7 +59,7 @@ LABEL44:
    load_int               2277
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    load_string            "Please enter the name of the player you wish to report."
    send_game_message     
    return                

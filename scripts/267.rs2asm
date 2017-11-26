@@ -428,7 +428,7 @@ LABEL408:
    load_string            "<br>"
    load_string            "Drink from the vial when you're all ready."
    string_append          3
-   sstore                
+   sstore                 0
    iload                  0
    load_int               0
    if_icmpeq              LABEL417
@@ -443,7 +443,7 @@ LABEL421:
    load_string            "<br>"
    load_string            "you will be invited into their Rumble dream."
    string_append          3
-   sstore                
+   sstore                 0
    jump                   LABEL439
 LABEL427:
    get_varbit             3946
@@ -452,14 +452,14 @@ LABEL427:
    jump                   LABEL434
 LABEL431:
    load_string            "Drink from the vial when you're ready to start your dream."
-   sstore                
+   sstore                 0
    jump                   LABEL439
 LABEL434:
    load_string            "You may be invited to join someone's Rumble dream."
    load_string            "<br>"
    load_string            "Alternatively, choose a dream of your own from Dominic."
    string_append          3
-   sstore                
+   sstore                 0
 LABEL439:
    load_int               512
    load_int               280
@@ -468,14 +468,14 @@ LABEL439:
    sload                  0
    iload                  3
    load_int               494
-   4109                  
+   get_max_line_width    
    load_int               8
    iadd                  
    istore                 4
    sload                  0
    iload                  3
    load_int               494
-   4108                  
+   get_line_count        
    load_int               10
    imul                  
    load_int               3

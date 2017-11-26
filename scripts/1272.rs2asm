@@ -80,7 +80,7 @@ LABEL49:
    load_int               1342
    widget_put_spriteid   
    load_string            "Release all placeholders"
-   sstore                
+   sstore                 0
    iload                  3
    load_int               0
    if_icmpgt              LABEL75
@@ -94,12 +94,12 @@ LABEL75:
    load_string            ")"
    string_append          3
    concat_string         
-   sstore                
+   sstore                 0
 LABEL84:
    load_int               6
    sload                  0
    iload                  0
-   2300                  
+   widget_put_action_widget
    sload                  0
    iload                  0
    widget_get_parentid_widget
@@ -107,7 +107,7 @@ LABEL84:
    load_int               40
    isub                  
    load_int               495
-   4109                  
+   get_max_line_width    
    istore                 6
    iload                  0
    load_int               4
@@ -159,7 +159,7 @@ LABEL125:
    iload                  0
    load_string            "iI"
    iload                  0
-   2409                  
+   widget_put_option_click_listener_widget
    jump                   LABEL162
 LABEL148:
    load_int               9408399
@@ -175,7 +175,7 @@ LABEL148:
    load_int               -1
    load_string            ""
    iload                  0
-   2409                  
+   widget_put_option_click_listener_widget
 LABEL162:
    iload                  6
    load_int               40
@@ -185,5 +185,5 @@ LABEL162:
    load_int               0
    load_int               0
    iload                  0
-   2001                  
+   widget_put_size_widget
    return                

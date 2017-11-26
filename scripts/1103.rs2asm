@@ -11,7 +11,7 @@ LABEL5:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    get_varbit             4931
    load_int               10
    if_icmplt              LABEL13
@@ -22,7 +22,7 @@ LABEL13:
    invoke                 1099
    get_varc_string        130
    invoke                 1099
-   3116                  
+   send_bug_report       
 LABEL19:
    close_window          
    load_string            "Your bug report has been submitted. Thank you."
@@ -32,7 +32,7 @@ LABEL23:
    load_int               2277
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    load_string            "Please describe the bug."
    send_game_message     
    return                

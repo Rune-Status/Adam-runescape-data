@@ -50,13 +50,13 @@ LABEL27:
    load_int               0
    istore                 6
    load_string            ""
-   sstore                
-   3317                  
+   sstore                 0
+   get_system_update_timer
    load_int               0
    if_icmpgt              LABEL48
    jump                   LABEL112
 LABEL48:
-   3317                  
+   get_system_update_timer
    load_int               50
    idiv                  
    load_int               60
@@ -68,7 +68,7 @@ LABEL48:
    jump                   LABEL69
 LABEL58:
    load_string            "System update in: "
-   3317                  
+   get_system_update_timer
    load_int               3000
    idiv                  
    int_to_string         
@@ -76,11 +76,11 @@ LABEL58:
    iload                  6
    int_to_string         
    string_append          4
-   sstore                
+   sstore                 0
    jump                   LABEL79
 LABEL69:
    load_string            "System update in: "
-   3317                  
+   get_system_update_timer
    load_int               3000
    idiv                  
    int_to_string         
@@ -88,7 +88,7 @@ LABEL69:
    iload                  6
    int_to_string         
    string_append          4
-   sstore                
+   sstore                 0
 LABEL79:
    iload                  2
    sload                  0
@@ -112,7 +112,7 @@ LABEL79:
    load_int               0
    load_int               0
    iload                  5
-   2001                  
+   widget_put_size_widget
    iload                  4
    load_int               1
    iadd                  
@@ -148,7 +148,7 @@ LABEL131:
    load_int               14
    load_int               0
    get_chat_message_type 
-   sstore                
+   sstore                 0
    sstore                 2
    sstore                 1
    istore                 8
@@ -180,7 +180,7 @@ LABEL143:
    load_int               0
    load_int               0
    iload                  5
-   2001                  
+   widget_put_size_widget
    iload                  4
    load_int               1
    iadd                  
@@ -228,7 +228,7 @@ LABEL199:
 LABEL205:
    iload                  7
    get_chat_message      
-   sstore                
+   sstore                 0
    sstore                 2
    sstore                 1
    istore                 8
@@ -354,22 +354,22 @@ LABEL318:
    load_int               8
    load_string            "Message"
    iload                  5
-   2300                  
+   widget_put_action_widget
    jump                   LABEL331
 LABEL323:
    load_int               8
    load_string            "Add friend"
    iload                  5
-   2300                  
+   widget_put_action_widget
    load_int               9
    load_string            "Add ignore"
    iload                  5
-   2300                  
+   widget_put_action_widget
 LABEL331:
    load_int               10
    load_string            "Report"
    iload                  5
-   2300                  
+   widget_put_action_widget
 LABEL335:
    iload                  4
    load_int               1
@@ -399,7 +399,7 @@ LABEL353:
    load_int               0
    load_int               0
    iload                  5
-   2001                  
+   widget_put_size_widget
    load_int               10682368
    iload                  4
    load_int               2

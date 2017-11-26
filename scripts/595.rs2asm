@@ -23,7 +23,7 @@ LABEL12:
    load_int               0
    istore                 3
    load_string            ""
-   sstore                
+   sstore                 0
    load_string            ""
    sstore                 1
    load_string            ""
@@ -36,7 +36,7 @@ LABEL27:
    load_int               1
    istore                 3
    load_string            " "
-   sstore                
+   sstore                 0
    get_clanchat_owner    
    sstore                 1
    load_string            "Opponents"
@@ -65,12 +65,12 @@ LABEL54:
    sload                  0
    load_string            "<br>"
    concat_string         
-   sstore                
+   sstore                 0
 LABEL58:
    sload                  0
    sload                  4
    concat_string         
-   sstore                
+   sstore                 0
    get_varbit             4289
    load_int               2
    if_icmpeq              LABEL66
@@ -105,7 +105,7 @@ LABEL84:
    sload                  4
    load_int               512
    load_int               494
-   4109                  
+   get_max_line_width    
    istore                 4
    iload                  5
    iload                  4
@@ -199,7 +199,7 @@ LABEL166:
    sload                  4
    concat_string         
    concat_string         
-   sstore                
+   sstore                 0
    get_varbit             4289
    load_int               2
    if_icmpeq              LABEL182
@@ -244,7 +244,7 @@ LABEL205:
    sload                  4
    load_int               512
    load_int               494
-   4109                  
+   get_max_line_width    
    istore                 4
    iload                  5
    iload                  4
@@ -333,7 +333,7 @@ LABEL282:
    sload                  4
    concat_string         
    concat_string         
-   sstore                
+   sstore                 0
    get_varbit             4289
    load_int               2
    if_icmpeq              LABEL292
@@ -359,7 +359,7 @@ LABEL301:
    sload                  4
    load_int               512
    load_int               494
-   4109                  
+   get_max_line_width    
    istore                 4
    iload                  5
    iload                  4
@@ -454,23 +454,23 @@ LABEL387:
    sload                  5
    load_int               512
    load_int               494
-   4109                  
+   get_max_line_width    
    istore                 6
 LABEL392:
    sload                  0
    load_int               512
    load_int               494
-   4109                  
+   get_max_line_width    
    istore                 11
    sload                  1
    load_int               512
    load_int               494
-   4109                  
+   get_max_line_width    
    istore                 12
    sload                  2
    load_int               512
    load_int               494
-   4109                  
+   get_max_line_width    
    istore                 13
    iload                  11
    load_int               4
@@ -655,7 +655,7 @@ LABEL571:
    load_int               0
    load_int               0
    iload                  1
-   2001                  
+   widget_put_size_widget
 LABEL577:
    iload                  2
    load_int               0

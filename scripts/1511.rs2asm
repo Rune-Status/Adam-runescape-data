@@ -3,7 +3,7 @@
 .int_var_count      2
 .string_var_count   4
    load_string            "Total:"
-   sstore                
+   sstore                 0
    get_varbit             5431
    load_string            ","
    invoke                 46
@@ -34,24 +34,24 @@ LABEL26:
    sload                  0
    load_int               512
    load_int               495
-   4109                  
+   get_max_line_width    
    load_int               3
    iadd                  
    sload                  1
    load_int               512
    load_int               495
-   4109                  
+   get_max_line_width    
    iadd                  
    sload                  2
    load_int               512
    load_int               495
-   4109                  
+   get_max_line_width    
    load_int               3
    iadd                  
    sload                  3
    load_int               512
    load_int               495
-   4109                  
+   get_max_line_width    
    iadd                  
    invoke                 1045
    istore                 1
@@ -62,7 +62,7 @@ LABEL26:
    load_int               0
    load_int               0
    iload                  0
-   2001                  
+   widget_put_size_widget
    sload                  0
    load_string            "<br>"
    sload                  2

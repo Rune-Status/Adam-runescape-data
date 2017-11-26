@@ -8,14 +8,14 @@
    jump                   LABEL15
 LABEL4:
    get_clanchat_rank     
-   3616                  
+   clanchat_kick_rank    
    if_icmpge              LABEL8
    jump                   LABEL15
 LABEL8:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    sload                  0
    invoke                 215
    jump                   LABEL17

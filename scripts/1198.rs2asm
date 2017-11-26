@@ -22,7 +22,7 @@ LABEL13:
    load_int               0
    load_int               1000
    load_int               20
-   4006                  
+   interpolate           
    isub                  
    istore                 23
    load_string            "Recharge can: "
@@ -34,7 +34,7 @@ LABEL13:
    load_int               1
    load_string            "Recharge"
    iload                  1
-   2300                  
+   widget_put_action_widget
    jump                   LABEL45
 LABEL33:
    load_int               200
@@ -48,14 +48,14 @@ LABEL33:
    load_int               1
    load_string            "Buy"
    iload                  1
-   2300                  
+   widget_put_action_widget
 LABEL45:
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
    iload                  1
-   2409                  
+   widget_put_option_click_listener_widget
    get_varbit             4893
    iload                  23
    if_icmplt              LABEL55
@@ -78,7 +78,7 @@ LABEL66:
    load_int               1
    load_string            "Buy"
    iload                  5
-   2300                  
+   widget_put_action_widget
    load_string            "Already owned"
    iload                  6
    widget_put_text_widget
@@ -89,7 +89,7 @@ LABEL74:
    load_int               1
    load_string            "Buy"
    iload                  5
-   2300                  
+   widget_put_action_widget
    load_string            "Buy seedbox: "
    iload                  23
    int_to_string         
@@ -102,7 +102,7 @@ LABEL86:
    load_int               2
    load_string            "ii"
    iload                  5
-   2409                  
+   widget_put_option_click_listener_widget
    get_varbit             4893
    iload                  23
    if_icmplt              LABEL99
@@ -131,7 +131,7 @@ LABEL110:
    load_int               1
    load_string            "Buy"
    iload                  19
-   2300                  
+   widget_put_action_widget
    load_string            "Buy Auto-weed: 50"
    iload                  20
    widget_put_text_widget
@@ -165,7 +165,7 @@ LABEL136:
    load_int               1
    load_string            "Activate"
    iload                  19
-   2300                  
+   widget_put_action_widget
    load_string            "Deactivated"
    iload                  20
    widget_put_text_widget
@@ -183,7 +183,7 @@ LABEL153:
    load_int               1
    load_string            "Deactivate"
    iload                  19
-   2300                  
+   widget_put_action_widget
    load_string            "Activated"
    iload                  20
    widget_put_text_widget
@@ -196,7 +196,7 @@ LABEL169:
    load_int               2
    load_string            "ii"
    iload                  19
-   2409                  
+   widget_put_option_click_listener_widget
    load_int               6055
    load_int               1
    iload                  21
@@ -252,13 +252,13 @@ LABEL216:
    load_int               1
    load_string            "Buy"
    iload                  7
-   2300                  
+   widget_put_action_widget
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
    iload                  7
-   2409                  
+   widget_put_option_click_listener_widget
    get_varbit             4893
    iload                  23
    if_icmplt              LABEL238
@@ -284,13 +284,13 @@ LABEL245:
    load_int               1
    load_string            "Buy"
    iload                  10
-   2300                  
+   widget_put_action_widget
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
    iload                  10
-   2409                  
+   widget_put_option_click_listener_widget
    get_varbit             4893
    iload                  23
    if_icmplt              LABEL267
@@ -316,13 +316,13 @@ LABEL274:
    load_int               1
    load_string            "Buy"
    iload                  13
-   2300                  
+   widget_put_action_widget
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
    iload                  13
-   2409                  
+   widget_put_option_click_listener_widget
    get_varbit             4893
    iload                  23
    if_icmplt              LABEL296
@@ -348,13 +348,13 @@ LABEL303:
    load_int               1
    load_string            "Buy"
    iload                  16
-   2300                  
+   widget_put_action_widget
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
    iload                  16
-   2409                  
+   widget_put_option_click_listener_widget
    get_varbit             4893
    iload                  23
    if_icmplt              LABEL325
@@ -462,7 +462,7 @@ LABEL382:
    load_int               120
    load_int               0
    load_string            "Iiii"
-   1409                  
+   widget_put_option_click_listener
    iload                  24
    load_int               18
    load_int               0

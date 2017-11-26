@@ -13,7 +13,7 @@ LABEL4:
    load_int               0
    load_string            "ig1"
    iload                  0
-   2419                  
+   widget_put_key_listener_widget
    jump                   LABEL19
 LABEL12:
    load_int               905
@@ -22,7 +22,7 @@ LABEL12:
    load_int               1
    load_string            "ig1"
    iload                  0
-   2419                  
+   widget_put_key_listener_widget
 LABEL19:
    iload                  0
    iload                  1
@@ -200,7 +200,7 @@ LABEL173:
    load_int               1
    load_string            "Raiding Party"
    iload                  8
-   2300                  
+   widget_put_action_widget
    load_int               1414
    iload                  7
    widget_put_spriteid_widget
@@ -214,7 +214,7 @@ LABEL185:
    load_int               1
    load_string            "Kourend Tasks"
    iload                  8
-   2300                  
+   widget_put_action_widget
    load_int               1299
    iload                  7
    widget_put_spriteid_widget
@@ -228,7 +228,7 @@ LABEL197:
    load_int               1
    load_string            "Minigames"
    iload                  8
-   2300                  
+   widget_put_action_widget
    load_int               1052
    iload                  7
    widget_put_spriteid_widget
@@ -242,7 +242,7 @@ LABEL209:
    load_int               1
    load_string            "Achievement Diaries"
    iload                  8
-   2300                  
+   widget_put_action_widget
    load_int               1053
    iload                  7
    widget_put_spriteid_widget
@@ -251,7 +251,7 @@ LABEL217:
    load_int               1
    load_string            "Quest List"
    iload                  8
-   2300                  
+   widget_put_action_widget
    load_int               776
    iload                  7
    widget_put_spriteid_widget
@@ -323,11 +323,11 @@ LABEL276:
    jump                   LABEL283
 LABEL280:
    load_int               0
-   3110                  
+   set_mouse_button_controls_camera
    jump                   LABEL285
 LABEL283:
    load_int               1
-   3110                  
+   set_mouse_button_controls_camera
 LABEL285:
    get_varbit             5542
    load_int               1
@@ -335,11 +335,11 @@ LABEL285:
    jump                   LABEL292
 LABEL289:
    load_int               1
-   3117                  
+   set_shift_drop_enabled
    jump                   LABEL294
 LABEL292:
    load_int               0
-   3117                  
+   set_shift_drop_enabled
 LABEL294:
    get_varbit             5599
    load_int               1

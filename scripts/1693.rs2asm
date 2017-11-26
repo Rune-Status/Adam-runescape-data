@@ -35,7 +35,7 @@ LABEL24:
    istore                 7
 LABEL26:
    load_string            ""
-   sstore                
+   sstore                 0
    load_int               0
    istore                 8
    load_int               0
@@ -55,7 +55,7 @@ LABEL36:
    jump                   LABEL46
 LABEL44:
    widget_get_text       
-   sstore                
+   sstore                 0
 LABEL46:
    iload                  4
    istore                 8
@@ -87,7 +87,7 @@ LABEL60:
 LABEL70:
    widget_get_text       
    sload                  0
-   4107                  
+   string_compare        
    load_int               0
    if_icmplt              LABEL76
    jump                   LABEL80
@@ -241,7 +241,7 @@ LABEL145:
    iload                  3
    load_int               -2147483644
    load_string            "Iiiii"
-   1409                  
+   widget_put_option_click_listener
 LABEL216:
    iload                  1
    iload                  2
@@ -269,7 +269,7 @@ LABEL232:
    widget_get_text       
    iload                  5
    load_int               496
-   4109                  
+   get_max_line_width    
    load_int               9
    iadd                  
    iload                  10

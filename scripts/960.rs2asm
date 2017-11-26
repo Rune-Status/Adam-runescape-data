@@ -179,7 +179,7 @@ LABEL138:
    load_int               -2147483644
    load_int               6
    load_string            "ii"
-   1409                   1
+   widget_put_option_click_listener 1
    jump                   LABEL180
 LABEL158:
    load_int               244
@@ -203,7 +203,7 @@ LABEL158:
    load_int               6
    load_string            "ii"
    iload                  3
-   2409                  
+   widget_put_option_click_listener_widget
 LABEL180:
    jump                   LABEL212
 LABEL181:
@@ -229,7 +229,7 @@ LABEL195:
    widget_put_mouse_exit_listener 1
    load_int               -1
    load_string            ""
-   1409                   1
+   widget_put_option_click_listener 1
    jump                   LABEL212
 LABEL203:
    load_int               40
@@ -240,7 +240,7 @@ LABEL203:
    load_int               -1
    load_string            ""
    iload                  3
-   2409                  
+   widget_put_option_click_listener_widget
 LABEL212:
    iload                  0
    load_int               5
@@ -499,7 +499,7 @@ LABEL434:
    load_string            "-"
    load_int               1
    istore                 20
-   sstore                
+   sstore                 0
 LABEL438:
    iload                  20
    load_int               0
@@ -509,7 +509,7 @@ LABEL442:
    sload                  0
    load_int               512
    load_int               494
-   4109                  
+   get_max_line_width    
    iload                  13
    if_icmpgt              LABEL449
    jump                   LABEL480
@@ -538,7 +538,7 @@ LABEL457:
    sload                  1
    load_int               512
    load_int               494
-   4109                  
+   get_max_line_width    
    iload                  13
    if_icmple              LABEL475
    jump                   LABEL479
@@ -546,7 +546,7 @@ LABEL475:
    sload                  1
    load_int               1
    istore                 19
-   sstore                
+   sstore                 0
 LABEL479:
    jump                   LABEL449
 LABEL480:

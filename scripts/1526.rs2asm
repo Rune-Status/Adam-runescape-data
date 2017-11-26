@@ -25,7 +25,7 @@
    load_int               -1
    istore                 8
    load_string            ""
-   sstore                
+   sstore                 0
    load_string            ""
    sstore                 1
 LABEL26:
@@ -48,11 +48,11 @@ LABEL30:
 LABEL41:
    widget_get_text       
    string_remove_html    
-   sstore                
+   sstore                 0
    jump                   LABEL47
 LABEL45:
    load_string            ""
-   sstore                
+   sstore                 0
 LABEL47:
    load_int               33226762
    iload                  5
@@ -75,7 +75,7 @@ LABEL61:
 LABEL63:
    sload                  0
    sload                  1
-   4107                  
+   string_compare        
    load_int               0
    if_icmple              LABEL69
    jump                   LABEL83

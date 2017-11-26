@@ -6,14 +6,14 @@
    int_to_string         
    load_int               3
    invoke                 1503
-   sstore                
+   sstore                 0
    get_varbit             5427
    int_to_string         
    load_int               4
    invoke                 1503
    sstore                 1
    load_int               0
-   istore                
+   istore                 0
 LABEL12:
    iload                  0
    get_varc               178
@@ -44,7 +44,7 @@ LABEL26:
 LABEL36:
    widget_get_text       
    sload                  0
-   4107                  
+   string_compare        
    load_int               0
    if_icmplt              LABEL42
    jump                   LABEL45
@@ -80,7 +80,7 @@ LABEL57:
 LABEL67:
    widget_get_text       
    sload                  1
-   4107                  
+   string_compare        
    load_int               0
    if_icmplt              LABEL73
    jump                   LABEL76
@@ -95,7 +95,7 @@ LABEL78:
    iload                  0
    load_int               1
    iadd                  
-   istore                
+   istore                 0
    jump                   LABEL12
 LABEL83:
    return                

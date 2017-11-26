@@ -57,7 +57,7 @@ LABEL21:
 LABEL48:
    sload                  0
    invoke                 632
-   sstore                
+   sstore                 0
    sstore                 1
    iload                  1
    load_int               3
@@ -83,7 +83,7 @@ LABEL48:
    load_int               1
    load_string            "View party:"
    iload                  1
-   2300                  
+   widget_put_action_widget
    load_string            "<col=ff9040>"
    sload                  1
    string_remove_html    
@@ -93,11 +93,11 @@ LABEL48:
    widget_put_name_widget
    sload                  0
    invoke                 632
-   sstore                
+   sstore                 0
    sstore                 2
    sload                  0
    invoke                 632
-   sstore                
+   sstore                 0
    sstore                 3
    sload                  2
    load_int               3
@@ -165,7 +165,7 @@ LABEL48:
    widget_put_text_shadowed 1
    sload                  3
    load_string            "0"
-   4107                  
+   string_compare        
    load_int               0
    if_icmpne              LABEL162
    jump                   LABEL182
@@ -176,7 +176,7 @@ LABEL162:
    widget_put_text        1
    sload                  4
    sload                  5
-   4107                  
+   string_compare        
    load_int               0
    if_icmpge              LABEL172
    jump                   LABEL177
@@ -243,7 +243,7 @@ LABEL191:
    istore                 2
    sload                  0
    invoke                 632
-   sstore                
+   sstore                 0
    sstore                 6
    load_int               32702474
    widget_get_width_widget
@@ -274,7 +274,7 @@ LABEL191:
    widget_put_text_shadowed
    sload                  6
    load_string            "0"
-   4107                  
+   string_compare        
    load_int               0
    if_icmpne              LABEL265
    jump                   LABEL268
@@ -295,7 +295,7 @@ LABEL273:
    istore                 2
    sload                  0
    invoke                 632
-   sstore                
+   sstore                 0
    sstore                 7
    load_int               32702475
    widget_get_width_widget
@@ -326,7 +326,7 @@ LABEL273:
    widget_put_text_shadowed
    sload                  7
    load_string            "0"
-   4107                  
+   string_compare        
    load_int               0
    if_icmpne              LABEL314
    jump                   LABEL317
@@ -347,7 +347,7 @@ LABEL322:
    istore                 2
    sload                  0
    invoke                 632
-   sstore                
+   sstore                 0
    sstore                 8
    iload                  1
    load_int               4
@@ -485,7 +485,7 @@ LABEL322:
    load_int               1
    load_int               0
    iload                  1
-   2001                  
+   widget_put_size_widget
    load_int               0
    get_varc               178
    load_int               18
@@ -505,7 +505,7 @@ LABEL480:
    load_int               1
    load_int               0
    iload                  1
-   2001                  
+   widget_put_size_widget
    load_int               0
    load_int               0
    load_int               1
@@ -515,7 +515,7 @@ LABEL480:
    load_int               -1
    load_string            ""
    iload                  1
-   2409                  
+   widget_put_option_click_listener_widget
    iload                  1
    widget_put_actions_null_widget
 LABEL498:
@@ -635,7 +635,7 @@ LABEL594:
    iload                  4
    widget_unset_children 
    load_int               0
-   istore                
+   istore                 0
 LABEL598:
    iload                  0
    load_int               40
@@ -658,7 +658,7 @@ LABEL602:
    iload                  0
    load_int               1
    iadd                  
-   istore                
+   istore                 0
    jump                   LABEL598
 LABEL620:
    get_varc               178

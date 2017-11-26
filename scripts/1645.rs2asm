@@ -312,14 +312,14 @@ LABEL237:
    load_int               0
    widget_put_text_alignment
    load_string            ""
-   sstore                
+   sstore                 0
    iload                  4
    load_int               1
    if_icmpeq              LABEL302
    jump                   LABEL305
 LABEL302:
    load_string            "1?coin"
-   sstore                
+   sstore                 0
    jump                   LABEL311
 LABEL305:
    iload                  4
@@ -327,7 +327,7 @@ LABEL305:
    invoke                 46
    load_string            "?coins"
    string_append          2
-   sstore                
+   sstore                 0
 LABEL311:
    iload                  3
    load_int               2

@@ -62,7 +62,7 @@ LABEL42:
    widget_put_text        1
 LABEL47:
    load_string            "Start raid"
-   sstore                
+   sstore                 0
    get_varbit             5423
    load_int               1
    if_icmpeq              LABEL53
@@ -76,7 +76,7 @@ LABEL57:
    sload                  0
    load_int               190
    load_int               495
-   4109                  
+   get_max_line_width    
    load_int               20
    iadd                  
    iload                  1
@@ -84,7 +84,7 @@ LABEL57:
    load_int               0
    load_int               0
    iload                  1
-   2001                  
+   widget_put_size_widget
    load_int               0
    iload                  1
    widget_put_hidden_widget
@@ -112,7 +112,7 @@ LABEL57:
    iload                  1
    load_string            "isI"
    iload                  1
-   2409                  
+   widget_put_option_click_listener_widget
    load_int               -1
    load_string            ""
    iload                  1
@@ -120,7 +120,7 @@ LABEL57:
    load_int               1
    sload                  0
    iload                  1
-   2300                  
+   widget_put_action_widget
    jump                   LABEL129
 LABEL106:
    load_int               1
@@ -141,7 +141,7 @@ LABEL106:
    load_int               -1
    load_string            ""
    iload                  1
-   2409                  
+   widget_put_option_click_listener_widget
    load_int               -1
    load_string            ""
    iload                  1

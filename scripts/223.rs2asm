@@ -3,14 +3,14 @@
 .int_var_count      2
 .string_var_count   4
    load_string            "<col=0000ff>"
-   sstore                
+   sstore                 0
    invoke                 921
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL15
 LABEL6:
    load_string            "<col=9090ff>"
-   sstore                
+   sstore                 0
    load_int               16777215
    load_int               10616875
    widget_put_textcolor_widget
@@ -28,7 +28,7 @@ LABEL15:
 LABEL21:
    get_varc_string        1
    string_length         
-   istore                
+   istore                 0
    get_varc_string        1
    appendtags            
    sstore                 1
@@ -84,7 +84,7 @@ LABEL68:
    sload                  3
    load_int               2147483647
    load_int               495
-   4109                  
+   get_max_line_width    
    istore                 1
    iload                  1
    load_int               10616875
@@ -113,5 +113,5 @@ LABEL89:
    load_int               1
    load_int               0
    load_int               10616875
-   2001                  
+   widget_put_size_widget
    return                

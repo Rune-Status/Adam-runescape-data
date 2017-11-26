@@ -9,14 +9,14 @@
    iload                  1
    widget_put_opacity_widget
    load_string            "Low-Alchemy"
-   sstore                
+   sstore                 0
    get_varbit             5398
    load_int               1
    if_icmpeq              LABEL12
    jump                   LABEL54
 LABEL12:
    load_string            "High-Alchemy"
-   sstore                
+   sstore                 0
    load_string            "High Alchemy"
    iload                  2
    widget_put_text_widget
@@ -40,7 +40,7 @@ LABEL12:
    load_int               2
    load_string            "ii"
    iload                  0
-   2409                  
+   widget_put_option_click_listener_widget
    load_int               41
    iload                  1
    widget_put_spriteid_widget
@@ -55,7 +55,7 @@ LABEL12:
    load_int               -1
    load_string            ""
    iload                  1
-   2409                  
+   widget_put_option_click_listener_widget
    jump                   LABEL93
 LABEL54:
    load_string            "Low Alchemy"
@@ -75,7 +75,7 @@ LABEL54:
    load_int               -1
    load_string            ""
    iload                  0
-   2409                  
+   widget_put_option_click_listener_widget
    load_int               91
    iload                  1
    widget_put_spriteid_widget
@@ -96,7 +96,7 @@ LABEL54:
    load_int               2
    load_string            "ii"
    iload                  1
-   2409                  
+   widget_put_option_click_listener_widget
 LABEL93:
    load_string            "Charges: "
    load_int               30

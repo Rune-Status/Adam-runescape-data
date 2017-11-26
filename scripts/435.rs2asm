@@ -3,7 +3,7 @@
 .int_var_count      11
 .string_var_count   4
    load_string            ""
-   sstore                
+   sstore                 0
    get_varc               64
    load_int               0
    if_icmpgt              LABEL6
@@ -19,7 +19,7 @@ LABEL10:
    load_int               848
    get_varc               64
    get_enum_value        
-   sstore                
+   sstore                 0
    sload                  0
    load_int               4980747
    widget_put_text_widget
@@ -36,7 +36,7 @@ LABEL25:
    load_int               850
    get_varc               64
    get_enum_value        
-   istore                
+   istore                 0
    iload                  0
    load_int               -1
    if_icmpeq              LABEL35
@@ -61,7 +61,7 @@ LABEL46:
    jump                   LABEL52
 LABEL50:
    load_int               383
-   istore                
+   istore                 0
 LABEL52:
    iload                  0
    int_to_string         
@@ -163,7 +163,7 @@ LABEL134:
 LABEL139:
    sload                  1
    sload                  2
-   4107                  
+   string_compare        
    load_int               0
    if_icmpeq              LABEL145
    jump                   LABEL147
@@ -196,7 +196,7 @@ LABEL162:
    load_int               -1
    load_string            ""
    load_int               4980762
-   2409                  
+   widget_put_option_click_listener_widget
    jump                   LABEL211
 LABEL172:
    iload                  2
@@ -215,12 +215,12 @@ LABEL176:
    load_string            " channel"
    string_append          5
    load_int               4980762
-   2300                  
+   widget_put_action_widget
    load_int               437
    get_varc               64
    load_string            "i"
    load_int               4980762
-   2409                  
+   widget_put_option_click_listener_widget
    jump                   LABEL211
 LABEL194:
    load_string            "Leave"
@@ -234,12 +234,12 @@ LABEL194:
    load_string            " channel"
    string_append          5
    load_int               4980762
-   2300                  
+   widget_put_action_widget
    load_int               437
    load_int               0
    load_string            "i"
    load_int               4980762
-   2409                  
+   widget_put_option_click_listener_widget
 LABEL211:
    load_int               0
    istore                 4
@@ -279,11 +279,11 @@ LABEL238:
    load_int               1
    load_string            "1"
    load_int               4980744
-   2400                  
+   widget_put_mouse_press_listener_widget
    load_int               -1
    load_string            ""
    load_int               4980738
-   2400                  
+   widget_put_mouse_press_listener_widget
    load_int               4980751
    widget_get_width_widget
    istore                 5
@@ -358,7 +358,7 @@ LABEL310:
    sload                  1
    iload                  5
    load_int               495
-   4108                  
+   get_line_count        
    load_int               12
    imul                  
    load_int               5
@@ -396,10 +396,10 @@ LABEL310:
    load_int               124
    iload                  2
    load_string            "i"
-   1400                  
+   widget_put_mouse_press_listener
    return                
 LABEL364:
-   3616                  
+   clanchat_kick_rank    
    get_clanchat_rank     
    istore                 8
    istore                 7
@@ -422,7 +422,7 @@ LABEL374:
    iload                  9
    get_clan_member_rank  
    istore                 6
-   istore                
+   istore                 0
    sstore                 3
    load_int               4980751
    load_int               4
@@ -551,7 +551,7 @@ LABEL440:
    sload                  3
    load_int               -2147483644
    load_string            "si"
-   1409                  
+   widget_put_option_click_listener
    iload                  9
    clanmember_isme       
    load_int               0
@@ -686,12 +686,12 @@ LABEL623:
    load_int               -1
    load_string            ""
    load_int               4980744
-   2400                  
+   widget_put_mouse_press_listener_widget
    load_int               433
    load_int               0
    load_string            "1"
    load_int               4980738
-   2400                  
+   widget_put_mouse_press_listener_widget
    load_int               1
    load_int               4980748
    widget_put_hidden_widget
@@ -799,7 +799,7 @@ LABEL691:
    load_int               124
    iload                  3
    load_string            "i"
-   1400                   1
+   widget_put_mouse_press_listener 1
    load_int               1
    widget_put_no_click_through 1
    iload                  10
@@ -871,7 +871,7 @@ LABEL764:
    load_int               124
    load_int               0
    load_string            "i"
-   1400                   1
+   widget_put_mouse_press_listener 1
    load_int               1
    widget_put_no_click_through 1
    iload                  10
