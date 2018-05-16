@@ -1,4 +1,8 @@
-   033                    1
+.int_stack_count    17
+.string_stack_count 0
+.int_var_count      18
+.string_var_count   0
+   iload                  1
    load_int               1
    if_icmpne              LABEL7
    get_settings           1151
@@ -9,190 +13,190 @@ LABEL7:
    return                
 LABEL8:
    load_int               2147483647
-   034                    17
+   istore                 17
    get_settings           1151
    load_int               13190
    if_icmpeq              LABEL14
    jump                   LABEL21
 LABEL14:
    load_int               1
-   027                    4396
+   set_varbit             4396
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    jump                   LABEL147
 LABEL21:
-   025                    4397
+   get_varbit             4397
    load_int               1
    if_icmpeq              LABEL25
    jump                   LABEL90
 LABEL25:
-   040                    813
-   034                    17
-   033                   
+   invoke                 813
+   istore                 17
+   iload                  0
    load_int               2147483647
    if_icmpge              LABEL31
    jump                   LABEL38
 LABEL31:
-   033                    17
-   027                    4396
+   iload                  17
+   set_varbit             4396
    load_int               3929
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    jump                   LABEL89
 LABEL38:
-   033                   
+   iload                  0
    load_int               0
    if_icmpgt              LABEL42
    jump                   LABEL72
 LABEL42:
-   033                   
+   iload                  0
    load_int               1
    if_icmpgt              LABEL46
    jump                   LABEL54
 LABEL46:
-   025                    4396
+   get_varbit             4396
    load_int               1
    if_icmpeq              LABEL50
    jump                   LABEL54
 LABEL50:
-   033                   
+   iload                  0
    load_int               1
    isub                  
-   034                   
+   istore                 0
 LABEL54:
-   033                    17
-   033                   
+   iload                  17
+   iload                  0
    isub                  
-   025                    4396
+   get_varbit             4396
    if_icmplt              LABEL60
    jump                   LABEL63
 LABEL60:
-   033                    17
-   027                    4396
+   iload                  17
+   set_varbit             4396
    jump                   LABEL67
 LABEL63:
-   025                    4396
-   033                   
+   get_varbit             4396
+   iload                  0
    iadd                  
-   027                    4396
+   set_varbit             4396
 LABEL67:
    load_int               3929
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    jump                   LABEL89
 LABEL72:
-   025                    4396
+   get_varbit             4396
    load_int               0
-   033                   
+   iload                  0
    isub                  
    if_icmple              LABEL78
    jump                   LABEL81
 LABEL78:
    load_int               1
-   027                    4396
+   set_varbit             4396
    jump                   LABEL85
 LABEL81:
-   025                    4396
-   033                   
+   get_varbit             4396
+   iload                  0
    iadd                  
-   027                    4396
+   set_varbit             4396
 LABEL85:
    load_int               3930
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
 LABEL89:
    jump                   LABEL147
 LABEL90:
-   033                   
+   iload                  0
    load_int               2147483647
    if_icmpge              LABEL94
    jump                   LABEL96
 LABEL94:
    load_int               1000
-   034                   
+   istore                 0
 LABEL96:
-   033                   
+   iload                  0
    load_int               0
    if_icmpgt              LABEL100
    jump                   LABEL130
 LABEL100:
-   033                   
+   iload                  0
    load_int               1
    if_icmpgt              LABEL104
    jump                   LABEL112
 LABEL104:
-   025                    4396
+   get_varbit             4396
    load_int               1
    if_icmpeq              LABEL108
    jump                   LABEL112
 LABEL108:
-   033                   
+   iload                  0
    load_int               1
    isub                  
-   034                   
+   istore                 0
 LABEL112:
    load_int               2147483647
-   033                   
+   iload                  0
    isub                  
-   025                    4396
+   get_varbit             4396
    if_icmplt              LABEL118
    jump                   LABEL121
 LABEL118:
    load_int               2147483647
-   027                    4396
+   set_varbit             4396
    jump                   LABEL125
 LABEL121:
-   025                    4396
-   033                   
+   get_varbit             4396
+   iload                  0
    iadd                  
-   027                    4396
+   set_varbit             4396
 LABEL125:
    load_int               3929
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    jump                   LABEL147
 LABEL130:
-   025                    4396
+   get_varbit             4396
    load_int               0
-   033                   
+   iload                  0
    isub                  
    if_icmple              LABEL136
    jump                   LABEL139
 LABEL136:
    load_int               1
-   027                    4396
+   set_varbit             4396
    jump                   LABEL143
 LABEL139:
-   025                    4396
-   033                   
+   get_varbit             4396
+   iload                  0
    iadd                  
-   027                    4396
+   set_varbit             4396
 LABEL143:
    load_int               3930
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
 LABEL147:
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   033                    11
-   033                    12
-   033                    13
-   033                    14
-   033                    15
-   033                    16
-   040                    779
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   iload                  13
+   iload                  14
+   iload                  15
+   iload                  16
+   invoke                 779
    return                

@@ -1,23 +1,27 @@
-   035                   
+.int_stack_count    1
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
+   sload                  0
    load_int               5308417
-   2112                  
+   widget_put_text_widget
    load_int               516
-   034                    1
-   033                   
+   istore                 1
+   iload                  0
    load_int               1
    if_icmpeq              LABEL9
    jump                   LABEL11
 LABEL9:
    load_int               93
-   034                    1
+   istore                 1
 LABEL11:
-   033                    1
-   040                    497
+   iload                  1
+   invoke                 497
    load_int               496
-   033                    1
-   033                    1
+   iload                  1
+   iload                  1
    load_int               1
    load_string            "vY"
    load_int               5308417
-   2414                  
+   widget_put_table_listener_widget
    return                

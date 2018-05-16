@@ -1,77 +1,81 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    load_int               3
-   034                   
+   istore                 0
    load_int               5
-   034                    1
+   istore                 1
    load_int               0
-   034                    2
+   istore                 2
 LABEL6:
-   033                   
+   iload                  0
    load_int               255
    if_icmplt              LABEL10
    jump                   LABEL69
 LABEL10:
-   033                    1
+   iload                  1
    load_int               235
    if_icmplt              LABEL14
    jump                   LABEL62
 LABEL14:
    load_int               17039402
    load_int               5
-   033                    2
-   100                   
+   iload                  2
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
    load_int               0
-   1001                  
-   033                    1
-   033                   
+   widget_put_size       
+   iload                  1
+   iload                  0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               514
-   033                    2
-   3301                  
+   iload                  2
+   get_itemcontainer_itemid
    load_int               -1
    if_icmpne              LABEL34
    jump                   LABEL53
 LABEL34:
    load_int               514
-   033                    2
-   3301                  
+   iload                  2
+   get_itemcontainer_itemid
    load_int               514
-   033                    2
-   3302                  
+   iload                  2
+   get_itemcontainer_stacksize
    1200                  
    load_int               514
-   033                    2
-   3301                  
+   iload                  2
+   get_itemcontainer_itemid
    get_item_name         
    widget_put_name       
    load_int               1
    load_string            "Withdraw"
-   1300                  
+   widget_put_action     
    load_int               1118481
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
 LABEL53:
-   033                    1
+   iload                  1
    load_int               40
    iadd                  
-   034                    1
-   033                    2
+   istore                 1
+   iload                  2
    load_int               1
    iadd                  
-   034                    2
+   istore                 2
    jump                   LABEL10
 LABEL62:
-   033                   
+   iload                  0
    load_int               44
    iadd                  
-   034                   
+   istore                 0
    load_int               5
-   034                    1
+   istore                 1
    jump                   LABEL6
 LABEL69:
    return                

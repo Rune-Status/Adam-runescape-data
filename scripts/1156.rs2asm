@@ -1,43 +1,47 @@
-   033                   
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  0
    load_int               -1
    if_icmpne              LABEL4
    jump                   LABEL40
 LABEL4:
    load_int               0
    widget_put_opacity    
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    1200                  
    widget_put_actions_null
    load_int               1
    load_string            "Withdraw-1"
-   1300                  
+   widget_put_action     
    load_int               2
    load_string            "Withdraw-5"
-   1300                  
+   widget_put_action     
    load_int               3
    load_string            "Withdraw-10"
-   1300                  
+   widget_put_action     
    load_int               4
    load_string            "Withdraw-X"
-   1300                  
+   widget_put_action     
    load_int               5
    load_string            "Withdraw-All"
-   1300                  
+   widget_put_action     
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff981f>"
-   033                   
+   iload                  0
    get_item_name         
-   037                    2
+   string_append          2
    widget_put_name       
    load_int               1157
    load_int               -2147483645
    load_int               -2147483643
    load_int               -2147483641
    load_string            "Iii"
-   1410                  
+   widget_put_drag_release_listener
    jump                   LABEL52
 LABEL40:
    load_int               255
@@ -48,9 +52,9 @@ LABEL40:
    widget_put_actions_null
    load_int               -1
    load_string            ""
-   1405                  
+   widget_put_drag_start_listener
    load_int               -1
    load_string            ""
-   1410                  
+   widget_put_drag_release_listener
 LABEL52:
    return                

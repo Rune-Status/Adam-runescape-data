@@ -1,21 +1,25 @@
-   033                   
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
+   iload                  0
    widget_get_width_widget
-   034                    4
-   033                   
+   istore                 4
+   iload                  0
    widget_get_height_widget
-   034                    5
-   033                    1
-   033                    4
+   istore                 5
+   iload                  1
+   iload                  4
    if_icmpne              LABEL13
-   033                    2
-   033                    5
+   iload                  2
+   iload                  5
    if_icmpne              LABEL13
    jump                   LABEL18
 LABEL13:
-   033                   
-   033                    4
-   033                    5
-   033                    3
-   040                    936
+   iload                  0
+   iload                  4
+   iload                  5
+   iload                  3
+   invoke                 936
 LABEL18:
    return                

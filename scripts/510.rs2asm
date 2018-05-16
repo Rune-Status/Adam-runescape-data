@@ -1,25 +1,29 @@
-   033                    1
-   load_int               800
-   033                   
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  1
+   load_int               816
+   iload                  0
    iadd                  
    load_int               1
    isub                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL10
    jump                   LABEL19
 LABEL10:
    load_int               0
-   033                    2
+   iload                  2
    load_int               5
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               0
    widget_put_hidden     
 LABEL19:
-   033                    2
+   iload                  2
    load_int               12
    iadd                  
    return                

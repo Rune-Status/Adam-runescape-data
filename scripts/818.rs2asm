@@ -1,14 +1,18 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
    widget_put_actions_null
    widget_put_actions_null 1
    load_int               105
    load_int               118
    load_int               150
-   025                    4439
+   get_varbit             4439
    load_int               1
    isub                  
-   3408                  
-   034                    1
-   033                    1
+   get_enum_value        
+   istore                 1
+   iload                  1
    load_int               -1
    if_icmpeq              LABEL14
    jump                   LABEL19
@@ -19,136 +23,136 @@ LABEL14:
    widget_put_hidden      1
    return                
 LABEL19:
-   033                    1
+   iload                  1
    load_int               0
-   3301                  
-   034                    2
+   get_itemcontainer_itemid
+   istore                 2
    load_int               0
-   034                    3
-   033                    2
+   istore                 3
+   iload                  2
    load_int               -1
    if_icmpne              LABEL29
    jump                   LABEL77
 LABEL29:
-   033                    1
+   iload                  1
    load_int               0
-   3302                  
-   034                    3
+   get_itemcontainer_stacksize
+   istore                 3
    load_int               0
    widget_put_hidden     
-   033                    2
+   iload                  2
    get_item_note_1       
-   033                    2
+   iload                  2
    if_icmpne              LABEL40
    jump                   LABEL58
 LABEL40:
-   033                    3
+   iload                  3
    load_int               1
    if_icmpeq              LABEL44
    jump                   LABEL51
 LABEL44:
    load_int               1
    load_string            "Collect-item"
-   1300                  
+   widget_put_action     
    load_int               2
    load_string            "Collect-note"
-   1300                  
+   widget_put_action     
    jump                   LABEL57
 LABEL51:
    load_int               1
    load_string            "Collect-notes"
-   1300                  
+   widget_put_action     
    load_int               2
    load_string            "Collect-items"
-   1300                  
+   widget_put_action     
 LABEL57:
    jump                   LABEL61
 LABEL58:
    load_int               2
    load_string            "Collect"
-   1300                  
+   widget_put_action     
 LABEL61:
    load_int               3
    load_string            "Bank"
-   1300                  
+   widget_put_action     
    load_int               10
    load_string            "Examine"
-   1300                  
-   033                    2
-   033                    3
+   widget_put_action     
+   iload                  2
+   iload                  3
    1200                  
    load_string            "<col=ff9040>"
-   033                    2
+   iload                  2
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    jump                   LABEL79
 LABEL77:
    load_int               1
    widget_put_hidden     
 LABEL79:
-   033                    1
+   iload                  1
    load_int               1
-   3301                  
-   034                    2
-   033                    2
+   get_itemcontainer_itemid
+   istore                 2
+   iload                  2
    load_int               -1
    if_icmpne              LABEL87
    jump                   LABEL135
 LABEL87:
-   033                    1
+   iload                  1
    load_int               1
-   3302                  
-   034                    3
+   get_itemcontainer_stacksize
+   istore                 3
    load_int               0
    widget_put_hidden      1
-   033                    2
+   iload                  2
    get_item_note_1       
-   033                    2
+   iload                  2
    if_icmpne              LABEL98
    jump                   LABEL116
 LABEL98:
-   033                    3
+   iload                  3
    load_int               1
    if_icmpeq              LABEL102
    jump                   LABEL109
 LABEL102:
    load_int               1
    load_string            "Collect-item"
-   1300                   1
+   widget_put_action      1
    load_int               2
    load_string            "Collect-note"
-   1300                   1
+   widget_put_action      1
    jump                   LABEL115
 LABEL109:
    load_int               1
    load_string            "Collect-notes"
-   1300                   1
+   widget_put_action      1
    load_int               2
    load_string            "Collect-items"
-   1300                   1
+   widget_put_action      1
 LABEL115:
    jump                   LABEL119
 LABEL116:
    load_int               2
    load_string            "Collect"
-   1300                   1
+   widget_put_action      1
 LABEL119:
    load_int               3
    load_string            "Bank"
-   1300                   1
+   widget_put_action      1
    load_int               10
    load_string            "Examine"
-   1300                   1
-   033                    2
-   033                    3
+   widget_put_action      1
+   iload                  2
+   iload                  3
    1200                   1
    load_string            "<col=ff9040>"
-   033                    2
+   iload                  2
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name        1
    jump                   LABEL137
 LABEL135:

@@ -1,0 +1,44 @@
+.int_stack_count    2
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
+   iload                  0
+   load_int               1
+   if_icmpne              LABEL4
+   jump                   LABEL5
+LABEL4:
+   return                
+LABEL5:
+   load_int               2266
+   load_int               1
+   load_int               0
+   play_sound_effect     
+   load_int               1
+   load_string            "<col=ffffff>"
+   load_string            "---"
+   load_string            "</col>"
+   string_append          3
+   iload                  1
+   invoke                 1542
+   load_int               -1
+   load_string            ""
+   iload                  1
+   widget_put_mouse_hover_listener_widget
+   load_int               -1
+   load_string            ""
+   iload                  1
+   widget_put_mouse_exit_listener_widget
+   load_int               -1
+   load_string            ""
+   iload                  1
+   widget_put_option_click_listener_widget
+   load_int               1544
+   get_gamecycle         
+   load_int               50
+   iadd                  
+   sload                  0
+   iload                  1
+   load_string            "isI"
+   iload                  1
+   widget_put_render_listener_widget
+   return                

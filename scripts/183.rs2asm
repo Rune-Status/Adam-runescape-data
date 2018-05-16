@@ -1,62 +1,66 @@
-   033                   
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   iload                  0
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL7
 LABEL4:
-   033                    1
-   043                    44
+   iload                  1
+   put_varc               44
    jump                   LABEL49
 LABEL7:
-   033                   
+   iload                  0
    load_int               2
    if_icmpeq              LABEL11
    jump                   LABEL14
 LABEL11:
-   033                    1
-   043                    45
+   iload                  1
+   put_varc               45
    jump                   LABEL49
 LABEL14:
-   033                   
+   iload                  0
    load_int               3
    if_icmpeq              LABEL18
    jump                   LABEL21
 LABEL18:
-   033                    1
-   043                    46
+   iload                  1
+   put_varc               46
    jump                   LABEL49
 LABEL21:
-   033                   
+   iload                  0
    load_int               4
    if_icmpeq              LABEL25
    jump                   LABEL28
 LABEL25:
-   033                    1
-   043                    47
+   iload                  1
+   put_varc               47
    jump                   LABEL49
 LABEL28:
-   033                   
+   iload                  0
    load_int               5
    if_icmpeq              LABEL32
    jump                   LABEL35
 LABEL32:
-   033                    1
-   043                    48
+   iload                  1
+   put_varc               48
    jump                   LABEL49
 LABEL35:
-   033                   
+   iload                  0
    load_int               0
    if_icmpeq              LABEL39
    jump                   LABEL49
 LABEL39:
-   033                    1
-   033                    1
-   033                    1
-   033                    1
-   033                    1
-   043                    48
-   043                    47
-   043                    46
-   043                    45
-   043                    44
+   iload                  1
+   iload                  1
+   iload                  1
+   iload                  1
+   iload                  1
+   put_varc               48
+   put_varc               47
+   put_varc               46
+   put_varc               45
+   put_varc               44
 LABEL49:
    return                

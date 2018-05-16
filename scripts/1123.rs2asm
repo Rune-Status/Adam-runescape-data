@@ -1,28 +1,65 @@
-   047                    24
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
+   get_varc_string        24
    string_length         
    load_int               0
    if_icmpgt              LABEL5
-   jump                   LABEL19
+   jump                   LABEL44
 LABEL5:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
-   047                    24
-   033                   
-   042                    6
-   5002                  
-   3103                  
+   play_sound_effect     
+   iload                  0
+   load_int               7
+   if_icmpeq              LABEL13
+   jump                   LABEL22
+LABEL13:
+   get_varc_string        24
+   get_varc_string        136
+   string_compare        
+   load_int               0
+   if_icmpeq              LABEL19
+   jump                   LABEL22
+LABEL19:
+   load_string            "Thank-you, your abuse report has been received."
+   send_game_message     
+   jump                   LABEL26
+LABEL22:
+   get_varc_string        24
+   iload                  0
+   get_varc               6
+   report_player         
+LABEL26:
+   get_varc               140
+   load_int               1
+   if_icmpeq              LABEL30
+   jump                   LABEL32
+LABEL30:
+   get_varc_string        24
+   add_ignore            
+LABEL32:
+   iload                  0
+   load_int               7
+   if_icmpeq              LABEL36
+   jump                   LABEL38
+LABEL36:
+   get_varc_string        24
+   put_varc_string        136
+LABEL38:
+   close_window          
    load_int               0
    load_string            ""
-   048                    24
-   043                    11
+   put_varc_string        24
+   put_varc               11
    return                
-LABEL19:
+LABEL44:
    load_int               2277
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    load_string            "Please enter the name of the player you wish to report."
    send_game_message     
    return                

@@ -1,43 +1,47 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   1
    load_int               0
-   034                    1
+   istore                 1
 LABEL2:
    load_int               14811140
-   033                    1
-   200                   
+   iload                  1
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL8
    jump                   LABEL15
 LABEL8:
    load_int               1345
-   widget_put_textureid  
-   033                    1
+   widget_put_spriteid   
+   iload                  1
    load_int               2
    iadd                  
-   034                    1
+   istore                 1
    jump                   LABEL2
 LABEL15:
    load_int               14811140
-   033                   
+   iload                  0
    load_int               2
    imul                  
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL23
    jump                   LABEL25
 LABEL23:
    load_int               1344
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL25:
-   033                   
-   043                    139
-   040                    1277
-   040                    1280
+   iload                  0
+   put_varc               139
+   invoke                 1277
+   invoke                 1280
    load_string            ""
-   036                   
-   033                   
+   sstore                 0
+   iload                  0
    load_int               0
    if_icmpeq              LABEL35
-   jump                   LABEL57
+   jump                   LABEL58
 LABEL35:
    load_string            "In Deadman mode, when you die "
    load_string            "<col=ffffff>"
@@ -59,14 +63,44 @@ LABEL35:
    load_string            "skulled"
    load_string            "</col>"
    load_string            " at the time."
-   037                    20
-   036                   
-LABEL57:
-   033                   
+   string_append          20
+   sstore                 0
+   jump                   LABEL177
+LABEL58:
+   iload                  0
    load_int               1
-   if_icmpeq              LABEL61
-   jump                   LABEL87
-LABEL61:
+   if_icmpeq              LABEL62
+   jump                   LABEL112
+LABEL62:
+   get_varbit             5667
+   load_int               1
+   if_icmpeq              LABEL66
+   jump                   LABEL89
+LABEL66:
+   load_string            "In Deadman mode, when you die from "
+   load_string            "<col=ffffff>"
+   load_string            "PvP combat"
+   load_string            "</col>"
+   load_string            ", you lose the "
+   load_string            "<col=ffffff>"
+   load_string            "10"
+   load_string            "</col>"
+   load_string            " most valuable stacks of items in your bank, as well as "
+   load_string            "<col=ffffff>"
+   load_string            "all"
+   load_string            "</col>"
+   load_string            " of the items you are carrying at the time."
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "You will not lose any experience in your protected and unprotected skills if you die "
+   load_string            "<col=ffffff>"
+   load_string            "unskulled"
+   load_string            "</col>"
+   load_string            "."
+   string_append          20
+   sstore                 0
+   jump                   LABEL111
+LABEL89:
    load_string            "In Deadman mode, when you die from "
    load_string            "<col=ffffff>"
    load_string            "PvP combat"
@@ -86,19 +120,17 @@ LABEL61:
    load_string            "<col=ffffff>"
    load_string            "up to 25%"
    load_string            "</col>"
-   load_string            " of your experience in any unprotected skills. You may lose even more if you are "
-   load_string            "<col=ffffff>"
-   load_string            "skulled"
-   load_string            "</col>"
-   load_string            "."
-   037                    24
-   036                   
-LABEL87:
-   033                   
+   load_string            " of your experience in any unprotected skills."
+   string_append          20
+   sstore                 0
+LABEL111:
+   jump                   LABEL177
+LABEL112:
+   iload                  0
    load_int               2
-   if_icmpeq              LABEL91
-   jump                   LABEL117
-LABEL91:
+   if_icmpeq              LABEL116
+   jump                   LABEL143
+LABEL116:
    load_string            "In Deadman mode, if you die whilst "
    load_string            "<col=ffffff>"
    load_string            "skulled"
@@ -123,14 +155,15 @@ LABEL91:
    load_string            "guarded"
    load_string            "</col>"
    load_string            " area."
-   037                    24
-   036                   
-LABEL117:
-   033                   
+   string_append          24
+   sstore                 0
+   jump                   LABEL177
+LABEL143:
+   iload                  0
    load_int               3
-   if_icmpeq              LABEL121
-   jump                   LABEL151
-LABEL121:
+   if_icmpeq              LABEL147
+   jump                   LABEL177
+LABEL147:
    load_string            "In Deadman mode, if you die in a "
    load_string            "<col=ffffff>"
    load_string            "guarded"
@@ -159,10 +192,10 @@ LABEL121:
    load_string            "up to 50%"
    load_string            "</col>"
    load_string            " in any unprotected skills."
-   037                    28
-   036                   
-LABEL151:
-   035                   
+   string_append          28
+   sstore                 0
+LABEL177:
+   sload                  0
    load_int               14811141
-   2112                  
+   widget_put_text_widget
    return                

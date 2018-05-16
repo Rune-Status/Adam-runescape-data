@@ -1,163 +1,180 @@
-   033                    2
-   033                   
+.int_stack_count    6
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   0
+   iload                  2
+   iload                  0
+   widget_get_relativex_widget
+   isub                  
+   load_int               -5
+   if_icmplt              LABEL7
+   jump                   LABEL8
+LABEL7:
+   return                
+LABEL8:
+   iload                  3
+   iload                  0
    widget_get_relativey_widget
    isub                  
-   034                    2
+   istore                 3
    load_int               5
-   034                    5
+   istore                 6
    load_int               0
-   034                    6
-   033                   
+   istore                 7
+   iload                  0
    widget_get_scrolly_widget
-   034                    7
-   033                    2
+   istore                 8
+   iload                  3
    load_int               15
-   if_icmplt              LABEL16
-   jump                   LABEL105
-LABEL16:
-   033                    2
+   if_icmplt              LABEL24
+   jump                   LABEL116
+LABEL24:
+   iload                  3
    load_int               -8
-   if_icmplt              LABEL20
-   jump                   LABEL21
-LABEL20:
+   if_icmplt              LABEL28
+   jump                   LABEL29
+LABEL28:
    return                
-LABEL21:
-   033                    4
+LABEL29:
+   iload                  5
    get_gamecycle         
-   if_icmple              LABEL25
-   jump                   LABEL43
-LABEL25:
-   033                   
-   033                    1
-   200                   
+   if_icmple              LABEL33
+   jump                   LABEL52
+LABEL33:
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL31
-   jump                   LABEL42
-LABEL31:
+   if_icmpeq              LABEL39
+   jump                   LABEL51
+LABEL39:
    load_int               284
    load_int               -2147483645
    load_int               -2147483643
+   load_int               -2147483647
    load_int               -2147483646
-   033                    3
+   iload                  4
    get_gamecycle         
    load_int               2
    iadd                  
-   load_string            "IiiIi"
-   1405                  
+   load_string            "IiiiIi"
+   widget_put_drag_start_listener
    return                
-LABEL42:
-   jump                   LABEL83
-LABEL43:
-   033                    4
+LABEL51:
+   jump                   LABEL94
+LABEL52:
+   iload                  5
    get_gamecycle         
    isub                  
    load_int               5
-   if_icmplt              LABEL49
-   jump                   LABEL67
-LABEL49:
-   033                   
-   033                    1
-   200                   
+   if_icmplt              LABEL58
+   jump                   LABEL77
+LABEL58:
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL55
-   jump                   LABEL66
-LABEL55:
+   if_icmpeq              LABEL64
+   jump                   LABEL76
+LABEL64:
    load_int               284
    load_int               -2147483645
    load_int               -2147483643
+   load_int               -2147483647
    load_int               -2147483646
-   033                    3
-   033                    4
+   iload                  4
+   iload                  5
    load_int               2
    iadd                  
-   load_string            "IiiIi"
-   1405                  
+   load_string            "IiiiIi"
+   widget_put_drag_start_listener
    return                
-LABEL66:
-   jump                   LABEL83
-LABEL67:
-   033                   
-   033                    1
-   200                   
+LABEL76:
+   jump                   LABEL94
+LABEL77:
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL73
-   jump                   LABEL83
-LABEL73:
-   load_int               284
-   load_int               -2147483645
-   load_int               -2147483643
-   load_int               -2147483646
-   033                    3
-   033                    4
-   load_int               1
-   iadd                  
-   load_string            "IiiIi"
-   1405                  
+   if_icmpeq              LABEL83
+   jump                   LABEL94
 LABEL83:
-   033                    2
+   load_int               284
+   load_int               -2147483645
+   load_int               -2147483643
+   load_int               -2147483647
+   load_int               -2147483646
+   iload                  4
+   iload                  5
+   load_int               1
+   iadd                  
+   load_string            "IiiiIi"
+   widget_put_drag_start_listener
+LABEL94:
+   iload                  3
    load_int               5
-   if_icmplt              LABEL87
-   jump                   LABEL89
-LABEL87:
-   load_int               8
-   034                    5
-LABEL89:
-   033                    7
-   033                    5
-   if_icmpgt              LABEL93
-   jump                   LABEL98
-LABEL93:
-   033                    7
-   033                    5
-   isub                  
-   034                    7
+   if_icmplt              LABEL98
    jump                   LABEL100
 LABEL98:
-   load_int               0
-   034                    7
+   load_int               8
+   istore                 6
 LABEL100:
-   033                    3
-   033                   
-   033                    7
-   040                    72
-   jump                   LABEL137
-LABEL105:
-   033                   
+   iload                  8
+   iload                  6
+   if_icmpgt              LABEL104
+   jump                   LABEL109
+LABEL104:
+   iload                  8
+   iload                  6
+   isub                  
+   istore                 8
+   jump                   LABEL111
+LABEL109:
+   load_int               0
+   istore                 8
+LABEL111:
+   iload                  4
+   iload                  0
+   iload                  8
+   invoke                 72
+   jump                   LABEL148
+LABEL116:
+   iload                  0
    widget_get_height_widget
    load_int               32
    isub                  
-   033                    2
+   iload                  3
    isub                  
-   034                    6
-   033                    6
+   istore                 7
+   iload                  7
    load_int               20
-   if_icmplt              LABEL116
-   jump                   LABEL137
-LABEL116:
-   033                    6
-   load_int               -5
-   if_icmplt              LABEL120
-   jump                   LABEL123
-LABEL120:
-   load_int               10
-   034                    5
-   jump                   LABEL129
-LABEL123:
-   033                    6
-   load_int               5
    if_icmplt              LABEL127
-   jump                   LABEL129
+   jump                   LABEL148
 LABEL127:
+   iload                  7
+   load_int               -5
+   if_icmplt              LABEL131
+   jump                   LABEL134
+LABEL131:
+   load_int               10
+   istore                 6
+   jump                   LABEL140
+LABEL134:
+   iload                  7
+   load_int               5
+   if_icmplt              LABEL138
+   jump                   LABEL140
+LABEL138:
    load_int               8
-   034                    5
-LABEL129:
-   033                    7
-   033                    5
+   istore                 6
+LABEL140:
+   iload                  8
+   iload                  6
    iadd                  
-   034                    7
-   033                    3
-   033                   
-   033                    7
-   040                    72
-LABEL137:
+   istore                 8
+   iload                  4
+   iload                  0
+   iload                  8
+   invoke                 72
+LABEL148:
    return                

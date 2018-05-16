@@ -1,48 +1,103 @@
+.int_stack_count    5
+.string_stack_count 0
+.int_var_count      8
+.string_var_count   0
    load_int               -1
-   034                    3
+   istore                 5
    load_int               -1
-   034                    4
+   istore                 6
    load_int               0
-   034                    5
+   istore                 7
 LABEL6:
-   033                    5
-   033                    1
+   iload                  7
+   iload                  1
    if_icmplt              LABEL10
-   jump                   LABEL57
+   jump                   LABEL101
 LABEL10:
-   033                   
-   033                    5
-   200                   
+   iload                  0
+   iload                  7
    load_int               1
-   if_icmpeq              LABEL16
-   jump                   LABEL52
-LABEL16:
-   033                    2
-   033                    5
-   3301                  
-   034                    3
-   033                    3
+   iadd                  
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL18
+   jump                   LABEL96
+LABEL18:
+   iload                  2
+   iload                  7
+   get_itemcontainer_itemid
+   istore                 5
+   iload                  5
    load_int               -1
-   if_icmpne              LABEL24
-   jump                   LABEL40
-LABEL24:
+   if_icmpne              LABEL26
+   jump                   LABEL84
+LABEL26:
    load_int               0
    widget_put_hidden     
-   033                    3
-   033                    2
-   033                    5
-   3302                  
+   iload                  5
+   iload                  2
+   iload                  7
+   get_itemcontainer_stacksize
    1200                  
+   iload                  5
+   iload                  3
+   if_icmpeq              LABEL37
+   jump                   LABEL75
+LABEL37:
+   iload                  4
+   load_int               1
+   if_icmpgt              LABEL41
+   jump                   LABEL55
+LABEL41:
+   iload                  4
+   load_int               5
+   if_icmpne              LABEL45
+   jump                   LABEL55
+LABEL45:
+   iload                  4
+   load_int               10
+   if_icmpne              LABEL49
+   jump                   LABEL55
+LABEL49:
+   load_int               9
+   load_string            "Buy "
+   iload                  4
+   int_to_string         
+   string_append          2
+   widget_put_action     
+LABEL55:
+   load_int               19660802
+   load_int               0
+   widget_load_child      1
+   load_int               1
+   if_icmpeq              LABEL61
+   jump                   LABEL75
+LABEL61:
+   load_int               34
+   load_int               34
+   load_int               0
+   load_int               0
+   widget_put_size        1
+   widget_get_relativex  
+   widget_get_relativey  
+   load_int               0
+   load_int               0
+   widget_put_position    1
+   load_int               155
+   widget_put_spriteid    1
+   load_int               180
+   widget_put_opacity     1
+LABEL75:
    load_string            "<col=ff9040>"
-   033                    3
+   iload                  5
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    widget_get_relativey  
-   034                    4
-   jump                   LABEL52
-LABEL40:
+   istore                 6
+   jump                   LABEL96
+LABEL84:
    load_int               1
    widget_put_hidden     
    load_int               6512
@@ -54,48 +109,48 @@ LABEL40:
    widget_put_opacity    
    load_int               -1
    load_string            ""
-   1408                  
-LABEL52:
-   033                    5
+   widget_put_render_listener
+LABEL96:
+   iload                  7
    load_int               1
    iadd                  
-   034                    5
+   istore                 7
    jump                   LABEL6
-LABEL57:
-   033                    4
+LABEL101:
+   iload                  6
    load_int               -1
-   if_icmpne              LABEL61
-   jump                   LABEL66
-LABEL61:
-   033                    4
+   if_icmpne              LABEL105
+   jump                   LABEL110
+LABEL105:
+   iload                  6
    load_int               32
    iadd                  
-   034                    4
-   jump                   LABEL68
-LABEL66:
+   istore                 6
+   jump                   LABEL112
+LABEL110:
    load_int               0
-   034                    4
-LABEL68:
-   033                    4
-   033                   
+   istore                 6
+LABEL112:
+   iload                  6
+   iload                  0
    widget_get_height_widget
-   if_icmpgt              LABEL73
-   jump                   LABEL86
-LABEL73:
+   if_icmpgt              LABEL117
+   jump                   LABEL130
+LABEL117:
    load_int               0
-   033                    4
-   033                   
+   iload                  6
+   iload                  0
    widget_put_scrollwidthheight_widget
    load_int               19660803
-   033                   
-   033                   
+   iload                  0
+   iload                  0
    widget_get_scrolly_widget
-   040                    72
+   invoke                 72
    load_int               0
    load_int               19660803
    widget_put_hidden_widget
-   jump                   LABEL101
-LABEL86:
+   jump                   LABEL145
+LABEL130:
    load_int               0
    load_int               0
    load_int               19660802
@@ -105,11 +160,11 @@ LABEL86:
    load_int               19660802
    widget_put_scrollwidthheight_widget
    load_int               19660803
-   033                   
+   iload                  0
    load_int               0
-   040                    72
+   invoke                 72
    load_int               1
    load_int               19660803
    widget_put_hidden_widget
-LABEL101:
+LABEL145:
    return                

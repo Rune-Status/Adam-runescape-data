@@ -1,110 +1,106 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   3
    load_int               -1
-   034                   
+   istore                 0
    load_int               -1
-   034                    1
+   istore                 1
    load_string            ""
-   036                   
+   sstore                 0
    load_string            ""
-   036                    1
+   sstore                 1
    load_string            ""
-   036                    2
+   sstore                 2
    load_int               -1
-   034                    2
+   istore                 2
    load_int               -2147483648
-   034                    3
+   istore                 3
    load_int               -2147483648
-   034                    4
+   istore                 4
    load_int               0
-   034                    5
+   istore                 5
 LABEL18:
-   033                    5
-   load_int               105
+   iload                  5
+   load_int               107
    if_icmple              LABEL22
-   jump                   LABEL92
+   jump                   LABEL81
 LABEL22:
-   033                    5
-   5017                  
+   iload                  5
+   get_chatlinebuffer_length
    load_int               0
    if_icmpgt              LABEL27
-   jump                   LABEL87
+   jump                   LABEL76
 LABEL27:
-   033                    5
+   iload                  5
    load_int               0
-   5003                  
-   036                    2
-   036                    1
-   036                   
-   034                    1
-   034                   
-   033                    1
-   033                    3
+   get_chat_message_type 
+   sstore                 2
+   sstore                 1
+   sstore                 0
+   istore                 1
+   istore                 0
+   iload                  1
+   iload                  3
    if_icmpgt              LABEL42
-   033                   
-   033                    2
+   iload                  0
+   iload                  2
    if_icmpgt              LABEL42
    jump                   LABEL46
 LABEL42:
-   033                    1
-   034                    3
-   033                   
-   034                    2
+   iload                  1
+   istore                 3
+   iload                  0
+   istore                 2
 LABEL46:
-   033                    5
-   load_int               3
-   if_icmpeq              LABEL56
-   033                    5
-   load_int               6
-   if_icmpeq              LABEL56
-   033                    5
-   load_int               7
-   if_icmpeq              LABEL56
-   jump                   LABEL66
-LABEL56:
-   033                    1
-   033                    4
-   if_icmpgt              LABEL60
-   jump                   LABEL65
-LABEL60:
-   033                    1
-   034                    4
-   035                   
+   iload                  5
+   switch                
+      3: LABEL49
+      6: LABEL49
+      7: LABEL49
+      14: LABEL59
+   jump                   LABEL76
+LABEL49:
+   iload                  1
+   iload                  4
+   if_icmpgt              LABEL53
+   jump                   LABEL58
+LABEL53:
+   iload                  1
+   istore                 4
+   sload                  0
    string_remove_html    
-   048                   
-LABEL65:
-   jump                   LABEL87
-LABEL66:
-   033                    5
-   load_int               14
-   if_icmpeq              LABEL70
-   jump                   LABEL87
-LABEL70:
-   033                   
+   put_varc_string       
+LABEL58:
+   jump                   LABEL76
+LABEL59:
+   iload                  0
    load_int               -1
-   if_icmpne              LABEL74
-   jump                   LABEL87
-LABEL74:
-   033                    1
+   if_icmpne              LABEL63
+   jump                   LABEL76
+LABEL63:
+   iload                  1
    get_gamecycle         
    load_int               3000
    isub                  
-   if_icmpgt              LABEL80
-   jump                   LABEL87
-LABEL80:
-   033                    1
-   043                    55
+   if_icmpgt              LABEL69
+   jump                   LABEL76
+LABEL69:
+   iload                  1
+   put_varc               55
    load_int               664
    load_int               0
    load_string            "1"
    load_int               10616832
-   2408                  
-LABEL87:
-   033                    5
+   widget_put_render_listener_widget
+LABEL76:
+   iload                  5
    load_int               1
    iadd                  
-   034                    5
+   istore                 5
    jump                   LABEL18
-LABEL92:
-   033                    2
+LABEL81:
+   iload                  2
    return                
    load_int               0
    return                

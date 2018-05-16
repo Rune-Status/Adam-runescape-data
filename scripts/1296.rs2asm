@@ -1,0 +1,573 @@
+.int_stack_count    22
+.string_stack_count 0
+.int_var_count      23
+.string_var_count   0
+   load_int               4
+   array_initialize       111
+   load_int               4
+   array_initialize       65641
+   load_int               0
+   istore                 22
+   load_int               -1
+   load_int               0
+   iload                  13
+   2200                  
+   load_int               -1
+   load_int               0
+   iload                  14
+   2200                  
+   load_int               -1
+   load_int               0
+   iload                  15
+   2200                  
+   load_int               -1
+   load_int               0
+   iload                  16
+   2200                  
+   iload                  0
+   widget_unset_children 
+   iload                  22
+   load_int               13446
+   array_store           
+   iload                  22
+   load_int               1
+   array_store            1
+   iload                  22
+   load_int               1
+   iadd                  
+   istore                 22
+   iload                  2
+   load_int               0
+   if_icmpgt              LABEL38
+   jump                   LABEL48
+LABEL38:
+   iload                  22
+   load_int               556
+   array_store           
+   iload                  22
+   iload                  2
+   array_store            1
+   iload                  22
+   load_int               1
+   iadd                  
+   istore                 22
+LABEL48:
+   iload                  3
+   load_int               0
+   if_icmpgt              LABEL52
+   jump                   LABEL62
+LABEL52:
+   iload                  22
+   load_int               555
+   array_store           
+   iload                  22
+   iload                  3
+   array_store            1
+   iload                  22
+   load_int               1
+   iadd                  
+   istore                 22
+LABEL62:
+   iload                  22
+   load_int               3
+   if_icmple              LABEL66
+   jump                   LABEL80
+LABEL66:
+   iload                  4
+   load_int               0
+   if_icmpgt              LABEL70
+   jump                   LABEL80
+LABEL70:
+   iload                  22
+   load_int               557
+   array_store           
+   iload                  22
+   iload                  4
+   array_store            1
+   iload                  22
+   load_int               1
+   iadd                  
+   istore                 22
+LABEL80:
+   iload                  22
+   load_int               3
+   if_icmple              LABEL84
+   jump                   LABEL98
+LABEL84:
+   iload                  5
+   load_int               0
+   if_icmpgt              LABEL88
+   jump                   LABEL98
+LABEL88:
+   iload                  22
+   load_int               554
+   array_store           
+   iload                  22
+   iload                  5
+   array_store            1
+   iload                  22
+   load_int               1
+   iadd                  
+   istore                 22
+LABEL98:
+   iload                  22
+   load_int               3
+   if_icmple              LABEL102
+   jump                   LABEL116
+LABEL102:
+   iload                  7
+   load_int               0
+   if_icmpgt              LABEL106
+   jump                   LABEL116
+LABEL106:
+   iload                  22
+   iload                  6
+   array_store           
+   iload                  22
+   iload                  7
+   array_store            1
+   iload                  22
+   load_int               1
+   iadd                  
+   istore                 22
+LABEL116:
+   iload                  22
+   load_int               3
+   if_icmple              LABEL120
+   jump                   LABEL134
+LABEL120:
+   iload                  9
+   load_int               0
+   if_icmpgt              LABEL124
+   jump                   LABEL134
+LABEL124:
+   iload                  22
+   iload                  8
+   array_store           
+   iload                  22
+   iload                  9
+   array_store            1
+   iload                  22
+   load_int               1
+   iadd                  
+   istore                 22
+LABEL134:
+   iload                  22
+   load_int               3
+   if_icmple              LABEL138
+   jump                   LABEL152
+LABEL138:
+   iload                  11
+   load_int               0
+   if_icmpgt              LABEL142
+   jump                   LABEL152
+LABEL142:
+   iload                  22
+   iload                  10
+   array_store           
+   iload                  22
+   iload                  11
+   array_store            1
+   iload                  22
+   load_int               1
+   iadd                  
+   istore                 22
+LABEL152:
+   load_string            "Magic level: "
+   iload                  12
+   int_to_string         
+   string_append          2
+   iload                  17
+   widget_put_text_widget
+   load_int               6
+   get_boostedskilllevels
+   iload                  12
+   if_icmpge              LABEL163
+   jump                   LABEL167
+LABEL163:
+   load_int               16750623
+   iload                  17
+   widget_put_textcolor_widget
+   jump                   LABEL170
+LABEL167:
+   load_int               13107200
+   iload                  17
+   widget_put_textcolor_widget
+LABEL170:
+   load_int               0
+   array_load            
+   load_int               -1
+   if_icmpne              LABEL175
+   jump                   LABEL253
+LABEL175:
+   load_int               0
+   array_load             1
+   load_int               0
+   if_icmpgt              LABEL180
+   jump                   LABEL253
+LABEL180:
+   load_int               93
+   load_int               13446
+   get_itemcontainer_stacksizes_total
+   int_to_string         
+   load_string            "/1"
+   string_append          2
+   iload                  18
+   widget_put_text_widget
+   load_int               0
+   array_load            
+   load_int               0
+   array_load             1
+   iload                  13
+   2205                  
+   load_int               93
+   load_int               0
+   array_load            
+   get_itemcontainer_stacksizes_total
+   load_int               0
+   array_load             1
+   if_icmplt              LABEL202
+   jump                   LABEL228
+LABEL202:
+   iload                  0
+   load_int               5
+   load_int               0
+   widget_create_child   
+   load_int               16
+   load_int               16
+   load_int               0
+   load_int               0
+   widget_put_size       
+   iload                  13
+   widget_get_relativex_widget
+   load_int               20
+   iadd                  
+   iload                  13
+   widget_get_relativey_widget
+   load_int               16
+   iadd                  
+   load_int               0
+   load_int               0
+   widget_put_position   
+   load_int               299
+   widget_put_spriteid   
+   load_int               13107200
+   iload                  18
+   widget_put_textcolor_widget
+   jump                   LABEL253
+LABEL228:
+   iload                  0
+   load_int               5
+   load_int               0
+   widget_create_child   
+   load_int               17
+   load_int               17
+   load_int               0
+   load_int               0
+   widget_put_size       
+   iload                  13
+   widget_get_relativex_widget
+   load_int               20
+   iadd                  
+   iload                  13
+   widget_get_relativey_widget
+   load_int               16
+   iadd                  
+   load_int               0
+   load_int               0
+   widget_put_position   
+   load_int               1210
+   widget_put_spriteid   
+   load_int               16750623
+   iload                  18
+   widget_put_textcolor_widget
+LABEL253:
+   load_int               1
+   array_load            
+   load_int               -1
+   if_icmpne              LABEL258
+   jump                   LABEL339
+LABEL258:
+   load_int               1
+   array_load             1
+   load_int               0
+   if_icmpgt              LABEL263
+   jump                   LABEL339
+LABEL263:
+   load_int               1
+   array_load            
+   invoke                 19
+   invoke                 20
+   load_string            "/"
+   load_int               1
+   array_load             1
+   int_to_string         
+   string_append          3
+   iload                  19
+   widget_put_text_widget
+   load_int               1
+   array_load            
+   load_int               1
+   array_load             1
+   iload                  14
+   2205                  
+   load_int               1
+   array_load            
+   invoke                 19
+   load_int               1
+   array_load             1
+   if_icmplt              LABEL287
+   jump                   LABEL313
+LABEL287:
+   iload                  0
+   load_int               5
+   load_int               1
+   widget_create_child   
+   load_int               16
+   load_int               16
+   load_int               0
+   load_int               0
+   widget_put_size       
+   iload                  14
+   widget_get_relativex_widget
+   load_int               20
+   iadd                  
+   iload                  14
+   widget_get_relativey_widget
+   load_int               16
+   iadd                  
+   load_int               0
+   load_int               0
+   widget_put_position   
+   load_int               299
+   widget_put_spriteid   
+   load_int               13107200
+   iload                  19
+   widget_put_textcolor_widget
+   jump                   LABEL338
+LABEL313:
+   iload                  0
+   load_int               5
+   load_int               1
+   widget_create_child   
+   load_int               17
+   load_int               17
+   load_int               0
+   load_int               0
+   widget_put_size       
+   iload                  14
+   widget_get_relativex_widget
+   load_int               20
+   iadd                  
+   iload                  14
+   widget_get_relativey_widget
+   load_int               16
+   iadd                  
+   load_int               0
+   load_int               0
+   widget_put_position   
+   load_int               1210
+   widget_put_spriteid   
+   load_int               16750623
+   iload                  19
+   widget_put_textcolor_widget
+LABEL338:
+   jump                   LABEL342
+LABEL339:
+   load_string            ""
+   iload                  19
+   widget_put_text_widget
+LABEL342:
+   load_int               2
+   array_load            
+   load_int               -1
+   if_icmpne              LABEL347
+   jump                   LABEL428
+LABEL347:
+   load_int               2
+   array_load             1
+   load_int               0
+   if_icmpgt              LABEL352
+   jump                   LABEL428
+LABEL352:
+   load_int               2
+   array_load            
+   invoke                 19
+   invoke                 20
+   load_string            "/"
+   load_int               2
+   array_load             1
+   int_to_string         
+   string_append          3
+   iload                  20
+   widget_put_text_widget
+   load_int               2
+   array_load            
+   load_int               2
+   array_load             1
+   iload                  15
+   2205                  
+   load_int               2
+   array_load            
+   invoke                 19
+   load_int               2
+   array_load             1
+   if_icmplt              LABEL376
+   jump                   LABEL402
+LABEL376:
+   iload                  0
+   load_int               5
+   load_int               2
+   widget_create_child   
+   load_int               16
+   load_int               16
+   load_int               0
+   load_int               0
+   widget_put_size       
+   iload                  15
+   widget_get_relativex_widget
+   load_int               20
+   iadd                  
+   iload                  15
+   widget_get_relativey_widget
+   load_int               16
+   iadd                  
+   load_int               0
+   load_int               0
+   widget_put_position   
+   load_int               299
+   widget_put_spriteid   
+   load_int               13107200
+   iload                  20
+   widget_put_textcolor_widget
+   jump                   LABEL427
+LABEL402:
+   iload                  0
+   load_int               5
+   load_int               2
+   widget_create_child   
+   load_int               17
+   load_int               17
+   load_int               0
+   load_int               0
+   widget_put_size       
+   iload                  15
+   widget_get_relativex_widget
+   load_int               20
+   iadd                  
+   iload                  15
+   widget_get_relativey_widget
+   load_int               16
+   iadd                  
+   load_int               0
+   load_int               0
+   widget_put_position   
+   load_int               1210
+   widget_put_spriteid   
+   load_int               16750623
+   iload                  20
+   widget_put_textcolor_widget
+LABEL427:
+   jump                   LABEL431
+LABEL428:
+   load_string            ""
+   iload                  20
+   widget_put_text_widget
+LABEL431:
+   load_int               3
+   array_load            
+   load_int               -1
+   if_icmpne              LABEL436
+   jump                   LABEL517
+LABEL436:
+   load_int               3
+   array_load             1
+   load_int               0
+   if_icmpgt              LABEL441
+   jump                   LABEL517
+LABEL441:
+   load_int               3
+   array_load            
+   invoke                 19
+   invoke                 20
+   load_string            "/"
+   load_int               3
+   array_load             1
+   int_to_string         
+   string_append          3
+   iload                  21
+   widget_put_text_widget
+   load_int               3
+   array_load            
+   load_int               3
+   array_load             1
+   iload                  16
+   2205                  
+   load_int               3
+   array_load            
+   invoke                 19
+   load_int               3
+   array_load             1
+   if_icmplt              LABEL465
+   jump                   LABEL491
+LABEL465:
+   iload                  0
+   load_int               5
+   load_int               3
+   widget_create_child   
+   load_int               16
+   load_int               16
+   load_int               0
+   load_int               0
+   widget_put_size       
+   iload                  16
+   widget_get_relativex_widget
+   load_int               20
+   iadd                  
+   iload                  16
+   widget_get_relativey_widget
+   load_int               16
+   iadd                  
+   load_int               0
+   load_int               0
+   widget_put_position   
+   load_int               299
+   widget_put_spriteid   
+   load_int               13107200
+   iload                  21
+   widget_put_textcolor_widget
+   jump                   LABEL516
+LABEL491:
+   iload                  0
+   load_int               5
+   load_int               3
+   widget_create_child   
+   load_int               17
+   load_int               17
+   load_int               0
+   load_int               0
+   widget_put_size       
+   iload                  16
+   widget_get_relativex_widget
+   load_int               20
+   iadd                  
+   iload                  16
+   widget_get_relativey_widget
+   load_int               16
+   iadd                  
+   load_int               0
+   load_int               0
+   widget_put_position   
+   load_int               1210
+   widget_put_spriteid   
+   load_int               16750623
+   iload                  21
+   widget_put_textcolor_widget
+LABEL516:
+   jump                   LABEL520
+LABEL517:
+   load_string            ""
+   iload                  21
+   widget_put_text_widget
+LABEL520:
+   return                

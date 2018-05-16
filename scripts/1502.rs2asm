@@ -1,0 +1,38 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   get_gamecycle         
+   iload                  2
+   if_icmplt              LABEL4
+   jump                   LABEL5
+LABEL4:
+   return                
+LABEL5:
+   get_varc               5
+   load_int               7
+   if_icmpeq              LABEL9
+   jump                   LABEL19
+LABEL9:
+   load_int               1502
+   iload                  0
+   iload                  1
+   get_gamecycle         
+   load_int               100
+   iadd                  
+   load_string            "Iii"
+   iload                  0
+   widget_put_render_listener_widget
+   return                
+LABEL19:
+   iload                  0
+   iload                  1
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL25
+   jump                   LABEL27
+LABEL25:
+   iload                  0
+   invoke                 1500
+LABEL27:
+   return                

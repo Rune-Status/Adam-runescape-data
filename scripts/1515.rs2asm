@@ -1,0 +1,58 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  2
+   load_int               25
+   if_icmpge              LABEL4
+   jump                   LABEL23
+LABEL4:
+   iload                  1
+   iload                  3
+   widget_put_opacity_widget
+   load_int               -1
+   load_string            ""
+   iload                  3
+   widget_put_render_listener_widget
+   iload                  1
+   load_int               255
+   if_icmpge              LABEL15
+   jump                   LABEL19
+LABEL15:
+   load_int               1
+   iload                  3
+   widget_put_hidden_widget
+   jump                   LABEL22
+LABEL19:
+   load_int               0
+   iload                  3
+   widget_put_hidden_widget
+LABEL22:
+   return                
+LABEL23:
+   load_int               0
+   iload                  3
+   widget_put_hidden_widget
+   iload                  0
+   load_int               0
+   iload                  2
+   load_int               0
+   load_int               25
+   iload                  1
+   iload                  0
+   isub                  
+   interpolate           
+   iadd                  
+   iload                  3
+   widget_put_opacity_widget
+   load_int               1514
+   iload                  0
+   iload                  1
+   iload                  2
+   load_int               1
+   iadd                  
+   iload                  3
+   load_string            "iiiI"
+   iload                  3
+   widget_put_render_listener_widget
+   return                

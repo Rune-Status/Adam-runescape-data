@@ -1,104 +1,108 @@
-   033                    2
-   102                   
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
+   iload                  2
+   widget_unset_children 
    load_int               0
-   034                    4
+   istore                 4
    load_int               5
-   034                    5
+   istore                 5
 LABEL6:
-   033                    4
+   iload                  4
    load_int               0
    if_icmpeq              LABEL17
    load_int               105
    load_int               105
    load_int               1160
-   033                    4
-   3408                  
+   iload                  4
+   get_enum_value        
    load_int               0
    if_icmpne              LABEL17
    jump                   LABEL89
 LABEL17:
-   033                    2
+   iload                  2
    load_int               4
-   033                    4
-   100                   
+   iload                  4
+   widget_create_child   
    load_int               105
    load_int               115
    load_int               1159
-   033                    4
-   3408                  
-   1112                  
+   iload                  4
+   get_enum_value        
+   widget_put_text       
    load_int               40
    load_int               15
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               5
-   033                    4
+   iload                  4
    load_int               2
    modulo                
    load_int               40
    imul                  
    iadd                  
-   033                    5
+   iload                  5
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               495
    widget_put_fontid     
    load_int               0
-   1115                  
+   widget_put_text_shadowed
    load_int               16750623
    widget_put_textcolor  
    load_int               1
    load_string            "Select"
-   1300                  
+   widget_put_action     
    load_int               85
    load_int               -2147483645
    load_int               -2147483643
    load_int               16777215
    load_string            "Iii"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               85
    load_int               -2147483645
    load_int               -2147483643
    load_int               16747039
    load_string            "Iii"
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               983
    load_int               -2147483645
    load_int               -2147483643
-   033                    1
+   iload                  1
    load_string            "IiI"
-   1409                  
-   033                    4
+   widget_put_option_click_listener
+   iload                  4
    load_int               1
    iadd                  
-   034                    4
-   033                    4
+   istore                 4
+   iload                  4
    load_int               0
    if_icmpne              LABEL78
    jump                   LABEL88
 LABEL78:
-   033                    4
+   iload                  4
    load_int               2
    modulo                
    load_int               0
    if_icmpeq              LABEL84
    jump                   LABEL88
 LABEL84:
-   033                    5
+   iload                  5
    load_int               15
    iadd                  
-   034                    5
+   istore                 5
 LABEL88:
    jump                   LABEL6
 LABEL89:
    load_int               100
-   033                    5
+   iload                  5
    load_int               5
    iadd                  
    load_int               0
    load_int               0
-   033                   
-   2001                  
+   iload                  0
+   widget_put_size_widget
    return                

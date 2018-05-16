@@ -1,40 +1,334 @@
-   033                   
-   040                    4
-   034                    1
-   033                    1
-   load_int               2
-   if_icmpeq              LABEL7
-   jump                   LABEL15
-LABEL7:
-   load_int               65280
-   load_int               105
-   load_int               73
-   load_int               208
-   033                   
-   3408                  
-   widget_put_textcolor_widget
-   jump                   LABEL34
-LABEL15:
-   033                    1
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   0
+   get_varbit             2459
+   load_int               0
+   if_icmpeq              LABEL4
+   jump                   LABEL35
+LABEL4:
+   load_string            "Blue token:"
+   load_string            "<br>"
+   load_int               50
+   int_to_string         
+   load_string            "-"
+   load_int               150
+   int_to_string         
+   load_string            " essence"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Yellow token:"
+   load_string            "<br>"
+   load_int               120
+   int_to_string         
+   load_string            "-"
+   load_int               380
+   int_to_string         
+   load_string            " essence"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Red token:"
+   load_string            "<br>"
+   load_int               370
+   int_to_string         
+   load_string            "-"
+   load_int               660
+   int_to_string         
+   load_string            " essence"
+   string_append          22
+   return                
+   jump                   LABEL298
+LABEL35:
+   get_varbit             2459
    load_int               1
-   if_icmpeq              LABEL19
-   jump                   LABEL27
-LABEL19:
-   load_int               16776960
-   load_int               105
-   load_int               73
-   load_int               208
-   033                   
-   3408                  
-   widget_put_textcolor_widget
-   jump                   LABEL34
-LABEL27:
-   load_int               16711680
-   load_int               105
-   load_int               73
-   load_int               208
-   033                   
-   3408                  
-   widget_put_textcolor_widget
-LABEL34:
+   if_icmpeq              LABEL39
+   jump                   LABEL70
+LABEL39:
+   load_string            "Blue token:"
+   load_string            "<br>"
+   load_int               100
+   int_to_string         
+   load_string            "-"
+   load_int               200
+   int_to_string         
+   load_string            " bow strings"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Yellow token:"
+   load_string            "<br>"
+   load_int               150
+   int_to_string         
+   load_string            "-"
+   load_int               250
+   int_to_string         
+   load_string            " bow strings"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Red token:"
+   load_string            "<br>"
+   load_int               200
+   int_to_string         
+   load_string            "-"
+   load_int               300
+   int_to_string         
+   load_string            " bow strings"
+   string_append          22
+   return                
+   jump                   LABEL298
+LABEL70:
+   get_varbit             2459
+   load_int               2
+   if_icmpeq              LABEL74
+   jump                   LABEL105
+LABEL74:
+   load_string            "Blue token:"
+   load_string            "<br>"
+   load_int               5
+   int_to_string         
+   load_string            "-"
+   load_int               50
+   int_to_string         
+   load_string            " silver bars"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Yellow token:"
+   load_string            "<br>"
+   load_int               50
+   int_to_string         
+   load_string            "-"
+   load_int               100
+   int_to_string         
+   load_string            " silver bars"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Red token:"
+   load_string            "<br>"
+   load_int               100
+   int_to_string         
+   load_string            "-"
+   load_int               150
+   int_to_string         
+   load_string            " silver bars"
+   string_append          22
+   return                
+   jump                   LABEL298
+LABEL105:
+   get_varbit             2459
+   load_int               3
+   if_icmpeq              LABEL109
+   jump                   LABEL140
+LABEL109:
+   load_string            "Blue token:"
+   load_string            "<br>"
+   load_int               5
+   int_to_string         
+   load_string            "-"
+   load_int               15
+   int_to_string         
+   load_string            " herbs"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Yellow token:"
+   load_string            "<br>"
+   load_int               10
+   int_to_string         
+   load_string            "-"
+   load_int               20
+   int_to_string         
+   load_string            " herbs"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Red token:"
+   load_string            "<br>"
+   load_int               15
+   int_to_string         
+   load_string            "-"
+   load_int               30
+   int_to_string         
+   load_string            " herbs"
+   string_append          22
+   return                
+   jump                   LABEL298
+LABEL140:
+   get_varbit             2459
+   load_int               4
+   if_icmpeq              LABEL144
+   jump                   LABEL175
+LABEL144:
+   load_string            "Blue token:"
+   load_string            "<br>"
+   load_int               21
+   int_to_string         
+   load_string            "-"
+   load_int               72
+   int_to_string         
+   load_string            " coal and iron ores"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Yellow token:"
+   load_string            "<br>"
+   load_int               66
+   int_to_string         
+   load_string            "-"
+   load_int               165
+   int_to_string         
+   load_string            " coal and iron ores"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Red token:"
+   load_string            "<br>"
+   load_int               150
+   int_to_string         
+   load_string            "-"
+   load_int               216
+   int_to_string         
+   load_string            " coal and iron ores"
+   string_append          22
+   return                
+   jump                   LABEL298
+LABEL175:
+   get_varbit             2459
+   load_int               5
+   if_icmpeq              LABEL179
+   jump                   LABEL210
+LABEL179:
+   load_string            "Blue token:"
+   load_string            "<br>"
+   load_int               10
+   int_to_string         
+   load_string            "-"
+   load_int               20
+   int_to_string         
+   load_string            " watermelon seeds"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Yellow token:"
+   load_string            "<br>"
+   load_int               15
+   int_to_string         
+   load_string            "-"
+   load_int               30
+   int_to_string         
+   load_string            " watermelon seeds"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Red token:"
+   load_string            "<br>"
+   load_int               20
+   int_to_string         
+   load_string            "-"
+   load_int               40
+   int_to_string         
+   load_string            " watermelon seeds"
+   string_append          22
+   return                
+   jump                   LABEL298
+LABEL210:
+   get_varbit             2459
+   load_int               6
+   if_icmpeq              LABEL214
+   jump                   LABEL245
+LABEL214:
+   load_string            "Blue token:"
+   load_string            "<br>"
+   load_int               2
+   int_to_string         
+   load_string            "-"
+   load_int               35
+   int_to_string         
+   load_string            " raw lobsters"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Yellow token:"
+   load_string            "<br>"
+   load_int               30
+   int_to_string         
+   load_string            "-"
+   load_int               65
+   int_to_string         
+   load_string            " raw lobsters"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Red token:"
+   load_string            "<br>"
+   load_int               60
+   int_to_string         
+   load_string            "-"
+   load_int               80
+   int_to_string         
+   load_string            " raw lobsters"
+   string_append          22
+   return                
+   jump                   LABEL298
+LABEL245:
+   get_varbit             2459
+   load_int               7
+   if_icmpeq              LABEL249
+   jump                   LABEL292
+LABEL249:
+   load_string            "Blue token:"
+   load_string            "<br>"
+   load_int               11000
+   load_int               10
+   idiv                  
+   int_to_string         
+   load_string            "-"
+   load_int               16500
+   load_int               10
+   idiv                  
+   int_to_string         
+   load_string            " XP tome"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Yellow token:"
+   load_string            "<br>"
+   load_int               20350
+   load_int               10
+   idiv                  
+   int_to_string         
+   load_string            "-"
+   load_int               30250
+   load_int               10
+   idiv                  
+   int_to_string         
+   load_string            " XP tome"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "Red token:"
+   load_string            "<br>"
+   load_int               40150
+   load_int               10
+   idiv                  
+   int_to_string         
+   load_string            "-"
+   load_int               50050
+   load_int               10
+   idiv                  
+   int_to_string         
+   load_string            " XP tome"
+   string_append          22
+   return                
+   jump                   LABEL298
+LABEL292:
+   get_varbit             2459
+   load_int               8
+   if_icmpeq              LABEL296
+   jump                   LABEL298
+LABEL296:
+   load_string            "A random reward appropriate to the token colour."
+   return                
+LABEL298:
+   load_string            "Select a reward"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "on the left to"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "display information"
+   load_string            "<br>"
+   load_string            "<br>"
+   load_string            "here."
+   string_append          10
+   return                
+   load_string            ""
    return                

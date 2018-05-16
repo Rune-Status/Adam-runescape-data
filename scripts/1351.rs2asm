@@ -1,0 +1,164 @@
+.int_stack_count    7
+.string_stack_count 1
+.int_var_count      11
+.string_var_count   2
+   iload                  0
+   widget_unset_children 
+   iload                  3
+   load_int               0
+   if_icmple              LABEL6
+   jump                   LABEL8
+LABEL6:
+   load_int               0
+   return                
+LABEL8:
+   load_string            ""
+   sstore                 1
+   load_int               0
+   istore                 7
+   load_int               2
+   load_int               16
+   pow                   
+   istore                 8
+   iload                  3
+   array_initialize       105
+   load_int               0
+   istore                 9
+LABEL20:
+   iload                  9
+   iload                  3
+   if_icmplt              LABEL24
+   jump                   LABEL69
+LABEL24:
+   iload                  0
+   load_int               4
+   iload                  9
+   widget_create_child   
+   load_int               0
+   load_int               15
+   load_int               1
+   load_int               0
+   widget_put_size       
+   load_int               494
+   widget_put_fontid     
+   load_int               1
+   widget_put_text_shadowed
+   load_int               0
+   load_int               0
+   load_int               0
+   widget_put_text_alignment
+   load_int               105
+   load_int               115
+   iload                  1
+   iload                  9
+   get_enum_value        
+   sstore                 1
+   sload                  1
+   widget_put_text       
+   load_string            "<col=ff9040>"
+   sload                  1
+   load_string            "</col>"
+   string_append          3
+   widget_put_name       
+   iload                  9
+   iload                  7
+   iload                  8
+   imul                  
+   iload                  9
+   iadd                  
+   array_store           
+   load_int               1
+   load_string            "Read Journal:"
+   widget_put_action     
+   iload                  9
+   load_int               1
+   iadd                  
+   istore                 9
+   jump                   LABEL20
+LABEL69:
+   iload                  3
+   load_int               1
+   if_icmpgt              LABEL73
+   jump                   LABEL81
+LABEL73:
+   load_int               0
+   load_int               0
+   iload                  3
+   load_int               1
+   isub                  
+   iload                  2
+   iload                  8
+   invoke                 1352
+LABEL81:
+   load_int               20
+   istore                 10
+   load_int               0
+   istore                 9
+LABEL85:
+   iload                  9
+   iload                  3
+   if_icmplt              LABEL89
+   jump                   LABEL112
+LABEL89:
+   iload                  0
+   iload                  9
+   array_load            
+   iload                  8
+   modulo                
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL98
+   jump                   LABEL103
+LABEL98:
+   load_int               0
+   iload                  10
+   load_int               1
+   load_int               0
+   widget_put_position   
+LABEL103:
+   iload                  9
+   load_int               1
+   iadd                  
+   iload                  10
+   load_int               15
+   iadd                  
+   istore                 10
+   istore                 9
+   jump                   LABEL85
+LABEL112:
+   iload                  0
+   load_int               4
+   iload                  9
+   widget_create_child   
+   load_int               0
+   load_int               20
+   load_int               1
+   load_int               0
+   widget_put_size       
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               0
+   widget_put_position   
+   load_int               16750623
+   widget_put_textcolor  
+   load_int               496
+   widget_put_fontid     
+   load_int               1
+   widget_put_text_shadowed
+   load_int               0
+   load_int               0
+   load_int               0
+   widget_put_text_alignment
+   sload                  0
+   widget_put_text       
+   load_int               0
+   iload                  10
+   load_int               1
+   load_int               0
+   iload                  0
+   widget_put_size_widget
+   iload                  10
+   return                
+   load_int               0
+   return                

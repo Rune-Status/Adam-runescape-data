@@ -1,10 +1,14 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
+   iload                  0
    load_int               1
    if_icmpne              LABEL10
-   025                    542
+   get_varbit             542
    load_int               1
    if_icmpeq              LABEL10
-   025                    4606
+   get_varbit             4606
    load_int               0
    if_icmpne              LABEL10
    jump                   LABEL11
@@ -14,7 +18,7 @@ LABEL11:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    load_int               225
    load_int               5
    rand_incl             

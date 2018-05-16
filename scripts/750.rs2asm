@@ -1,47 +1,58 @@
-   040                    677
+.int_stack_count    2
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
+   invoke                 677
    load_int               1
-   load_int               10616864
+   load_int               10616865
    widget_put_hidden_widget
    load_int               0
    load_int               0
    load_int               0
-   load_int               0
-   load_int               10616865
-   2000                  
    load_int               0
    load_int               10616866
+   widget_put_position_widget
+   load_int               0
+   load_int               10616867
    widget_put_hidden_widget
+   load_int               10616872
    load_int               10616871
-   load_int               10616870
    load_int               792
    load_int               789
    load_int               790
    load_int               791
    load_int               773
    load_int               788
-   040                    31
+   invoke                 31
    load_int               14
-   043                    5
-   035                   
-   040                    222
+   put_varc               5
+   sload                  0
+   invoke                 222
    load_int               112
    load_int               -2147483640
    load_int               -2147483639
-   035                   
+   sload                  0
    load_string            "izs"
-   load_int               10616865
-   2419                  
-   033                   
-   033                    1
-   040                    752
+   load_int               10616866
+   widget_put_key_listener_widget
+   iload                  0
+   iload                  1
+   invoke                 752
    load_int               751
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_string            "1g"
-   load_int               10616863
-   2408                  
+   load_int               10616864
+   widget_put_render_listener_widget
    load_int               138
    load_string            ""
-   load_int               10616865
-   2423                  
+   load_int               10616866
+   widget_put_dialog_abort_listener_widget
+   invoke                 1972
+   load_int               1
+   if_icmpeq              LABEL50
+   jump                   LABEL51
+LABEL50:
+   invoke                 1983
+LABEL51:
    return                

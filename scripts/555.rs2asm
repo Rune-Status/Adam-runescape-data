@@ -1,5 +1,9 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    get_gamecycle         
-   033                    2
+   iload                  2
    if_icmplt              LABEL4
    jump                   LABEL5
 LABEL4:
@@ -7,11 +11,11 @@ LABEL4:
 LABEL5:
    load_int               -1
    load_string            ""
-   033                   
-   2408                  
+   iload                  0
+   widget_put_render_listener_widget
    load_int               0
-   033                    1
+   iload                  1
    widget_put_hidden_widget
-   033                    1
-   040                    558
+   iload                  1
+   invoke                 558
    return                

@@ -1,48 +1,52 @@
-   033                    1
-   2121                  
+.int_stack_count    4
+.string_stack_count 1
+.int_var_count      4
+.string_var_count   1
+   iload                  1
+   widget_advance_dialogue_window
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
-   033                   
-   033                    2
-   200                   
+   play_sound_effect     
+   iload                  0
+   iload                  2
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL12
    jump                   LABEL34
 LABEL12:
-   033                   
-   033                    3
-   200                    1
+   iload                  0
+   iload                  3
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL18
    jump                   LABEL34
 LABEL18:
    load_int               813
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               16777215
    widget_put_textcolor   1
    load_string            "Loading..."
-   1112                   1
+   widget_put_text        1
    widget_put_actions_null
    load_int               -1
    load_string            ""
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               -1
    load_string            ""
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               -1
    load_string            ""
-   1409                  
+   widget_put_option_click_listener
 LABEL34:
    load_int               605
-   033                   
-   033                    1
-   035                   
+   iload                  0
+   iload                  1
+   sload                  0
    get_gamecycle         
    load_int               30
    iadd                  
    load_string            "IIsi"
-   033                   
-   2408                  
+   iload                  0
+   widget_put_render_listener_widget
    return                

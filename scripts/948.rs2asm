@@ -1,71 +1,75 @@
-   033                    1
+.int_stack_count    5
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
+   iload                  1
    load_int               0
    if_icmplt              LABEL4
    jump                   LABEL7
 LABEL4:
    load_int               0
-   034                    1
+   istore                 1
    jump                   LABEL13
 LABEL7:
-   033                    1
+   iload                  1
    load_int               255
    if_icmpgt              LABEL11
    jump                   LABEL13
 LABEL11:
    load_int               255
-   034                    1
+   istore                 1
 LABEL13:
-   033                    3
+   iload                  3
    load_int               0
    if_icmplt              LABEL17
    jump                   LABEL20
 LABEL17:
    load_int               0
-   034                    3
+   istore                 3
    jump                   LABEL26
 LABEL20:
-   033                    3
+   iload                  3
    load_int               255
    if_icmpgt              LABEL24
    jump                   LABEL26
 LABEL24:
    load_int               255
-   034                    3
+   istore                 3
 LABEL26:
-   033                    4
+   iload                  4
    load_int               0
    if_icmple              LABEL30
    jump                   LABEL41
 LABEL30:
-   033                    2
+   iload                  2
    load_int               11403265
    widget_put_textcolor_widget
-   033                    3
+   iload                  3
    load_int               11403265
    widget_put_opacity_widget
    load_int               -1
    load_string            ""
    load_int               11403264
-   2408                  
+   widget_put_render_listener_widget
    return                
 LABEL41:
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    4
-   040                    950
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  4
+   invoke                 950
    load_int               949
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
    get_gamecycle         
-   033                    4
+   iload                  4
    iadd                  
    load_string            "iiiiii"
    load_int               11403264
-   2408                  
+   widget_put_render_listener_widget
    return                

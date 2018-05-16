@@ -1,73 +1,61 @@
+.int_stack_count    13
+.string_stack_count 2
+.int_var_count      13
+.string_var_count   2
    load_string            "<col=00ff00>"
-   035                   
-   037                    2
-   033                   
+   sload                  0
+   string_append          2
+   iload                  0
    widget_put_name_widget
-   033                   
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   033                    11
-   033                    12
-   040                    21
-   load_int               10
-   033                   
-   033                    1
-   033                    4
-   035                   
-   035                    1
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   033                    11
-   033                    12
-   load_string            "IIissoioioioi"
-   033                   
-   2412                  
-   load_int               11
-   033                    1
-   load_string            "I"
-   033                   
-   2404                  
-   033                   
-   2800                  
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   sload                  0
+   sload                  1
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   invoke                 21
+   iload                  0
+   widget_get_config_widget
    load_int               0
-   if_icmpne              LABEL45
-   jump                   LABEL55
-LABEL45:
+   if_icmpne              LABEL26
+   jump                   LABEL36
+LABEL26:
    load_int               17
-   033                   
+   iload                  0
    load_string            "I"
-   033                   
-   2416                  
+   iload                  0
+   widget_put_use_listener_widget
    load_int               18
-   033                   
+   iload                  0
    load_string            "I"
-   033                   
-   2406                  
-LABEL55:
+   iload                  0
+   widget_put_mouse_use_with_listener_widget
+LABEL36:
    load_int               16
-   033                   
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   033                    11
-   033                    12
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   sload                  0
+   sload                  1
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
    load_int               638
    load_int               375
    load_int               1139
@@ -76,44 +64,54 @@ LABEL55:
    load_int               439
    load_int               318
    load_int               635
-   load_int               8
-   load_string            "IddioioioioiY"
-   033                   
-   2407                  
+   load_int               1377
+   load_int               1339
+   load_int               1429
+   load_int               1632
+   load_int               12
+   load_string            "IIddissoioioioiY"
+   iload                  0
+   widget_put_config_listener_widget
    load_int               16
-   033                   
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   033                    11
-   033                    12
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   sload                  0
+   sload                  1
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
    load_int               93
    load_int               1
-   load_string            "IddioioioioiY"
-   033                   
-   2414                  
+   load_string            "IIddissoioioioiY"
+   iload                  0
+   widget_put_table_listener_widget
    load_int               16
-   033                   
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   033                    11
-   033                    12
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   sload                  0
+   sload                  1
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
    load_int               6
    load_int               1
-   load_string            "IddioioioioiY"
-   033                   
-   2415                  
+   load_string            "IIddissoioioioiY"
+   iload                  0
+   widget_put_skill_listener_widget
    return                

@@ -1,5 +1,111 @@
-   033                   
-   033                    1
-   033                    2
-   040                    635
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   get_varbit             5605
+   load_int               1
+   if_icmpeq              LABEL4
+   jump                   LABEL13
+LABEL4:
+   iload                  0
+   invoke                 1594
+   iload                  1
+   load_string            "Look up name"
+   invoke                 1672
+   iload                  2
+   load_string            "---"
+   invoke                 1677
+   jump                   LABEL91
+LABEL13:
+   get_varbit             5605
+   load_int               2
+   if_icmpeq              LABEL17
+   jump                   LABEL29
+LABEL17:
+   load_int               1593
+   iload                  0
+   load_string            "I"
+   iload                  0
+   widget_put_render_listener_widget
+   iload                  1
+   load_string            "Look up name"
+   invoke                 1677
+   iload                  2
+   load_string            "---"
+   invoke                 1677
+   jump                   LABEL91
+LABEL29:
+   get_varbit             5605
+   load_int               4
+   if_icmpeq              LABEL33
+   jump                   LABEL64
+LABEL33:
+   iload                  0
+   invoke                 1594
+   iload                  1
+   load_string            "Another name"
+   invoke                 1672
+   get_varbit             5606
+   load_int               1
+   if_icmpeq              LABEL42
+   jump                   LABEL60
+LABEL42:
+   get_varbit             5607
+   load_int               0
+   if_icmpeq              LABEL46
+   jump                   LABEL60
+LABEL46:
+   get_varc_string        137
+   string_length         
+   load_int               0
+   if_icmple              LABEL51
+   jump                   LABEL53
+LABEL51:
+   load_string            "-"
+   put_varc_string        137
+LABEL53:
+   iload                  2
+   load_string            "<col=00ff00>"
+   get_varc_string        137
+   load_string            "</col>"
+   string_append          3
+   invoke                 1672
+   jump                   LABEL63
+LABEL60:
+   iload                  2
+   load_string            "---"
+   invoke                 1677
+LABEL63:
+   jump                   LABEL91
+LABEL64:
+   get_varbit             5605
+   load_int               5
+   if_icmpeq              LABEL68
+   jump                   LABEL80
+LABEL68:
+   load_int               1593
+   iload                  0
+   load_string            "I"
+   iload                  0
+   widget_put_render_listener_widget
+   iload                  1
+   load_string            "Another name"
+   invoke                 1677
+   iload                  2
+   load_string            "---"
+   invoke                 1677
+   jump                   LABEL91
+LABEL80:
+   load_int               1593
+   iload                  0
+   load_string            "I"
+   iload                  0
+   widget_put_render_listener_widget
+   iload                  1
+   load_string            "Look up name"
+   invoke                 1677
+   iload                  2
+   load_string            "---"
+   invoke                 1677
+LABEL91:
    return                

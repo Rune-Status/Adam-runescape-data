@@ -1,166 +1,170 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   1
    load_int               5308421
-   102                   
-   033                   
-   3304                  
-   034                    1
-   033                    1
-   044                    105
+   widget_unset_children 
+   iload                  0
+   get_inventory_size    
+   istore                 1
+   iload                  1
+   array_initialize       105
    load_int               0
-   042                    81
-   046                   
+   get_varc               81
+   array_store           
    load_int               1
-   042                    82
-   046                   
+   get_varc               82
+   array_store           
    load_int               2
-   042                    83
-   046                   
+   get_varc               83
+   array_store           
    load_int               3
-   042                    84
-   046                   
+   get_varc               84
+   array_store           
    load_int               4
-   042                    85
-   046                   
+   get_varc               85
+   array_store           
    load_int               5
-   042                    86
-   046                   
+   get_varc               86
+   array_store           
    load_int               6
-   042                    87
-   046                   
+   get_varc               87
+   array_store           
    load_int               7
-   042                    88
-   046                   
+   get_varc               88
+   array_store           
    load_int               8
-   042                    89
-   046                   
+   get_varc               89
+   array_store           
    load_int               9
-   042                    90
-   046                   
+   get_varc               90
+   array_store           
    load_int               10
-   042                    91
-   046                   
+   get_varc               91
+   array_store           
    load_int               11
-   042                    92
-   046                   
+   get_varc               92
+   array_store           
    load_int               12
-   042                    93
-   046                   
+   get_varc               93
+   array_store           
    load_int               13
-   042                    94
-   046                   
+   get_varc               94
+   array_store           
    load_int               14
-   042                    95
-   046                   
+   get_varc               95
+   array_store           
    load_int               15
-   042                    96
-   046                   
+   get_varc               96
+   array_store           
    load_int               16
-   042                    97
-   046                   
+   get_varc               97
+   array_store           
    load_int               17
-   042                    98
-   046                   
+   get_varc               98
+   array_store           
    load_int               18
-   042                    99
-   046                   
+   get_varc               99
+   array_store           
    load_int               19
-   042                    100
-   046                   
+   get_varc               100
+   array_store           
    load_int               20
-   042                    101
-   046                   
+   get_varc               101
+   array_store           
    load_int               21
-   042                    102
-   046                   
+   get_varc               102
+   array_store           
    load_int               22
-   042                    104
-   046                   
+   get_varc               104
+   array_store           
    load_int               23
-   042                    105
-   046                   
+   get_varc               105
+   array_store           
    load_int               24
-   042                    106
-   046                   
+   get_varc               106
+   array_store           
    load_int               25
-   042                    107
-   046                   
+   get_varc               107
+   array_store           
    load_int               26
-   042                    108
-   046                   
+   get_varc               108
+   array_store           
    load_int               27
-   042                    109
-   046                   
+   get_varc               109
+   array_store           
    load_int               -1
-   034                    2
+   istore                 2
    load_int               0
-   034                    3
+   istore                 3
    load_int               0
-   034                    4
+   istore                 4
    load_string            "Invalid item."
-   036                   
+   sstore                 0
    load_int               0
-   034                    5
+   istore                 5
 LABEL101:
-   033                    5
-   033                    1
+   iload                  5
+   iload                  1
    if_icmplt              LABEL105
    jump                   LABEL243
 LABEL105:
    load_int               5308421
    load_int               5
-   033                    5
-   100                   
-   033                   
-   033                    5
-   3301                  
-   034                    2
-   033                    2
+   iload                  5
+   widget_create_child   
+   iload                  0
+   iload                  5
+   get_itemcontainer_itemid
+   istore                 2
+   iload                  2
    load_int               -1
    if_icmpne              LABEL117
    jump                   LABEL236
 LABEL117:
-   033                   
-   033                    5
-   3302                  
-   033                    4
+   iload                  0
+   iload                  5
+   get_itemcontainer_stacksize
+   iload                  4
    load_int               1
    iadd                  
-   034                    4
-   034                    3
+   istore                 4
+   istore                 3
    load_int               0
    widget_put_hidden     
    load_int               36
    load_int               32
    load_int               0
    load_int               0
-   1001                  
-   033                    5
+   widget_put_size       
+   iload                  5
    load_int               4
    modulo                
    load_int               36
    load_int               8
    iadd                  
    imul                  
-   033                    5
+   iload                  5
    load_int               4
    idiv                  
    load_int               32
    imul                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               1
    widget_put_borderthickness
    load_int               3355443
-   1117                  
-   033                    2
-   033                    3
+   widget_put_sprite2    
+   iload                  2
+   iload                  3
    1200                  
-   033                   
+   iload                  0
    load_int               93
    if_icmpeq              LABEL158
    jump                   LABEL220
 LABEL158:
-   033                    2
+   iload                  2
    load_int               11941
    if_icmpeq              LABEL162
    jump                   LABEL171
@@ -169,10 +173,10 @@ LABEL162:
    widget_put_opacity    
    load_int               -1
    load_string            ""
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               -1
    load_string            ""
-   1404                  
+   widget_put_mouse_exit_listener
    jump                   LABEL204
 LABEL171:
    load_int               0
@@ -183,9 +187,9 @@ LABEL171:
    load_int               150
    load_int               0
    load_string            "Iiii"
-   1409                  
-   033                    5
-   045                   
+   widget_put_option_click_listener
+   iload                  5
+   array_load            
    load_int               -1
    if_icmple              LABEL185
    jump                   LABEL199
@@ -194,104 +198,104 @@ LABEL185:
    load_int               -2147483645
    load_int               -2147483643
    load_int               5308423
-   035                   
+   sload                  0
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               40
    load_int               5308423
    load_string            "I"
-   1404                  
+   widget_put_mouse_exit_listener
    jump                   LABEL204
 LABEL199:
-   033                    3
-   033                    5
-   045                   
+   iload                  3
+   iload                  5
+   array_load            
    load_int               5308423
-   040                    1234
+   invoke                 1234
 LABEL204:
    load_int               1
    load_string            "Store-1"
-   1300                  
+   widget_put_action     
    load_int               2
    load_string            "Store-5"
-   1300                  
+   widget_put_action     
    load_int               3
    load_string            "Store-All"
-   1300                  
+   widget_put_action     
    load_int               4
    load_string            "Store-X"
-   1300                  
+   widget_put_action     
    load_int               9
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    jump                   LABEL230
 LABEL220:
    load_int               0
    widget_put_opacity    
    load_int               10
    load_string            "Examine"
-   1300                  
-   033                    3
-   033                    5
-   045                   
+   widget_put_action     
+   iload                  3
+   iload                  5
+   array_load            
    load_int               5308423
-   040                    1234
+   invoke                 1234
 LABEL230:
    load_string            "<col=ff9040>"
-   033                    2
+   iload                  2
    get_item_name         
-   037                    2
+   string_append          2
    widget_put_name       
    jump                   LABEL238
 LABEL236:
    load_int               1
    widget_put_hidden     
 LABEL238:
-   033                    5
+   iload                  5
    load_int               1
    iadd                  
-   034                    5
+   istore                 5
    jump                   LABEL101
 LABEL243:
-   033                   
+   iload                  0
    load_int               516
    if_icmpeq              LABEL247
    jump                   LABEL279
 LABEL247:
-   033                    4
+   iload                  4
    load_int               0
    if_icmple              LABEL251
    jump                   LABEL279
 LABEL251:
    load_int               5308421
    load_int               4
-   033                    5
-   100                   
+   iload                  5
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               5308421
    widget_get_width_widget
    load_int               5308421
    widget_get_height_widget
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               495
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               16750623
    widget_put_textcolor  
    load_string            "The bag is empty."
-   1112                  
+   widget_put_text       
 LABEL279:
    return                

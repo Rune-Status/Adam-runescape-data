@@ -1,57 +1,61 @@
+.int_stack_count    1
+.string_stack_count 1
+.int_var_count      3
+.string_var_count   1
    load_int               6029315
-   102                   
+   widget_unset_children 
    load_int               6029316
-   102                   
+   widget_unset_children 
    load_int               6029315
    widget_get_width_widget
-   034                    1
-   035                   
-   033                    1
+   istore                 1
+   sload                  0
+   iload                  1
    load_int               495
-   4108                  
+   get_line_count        
    load_int               12
    imul                  
    load_int               5
    iadd                  
-   034                    2
+   istore                 2
    load_int               6029315
    load_int               4
    load_int               0
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   1000                  
-   033                    1
-   033                    2
+   widget_put_position   
+   iload                  1
+   iload                  2
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               495
    widget_put_fontid     
    load_int               16750623
    widget_put_textcolor  
    load_int               1
-   1115                  
-   035                   
-   1112                  
+   widget_put_text_shadowed
+   sload                  0
+   widget_put_text       
    load_int               0
    load_int               0
    load_int               6029315
    widget_put_scroll_widget
-   033                    2
+   iload                  2
    load_int               6029315
    widget_get_height_widget
    if_icmpgt              LABEL51
    jump                   LABEL56
 LABEL51:
    load_int               0
-   033                    2
+   iload                  2
    load_int               6029315
    widget_put_scrollwidthheight_widget
    jump                   LABEL60
@@ -69,8 +73,8 @@ LABEL60:
    load_int               791
    load_int               773
    load_int               788
-   040                    31
-   033                   
+   invoke                 31
+   iload                  0
    load_int               0
    if_icmpeq              LABEL73
    jump                   LABEL101
@@ -86,25 +90,25 @@ LABEL73:
    iadd                  
    load_string            "IIi"
    load_int               6029312
-   2408                  
+   widget_put_render_listener_widget
    load_int               6029318
-   040                    558
+   invoke                 558
    load_int               557
    load_int               6029318
    load_int               92
    load_int               1
    load_string            "IY"
    load_int               6029312
-   2407                  
+   widget_put_config_listener_widget
    load_int               556
    load_int               -2147483644
    load_int               -2147483645
    load_string            "iI"
    load_int               6029318
-   2409                  
+   widget_put_option_click_listener_widget
    jump                   LABEL126
 LABEL101:
-   033                   
+   iload                  0
    load_int               1
    if_icmpeq              LABEL105
    jump                   LABEL117
@@ -113,23 +117,23 @@ LABEL105:
    load_int               6029318
    widget_put_hidden_widget
    load_int               6029318
-   040                    561
+   invoke                 561
    load_int               559
    load_int               -2147483644
    load_int               -2147483645
    load_string            "iI"
    load_int               6029318
-   2409                  
+   widget_put_option_click_listener_widget
    jump                   LABEL126
 LABEL117:
    load_int               0
    load_int               6029318
    widget_put_hidden_widget
    load_int               6029318
-   040                    561
+   invoke                 561
    load_int               29
    load_string            ""
    load_int               6029318
-   2409                  
+   widget_put_option_click_listener_widget
 LABEL126:
    return                

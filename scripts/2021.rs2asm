@@ -1,0 +1,46 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   0
+   get_varbit             5941
+   load_int               2
+   if_icmplt              LABEL4
+   jump                   LABEL14
+LABEL4:
+   load_string            "A: -"
+   load_int               40042519
+   widget_put_text_widget
+   load_string            "B: -"
+   load_int               40042520
+   widget_put_text_widget
+   load_string            "C: -"
+   load_int               40042521
+   widget_put_text_widget
+   jump                   LABEL38
+LABEL14:
+   load_string            "A: "
+   get_varbit             5936
+   load_int               0
+   test_bit              
+   invoke                 2024
+   string_append          2
+   load_int               40042519
+   widget_put_text_widget
+   load_string            "B: "
+   get_varbit             5936
+   load_int               1
+   test_bit              
+   invoke                 2024
+   string_append          2
+   load_int               40042520
+   widget_put_text_widget
+   load_string            "C: "
+   get_varbit             5936
+   load_int               2
+   test_bit              
+   invoke                 2024
+   string_append          2
+   load_int               40042521
+   widget_put_text_widget
+LABEL38:
+   return                

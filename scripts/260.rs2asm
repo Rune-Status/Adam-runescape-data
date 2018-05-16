@@ -1,11 +1,15 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
    load_int               261
-   033                   
-   033                    1
-   025                    3956
+   iload                  0
+   iload                  1
+   get_varbit             3956
    get_gamecycle         
    load_int               8
    iadd                  
    load_string            "Iiii"
-   033                   
-   2408                  
+   iload                  0
+   widget_put_render_listener_widget
    return                

@@ -1,139 +1,152 @@
-   033                   
+.int_stack_count    2
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
+   load_int               -1
+   load_int               162
+   invoke                 1701
+   load_int               0
+   if_icmpeq              LABEL6
+   jump                   LABEL7
+LABEL6:
+   return                
+LABEL7:
+   iload                  0
    load_int               84
-   if_icmpeq              LABEL4
-   jump                   LABEL32
-LABEL4:
-   042                    56
+   if_icmpeq              LABEL11
+   jump                   LABEL39
+LABEL11:
+   get_varc               56
    load_int               1
-   if_icmpeq              LABEL8
-   jump                   LABEL30
-LABEL8:
-   047                    22
+   if_icmpeq              LABEL15
+   jump                   LABEL37
+LABEL15:
+   get_varc_string        22
    string_length         
    load_int               0
-   if_icmple              LABEL13
-   jump                   LABEL30
-LABEL13:
-   042                    5
+   if_icmple              LABEL20
+   jump                   LABEL37
+LABEL20:
+   get_varc               5
    load_int               8
-   if_icmpeq              LABEL17
-   jump                   LABEL22
-LABEL17:
-   047                    128
-   048                    22
-   035                   
-   040                    222
-   jump                   LABEL30
-LABEL22:
-   042                    5
+   if_icmpeq              LABEL24
+   jump                   LABEL29
+LABEL24:
+   get_varc_string        128
+   put_varc_string        22
+   sload                  0
+   invoke                 222
+   jump                   LABEL37
+LABEL29:
+   get_varc               5
    load_int               10
-   if_icmpeq              LABEL26
-   jump                   LABEL30
-LABEL26:
-   047                    129
-   048                    22
-   035                   
-   040                    222
-LABEL30:
-   040                    681
+   if_icmpeq              LABEL33
+   jump                   LABEL37
+LABEL33:
+   get_varc_string        129
+   put_varc_string        22
+   sload                  0
+   invoke                 222
+LABEL37:
+   invoke                 681
    return                
-LABEL32:
-   042                    5
+LABEL39:
+   get_varc               5
    load_int               6
-   if_icmpeq              LABEL42
-   042                    5
+   if_icmpeq              LABEL49
+   get_varc               5
    load_int               9
-   if_icmpeq              LABEL42
-   042                    5
+   if_icmpeq              LABEL49
+   get_varc               5
    load_int               11
-   if_icmpeq              LABEL42
-   jump                   LABEL49
-LABEL42:
-   047                    22
-   load_int               0
-   033                   
-   033                    1
-   040                    74
-   048                    22
-   jump                   LABEL115
+   if_icmpeq              LABEL49
+   jump                   LABEL56
 LABEL49:
-   042                    5
-   load_int               7
-   if_icmpeq              LABEL53
-   jump                   LABEL60
-LABEL53:
-   047                    22
-   load_int               1
-   033                   
-   033                    1
-   040                    74
-   048                    22
-   jump                   LABEL115
-LABEL60:
-   042                    5
-   load_int               12
-   if_icmpeq              LABEL64
-   jump                   LABEL72
-LABEL64:
-   047                    22
-   load_int               3
-   033                   
-   033                    1
-   040                    74
-   048                    22
-   040                    549
-   jump                   LABEL115
-LABEL72:
-   042                    5
-   load_int               13
-   if_icmpeq              LABEL76
-   jump                   LABEL84
-LABEL76:
-   047                    22
+   get_varc_string        22
    load_int               0
-   033                   
-   033                    1
-   040                    74
-   048                    22
-   040                    551
-   jump                   LABEL115
-LABEL84:
-   042                    5
-   load_int               14
-   if_icmpeq              LABEL88
-   jump                   LABEL109
-LABEL88:
-   033                   
+   iload                  0
+   iload                  1
+   invoke                 74
+   put_varc_string        22
+   jump                   LABEL122
+LABEL56:
+   get_varc               5
+   load_int               7
+   if_icmpeq              LABEL60
+   jump                   LABEL67
+LABEL60:
+   get_varc_string        22
+   load_int               1
+   iload                  0
+   iload                  1
+   invoke                 74
+   put_varc_string        22
+   jump                   LABEL122
+LABEL67:
+   get_varc               5
+   load_int               12
+   if_icmpeq              LABEL71
+   jump                   LABEL79
+LABEL71:
+   get_varc_string        22
+   load_int               3
+   iload                  0
+   iload                  1
+   invoke                 74
+   put_varc_string        22
+   invoke                 549
+   jump                   LABEL122
+LABEL79:
+   get_varc               5
    load_int               13
-   if_icmpeq              LABEL92
-   jump                   LABEL102
-LABEL92:
+   if_icmpeq              LABEL83
+   jump                   LABEL91
+LABEL83:
+   get_varc_string        22
+   load_int               0
+   iload                  0
+   iload                  1
+   invoke                 74
+   put_varc_string        22
+   invoke                 551
+   jump                   LABEL122
+LABEL91:
+   get_varc               5
+   load_int               14
+   if_icmpeq              LABEL95
+   jump                   LABEL116
+LABEL95:
+   iload                  0
+   load_int               13
+   if_icmpeq              LABEL99
+   jump                   LABEL109
+LABEL99:
    load_int               -1
-   3115                  
+   item_price            
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    load_int               1
    load_int               1
-   040                    299
+   invoke                 299
    return                
-LABEL102:
-   047                    22
-   load_int               4
-   033                   
-   033                    1
-   040                    74
-   048                    22
-   jump                   LABEL115
 LABEL109:
-   047                    22
+   get_varc_string        22
+   load_int               4
+   iload                  0
+   iload                  1
+   invoke                 74
+   put_varc_string        22
+   jump                   LABEL122
+LABEL116:
+   get_varc_string        22
    load_int               2
-   033                   
-   033                    1
-   040                    74
-   048                    22
-LABEL115:
-   035                   
-   040                    222
+   iload                  0
+   iload                  1
+   invoke                 74
+   put_varc_string        22
+LABEL122:
+   sload                  0
+   invoke                 222
    return                

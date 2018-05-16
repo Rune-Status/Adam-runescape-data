@@ -1,9 +1,13 @@
-   025                    4394
+.int_stack_count    1
+.string_stack_count 1
+.int_var_count      1
+.string_var_count   1
+   get_varbit             4394
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL24
 LABEL4:
-   033                   
+   iload                  0
    load_int               1
    if_icmpeq              LABEL8
    jump                   LABEL16
@@ -11,26 +15,26 @@ LABEL8:
    get_localplayer_name  
    load_string            ": "
    load_string            "<col=2020ef>"
-   035                   
+   sload                  0
    load_string            "</col>"
-   037                    5
+   string_append          5
    send_game_message     
    jump                   LABEL23
 LABEL16:
    get_localplayer_name  
    load_string            ": "
    load_string            "<col=0000ff>"
-   035                   
+   sload                  0
    load_string            "</col>"
-   037                    5
+   string_append          5
    send_game_message     
 LABEL23:
    jump                   LABEL27
 LABEL24:
-   035                   
-   033                   
-   5008                  
+   sload                  0
+   iload                  0
+   chatbox_input         
 LABEL27:
    get_gamecycle         
-   043                    61
+   put_varc               61
    return                

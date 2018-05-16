@@ -1,0 +1,35 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   get_varbit             457
+   get_varbit             458
+   iadd                  
+   get_varbit             459
+   iadd                  
+   get_varbit             460
+   iadd                  
+   get_varbit             461
+   iadd                  
+   get_varbit             462
+   iadd                  
+   istore                 1
+   get_varbit             463
+   iload                  1
+   load_int               2
+   imul                  
+   iadd                  
+   istore                 2
+   load_string            "Rewards potential: "
+   load_int               0
+   load_int               100
+   load_int               0
+   load_int               1012
+   iload                  2
+   interpolate           
+   int_to_string         
+   load_string            "%"
+   string_append          3
+   iload                  0
+   widget_put_text_widget
+   return                

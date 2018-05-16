@@ -1,0 +1,57 @@
+.int_stack_count    6
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
+   iload                  1
+   iload                  2
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL6
+   jump                   LABEL8
+LABEL6:
+   iload                  5
+   widget_put_textcolor  
+LABEL8:
+   iload                  3
+   load_int               -1
+   if_icmpne              LABEL12
+   jump                   LABEL20
+LABEL12:
+   iload                  1
+   iload                  3
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL18
+   jump                   LABEL20
+LABEL18:
+   iload                  5
+   widget_put_textcolor  
+LABEL20:
+   iload                  0
+   load_int               1
+   if_icmpeq              LABEL24
+   jump                   LABEL33
+LABEL24:
+   iload                  1
+   iload                  4
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL30
+   jump                   LABEL32
+LABEL30:
+   load_int               0
+   widget_put_hidden     
+LABEL32:
+   jump                   LABEL41
+LABEL33:
+   iload                  1
+   iload                  4
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL39
+   jump                   LABEL41
+LABEL39:
+   load_int               1
+   widget_put_hidden     
+LABEL41:
+   return                

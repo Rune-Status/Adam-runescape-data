@@ -1,72 +1,78 @@
-   033                   
+.int_stack_count    6
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
+   iload                  0
    load_int               1
    if_icmpne              LABEL4
    jump                   LABEL5
 LABEL4:
    return                
 LABEL5:
-   033                    2
-   033                    3
-   200                   
+   iload                  2
+   iload                  3
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL11
-   jump                   LABEL60
+   jump                   LABEL62
 LABEL11:
-   033                    2
-   033                    4
-   200                    1
+   iload                  2
+   iload                  4
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL17
-   jump                   LABEL60
+   jump                   LABEL62
 LABEL17:
-   025                    4101
-   033                    1
+   get_varbit             4101
+   iload                  1
    test_bit              
    load_int               1
    if_icmpeq              LABEL23
-   jump                   LABEL31
+   jump                   LABEL32
 LABEL23:
-   025                    4101
-   033                    1
+   get_varbit             4101
+   iload                  1
    clear_bit             
-   027                    4101
-   033                    1
-   033                    2
-   040                    463
+   set_varbit             4101
+   iload                  1
+   iload                  2
+   iload                  5
+   invoke                 463
    return                
-LABEL31:
-   033                    1
-   040                    464
+LABEL32:
+   iload                  1
+   invoke                 464
    load_int               0
-   if_icmpeq              LABEL36
-   jump                   LABEL41
-LABEL36:
+   if_icmpeq              LABEL37
+   jump                   LABEL42
+LABEL37:
    load_int               2673
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    return                
-LABEL41:
+LABEL42:
    load_int               5
    get_boostedskilllevels
    load_int               0
-   if_icmple              LABEL46
-   jump                   LABEL53
-LABEL46:
+   if_icmple              LABEL47
+   jump                   LABEL54
+LABEL47:
    load_int               2673
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    load_string            "You need to recharge your Prayer at an altar."
    send_game_message     
    return                
-LABEL53:
-   025                    4101
-   033                    1
+LABEL54:
+   get_varbit             4101
+   iload                  1
    set_bit               
-   027                    4101
-   033                    1
-   033                    2
-   040                    463
-LABEL60:
+   set_varbit             4101
+   iload                  1
+   iload                  2
+   iload                  5
+   invoke                 463
+LABEL62:
    return                

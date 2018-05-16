@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  0
    load_int               0
    if_icmplt              LABEL4
    jump                   LABEL6
@@ -9,36 +13,36 @@ LABEL6:
    load_int               105
    load_int               105
    load_int               1162
-   033                   
-   3408                  
-   034                    2
-   033                    2
+   iload                  0
+   get_enum_value        
+   istore                 2
+   iload                  2
    load_int               0
    if_icmpgt              LABEL16
    jump                   LABEL30
 LABEL16:
-   033                    1
+   iload                  1
    load_int               1
    if_icmpeq              LABEL20
    jump                   LABEL25
 LABEL20:
    load_string            "Level?"
-   033                    2
+   iload                  2
    int_to_string         
-   037                    2
+   string_append          2
    return                
 LABEL25:
    load_string            "level?"
-   033                    2
+   iload                  2
    int_to_string         
-   037                    2
+   string_append          2
    return                
 LABEL30:
-   033                   
+   iload                  0
    load_string            ","
-   040                    46
+   invoke                 46
    load_string            "?XP"
-   037                    2
+   string_append          2
    return                
    load_string            ""
    return                

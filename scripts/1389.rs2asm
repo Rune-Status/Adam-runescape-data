@@ -1,0 +1,568 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      14
+.string_var_count   0
+   load_int               1388
+   load_int               0
+   iload                  0
+   iload                  1
+   iload                  2
+   load_int               780
+   load_int               1
+   load_string            "1iiiY"
+   load_int               27656235
+   widget_put_config_listener_widget
+   iload                  0
+   iload                  1
+   if_icmplt              LABEL14
+   jump                   LABEL17
+LABEL14:
+   iload                  1
+   istore                 0
+   jump                   LABEL23
+LABEL17:
+   iload                  0
+   iload                  2
+   if_icmpgt              LABEL21
+   jump                   LABEL23
+LABEL21:
+   iload                  2
+   istore                 0
+LABEL23:
+   load_int               7
+   load_int               2
+   iadd                  
+   istore                 3
+   iload                  3
+   load_int               2
+   pow                   
+   istore                 4
+   load_int               0
+   istore                 5
+   load_int               1
+   istore                 6
+   iload                  0
+   load_int               0
+   if_icmpeq              LABEL39
+   jump                   LABEL41
+LABEL39:
+   load_int               0
+   istore                 6
+LABEL41:
+   load_int               0
+   istore                 7
+LABEL43:
+   iload                  7
+   iload                  4
+   if_icmplt              LABEL47
+   jump                   LABEL64
+LABEL47:
+   load_int               27656197
+   iload                  5
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL53
+   jump                   LABEL55
+LABEL53:
+   iload                  6
+   widget_put_hidden     
+LABEL55:
+   iload                  7
+   load_int               1
+   iadd                  
+   iload                  5
+   load_int               1
+   iadd                  
+   istore                 5
+   istore                 7
+   jump                   LABEL43
+LABEL64:
+   iload                  0
+   load_int               1
+   if_icmpeq              LABEL68
+   jump                   LABEL71
+LABEL68:
+   load_int               0
+   istore                 6
+   jump                   LABEL73
+LABEL71:
+   load_int               1
+   istore                 6
+LABEL73:
+   load_int               0
+   istore                 7
+LABEL75:
+   iload                  7
+   iload                  4
+   if_icmplt              LABEL79
+   jump                   LABEL96
+LABEL79:
+   load_int               27656197
+   iload                  5
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL85
+   jump                   LABEL87
+LABEL85:
+   iload                  6
+   widget_put_hidden     
+LABEL87:
+   iload                  7
+   load_int               1
+   iadd                  
+   iload                  5
+   load_int               1
+   iadd                  
+   istore                 5
+   istore                 7
+   jump                   LABEL75
+LABEL96:
+   load_int               0
+   istore                 7
+LABEL98:
+   iload                  7
+   iload                  4
+   if_icmplt              LABEL102
+   jump                   LABEL119
+LABEL102:
+   load_int               27656197
+   iload                  5
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL108
+   jump                   LABEL110
+LABEL108:
+   load_int               1
+   widget_put_hidden     
+LABEL110:
+   iload                  7
+   load_int               1
+   iadd                  
+   iload                  5
+   load_int               1
+   iadd                  
+   istore                 5
+   istore                 7
+   jump                   LABEL98
+LABEL119:
+   load_int               -1
+   istore                 8
+   get_varbit             5330
+   load_int               1
+   isub                  
+   istore                 9
+   iload                  9
+   load_int               0
+   if_icmpge              LABEL129
+   jump                   LABEL136
+LABEL129:
+   iload                  9
+   iload                  4
+   if_icmplt              LABEL133
+   jump                   LABEL136
+LABEL133:
+   load_int               0
+   istore                 8
+   jump                   LABEL163
+LABEL136:
+   iload                  9
+   iload                  4
+   if_icmpge              LABEL140
+   jump                   LABEL149
+LABEL140:
+   iload                  9
+   iload                  4
+   load_int               2
+   imul                  
+   if_icmplt              LABEL146
+   jump                   LABEL149
+LABEL146:
+   load_int               1
+   istore                 8
+   jump                   LABEL163
+LABEL149:
+   iload                  9
+   iload                  4
+   load_int               2
+   imul                  
+   if_icmpge              LABEL155
+   jump                   LABEL163
+LABEL155:
+   iload                  9
+   iload                  4
+   load_int               3
+   imul                  
+   if_icmplt              LABEL161
+   jump                   LABEL163
+LABEL161:
+   load_int               2
+   istore                 8
+LABEL163:
+   load_int               105
+   load_int               73
+   load_int               1424
+   load_int               -1
+   get_enum_value        
+   istore                 10
+   iload                  0
+   iload                  8
+   if_icmpeq              LABEL173
+   jump                   LABEL206
+LABEL173:
+   load_int               0
+   iload                  10
+   widget_put_hidden_widget
+   iload                  10
+   load_int               1
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL192
+   iload                  10
+   load_int               2
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL192
+   iload                  10
+   load_int               3
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL192
+   jump                   LABEL205
+LABEL192:
+   widget_get_opacity    
+   load_int               255
+   if_icmpge              LABEL196
+   jump                   LABEL205
+LABEL196:
+   load_int               1393
+   load_int               -2147483645
+   get_gamecycle         
+   load_string            "Ii"
+   iload                  10
+   widget_put_render_listener_widget
+   iload                  10
+   get_gamecycle         
+   invoke                 1394
+LABEL205:
+   jump                   LABEL233
+LABEL206:
+   load_int               1
+   iload                  10
+   widget_put_hidden_widget
+   iload                  10
+   load_int               1
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL215
+   jump                   LABEL217
+LABEL215:
+   load_int               255
+   widget_put_opacity    
+LABEL217:
+   iload                  10
+   load_int               2
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL223
+   jump                   LABEL225
+LABEL223:
+   load_int               255
+   widget_put_opacity    
+LABEL225:
+   iload                  10
+   load_int               3
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL231
+   jump                   LABEL233
+LABEL231:
+   load_int               255
+   widget_put_opacity    
+LABEL233:
+   load_int               0
+   istore                 11
+   iload                  1
+   load_int               0
+   if_icmple              LABEL239
+   jump                   LABEL249
+LABEL239:
+   load_int               27656236
+   load_int               0
+   load_string            "Dungeon"
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  8
+   invoke                 1391
+   istore                 11
+   jump                   LABEL253
+LABEL249:
+   load_int               27656236
+   load_string            "Dungeon"
+   invoke                 1392
+   istore                 11
+LABEL253:
+   load_int               0
+   istore                 12
+   iload                  2
+   load_int               2
+   if_icmpge              LABEL259
+   jump                   LABEL269
+LABEL259:
+   load_int               27656238
+   load_int               2
+   load_string            "Upstairs"
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  8
+   invoke                 1391
+   istore                 12
+   jump                   LABEL273
+LABEL269:
+   load_int               27656238
+   load_string            "Upstairs"
+   invoke                 1392
+   istore                 12
+LABEL273:
+   load_int               27656237
+   widget_get_parentid_widget
+   widget_get_width_widget
+   iload                  11
+   load_int               27656237
+   load_int               1
+   load_string            "Ground"
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  8
+   invoke                 1391
+   iadd                  
+   iload                  12
+   iadd                  
+   isub                  
+   istore                 13
+   iload                  11
+   iload                  13
+   load_int               2
+   idiv                  
+   iadd                  
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               27656237
+   widget_put_position_widget
+   load_int               1
+   get_varc               141
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               2
+   get_varc               142
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               3
+   get_varc               143
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               4
+   get_varc               144
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               5
+   get_varc               145
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               6
+   get_varc               146
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               7
+   get_varc               147
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               8
+   get_varc               148
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               9
+   get_varc               149
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               10
+   get_varc               150
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               11
+   get_varc               151
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               12
+   get_varc               152
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               13
+   get_varc               153
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               14
+   get_varc               154
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               15
+   get_varc               155
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               16
+   get_varc               156
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               17
+   get_varc               157
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               18
+   get_varc               158
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               19
+   get_varc               159
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               20
+   get_varc               160
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               21
+   get_varc               161
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               22
+   get_varc               162
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               23
+   get_varc               163
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               24
+   get_varc               164
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               25
+   get_varc               165
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               26
+   get_varc               166
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               27
+   get_varc               167
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               28
+   get_varc               168
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               29
+   get_varc               169
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               30
+   get_varc               170
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               31
+   get_varc               174
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               32
+   get_varc               176
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   load_int               33
+   get_varc               177
+   iload                  0
+   iload                  3
+   iload                  4
+   invoke                 1390
+   iload                  9
+   load_int               -1
+   if_icmpne              LABEL502
+   jump                   LABEL510
+LABEL502:
+   load_int               27656197
+   iload                  9
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL508
+   jump                   LABEL510
+LABEL508:
+   load_int               1
+   widget_put_hidden     
+LABEL510:
+   return                

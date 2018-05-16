@@ -1,98 +1,102 @@
+.int_stack_count    7
+.string_stack_count 0
+.int_var_count      7
+.string_var_count   1
    load_string            ""
-   036                   
-   033                   
+   sstore                 0
+   iload                  0
    load_int               -1
    if_icmpne              LABEL6
    jump                   LABEL88
 LABEL6:
    load_int               0
    widget_put_opacity    
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    1200                  
    widget_put_actions_null
-   033                   
+   iload                  0
    load_int               11941
    if_icmpeq              LABEL16
    jump                   LABEL30
 LABEL16:
-   033                    4
+   iload                  4
    load_int               1
    if_icmpeq              LABEL20
    jump                   LABEL30
 LABEL20:
    load_int               1
    load_string            "View"
-   1300                  
+   widget_put_action     
    load_int               490
    load_int               -2147483644
-   033                    5
-   033                    6
+   iload                  5
+   iload                  6
    load_int               1
    load_string            "iIIi"
-   1409                  
+   widget_put_option_click_listener
 LABEL30:
    load_int               2
    load_string            "Deposit-1"
-   1300                  
+   widget_put_action     
    load_int               3
    load_string            "Deposit-5"
-   1300                  
+   widget_put_action     
    load_int               4
    load_string            "Deposit-10"
-   1300                  
-   025                    3960
+   widget_put_action     
+   get_varbit             3960
    load_int               0
    if_icmpgt              LABEL43
    jump                   LABEL49
 LABEL43:
    load_int               5
    load_string            "Deposit-"
-   025                    3960
+   get_varbit             3960
    int_to_string         
-   037                    2
-   1300                  
+   string_append          2
+   widget_put_action     
 LABEL49:
    load_int               6
    load_string            "Deposit-X"
-   1300                  
+   widget_put_action     
    load_int               7
    load_string            "Deposit-All"
-   1300                  
+   widget_put_action     
    load_int               111
    load_int               115
    load_int               995
-   033                   
-   3408                  
-   036                   
-   035                   
+   iload                  0
+   get_enum_value        
+   sstore                 0
+   sload                  0
    string_length         
    load_int               0
    if_icmpgt              LABEL66
    jump                   LABEL69
 LABEL66:
    load_int               9
-   035                   
-   1300                  
+   sload                  0
+   widget_put_action     
 LABEL69:
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
-   033                   
+   iload                  0
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    load_int               298
    load_int               -2147483645
    load_int               -2147483643
    load_int               -2147483641
-   033                    3
-   033                    5
-   033                    6
+   iload                  3
+   iload                  5
+   iload                  6
    load_string            "IiiIII"
-   1410                  
+   widget_put_drag_release_listener
    jump                   LABEL97
 LABEL88:
    load_int               255
@@ -103,6 +107,6 @@ LABEL88:
    widget_put_actions_null
    load_int               -1
    load_string            ""
-   1410                  
+   widget_put_drag_release_listener
 LABEL97:
    return                

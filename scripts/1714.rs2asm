@@ -1,0 +1,53 @@
+.int_stack_count    12
+.string_stack_count 0
+.int_var_count      14
+.string_var_count   0
+   6605                  
+   load_int               0
+   if_icmpeq              LABEL7
+   get_gamecycle         
+   iload                  2
+   if_icmplt              LABEL7
+   jump                   LABEL8
+LABEL7:
+   return                
+LABEL8:
+   iload                  8
+   iload                  0
+   iload                  4
+   iload                  6
+   scale                 
+   iadd                  
+   istore                 12
+   iload                  11
+   iload                  1
+   iload                  5
+   iload                  7
+   scale                 
+   isub                  
+   istore                 13
+   load_int               0
+   iload                  12
+   load_int               0
+   iload                  13
+   pack_location         
+   6606                  
+   load_int               1714
+   load_int               -2147483647
+   load_int               -2147483646
+   get_gamecycle         
+   load_int               10
+   iadd                  
+   load_int               -2147483645
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   load_string            "iiiIiiiiiiii"
+   iload                  3
+   widget_put_drag_listener_widget
+   return                

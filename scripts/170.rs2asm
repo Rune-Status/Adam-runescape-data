@@ -1,52 +1,56 @@
-   025                    3905
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   0
+   get_varbit             3905
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL11
 LABEL4:
-   025                    3901
+   get_varbit             3901
    int_to_string         
    load_string            "/5"
-   037                    2
+   string_append          2
    load_int               38535175
-   2112                  
+   widget_put_text_widget
    jump                   LABEL43
 LABEL11:
-   025                    3905
+   get_varbit             3905
    load_int               2
    if_icmpeq              LABEL15
    jump                   LABEL22
 LABEL15:
-   025                    3902
+   get_varbit             3902
    int_to_string         
    load_string            "/5"
-   037                    2
+   string_append          2
    load_int               38535175
-   2112                  
+   widget_put_text_widget
    jump                   LABEL43
 LABEL22:
-   025                    3905
+   get_varbit             3905
    load_int               3
    if_icmpeq              LABEL26
    jump                   LABEL33
 LABEL26:
-   025                    3903
+   get_varbit             3903
    int_to_string         
    load_string            "/5"
-   037                    2
+   string_append          2
    load_int               38535175
-   2112                  
+   widget_put_text_widget
    jump                   LABEL43
 LABEL33:
-   025                    3905
+   get_varbit             3905
    load_int               4
    if_icmpeq              LABEL37
    jump                   LABEL43
 LABEL37:
-   025                    3904
+   get_varbit             3904
    int_to_string         
    load_string            "/5"
-   037                    2
+   string_append          2
    load_int               38535175
-   2112                  
+   widget_put_text_widget
 LABEL43:
    return                

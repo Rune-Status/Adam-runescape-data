@@ -1,0 +1,44 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  0
+   load_int               1
+   if_icmpeq              LABEL4
+   jump                   LABEL23
+LABEL4:
+   iload                  1
+   load_int               -1
+   iload                  2
+   load_string            "Drag stacks of items to this"
+   load_string            "<br>"
+   load_string            "incinerator to destroy them."
+   string_append          3
+   load_int               25
+   load_int               512
+   invoke                 837
+   iload                  1
+   load_int               1
+   widget_load_child      1
+   load_int               1
+   if_icmpeq              LABEL20
+   jump                   LABEL22
+LABEL20:
+   load_int               0
+   widget_put_hidden      1
+LABEL22:
+   jump                   LABEL33
+LABEL23:
+   iload                  2
+   invoke                 41
+   iload                  1
+   load_int               1
+   widget_load_child      1
+   load_int               1
+   if_icmpeq              LABEL31
+   jump                   LABEL33
+LABEL31:
+   load_int               1
+   widget_put_hidden      1
+LABEL33:
+   return                

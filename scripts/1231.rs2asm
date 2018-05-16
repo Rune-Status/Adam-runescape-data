@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    2
+.string_stack_count 1
+.int_var_count      3
+.string_var_count   1
+   iload                  0
    load_int               1
    if_icmpne              LABEL4
    jump                   LABEL5
@@ -8,58 +12,58 @@ LABEL5:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
-   033                    1
-   102                   
-   033                    1
+   play_sound_effect     
+   iload                  1
+   widget_unset_children 
+   iload                  1
    load_int               0
-   040                    836
-   034                    2
-   033                    1
+   invoke                 836
+   istore                 2
+   iload                  1
    load_int               4
-   033                    2
-   100                   
+   iload                  2
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               16777215
    widget_put_textcolor  
    load_int               495
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               1
    load_int               0
-   1114                  
-   035                   
-   1112                  
+   widget_put_text_alignment
+   sload                  0
+   widget_put_text       
    load_int               -1
    load_string            ""
-   033                    1
-   2412                  
+   iload                  1
+   widget_put_mouse_hover_listener_widget
    load_int               -1
    load_string            ""
-   033                    1
-   2404                  
+   iload                  1
+   widget_put_mouse_exit_listener_widget
    load_int               -1
    load_string            ""
-   033                    1
-   2409                  
+   iload                  1
+   widget_put_option_click_listener_widget
    load_int               1232
-   033                    1
-   035                   
+   iload                  1
+   sload                  0
    get_gamecycle         
    load_int               20
    iadd                  
    load_string            "Isi"
-   033                    1
-   2408                  
+   iload                  1
+   widget_put_render_listener_widget
    return                

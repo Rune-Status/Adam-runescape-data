@@ -1,45 +1,49 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  0
    widget_get_height_widget
-   034                    1
-   033                    1
+   istore                 1
+   iload                  1
    load_int               334
    if_icmplt              LABEL7
    jump                   LABEL10
 LABEL7:
    load_int               334
-   034                    1
+   istore                 1
    jump                   LABEL16
 LABEL10:
-   033                    1
+   iload                  1
    load_int               1200
    if_icmpgt              LABEL14
    jump                   LABEL16
 LABEL14:
    load_int               1200
-   034                    1
+   istore                 1
 LABEL16:
    load_int               180
    load_int               0
-   033                    1
+   iload                  1
    load_int               334
    isub                  
    load_int               2
-   4013                  
+   invpow                
    load_int               0
    load_int               1200
    load_int               334
    isub                  
    load_int               2
-   4013                  
+   invpow                
    load_int               130
-   4006                  
+   interpolate           
    isub                  
-   034                    2
+   istore                 2
    load_int               0
    load_int               0
    load_int               462
    load_int               0
    load_int               0
-   033                    2
-   1109                  
+   iload                  2
+   widget_put_3d_rotation
    return                

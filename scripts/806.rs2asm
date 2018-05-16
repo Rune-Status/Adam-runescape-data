@@ -1,94 +1,98 @@
-   033                    6
-   040                    41
-   025                    4439
+.int_stack_count    7
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   0
+   iload                  6
+   invoke                 41
+   get_varbit             4439
    load_int               1
    isub                  
-   034                    7
+   istore                 7
    load_int               105
    load_int               118
    load_int               150
-   033                    7
-   3408                  
-   034                    8
-   033                    8
+   iload                  7
+   get_enum_value        
+   istore                 8
+   iload                  8
    load_int               -1
    if_icmpeq              LABEL16
    jump                   LABEL37
 LABEL16:
    load_int               1
-   033                    2
+   iload                  2
    widget_put_hidden_widget
    load_int               0
-   033                    3
+   iload                  3
    widget_put_hidden_widget
    load_int               1
-   033                    4
+   iload                  4
    widget_put_hidden_widget
    load_int               1
-   033                    5
+   iload                  5
    widget_put_hidden_widget
-   033                   
-   033                    1
-   200                   
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL34
    jump                   LABEL36
 LABEL34:
    load_string            "Grand Exchange"
-   1112                  
+   widget_put_text       
 LABEL36:
    return                
 LABEL37:
    load_int               0
-   033                    2
+   iload                  2
    widget_put_hidden_widget
    load_int               0
-   033                    2
+   iload                  2
    widget_put_opacity_widget
-   033                    7
-   3910                  
+   iload                  7
+   get_grandexchange_offer_not_started
    load_int               1
    if_icmpeq              LABEL48
    jump                   LABEL66
 LABEL48:
    load_int               1
-   033                    3
+   iload                  3
    widget_put_hidden_widget
    load_int               1
-   033                    4
+   iload                  4
    widget_put_hidden_widget
    load_int               0
-   033                    5
+   iload                  5
    widget_put_hidden_widget
-   033                   
-   033                    1
-   200                   
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL63
    jump                   LABEL65
 LABEL63:
    load_string            "Grand Exchange: Set up offer"
-   1112                  
+   widget_put_text       
 LABEL65:
    return                
 LABEL66:
    load_int               1
-   033                    3
+   iload                  3
    widget_put_hidden_widget
    load_int               0
-   033                    4
+   iload                  4
    widget_put_hidden_widget
    load_int               1
-   033                    5
+   iload                  5
    widget_put_hidden_widget
-   033                   
-   033                    1
-   200                   
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL81
    jump                   LABEL83
 LABEL81:
    load_string            "Grand Exchange: Offer status"
-   1112                  
+   widget_put_text       
 LABEL83:
    return                

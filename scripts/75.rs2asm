@@ -1,44 +1,48 @@
-   042                    3
-   034                   
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   1
+   get_varc               3
+   istore                 0
    load_string            "null"
-   036                   
-   033                   
+   sstore                 0
+   iload                  0
    load_int               -1
    if_icmpeq              LABEL8
    jump                   LABEL10
 LABEL8:
-   042                    4
-   034                   
+   get_varc               4
+   istore                 0
 LABEL10:
-   042                    3
-   042                    4
+   get_varc               3
+   get_varc               4
    if_icmpne              LABEL14
    jump                   LABEL36
 LABEL14:
-   033                   
+   iload                  0
    load_int               1
    isub                  
-   034                   
-   033                   
+   istore                 0
+   iload                  0
    load_int               0
    if_icmplt              LABEL22
    jump                   LABEL24
 LABEL22:
    load_int               19
-   034                   
+   istore                 0
 LABEL24:
-   033                   
-   040                    79
-   036                   
-   035                   
+   iload                  0
+   invoke                 79
+   sstore                 0
+   sload                  0
    string_length         
    load_int               0
    if_icmpgt              LABEL32
    jump                   LABEL36
 LABEL32:
-   035                   
-   048                    1
-   033                   
-   043                    3
+   sload                  0
+   put_varc_string        1
+   iload                  0
+   put_varc               3
 LABEL36:
    return                

@@ -1,0 +1,107 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   0
+   iload                  1
+   iload                  2
+   iadd                  
+   load_int               2
+   idiv                  
+   istore                 4
+   iload                  4
+   array_load            
+   istore                 5
+   iload                  4
+   iload                  2
+   array_load            
+   array_store           
+   iload                  2
+   iload                  5
+   array_store           
+   iload                  1
+   istore                 6
+   iload                  1
+   istore                 7
+   load_int               -1
+   istore                 8
+LABEL22:
+   iload                  7
+   iload                  2
+   if_icmplt              LABEL26
+   jump                   LABEL60
+LABEL26:
+   load_int               105
+   load_int               115
+   iload                  3
+   iload                  7
+   array_load            
+   get_enum_value        
+   load_int               105
+   load_int               115
+   iload                  3
+   iload                  5
+   get_enum_value        
+   string_compare        
+   load_int               0
+   if_icmple              LABEL41
+   jump                   LABEL55
+LABEL41:
+   iload                  7
+   array_load            
+   istore                 8
+   iload                  7
+   iload                  6
+   array_load            
+   array_store           
+   iload                  6
+   iload                  8
+   array_store           
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+LABEL55:
+   iload                  7
+   load_int               1
+   iadd                  
+   istore                 7
+   jump                   LABEL22
+LABEL60:
+   iload                  2
+   iload                  6
+   array_load            
+   array_store           
+   iload                  6
+   iload                  5
+   array_store           
+   iload                  1
+   iload                  6
+   load_int               1
+   isub                  
+   if_icmplt              LABEL73
+   jump                   LABEL80
+LABEL73:
+   load_int               0
+   iload                  1
+   iload                  6
+   load_int               1
+   isub                  
+   iload                  3
+   invoke                 1360
+LABEL80:
+   iload                  6
+   load_int               1
+   iadd                  
+   iload                  2
+   if_icmplt              LABEL86
+   jump                   LABEL93
+LABEL86:
+   load_int               0
+   iload                  6
+   load_int               1
+   iadd                  
+   iload                  2
+   iload                  3
+   invoke                 1360
+LABEL93:
+   return                

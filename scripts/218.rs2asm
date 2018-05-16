@@ -1,26 +1,44 @@
-   035                   
-   033                    1
+.int_stack_count    6
+.string_stack_count 1
+.int_var_count      7
+.string_var_count   3
+   sload                  0
+   iload                  2
    load_int               495
-   4108                  
+   get_line_count        
    load_int               14
    imul                  
    load_int               2
    iadd                  
-   034                    4
-   033                   
+   istore                 6
+   iload                  0
    load_int               4
-   033                    2
-   100                   
+   iload                  3
+   widget_create_child   
+   iload                  1
+   load_int               3
+   iload                  3
+   widget_create_child    1
    load_int               0
-   033                    3
+   iload                  4
+   load_int               1
+   load_int               0
+   widget_put_position   
    load_int               0
    load_int               0
-   1000                  
-   033                    1
-   033                    4
+   load_int               1
+   load_int               1
+   widget_put_position    1
+   load_int               0
+   iload                  6
+   load_int               1
+   load_int               0
+   widget_put_size       
    load_int               0
    load_int               0
-   1001                  
+   load_int               1
+   load_int               1
+   widget_put_size        1
    load_int               495
    widget_put_fontid     
    load_int               4600330
@@ -30,24 +48,90 @@
    load_int               -2147483643
    load_int               7758394
    load_string            "Iii"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               85
    load_int               -2147483645
    load_int               -2147483643
    load_int               4600330
    load_string            "Iii"
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               1
    load_int               0
    load_int               14
-   1114                  
-   035                   
-   1112                  
-   033                    2
+   widget_put_text_alignment
+   sload                  0
+   widget_put_text       
+   load_string            ""
+   sstore                 1
+   load_string            ""
+   sstore                 2
+   iload                  3
    load_int               1
    iadd                  
-   033                    3
-   033                    4
+   istore                 3
+   iload                  5
+   load_int               1
+   if_icmpeq              LABEL71
+   jump                   LABEL119
+LABEL71:
+   iload                  3
+   load_int               36
+   if_icmplt              LABEL75
+   jump                   LABEL119
+LABEL75:
+   iload                  3
+   load_int               10
+   if_icmplt              LABEL79
+   jump                   LABEL83
+LABEL79:
+   iload                  3
+   int_to_string         
+   sstore                 1
+   jump                   LABEL99
+LABEL83:
+   load_int               105
+   load_int               115
+   load_int               1401
+   iload                  3
+   load_int               9
+   isub                  
+   get_enum_value        
+   sstore                 1
+   load_int               105
+   load_int               115
+   load_int               1402
+   iload                  3
+   load_int               9
+   isub                  
+   get_enum_value        
+   sstore                 2
+LABEL99:
+   load_string            "<col=735a28>"
+   sload                  1
+   load_string            "</col>"
+   load_string            ": "
+   string_append          4
+   sload                  0
+   concat_string         
+   sstore                 0
+   load_int               57
+   load_int               -2147483640
+   load_int               -2147483639
+   iload                  0
+   widget_get_index      
+   load_int               -1
+   sload                  1
+   sload                  2
+   load_int               4600330
+   load_int               0
+   load_string            "izIiissii"
+   widget_put_key_listener 1
+LABEL119:
+   sload                  0
+   widget_put_text       
+   iload                  3
+   iload                  4
+   iload                  6
    iadd                  
    return                
    load_int               0

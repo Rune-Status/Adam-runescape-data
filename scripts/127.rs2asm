@@ -1,25 +1,53 @@
-   033                    1
-   102                   
-   033                    1
-   033                   
+.int_stack_count    8
+.string_stack_count 0
+.int_var_count      8
+.string_var_count   0
+   iload                  5
+   widget_unset_children 
+   iload                  5
+   iload                  4
    load_int               792
    load_int               789
    load_int               790
    load_int               791
    load_int               773
    load_int               788
-   040                    31
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   040                    129
+   invoke                 31
+   get_varc               184
+   load_int               1
+   if_icmpne              LABEL15
+   jump                   LABEL25
+LABEL15:
+   get_varc               184
+   load_int               2
+   if_icmpne              LABEL19
+   jump                   LABEL25
+LABEL19:
+   get_varc               184
+   load_int               3
+   if_icmpne              LABEL23
+   jump                   LABEL25
+LABEL23:
+   load_int               0
+   put_varc               184
+LABEL25:
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   invoke                 129
    load_int               630
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   load_string            "IIII"
-   033                   
-   2420                  
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   load_string            "IIIIIII"
+   iload                  0
+   widget_put_friends_listener_widget
    return                

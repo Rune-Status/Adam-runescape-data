@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
+   iload                  0
    load_int               2
    if_icmpeq              LABEL4
    jump                   LABEL6
@@ -6,7 +10,7 @@ LABEL4:
    5000                  
    return                
 LABEL6:
-   033                   
+   iload                  0
    load_int               3
    if_icmpeq              LABEL10
    jump                   LABEL12
@@ -14,7 +18,7 @@ LABEL10:
    5005                  
    return                
 LABEL12:
-   033                   
+   iload                  0
    load_int               4
    if_icmpeq              LABEL16
    jump                   LABEL18
@@ -22,7 +26,7 @@ LABEL16:
    get_settings           1054
    return                
 LABEL18:
-   033                   
+   iload                  0
    load_int               5
    if_icmpeq              LABEL22
    jump                   LABEL24

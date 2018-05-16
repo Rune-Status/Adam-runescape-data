@@ -1,29 +1,33 @@
-   025                    4103
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   get_varbit             4103
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL15
 LABEL4:
    load_int               1066
-   033                   
-   widget_put_textureid_widget
+   iload                  0
+   widget_put_spriteid_widget
    load_int               1058
-   033                    1
-   widget_put_textureid_widget
+   iload                  1
+   widget_put_spriteid_widget
    load_int               1
    load_string            "Deactivate"
-   033                    2
-   2300                  
+   iload                  2
+   widget_put_action_widget
    jump                   LABEL25
 LABEL15:
    load_int               1063
-   033                   
-   widget_put_textureid_widget
+   iload                  0
+   widget_put_spriteid_widget
    load_int               1068
-   033                    1
-   widget_put_textureid_widget
+   iload                  1
+   widget_put_spriteid_widget
    load_int               1
    load_string            "Activate"
-   033                    2
-   2300                  
+   iload                  2
+   widget_put_action_widget
 LABEL25:
    return                

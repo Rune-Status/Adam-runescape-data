@@ -1,71 +1,75 @@
-   033                    1
-   102                   
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   1
+   iload                  1
+   widget_unset_children 
    load_string            "Step over the line to fight!"
-   036                   
-   035                   
+   sstore                 0
+   sload                  0
    load_int               512
    load_int               645
-   4109                  
+   get_max_line_width    
    load_int               15
    iadd                  
-   034                    2
-   033                    2
+   istore                 2
+   iload                  2
    load_int               40
    load_int               0
    load_int               0
-   033                    1
-   2001                  
-   033                    1
+   iload                  1
+   widget_put_size_widget
+   iload                  1
    load_int               5
    load_int               0
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   1000                  
-   033                    2
+   widget_put_position   
+   iload                  2
    load_int               40
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               897
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               1
-   1107                  
+   widget_put_sprite_tiling
    load_int               100
    widget_put_opacity    
-   033                    1
+   iload                  1
    load_int               4
-   033                    1
+   iload                  1
    load_int               1
-   040                    575
-   100                   
+   invoke                 575
+   widget_create_child   
    load_int               0
    load_int               3
    load_int               0
    load_int               0
-   1000                  
-   033                    2
+   widget_put_position   
+   iload                  2
    load_int               34
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               645
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               16777120
    widget_put_textcolor  
-   035                   
-   1112                  
+   sload                  0
+   widget_put_text       
    load_int               570
-   033                    1
+   iload                  1
    load_string            "I"
-   033                   
-   2408                  
+   iload                  0
+   widget_put_render_listener_widget
    return                

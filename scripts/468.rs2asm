@@ -1,5 +1,9 @@
-   033                   
-   040                    464
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
+   iload                  0
+   invoke                 464
    load_int               1
    if_icmpeq              LABEL5
    jump                   LABEL12
@@ -7,16 +11,16 @@ LABEL5:
    load_int               105
    load_int               100
    load_int               865
-   033                   
-   3408                  
-   widget_put_textureid   1
+   iload                  0
+   get_enum_value        
+   widget_put_spriteid    1
    jump                   LABEL18
 LABEL12:
    load_int               105
    load_int               100
    load_int               864
-   033                   
-   3408                  
-   widget_put_textureid   1
+   iload                  0
+   get_enum_value        
+   widget_put_spriteid    1
 LABEL18:
    return                

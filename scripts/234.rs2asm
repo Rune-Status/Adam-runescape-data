@@ -1,4 +1,8 @@
-   025                    3923
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   0
+   get_varbit             3923
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL6
@@ -6,6 +10,14 @@ LABEL4:
    load_int               1
    return                
 LABEL6:
+   get_varbit             5314
+   load_int               1
+   if_icmpeq              LABEL10
+   jump                   LABEL12
+LABEL10:
+   load_int               1
+   return                
+LABEL12:
    load_int               0
    return                
    load_int               -1

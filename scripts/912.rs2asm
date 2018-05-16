@@ -1,115 +1,119 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
    load_int               -1
-   034                    1
+   istore                 1
    load_int               -1
-   034                    2
+   istore                 2
    load_int               0
-   034                    3
+   istore                 3
    load_int               105
    load_int               73
    load_int               1138
-   033                    3
-   3408                  
-   034                    4
+   iload                  3
+   get_enum_value        
+   istore                 4
    load_int               105
    load_int               73
    load_int               1139
-   033                    3
-   3408                  
-   034                    5
+   iload                  3
+   get_enum_value        
+   istore                 5
 LABEL18:
-   033                    4
+   iload                  4
    load_int               -1
    if_icmpne              LABEL22
    jump                   LABEL103
 LABEL22:
-   033                    5
+   iload                  5
    load_int               -1
    if_icmpne              LABEL26
    jump                   LABEL103
 LABEL26:
    load_int               73
    load_int               73
-   033                   
-   033                    4
-   3408                  
+   iload                  0
+   iload                  4
+   get_enum_value        
    load_int               73
    load_int               73
-   033                   
-   033                    5
-   3408                  
-   034                    5
-   034                    4
-   033                    4
+   iload                  0
+   iload                  5
+   get_enum_value        
+   istore                 5
+   istore                 4
+   iload                  4
    load_int               -1
    if_icmpne              LABEL42
    jump                   LABEL86
 LABEL42:
-   033                    5
+   iload                  5
    load_int               -1
    if_icmpne              LABEL46
    jump                   LABEL86
 LABEL46:
-   033                    3
-   025                    3756
+   iload                  3
+   get_varbit             3756
    load_int               1
    isub                  
    if_icmpeq              LABEL52
    jump                   LABEL58
 LABEL52:
    load_int               0
-   033                    4
+   iload                  4
    widget_put_hidden_widget
-   033                    5
-   040                    913
+   iload                  5
+   invoke                 913
    jump                   LABEL86
 LABEL58:
    load_int               105
    load_int               73
    load_int               1137
-   033                    3
-   3408                  
-   034                    2
+   iload                  3
+   get_enum_value        
+   istore                 2
    load_int               73
    load_int               73
-   033                   
-   033                    2
-   3408                  
-   2702                  
+   iload                  0
+   iload                  2
+   get_enum_value        
+   widget_get_index_widget
    load_int               1
    if_icmpeq              LABEL73
    jump                   LABEL80
 LABEL73:
    load_int               0
-   033                    4
+   iload                  4
    widget_put_hidden_widget
    load_int               0
-   033                    5
+   iload                  5
    widget_put_hidden_widget
    jump                   LABEL86
 LABEL80:
    load_int               1
-   033                    4
+   iload                  4
    widget_put_hidden_widget
    load_int               1
-   033                    5
+   iload                  5
    widget_put_hidden_widget
 LABEL86:
-   033                    3
+   iload                  3
    load_int               1
    iadd                  
-   034                    3
+   istore                 3
    load_int               105
    load_int               73
    load_int               1138
-   033                    3
-   3408                  
+   iload                  3
+   get_enum_value        
    load_int               105
    load_int               73
    load_int               1139
-   033                    3
-   3408                  
-   034                    5
-   034                    4
+   iload                  3
+   get_enum_value        
+   istore                 5
+   istore                 4
    jump                   LABEL18
 LABEL103:
    return                

@@ -1,0 +1,148 @@
+.int_stack_count    17
+.string_stack_count 0
+.int_var_count      17
+.string_var_count   0
+   iload                  0
+   load_int               1
+   if_icmpne              LABEL4
+   jump                   LABEL5
+LABEL4:
+   return                
+LABEL5:
+   load_int               2266
+   load_int               1
+   load_int               0
+   play_sound_effect     
+   iload                  1
+   iload                  9
+   if_icmpeq              LABEL13
+   jump                   LABEL24
+LABEL13:
+   load_int               7
+   load_int               2
+   iadd                  
+   load_int               2
+   pow                   
+   load_int               3
+   imul                  
+   load_int               1
+   iadd                  
+   set_varbit             5330
+   jump                   LABEL107
+LABEL24:
+   iload                  1
+   iload                  10
+   if_icmpeq              LABEL28
+   jump                   LABEL31
+LABEL28:
+   load_int               1
+   set_varbit             5332
+   jump                   LABEL107
+LABEL31:
+   iload                  1
+   iload                  11
+   if_icmpeq              LABEL35
+   jump                   LABEL58
+LABEL35:
+   get_varbit             5331
+   load_int               1
+   iadd                  
+   load_int               4
+   modulo                
+   set_varbit             5331
+   iload                  1
+   load_int               0
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL47
+   jump                   LABEL57
+LABEL47:
+   load_int               196
+   widget_put_spriteid   
+   load_int               1403
+   load_int               -2147483645
+   load_int               -2147483643
+   get_gamecycle         
+   load_int               10
+   iadd                  
+   load_string            "Iii"
+   widget_put_render_listener
+LABEL57:
+   jump                   LABEL107
+LABEL58:
+   iload                  1
+   iload                  12
+   if_icmpeq              LABEL62
+   jump                   LABEL85
+LABEL62:
+   get_varbit             5331
+   load_int               3
+   iadd                  
+   load_int               4
+   modulo                
+   set_varbit             5331
+   iload                  1
+   load_int               0
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL74
+   jump                   LABEL84
+LABEL74:
+   load_int               196
+   widget_put_spriteid   
+   load_int               1403
+   load_int               -2147483645
+   load_int               -2147483643
+   get_gamecycle         
+   load_int               10
+   iadd                  
+   load_string            "Iii"
+   widget_put_render_listener
+LABEL84:
+   jump                   LABEL107
+LABEL85:
+   iload                  1
+   iload                  13
+   if_icmpeq              LABEL89
+   jump                   LABEL92
+LABEL89:
+   load_int               0
+   set_varbit             5333
+   jump                   LABEL107
+LABEL92:
+   iload                  1
+   iload                  14
+   if_icmpeq              LABEL96
+   jump                   LABEL101
+LABEL96:
+   load_int               0
+   load_int               0
+   set_varbit             5330
+   set_varbit             5332
+   jump                   LABEL107
+LABEL101:
+   iload                  1
+   iload                  15
+   if_icmpeq              LABEL105
+   jump                   LABEL107
+LABEL105:
+   load_int               0
+   set_varbit             5332
+LABEL107:
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   iload                  13
+   iload                  14
+   iload                  15
+   iload                  16
+   invoke                 1397
+   return                

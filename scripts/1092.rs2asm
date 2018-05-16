@@ -1,209 +1,234 @@
+.int_stack_count    6
+.string_stack_count 0
+.int_var_count      11
+.string_var_count   2
    load_int               0
-   034                    6
+   istore                 6
    load_int               0
-   034                    7
+   istore                 7
    load_int               0
-   034                    8
+   istore                 8
    load_int               105
    load_int               105
    load_int               273
-   033                    8
-   3408                  
-   034                    9
+   iload                  8
+   get_enum_value        
+   istore                 9
 LABEL12:
-   033                    9
+   iload                  9
    load_int               -1
    if_icmpne              LABEL16
-   jump                   LABEL49
+   jump                   LABEL64
 LABEL16:
-   033                    9
-   load_int               30
+   iload                  9
+   load_int               39
    if_icmple              LABEL20
-   jump                   LABEL49
+   jump                   LABEL64
 LABEL20:
+   iload                  9
+   load_int               32
+   if_icmplt              LABEL24
+   jump                   LABEL29
+LABEL24:
    get_settings           1076
-   033                    9
+   iload                  9
    test_bit              
    load_int               0
-   if_icmpeq              LABEL26
-   jump                   LABEL38
-LABEL26:
-   033                    6
+   if_icmpeq              LABEL41
+LABEL29:
+   iload                  9
+   load_int               32
+   if_icmpge              LABEL33
+   jump                   LABEL53
+LABEL33:
+   get_settings           1344
+   iload                  9
+   load_int               32
+   modulo                
+   test_bit              
+   load_int               0
+   if_icmpeq              LABEL41
+   jump                   LABEL53
+LABEL41:
+   iload                  6
    load_int               1
    iadd                  
-   033                    7
+   iload                  7
    load_int               105
    load_int               105
    load_int               836
-   033                    9
-   3408                  
+   iload                  9
+   get_enum_value        
    iadd                  
-   034                    7
-   034                    6
-LABEL38:
-   033                    8
+   istore                 7
+   istore                 6
+LABEL53:
+   iload                  8
    load_int               1
    iadd                  
-   034                    8
+   istore                 8
    load_int               105
    load_int               105
    load_int               273
-   033                    8
-   3408                  
-   034                    9
+   iload                  8
+   get_enum_value        
+   istore                 9
    jump                   LABEL12
-LABEL49:
-   033                   
-   102                   
-   033                   
+LABEL64:
+   iload                  0
+   widget_unset_children 
+   iload                  0
    load_int               0
-   040                    835
-   034                    10
-   033                   
+   invoke                 835
+   istore                 10
+   iload                  0
    load_int               4
-   033                    10
-   100                   
-   033                    10
+   iload                  10
+   widget_create_child   
+   iload                  10
    load_int               1
    iadd                  
-   034                    10
+   istore                 10
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               494
    widget_put_fontid     
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_string            "Nothing more to extend"
-   036                   
-   033                    6
+   sstore                 0
+   load_string            ""
+   sstore                 1
+   iload                  6
    load_int               0
-   if_icmpgt              LABEL87
-   jump                   LABEL161
-LABEL87:
-   033                    7
+   if_icmpgt              LABEL104
+   jump                   LABEL179
+LABEL104:
+   iload                  7
    load_int               0
-   if_icmpgt              LABEL91
-   jump                   LABEL161
-LABEL91:
-   033                    6
+   if_icmpgt              LABEL108
+   jump                   LABEL179
+LABEL108:
+   iload                  6
    load_int               1
-   if_icmpgt              LABEL95
-   jump                   LABEL119
-LABEL95:
+   if_icmpgt              LABEL112
+   jump                   LABEL136
+LABEL112:
    load_int               0
    load_int               95
    load_int               0
    load_int               100
-   033                    7
-   4006                  
-   034                    7
-   033                    7
+   iload                  7
+   interpolate           
+   istore                 7
+   iload                  7
    load_int               2
-   if_icmplt              LABEL106
-   jump                   LABEL108
-LABEL106:
+   if_icmplt              LABEL123
+   jump                   LABEL125
+LABEL123:
    load_int               2
-   034                    7
-LABEL108:
+   istore                 7
+LABEL125:
    load_string            "Extend remaining "
-   033                    6
+   iload                  6
    int_to_string         
    load_string            " tasks: "
-   033                    7
+   iload                  7
    load_string            ","
-   040                    46
+   invoke                 46
    load_string            " points"
-   037                    5
-   036                   
-   jump                   LABEL126
-LABEL119:
+   string_append          5
+   sstore                 0
+   jump                   LABEL143
+LABEL136:
    load_string            "Extend remaining task: "
-   033                    7
+   iload                  7
    load_string            ","
-   040                    46
+   invoke                 46
    load_string            " points"
-   037                    3
-   036                   
-LABEL126:
+   string_append          3
+   sstore                 0
+LABEL143:
    load_int               16750623
    widget_put_textcolor  
-   035                   
-   1112                  
+   sload                  0
+   widget_put_text       
    load_int               1083
    load_int               -2147483645
    load_int               0
    load_string            "Ii"
-   033                   
-   2412                  
+   iload                  0
+   widget_put_mouse_hover_listener_widget
    load_int               1082
    load_int               -2147483645
    load_int               0
    load_string            "Ii"
-   033                   
-   2404                  
+   iload                  0
+   widget_put_mouse_exit_listener_widget
    load_int               1
-   load_string            "Etcetera"
-   033                   
-   2300                  
+   load_string            "Extend"
+   iload                  0
+   widget_put_action_widget
    load_int               414
    load_int               -1
-   load_int               30
-   load_int               8
+   load_int               39
+   load_int               9
    iadd                  
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    7
-   load_string            "1iIIIIIi"
-   033                   
-   2409                  
-   jump                   LABEL179
-LABEL161:
+   sload                  1
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  7
+   load_string            "1isIIIIIi"
+   iload                  0
+   widget_put_option_click_listener_widget
+   jump                   LABEL197
+LABEL179:
    load_int               8342543
    widget_put_textcolor  
-   035                   
-   1112                  
+   sload                  0
+   widget_put_text       
    load_int               -1
    load_string            ""
-   033                   
-   2412                  
+   iload                  0
+   widget_put_mouse_hover_listener_widget
    load_int               -1
    load_string            ""
-   033                   
-   2404                  
-   033                   
+   iload                  0
+   widget_put_mouse_exit_listener_widget
+   iload                  0
    widget_put_actions_null_widget
    load_int               -1
    load_string            ""
-   033                   
-   2409                  
-LABEL179:
-   035                   
-   033                   
+   iload                  0
+   widget_put_option_click_listener_widget
+LABEL197:
+   sload                  0
+   iload                  0
    widget_get_parentid_widget
    widget_get_width_widget
    load_int               494
-   4109                  
+   get_max_line_width    
    load_int               20
    iadd                  
-   033                   
+   iload                  0
    widget_get_height_widget
    load_int               0
    load_int               0
-   033                   
-   2001                  
+   iload                  0
+   widget_put_size_widget
    return                

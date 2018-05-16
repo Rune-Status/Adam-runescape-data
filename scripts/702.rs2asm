@@ -1,12 +1,16 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  0
    load_int               22
    if_icmpeq              LABEL7
-   033                   
+   iload                  0
    load_int               23
    if_icmpeq              LABEL7
    jump                   LABEL15
 LABEL7:
-   025                    532
+   get_varbit             532
    load_int               7
    if_icmpge              LABEL11
    jump                   LABEL13
@@ -17,129 +21,129 @@ LABEL13:
    load_int               0
    return                
 LABEL15:
-   033                   
+   iload                  0
    load_int               24
    if_icmpeq              LABEL19
    jump                   LABEL22
 LABEL19:
-   025                    1368
-   040                    633
+   get_varbit             1368
+   invoke                 633
    return                
 LABEL22:
-   033                   
+   iload                  0
    load_int               25
    if_icmpeq              LABEL26
    jump                   LABEL29
 LABEL26:
-   025                    1369
-   040                    633
+   get_varbit             1369
+   invoke                 633
    return                
 LABEL29:
-   033                   
+   iload                  0
    load_int               26
    if_icmpeq              LABEL33
    jump                   LABEL36
 LABEL33:
-   025                    1370
-   040                    633
+   get_varbit             1370
+   invoke                 633
    return                
 LABEL36:
-   033                   
+   iload                  0
    load_int               27
    if_icmpeq              LABEL40
    jump                   LABEL43
 LABEL40:
-   025                    1367
-   040                    633
+   get_varbit             1367
+   invoke                 633
    return                
 LABEL43:
-   033                   
+   iload                  0
    load_int               28
    if_icmpeq              LABEL47
    jump                   LABEL50
 LABEL47:
-   025                    2311
-   040                    633
+   get_varbit             2311
+   invoke                 633
    return                
 LABEL50:
-   033                   
+   iload                  0
    load_int               29
    if_icmpeq              LABEL54
    jump                   LABEL57
 LABEL54:
-   025                    2312
-   040                    633
+   get_varbit             2312
+   invoke                 633
    return                
 LABEL57:
-   033                   
+   iload                  0
    load_int               30
    if_icmpeq              LABEL61
    jump                   LABEL64
 LABEL61:
-   025                    2309
-   040                    633
+   get_varbit             2309
+   invoke                 633
    return                
 LABEL64:
-   033                   
+   iload                  0
    load_int               31
    if_icmpeq              LABEL68
    jump                   LABEL71
 LABEL68:
-   025                    2310
-   040                    633
+   get_varbit             2310
+   invoke                 633
    return                
 LABEL71:
-   033                   
+   iload                  0
    load_int               32
    if_icmpeq              LABEL75
    jump                   LABEL78
 LABEL75:
-   025                    1921
-   040                    633
+   get_varbit             1921
+   invoke                 633
    return                
 LABEL78:
-   033                   
+   iload                  0
    load_int               33
    if_icmpeq              LABEL82
    jump                   LABEL85
 LABEL82:
-   025                    1920
-   040                    633
+   get_varbit             1920
+   invoke                 633
    return                
 LABEL85:
-   033                   
+   iload                  0
    load_int               34
    if_icmpeq              LABEL89
    jump                   LABEL92
 LABEL89:
-   025                    1371
-   040                    633
+   get_varbit             1371
+   invoke                 633
    return                
 LABEL92:
-   033                   
+   iload                  0
    load_int               35
    if_icmpeq              LABEL96
    jump                   LABEL99
 LABEL96:
-   025                    2055
-   040                    633
+   get_varbit             2055
+   invoke                 633
    return                
 LABEL99:
    load_int               1
-   034                    1
+   istore                 1
    load_int               -1
-   034                    2
-   033                   
+   istore                 2
+   iload                  0
    load_int               42
    if_icmpeq              LABEL107
    jump                   LABEL159
 LABEL107:
    get_settings           101
-   025                    1782
+   get_varbit             1782
    if_icmpge              LABEL111
    jump                   LABEL117
 LABEL111:
-   025                    1782
+   get_varbit             1782
    load_int               0
    if_icmpgt              LABEL115
    jump                   LABEL117
@@ -147,7 +151,7 @@ LABEL115:
    load_int               1
    return                
 LABEL117:
-   025                    4797
+   get_varbit             4797
    load_int               1
    if_icmpeq              LABEL121
    jump                   LABEL123
@@ -155,7 +159,7 @@ LABEL121:
    load_int               1
    return                
 LABEL123:
-   025                    5003
+   get_varbit             5003
    load_int               3
    if_icmpge              LABEL127
    jump                   LABEL129
@@ -166,16 +170,16 @@ LABEL129:
    load_int               105
    load_int               83
    load_int               681
-   033                    1
-   3408                  
-   034                    2
+   iload                  1
+   get_enum_value        
+   istore                 2
 LABEL135:
-   033                    2
+   iload                  2
    load_int               -1
    if_icmpne              LABEL139
    jump                   LABEL157
 LABEL139:
-   033                    2
+   iload                  2
    get_realskilllevels   
    load_int               99
    if_icmpge              LABEL144
@@ -184,36 +188,36 @@ LABEL144:
    load_int               1
    return                
 LABEL146:
-   033                    1
+   iload                  1
    load_int               1
    iadd                  
-   034                    1
+   istore                 1
    load_int               105
    load_int               83
    load_int               681
-   033                    1
-   3408                  
-   034                    2
+   iload                  1
+   get_enum_value        
+   istore                 2
    jump                   LABEL135
 LABEL157:
    load_int               0
    return                
 LABEL159:
-   033                   
+   iload                  0
    load_int               40
    if_icmpeq              LABEL163
    jump                   LABEL166
 LABEL163:
-   025                    1000
-   040                    633
+   get_varbit             1000
+   invoke                 633
    return                
 LABEL166:
-   033                   
+   iload                  0
    load_int               43
    if_icmpeq              LABEL170
    jump                   LABEL178
 LABEL170:
-   025                    4673
+   get_varbit             4673
    load_int               1
    if_icmpeq              LABEL174
    jump                   LABEL176
@@ -224,51 +228,78 @@ LABEL176:
    load_int               0
    return                
 LABEL178:
-   033                   
+   iload                  0
    load_int               36
    if_icmpeq              LABEL182
    jump                   LABEL185
 LABEL182:
-   025                    4732
-   040                    633
+   get_varbit             4732
+   invoke                 633
    return                
 LABEL185:
-   033                   
+   iload                  0
    load_int               37
    if_icmpeq              LABEL189
    jump                   LABEL192
 LABEL189:
-   025                    4732
-   040                    633
+   get_varbit             4732
+   invoke                 633
    return                
 LABEL192:
-   033                   
+   iload                  0
    load_int               38
    if_icmpeq              LABEL196
    jump                   LABEL199
 LABEL196:
-   025                    4732
-   040                    633
+   get_varbit             4732
+   invoke                 633
    return                
 LABEL199:
-   033                   
+   iload                  0
    load_int               39
    if_icmpeq              LABEL203
    jump                   LABEL206
 LABEL203:
-   025                    4732
-   040                    633
+   get_varbit             4732
+   invoke                 633
    return                
 LABEL206:
-   033                   
+   iload                  0
    load_int               41
    if_icmpeq              LABEL210
    jump                   LABEL213
 LABEL210:
-   025                    4802
-   040                    633
+   get_varbit             4802
+   invoke                 633
    return                
 LABEL213:
+   iload                  0
+   load_int               44
+   if_icmpeq              LABEL217
+   jump                   LABEL220
+LABEL217:
+   get_varbit             5104
+   invoke                 633
+   return                
+LABEL220:
+   iload                  0
+   load_int               45
+   if_icmpeq              LABEL224
+   jump                   LABEL227
+LABEL224:
+   get_varbit             5597
+   invoke                 633
+   return                
+LABEL227:
+   iload                  0
+   load_int               46
+   if_icmpeq              LABEL231
+   jump                   LABEL234
+LABEL231:
+   get_varbit             5598
+   invoke                 633
+   return                
+LABEL234:
    load_int               1
    return                
    load_int               -1

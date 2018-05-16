@@ -1,2 +1,62 @@
-   040                    741
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  1
+   widget_get_scrollheight_widget
+   iload                  1
+   widget_get_height_widget
+   isub                  
+   load_int               1
+   invoke                 1045
+   istore                 2
+   iload                  0
+   widget_get_height_widget
+   load_int               32
+   isub                  
+   widget_get_height     
+   isub                  
+   istore                 3
+   load_int               0
+   load_int               16
+   iload                  3
+   iload                  1
+   widget_get_scrolly_widget
+   imul                  
+   iload                  2
+   idiv                  
+   iadd                  
+   load_int               1
+   load_int               0
+   widget_put_position   
+   iload                  0
+   load_int               2
+   widget_load_child      1
+   load_int               1
+   if_icmpeq              LABEL33
+   jump                   LABEL38
+LABEL33:
+   load_int               0
+   widget_get_relativey  
+   load_int               1
+   load_int               0
+   widget_put_position    1
+LABEL38:
+   iload                  0
+   load_int               3
+   widget_load_child      1
+   load_int               1
+   if_icmpeq              LABEL44
+   jump                   LABEL53
+LABEL44:
+   load_int               0
+   widget_get_relativey  
+   widget_get_height     
+   iadd                  
+   load_int               5
+   isub                  
+   load_int               1
+   load_int               0
+   widget_put_position    1
+LABEL53:
    return                

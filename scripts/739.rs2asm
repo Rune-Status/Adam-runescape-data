@@ -1,12 +1,59 @@
-   load_int               1
-   load_int               4325383
-   widget_put_hidden_widget
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   1
+   get_varbit             5653
+   int_to_string         
+   load_string            " / "
+   get_varbit             5654
+   int_to_string         
+   string_append          3
+   sstore                 0
+   sload                  0
+   iload                  0
+   widget_put_text_widget
+   load_int               39059462
+   widget_get_width_widget
+   istore                 2
+   get_varbit             5653
+   get_varbit             5654
+   iload                  2
+   scale                 
+   istore                 2
+   iload                  2
    load_int               0
-   load_int               4325394
-   widget_put_hidden_widget
+   if_icmpeq              LABEL22
+   jump                   LABEL28
+LABEL22:
+   get_varbit             5653
+   load_int               0
+   if_icmpgt              LABEL26
+   jump                   LABEL28
+LABEL26:
    load_int               1
-   load_int               4325406
-   widget_put_hidden_widget
-   load_string            "redemption of 2 bonds"
-   040                    742
+   istore                 2
+LABEL28:
+   iload                  2
+   load_int               39059462
+   widget_get_width_widget
+   if_icmpeq              LABEL33
+   jump                   LABEL41
+LABEL33:
+   get_varbit             5653
+   get_varbit             5654
+   if_icmplt              LABEL37
+   jump                   LABEL41
+LABEL37:
+   iload                  2
+   load_int               1
+   isub                  
+   istore                 2
+LABEL41:
+   iload                  2
+   iload                  1
+   widget_get_height_widget
+   load_int               0
+   load_int               0
+   iload                  1
+   widget_put_size_widget
    return                

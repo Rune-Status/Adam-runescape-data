@@ -1,69 +1,73 @@
-   033                   
+.int_stack_count    10
+.string_stack_count 0
+.int_var_count      12
+.string_var_count   0
+   iload                  0
    widget_get_height_widget
-   034                    10
-   033                    10
+   istore                 10
+   iload                  10
    load_int               334
    if_icmplt              LABEL7
    jump                   LABEL10
 LABEL7:
    load_int               334
-   034                    10
+   istore                 10
    jump                   LABEL16
 LABEL10:
-   033                    10
+   iload                  10
    load_int               1500
    if_icmpgt              LABEL14
    jump                   LABEL16
 LABEL14:
    load_int               1500
-   034                    10
+   istore                 10
 LABEL16:
-   033                    10
-   033                    1
+   iload                  10
+   iload                  1
    if_icmpeq              LABEL20
    jump                   LABEL21
 LABEL20:
    return                
 LABEL21:
-   033                    3
+   iload                  3
    load_int               0
-   033                    10
+   iload                  10
    load_int               334
    isub                  
    load_int               2
-   4013                  
+   invpow                
    load_int               0
    load_int               1500
    load_int               334
    isub                  
    load_int               2
-   4013                  
-   033                    3
-   033                    4
+   invpow                
+   iload                  3
+   iload                  4
    isub                  
-   4006                  
+   interpolate           
    isub                  
-   034                    11
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    11
-   033                    2
-   2109                  
+   istore                 11
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  11
+   iload                  2
+   widget_put_3d_rotation_widget
    load_int               871
-   033                   
-   033                    10
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
+   iload                  0
+   iload                  10
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
    load_string            "IiIiiiiiii"
-   033                   
-   2408                  
+   iload                  0
+   widget_put_render_listener_widget
    return                

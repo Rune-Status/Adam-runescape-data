@@ -1,0 +1,60 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
+   iload                  0
+   get_gamecycle         
+   isub                  
+   istore                 1
+   iload                  1
+   load_int               0
+   if_icmple              LABEL8
+   jump                   LABEL16
+LABEL8:
+   load_string            ""
+   load_int               25952259
+   widget_put_text_widget
+   load_int               -1
+   load_string            ""
+   load_int               25952259
+   widget_put_render_listener_widget
+   return                
+LABEL16:
+   iload                  1
+   load_int               50
+   idiv                  
+   istore                 2
+   iload                  2
+   load_int               60
+   idiv                  
+   istore                 3
+   iload                  2
+   load_int               60
+   modulo                
+   istore                 4
+   iload                  3
+   load_int               0
+   if_icmpgt              LABEL32
+   jump                   LABEL43
+LABEL32:
+   load_string            "The Wintertodt returns in: "
+   iload                  3
+   int_to_string         
+   load_string            "min "
+   iload                  4
+   int_to_string         
+   load_string            "sec"
+   string_append          5
+   load_int               25952259
+   widget_put_text_widget
+   jump                   LABEL50
+LABEL43:
+   load_string            "The Wintertodt returns in: "
+   iload                  4
+   int_to_string         
+   load_string            "sec"
+   string_append          3
+   load_int               25952259
+   widget_put_text_widget
+LABEL50:
+   return                

@@ -1,18 +1,22 @@
-   025                    3637
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   0
+   get_varbit             3637
    int_to_string         
    load_string            "/"
-   load_int               153
+   load_int               225
    int_to_string         
-   037                    3
-   load_int               34865153
-   2112                  
-   025                    3637
-   load_int               153
-   if_icmpeq              LABEL12
+   string_append          3
+   load_int               34865155
+   widget_put_text_widget
+   get_varbit             3637
+   load_int               225
+   if_icmpge              LABEL12
    jump                   LABEL15
 LABEL12:
    load_int               65280
-   load_int               34865153
+   load_int               34865155
    widget_put_textcolor_widget
 LABEL15:
    return                

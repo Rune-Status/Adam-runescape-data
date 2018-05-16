@@ -1,130 +1,134 @@
-   033                   
-   102                   
+.int_stack_count    6
+.string_stack_count 0
+.int_var_count      8
+.string_var_count   0
+   iload                  0
+   widget_unset_children 
    load_int               0
-   034                    6
+   istore                 6
    load_int               0
-   034                    7
-   033                   
-   033                    1
+   istore                 7
+   iload                  0
+   iload                  1
    load_string            "Unlock"
-   033                    6
-   033                    7
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   040                    408
-   034                    7
-   034                    6
-   033                   
-   033                    2
+   iload                  6
+   iload                  7
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   invoke                 408
+   istore                 7
+   istore                 6
+   iload                  0
+   iload                  2
    load_string            "Extend"
-   033                    6
-   033                    7
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   040                    408
-   034                    7
-   034                    6
-   033                   
-   033                    3
+   iload                  6
+   iload                  7
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   invoke                 408
+   istore                 7
+   istore                 6
+   iload                  0
+   iload                  3
    load_string            "Buy"
-   033                    6
-   033                    7
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   040                    408
-   034                    7
-   034                    6
-   033                   
-   033                    4
+   iload                  6
+   iload                  7
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   invoke                 408
+   istore                 7
+   istore                 6
+   iload                  0
+   iload                  4
    load_string            "Tasks"
-   033                    6
-   033                    7
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   040                    408
-   034                    7
-   034                    6
-   033                   
+   iload                  6
+   iload                  7
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   invoke                 408
+   istore                 7
+   istore                 6
+   iload                  0
    load_int               4
-   033                    6
-   100                   
+   iload                  6
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               2
    load_int               0
-   1000                  
-   033                    7
+   widget_put_position   
+   iload                  7
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               494
    widget_put_fontid     
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               16750623
    widget_put_textcolor  
    load_int               1
-   1115                  
-   040                    410
+   widget_put_text_shadowed
+   invoke                 410
    load_int               409
    load_int               -2147483645
    load_int               -2147483643
    load_int               661
    load_int               1
    load_string            "IiY"
-   1407                  
+   widget_put_config_listener
    load_int               0
-   033                    5
+   iload                  5
    widget_put_hidden_widget
-   033                    5
-   033                    1
+   iload                  5
+   iload                  1
    if_icmpne              LABEL97
    jump                   LABEL100
 LABEL97:
    load_int               1
-   033                    1
+   iload                  1
    widget_put_hidden_widget
 LABEL100:
-   033                    5
-   033                    2
+   iload                  5
+   iload                  2
    if_icmpne              LABEL104
    jump                   LABEL107
 LABEL104:
    load_int               1
-   033                    2
+   iload                  2
    widget_put_hidden_widget
 LABEL107:
-   033                    5
-   033                    3
+   iload                  5
+   iload                  3
    if_icmpne              LABEL111
    jump                   LABEL114
 LABEL111:
    load_int               1
-   033                    3
+   iload                  3
    widget_put_hidden_widget
 LABEL114:
-   033                    5
-   033                    4
+   iload                  5
+   iload                  4
    if_icmpne              LABEL118
    jump                   LABEL121
 LABEL118:
    load_int               1
-   033                    4
+   iload                  4
    widget_put_hidden_widget
 LABEL121:
    return                

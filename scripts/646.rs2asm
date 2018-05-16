@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  0
    load_int               1
    if_icmpne              LABEL4
    jump                   LABEL5
@@ -8,24 +12,24 @@ LABEL5:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
-   033                    1
-   033                    2
-   200                   
+   play_sound_effect     
+   iload                  1
+   iload                  2
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL15
    jump                   LABEL17
 LABEL15:
    load_int               697
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL17:
    load_int               644
    load_int               -2147483645
-   033                    2
+   iload                  2
    get_gamecycle         
    load_int               35
    iadd                  
    load_string            "Iii"
-   033                    1
-   2408                  
+   iload                  1
+   widget_put_render_listener_widget
    return                

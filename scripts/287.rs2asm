@@ -1,49 +1,53 @@
-   025                    3959
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   get_varbit             3959
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL25
 LABEL4:
-   033                   
+   iload                  0
    load_int               0
-   040                    835
+   invoke                 835
    pop_int               
-   033                    1
+   iload                  1
    load_int               0
-   040                    836
+   invoke                 836
    pop_int               
    load_int               288
    load_int               -2147483644
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_int               0
    load_string            "iIIi"
-   033                   
-   2409                  
+   iload                  0
+   widget_put_option_click_listener_widget
    load_int               -1
    load_string            ""
-   033                    1
-   2409                  
+   iload                  1
+   widget_put_option_click_listener_widget
    jump                   LABEL45
 LABEL25:
-   033                   
+   iload                  0
    load_int               0
-   040                    836
+   invoke                 836
    pop_int               
-   033                    1
+   iload                  1
    load_int               0
-   040                    835
+   invoke                 835
    pop_int               
    load_int               -1
    load_string            ""
-   033                   
-   2409                  
+   iload                  0
+   widget_put_option_click_listener_widget
    load_int               288
    load_int               -2147483644
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    load_int               1
    load_string            "iIIi"
-   033                    1
-   2409                  
+   iload                  1
+   widget_put_option_click_listener_widget
 LABEL45:
    return                

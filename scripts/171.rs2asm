@@ -1,15 +1,19 @@
-   042                    40
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   0
+   get_varc               40
    load_int               0
    if_icmpeq              LABEL4
    jump                   LABEL44
 LABEL4:
    load_string            "Show riddle"
    load_int               25559048
-   2112                  
+   widget_put_text_widget
    load_int               1
    load_string            "Show"
    load_int               25559048
-   2300                  
+   widget_put_action_widget
    load_int               0
    load_int               25559049
    widget_put_hidden_widget
@@ -41,16 +45,16 @@ LABEL4:
    load_int               25559045
    widget_put_hidden_widget
    load_int               1
-   043                    40
+   put_varc               40
    jump                   LABEL136
 LABEL44:
    load_string            "Hide riddle"
    load_int               25559048
-   2112                  
+   widget_put_text_widget
    load_int               1
    load_string            "Hide"
    load_int               25559048
-   2300                  
+   widget_put_action_widget
    load_string            "You seek the grail of old,"
    load_string            "<br>"
    load_string            "but no longer is it a goblet of gold."
@@ -85,9 +89,9 @@ LABEL44:
    load_string            "A tall or small box will only bring you anger,"
    load_string            "<br>"
    load_string            "but a square box will not put you in danger."
-   037                    34
+   string_append          34
    load_int               25559046
-   2112                  
+   widget_put_text_widget
    load_int               0
    load_int               25559046
    widget_put_textcolor_widget
@@ -133,8 +137,8 @@ LABEL44:
    load_int               791
    load_int               773
    load_int               788
-   040                    31
+   invoke                 31
    load_int               0
-   043                    40
+   put_varc               40
 LABEL136:
    return                

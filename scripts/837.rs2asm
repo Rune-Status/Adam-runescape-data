@@ -1,34 +1,38 @@
-   042                    1
+.int_stack_count    5
+.string_stack_count 1
+.int_var_count      12
+.string_var_count   1
+   get_varc               1
    get_gamecycle         
-   033                    3
+   iload                  3
    iadd                  
    if_icmplt              LABEL6
    jump                   LABEL17
 LABEL6:
-   042                    1
+   get_varc               1
    get_gamecycle         
    if_icmplt              LABEL10
    jump                   LABEL12
 LABEL10:
    get_gamecycle         
-   043                    1
+   put_varc               1
 LABEL12:
-   042                    1
+   get_varc               1
    load_int               2
    iadd                  
-   043                    1
+   put_varc               1
    return                
 LABEL17:
    get_gamecycle         
-   033                    3
+   iload                  3
    iadd                  
    load_int               10
    iadd                  
-   043                    1
-   042                    2
+   put_varc               1
+   get_varc               2
    load_int               1
    if_icmpeq              LABEL31
-   033                    2
+   iload                  2
    widget_get_hidden_widget
    load_int               1
    if_icmpeq              LABEL31
@@ -36,234 +40,234 @@ LABEL17:
 LABEL31:
    return                
 LABEL32:
-   033                    2
+   iload                  2
    widget_get_parentid_widget
-   034                    5
-   033                    5
+   istore                 5
+   iload                  5
    load_int               -1
    if_icmpne              LABEL39
    jump                   LABEL47
 LABEL39:
-   033                    4
-   033                    5
+   iload                  4
+   iload                  5
    widget_get_width_widget
    if_icmpgt              LABEL44
    jump                   LABEL47
 LABEL44:
-   033                    5
+   iload                  5
    widget_get_width_widget
-   034                    4
+   istore                 4
 LABEL47:
-   033                    4
+   iload                  4
    load_int               4
    isub                  
-   034                    4
+   istore                 4
    load_int               4
-   035                   
-   033                    4
+   sload                  0
+   iload                  4
    load_int               495
-   4109                  
+   get_max_line_width    
    iadd                  
    load_int               7
    load_int               12
-   035                   
-   033                    4
+   sload                  0
+   iload                  4
    load_int               495
-   4108                  
+   get_line_count        
    imul                  
    iadd                  
    load_int               0
    load_int               0
-   033                    2
-   2001                  
-   033                   
+   iload                  2
+   widget_put_size_widget
+   iload                  0
    widget_get_relativex_widget
-   034                    6
-   033                   
+   istore                 6
+   iload                  0
    widget_get_relativey_widget
-   034                    7
+   istore                 7
    load_int               0
-   034                    8
-   033                    1
+   istore                 8
+   iload                  1
    load_int               -1
    if_icmpne              LABEL81
    jump                   LABEL104
 LABEL81:
-   033                   
-   033                    1
-   200                   
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL87
    jump                   LABEL104
 LABEL87:
-   033                    6
+   iload                  6
    widget_get_relativex  
    iadd                  
-   033                   
+   iload                  0
    widget_get_scrollx_widget
    isub                  
-   033                    7
+   iload                  7
    widget_get_relativey  
    iadd                  
-   033                   
+   iload                  0
    widget_get_scrolly_widget
    isub                  
    widget_get_height     
-   034                    8
-   034                    7
-   034                    6
+   istore                 8
+   istore                 7
+   istore                 6
    jump                   LABEL107
 LABEL104:
-   033                   
+   iload                  0
    widget_get_height_widget
-   034                    8
+   istore                 8
 LABEL107:
-   033                   
+   iload                  0
    widget_get_parentid_widget
-   034                    9
+   istore                 9
 LABEL110:
-   033                    9
+   iload                  9
    load_int               -1
    if_icmpne              LABEL114
    jump                   LABEL134
 LABEL114:
-   033                    6
-   033                    9
+   iload                  6
+   iload                  9
    widget_get_relativex_widget
    iadd                  
-   033                    9
+   iload                  9
    widget_get_scrollx_widget
    isub                  
-   033                    7
-   033                    9
+   iload                  7
+   iload                  9
    widget_get_relativey_widget
    iadd                  
-   033                    9
+   iload                  9
    widget_get_scrolly_widget
    isub                  
-   034                    7
-   034                    6
-   033                    9
+   istore                 7
+   istore                 6
+   iload                  9
    widget_get_parentid_widget
-   034                    9
+   istore                 9
    jump                   LABEL110
 LABEL134:
-   033                    6
+   iload                  6
    load_int               5
    iadd                  
-   034                    10
-   033                    7
-   033                    8
+   istore                 10
+   iload                  7
+   iload                  8
    iadd                  
    load_int               5
    iadd                  
-   034                    11
-   033                    5
+   istore                 11
+   iload                  5
    load_int               -1
    if_icmpne              LABEL148
    jump                   LABEL177
 LABEL148:
-   033                    10
-   033                    5
+   iload                  10
+   iload                  5
    widget_get_width_widget
-   033                    2
+   iload                  2
    widget_get_width_widget
    isub                  
    if_icmpgt              LABEL156
    jump                   LABEL162
 LABEL156:
-   033                    5
+   iload                  5
    widget_get_width_widget
-   033                    2
+   iload                  2
    widget_get_width_widget
    isub                  
-   034                    10
+   istore                 10
 LABEL162:
-   033                    11
-   033                    5
+   iload                  11
+   iload                  5
    widget_get_height_widget
-   033                    2
+   iload                  2
    widget_get_height_widget
    isub                  
    if_icmpgt              LABEL170
    jump                   LABEL177
 LABEL170:
-   033                    7
-   033                    2
+   iload                  7
+   iload                  2
    widget_get_height_widget
    isub                  
    load_int               5
    isub                  
-   034                    11
+   istore                 11
 LABEL177:
-   033                    10
-   033                    11
+   iload                  10
+   iload                  11
    load_int               0
    load_int               0
-   033                    2
-   2000                  
-   033                    2
-   102                   
-   033                    2
+   iload                  2
+   widget_put_position_widget
+   iload                  2
+   widget_unset_children 
+   iload                  2
    load_int               3
    load_int               0
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               16777120
    widget_put_textcolor  
-   033                    2
+   iload                  2
    load_int               3
    load_int               1
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               0
-   1102                  
+   widget_put_filled     
    load_int               0
    widget_put_textcolor  
-   033                    2
+   iload                  2
    load_int               4
    load_int               2
-   100                   
+   widget_create_child   
    load_int               4
    load_int               1
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               2
-   1000                  
-   035                   
-   1112                  
+   widget_put_position   
+   sload                  0
+   widget_put_text       
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               495
    widget_put_fontid     
    load_int               0
    widget_put_textcolor  
    load_int               1
-   043                    2
+   put_varc               2
    return                

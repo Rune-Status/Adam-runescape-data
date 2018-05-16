@@ -1,60 +1,64 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
    load_int               0
-   034                   
+   istore                 0
    load_int               0
-   034                    1
+   istore                 1
    load_int               10
    load_int               9
    pow                   
-   034                    2
+   istore                 2
    load_int               1
-   034                    3
+   istore                 3
    load_int               105
    load_int               83
    load_int               681
-   033                    3
-   3408                  
-   034                    4
+   iload                  3
+   get_enum_value        
+   istore                 4
 LABEL16:
-   033                    4
+   iload                  4
    load_int               -1
    if_icmpne              LABEL20
    jump                   LABEL49
 LABEL20:
-   033                   
-   033                    4
+   iload                  0
+   iload                  4
    get_skillexperiences  
    iadd                  
-   034                   
+   istore                 0
 LABEL25:
-   033                   
-   033                    2
+   iload                  0
+   iload                  2
    if_icmpge              LABEL29
    jump                   LABEL38
 LABEL29:
-   033                   
-   033                    2
+   iload                  0
+   iload                  2
    isub                  
-   034                   
-   033                    1
+   istore                 0
+   iload                  1
    load_int               1
    iadd                  
-   034                    1
+   istore                 1
    jump                   LABEL25
 LABEL38:
-   033                    3
+   iload                  3
    load_int               1
    iadd                  
-   034                    3
+   istore                 3
    load_int               105
    load_int               83
    load_int               681
-   033                    3
-   3408                  
-   034                    4
+   iload                  3
+   get_enum_value        
+   istore                 4
    jump                   LABEL16
 LABEL49:
-   033                    1
-   033                   
+   iload                  1
+   iload                  0
    return                
    load_int               0
    load_int               0

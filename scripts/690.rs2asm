@@ -1,64 +1,80 @@
-   025                    1776
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   0
+   get_varbit             1776
    load_int               1
    if_icmpeq              LABEL4
-   jump                   LABEL30
+   jump                   LABEL36
 LABEL4:
    load_int               697
-   load_int               14090280
-   widget_put_textureid_widget
+   load_int               14090299
+   widget_put_spriteid_widget
    load_int               699
-   load_int               14090276
-   widget_put_textureid_widget
+   load_int               14090295
+   widget_put_spriteid_widget
+   load_int               1485
+   load_int               -2147483644
+   load_string            "i"
+   load_int               14090285
+   widget_put_option_click_listener_widget
    get_settings           281
    load_int               1000
-   if_icmplt              LABEL14
-   jump                   LABEL21
-LABEL14:
+   if_icmplt              LABEL19
+   jump                   LABEL31
+LABEL19:
+   load_int               1485
+   load_int               -2147483644
+   load_string            "i"
+   load_int               14090293
+   widget_put_option_click_listener_widget
    load_int               692
    load_int               -2147483644
    load_int               0
    load_string            "ii"
-   load_int               14090278
-   2409                  
-   jump                   LABEL25
-LABEL21:
+   load_int               14090297
+   widget_put_option_click_listener_widget
+   jump                   LABEL35
+LABEL31:
    load_int               -1
    load_string            ""
-   load_int               14090278
-   2409                  
-LABEL25:
-   load_int               -1
-   load_string            ""
-   load_int               14090274
-   2409                  
-   jump                   LABEL55
-LABEL30:
+   load_int               14090297
+   widget_put_option_click_listener_widget
+LABEL35:
+   jump                   LABEL67
+LABEL36:
    load_int               699
-   load_int               14090280
-   widget_put_textureid_widget
+   load_int               14090299
+   widget_put_spriteid_widget
    load_int               697
-   load_int               14090276
-   widget_put_textureid_widget
-   load_int               -1
-   load_string            ""
-   load_int               14090278
-   2409                  
+   load_int               14090295
+   widget_put_spriteid_widget
+   load_int               1485
+   load_int               -2147483644
+   load_string            "i"
+   load_int               14090285
+   widget_put_option_click_listener_widget
    get_settings           281
    load_int               1000
-   if_icmplt              LABEL44
-   jump                   LABEL51
-LABEL44:
+   if_icmplt              LABEL51
+   jump                   LABEL63
+LABEL51:
    load_int               692
    load_int               -2147483644
    load_int               1
    load_string            "ii"
-   load_int               14090274
-   2409                  
-   jump                   LABEL55
-LABEL51:
+   load_int               14090293
+   widget_put_option_click_listener_widget
+   load_int               1485
+   load_int               -2147483644
+   load_string            "i"
+   load_int               14090297
+   widget_put_option_click_listener_widget
+   jump                   LABEL67
+LABEL63:
    load_int               -1
    load_string            ""
-   load_int               14090274
-   2409                  
-LABEL55:
+   load_int               14090293
+   widget_put_option_click_listener_widget
+LABEL67:
    return                

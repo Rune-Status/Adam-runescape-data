@@ -1,0 +1,76 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   4
+   load_string            "Total:"
+   sstore                 0
+   get_varbit             5431
+   load_string            ","
+   invoke                 46
+   sstore                 1
+   get_localplayer_name  
+   load_string            ":"
+   string_append          2
+   sstore                 2
+   load_string            ""
+   sstore                 3
+   get_varbit             5422
+   load_int               131071
+   if_icmplt              LABEL16
+   jump                   LABEL21
+LABEL16:
+   get_varbit             5422
+   load_string            ","
+   invoke                 46
+   sstore                 3
+   jump                   LABEL26
+LABEL21:
+   load_string            "<col=ffa82f>"
+   load_string            "Lots!"
+   load_string            "</col>"
+   string_append          3
+   sstore                 3
+LABEL26:
+   sload                  0
+   load_int               512
+   load_int               495
+   get_max_line_width    
+   load_int               3
+   iadd                  
+   sload                  1
+   load_int               512
+   load_int               495
+   get_max_line_width    
+   iadd                  
+   sload                  2
+   load_int               512
+   load_int               495
+   get_max_line_width    
+   load_int               3
+   iadd                  
+   sload                  3
+   load_int               512
+   load_int               495
+   get_max_line_width    
+   iadd                  
+   invoke                 1045
+   istore                 1
+   iload                  1
+   load_int               8
+   iadd                  
+   load_int               37
+   load_int               0
+   load_int               0
+   iload                  0
+   widget_put_size_widget
+   sload                  0
+   load_string            "<br>"
+   sload                  2
+   string_append          3
+   widget_put_text       
+   sload                  1
+   load_string            "<br>"
+   sload                  3
+   string_append          3
+   widget_put_text        1
+   return                

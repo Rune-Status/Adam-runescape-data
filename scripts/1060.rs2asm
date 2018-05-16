@@ -1,82 +1,86 @@
+.int_stack_count    3
+.string_stack_count 1
+.int_var_count      6
+.string_var_count   1
    load_int               0
-   034                    3
+   istore                 3
    load_int               -1
-   034                    4
-   033                    1
-   040                    1063
-   034                    4
-   034                    3
+   istore                 4
+   iload                  1
+   invoke                 1063
+   istore                 4
+   istore                 3
    load_int               8331264
-   034                    5
-   033                    3
+   istore                 5
+   iload                  3
    load_int               0
    if_icmpgt              LABEL14
    jump                   LABEL16
 LABEL14:
    load_int               2154272
-   034                    5
+   istore                 5
 LABEL16:
-   033                    1
+   iload                  1
    load_int               6797
    if_icmpeq              LABEL20
    jump                   LABEL29
 LABEL20:
-   033                    4
+   iload                  4
    load_int               -1
    if_icmpeq              LABEL24
    jump                   LABEL26
 LABEL24:
    load_int               6797
-   034                    4
+   istore                 4
 LABEL26:
-   033                    4
+   iload                  4
    get_item_name         
-   036                   
+   sstore                 0
 LABEL29:
-   033                   
+   iload                  0
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL35
    jump                   LABEL54
 LABEL35:
-   033                   
+   iload                  0
    load_int               1
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL41
    jump                   LABEL54
 LABEL41:
-   035                   
-   1112                  
-   033                    5
+   sload                  0
+   widget_put_text       
+   iload                  5
    widget_put_textcolor  
-   033                    5
+   iload                  5
    widget_put_textcolor   1
-   033                    3
+   iload                  3
    int_to_string         
    load_string            "/"
-   033                    2
+   iload                  2
    int_to_string         
-   037                    3
-   1112                   1
+   string_append          3
+   widget_put_text        1
 LABEL54:
-   033                   
+   iload                  0
    load_int               2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL60
    jump                   LABEL63
 LABEL60:
-   033                    4
-   033                    3
+   iload                  4
+   iload                  3
    1205                  
 LABEL63:
    load_string            "<col=ff9040>"
-   033                    4
+   iload                  4
    get_item_name         
    load_string            "</col>"
-   037                    3
-   033                   
+   string_append          3
+   iload                  0
    widget_put_name_widget
    return                

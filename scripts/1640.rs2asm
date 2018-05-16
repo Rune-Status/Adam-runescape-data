@@ -1,0 +1,57 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  1
+   load_int               0
+   if_icmplt              LABEL4
+   jump                   LABEL6
+LABEL4:
+   load_int               0
+   istore                 1
+LABEL6:
+   iload                  1
+   load_int               50
+   idiv                  
+   istore                 2
+   iload                  2
+   load_int               60
+   idiv                  
+   istore                 3
+   iload                  2
+   load_int               60
+   modulo                
+   istore                 2
+   iload                  2
+   load_int               10
+   if_icmplt              LABEL22
+   jump                   LABEL31
+LABEL22:
+   iload                  3
+   int_to_string         
+   load_string            ":0"
+   iload                  2
+   int_to_string         
+   string_append          3
+   load_int               5898250
+   widget_put_text_widget
+   jump                   LABEL39
+LABEL31:
+   iload                  3
+   int_to_string         
+   load_string            ":"
+   iload                  2
+   int_to_string         
+   string_append          3
+   load_int               5898250
+   widget_put_text_widget
+LABEL39:
+   load_int               1639
+   iload                  0
+   iload                  1
+   load_int               1
+   isub                  
+   load_string            "Ii"
+   iload                  0
+   widget_put_render_listener_widget
+   return                

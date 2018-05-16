@@ -1,258 +1,275 @@
-   042                    5
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   1
+   get_varc               5
    load_int               14
    if_icmpeq              LABEL4
    jump                   LABEL7
 LABEL4:
    load_int               1
-   043                    66
+   put_varc               66
    return                
 LABEL7:
+   invoke                 1972
+   load_int               1
+   if_icmpeq              LABEL11
+   jump                   LABEL12
+LABEL11:
+   invoke                 1984
+LABEL12:
    load_int               -1
-   034                   
+   istore                 0
    load_string            ""
-   036                   
-   047                    22
+   sstore                 0
+   get_varc_string        22
    string_length         
    load_int               0
-   if_icmpgt              LABEL16
-   jump                   LABEL195
-LABEL16:
-   042                    5
-   load_int               1
-   if_icmpeq              LABEL20
-   jump                   LABEL21
-LABEL20:
-   return                
+   if_icmpgt              LABEL21
+   jump                   LABEL203
 LABEL21:
-   042                    5
+   get_varc               5
+   load_int               1
+   if_icmpeq              LABEL25
+   jump                   LABEL26
+LABEL25:
+   return                
+LABEL26:
+   get_varc               5
    load_int               4
-   if_icmpeq              LABEL28
-   042                    5
+   if_icmpeq              LABEL33
+   get_varc               5
    load_int               5
-   if_icmpeq              LABEL28
-   jump                   LABEL49
-LABEL28:
+   if_icmpeq              LABEL33
+   jump                   LABEL54
+LABEL33:
    get_ignorecount       
    load_int               0
-   if_icmplt              LABEL32
-   jump                   LABEL35
-LABEL32:
+   if_icmplt              LABEL37
+   jump                   LABEL40
+LABEL37:
    load_string            "Unable to update ignore list - system busy."
    send_game_message     
-   jump                   LABEL48
-LABEL35:
-   042                    5
+   jump                   LABEL53
+LABEL40:
+   get_varc               5
    load_int               4
-   if_icmpeq              LABEL39
-   jump                   LABEL42
-LABEL39:
-   047                    22
+   if_icmpeq              LABEL44
+   jump                   LABEL47
+LABEL44:
+   get_varc_string        22
    add_ignore            
-   jump                   LABEL48
-LABEL42:
-   042                    5
+   jump                   LABEL53
+LABEL47:
+   get_varc               5
    load_int               5
-   if_icmpeq              LABEL46
-   jump                   LABEL48
-LABEL46:
-   047                    22
+   if_icmpeq              LABEL51
+   jump                   LABEL53
+LABEL51:
+   get_varc_string        22
    remove_ignore         
-LABEL48:
-   jump                   LABEL194
-LABEL49:
-   042                    5
+LABEL53:
+   jump                   LABEL202
+LABEL54:
+   get_varc               5
    load_int               2
-   if_icmpeq              LABEL59
-   042                    5
+   if_icmpeq              LABEL64
+   get_varc               5
    load_int               3
-   if_icmpeq              LABEL59
-   042                    5
+   if_icmpeq              LABEL64
+   get_varc               5
    load_int               6
-   if_icmpeq              LABEL59
-   jump                   LABEL112
-LABEL59:
+   if_icmpeq              LABEL64
+   jump                   LABEL117
+LABEL64:
    get_friendcount       
    load_int               0
-   if_icmplt              LABEL63
-   jump                   LABEL66
-LABEL63:
+   if_icmplt              LABEL68
+   jump                   LABEL71
+LABEL68:
    load_string            "Unable to complete action - system busy."
    send_game_message     
-   jump                   LABEL111
-LABEL66:
-   042                    5
+   jump                   LABEL116
+LABEL71:
+   get_varc               5
    load_int               2
-   if_icmpeq              LABEL70
-   jump                   LABEL73
-LABEL70:
-   047                    22
+   if_icmpeq              LABEL75
+   jump                   LABEL78
+LABEL75:
+   get_varc_string        22
    add_friend            
-   jump                   LABEL111
-LABEL73:
-   042                    5
+   jump                   LABEL116
+LABEL78:
+   get_varc               5
    load_int               3
-   if_icmpeq              LABEL77
-   jump                   LABEL80
-LABEL77:
-   047                    22
+   if_icmpeq              LABEL82
+   jump                   LABEL85
+LABEL82:
+   get_varc_string        22
    remove_friend         
-   jump                   LABEL111
-LABEL80:
-   042                    5
+   jump                   LABEL116
+LABEL85:
+   get_varc               5
    load_int               6
-   if_icmpeq              LABEL84
-   jump                   LABEL111
-LABEL84:
+   if_icmpeq              LABEL89
+   jump                   LABEL116
+LABEL89:
    5005                  
    load_int               2
-   if_icmpeq              LABEL88
-   jump                   LABEL99
-LABEL88:
+   if_icmpeq              LABEL93
+   jump                   LABEL104
+LABEL93:
    5000                  
    load_int               1
    5016                  
-   5001                  
-   040                    178
-   040                    553
-   034                   
-   033                   
-   040                    84
-   033                   
-   040                    89
-LABEL99:
-   025                    4394
+   chatfilter_update     
+   invoke                 178
+   invoke                 553
+   istore                 0
+   iload                  0
+   invoke                 84
+   iload                  0
+   invoke                 89
+LABEL104:
+   get_varbit             4394
    load_int               1
-   if_icmpeq              LABEL103
-   jump                   LABEL106
-LABEL103:
-   047                    23
+   if_icmpeq              LABEL108
+   jump                   LABEL111
+LABEL108:
+   get_varc_string        23
    remove_friend         
-   jump                   LABEL109
-LABEL106:
-   047                    23
-   047                    22
-   5009                  
-LABEL109:
-   get_gamecycle         
-   043                    61
+   jump                   LABEL114
 LABEL111:
-   jump                   LABEL194
-LABEL112:
-   042                    5
-   load_int               7
-   if_icmpeq              LABEL116
-   jump                   LABEL120
+   get_varc_string        23
+   get_varc_string        22
+   privmsg               
+LABEL114:
+   get_gamecycle         
+   put_varc               61
 LABEL116:
-   047                    22
-   040                    212
-   3104                  
-   jump                   LABEL194
-LABEL120:
-   042                    5
+   jump                   LABEL202
+LABEL117:
+   get_varc               5
+   load_int               7
+   if_icmpeq              LABEL121
+   jump                   LABEL125
+LABEL121:
+   get_varc_string        22
+   invoke                 212
+   numeric_input         
+   jump                   LABEL202
+LABEL125:
+   get_varc               5
    load_int               8
-   if_icmpeq              LABEL124
-   jump                   LABEL130
-LABEL124:
-   047                    22
+   if_icmpeq              LABEL129
+   jump                   LABEL135
+LABEL129:
+   get_varc_string        22
    string_remove_html    
-   048                    128
-   047                    22
-   3105                  
-   jump                   LABEL194
-LABEL130:
-   042                    5
+   put_varc_string        128
+   get_varc_string        22
+   string_input_1        
+   jump                   LABEL202
+LABEL135:
+   get_varc               5
    load_int               9
-   if_icmpeq              LABEL134
-   jump                   LABEL137
-LABEL134:
-   047                    22
-   3106                  
-   jump                   LABEL194
-LABEL137:
-   042                    5
+   if_icmpeq              LABEL142
+   get_varc               5
+   load_int               15
+   if_icmpeq              LABEL142
+   jump                   LABEL145
+LABEL142:
+   get_varc_string        22
+   string_input_2        
+   jump                   LABEL202
+LABEL145:
+   get_varc               5
    load_int               10
-   if_icmpeq              LABEL141
-   jump                   LABEL147
-LABEL141:
-   047                    22
+   if_icmpeq              LABEL149
+   jump                   LABEL155
+LABEL149:
+   get_varc_string        22
    string_remove_html    
-   048                    129
-   047                    22
-   3619                  
-   jump                   LABEL194
-LABEL147:
-   042                    5
+   put_varc_string        129
+   get_varc_string        22
+   join_clanchat         
+   jump                   LABEL202
+LABEL155:
+   get_varc               5
    load_int               12
-   if_icmpeq              LABEL151
-   jump                   LABEL170
-LABEL151:
-   047                    22
+   if_icmpeq              LABEL159
+   jump                   LABEL178
+LABEL159:
+   get_varc_string        22
    string_length         
    load_int               10
-   if_icmpgt              LABEL156
-   jump                   LABEL162
-LABEL156:
-   047                    22
+   if_icmpgt              LABEL164
+   jump                   LABEL170
+LABEL164:
+   get_varc_string        22
    load_int               0
    load_int               9
    string_substring      
-   036                   
-   jump                   LABEL164
-LABEL162:
-   047                    22
-   036                   
-LABEL164:
-   035                   
+   sstore                 0
+   jump                   LABEL172
+LABEL170:
+   get_varc_string        22
+   sstore                 0
+LABEL172:
+   sload                  0
    tolowercase           
    5021                  
-   040                    553
-   040                    84
-   jump                   LABEL194
-LABEL170:
-   042                    5
+   invoke                 553
+   invoke                 84
+   jump                   LABEL202
+LABEL178:
+   get_varc               5
    load_int               13
-   if_icmpeq              LABEL174
-   jump                   LABEL186
-LABEL174:
-   047                    22
+   if_icmpeq              LABEL182
+   jump                   LABEL194
+LABEL182:
+   get_varc_string        22
    load_int               0
-   043                    62
-   048                    28
-   040                    95
+   put_varc               62
+   put_varc_string        28
+   invoke                 95
    load_int               552
    load_int               -2147483645
    load_int               1
    load_string            "I1"
    load_int               10616842
-   2408                  
-   jump                   LABEL194
-LABEL186:
-   042                    5
+   widget_put_render_listener_widget
+   jump                   LABEL202
+LABEL194:
+   get_varc               5
    load_int               11
-   if_icmpeq              LABEL190
-   jump                   LABEL194
-LABEL190:
+   if_icmpeq              LABEL198
+   jump                   LABEL202
+LABEL198:
    load_int               0
    load_int               1
-   040                    299
+   invoke                 299
    return                
-LABEL194:
-   jump                   LABEL206
-LABEL195:
-   042                    5
+LABEL202:
+   jump                   LABEL217
+LABEL203:
+   get_varc               5
    load_int               7
-   if_icmpeq              LABEL205
-   042                    5
+   if_icmpeq              LABEL216
+   get_varc               5
    load_int               8
-   if_icmpeq              LABEL205
-   042                    5
+   if_icmpeq              LABEL216
+   get_varc               5
    load_int               9
-   if_icmpeq              LABEL205
-   jump                   LABEL206
-LABEL205:
+   if_icmpeq              LABEL216
+   get_varc               5
+   load_int               15
+   if_icmpeq              LABEL216
+   jump                   LABEL217
+LABEL216:
    return                
-LABEL206:
+LABEL217:
    load_int               1
    load_int               1
-   040                    299
+   invoke                 299
    return                

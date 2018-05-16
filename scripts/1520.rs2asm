@@ -1,0 +1,71 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
+   load_int               235
+   istore                 4
+   iload                  1
+   iload                  2
+   if_icmpeq              LABEL6
+   jump                   LABEL9
+LABEL6:
+   load_int               220
+   istore                 4
+   jump                   LABEL17
+LABEL9:
+   iload                  0
+   load_int               2
+   modulo                
+   load_int               0
+   if_icmpeq              LABEL15
+   jump                   LABEL17
+LABEL15:
+   load_int               255
+   istore                 4
+LABEL17:
+   iload                  4
+   widget_put_opacity    
+   widget_put_actions_null
+   iload                  3
+   load_int               1
+   if_icmpeq              LABEL24
+   jump                   LABEL56
+LABEL24:
+   load_int               1
+   load_string            "Stats"
+   widget_put_action     
+   get_varbit             5428
+   load_int               1
+   if_icmpeq              LABEL31
+   jump                   LABEL42
+LABEL31:
+   get_clanchatcount     
+   load_int               0
+   if_icmpgt              LABEL35
+   jump                   LABEL42
+LABEL35:
+   get_clanchat_rank     
+   clanchat_kick_rank    
+   if_icmpge              LABEL39
+   jump                   LABEL42
+LABEL39:
+   load_int               6
+   load_string            "Kick"
+   widget_put_action     
+LABEL42:
+   load_int               244
+   load_int               -2147483645
+   load_int               -2147483643
+   load_int               220
+   load_int               -1
+   load_string            "IiiI"
+   widget_put_mouse_hover_listener
+   load_int               244
+   load_int               -2147483645
+   load_int               -2147483643
+   iload                  4
+   load_int               -1
+   load_string            "IiiI"
+   widget_put_mouse_exit_listener
+LABEL56:
+   return                

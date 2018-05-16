@@ -1,4 +1,8 @@
-   033                    1
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
+   iload                  1
    load_int               0
    if_icmpeq              LABEL4
    jump                   LABEL11
@@ -12,38 +16,38 @@ LABEL4:
 LABEL10:
    return                
 LABEL11:
-   040                    1138
+   invoke                 1138
    load_int               1
    if_icmpeq              LABEL15
    jump                   LABEL20
 LABEL15:
-   025                    4965
+   get_varbit             4965
    load_int               0
    if_icmpgt              LABEL19
    jump                   LABEL20
 LABEL19:
    return                
 LABEL20:
-   025                    4143
+   get_varbit             4143
    load_int               0
    if_icmpeq              LABEL31
-   040                    1138
+   invoke                 1138
    load_int               0
    if_icmpeq              LABEL27
    jump                   LABEL35
 LABEL27:
-   040                    384
+   invoke                 384
    load_int               0
    if_icmple              LABEL31
    jump                   LABEL35
 LABEL31:
    load_int               1
-   033                   
+   iload                  0
    widget_put_hidden_widget
    return                
 LABEL35:
    load_int               0
-   033                   
+   iload                  0
    widget_put_hidden_widget
    get_settings           1102
    load_int               0
@@ -57,9 +61,9 @@ LABEL42:
    load_string            "Deaths:0"
    load_string            "<br>"
    load_string            "K/D Ratio:0"
-   037                    6
-   033                   
-   2112                  
+   string_append          6
+   iload                  0
+   widget_put_text_widget
    return                
 LABEL53:
    get_settings           1103
@@ -67,15 +71,15 @@ LABEL53:
    imul                  
    get_settings           1102
    idiv                  
-   034                    2
-   033                    2
+   istore                 2
+   iload                  2
    load_int               10
    idiv                  
-   034                    3
-   033                    2
+   istore                 3
+   iload                  2
    load_int               10
    modulo                
-   034                    4
+   istore                 4
    load_string            "Kills: "
    get_settings           1103
    int_to_string         
@@ -85,12 +89,12 @@ LABEL53:
    int_to_string         
    load_string            "<br>"
    load_string            "K/D Ratio: "
-   033                    3
+   iload                  3
    int_to_string         
    load_string            "."
-   033                    4
+   iload                  4
    int_to_string         
-   037                    10
-   033                   
-   2112                  
+   string_append          10
+   iload                  0
+   widget_put_text_widget
    return                

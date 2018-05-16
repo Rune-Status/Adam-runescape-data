@@ -1,97 +1,199 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
    load_int               5
    get_realskilllevels   
    load_int               105
    load_int               105
    load_int               861
-   033                   
-   3408                  
+   iload                  0
+   get_enum_value        
    if_icmplt              LABEL9
-   jump                   LABEL11
+   jump                   LABEL15
 LABEL9:
+   get_varbit             5314
+   load_int               0
+   if_icmpeq              LABEL13
+   jump                   LABEL15
+LABEL13:
    load_int               0
    return                
-LABEL11:
-   033                   
-   load_int               25
-   if_icmpeq              LABEL15
-   jump                   LABEL29
 LABEL15:
+   iload                  0
+   load_int               25
+   if_icmpeq              LABEL19
+   jump                   LABEL37
+LABEL19:
    get_ismembers         
    load_int               0
-   if_icmpeq              LABEL26
+   if_icmpeq              LABEL30
    load_int               1
    get_realskilllevels   
    load_int               65
-   if_icmplt              LABEL26
-   025                    3909
+   if_icmplt              LABEL30
+   get_varbit             3909
    load_int               8
-   if_icmplt              LABEL26
-   jump                   LABEL28
-LABEL26:
+   if_icmplt              LABEL30
+   jump                   LABEL36
+LABEL30:
+   get_varbit             5314
+   load_int               0
+   if_icmpeq              LABEL34
+   jump                   LABEL36
+LABEL34:
    load_int               0
    return                
-LABEL28:
-   jump                   LABEL77
-LABEL29:
-   033                   
+LABEL36:
+   jump                   LABEL157
+LABEL37:
+   iload                  0
    load_int               26
-   if_icmpeq              LABEL33
-   jump                   LABEL47
-LABEL33:
+   if_icmpeq              LABEL41
+   jump                   LABEL59
+LABEL41:
    get_ismembers         
    load_int               0
-   if_icmpeq              LABEL44
+   if_icmpeq              LABEL52
    load_int               1
    get_realskilllevels   
    load_int               70
-   if_icmplt              LABEL44
-   025                    3909
+   if_icmplt              LABEL52
+   get_varbit             3909
    load_int               8
-   if_icmplt              LABEL44
-   jump                   LABEL46
-LABEL44:
+   if_icmplt              LABEL52
+   jump                   LABEL58
+LABEL52:
+   get_varbit             5314
+   load_int               0
+   if_icmpeq              LABEL56
+   jump                   LABEL58
+LABEL56:
    load_int               0
    return                
-LABEL46:
-   jump                   LABEL77
-LABEL47:
-   033                   
+LABEL58:
+   jump                   LABEL157
+LABEL59:
+   iload                  0
    load_int               15
-   if_icmpeq              LABEL57
-   033                   
+   if_icmpeq              LABEL69
+   iload                  0
    load_int               16
-   if_icmpeq              LABEL57
-   033                   
+   if_icmpeq              LABEL69
+   iload                  0
    load_int               17
-   if_icmpeq              LABEL57
-   jump                   LABEL64
-LABEL57:
+   if_icmpeq              LABEL69
+   jump                   LABEL80
+LABEL69:
    get_ismembers         
    load_int               0
-   if_icmpeq              LABEL61
-   jump                   LABEL63
-LABEL61:
+   if_icmpeq              LABEL73
+   jump                   LABEL79
+LABEL73:
+   get_varbit             5314
    load_int               0
-   return                
-LABEL63:
-   jump                   LABEL77
-LABEL64:
-   033                   
-   load_int               8
-   if_icmpeq              LABEL68
-   jump                   LABEL77
-LABEL68:
-   040                    451
-   load_int               1
-   if_icmpeq              LABEL75
-   040                    1138
-   load_int               1
-   if_icmpeq              LABEL75
-   jump                   LABEL77
-LABEL75:
-   load_int               0
-   return                
+   if_icmpeq              LABEL77
+   jump                   LABEL79
 LABEL77:
+   load_int               0
+   return                
+LABEL79:
+   jump                   LABEL157
+LABEL80:
+   iload                  0
+   load_int               24
+   if_icmpeq              LABEL84
+   jump                   LABEL102
+LABEL84:
+   get_ismembers         
+   load_int               0
+   if_icmpeq              LABEL95
+   load_int               1
+   get_realskilllevels   
+   load_int               70
+   if_icmplt              LABEL95
+   get_varbit             5451
+   load_int               0
+   if_icmpeq              LABEL95
+   jump                   LABEL101
+LABEL95:
+   get_varbit             5314
+   load_int               0
+   if_icmpeq              LABEL99
+   jump                   LABEL101
+LABEL99:
+   load_int               0
+   return                
+LABEL101:
+   jump                   LABEL157
+LABEL102:
+   iload                  0
+   load_int               27
+   if_icmpeq              LABEL106
+   jump                   LABEL124
+LABEL106:
+   get_ismembers         
+   load_int               0
+   if_icmpeq              LABEL117
+   load_int               1
+   get_realskilllevels   
+   load_int               70
+   if_icmplt              LABEL117
+   get_varbit             5452
+   load_int               0
+   if_icmpeq              LABEL117
+   jump                   LABEL123
+LABEL117:
+   get_varbit             5314
+   load_int               0
+   if_icmpeq              LABEL121
+   jump                   LABEL123
+LABEL121:
+   load_int               0
+   return                
+LABEL123:
+   jump                   LABEL157
+LABEL124:
+   iload                  0
+   load_int               28
+   if_icmpeq              LABEL128
+   jump                   LABEL141
+LABEL128:
+   get_ismembers         
+   load_int               0
+   if_icmpeq              LABEL138
+   get_varbit             5453
+   load_int               0
+   if_icmpeq              LABEL138
+   get_varbit             5314
+   load_int               1
+   if_icmpeq              LABEL138
+   jump                   LABEL140
+LABEL138:
+   load_int               0
+   return                
+LABEL140:
+   jump                   LABEL157
+LABEL141:
+   iload                  0
+   load_int               8
+   if_icmpeq              LABEL145
+   jump                   LABEL157
+LABEL145:
+   invoke                 451
+   load_int               1
+   if_icmpeq              LABEL155
+   invoke                 1138
+   load_int               1
+   if_icmpeq              LABEL155
+   get_varbit             5314
+   load_int               1
+   if_icmpeq              LABEL155
+   jump                   LABEL157
+LABEL155:
+   load_int               0
+   return                
+LABEL157:
    load_int               1
    return                
    load_int               -1

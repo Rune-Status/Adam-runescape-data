@@ -1,0 +1,108 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   0
+   iload                  0
+   widget_unset_children 
+   load_int               0
+   istore                 3
+   load_int               583
+   get_inventory_size    
+   istore                 4
+   load_int               0
+   istore                 5
+   load_int               -1
+   istore                 6
+   load_int               0
+   istore                 7
+LABEL13:
+   iload                  3
+   iload                  4
+   if_icmplt              LABEL17
+   jump                   LABEL66
+LABEL17:
+   load_int               583
+   iload                  3
+   get_itemcontainer_itemid
+   istore                 6
+   iload                  0
+   load_int               5
+   iload                  3
+   widget_create_child   
+   load_int               36
+   load_int               32
+   load_int               0
+   load_int               0
+   widget_put_size       
+   iload                  3
+   load_int               8
+   idiv                  
+   load_int               32
+   load_int               8
+   iadd                  
+   imul                  
+   istore                 5
+   iload                  3
+   load_int               8
+   modulo                
+   load_int               36
+   load_int               8
+   iadd                  
+   imul                  
+   iload                  5
+   load_int               0
+   load_int               0
+   widget_put_position   
+   load_int               1
+   widget_put_borderthickness
+   load_int               3355443
+   widget_put_sprite2    
+   iload                  6
+   load_int               583
+   iload                  3
+   get_itemcontainer_stacksize
+   iload                  7
+   iload                  1
+   invoke                 1608
+   istore                 7
+   iload                  3
+   load_int               1
+   iadd                  
+   istore                 3
+   jump                   LABEL13
+LABEL66:
+   load_int               0
+   istore                 8
+   iload                  5
+   load_int               32
+   iadd                  
+   istore                 5
+   iload                  5
+   iload                  0
+   widget_get_height_widget
+   if_icmpgt              LABEL77
+   jump                   LABEL85
+LABEL77:
+   iload                  0
+   widget_get_scrolly_widget
+   istore                 8
+   load_int               0
+   iload                  5
+   iload                  0
+   widget_put_scrollwidthheight_widget
+   jump                   LABEL89
+LABEL85:
+   load_int               0
+   load_int               0
+   iload                  0
+   widget_put_scrollwidthheight_widget
+LABEL89:
+   iload                  1
+   iload                  0
+   iload                  8
+   invoke                 72
+   iload                  7
+   int_to_string         
+   iload                  2
+   widget_put_text_widget
+   return                

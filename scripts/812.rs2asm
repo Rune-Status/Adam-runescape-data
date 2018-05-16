@@ -1,39 +1,43 @@
+.int_stack_count    5
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
    load_int               0
-   034                    5
-   033                    3
+   istore                 5
+   iload                  3
    load_int               0
    if_icmpeq              LABEL6
    jump                   LABEL76
 LABEL6:
-   033                    1
+   iload                  1
    load_int               0
    if_icmple              LABEL10
    jump                   LABEL12
 LABEL10:
    load_int               1
-   034                    1
+   istore                 1
 LABEL12:
-   033                    1
-   033                    2
+   iload                  1
+   iload                  2
    if_icmplt              LABEL16
    jump                   LABEL18
 LABEL16:
-   033                    2
-   034                    1
+   iload                  2
+   istore                 1
 LABEL18:
-   033                   
-   3912                  
+   iload                  0
+   get_grandexchange_offer_done
    load_int               1
    if_icmpeq              LABEL23
    jump                   LABEL38
 LABEL23:
-   033                    4
+   iload                  4
    widget_get_height     
    load_int               0
    load_int               0
-   1001                  
-   033                    2
-   033                    1
+   widget_put_size       
+   iload                  2
+   iload                  1
    if_icmplt              LABEL32
    jump                   LABEL35
 LABEL32:
@@ -48,7 +52,7 @@ LABEL37:
 LABEL38:
    load_int               14188576
    widget_put_textcolor  
-   033                    1
+   iload                  1
    load_int               2
    load_int               15
    pow                   
@@ -56,44 +60,44 @@ LABEL38:
    jump                   LABEL57
 LABEL46:
    load_int               0
-   033                    2
+   iload                  2
    load_int               0
-   033                    1
-   033                    4
-   4006                  
+   iload                  1
+   iload                  4
+   interpolate           
    widget_get_height     
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    jump                   LABEL75
 LABEL57:
-   033                    1
+   iload                  1
    load_int               100
    idiv                  
-   034                    5
+   istore                 5
    load_int               0
-   033                    2
-   033                    5
+   iload                  2
+   iload                  5
    idiv                  
    load_int               0
-   033                    1
-   033                    5
+   iload                  1
+   iload                  5
    idiv                  
-   033                    4
-   4006                  
+   iload                  4
+   interpolate           
    widget_get_height     
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
 LABEL75:
    jump                   LABEL83
 LABEL76:
    load_int               9371648
    widget_put_textcolor  
-   033                    4
+   iload                  4
    widget_get_height     
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
 LABEL83:
    return                

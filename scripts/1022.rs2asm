@@ -1,6 +1,10 @@
-   033                   
+.int_stack_count    8
+.string_stack_count 0
+.int_var_count      8
+.string_var_count   0
+   iload                  0
    load_int               4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL12
@@ -8,13 +12,13 @@ LABEL6:
    load_int               105
    load_int               115
    load_int               1164
-   025                    4692
-   3408                  
-   1112                  
+   get_varbit             4692
+   get_enum_value        
+   widget_put_text       
 LABEL12:
-   033                    1
+   iload                  1
    load_int               4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL18
    jump                   LABEL24
@@ -22,13 +26,13 @@ LABEL18:
    load_int               105
    load_int               115
    load_int               1165
-   025                    4693
-   3408                  
-   1112                  
+   get_varbit             4693
+   get_enum_value        
+   widget_put_text       
 LABEL24:
-   033                    2
+   iload                  2
    load_int               4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL30
    jump                   LABEL36
@@ -36,40 +40,40 @@ LABEL30:
    load_int               105
    load_int               115
    load_int               1166
-   025                    4694
-   3408                  
-   1112                  
+   get_varbit             4694
+   get_enum_value        
+   widget_put_text       
 LABEL36:
-   033                    3
+   iload                  3
    load_int               4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL42
    jump                   LABEL73
 LABEL42:
-   025                    4697
+   get_varbit             4697
    load_int               31
    if_icmpeq              LABEL46
    jump                   LABEL49
 LABEL46:
    load_string            "Most recent"
-   1112                  
+   widget_put_text       
    jump                   LABEL73
 LABEL49:
-   025                    4697
+   get_varbit             4697
    load_int               30
    if_icmpeq              LABEL53
    jump                   LABEL56
 LABEL53:
    load_string            "Off"
-   1112                  
+   widget_put_text       
    jump                   LABEL73
 LABEL56:
    load_int               105
    load_int               83
    load_int               681
-   025                    4697
-   3408                  
+   get_varbit             4697
+   get_enum_value        
    load_int               -1
    if_icmpne              LABEL64
    jump                   LABEL71
@@ -77,44 +81,44 @@ LABEL64:
    load_int               105
    load_int               115
    load_int               108
-   025                    4697
-   3408                  
-   1112                  
+   get_varbit             4697
+   get_enum_value        
+   widget_put_text       
    jump                   LABEL73
 LABEL71:
    load_string            "Total XP"
-   1112                  
+   widget_put_text       
 LABEL73:
-   033                    4
+   iload                  4
    load_int               4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL79
    jump                   LABEL110
 LABEL79:
-   025                    4698
+   get_varbit             4698
    load_int               31
    if_icmpeq              LABEL83
    jump                   LABEL86
 LABEL83:
    load_string            "Most recent"
-   1112                  
+   widget_put_text       
    jump                   LABEL110
 LABEL86:
-   025                    4698
+   get_varbit             4698
    load_int               30
    if_icmpeq              LABEL90
    jump                   LABEL93
 LABEL90:
    load_string            "Total XP goal"
-   1112                  
+   widget_put_text       
    jump                   LABEL110
 LABEL93:
    load_int               105
    load_int               83
    load_int               681
-   025                    4698
-   3408                  
+   get_varbit             4698
+   get_enum_value        
    load_int               -1
    if_icmpne              LABEL101
    jump                   LABEL108
@@ -122,17 +126,17 @@ LABEL101:
    load_int               105
    load_int               115
    load_int               108
-   025                    4698
-   3408                  
-   1112                  
+   get_varbit             4698
+   get_enum_value        
+   widget_put_text       
    jump                   LABEL110
 LABEL108:
    load_string            "Off"
-   1112                  
+   widget_put_text       
 LABEL110:
-   033                    5
+   iload                  5
    load_int               4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL116
    jump                   LABEL122
@@ -140,13 +144,13 @@ LABEL116:
    load_int               105
    load_int               115
    load_int               1168
-   025                    4695
-   3408                  
-   1112                  
+   get_varbit             4695
+   get_enum_value        
+   widget_put_text       
 LABEL122:
-   033                    6
+   iload                  6
    load_int               4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL128
    jump                   LABEL134
@@ -154,13 +158,13 @@ LABEL128:
    load_int               105
    load_int               115
    load_int               1170
-   025                    4696
-   3408                  
-   1112                  
+   get_varbit             4696
+   get_enum_value        
+   widget_put_text       
 LABEL134:
-   033                    7
+   iload                  7
    load_int               4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL140
    jump                   LABEL146
@@ -168,8 +172,8 @@ LABEL140:
    load_int               105
    load_int               115
    load_int               1140
-   025                    4722
-   3408                  
-   1112                  
+   get_varbit             4722
+   get_enum_value        
+   widget_put_text       
 LABEL146:
    return                

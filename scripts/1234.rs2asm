@@ -1,116 +1,120 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   2
    load_string            ""
-   036                   
+   sstore                 0
    load_string            ","
-   036                    1
+   sstore                 1
    load_int               0
-   034                    3
-   033                    1
+   istore                 3
+   iload                  1
    load_int               0
    if_icmpge              LABEL10
    jump                   LABEL95
 LABEL10:
-   033                   
+   iload                  0
    load_int               0
    if_icmpgt              LABEL14
    jump                   LABEL95
 LABEL14:
    load_int               2147483647
-   033                   
+   iload                  0
    idiv                  
-   033                    1
+   iload                  1
    if_icmplt              LABEL20
    jump                   LABEL23
 LABEL20:
    load_int               2147483647
-   034                    3
+   istore                 3
    jump                   LABEL27
 LABEL23:
-   033                   
-   033                    1
+   iload                  0
+   iload                  1
    imul                  
-   034                    3
+   istore                 3
 LABEL27:
-   033                   
+   iload                  0
    load_int               1
    if_icmpgt              LABEL31
    jump                   LABEL77
 LABEL31:
-   033                    3
+   iload                  3
    load_int               0
    if_icmpge              LABEL35
    jump                   LABEL54
 LABEL35:
-   033                    3
+   iload                  3
    load_int               2147483647
    if_icmplt              LABEL39
    jump                   LABEL54
 LABEL39:
-   033                   
-   035                    1
-   040                    46
+   iload                  0
+   sload                  1
+   invoke                 46
    load_string            " x "
-   033                    1
-   035                    1
-   040                    46
+   iload                  1
+   sload                  1
+   invoke                 46
    load_string            "<br>"
    load_string            "=?"
-   033                    3
-   035                    1
-   040                    46
-   037                    6
-   036                   
+   iload                  3
+   sload                  1
+   invoke                 46
+   string_append          6
+   sstore                 0
    jump                   LABEL63
 LABEL54:
-   033                   
-   035                    1
-   040                    46
+   iload                  0
+   sload                  1
+   invoke                 46
    load_string            " x "
-   033                    1
-   035                    1
-   040                    46
-   037                    3
-   036                   
+   iload                  1
+   sload                  1
+   invoke                 46
+   string_append          3
+   sstore                 0
 LABEL63:
    load_int               526
    load_int               -2147483645
    load_int               -2147483643
-   033                    2
-   035                   
+   iload                  2
+   sload                  0
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               40
-   033                    2
+   iload                  2
    load_string            "I"
-   1404                  
+   widget_put_mouse_exit_listener
    jump                   LABEL94
 LABEL77:
-   033                    1
-   035                    1
-   040                    46
-   036                   
+   iload                  1
+   sload                  1
+   invoke                 46
+   sstore                 0
    load_int               526
    load_int               -2147483645
    load_int               -2147483643
-   033                    2
-   035                   
+   iload                  2
+   sload                  0
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               40
-   033                    2
+   iload                  2
    load_string            "I"
-   1404                  
+   widget_put_mouse_exit_listener
 LABEL94:
    jump                   LABEL101
 LABEL95:
    load_int               -1
    load_string            ""
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               -1
    load_string            ""
-   1404                  
+   widget_put_mouse_exit_listener
 LABEL101:
    return                

@@ -1,6 +1,10 @@
-   033                   
-   033                    1
-   200                   
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL17
@@ -14,7 +18,7 @@ LABEL6:
    load_int               2048
    modulo                
    widget_get_rotationy  
-   1605                  
-   1109                  
+   widget_get_modelzoom  
+   widget_put_3d_rotation
 LABEL17:
    return                

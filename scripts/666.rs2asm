@@ -1,6 +1,10 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
+   iload                  0
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL13
@@ -8,14 +12,14 @@ LABEL6:
    load_int               105
    load_int               79
    load_int               982
-   025                    29
-   3408                  
-   025                    1624
-   040                    667
+   get_varbit             29
+   get_enum_value        
+   get_varbit             1624
+   invoke                 667
 LABEL13:
-   033                   
+   iload                  0
    load_int               1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL19
    jump                   LABEL26
@@ -23,14 +27,14 @@ LABEL19:
    load_int               105
    load_int               79
    load_int               982
-   025                    1622
-   3408                  
-   025                    1625
-   040                    667
+   get_varbit             1622
+   get_enum_value        
+   get_varbit             1625
+   invoke                 667
 LABEL26:
-   033                   
+   iload                  0
    load_int               2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL32
    jump                   LABEL39
@@ -38,9 +42,9 @@ LABEL32:
    load_int               105
    load_int               79
    load_int               982
-   025                    1623
-   3408                  
-   025                    1626
-   040                    667
+   get_varbit             1623
+   get_enum_value        
+   get_varbit             1626
+   invoke                 667
 LABEL39:
    return                

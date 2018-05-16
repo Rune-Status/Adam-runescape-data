@@ -1,17 +1,21 @@
-   025                    999
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
+   get_varbit             999
    load_int               9000
    if_icmpge              LABEL4
    jump                   LABEL8
 LABEL4:
    load_string            "Damage: Over 9000!"
-   033                   
-   2112                  
+   iload                  0
+   widget_put_text_widget
    return                
 LABEL8:
    load_string            "Damage: "
-   025                    999
+   get_varbit             999
    int_to_string         
-   037                    2
-   033                   
-   2112                  
+   string_append          2
+   iload                  0
+   widget_put_text_widget
    return                

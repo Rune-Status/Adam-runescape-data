@@ -1,0 +1,35 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  1
+   invoke                 1624
+   iload                  2
+   widget_unset_children 
+   get_varbit             5509
+   load_int               1
+   if_icmpeq              LABEL11
+   get_varbit             3459
+   load_int               1
+   if_icmpeq              LABEL11
+   jump                   LABEL23
+LABEL11:
+   load_int               1
+   iload                  0
+   widget_put_hidden_widget
+   load_int               -1
+   load_string            ""
+   iload                  2
+   widget_put_option_click_listener_widget
+   load_int               -1
+   load_string            ""
+   iload                  2
+   widget_put_render_listener_widget
+   return                
+LABEL23:
+   load_int               0
+   iload                  0
+   widget_put_hidden_widget
+   iload                  2
+   invoke                 1617
+   return                

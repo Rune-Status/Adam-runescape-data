@@ -1,0 +1,39 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   get_gamecycle         
+   iload                  1
+   if_icmplt              LABEL4
+   jump                   LABEL6
+LABEL4:
+   return                
+   jump                   LABEL31
+LABEL6:
+   load_string            "Accept"
+   iload                  0
+   widget_put_text_widget
+   load_int               3394560
+   invoke                 1444
+   iload                  0
+   widget_put_textcolor_widget
+   load_int               45
+   load_int               -2147483645
+   load_int               10087936
+   invoke                 1444
+   load_string            "Ii"
+   iload                  0
+   widget_put_mouse_enter_listener_widget
+   load_int               45
+   load_int               -2147483645
+   load_int               3394560
+   invoke                 1444
+   load_string            "Ii"
+   iload                  0
+   widget_put_mouse_exit_listener_widget
+   load_int               -1
+   load_string            ""
+   iload                  0
+   widget_put_render_listener_widget
+LABEL31:
+   return                

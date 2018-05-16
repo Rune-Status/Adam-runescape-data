@@ -1,0 +1,193 @@
+.int_stack_count    28
+.string_stack_count 0
+.int_var_count      37
+.string_var_count   0
+   load_int               31522845
+   widget_unset_children 
+   load_int               0
+   istore                 28
+   load_int               -1
+   istore                 29
+   load_int               -1
+   istore                 30
+   load_int               93
+   get_inventory_size    
+   array_initialize       111
+   load_int               0
+   iload                  0
+   array_store           
+   load_int               1
+   iload                  1
+   array_store           
+   load_int               2
+   iload                  2
+   array_store           
+   load_int               3
+   iload                  3
+   array_store           
+   load_int               4
+   iload                  4
+   array_store           
+   load_int               5
+   iload                  5
+   array_store           
+   load_int               6
+   iload                  6
+   array_store           
+   load_int               7
+   iload                  7
+   array_store           
+   load_int               8
+   iload                  8
+   array_store           
+   load_int               9
+   iload                  9
+   array_store           
+   load_int               10
+   iload                  10
+   array_store           
+   load_int               11
+   iload                  11
+   array_store           
+   load_int               12
+   iload                  12
+   array_store           
+   load_int               13
+   iload                  13
+   array_store           
+   load_int               14
+   iload                  14
+   array_store           
+   load_int               15
+   iload                  15
+   array_store           
+   load_int               16
+   iload                  16
+   array_store           
+   load_int               17
+   iload                  17
+   array_store           
+   load_int               18
+   iload                  18
+   array_store           
+   load_int               19
+   iload                  19
+   array_store           
+   load_int               20
+   iload                  20
+   array_store           
+   load_int               21
+   iload                  21
+   array_store           
+   load_int               22
+   iload                  22
+   array_store           
+   load_int               23
+   iload                  23
+   array_store           
+   load_int               24
+   iload                  24
+   array_store           
+   load_int               25
+   iload                  25
+   array_store           
+   load_int               26
+   iload                  26
+   array_store           
+   load_int               27
+   iload                  27
+   array_store           
+   load_int               31522845
+   widget_get_width_widget
+   load_int               10
+   isub                  
+   istore                 31
+   load_int               31522845
+   widget_get_height_widget
+   load_int               10
+   isub                  
+   istore                 32
+   iload                  31
+   load_int               4
+   idiv                  
+   istore                 33
+   iload                  32
+   load_int               7
+   idiv                  
+   istore                 34
+   load_int               5
+   istore                 35
+   load_int               5
+   istore                 36
+LABEL117:
+   iload                  28
+   load_int               93
+   get_inventory_size    
+   if_icmplt              LABEL122
+   jump                   LABEL181
+LABEL122:
+   load_int               31522845
+   load_int               5
+   iload                  28
+   widget_create_child   
+   load_int               36
+   load_int               32
+   load_int               0
+   load_int               0
+   widget_put_size       
+   iload                  35
+   iload                  36
+   load_int               0
+   load_int               0
+   widget_put_position   
+   iload                  28
+   array_load            
+   load_int               -1
+   if_icmpne              LABEL141
+   jump                   LABEL160
+LABEL141:
+   iload                  28
+   array_load            
+   load_int               0
+   1205                  
+   load_string            "<col=ff981f>"
+   iload                  28
+   array_load            
+   get_item_name         
+   string_append          2
+   widget_put_name       
+   load_int               10
+   load_string            "Examine"
+   load_string            "<col=ff9040>"
+   string_append          2
+   widget_put_action     
+   load_int               3355443
+   widget_put_sprite2    
+   load_int               1
+   widget_put_borderthickness
+LABEL160:
+   iload                  35
+   iload                  33
+   iadd                  
+   istore                 35
+   iload                  28
+   load_int               1
+   iadd                  
+   istore                 28
+   iload                  28
+   load_int               4
+   modulo                
+   load_int               0
+   if_icmpeq              LABEL174
+   jump                   LABEL180
+LABEL174:
+   load_int               10
+   istore                 35
+   iload                  36
+   iload                  34
+   iadd                  
+   istore                 36
+LABEL180:
+   jump                   LABEL117
+LABEL181:
+   return                

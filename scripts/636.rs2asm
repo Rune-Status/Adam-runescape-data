@@ -1,6 +1,10 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
    load_int               9699342
-   033                   
-   200                   
+   iload                  0
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL8
@@ -9,23 +13,23 @@ LABEL6:
    widget_put_hidden     
 LABEL8:
    load_int               0
-   034                    1
+   istore                 1
    load_int               0
-   034                   
+   istore                 0
 LABEL12:
-   033                    1
+   iload                  1
    load_int               0
    if_icmpeq              LABEL16
    jump                   LABEL37
 LABEL16:
-   033                   
-   load_int               27
+   iload                  0
+   load_int               37
    if_icmple              LABEL20
    jump                   LABEL37
 LABEL20:
    load_int               9699342
-   033                   
-   200                   
+   iload                  0
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL26
    jump                   LABEL32
@@ -36,22 +40,23 @@ LABEL26:
    jump                   LABEL32
 LABEL30:
    load_int               1
-   034                    1
+   istore                 1
 LABEL32:
-   033                   
+   iload                  0
    load_int               1
    iadd                  
-   034                   
+   istore                 0
    jump                   LABEL12
 LABEL37:
-   033                    1
+   iload                  1
    load_int               0
    if_icmpeq              LABEL41
-   jump                   LABEL45
+   jump                   LABEL46
 LABEL41:
    load_int               9699342
    load_int               9699343
    load_int               0
-   040                    637
-LABEL45:
+   load_int               0
+   invoke                 637
+LABEL46:
    return                

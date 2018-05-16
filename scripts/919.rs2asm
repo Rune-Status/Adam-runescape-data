@@ -1,93 +1,152 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
    load_int               -1
-   034                    1
-   033                   
+   istore                 1
+   iload                  0
    load_int               1131
-   if_icmpeq              LABEL6
-   jump                   LABEL82
-LABEL6:
-   042                    171
+   if_icmpeq              LABEL9
+   iload                  0
+   load_int               1745
+   if_icmpeq              LABEL9
+   jump                   LABEL131
+LABEL9:
+   get_varc               171
    load_int               -1
-   if_icmpne              LABEL10
-   jump                   LABEL16
-LABEL10:
+   if_icmpne              LABEL13
+   jump                   LABEL19
+LABEL13:
    load_int               105
    load_int               73
    load_int               1137
-   042                    171
-   3408                  
-   034                    1
-LABEL16:
+   get_varc               171
+   get_enum_value        
+   istore                 1
+LABEL19:
    load_int               73
    load_int               73
-   033                   
-   load_int               10551355
-   3408                  
-   2702                  
+   iload                  0
+   load_int               10551362
+   get_enum_value        
+   widget_get_index_widget
    load_int               1
-   if_icmpeq              LABEL37
-   033                    1
+   if_icmpeq              LABEL40
+   iload                  1
    load_int               -1
-   if_icmpne              LABEL28
-   jump                   LABEL41
-LABEL28:
+   if_icmpne              LABEL31
+   jump                   LABEL87
+LABEL31:
    load_int               73
    load_int               73
-   033                   
-   033                    1
-   3408                  
-   2702                  
+   iload                  0
+   iload                  1
+   get_enum_value        
+   widget_get_index_widget
    load_int               1
-   if_icmpeq              LABEL37
-   jump                   LABEL41
-LABEL37:
-   load_int               0
-   load_int               10747959
-   widget_put_hidden_widget
-   jump                   LABEL44
-LABEL41:
-   load_int               1
-   load_int               10747959
-   widget_put_hidden_widget
+   if_icmpeq              LABEL40
+   jump                   LABEL87
+LABEL40:
+   iload                  0
+   load_int               1131
+   if_icmpeq              LABEL44
+   jump                   LABEL48
 LABEL44:
+   load_int               0
+   load_int               10747966
+   widget_put_hidden_widget
+   jump                   LABEL86
+LABEL48:
+   iload                  1
+   load_int               10551364
+   if_icmpeq              LABEL70
+   iload                  1
+   load_int               10551369
+   if_icmpeq              LABEL70
+   iload                  1
+   load_int               10551370
+   if_icmpeq              LABEL70
+   iload                  1
+   load_int               10551376
+   if_icmpeq              LABEL70
+   iload                  1
+   load_int               10551372
+   if_icmpeq              LABEL70
+   iload                  1
+   load_int               10551373
+   if_icmpeq              LABEL70
+   iload                  1
+   load_int               10551377
+   if_icmpeq              LABEL70
+   jump                   LABEL77
+LABEL70:
+   load_int               33
+   load_int               90
+   load_int               0
+   load_int               1
+   load_int               39387192
+   widget_put_position_widget
+   jump                   LABEL83
+LABEL77:
+   load_int               33
+   load_int               90
+   load_int               2
+   load_int               1
+   load_int               39387192
+   widget_put_position_widget
+LABEL83:
+   load_int               0
+   load_int               39387192
+   widget_put_hidden_widget
+LABEL86:
+   jump                   LABEL93
+LABEL87:
+   load_int               1
+   load_int               10747966
+   widget_put_hidden_widget
+   load_int               1
+   load_int               39387192
+   widget_put_hidden_widget
+LABEL93:
    load_int               73
    load_int               73
-   033                   
-   load_int               10551339
-   3408                  
+   iload                  0
+   load_int               10551346
+   get_enum_value        
    widget_get_hidden_widget
    load_int               1
-   if_icmpeq              LABEL53
-   jump                   LABEL68
-LABEL53:
+   if_icmpeq              LABEL102
+   jump                   LABEL117
+LABEL102:
    load_int               1
    load_int               73
    load_int               73
-   033                   
-   load_int               10551327
-   3408                  
+   iload                  0
+   load_int               10551334
+   get_enum_value        
    widget_put_hidden_widget
    load_int               1
    load_int               73
    load_int               73
-   033                   
-   load_int               10551334
-   3408                  
+   iload                  0
+   load_int               10551341
+   get_enum_value        
    widget_put_hidden_widget
-   jump                   LABEL82
-LABEL68:
+   jump                   LABEL131
+LABEL117:
    load_int               0
    load_int               73
    load_int               73
-   033                   
-   load_int               10551327
-   3408                  
+   iload                  0
+   load_int               10551334
+   get_enum_value        
    widget_put_hidden_widget
    load_int               0
    load_int               73
    load_int               73
-   033                   
-   load_int               10551334
-   3408                  
+   iload                  0
+   load_int               10551341
+   get_enum_value        
    widget_put_hidden_widget
-LABEL82:
+LABEL131:
    return                

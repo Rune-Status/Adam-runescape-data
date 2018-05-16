@@ -1,31 +1,35 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
    get_settings           1295
-   033                    1
+   iload                  1
    load_int               1
    isub                  
    clear_bit             
    put_settings           1295
-   033                   
-   033                    1
-   040                    1146
+   iload                  0
+   iload                  1
+   invoke                 1146
    load_int               0
-   034                    2
+   istore                 2
    load_int               0
-   034                    3
-   040                    1147
-   034                    3
-   034                    2
+   istore                 3
+   invoke                 1147
+   istore                 3
+   istore                 2
    load_string            "Combat "
-   033                    2
+   iload                  2
    int_to_string         
    load_string            "/2"
-   037                    3
-   load_int               14811184
-   2112                  
+   string_append          3
+   load_int               14811182
+   widget_put_text_widget
    load_string            "Other "
-   033                    3
+   iload                  3
    int_to_string         
    load_string            "/3"
-   037                    3
-   load_int               14811185
-   2112                  
+   string_append          3
+   load_int               14811183
+   widget_put_text_widget
    return                

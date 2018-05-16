@@ -1,85 +1,95 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
    load_int               1
-   load_int               10616863
+   load_int               10616864
    widget_put_hidden_widget
    load_int               0
-   load_int               10616872
+   load_int               10616873
    widget_put_hidden_widget
-   040                    923
+   invoke                 923
    load_int               0
-   034                    2
-   033                    1
+   istore                 2
+   iload                  1
    load_int               1
    if_icmpeq              LABEL13
-   jump                   LABEL22
+   jump                   LABEL27
 LABEL13:
-   040                    553
-   034                    2
-   033                    2
-   040                    84
-   033                    2
-   040                    89
-   040                    223
+   invoke                 553
+   istore                 2
+   iload                  2
+   invoke                 84
+   iload                  2
+   invoke                 89
+   invoke                 223
    load_int               1
-   040                    927
-LABEL22:
+   invoke                 927
+   invoke                 1972
+   load_int               1
+   if_icmpeq              LABEL26
+   jump                   LABEL27
+LABEL26:
+   invoke                 1984
+LABEL27:
    load_int               0
-   043                    5
-   033                   
+   put_varc               5
+   iload                  0
    load_int               1
-   if_icmpeq              LABEL28
-   jump                   LABEL30
-LABEL28:
+   if_icmpeq              LABEL33
+   jump                   LABEL35
+LABEL33:
    load_string            ""
-   048                    22
-LABEL30:
-   load_int               10616863
+   put_varc_string        22
+LABEL35:
+   load_int               10616864
    widget_get_width_widget
-   034                    3
+   istore                 3
    load_int               0
    load_int               36
    load_int               0
    load_int               0
-   load_int               10616864
-   2000                  
-   033                    3
+   load_int               10616865
+   widget_put_position_widget
+   iload                  3
    load_int               40
    load_int               0
    load_int               0
-   load_int               10616864
-   2001                  
+   load_int               10616865
+   widget_put_size_widget
    load_int               0
    load_int               76
    load_int               0
    load_int               0
-   load_int               10616865
-   2000                  
-   033                    3
+   load_int               10616866
+   widget_put_position_widget
+   iload                  3
    load_int               20
    load_int               0
    load_int               0
-   load_int               10616865
-   2001                  
-   load_int               0
-   load_int               10616864
-   widget_put_hidden_widget
+   load_int               10616866
+   widget_put_size_widget
    load_int               0
    load_int               10616865
    widget_put_hidden_widget
-   load_int               1
+   load_int               0
    load_int               10616866
    widget_put_hidden_widget
-   load_int               10616870
-   102                   
+   load_int               1
+   load_int               10616867
+   widget_put_hidden_widget
    load_int               10616871
-   102                   
+   widget_unset_children 
+   load_int               10616872
+   widget_unset_children 
    load_int               -1
    load_string            ""
-   load_int               10616863
-   2400                  
+   load_int               10616864
+   widget_put_mouse_press_listener_widget
    load_int               -1
    load_string            ""
-   load_int               10616863
-   2408                  
-   load_int               10616863
-   102                   
+   load_int               10616864
+   widget_put_render_listener_widget
+   load_int               10616864
+   widget_unset_children 
    return                

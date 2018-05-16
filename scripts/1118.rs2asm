@@ -1,38 +1,42 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
+   iload                  0
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL7
 LABEL6:
    return                
 LABEL7:
-   033                   
+   iload                  0
    load_int               4
-   033                   
+   iload                  0
    load_int               0
-   040                    715
-   100                   
-   load_int               0
-   load_int               0
-   load_int               1
-   load_int               1
-   1001                  
+   invoke                 715
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_size       
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   widget_put_position   
    load_int               495
    widget_put_fontid     
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               16750623
    widget_put_textcolor  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_string            "Loading..."
-   1112                  
+   widget_put_text       
    return                

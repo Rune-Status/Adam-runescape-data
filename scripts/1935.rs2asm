@@ -1,0 +1,84 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   0
+   load_int               1
+   load_int               4325383
+   widget_put_hidden_widget
+   load_int               1
+   load_int               4325394
+   widget_put_hidden_widget
+   load_int               1
+   load_int               4325406
+   widget_put_hidden_widget
+   load_int               1
+   load_int               4325419
+   widget_put_hidden_widget
+   get_settings           1204
+   load_int               1
+   if_icmpeq              LABEL16
+   jump                   LABEL22
+LABEL16:
+   load_int               0
+   load_int               4325383
+   widget_put_hidden_widget
+   load_string            "redemption of 1 bond"
+   invoke                 742
+   jump                   LABEL70
+LABEL22:
+   get_settings           1204
+   load_int               2
+   if_icmpeq              LABEL26
+   jump                   LABEL32
+LABEL26:
+   load_int               0
+   load_int               4325394
+   widget_put_hidden_widget
+   load_string            "redemption of 2 bonds"
+   invoke                 742
+   jump                   LABEL70
+LABEL32:
+   get_settings           1204
+   load_int               3
+   if_icmpeq              LABEL36
+   jump                   LABEL42
+LABEL36:
+   load_int               0
+   load_int               4325406
+   widget_put_hidden_widget
+   load_string            "redemption of three bonds"
+   invoke                 742
+   jump                   LABEL70
+LABEL42:
+   get_settings           1204
+   load_int               8
+   if_icmpeq              LABEL46
+   jump                   LABEL52
+LABEL46:
+   load_int               0
+   load_int               4325419
+   widget_put_hidden_widget
+   load_string            "redemption of five bonds"
+   invoke                 742
+   jump                   LABEL70
+LABEL52:
+   load_int               1
+   load_int               4325434
+   widget_put_hidden_widget
+   load_int               0
+   load_int               4325437
+   widget_put_hidden_widget
+   load_string            "Select a membership package from the options above."
+   load_int               4325431
+   widget_put_text_widget
+   load_string            "___"
+   load_int               4325438
+   widget_put_text_widget
+   load_int               16750623
+   load_int               4325438
+   widget_put_textcolor_widget
+   load_string            ""
+   load_int               4325434
+   widget_put_name_widget
+LABEL70:
+   return                

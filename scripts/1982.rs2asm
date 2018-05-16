@@ -1,0 +1,347 @@
+.int_stack_count    5
+.string_stack_count 0
+.int_var_count      11
+.string_var_count   2
+   load_int               0
+   istore                 5
+   iload                  1
+   widget_unset_children 
+   iload                  3
+   widget_unset_children 
+   load_int               105
+   load_int               105
+   load_int               1740
+   iload                  5
+   get_enum_value        
+   int_to_string         
+   load_string            " - "
+   load_int               105
+   load_int               115
+   load_int               1741
+   iload                  5
+   get_enum_value        
+   string_append          3
+   sstore                 0
+   load_int               105
+   load_int               115
+   load_int               1742
+   iload                  5
+   get_enum_value        
+   sstore                 1
+   load_int               0
+   istore                 6
+   load_int               20
+   istore                 7
+   load_int               0
+   istore                 8
+   load_int               0
+   istore                 9
+   load_int               1
+   istore                 10
+LABEL36:
+   load_int               105
+   load_int               105
+   load_int               1740
+   iload                  5
+   get_enum_value        
+   load_int               0
+   if_icmpgt              LABEL44
+   jump                   LABEL307
+LABEL44:
+   iload                  5
+   load_int               0
+   if_icmpeq              LABEL57
+   iload                  5
+   load_int               5
+   if_icmpeq              LABEL57
+   iload                  5
+   load_int               19
+   if_icmpeq              LABEL57
+   iload                  5
+   load_int               33
+   if_icmpeq              LABEL57
+   jump                   LABEL153
+LABEL57:
+   iload                  5
+   load_int               0
+   if_icmpgt              LABEL61
+   jump                   LABEL65
+LABEL61:
+   iload                  7
+   load_int               15
+   iadd                  
+   istore                 7
+LABEL65:
+   load_int               1
+   istore                 10
+   iload                  3
+   load_int               4
+   iload                  6
+   widget_create_child   
+   load_int               105
+   load_int               115
+   load_int               1743
+   iload                  5
+   get_enum_value        
+   widget_put_text       
+   load_int               40
+   load_int               20
+   load_int               1
+   load_int               0
+   widget_put_size       
+   load_int               15
+   iload                  7
+   load_int               0
+   load_int               0
+   widget_put_position   
+   load_int               496
+   widget_put_fontid     
+   load_int               0
+   load_int               0
+   load_int               0
+   widget_put_text_alignment
+   load_int               16750623
+   widget_put_textcolor  
+   load_int               1
+   widget_put_text_shadowed
+   iload                  7
+   load_int               20
+   iadd                  
+   istore                 7
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+   iload                  3
+   load_int               4
+   iload                  6
+   widget_create_child   
+   load_int               105
+   load_int               115
+   load_int               1744
+   iload                  5
+   get_enum_value        
+   widget_put_text       
+   load_int               40
+   load_int               15
+   widget_get_text       
+   widget_get_width      
+   load_int               495
+   get_line_count        
+   imul                  
+   load_int               1
+   load_int               0
+   widget_put_size       
+   load_int               15
+   iload                  7
+   load_int               0
+   load_int               0
+   widget_put_position   
+   load_int               495
+   widget_put_fontid     
+   load_int               0
+   load_int               0
+   load_int               0
+   widget_put_text_alignment
+   load_int               16750623
+   widget_put_textcolor  
+   load_int               1
+   widget_put_text_shadowed
+   iload                  7
+   load_int               15
+   widget_get_text       
+   widget_get_width      
+   load_int               495
+   get_line_count        
+   imul                  
+   iadd                  
+   istore                 7
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+LABEL153:
+   iload                  1
+   load_int               4
+   iload                  5
+   widget_create_child   
+   iload                  5
+   invoke                 1968
+   load_int               1
+   if_icmpeq              LABEL162
+   jump                   LABEL183
+LABEL162:
+   sload                  1
+   load_string            ""
+   string_compare        
+   load_int               0
+   if_icmpne              LABEL168
+   jump                   LABEL176
+LABEL168:
+   load_string            "<str=ffffff>"
+   sload                  0
+   load_string            "<br>"
+   load_string            "<str=ffffff>"
+   sload                  1
+   string_append          5
+   widget_put_text       
+   jump                   LABEL180
+LABEL176:
+   load_string            "<str=ffffff>"
+   sload                  0
+   string_append          2
+   widget_put_text       
+LABEL180:
+   load_int               13421772
+   widget_put_textcolor  
+   jump                   LABEL211
+LABEL183:
+   sload                  1
+   load_string            ""
+   string_compare        
+   load_int               0
+   if_icmpne              LABEL189
+   jump                   LABEL207
+LABEL189:
+   iload                  5
+   invoke                 1969
+   load_int               1
+   if_icmpeq              LABEL194
+   jump                   LABEL201
+LABEL194:
+   sload                  0
+   load_string            "<br>"
+   load_string            "<str=ffffff>"
+   sload                  1
+   string_append          4
+   widget_put_text       
+   jump                   LABEL206
+LABEL201:
+   sload                  0
+   load_string            "<br>"
+   sload                  1
+   string_append          3
+   widget_put_text       
+LABEL206:
+   jump                   LABEL209
+LABEL207:
+   sload                  0
+   widget_put_text       
+LABEL209:
+   load_int               16750623
+   widget_put_textcolor  
+LABEL211:
+   load_int               40
+   load_int               20
+   load_int               1
+   load_int               0
+   widget_put_size       
+   load_int               20
+   iload                  7
+   load_int               0
+   load_int               0
+   widget_put_position   
+   load_int               495
+   widget_put_fontid     
+   load_int               0
+   load_int               1
+   load_int               0
+   widget_put_text_alignment
+   load_int               1
+   widget_put_text_shadowed
+   widget_get_text       
+   widget_get_width      
+   load_int               495
+   get_line_count        
+   istore                 8
+   load_int               20
+   load_int               18
+   iload                  8
+   imul                  
+   load_int               1
+   load_int               0
+   widget_put_size       
+   iload                  10
+   load_int               1
+   if_icmpeq              LABEL245
+   jump                   LABEL272
+LABEL245:
+   iload                  4
+   load_int               3
+   iload                  9
+   widget_create_child    1
+   load_int               16777215
+   widget_put_textcolor   1
+   load_int               1
+   widget_put_filled      1
+   load_int               245
+   widget_put_opacity     1
+   load_int               0
+   widget_get_relativey  
+   load_int               1
+   load_int               0
+   widget_put_position    1
+   load_int               0
+   widget_get_height     
+   load_int               1
+   load_int               0
+   widget_put_size        1
+   iload                  9
+   load_int               1
+   iadd                  
+   istore                 9
+   load_int               0
+   istore                 10
+   jump                   LABEL274
+LABEL272:
+   load_int               1
+   istore                 10
+LABEL274:
+   iload                  7
+   load_int               15
+   iload                  8
+   imul                  
+   iadd                  
+   load_int               5
+   iadd                  
+   istore                 7
+   iload                  5
+   load_int               1
+   iadd                  
+   istore                 5
+   load_int               105
+   load_int               105
+   load_int               1740
+   iload                  5
+   get_enum_value        
+   int_to_string         
+   load_string            " - "
+   load_int               105
+   load_int               115
+   load_int               1741
+   iload                  5
+   get_enum_value        
+   string_append          3
+   sstore                 0
+   load_int               105
+   load_int               115
+   load_int               1742
+   iload                  5
+   get_enum_value        
+   sstore                 1
+   jump                   LABEL36
+LABEL307:
+   load_int               0
+   iload                  7
+   iload                  1
+   widget_put_scrollwidthheight_widget
+   iload                  2
+   iload                  1
+   load_int               792
+   load_int               789
+   load_int               790
+   load_int               791
+   load_int               773
+   load_int               788
+   invoke                 31
+   return                

@@ -1,11 +1,15 @@
-   033                    1
-   033                    2
-   200                    1
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  1
+   iload                  2
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL8
 LABEL6:
-   033                   
-   040                    468
+   iload                  0
+   invoke                 468
 LABEL8:
    return                

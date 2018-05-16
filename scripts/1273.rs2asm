@@ -1,14 +1,18 @@
-   033                   
-   load_int               1
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   iload                  0
+   load_int               6
    if_icmpeq              LABEL4
    jump                   LABEL11
 LABEL4:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
-   033                    1
+   play_sound_effect     
+   iload                  1
    load_int               1
-   040                    1272
+   invoke                 1272
 LABEL11:
    return                

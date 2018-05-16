@@ -1,124 +1,120 @@
-   033                   
-   load_int               7
-   if_icmpeq              LABEL4
-   jump                   LABEL20
-LABEL4:
-   033                    1
-   042                    175
-   if_icmplt              LABEL8
-   jump                   LABEL10
-LABEL8:
+.int_stack_count    2
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
+   iload                  0
+   switch                
+      3: LABEL20
+      5: LABEL54
+      6: LABEL54
+      7: LABEL3
+   jump                   LABEL84
+LABEL3:
+   iload                  1
+   get_varc               175
+   if_icmplt              LABEL7
+   jump                   LABEL9
+LABEL7:
    load_int               0
    return                
-LABEL10:
-   035                   
+LABEL9:
+   sload                  0
    string_remove_html    
-   3623                  
+   is_ignore             
    load_int               1
-   if_icmpeq              LABEL16
-   jump                   LABEL18
-LABEL16:
+   if_icmpeq              LABEL15
+   jump                   LABEL17
+LABEL15:
    load_int               0
    return                
-LABEL18:
+LABEL17:
    load_int               1
    return                
+   jump                   LABEL84
 LABEL20:
-   033                   
-   load_int               3
-   if_icmpeq              LABEL24
-   jump                   LABEL57
+   iload                  1
+   get_varc               175
+   if_icmplt              LABEL24
+   jump                   LABEL26
 LABEL24:
-   033                    1
-   042                    175
-   if_icmplt              LABEL28
-   jump                   LABEL30
-LABEL28:
    load_int               0
    return                
-LABEL30:
-   035                   
+LABEL26:
+   sload                  0
    string_remove_html    
-   3623                  
+   is_ignore             
    load_int               1
-   if_icmpeq              LABEL36
-   jump                   LABEL38
-LABEL36:
+   if_icmpeq              LABEL32
+   jump                   LABEL34
+LABEL32:
    load_int               0
    return                
+LABEL34:
+   5005                  
+   load_int               0
+   if_icmpeq              LABEL38
+   jump                   LABEL40
 LABEL38:
-   5005                  
-   load_int               0
-   if_icmpeq              LABEL42
-   jump                   LABEL44
-LABEL42:
    load_int               1
    return                
+LABEL40:
+   5005                  
+   load_int               1
+   if_icmpeq              LABEL44
+   jump                   LABEL51
 LABEL44:
-   5005                  
+   sload                  0
+   is_friend             
    load_int               1
-   if_icmpeq              LABEL48
-   jump                   LABEL55
-LABEL48:
-   035                   
-   3609                  
-   load_int               1
-   if_icmpeq              LABEL53
-   jump                   LABEL55
-LABEL53:
+   if_icmpeq              LABEL49
+   jump                   LABEL51
+LABEL49:
    load_int               1
    return                
-LABEL55:
+LABEL51:
    load_int               0
    return                
-LABEL57:
-   033                   
+   jump                   LABEL84
+LABEL54:
+   iload                  1
+   get_varc               175
+   if_icmplt              LABEL58
+   jump                   LABEL60
+LABEL58:
+   load_int               0
+   return                
+LABEL60:
+   iload                  0
    load_int               5
    if_icmpeq              LABEL64
-   033                   
-   load_int               6
-   if_icmpeq              LABEL64
-   jump                   LABEL94
+   jump                   LABEL76
 LABEL64:
-   033                    1
-   042                    175
-   if_icmplt              LABEL68
-   jump                   LABEL70
+   get_varbit             1627
+   load_int               0
+   if_icmpeq              LABEL68
+   jump                   LABEL76
 LABEL68:
-   load_int               0
-   return                
-LABEL70:
-   033                   
-   load_int               5
-   if_icmpeq              LABEL74
-   jump                   LABEL86
-LABEL74:
-   025                    1627
-   load_int               0
-   if_icmpeq              LABEL78
-   jump                   LABEL86
-LABEL78:
    get_gamecycle         
-   033                    1
+   iload                  1
    isub                  
    load_int               500
-   if_icmpge              LABEL84
-   jump                   LABEL86
-LABEL84:
+   if_icmpge              LABEL74
+   jump                   LABEL76
+LABEL74:
    load_int               0
    return                
-LABEL86:
+LABEL76:
    5005                  
    load_int               2
-   if_icmpne              LABEL90
-   jump                   LABEL92
-LABEL90:
+   if_icmpne              LABEL80
+   jump                   LABEL82
+LABEL80:
    load_int               1
    return                
-LABEL92:
+LABEL82:
    load_int               0
    return                
-LABEL94:
+LABEL84:
    load_int               0
    return                
    load_int               -1

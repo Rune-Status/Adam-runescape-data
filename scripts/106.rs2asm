@@ -1,25 +1,36 @@
-   042                    11
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   1
+   get_varc               11
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL5
 LABEL4:
-   3103                  
+   close_window          
 LABEL5:
-   040                    677
+   invoke                 677
    load_string            "Enter name of player to delete from list"
-   load_int               10616864
-   2112                  
+   load_int               10616865
+   widget_put_text_widget
    load_int               5
-   043                    5
+   put_varc               5
    load_string            ""
-   040                    222
+   invoke                 222
    load_string            ""
-   036                   
+   sstore                 0
    load_int               112
    load_int               -2147483640
    load_int               -2147483639
-   035                   
+   sload                  0
    load_string            "izs"
-   load_int               10616865
-   2419                  
+   load_int               10616866
+   widget_put_key_listener_widget
+   invoke                 1972
+   load_int               1
+   if_icmpeq              LABEL26
+   jump                   LABEL27
+LABEL26:
+   invoke                 1983
+LABEL27:
    return                

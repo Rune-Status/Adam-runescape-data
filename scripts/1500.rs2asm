@@ -1,0 +1,131 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   1
+   load_string            "Enable (1 coin)"
+   sstore                 0
+   get_varbit             5411
+   load_int               0
+   if_icmpeq              LABEL9
+   get_varbit             5412
+   load_int               0
+   if_icmple              LABEL9
+   jump                   LABEL65
+LABEL9:
+   load_int               10461087
+   widget_put_textcolor  
+   load_string            "Off"
+   widget_put_text       
+   load_int               85
+   load_int               -2147483645
+   widget_get_index      
+   load_int               16777215
+   load_string            "Iii"
+   iload                  0
+   widget_put_mouse_hover_listener_widget
+   load_int               85
+   load_int               -2147483645
+   widget_get_index      
+   load_int               10461087
+   load_string            "Iii"
+   iload                  0
+   widget_put_mouse_exit_listener_widget
+   get_varbit             5412
+   load_int               0
+   if_icmpgt              LABEL31
+   jump                   LABEL47
+LABEL31:
+   get_varbit             5412
+   load_int               1
+   if_icmpgt              LABEL35
+   jump                   LABEL42
+LABEL35:
+   load_string            "Enable ("
+   get_varbit             5412
+   load_string            ","
+   invoke                 46
+   load_string            " coins)"
+   string_append          3
+   sstore                 0
+LABEL42:
+   load_int               1
+   sload                  0
+   iload                  0
+   widget_put_action_widget
+   jump                   LABEL51
+LABEL47:
+   load_int               1
+   load_string            "Enable"
+   iload                  0
+   widget_put_action_widget
+LABEL51:
+   load_int               2
+   load_string            ""
+   iload                  0
+   widget_put_action_widget
+   load_int               1501
+   load_int               -2147483644
+   load_int               0
+   get_varbit             5412
+   iload                  0
+   widget_get_index      
+   load_string            "i1iIi"
+   iload                  0
+   widget_put_option_click_listener_widget
+   jump                   LABEL111
+LABEL65:
+   load_int               16750623
+   widget_put_textcolor  
+   get_varbit             5412
+   load_int               1
+   if_icmpne              LABEL71
+   jump                   LABEL78
+LABEL71:
+   get_varbit             5412
+   load_string            ","
+   invoke                 46
+   load_string            " coins"
+   string_append          2
+   widget_put_text       
+   jump                   LABEL80
+LABEL78:
+   load_string            "1 coin"
+   widget_put_text       
+LABEL80:
+   load_int               1
+   load_string            "Disable"
+   iload                  0
+   widget_put_action_widget
+   load_int               2
+   load_string            "Change"
+   iload                  0
+   widget_put_action_widget
+   load_int               85
+   load_int               -2147483645
+   widget_get_index      
+   load_int               16777215
+   load_string            "Iii"
+   iload                  0
+   widget_put_mouse_hover_listener_widget
+   load_int               85
+   load_int               -2147483645
+   widget_get_index      
+   load_int               16750623
+   load_string            "Iii"
+   iload                  0
+   widget_put_mouse_exit_listener_widget
+   load_int               1501
+   load_int               -2147483644
+   load_int               1
+   load_int               0
+   iload                  0
+   widget_get_index      
+   load_string            "i1iIi"
+   iload                  0
+   widget_put_option_click_listener_widget
+LABEL111:
+   load_int               -1
+   load_string            ""
+   iload                  0
+   widget_put_render_listener_widget
+   return                

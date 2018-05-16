@@ -1,36 +1,140 @@
-   042                    6
-   load_int               1
-   if_icmpeq              LABEL4
-   jump                   LABEL7
-LABEL4:
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      7
+.string_var_count   0
+   iload                  0
+   widget_unset_children 
+   iload                  0
+   widget_get_width_widget
+   istore                 1
+   iload                  0
+   widget_get_height_widget
+   istore                 2
+   iload                  1
+   load_int               9
+   isub                  
+   istore                 3
+   iload                  2
+   load_int               9
+   isub                  
+   istore                 4
+   iload                  1
+   load_int               18
+   isub                  
+   istore                 5
+   iload                  2
+   load_int               18
+   isub                  
+   istore                 6
+   iload                  0
    load_int               0
-   043                    6
-   jump                   LABEL9
-LABEL7:
-   load_int               1
-   043                    6
-LABEL9:
-   042                    6
+   load_int               297
    load_int               0
-   if_icmpeq              LABEL13
-   jump                   LABEL21
-LABEL13:
-   load_string            "Moderator option: Mute player: "
-   load_string            "<lt>"
-   load_string            "OFF"
-   load_string            "<gt>"
-   037                    4
-   load_int               36241416
-   2112                  
-   jump                   LABEL29
-LABEL21:
-   load_string            "<col=ff0000>"
-   load_string            "Moderator option: Mute player: "
-   load_string            "<lt>"
-   load_string            "ON"
-   load_string            "<gt>"
-   037                    5
-   load_int               36241416
-   2112                  
-LABEL29:
+   load_int               0
+   load_int               0
+   load_int               0
+   iload                  1
+   iload                  2
+   load_int               0
+   load_int               0
+   invoke                 98
+   iload                  0
+   load_int               1
+   load_int               913
+   load_int               0
+   load_int               0
+   load_int               0
+   load_int               0
+   load_int               9
+   load_int               9
+   load_int               0
+   load_int               0
+   invoke                 98
+   iload                  0
+   load_int               2
+   load_int               914
+   iload                  3
+   load_int               0
+   load_int               0
+   load_int               0
+   load_int               9
+   load_int               9
+   load_int               0
+   load_int               0
+   invoke                 98
+   iload                  0
+   load_int               3
+   load_int               915
+   load_int               0
+   iload                  4
+   load_int               0
+   load_int               0
+   load_int               9
+   load_int               9
+   load_int               0
+   load_int               0
+   invoke                 98
+   iload                  0
+   load_int               4
+   load_int               916
+   iload                  3
+   iload                  4
+   load_int               0
+   load_int               0
+   load_int               9
+   load_int               9
+   load_int               0
+   load_int               0
+   invoke                 98
+   iload                  0
+   load_int               5
+   load_int               917
+   load_int               0
+   load_int               9
+   load_int               0
+   load_int               0
+   load_int               9
+   iload                  6
+   load_int               0
+   load_int               0
+   invoke                 98
+   iload                  0
+   load_int               6
+   load_int               918
+   load_int               9
+   load_int               0
+   load_int               0
+   load_int               0
+   iload                  5
+   load_int               9
+   load_int               0
+   load_int               0
+   invoke                 98
+   iload                  0
+   load_int               7
+   load_int               919
+   iload                  3
+   load_int               9
+   load_int               0
+   load_int               0
+   load_int               9
+   iload                  6
+   load_int               0
+   load_int               0
+   invoke                 98
+   iload                  0
+   load_int               8
+   load_int               920
+   load_int               9
+   iload                  4
+   load_int               0
+   load_int               0
+   iload                  5
+   load_int               9
+   load_int               0
+   load_int               0
+   invoke                 98
+   load_int               9
+   return                
+   load_int               0
    return                

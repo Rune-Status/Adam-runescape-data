@@ -1,4 +1,8 @@
-   047                    27
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   0
+   get_varc_string        27
    string_length         
    load_int               0
    if_icmpgt              LABEL5
@@ -7,20 +11,20 @@ LABEL5:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
-   025                    4931
+   play_sound_effect     
+   get_varbit             4931
    load_int               10
    if_icmplt              LABEL13
    jump                   LABEL19
 LABEL13:
    load_int               0
-   047                    27
-   040                    1099
-   047                    130
-   040                    1099
-   3116                  
+   get_varc_string        27
+   invoke                 1099
+   get_varc_string        130
+   invoke                 1099
+   send_bug_report       
 LABEL19:
-   3103                  
+   close_window          
    load_string            "Your bug report has been submitted. Thank you."
    send_game_message     
    return                
@@ -28,7 +32,7 @@ LABEL23:
    load_int               2277
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    load_string            "Please describe the bug."
    send_game_message     
    return                

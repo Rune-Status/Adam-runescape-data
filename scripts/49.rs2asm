@@ -1,12 +1,16 @@
-   035                   
+.int_stack_count    0
+.string_stack_count 1
+.int_var_count      1
+.string_var_count   1
+   sload                  0
    string_length         
-   034                   
-   033                   
+   istore                 0
+   iload                  0
    load_int               2
    if_icmpgt              LABEL7
    jump                   LABEL19
 LABEL7:
-   035                   
+   sload                  0
    load_string            "::"
    load_int               0
    string_indexof_from   
@@ -14,12 +18,12 @@ LABEL7:
    if_icmpeq              LABEL14
    jump                   LABEL19
 LABEL14:
-   035                   
+   sload                  0
    load_int               2
-   033                   
+   iload                  0
    string_substring      
-   036                   
+   sstore                 0
 LABEL19:
-   035                   
-   5020                  
+   sload                  0
+   run_command           
    return                

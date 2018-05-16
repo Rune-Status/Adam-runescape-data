@@ -1,62 +1,66 @@
-   033                    1
+.int_stack_count    6
+.string_stack_count 0
+.int_var_count      10
+.string_var_count   0
+   iload                  1
    widget_get_width_widget
-   034                    6
-   033                    1
+   istore                 6
+   iload                  1
    widget_get_height_widget
-   034                    7
-   033                    6
-   033                    2
+   istore                 7
+   iload                  6
+   iload                  2
    if_icmpeq              LABEL10
    jump                   LABEL15
 LABEL10:
-   033                    7
-   033                    3
+   iload                  7
+   iload                  3
    if_icmpeq              LABEL14
    jump                   LABEL15
 LABEL14:
    return                
 LABEL15:
-   033                    7
+   iload                  7
    load_int               3
    isub                  
-   034                    8
+   istore                 8
    load_int               800
-   034                    9
-   033                    9
-   033                    8
+   istore                 9
+   iload                  9
+   iload                  8
    if_icmpgt              LABEL25
    jump                   LABEL27
 LABEL25:
-   033                    8
-   034                    9
+   iload                  8
+   istore                 9
 LABEL27:
    load_int               488
-   033                    9
+   iload                  9
    load_int               0
    load_int               0
-   033                   
-   2001                  
+   iload                  0
+   widget_put_size_widget
    load_int               0
-   033                    7
-   033                    9
+   iload                  7
+   iload                  9
    isub                  
    load_int               2
    idiv                  
    load_int               1
    load_int               2
-   033                   
-   2000                  
-   033                    4
-   033                    5
-   040                    231
+   iload                  0
+   widget_put_position_widget
+   iload                  4
+   iload                  5
+   invoke                 231
    load_int               839
-   033                   
-   033                    1
-   033                    6
-   033                    7
-   033                    4
-   033                    5
+   iload                  0
+   iload                  1
+   iload                  6
+   iload                  7
+   iload                  4
+   iload                  5
    load_string            "IIiiII"
-   033                   
-   2408                  
+   iload                  0
+   widget_put_render_listener_widget
    return                

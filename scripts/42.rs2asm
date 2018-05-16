@@ -1,4 +1,8 @@
-   025                    4606
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
+   get_varbit             4606
    load_int               0
    if_icmpne              LABEL4
    jump                   LABEL5
@@ -6,73 +10,73 @@ LABEL4:
    return                
 LABEL5:
    load_int               700
-   033                   
-   040                    1046
-   034                   
+   iload                  0
+   invoke                 1046
+   istore                 0
    load_int               195
-   033                   
-   040                    1045
-   034                   
+   iload                  0
+   invoke                 1045
+   istore                 0
    load_int               715
-   033                    1
-   040                    1046
-   034                    1
+   iload                  1
+   invoke                 1046
+   istore                 1
    load_int               175
-   033                    1
-   040                    1045
-   034                    1
-   033                   
-   033                    1
+   iload                  1
+   invoke                 1045
+   istore                 1
+   iload                  0
+   iload                  1
    6201                  
    load_int               0
-   034                    2
+   istore                 2
    load_int               0
-   034                    3
-   6203                  
-   034                    3
-   034                    2
-   033                    3
+   istore                 3
+   get_viewport_size     
+   istore                 3
+   istore                 2
+   iload                  3
    load_int               334
    isub                  
-   034                    4
-   033                    4
+   istore                 4
+   iload                  4
    load_int               0
    if_icmplt              LABEL39
    jump                   LABEL42
 LABEL39:
    load_int               0
-   034                    4
+   istore                 4
    jump                   LABEL48
 LABEL42:
-   033                    4
+   iload                  4
    load_int               100
    if_icmpgt              LABEL46
    jump                   LABEL48
 LABEL46:
    load_int               100
-   034                    4
+   istore                 4
 LABEL48:
-   033                   
-   033                    1
-   033                   
+   iload                  0
+   iload                  1
+   iload                  0
    isub                  
-   033                    4
+   iload                  4
    imul                  
    load_int               100
    idiv                  
    iadd                  
-   034                    5
+   istore                 5
    load_int               25
    load_int               25
-   033                    5
+   iload                  5
    imul                  
    load_int               256
    idiv                  
    iadd                  
    5530                  
-   033                   
-   033                    1
-   043                    74
-   043                    73
-   040                    1049
+   iload                  0
+   iload                  1
+   put_varc               74
+   put_varc               73
+   invoke                 1049
    return                

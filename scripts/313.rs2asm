@@ -1,142 +1,149 @@
-   load_int               17
-   044                    105
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
+   load_int               18
+   array_initialize       105
    load_int               1
    get_settings           20
-   046                   
+   array_store           
    load_int               2
    get_settings           21
-   046                   
+   array_store           
    load_int               3
    get_settings           22
-   046                   
+   array_store           
    load_int               4
    get_settings           23
-   046                   
+   array_store           
    load_int               5
    get_settings           24
-   046                   
+   array_store           
    load_int               6
    get_settings           25
-   046                   
+   array_store           
    load_int               7
    get_settings           298
-   046                   
+   array_store           
    load_int               8
    get_settings           311
-   046                   
+   array_store           
    load_int               9
    get_settings           346
-   046                   
+   array_store           
    load_int               10
    get_settings           414
-   046                   
+   array_store           
    load_int               11
    get_settings           464
-   046                   
+   array_store           
    load_int               12
    get_settings           598
-   046                   
+   array_store           
    load_int               13
    get_settings           662
-   046                   
+   array_store           
    load_int               14
    get_settings           721
-   046                   
+   array_store           
    load_int               15
    get_settings           906
-   046                   
+   array_store           
    load_int               16
    get_settings           1009
-   046                   
+   array_store           
+   load_int               17
+   get_settings           1338
+   array_store           
    load_int               0
-   034                    1
+   istore                 1
    load_int               0
-   034                    2
+   istore                 2
    load_int               -1
-   034                    3
+   istore                 3
    load_int               -1
-   034                    4
+   istore                 4
    load_int               -1
-   034                    5
-LABEL60:
-   033                    1
-   load_int               516
-   if_icmple              LABEL64
-   jump                   LABEL127
-LABEL64:
+   istore                 5
+LABEL63:
+   iload                  1
+   load_int               540
+   if_icmple              LABEL67
+   jump                   LABEL130
+LABEL67:
    load_int               105
    load_int               105
    load_int               818
-   033                    1
-   3408                  
-   034                    2
-   033                    2
+   iload                  1
+   get_enum_value        
+   istore                 2
+   iload                  2
    load_int               0
-   if_icmpne              LABEL74
-   jump                   LABEL122
-LABEL74:
-   033                   
-   033                    2
-   200                   
+   if_icmpne              LABEL77
+   jump                   LABEL125
+LABEL77:
+   iload                  0
+   iload                  2
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL80
-   jump                   LABEL122
-LABEL80:
+   if_icmpeq              LABEL83
+   jump                   LABEL125
+LABEL83:
    load_int               105
    load_int               99
    load_int               819
-   033                    2
-   3408                  
-   034                    3
-   033                    3
+   iload                  2
+   get_enum_value        
+   istore                 3
+   iload                  3
    load_int               -1
-   if_icmpne              LABEL90
-   jump                   LABEL120
-LABEL90:
-   033                    3
+   if_icmpne              LABEL93
+   jump                   LABEL123
+LABEL93:
+   iload                  3
    divide_by_16384       
-   033                    3
+   iload                  3
    and_16384             
-   034                    5
-   034                    4
-   033                    4
-   045                   
-   033                    5
+   istore                 5
+   istore                 4
+   iload                  4
+   array_load            
+   iload                  5
    test_bit              
    load_int               1
-   if_icmpeq              LABEL103
-   jump                   LABEL106
-LABEL103:
-   load_int               65280
-   040                    314
-   jump                   LABEL119
+   if_icmpeq              LABEL106
+   jump                   LABEL109
 LABEL106:
-   033                    2
-   load_int               331
-   if_icmpeq              LABEL110
-   jump                   LABEL117
-LABEL110:
-   025                    1028
-   load_int               35
-   if_icmpgt              LABEL114
-   jump                   LABEL117
-LABEL114:
    load_int               65280
-   040                    314
-   jump                   LABEL119
+   invoke                 314
+   jump                   LABEL122
+LABEL109:
+   iload                  2
+   load_int               331
+   if_icmpeq              LABEL113
+   jump                   LABEL120
+LABEL113:
+   get_varbit             1028
+   load_int               35
+   if_icmpgt              LABEL117
+   jump                   LABEL120
 LABEL117:
-   load_int               16711680
-   040                    314
-LABEL119:
+   load_int               65280
+   invoke                 314
    jump                   LABEL122
 LABEL120:
-   load_int               65280
-   040                    314
+   load_int               16711680
+   invoke                 314
 LABEL122:
-   033                    1
+   jump                   LABEL125
+LABEL123:
+   load_int               65280
+   invoke                 314
+LABEL125:
+   iload                  1
    load_int               1
    iadd                  
-   034                    1
-   jump                   LABEL60
-LABEL127:
+   istore                 1
+   jump                   LABEL63
+LABEL130:
    return                

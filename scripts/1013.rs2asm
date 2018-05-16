@@ -1,6 +1,10 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
+   iload                  0
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL18
@@ -9,18 +13,18 @@ LABEL6:
    widget_put_opacity    
    load_int               1012
    load_int               1
-   033                   
+   iload                  0
    load_string            "1I"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               1012
    load_int               0
-   033                   
+   iload                  0
    load_string            "1I"
-   1404                  
+   widget_put_mouse_exit_listener
 LABEL18:
-   033                   
+   iload                  0
    load_int               3
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL24
    jump                   LABEL28
@@ -28,11 +32,11 @@ LABEL24:
    load_int               0
    widget_put_opacity    
    load_int               788
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL28:
-   033                   
+   iload                  0
    load_int               4
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL34
    jump                   LABEL36

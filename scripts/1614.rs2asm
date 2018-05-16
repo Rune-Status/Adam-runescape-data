@@ -1,0 +1,102 @@
+.int_stack_count    5
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   0
+   iload                  1
+   iload                  2
+   iload                  3
+   invoke                 1616
+   load_int               1615
+   iload                  1
+   iload                  2
+   iload                  3
+   load_int               499
+   load_int               1429
+   load_int               115
+   load_int               3
+   load_string            "IIIY"
+   iload                  4
+   widget_put_config_listener_widget
+   iload                  4
+   widget_unset_children 
+   load_int               42
+   load_int               36
+   isub                  
+   load_int               3
+   imul                  
+   load_int               2
+   isub                  
+   istore                 5
+   load_int               36
+   load_int               32
+   isub                  
+   load_int               2
+   imul                  
+   istore                 6
+   load_int               0
+   istore                 7
+   load_int               93
+   get_inventory_size    
+   istore                 8
+LABEL36:
+   iload                  7
+   iload                  8
+   if_icmplt              LABEL40
+   jump                   LABEL75
+LABEL40:
+   iload                  4
+   load_int               5
+   iload                  7
+   widget_create_child   
+   load_int               36
+   load_int               32
+   load_int               0
+   load_int               0
+   widget_put_size       
+   iload                  5
+   iload                  7
+   load_int               4
+   modulo                
+   load_int               42
+   imul                  
+   iadd                  
+   iload                  6
+   iload                  7
+   load_int               4
+   idiv                  
+   load_int               36
+   imul                  
+   iadd                  
+   load_int               0
+   load_int               0
+   widget_put_position   
+   load_int               3355443
+   widget_put_sprite2    
+   load_int               1
+   widget_put_borderthickness
+   iload                  7
+   load_int               1
+   iadd                  
+   istore                 7
+   jump                   LABEL36
+LABEL75:
+   iload                  4
+   iload                  7
+   invoke                 1621
+   load_int               1620
+   iload                  4
+   iload                  7
+   load_int               93
+   load_int               1
+   load_string            "IiY"
+   iload                  0
+   widget_put_table_listener_widget
+   load_int               1620
+   iload                  4
+   iload                  7
+   load_int               115
+   load_int               1
+   load_string            "IiY"
+   iload                  0
+   widget_put_config_listener_widget
+   return                

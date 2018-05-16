@@ -1,48 +1,52 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
    load_int               0
-   034                    4
-   033                   
-   033                    1
-   200                   
+   istore                 4
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL8
    jump                   LABEL39
 LABEL8:
    widget_get_opacity    
-   033                    3
+   iload                  3
    iadd                  
-   034                    4
-   033                    3
+   istore                 4
+   iload                  3
    load_int               0
    if_icmplt              LABEL16
    jump                   LABEL27
 LABEL16:
-   033                    4
-   033                    2
+   iload                  4
+   iload                  2
    if_icmplt              LABEL20
    jump                   LABEL26
 LABEL20:
-   033                    2
+   iload                  2
    widget_put_opacity    
    load_int               -1
    load_string            ""
-   1408                  
+   widget_put_render_listener
    return                
 LABEL26:
    jump                   LABEL37
 LABEL27:
-   033                    4
-   033                    2
+   iload                  4
+   iload                  2
    if_icmpgt              LABEL31
    jump                   LABEL37
 LABEL31:
-   033                    2
+   iload                  2
    widget_put_opacity    
    load_int               -1
    load_string            ""
-   1408                  
+   widget_put_render_listener
    return                
 LABEL37:
-   033                    4
+   iload                  4
    widget_put_opacity    
 LABEL39:
    return                

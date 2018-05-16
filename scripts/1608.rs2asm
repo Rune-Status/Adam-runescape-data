@@ -1,0 +1,85 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  0
+   load_int               -1
+   if_icmpne              LABEL4
+   jump                   LABEL60
+LABEL4:
+   iload                  0
+   iload                  1
+   1200                  
+   load_int               0
+   widget_put_opacity    
+   load_int               1
+   load_string            "Withdraw"
+   widget_put_action     
+   load_int               2
+   load_string            "Withdraw-5"
+   widget_put_action     
+   load_int               3
+   load_string            "Withdraw-10"
+   widget_put_action     
+   load_int               4
+   load_string            "Withdraw-All"
+   widget_put_action     
+   load_int               5
+   load_string            "Withdraw-X"
+   widget_put_action     
+   load_int               10
+   load_string            "Examine"
+   widget_put_action     
+   load_string            "<col=ff9040>"
+   iload                  0
+   get_item_name         
+   load_string            "</col>"
+   string_append          3
+   widget_put_name       
+   load_int               177
+   load_int               -2147483644
+   load_int               -2147483645
+   load_int               -2147483643
+   load_string            "iIi"
+   widget_put_option_click_listener
+   load_int               1609
+   load_int               -2147483645
+   load_int               -2147483643
+   load_int               -2147483647
+   load_int               -2147483646
+   iload                  3
+   load_int               0
+   load_string            "IiiiIi"
+   widget_put_drag_start_listener
+   load_int               1610
+   load_int               -2147483645
+   load_int               -2147483643
+   load_int               -2147483641
+   iload                  3
+   load_string            "IiiI"
+   widget_put_drag_release_listener
+   iload                  2
+   load_int               1
+   iadd                  
+   istore                 2
+   jump                   LABEL74
+LABEL60:
+   load_int               255
+   widget_put_opacity    
+   load_int               6512
+   load_int               1
+   1205                  
+   load_int               -1
+   load_string            ""
+   widget_put_option_click_listener
+   load_int               -1
+   load_string            ""
+   widget_put_drag_start_listener
+   load_int               -1
+   load_string            ""
+   widget_put_drag_release_listener
+LABEL74:
+   iload                  2
+   return                
+   load_int               0
+   return                

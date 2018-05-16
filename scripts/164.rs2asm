@@ -1,18 +1,20 @@
-   033                    1
-   040                    166
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   iload                  1
+   invoke                 166
    load_int               7
    if_icmpeq              LABEL5
-   jump                   LABEL10
+   jump                   LABEL9
 LABEL5:
    load_int               942
-   033                   
-   widget_put_textureid_widget
-   return                
-   jump                   LABEL14
-LABEL10:
+   iload                  0
+   widget_put_spriteid_widget
+   jump                   LABEL12
+LABEL9:
    load_int               941
-   033                   
-   widget_put_textureid_widget
-   return                
-LABEL14:
+   iload                  0
+   widget_put_spriteid_widget
+LABEL12:
    return                

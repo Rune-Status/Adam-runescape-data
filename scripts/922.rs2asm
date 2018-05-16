@@ -1,3 +1,7 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   0
    get_isresized         
    load_int               1
    if_icmpeq              LABEL4
@@ -6,12 +10,12 @@ LABEL4:
    load_int               0
    return                
 LABEL6:
-   load_int               10617378
-   2702                  
+   load_int               10617379
+   widget_get_index_widget
    load_int               1
    if_icmpeq              LABEL15
-   load_int               10617377
-   2702                  
+   load_int               10617378
+   widget_get_index_widget
    load_int               1
    if_icmpeq              LABEL15
    jump                   LABEL17
@@ -19,7 +23,7 @@ LABEL15:
    load_int               0
    return                
 LABEL17:
-   load_int               10616863
+   load_int               10616864
    widget_get_hidden_widget
    load_int               0
    if_icmpeq              LABEL22

@@ -1,10 +1,14 @@
-   047                    28
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   0
+   get_varc_string        28
    string_length         
    load_int               0
    if_icmpgt              LABEL5
    jump                   LABEL33
 LABEL5:
-   042                    62
+   get_varc               62
    load_int               1
    if_icmpeq              LABEL9
    jump                   LABEL21
@@ -13,26 +17,26 @@ LABEL9:
    load_string            "<col=00afff>"
    load_string            "Resume autochat"
    load_string            "</col>"
-   037                    3
+   string_append          3
    load_int               105
    load_int               73
    load_int               683
    load_int               2
-   3408                  
-   2300                  
+   get_enum_value        
+   widget_put_action_widget
    jump                   LABEL32
 LABEL21:
    load_int               10
    load_string            "<col=00afff>"
    load_string            "Pause autochat"
    load_string            "</col>"
-   037                    3
+   string_append          3
    load_int               105
    load_int               73
    load_int               683
    load_int               2
-   3408                  
-   2300                  
+   get_enum_value        
+   widget_put_action_widget
 LABEL32:
    jump                   LABEL41
 LABEL33:
@@ -42,7 +46,7 @@ LABEL33:
    load_int               73
    load_int               683
    load_int               2
-   3408                  
-   2300                  
+   get_enum_value        
+   widget_put_action_widget
 LABEL41:
    return                

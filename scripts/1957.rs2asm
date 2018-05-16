@@ -1,0 +1,267 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      19
+.string_var_count   0
+   load_int               5898241
+   widget_get_textcolor_widget
+   istore                 0
+   get_varbit             5701
+   load_int               1
+   if_icmplt              LABEL7
+   jump                   LABEL15
+LABEL7:
+   iload                  0
+   load_int               0
+   if_icmpne              LABEL11
+   jump                   LABEL14
+LABEL11:
+   load_int               0
+   load_int               5898241
+   widget_put_textcolor_widget
+LABEL14:
+   return                
+LABEL15:
+   load_int               0
+   istore                 1
+   load_int               0
+   istore                 2
+   load_int               0
+   istore                 3
+   load_int               0
+   istore                 4
+   load_int               0
+   istore                 5
+   load_int               0
+   istore                 6
+   load_int               0
+   istore                 7
+   load_int               0
+   istore                 8
+   load_int               0
+   istore                 9
+   load_int               52479
+   invoke                 2
+   istore                 9
+   istore                 8
+   istore                 7
+   load_int               0
+   istore                 10
+   load_int               0
+   istore                 11
+   load_int               0
+   istore                 12
+   load_int               16742195
+   invoke                 2
+   istore                 12
+   istore                 11
+   istore                 10
+   load_int               0
+   istore                 13
+   load_int               0
+   istore                 14
+   load_int               0
+   istore                 15
+   get_varbit             5703
+   load_int               1
+   if_icmpeq              LABEL59
+   jump                   LABEL66
+LABEL59:
+   iload                  7
+   iload                  8
+   iload                  9
+   istore                 6
+   istore                 5
+   istore                 4
+   jump                   LABEL163
+LABEL66:
+   get_varbit             5703
+   load_int               2
+   if_icmpeq              LABEL70
+   jump                   LABEL77
+LABEL70:
+   iload                  10
+   iload                  11
+   iload                  12
+   istore                 6
+   istore                 5
+   istore                 4
+   jump                   LABEL163
+LABEL77:
+   get_varbit             5701
+   load_int               2
+   if_icmpge              LABEL81
+   jump                   LABEL163
+LABEL81:
+   get_coordinates       
+   divide_by_16384       
+   load_int               51859033
+   divide_by_16384       
+   isub                  
+   load_int               2
+   pow                   
+   load_int               2
+   invpow                
+   istore                 2
+   get_coordinates       
+   and_16384             
+   load_int               51859033
+   and_16384             
+   isub                  
+   load_int               2
+   pow                   
+   load_int               2
+   invpow                
+   istore                 3
+   iload                  2
+   iload                  3
+   if_icmpgt              LABEL105
+   jump                   LABEL108
+LABEL105:
+   iload                  2
+   istore                 1
+   jump                   LABEL110
+LABEL108:
+   iload                  3
+   istore                 1
+LABEL110:
+   get_varbit             5704
+   istore                 13
+   load_int               300
+   load_int               6
+   isub                  
+   load_int               6
+   idiv                  
+   istore                 15
+   iload                  13
+   iload                  15
+   isub                  
+   load_int               6
+   invoke                 1045
+   istore                 14
+   iload                  1
+   iload                  14
+   if_icmplt              LABEL131
+   iload                  1
+   load_int               6
+   if_icmplt              LABEL131
+   jump                   LABEL138
+LABEL131:
+   load_int               0
+   load_int               0
+   load_int               0
+   istore                 6
+   istore                 5
+   istore                 4
+   jump                   LABEL163
+LABEL138:
+   iload                  1
+   iload                  13
+   if_icmplt              LABEL142
+   jump                   LABEL153
+LABEL142:
+   iload                  1
+   iload                  14
+   if_icmpge              LABEL146
+   jump                   LABEL153
+LABEL146:
+   iload                  10
+   iload                  11
+   iload                  12
+   istore                 6
+   istore                 5
+   istore                 4
+   jump                   LABEL163
+LABEL153:
+   iload                  1
+   iload                  13
+   if_icmpge              LABEL157
+   jump                   LABEL163
+LABEL157:
+   iload                  7
+   iload                  8
+   iload                  9
+   istore                 6
+   istore                 5
+   istore                 4
+LABEL163:
+   load_int               0
+   istore                 16
+   load_int               0
+   istore                 17
+   load_int               0
+   istore                 18
+   iload                  0
+   invoke                 2
+   istore                 18
+   istore                 17
+   istore                 16
+   iload                  16
+   iload                  4
+   if_icmplt              LABEL178
+   jump                   LABEL183
+LABEL178:
+   iload                  16
+   load_int               1
+   iadd                  
+   istore                 16
+   jump                   LABEL191
+LABEL183:
+   iload                  16
+   iload                  4
+   if_icmpgt              LABEL187
+   jump                   LABEL191
+LABEL187:
+   iload                  16
+   load_int               1
+   isub                  
+   istore                 16
+LABEL191:
+   iload                  17
+   iload                  5
+   if_icmplt              LABEL195
+   jump                   LABEL200
+LABEL195:
+   iload                  17
+   load_int               1
+   iadd                  
+   istore                 17
+   jump                   LABEL208
+LABEL200:
+   iload                  17
+   iload                  5
+   if_icmpgt              LABEL204
+   jump                   LABEL208
+LABEL204:
+   iload                  17
+   load_int               1
+   isub                  
+   istore                 17
+LABEL208:
+   iload                  18
+   iload                  6
+   if_icmplt              LABEL212
+   jump                   LABEL217
+LABEL212:
+   iload                  18
+   load_int               1
+   iadd                  
+   istore                 18
+   jump                   LABEL225
+LABEL217:
+   iload                  18
+   iload                  6
+   if_icmpgt              LABEL221
+   jump                   LABEL225
+LABEL221:
+   iload                  18
+   load_int               1
+   isub                  
+   istore                 18
+LABEL225:
+   iload                  16
+   iload                  17
+   iload                  18
+   invoke                 246
+   load_int               5898241
+   widget_put_textcolor_widget
+   return                

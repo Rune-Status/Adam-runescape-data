@@ -1,61 +1,65 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 2
+.int_var_count      3
+.string_var_count   2
+   iload                  0
    widget_get_width_widget
-   034                    1
-   033                   
+   istore                 1
+   iload                  0
    widget_get_height_widget
-   034                    2
-   033                   
-   102                   
-   033                   
+   istore                 2
+   iload                  0
+   widget_unset_children 
+   iload                  0
    load_int               5
    load_int               0
-   100                   
-   033                    1
-   033                    2
+   widget_create_child   
+   iload                  1
+   iload                  2
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               0
-   1107                  
-   033                   
+   widget_put_sprite_tiling
+   iload                  0
    load_int               4
    load_int               1
-   100                    1
-   033                    1
-   033                    2
+   widget_create_child    1
+   iload                  1
+   iload                  2
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    load_int               494
    widget_put_fontid      1
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_int               1
    load_int               1
    load_int               0
-   1114                   1
-   035                   
-   1112                   1
+   widget_put_text_alignment 1
+   sload                  0
+   widget_put_text        1
    load_int               1
-   035                    1
-   033                   
-   2300                  
-   033                   
-   040                    707
+   sload                  1
+   iload                  0
+   widget_put_action_widget
+   iload                  0
+   invoke                 707
    load_int               706
-   033                   
-   1702                  
-   1702                   1
+   iload                  0
+   widget_get_index      
+   widget_get_index       1
    load_int               518
    load_int               519
    load_int               520
@@ -66,6 +70,6 @@
    load_int               540
    load_int               8
    load_string            "IiiY"
-   033                   
-   2414                  
+   iload                  0
+   widget_put_table_listener_widget
    return                

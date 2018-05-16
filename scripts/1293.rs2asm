@@ -1,0 +1,125 @@
+.int_stack_count    11
+.string_stack_count 0
+.int_var_count      11
+.string_var_count   0
+   iload                  0
+   load_int               0
+   if_icmpgt              LABEL4
+   jump                   LABEL11
+LABEL4:
+   load_int               556
+   invoke                 19
+   iload                  0
+   if_icmplt              LABEL9
+   jump                   LABEL11
+LABEL9:
+   load_int               0
+   return                
+LABEL11:
+   iload                  1
+   load_int               0
+   if_icmpgt              LABEL15
+   jump                   LABEL22
+LABEL15:
+   load_int               555
+   invoke                 19
+   iload                  1
+   if_icmplt              LABEL20
+   jump                   LABEL22
+LABEL20:
+   load_int               0
+   return                
+LABEL22:
+   iload                  2
+   load_int               0
+   if_icmpgt              LABEL26
+   jump                   LABEL33
+LABEL26:
+   load_int               557
+   invoke                 19
+   iload                  2
+   if_icmplt              LABEL31
+   jump                   LABEL33
+LABEL31:
+   load_int               0
+   return                
+LABEL33:
+   iload                  3
+   load_int               0
+   if_icmpgt              LABEL37
+   jump                   LABEL44
+LABEL37:
+   load_int               554
+   invoke                 19
+   iload                  3
+   if_icmplt              LABEL42
+   jump                   LABEL44
+LABEL42:
+   load_int               0
+   return                
+LABEL44:
+   iload                  5
+   load_int               0
+   if_icmpgt              LABEL48
+   jump                   LABEL55
+LABEL48:
+   iload                  4
+   invoke                 19
+   iload                  5
+   if_icmplt              LABEL53
+   jump                   LABEL55
+LABEL53:
+   load_int               0
+   return                
+LABEL55:
+   iload                  7
+   load_int               0
+   if_icmpgt              LABEL59
+   jump                   LABEL66
+LABEL59:
+   iload                  6
+   invoke                 19
+   iload                  7
+   if_icmplt              LABEL64
+   jump                   LABEL66
+LABEL64:
+   load_int               0
+   return                
+LABEL66:
+   iload                  9
+   load_int               0
+   if_icmpgt              LABEL70
+   jump                   LABEL77
+LABEL70:
+   iload                  8
+   invoke                 19
+   iload                  9
+   if_icmplt              LABEL75
+   jump                   LABEL77
+LABEL75:
+   load_int               0
+   return                
+LABEL77:
+   load_int               93
+   load_int               13446
+   get_itemcontainer_stacksizes_total
+   load_int               0
+   if_icmpeq              LABEL83
+   jump                   LABEL85
+LABEL83:
+   load_int               0
+   return                
+LABEL85:
+   load_int               6
+   get_boostedskilllevels
+   iload                  10
+   if_icmplt              LABEL90
+   jump                   LABEL92
+LABEL90:
+   load_int               0
+   return                
+LABEL92:
+   load_int               1
+   return                
+   load_int               -1
+   return                

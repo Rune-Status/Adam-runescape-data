@@ -1,96 +1,100 @@
+.int_stack_count    2
+.string_stack_count 1
+.int_var_count      4
+.string_var_count   1
    load_int               -1
    load_string            ""
-   033                   
-   2408                  
-   033                   
-   102                   
-   035                   
+   iload                  0
+   widget_put_render_listener_widget
+   iload                  0
+   widget_unset_children 
+   sload                  0
    string_length         
    load_int               0
    if_icmple              LABEL11
    jump                   LABEL15
 LABEL11:
    load_int               1
-   033                   
+   iload                  0
    widget_put_hidden_widget
    return                
 LABEL15:
    load_int               0
-   033                   
+   iload                  0
    widget_put_hidden_widget
-   033                   
+   iload                  0
    widget_get_width_widget
-   034                    2
-   033                   
+   istore                 2
+   iload                  0
    widget_get_height_widget
-   034                    3
-   033                   
+   istore                 3
+   iload                  0
    load_int               5
    load_int               0
-   100                   
-   033                   
+   widget_create_child   
+   iload                  0
    load_int               4
    load_int               1
-   100                    1
+   widget_create_child    1
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   1000                   1
-   033                    2
-   033                    3
+   widget_put_position    1
+   iload                  2
+   iload                  3
    load_int               0
    load_int               0
-   1001                  
-   033                    2
-   033                    3
+   widget_put_size       
+   iload                  2
+   iload                  3
    load_int               0
    load_int               0
-   1001                   1
+   widget_put_size        1
    load_int               1
-   1107                  
+   widget_put_sprite_tiling
    load_int               812
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               494
    widget_put_fontid      1
    load_int               1
    load_int               1
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    load_int               16750623
    widget_put_textcolor   1
    load_int               1
-   1115                   1
-   035                   
-   1112                   1
+   widget_put_text_shadowed 1
+   sload                  0
+   widget_put_text        1
    load_int               1
-   035                   
-   1300                  
+   sload                  0
+   widget_put_action     
    load_int               608
-   033                   
-   033                    1
-   035                   
-   1702                  
-   1702                   1
+   iload                  0
+   iload                  1
+   sload                  0
+   widget_get_index      
+   widget_get_index       1
    load_string            "IIsii"
-   1409                  
+   widget_put_option_click_listener
    load_int               607
    load_int               1
-   033                   
-   1702                  
-   1702                   1
+   iload                  0
+   widget_get_index      
+   widget_get_index       1
    load_string            "1Iii"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               607
    load_int               0
-   033                   
-   1702                  
-   1702                   1
+   iload                  0
+   widget_get_index      
+   widget_get_index       1
    load_string            "1Iii"
-   1404                  
+   widget_put_mouse_exit_listener
    return                

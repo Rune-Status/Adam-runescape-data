@@ -1,98 +1,102 @@
-   033                    1
-   102                   
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      7
+.string_var_count   0
+   iload                  1
+   widget_unset_children 
    load_int               7
-   034                    3
-   033                    1
+   istore                 3
+   iload                  1
    load_int               5
    load_int               0
-   100                   
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
    load_int               0
-   1001                  
-   033                    3
+   widget_put_size       
+   iload                  3
    load_int               25
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    load_int               5
    1303                  
    load_int               5
    1304                  
-   033                    3
+   iload                  3
    load_int               36
    iadd                  
    load_int               20
    iadd                  
-   034                    3
-   033                    1
+   istore                 3
+   iload                  1
    load_int               5
    load_int               1
-   100                   
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
    load_int               0
-   1001                  
-   033                    3
+   widget_put_size       
+   iload                  3
    load_int               25
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    load_int               5
    1303                  
    load_int               5
    1304                  
-   033                    3
+   iload                  3
    load_int               36
    iadd                  
    load_int               20
    iadd                  
-   034                    3
-   033                    1
+   istore                 3
+   iload                  1
    load_int               5
    load_int               2
-   100                   
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
    load_int               0
-   1001                  
-   033                    3
+   widget_put_size       
+   iload                  3
    load_int               25
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    load_int               5
    1303                  
    load_int               5
    1304                  
-   033                    1
-   040                    666
+   iload                  1
+   invoke                 666
    load_int               665
-   033                    1
+   iload                  1
    load_int               1139
    load_int               1140
    load_int               2
    load_string            "IY"
-   033                   
-   2407                  
-   033                    2
-   102                   
-   033                    2
+   iload                  0
+   widget_put_config_listener_widget
+   iload                  2
+   widget_unset_children 
+   iload                  2
    widget_get_width_widget
    load_int               10
    load_int               7
@@ -104,8 +108,8 @@
    idiv                  
    load_int               36
    iadd                  
-   034                    3
-   033                    2
+   istore                 3
+   iload                  2
    widget_get_height_widget
    load_int               30
    load_int               4
@@ -117,65 +121,65 @@
    idiv                  
    load_int               32
    iadd                  
-   034                    4
+   istore                 4
    load_int               93
-   3304                  
-   034                    5
+   get_inventory_size    
+   istore                 5
    load_int               0
-   034                    6
+   istore                 6
 LABEL125:
-   033                    6
-   033                    5
+   iload                  6
+   iload                  5
    if_icmplt              LABEL129
    jump                   LABEL168
 LABEL129:
-   033                    2
+   iload                  2
    load_int               5
-   033                    6
-   100                   
+   iload                  6
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               5
-   033                    6
+   iload                  6
    load_int               7
    modulo                
-   033                    3
+   iload                  3
    imul                  
    iadd                  
    load_int               25
-   033                    6
+   iload                  6
    load_int               7
    idiv                  
-   033                    4
+   iload                  4
    imul                  
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    load_int               5
    1303                  
    load_int               5
    1304                  
-   033                    6
+   iload                  6
    load_int               1
    iadd                  
-   034                    6
+   istore                 6
    jump                   LABEL125
 LABEL168:
-   033                    2
-   040                    670
+   iload                  2
+   invoke                 670
    load_int               669
-   033                    2
+   iload                  2
    load_int               93
    load_int               1
    load_string            "IY"
-   033                   
-   2414                  
+   iload                  0
+   widget_put_table_listener_widget
    return                

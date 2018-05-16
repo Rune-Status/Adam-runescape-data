@@ -1,8 +1,12 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
+   iload                  0
    load_int               1
    if_icmpeq              LABEL13
    get_coordinates       
-   040                    568
+   invoke                 568
    load_int               1
    if_icmpeq              LABEL13
    get_gamecycle         
@@ -12,6 +16,6 @@
    if_icmpeq              LABEL13
    jump                   LABEL14
 LABEL13:
-   040                    386
+   invoke                 386
 LABEL14:
    return                

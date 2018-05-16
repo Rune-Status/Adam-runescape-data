@@ -1,9 +1,13 @@
-   033                   
+.int_stack_count    10
+.string_stack_count 0
+.int_var_count      11
+.string_var_count   0
+   iload                  0
    load_int               1
    if_icmpne              LABEL4
    jump                   LABEL9
 LABEL4:
-   033                   
+   iload                  0
    load_int               2
    if_icmpne              LABEL8
    jump                   LABEL9
@@ -13,8 +17,8 @@ LABEL9:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
-   033                   
+   play_sound_effect     
+   iload                  0
    load_int               1
    if_icmpne              LABEL17
    jump                   LABEL18
@@ -24,62 +28,62 @@ LABEL18:
    load_int               105
    load_int               118
    load_int               150
-   033                    1
-   3408                  
-   034                    10
-   033                    10
+   iload                  1
+   get_enum_value        
+   istore                 10
+   iload                  10
    load_int               -1
    if_icmpeq              LABEL28
    jump                   LABEL31
 LABEL28:
    load_int               0
-   027                    4439
+   set_varbit             4439
    jump                   LABEL63
 LABEL31:
-   033                    1
-   3910                  
+   iload                  1
+   get_grandexchange_offer_not_started
    load_int               1
    if_icmpeq              LABEL36
    jump                   LABEL48
 LABEL36:
-   033                    10
+   iload                  10
    load_int               0
-   3301                  
+   get_itemcontainer_itemid
    load_int               -1
    if_icmpne              LABEL47
-   033                    10
+   iload                  10
    load_int               1
-   3301                  
+   get_itemcontainer_itemid
    load_int               -1
    if_icmpne              LABEL47
    jump                   LABEL48
 LABEL47:
    return                
 LABEL48:
-   033                    1
+   iload                  1
    load_int               1
    iadd                  
-   027                    4439
-   033                    2
+   set_varbit             4439
+   iload                  2
    load_int               -1
    if_icmpne              LABEL56
    jump                   LABEL63
 LABEL56:
-   033                    1
-   3910                  
+   iload                  1
+   get_grandexchange_offer_not_started
    load_int               1
    if_icmpeq              LABEL61
    jump                   LABEL63
 LABEL61:
-   033                    2
-   027                    4397
+   iload                  2
+   set_varbit             4397
 LABEL63:
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   040                    806
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   invoke                 806
    return                

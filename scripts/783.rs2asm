@@ -1,57 +1,61 @@
-   025                    4439
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      8
+.string_var_count   0
+   get_varbit             4439
    load_int               1
    isub                  
-   034                    2
+   istore                 2
    load_int               0
-   034                    3
+   istore                 3
    load_int               105
    load_int               118
    load_int               150
-   033                    2
-   3408                  
+   iload                  2
+   get_enum_value        
    load_int               -1
    if_icmpeq              LABEL14
    jump                   LABEL17
 LABEL14:
    load_int               1
-   034                    3
+   istore                 3
    jump                   LABEL31
 LABEL17:
-   033                    2
-   3910                  
+   iload                  2
+   get_grandexchange_offer_not_started
    load_int               1
    if_icmpeq              LABEL22
    jump                   LABEL29
 LABEL22:
-   025                    4397
+   get_varbit             4397
    load_int               1
    if_icmpeq              LABEL26
    jump                   LABEL28
 LABEL26:
    load_int               1
-   034                    3
+   istore                 3
 LABEL28:
    jump                   LABEL31
 LABEL29:
    load_int               1
-   034                    3
+   istore                 3
 LABEL31:
    load_int               0
-   034                    4
+   istore                 4
 LABEL33:
-   033                    4
+   iload                  4
    load_int               4
    if_icmplt              LABEL37
    jump                   LABEL73
 LABEL37:
-   033                    1
-   033                    4
-   200                   
+   iload                  1
+   iload                  4
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL43
    jump                   LABEL68
 LABEL43:
-   033                    3
+   iload                  3
    load_int               1
    if_icmpeq              LABEL47
    jump                   LABEL66
@@ -64,14 +68,14 @@ LABEL47:
    get_gamecycle         
    load_int               3
    iadd                  
-   033                    4
+   iload                  4
    load_int               2
    imul                  
    isub                  
    load_int               240
    load_int               250
    load_string            "Iiiii"
-   1408                  
+   widget_put_render_listener
    load_int               0
    widget_put_hidden     
    jump                   LABEL68
@@ -79,10 +83,10 @@ LABEL66:
    load_int               1
    widget_put_hidden     
 LABEL68:
-   033                    4
+   iload                  4
    load_int               1
    iadd                  
-   034                    4
+   istore                 4
    jump                   LABEL33
 LABEL73:
    load_int               42
@@ -92,45 +96,45 @@ LABEL73:
    imul                  
    load_int               2
    isub                  
-   034                    5
+   istore                 5
    load_int               36
    load_int               32
    isub                  
    load_int               2
    imul                  
-   034                    6
+   istore                 6
    load_int               -1
-   034                    7
+   istore                 7
    load_int               93
-   3304                  
-   034                    4
+   get_inventory_size    
+   istore                 4
 LABEL92:
-   033                    4
+   iload                  4
    load_int               0
    if_icmpgt              LABEL96
    jump                   LABEL173
 LABEL96:
-   033                    4
+   iload                  4
    load_int               1
    isub                  
-   034                    4
-   033                   
-   033                    4
-   200                   
+   istore                 4
+   iload                  0
+   iload                  4
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL106
    jump                   LABEL172
 LABEL106:
    widget_put_actions_null
-   033                    5
-   033                    4
+   iload                  5
+   iload                  4
    load_int               4
    modulo                
    load_int               42
    imul                  
    iadd                  
-   033                    6
-   033                    4
+   iload                  6
+   iload                  4
    load_int               4
    idiv                  
    load_int               36
@@ -138,52 +142,52 @@ LABEL106:
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               93
-   033                    4
-   3301                  
-   034                    7
-   033                    7
+   iload                  4
+   get_itemcontainer_itemid
+   istore                 7
+   iload                  7
    load_int               -1
    if_icmpne              LABEL132
    jump                   LABEL167
 LABEL132:
    load_int               0
    widget_put_hidden     
-   033                    7
+   iload                  7
    load_int               93
-   033                    4
-   3302                  
+   iload                  4
+   get_itemcontainer_stacksize
    1200                  
-   033                    3
+   iload                  3
    load_int               1
    if_icmpeq              LABEL143
    jump                   LABEL154
 LABEL143:
    load_int               1
    load_string            "Offer"
-   1300                  
+   widget_put_action     
    load_int               487
    load_int               -2147483645
    load_int               -2147483643
    load_int               100
    load_int               0
    load_string            "Iiii"
-   1409                  
+   widget_put_option_click_listener
    jump                   LABEL157
 LABEL154:
    load_int               -1
    load_string            ""
-   1409                  
+   widget_put_option_click_listener
 LABEL157:
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
-   033                    7
+   iload                  7
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    jump                   LABEL172
 LABEL167:

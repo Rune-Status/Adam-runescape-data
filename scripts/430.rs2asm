@@ -1,80 +1,84 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    load_int               0
-   034                   
+   istore                 0
    get_settings           197
    load_int               16
    if_icmplt              LABEL6
    jump                   LABEL8
 LABEL6:
    load_int               1
-   034                   
+   istore                 0
 LABEL8:
    load_int               0
-   034                    1
+   istore                 1
    load_int               105
    load_int               111
    load_int               1253
-   025                    3216
-   3408                  
-   034                    2
-   033                    2
+   get_varbit             3216
+   get_enum_value        
+   istore                 2
+   iload                  2
    load_int               2349
    if_icmpeq              LABEL20
-   jump                   LABEL223
+   jump                   LABEL229
 LABEL20:
    load_int               20447234
    load_string            "Dagger"
    load_int               1205
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447235
    load_string            "Sword"
    load_int               1277
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447236
    load_string            "Scimitar"
    load_int               1321
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447237
    load_string            "Long sword"
    load_int               1291
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447238
    load_string            "2-hand sword"
    load_int               1307
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447239
    load_string            "Axe"
    load_int               1351
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447240
    load_string            "Mace"
    load_int               1422
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447241
    load_string            "Warhammer"
    load_int               1337
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447242
    load_string            "Battle axe"
    load_int               1375
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    get_settings           314
    load_int               80
    if_icmpge              LABEL78
@@ -84,1668 +88,1704 @@ LABEL78:
    load_string            "Claws"
    load_int               3095
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    jump                   LABEL91
 LABEL85:
    load_int               20447243
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
 LABEL91:
    load_int               20447244
    load_string            "Chain body"
    load_int               1103
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447245
    load_string            "Plate legs"
    load_int               1075
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447246
    load_string            "Plate skirt"
    load_int               1087
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447247
    load_string            "Plate body"
    load_int               1117
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447248
    load_string            "Nails"
    load_int               4819
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447249
    load_string            "Medium helm"
    load_int               1139
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447250
    load_string            "Full helm"
    load_int               1155
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447251
    load_string            "Square shield"
    load_int               1173
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447252
    load_string            "Kite shield"
    load_int               1189
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447253
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447254
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447255
    load_string            "Dart tips"
    load_int               819
-   033                   
-   033                    2
-   040                    431
+   iload                  0
+   iload                  2
+   invoke                 431
    load_int               20447256
    load_string            "Arrowtips"
    load_int               39
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447257
-   load_string            "Throwing knives"
+   load_string            "Knives"
    load_int               864
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447258
    load_string            "Bronze wire"
    load_int               1794
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447259
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    get_ismembers         
    load_int               1
    if_icmpeq              LABEL191
-   jump                   LABEL204
+   jump                   LABEL210
 LABEL191:
    load_int               20447260
    load_string            "Bolts"
    load_int               9375
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447261
    load_string            "Limbs"
    load_int               9420
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL216
-LABEL204:
+   iload                  2
+   invoke                 431
+   load_int               20447262
+   load_string            "Javelin heads"
+   load_int               19570
+   load_int               0
+   iload                  2
+   invoke                 431
+   jump                   LABEL228
+LABEL210:
    load_int               20447260
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447261
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-LABEL216:
+   iload                  2
+   invoke                 431
    load_int               20447262
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL1682
-LABEL223:
-   033                    2
+   iload                  2
+   invoke                 431
+LABEL228:
+   jump                   LABEL1718
+LABEL229:
+   iload                  2
    load_int               2351
-   if_icmpeq              LABEL227
-   jump                   LABEL430
-LABEL227:
+   if_icmpeq              LABEL233
+   jump                   LABEL442
+LABEL233:
    load_int               20447234
    load_string            "Dagger"
    load_int               1203
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447235
    load_string            "Sword"
    load_int               1279
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447236
    load_string            "Scimitar"
    load_int               1323
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447237
    load_string            "Long sword"
    load_int               1293
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447238
    load_string            "2-hand sword"
    load_int               1309
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447239
    load_string            "Axe"
    load_int               1349
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447240
    load_string            "Mace"
    load_int               1420
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447241
    load_string            "Warhammer"
    load_int               1335
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447242
    load_string            "Battle axe"
    load_int               1363
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    get_settings           314
    load_int               80
-   if_icmpge              LABEL285
-   jump                   LABEL292
-LABEL285:
+   if_icmpge              LABEL291
+   jump                   LABEL298
+LABEL291:
    load_int               20447243
    load_string            "Claws"
    load_int               3096
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL298
-LABEL292:
+   iload                  2
+   invoke                 431
+   jump                   LABEL304
+LABEL298:
    load_int               20447243
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-LABEL298:
+   iload                  2
+   invoke                 431
+LABEL304:
    load_int               20447244
    load_string            "Chain body"
    load_int               1101
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447245
    load_string            "Plate legs"
    load_int               1067
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447246
    load_string            "Plate skirt"
    load_int               1081
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447247
    load_string            "Plate body"
    load_int               1115
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447248
    load_string            "Nails"
    load_int               4820
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447249
    load_string            "Medium helm"
    load_int               1137
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447250
    load_string            "Full helm"
    load_int               1153
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447251
    load_string            "Square shield"
    load_int               1175
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447252
    load_string            "Kite shield"
    load_int               1191
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447253
    load_string            "Oil lantern frame"
    load_int               4540
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447254
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447255
    load_string            "Dart tips"
    load_int               820
-   033                   
-   033                    2
-   040                    431
+   iload                  0
+   iload                  2
+   invoke                 431
    load_int               20447256
    load_string            "Arrowtips"
    load_int               40
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447257
-   load_string            "Throwing knives"
+   load_string            "Knives"
    load_int               863
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447258
    load_string            "Iron spit"
    load_int               7225
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447259
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    get_ismembers         
    load_int               1
-   if_icmpeq              LABEL398
-   jump                   LABEL411
-LABEL398:
+   if_icmpeq              LABEL404
+   jump                   LABEL423
+LABEL404:
    load_int               20447260
    load_string            "Bolts"
    load_int               9377
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447261
    load_string            "Limbs"
    load_int               9423
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL423
-LABEL411:
+   iload                  2
+   invoke                 431
+   load_int               20447262
+   load_string            "Javelin heads"
+   load_int               19572
+   load_int               0
+   iload                  2
+   invoke                 431
+   jump                   LABEL441
+LABEL423:
    load_int               20447260
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447261
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-LABEL423:
+   iload                  2
+   invoke                 431
    load_int               20447262
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL1682
-LABEL430:
-   033                    2
+   iload                  2
+   invoke                 431
+LABEL441:
+   jump                   LABEL1718
+LABEL442:
+   iload                  2
    load_int               2353
-   if_icmpeq              LABEL434
-   jump                   LABEL637
-LABEL434:
+   if_icmpeq              LABEL446
+   jump                   LABEL655
+LABEL446:
    load_int               20447234
    load_string            "Dagger"
    load_int               1207
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447235
    load_string            "Sword"
    load_int               1281
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447236
    load_string            "Scimitar"
    load_int               1325
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447237
    load_string            "Long sword"
    load_int               1295
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447238
    load_string            "2-hand sword"
    load_int               1311
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447239
    load_string            "Axe"
    load_int               1353
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447240
    load_string            "Mace"
    load_int               1424
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447241
    load_string            "Warhammer"
    load_int               1339
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447242
    load_string            "Battle axe"
    load_int               1365
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    get_settings           314
    load_int               80
-   if_icmpge              LABEL492
-   jump                   LABEL499
-LABEL492:
+   if_icmpge              LABEL504
+   jump                   LABEL511
+LABEL504:
    load_int               20447243
    load_string            "Claws"
    load_int               3097
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL505
-LABEL499:
+   iload                  2
+   invoke                 431
+   jump                   LABEL517
+LABEL511:
    load_int               20447243
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-LABEL505:
+   iload                  2
+   invoke                 431
+LABEL517:
    load_int               20447244
    load_string            "Chain body"
    load_int               1105
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447245
    load_string            "Plate legs"
    load_int               1069
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447246
    load_string            "Plate skirt"
    load_int               1083
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447247
    load_string            "Plate body"
    load_int               1119
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447248
    load_string            "Nails"
    load_int               1539
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447249
    load_string            "Medium helm"
    load_int               1141
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447250
    load_string            "Full helm"
    load_int               1157
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447251
    load_string            "Square shield"
    load_int               1177
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447252
    load_string            "Kite shield"
    load_int               1193
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447253
    load_string            "Bullseye lantern"
    load_int               4544
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447254
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447255
    load_string            "Dart tips"
    load_int               821
-   033                   
-   033                    2
-   040                    431
+   iload                  0
+   iload                  2
+   invoke                 431
    load_int               20447256
    load_string            "Arrowtips"
    load_int               41
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447257
-   load_string            "Throwing knives"
+   load_string            "Knives"
    load_int               865
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447258
    load_string            "Studs"
    load_int               2370
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447259
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    get_ismembers         
    load_int               1
-   if_icmpeq              LABEL605
-   jump                   LABEL618
-LABEL605:
+   if_icmpeq              LABEL617
+   jump                   LABEL636
+LABEL617:
    load_int               20447260
    load_string            "Bolts"
    load_int               9378
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447261
    load_string            "Limbs"
    load_int               9425
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL630
-LABEL618:
+   iload                  2
+   invoke                 431
+   load_int               20447262
+   load_string            "Javelin heads"
+   load_int               19574
+   load_int               0
+   iload                  2
+   invoke                 431
+   jump                   LABEL654
+LABEL636:
    load_int               20447260
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447261
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-LABEL630:
+   iload                  2
+   invoke                 431
    load_int               20447262
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL1682
-LABEL637:
-   033                    2
+   iload                  2
+   invoke                 431
+LABEL654:
+   jump                   LABEL1718
+LABEL655:
+   iload                  2
    load_int               2359
-   if_icmpeq              LABEL641
-   jump                   LABEL850
-LABEL641:
+   if_icmpeq              LABEL659
+   jump                   LABEL874
+LABEL659:
    load_int               20447234
    load_string            "Dagger"
    load_int               1209
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447235
    load_string            "Sword"
    load_int               1285
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447236
    load_string            "Scimitar"
    load_int               1329
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447237
    load_string            "Long sword"
    load_int               1299
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447238
    load_string            "2-hand sword"
    load_int               1315
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447239
    load_string            "Axe"
    load_int               1355
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447240
    load_string            "Mace"
    load_int               1428
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447241
    load_string            "Warhammer"
    load_int               1343
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447242
    load_string            "Battle axe"
    load_int               1369
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    get_settings           314
    load_int               80
-   if_icmpge              LABEL699
-   jump                   LABEL706
-LABEL699:
+   if_icmpge              LABEL717
+   jump                   LABEL724
+LABEL717:
    load_int               20447243
    load_string            "Claws"
    load_int               3099
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL712
-LABEL706:
+   iload                  2
+   invoke                 431
+   jump                   LABEL730
+LABEL724:
    load_int               20447243
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-LABEL712:
+   iload                  2
+   invoke                 431
+LABEL730:
    load_int               20447244
    load_string            "Chain body"
    load_int               1109
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447245
    load_string            "Plate legs"
    load_int               1071
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447246
    load_string            "Plate skirt"
    load_int               1085
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447247
    load_string            "Plate body"
    load_int               1121
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447248
    load_string            "Nails"
    load_int               4822
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447249
    load_string            "Medium helm"
    load_int               1143
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447250
    load_string            "Full helm"
    load_int               1159
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447251
    load_string            "Square shield"
    load_int               1181
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447252
    load_string            "Kite shield"
    load_int               1197
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447253
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447254
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447255
    load_string            "Dart tips"
    load_int               822
-   033                   
-   033                    2
-   040                    431
+   iload                  0
+   iload                  2
+   invoke                 431
    load_int               20447256
    load_string            "Arrowtips"
    load_int               42
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447257
-   load_string            "Thrown knives"
+   load_string            "Knives"
    load_int               866
    load_int               0
-   033                    2
-   040                    431
-   load_int               20447258
-   load_string            ""
-   load_int               -1
-   load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447259
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    get_ismembers         
    load_int               1
-   if_icmpeq              LABEL812
-   jump                   LABEL831
-LABEL812:
+   if_icmpeq              LABEL824
+   jump                   LABEL849
+LABEL824:
    load_int               20447260
    load_string            "Bolts"
    load_int               9379
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447261
    load_string            "Limbs"
    load_int               9427
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447262
+   load_string            "Javelin heads"
+   load_int               19576
+   load_int               0
+   iload                  2
+   invoke                 431
+   load_int               20447258
    load_string            "Grapple Tip"
    load_int               9416
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL849
-LABEL831:
+   iload                  2
+   invoke                 431
+   jump                   LABEL873
+LABEL849:
    load_int               20447260
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447261
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447262
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-LABEL849:
-   jump                   LABEL1682
-LABEL850:
-   033                    2
+   iload                  2
+   invoke                 431
+   load_int               20447258
+   load_string            ""
+   load_int               -1
+   load_int               0
+   iload                  2
+   invoke                 431
+LABEL873:
+   jump                   LABEL1718
+LABEL874:
+   iload                  2
    load_int               2361
-   if_icmpeq              LABEL854
-   jump                   LABEL1057
-LABEL854:
+   if_icmpeq              LABEL878
+   jump                   LABEL1087
+LABEL878:
    load_int               20447234
    load_string            "Dagger"
    load_int               1211
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447235
    load_string            "Sword"
    load_int               1287
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447236
    load_string            "Scimitar"
    load_int               1331
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447237
    load_string            "Long sword"
    load_int               1301
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447238
    load_string            "2-hand sword"
    load_int               1317
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447239
    load_string            "Axe"
    load_int               1357
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447240
    load_string            "Mace"
    load_int               1430
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447241
    load_string            "Warhammer"
    load_int               1345
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447242
    load_string            "Battle axe"
    load_int               1371
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    get_settings           314
    load_int               80
-   if_icmpge              LABEL912
-   jump                   LABEL919
-LABEL912:
+   if_icmpge              LABEL936
+   jump                   LABEL943
+LABEL936:
    load_int               20447243
    load_string            "Claws"
    load_int               3100
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL925
-LABEL919:
+   iload                  2
+   invoke                 431
+   jump                   LABEL949
+LABEL943:
    load_int               20447243
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-LABEL925:
+   iload                  2
+   invoke                 431
+LABEL949:
    load_int               20447244
    load_string            "Chain body"
    load_int               1111
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447245
    load_string            "Plate legs"
    load_int               1073
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447246
    load_string            "Plate skirt"
    load_int               1091
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447247
    load_string            "Plate body"
    load_int               1123
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447248
    load_string            "Nails"
    load_int               4823
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447249
    load_string            "Medium helm"
    load_int               1145
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447250
    load_string            "Full helm"
    load_int               1161
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447251
    load_string            "Square shield"
    load_int               1183
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447252
    load_string            "Kite shield"
    load_int               1199
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447253
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447254
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447255
    load_string            "Dart tips"
    load_int               823
-   033                   
-   033                    2
-   040                    431
+   iload                  0
+   iload                  2
+   invoke                 431
    load_int               20447256
    load_string            "Arrowtips"
    load_int               43
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447257
-   load_string            "Throwing knives"
+   load_string            "Knives"
    load_int               867
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447258
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447259
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    get_ismembers         
    load_int               1
-   if_icmpeq              LABEL1025
-   jump                   LABEL1038
-LABEL1025:
+   if_icmpeq              LABEL1049
+   jump                   LABEL1068
+LABEL1049:
    load_int               20447260
    load_string            "Bolts"
    load_int               9380
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447261
    load_string            "Limbs"
    load_int               9429
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL1050
-LABEL1038:
+   iload                  2
+   invoke                 431
+   load_int               20447262
+   load_string            "Javelin heads"
+   load_int               19578
+   load_int               0
+   iload                  2
+   invoke                 431
+   jump                   LABEL1086
+LABEL1068:
    load_int               20447260
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447261
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-LABEL1050:
+   iload                  2
+   invoke                 431
    load_int               20447262
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL1682
-LABEL1057:
-   033                    2
+   iload                  2
+   invoke                 431
+LABEL1086:
+   jump                   LABEL1718
+LABEL1087:
+   iload                  2
    load_int               2363
-   if_icmpeq              LABEL1061
-   jump                   LABEL1264
-LABEL1061:
+   if_icmpeq              LABEL1091
+   jump                   LABEL1300
+LABEL1091:
    load_int               20447234
    load_string            "Dagger"
    load_int               1213
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447235
    load_string            "Sword"
    load_int               1289
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447236
    load_string            "Scimitar"
    load_int               1333
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447237
    load_string            "Long sword"
    load_int               1303
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447238
    load_string            "2-hand sword"
    load_int               1319
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447239
    load_string            "Axe"
    load_int               1359
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447240
    load_string            "Mace"
    load_int               1432
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447241
    load_string            "Warhammer"
    load_int               1347
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447242
    load_string            "Battle axe"
    load_int               1373
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    get_settings           314
    load_int               80
-   if_icmpge              LABEL1119
-   jump                   LABEL1126
-LABEL1119:
+   if_icmpge              LABEL1149
+   jump                   LABEL1156
+LABEL1149:
    load_int               20447243
    load_string            "Claws"
    load_int               3101
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL1132
-LABEL1126:
+   iload                  2
+   invoke                 431
+   jump                   LABEL1162
+LABEL1156:
    load_int               20447243
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-LABEL1132:
+   iload                  2
+   invoke                 431
+LABEL1162:
    load_int               20447244
    load_string            "Chain body"
    load_int               1113
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447245
    load_string            "Plate legs"
    load_int               1079
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447246
    load_string            "Plate skirt"
    load_int               1093
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447247
    load_string            "Plate body"
    load_int               1127
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447248
    load_string            "Nails"
    load_int               4824
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447249
    load_string            "Medium helm"
    load_int               1147
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447250
    load_string            "Full helm"
    load_int               1163
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447251
    load_string            "Square shield"
    load_int               1185
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447252
    load_string            "Kite shield"
    load_int               1201
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447253
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447254
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447255
    load_string            "Dart tips"
    load_int               824
-   033                   
-   033                    2
-   040                    431
+   iload                  0
+   iload                  2
+   invoke                 431
    load_int               20447256
    load_string            "Arrowtips"
    load_int               44
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447257
-   load_string            "Throwing knives"
+   load_string            "Knives"
    load_int               868
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447258
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447259
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    get_ismembers         
    load_int               1
-   if_icmpeq              LABEL1232
-   jump                   LABEL1245
-LABEL1232:
+   if_icmpeq              LABEL1262
+   jump                   LABEL1281
+LABEL1262:
    load_int               20447260
    load_string            "Bolts"
    load_int               9381
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447261
    load_string            "Limbs"
    load_int               9431
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL1257
-LABEL1245:
+   iload                  2
+   invoke                 431
+   load_int               20447262
+   load_string            "Javelin heads"
+   load_int               19580
+   load_int               0
+   iload                  2
+   invoke                 431
+   jump                   LABEL1299
+LABEL1281:
    load_int               20447260
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447261
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-LABEL1257:
+   iload                  2
+   invoke                 431
    load_int               20447262
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL1682
-LABEL1264:
-   033                    2
+   iload                  2
+   invoke                 431
+LABEL1299:
+   jump                   LABEL1718
+LABEL1300:
+   iload                  2
    load_int               13354
-   if_icmpeq              LABEL1268
-   jump                   LABEL1508
-LABEL1268:
-   025                    4898
+   if_icmpeq              LABEL1304
+   jump                   LABEL1544
+LABEL1304:
+   get_varbit             4898
    load_int               105
    load_int               105
    load_int               1267
    load_int               13
-   3408                  
-   if_icmplt              LABEL1276
-   jump                   LABEL1279
-LABEL1276:
+   get_enum_value        
+   if_icmplt              LABEL1312
+   jump                   LABEL1315
+LABEL1312:
    load_int               1
-   034                    1
-   jump                   LABEL1281
-LABEL1279:
+   istore                 1
+   jump                   LABEL1317
+LABEL1315:
    load_int               0
-   034                    1
-LABEL1281:
+   istore                 1
+LABEL1317:
    load_int               20447234
    load_string            "Gloves (1)"
    load_int               13538
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447235
    load_string            "Boots (1)"
    load_int               13539
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447236
    load_string            "Helm (1)"
    load_int               13540
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447237
    load_string            "Greaves (1)"
    load_int               13541
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447238
    load_string            "Platebody (1)"
    load_int               13542
-   033                    1
-   033                    2
-   040                    431
-   025                    4898
+   iload                  1
+   iload                  2
+   invoke                 431
+   get_varbit             4898
    load_int               105
    load_int               105
    load_int               1267
    load_int               14
-   3408                  
-   if_icmplt              LABEL1319
-   jump                   LABEL1322
-LABEL1319:
+   get_enum_value        
+   if_icmplt              LABEL1355
+   jump                   LABEL1358
+LABEL1355:
    load_int               1
-   034                    1
-   jump                   LABEL1324
-LABEL1322:
+   istore                 1
+   jump                   LABEL1360
+LABEL1358:
    load_int               0
-   034                    1
-LABEL1324:
+   istore                 1
+LABEL1360:
    load_int               20447239
    load_string            "Gloves (2)"
    load_int               13543
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447240
    load_string            "Boots (2)"
    load_int               13544
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447241
    load_string            "Helm (2)"
    load_int               13545
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447242
    load_string            "Greaves (2)"
    load_int               13546
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447243
    load_string            "Platebody (2)"
    load_int               13547
-   033                    1
-   033                    2
-   040                    431
-   025                    4898
+   iload                  1
+   iload                  2
+   invoke                 431
+   get_varbit             4898
    load_int               105
    load_int               105
    load_int               1267
    load_int               15
-   3408                  
-   if_icmplt              LABEL1362
-   jump                   LABEL1365
-LABEL1362:
+   get_enum_value        
+   if_icmplt              LABEL1398
+   jump                   LABEL1401
+LABEL1398:
    load_int               1
-   034                    1
-   jump                   LABEL1367
-LABEL1365:
+   istore                 1
+   jump                   LABEL1403
+LABEL1401:
    load_int               0
-   034                    1
-LABEL1367:
+   istore                 1
+LABEL1403:
    load_int               20447244
    load_string            "Gloves (3)"
    load_int               13548
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447245
    load_string            "Boots (3)"
    load_int               13549
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447246
    load_string            "Helm (3)"
    load_int               13550
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447247
    load_string            "Greaves (3)"
    load_int               13551
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447248
    load_string            "Platebody (3)"
    load_int               13552
-   033                    1
-   033                    2
-   040                    431
-   025                    4898
+   iload                  1
+   iload                  2
+   invoke                 431
+   get_varbit             4898
    load_int               105
    load_int               105
    load_int               1267
    load_int               16
-   3408                  
-   if_icmplt              LABEL1405
-   jump                   LABEL1408
-LABEL1405:
+   get_enum_value        
+   if_icmplt              LABEL1441
+   jump                   LABEL1444
+LABEL1441:
    load_int               1
-   034                    1
-   jump                   LABEL1410
-LABEL1408:
+   istore                 1
+   jump                   LABEL1446
+LABEL1444:
    load_int               0
-   034                    1
-LABEL1410:
+   istore                 1
+LABEL1446:
    load_int               20447249
    load_string            "Gloves (4)"
    load_int               13553
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447250
    load_string            "Boots (4)"
    load_int               13554
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447251
    load_string            "Helm (4)"
    load_int               13555
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447252
    load_string            "Greaves (4)"
    load_int               13556
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447253
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447254
    load_string            "Platebody (4)"
    load_int               13557
-   033                    1
-   033                    2
-   040                    431
-   025                    4898
+   iload                  1
+   iload                  2
+   invoke                 431
+   get_varbit             4898
    load_int               105
    load_int               105
    load_int               1267
    load_int               17
-   3408                  
-   if_icmplt              LABEL1454
-   jump                   LABEL1457
-LABEL1454:
+   get_enum_value        
+   if_icmplt              LABEL1490
+   jump                   LABEL1493
+LABEL1490:
    load_int               1
-   034                    1
-   jump                   LABEL1459
-LABEL1457:
+   istore                 1
+   jump                   LABEL1495
+LABEL1493:
    load_int               0
-   034                    1
-LABEL1459:
+   istore                 1
+LABEL1495:
    load_int               20447255
    load_string            "Gloves (5)"
    load_int               13558
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447256
    load_string            "Boots (5)"
    load_int               13559
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447257
    load_string            "Helm (5)"
    load_int               13560
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447258
    load_string            "Greaves (5)"
    load_int               13561
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447259
    load_string            "Platebody (5)"
    load_int               13562
-   033                    1
-   033                    2
-   040                    431
+   iload                  1
+   iload                  2
+   invoke                 431
    load_int               20447260
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447261
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447262
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-   jump                   LABEL1682
-LABEL1508:
+   iload                  2
+   invoke                 431
+   jump                   LABEL1718
+LABEL1544:
    load_int               20447234
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447235
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447236
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447237
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447238
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447239
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447240
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447241
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447242
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447243
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447244
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447245
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447246
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447247
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447248
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447249
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447250
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447251
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447252
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447253
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447254
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447255
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447256
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447257
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447258
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447259
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447260
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447261
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
+   iload                  2
+   invoke                 431
    load_int               20447262
    load_string            ""
    load_int               -1
    load_int               0
-   033                    2
-   040                    431
-LABEL1682:
+   iload                  2
+   invoke                 431
+LABEL1718:
    return                

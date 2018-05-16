@@ -1,19 +1,23 @@
-   033                   
+.int_stack_count    9
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   0
+   iload                  0
    load_int               1
    if_icmpne              LABEL4
    jump                   LABEL5
 LABEL4:
    return                
 LABEL5:
-   033                    2
+   iload                  2
    load_int               1
    isub                  
-   034                    2
+   istore                 2
    load_int               105
    load_int               115
    load_int               1246
-   033                    2
-   3408                  
+   iload                  2
+   get_enum_value        
    string_length         
    load_int               0
    if_icmple              LABEL18
@@ -21,29 +25,29 @@ LABEL5:
 LABEL18:
    return                
 LABEL19:
-   033                    1
-   033                    6
+   iload                  1
+   iload                  6
    if_icmpeq              LABEL23
    jump                   LABEL26
 LABEL23:
-   033                    2
+   iload                  2
    put_settings           1107
    jump                   LABEL32
 LABEL26:
-   033                    1
-   033                    8
+   iload                  1
+   iload                  8
    if_icmpeq              LABEL30
    jump                   LABEL32
 LABEL30:
-   033                    2
+   iload                  2
    put_settings           1306
 LABEL32:
-   033                    5
-   033                    7
-   040                    1131
-   033                    3
-   033                    4
-   033                    5
-   033                    7
-   040                    1129
+   iload                  5
+   iload                  7
+   invoke                 1131
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  7
+   invoke                 1129
    return                

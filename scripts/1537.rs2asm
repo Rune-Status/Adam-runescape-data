@@ -1,0 +1,101 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   2
+   get_varbit             5426
+   int_to_string         
+   load_int               3
+   invoke                 1503
+   sstore                 0
+   get_varbit             5427
+   int_to_string         
+   load_int               4
+   invoke                 1503
+   sstore                 1
+   load_int               0
+   istore                 0
+LABEL12:
+   iload                  0
+   get_varc               178
+   if_icmplt              LABEL16
+   jump                   LABEL83
+LABEL16:
+   load_int               33226762
+   iload                  0
+   load_int               6
+   imul                  
+   load_int               4
+   iadd                  
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL26
+   jump                   LABEL47
+LABEL26:
+   load_int               33226762
+   iload                  0
+   load_int               6
+   imul                  
+   load_int               2
+   iadd                  
+   widget_load_child      1
+   load_int               1
+   if_icmpeq              LABEL36
+   jump                   LABEL47
+LABEL36:
+   widget_get_text       
+   sload                  0
+   string_compare        
+   load_int               0
+   if_icmplt              LABEL42
+   jump                   LABEL45
+LABEL42:
+   load_int               16711680
+   widget_put_textcolor   1
+   jump                   LABEL47
+LABEL45:
+   load_int               16750623
+   widget_put_textcolor   1
+LABEL47:
+   load_int               33226762
+   iload                  0
+   load_int               6
+   imul                  
+   load_int               5
+   iadd                  
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL57
+   jump                   LABEL78
+LABEL57:
+   load_int               33226762
+   iload                  0
+   load_int               6
+   imul                  
+   load_int               3
+   iadd                  
+   widget_load_child      1
+   load_int               1
+   if_icmpeq              LABEL67
+   jump                   LABEL78
+LABEL67:
+   widget_get_text       
+   sload                  1
+   string_compare        
+   load_int               0
+   if_icmplt              LABEL73
+   jump                   LABEL76
+LABEL73:
+   load_int               16711680
+   widget_put_textcolor   1
+   jump                   LABEL78
+LABEL76:
+   load_int               16750623
+   widget_put_textcolor   1
+LABEL78:
+   iload                  0
+   load_int               1
+   iadd                  
+   istore                 0
+   jump                   LABEL12
+LABEL83:
+   return                

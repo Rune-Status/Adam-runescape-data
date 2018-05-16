@@ -1,54 +1,58 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
    load_int               715
    load_int               175
    isub                  
-   034                   
+   istore                 0
    load_int               700
    load_int               195
    isub                  
-   034                    1
+   istore                 1
    load_int               17104904
    widget_get_width_widget
    load_int               17104909
    widget_get_width_widget
    isub                  
-   034                    2
+   istore                 2
    load_int               0
-   034                    3
+   istore                 3
    load_int               0
-   034                    4
-   6203                  
-   034                    4
-   034                    3
+   istore                 4
+   get_viewport_size     
+   istore                 4
+   istore                 3
    load_int               0
-   034                    5
-   033                    3
+   istore                 5
+   iload                  3
    load_int               334
    if_icmpgt              LABEL27
    jump                   LABEL36
 LABEL27:
-   042                    74
+   get_varc               74
    load_int               175
    isub                  
-   033                    2
+   iload                  2
    imul                  
-   033                   
+   iload                  0
    idiv                  
-   034                    5
+   istore                 5
    jump                   LABEL44
 LABEL36:
-   042                    73
+   get_varc               73
    load_int               195
    isub                  
-   033                    2
+   iload                  2
    imul                  
-   033                    1
+   iload                  1
    idiv                  
-   034                    5
+   istore                 5
 LABEL44:
-   033                    5
+   iload                  5
    load_int               0
    load_int               0
    load_int               0
    load_int               17104909
-   2000                  
+   widget_put_position_widget
    return                

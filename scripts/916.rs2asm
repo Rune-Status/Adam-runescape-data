@@ -1,108 +1,112 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      7
+.string_var_count   0
    load_int               -1
-   034                    2
+   istore                 2
    load_int               -1
-   034                    3
+   istore                 3
    load_int               -1
-   034                    4
+   istore                 4
    load_int               0
-   034                    5
+   istore                 5
    load_int               105
    load_int               73
    load_int               1138
-   033                    5
-   3408                  
-   034                    6
+   iload                  5
+   get_enum_value        
+   istore                 6
 LABEL14:
-   033                    6
+   iload                  6
    load_int               -1
    if_icmpne              LABEL18
    jump                   LABEL65
 LABEL18:
    load_int               73
    load_int               73
-   033                    1
-   033                    6
-   3408                  
-   034                    6
-   033                    6
+   iload                  1
+   iload                  6
+   get_enum_value        
+   istore                 6
+   iload                  6
    load_int               -1
    if_icmpne              LABEL28
    jump                   LABEL54
 LABEL28:
    load_int               -1
-   033                    6
-   widget_put_textureid_widget
+   iload                  6
+   widget_put_spriteid_widget
    load_int               105
    load_int               73
    load_int               1137
-   033                    5
-   3408                  
-   034                    2
+   iload                  5
+   get_enum_value        
+   istore                 2
    load_int               73
    load_int               73
-   033                    1
-   033                    2
-   3408                  
-   034                    2
+   iload                  1
+   iload                  2
+   get_enum_value        
+   istore                 2
    load_int               1
-   033                    2
+   iload                  2
    widget_put_hidden_widget
-   033                    5
-   033                   
+   iload                  5
+   iload                  0
    if_icmpeq              LABEL50
    jump                   LABEL54
 LABEL50:
-   033                    2
-   033                    6
-   034                    4
-   034                    3
+   iload                  2
+   iload                  6
+   istore                 4
+   istore                 3
 LABEL54:
-   033                    5
+   iload                  5
    load_int               1
    iadd                  
-   034                    5
+   istore                 5
    load_int               105
    load_int               73
    load_int               1138
-   033                    5
-   3408                  
-   034                    6
+   iload                  5
+   get_enum_value        
+   istore                 6
    jump                   LABEL14
 LABEL65:
-   033                    3
+   iload                  3
    load_int               -1
    if_icmpne              LABEL69
    jump                   LABEL91
 LABEL69:
-   033                    4
+   iload                  4
    load_int               -1
    if_icmpne              LABEL73
    jump                   LABEL91
 LABEL73:
-   033                   
-   043                    171
-   033                    3
-   2702                  
+   iload                  0
+   put_varc               171
+   iload                  3
+   widget_get_index_widget
    load_int               1
    if_icmpeq              LABEL80
    jump                   LABEL90
 LABEL80:
    load_int               0
-   033                    3
+   iload                  3
    widget_put_hidden_widget
    load_int               73
    load_int               100
    load_int               1133
-   033                    4
-   3408                  
-   033                    4
-   widget_put_textureid_widget
+   iload                  4
+   get_enum_value        
+   iload                  4
+   widget_put_spriteid_widget
 LABEL90:
    jump                   LABEL93
 LABEL91:
    load_int               -1
-   043                    171
+   put_varc               171
 LABEL93:
-   033                    1
-   040                    919
+   iload                  1
+   invoke                 919
    return                

@@ -1,0 +1,45 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  1
+   load_int               1
+   invoke                 1045
+   istore                 1
+   iload                  0
+   widget_get_height_widget
+   load_int               10
+   isub                  
+   iload                  1
+   idiv                  
+   load_int               25
+   invoke                 1046
+   istore                 2
+   load_int               0
+   iload                  2
+   iload                  1
+   load_int               2
+   idiv                  
+   imul                  
+   isub                  
+   istore                 3
+   iload                  1
+   load_int               2
+   modulo                
+   load_int               0
+   if_icmpeq              LABEL27
+   jump                   LABEL33
+LABEL27:
+   iload                  3
+   iload                  2
+   load_int               2
+   idiv                  
+   iadd                  
+   istore                 3
+LABEL33:
+   iload                  3
+   iload                  2
+   return                
+   load_int               0
+   load_int               0
+   return                

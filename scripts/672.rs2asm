@@ -1,60 +1,64 @@
+.int_stack_count    6
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   0
    load_int               93
-   3304                  
-   034                    6
-   033                    2
+   get_inventory_size    
+   istore                 6
+   iload                  2
    load_int               0
    if_icmplt              LABEL10
-   033                    2
-   033                    6
+   iload                  2
+   iload                  6
    if_icmpge              LABEL10
    jump                   LABEL11
 LABEL10:
    return                
 LABEL11:
-   033                    1
-   033                   
+   iload                  1
+   iload                  0
    if_icmpne              LABEL15
    jump                   LABEL33
 LABEL15:
-   033                   
-   033                    2
-   200                   
+   iload                  0
+   iload                  2
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL21
    jump                   LABEL32
 LABEL21:
-   033                    4
+   iload                  4
    widget_put_opacity    
    load_int               488
    load_int               -2147483645
    load_int               -2147483643
-   033                    5
+   iload                  5
    get_gamecycle         
    load_int               30
    iadd                  
    load_string            "Iiii"
-   1408                  
+   widget_put_render_listener
 LABEL32:
    return                
 LABEL33:
-   033                    2
-   033                    3
+   iload                  2
+   iload                  3
    if_icmpeq              LABEL43
-   033                    3
+   iload                  3
    load_int               0
    if_icmplt              LABEL43
-   033                    3
-   033                    6
+   iload                  3
+   iload                  6
    if_icmpge              LABEL43
    jump                   LABEL44
 LABEL43:
    return                
 LABEL44:
    load_int               93
-   033                    2
-   3301                  
-   034                    7
-   033                    7
+   iload                  2
+   get_itemcontainer_itemid
+   istore                 7
+   iload                  7
    load_int               -1
    if_icmpeq              LABEL52
    jump                   LABEL53
@@ -62,33 +66,33 @@ LABEL52:
    return                
 LABEL53:
    load_int               93
-   033                    3
-   3301                  
-   034                    8
-   033                   
-   033                    3
-   200                   
+   iload                  3
+   get_itemcontainer_itemid
+   istore                 8
+   iload                  0
+   iload                  3
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL63
    jump                   LABEL68
 LABEL63:
-   033                    7
+   iload                  7
    load_int               93
-   033                    2
-   3302                  
-   040                    671
+   iload                  2
+   get_itemcontainer_stacksize
+   invoke                 671
 LABEL68:
-   033                   
-   033                    2
-   200                   
+   iload                  0
+   iload                  2
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL74
    jump                   LABEL79
 LABEL74:
-   033                    8
+   iload                  8
    load_int               93
-   033                    3
-   3302                  
-   040                    671
+   iload                  3
+   get_itemcontainer_stacksize
+   invoke                 671
 LABEL79:
    return                

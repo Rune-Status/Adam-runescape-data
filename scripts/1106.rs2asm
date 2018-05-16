@@ -1,58 +1,62 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    load_int               0
-   034                    2
-   033                    1
+   istore                 2
+   iload                  1
    load_int               60
    if_icmple              LABEL6
    jump                   LABEL55
 LABEL6:
-   033                   
+   iload                  0
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL12
    jump                   LABEL18
 LABEL12:
    load_int               255
-   033                    1
+   iload                  1
    load_int               4
    imul                  
    isub                  
    widget_put_opacity    
 LABEL18:
-   033                   
+   iload                  0
    load_int               1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL24
    jump                   LABEL54
 LABEL24:
-   033                   
+   iload                  0
    load_int               2
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL30
    jump                   LABEL54
 LABEL30:
    load_int               2000
-   033                    1
+   iload                  1
    load_int               32
    imul                  
    isub                  
-   034                    2
+   istore                 2
    load_int               0
    load_int               120
    load_int               0
    load_int               0
    load_int               0
-   033                    2
-   1109                  
+   iload                  2
+   widget_put_3d_rotation
    load_int               0
    load_int               120
    load_int               0
    load_int               0
    load_int               0
-   033                    2
-   1109                   1
+   iload                  2
+   widget_put_3d_rotation 1
    load_int               7427
    widget_put_modelid_1  
    load_int               7428
@@ -60,39 +64,39 @@ LABEL30:
 LABEL54:
    return                
 LABEL55:
-   033                    1
+   iload                  1
    load_int               90
    if_icmple              LABEL59
    jump                   LABEL92
 LABEL59:
-   033                    1
+   iload                  1
    load_int               60
    isub                  
-   034                    1
-   033                   
+   istore                 1
+   iload                  0
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL69
    jump                   LABEL75
 LABEL69:
    load_int               15
-   033                    1
+   iload                  1
    load_int               8
    imul                  
    iadd                  
    widget_put_opacity    
 LABEL75:
-   033                   
+   iload                  0
    load_int               1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL81
    jump                   LABEL91
 LABEL81:
-   033                   
+   iload                  0
    load_int               2
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL87
    jump                   LABEL91
@@ -104,6 +108,6 @@ LABEL87:
 LABEL91:
    return                
 LABEL92:
-   033                   
-   102                   
+   iload                  0
+   widget_unset_children 
    return                

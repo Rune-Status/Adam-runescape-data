@@ -1,3 +1,7 @@
+.int_stack_count    14
+.string_stack_count 0
+.int_var_count      14
+.string_var_count   0
    load_worlds           
    load_int               0
    if_icmpeq              LABEL4
@@ -7,62 +11,62 @@ LABEL4:
 LABEL5:
    load_int               -1
    load_string            ""
-   033                   
-   2408                  
+   iload                  0
+   widget_put_render_listener_widget
    load_string            "Current world - "
-   get_world             
+   get_worldnum          
    int_to_string         
-   037                    2
-   033                    1
-   2112                  
+   string_append          2
+   iload                  1
+   widget_put_text_widget
    load_int               0
-   033                    2
+   iload                  2
    widget_put_hidden_widget
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   033                    11
-   033                    12
-   033                    13
-   040                    892
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   iload                  13
+   invoke                 892
    load_int               891
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   033                    11
-   033                    12
-   033                    13
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   iload                  13
    load_int               477
    load_int               1
    load_string            "IIIIIIIIIIIIY"
-   033                   
-   2407                  
+   iload                  0
+   widget_put_config_listener_widget
    load_int               891
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   033                    11
-   033                    12
-   033                    13
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   iload                  13
    load_string            "IIIIIIIIIIII"
-   033                   
-   2415                  
+   iload                  0
+   widget_put_skill_listener_widget
    return                

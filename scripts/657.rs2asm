@@ -1,132 +1,136 @@
-   033                    2
+.int_stack_count    8
+.string_stack_count 1
+.int_var_count      9
+.string_var_count   1
+   iload                  2
    load_int               4
-   033                    6
+   iload                  6
    load_int               2
    imul                  
-   100                   
+   widget_create_child   
    load_int               26
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
-   033                    7
+   iload                  7
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               2
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               4600330
    widget_put_textcolor  
    load_int               497
    widget_put_fontid     
    load_int               0
-   1115                  
-   033                   
+   widget_put_text_shadowed
+   iload                  0
    load_int               0
    if_icmpgt              LABEL30
    jump                   LABEL34
 LABEL30:
-   033                   
+   iload                  0
    int_to_string         
-   1112                  
+   widget_put_text       
    jump                   LABEL36
 LABEL34:
    load_string            ""
-   1112                  
+   widget_put_text       
 LABEL36:
-   033                    3
+   iload                  3
    load_int               5
-   033                    6
-   100                   
+   iload                  6
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               28
-   033                    7
+   iload                  7
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               1
    widget_put_borderthickness
    load_int               6311474
-   1117                  
-   033                    1
+   widget_put_sprite2    
+   iload                  1
    load_int               -1
    1200                  
-   025                    4371
+   get_varbit             4371
    load_int               22
    if_icmpeq              LABEL61
    jump                   LABEL72
 LABEL61:
-   033                    5
+   iload                  5
    load_int               1
    if_icmpge              LABEL65
    jump                   LABEL72
 LABEL65:
-   033                    5
+   iload                  5
    load_int               11
    if_icmple              LABEL69
    jump                   LABEL72
 LABEL69:
    load_int               1
    load_string            "Check materials"
-   1300                  
+   widget_put_action     
 LABEL72:
-   033                    2
+   iload                  2
    load_int               4
-   033                    6
+   iload                  6
    load_int               2
    imul                  
    load_int               1
    iadd                  
-   100                   
-   035                   
-   033                    4
+   widget_create_child   
+   sload                  0
+   iload                  4
    load_int               495
-   4108                  
+   get_line_count        
    load_int               15
    imul                  
-   034                    8
-   033                    8
+   istore                 8
+   iload                  8
    load_int               32
    if_icmplt              LABEL91
    jump                   LABEL93
 LABEL91:
    load_int               32
-   034                    8
+   istore                 8
 LABEL93:
-   033                    4
-   033                    8
+   iload                  4
+   iload                  8
    load_int               0
    load_int               0
-   1001                  
-   033                    2
+   widget_put_size       
+   iload                  2
    widget_get_width_widget
-   033                    4
+   iload                  4
    isub                  
-   033                    7
+   iload                  7
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               4600330
    widget_put_textcolor  
    load_int               495
    widget_put_fontid     
    load_int               0
-   1115                  
-   035                   
-   1112                  
-   033                    7
-   033                    8
+   widget_put_text_shadowed
+   sload                  0
+   widget_put_text       
+   iload                  7
+   iload                  8
    iadd                  
    return                
    load_int               0

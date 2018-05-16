@@ -1,127 +1,132 @@
-   033                   
-   102                   
+.int_stack_count    7
+.string_stack_count 9
+.int_var_count      10
+.string_var_count   9
+   iload                  0
+   widget_unset_children 
    load_int               0
-   034                    6
+   istore                 7
    load_int               0
-   034                    7
-   033                   
+   istore                 8
+   iload                  0
    widget_get_scrollwidth_widget
    load_int               0
    if_icmpgt              LABEL11
    jump                   LABEL23
 LABEL11:
-   033                   
+   iload                  0
    widget_get_scrollwidth_widget
    load_int               36
-   033                    2
+   iload                  2
    imul                  
    isub                  
-   033                    2
+   iload                  2
    load_int               1
    isub                  
    idiv                  
-   034                    6
+   istore                 7
    jump                   LABEL34
 LABEL23:
-   033                   
+   iload                  0
    widget_get_width_widget
    load_int               36
-   033                    2
+   iload                  2
    imul                  
    isub                  
-   033                    2
+   iload                  2
    load_int               1
    isub                  
    idiv                  
-   034                    6
+   istore                 7
 LABEL34:
-   033                   
+   iload                  0
    widget_get_scrollheight_widget
    load_int               0
    if_icmpgt              LABEL39
    jump                   LABEL51
 LABEL39:
-   033                   
+   iload                  0
    widget_get_scrollheight_widget
    load_int               32
-   033                    3
+   iload                  3
    imul                  
    isub                  
-   033                    3
+   iload                  3
    load_int               1
    isub                  
    idiv                  
-   034                    7
+   istore                 8
    jump                   LABEL62
 LABEL51:
-   033                   
+   iload                  0
    widget_get_height_widget
    load_int               32
-   033                    3
+   iload                  3
    imul                  
    isub                  
-   033                    3
+   iload                  3
    load_int               1
    isub                  
    idiv                  
-   034                    7
+   istore                 8
 LABEL62:
    load_int               0
-   034                    8
+   istore                 9
 LABEL64:
-   033                    8
-   033                    2
-   033                    3
+   iload                  9
+   iload                  2
+   iload                  3
    imul                  
    if_icmple              LABEL70
-   jump                   LABEL117
+   jump                   LABEL118
 LABEL70:
-   033                   
+   iload                  0
    load_int               5
-   033                    8
-   100                   
+   iload                  9
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               36
-   033                    6
+   iload                  7
    iadd                  
-   033                    8
-   033                    2
+   iload                  9
+   iload                  2
    modulo                
    imul                  
-   033                    8
-   033                    2
+   iload                  9
+   iload                  2
    idiv                  
    load_int               32
-   033                    7
+   iload                  8
    iadd                  
    imul                  
    load_int               0
    load_int               0
-   1000                  
-   033                    1
-   033                    8
-   033                   
-   033                    8
-   033                    4
-   033                    5
-   035                   
-   035                    1
-   035                    2
-   035                    3
-   035                    4
-   035                    5
-   035                    6
-   035                    7
-   035                    8
-   040                    161
-   033                    8
+   widget_put_position   
+   iload                  1
+   iload                  9
+   iload                  0
+   iload                  9
+   iload                  4
+   iload                  5
+   sload                  0
+   sload                  1
+   sload                  2
+   sload                  3
+   sload                  4
+   sload                  5
+   sload                  6
+   sload                  7
+   sload                  8
+   iload                  6
+   invoke                 161
+   iload                  9
    load_int               1
    iadd                  
-   034                    8
+   istore                 9
    jump                   LABEL64
-LABEL117:
+LABEL118:
    return                

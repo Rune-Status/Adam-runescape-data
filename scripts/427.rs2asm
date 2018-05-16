@@ -1,30 +1,34 @@
+.int_stack_count    7
+.string_stack_count 0
+.int_var_count      8
+.string_var_count   0
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    load_int               1
-   033                    2
+   iload                  2
    widget_put_hidden_widget
    load_int               0
-   033                    3
+   iload                  3
    widget_put_hidden_widget
-   033                    5
-   102                   
+   iload                  5
+   widget_unset_children 
    load_int               33
    load_int               165
    load_int               0
    load_int               0
-   033                    6
-   2000                  
+   iload                  6
+   widget_put_position_widget
    load_int               0
-   033                    5
+   iload                  5
    widget_put_hidden_widget
    load_string            "<u=ff981f>"
    load_int               105
    load_int               115
    load_int               693
-   033                   
-   3408                  
+   iload                  0
+   get_enum_value        
    load_string            "</u>"
    load_string            "<br>"
    load_string            "<br>"
@@ -32,73 +36,73 @@
    load_string            "<br>"
    load_string            "<br>"
    load_string            "You will not get your points back."
-   037                    9
-   033                    4
-   2112                  
+   string_append          9
+   iload                  4
+   widget_put_text_widget
    load_int               0
-   034                    7
+   istore                 7
 LABEL39:
-   033                    7
-   033                    1
+   iload                  7
+   iload                  1
    if_icmplt              LABEL43
    jump                   LABEL54
 LABEL43:
-   033                    5
+   iload                  5
    load_int               3
-   033                    7
-   100                   
+   iload                  7
+   widget_create_child   
    load_int               1
    widget_put_hidden     
-   033                    7
+   iload                  7
    load_int               1
    iadd                  
-   034                    7
+   istore                 7
    jump                   LABEL39
 LABEL54:
-   033                    5
+   iload                  5
    load_int               3
-   033                    1
-   100                   
+   iload                  1
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               1
-   1102                  
+   widget_put_filled     
    load_int               255
    widget_put_opacity    
    load_int               1
    load_string            "Unblock"
-   1300                  
+   widget_put_action     
    load_int               319
    load_int               1
    load_int               -2147483644
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
    load_string            "1iIIIII"
-   1409                  
+   widget_put_option_click_listener
    load_int               1
    load_string            "Back"
-   033                    6
-   2300                  
+   iload                  6
+   widget_put_action_widget
    load_int               319
    load_int               0
    load_int               -2147483644
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
    load_string            "1iIIIII"
-   033                    6
-   2409                  
+   iload                  6
+   widget_put_option_click_listener_widget
    return                

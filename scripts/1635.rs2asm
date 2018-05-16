@@ -1,0 +1,32 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   iload                  0
+   invoke                 1509
+   get_varbit             5558
+   int_to_string         
+   widget_put_text       
+   load_int               81
+   istore                 1
+   get_varbit             5556
+   load_int               1
+   if_icmpeq              LABEL11
+   jump                   LABEL13
+LABEL11:
+   load_int               162
+   istore                 1
+LABEL13:
+   get_varbit             5558
+   iload                  1
+   if_icmpge              LABEL17
+   jump                   LABEL20
+LABEL17:
+   load_int               16711680
+   widget_put_textcolor  
+   jump                   LABEL22
+LABEL20:
+   load_int               13158600
+   widget_put_textcolor  
+LABEL22:
+   return                

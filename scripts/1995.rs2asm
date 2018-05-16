@@ -1,0 +1,94 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
+   get_varc               197
+   istore                 3
+   load_int               0
+   istore                 4
+   load_int               0
+   istore                 5
+   iload                  0
+   widget_load           
+   load_int               1
+   if_icmpeq              LABEL11
+   jump                   LABEL74
+LABEL11:
+   iload                  3
+   load_int               10120
+   if_icmplt              LABEL18
+   iload                  3
+   load_int               49220
+   if_icmpgt              LABEL18
+   jump                   LABEL23
+LABEL18:
+   load_int               33189
+   put_varc               197
+   load_int               33189
+   widget_put_textureid  
+   return                
+LABEL23:
+   iload                  1
+   iload                  3
+   if_icmpeq              LABEL27
+   jump                   LABEL32
+LABEL27:
+   load_int               -1
+   load_string            ""
+   iload                  0
+   widget_put_render_listener_widget
+   return                
+LABEL32:
+   iload                  2
+   load_int               0
+   if_icmpeq              LABEL36
+   jump                   LABEL39
+LABEL36:
+   load_int               45
+   set_varbit             5799
+   jump                   LABEL52
+LABEL39:
+   iload                  2
+   load_int               1
+   if_icmpeq              LABEL43
+   jump                   LABEL46
+LABEL43:
+   load_int               45
+   set_varbit             5799
+   jump                   LABEL52
+LABEL46:
+   iload                  2
+   load_int               2
+   if_icmpeq              LABEL50
+   jump                   LABEL52
+LABEL50:
+   load_int               45
+   set_varbit             5799
+LABEL52:
+   iload                  3
+   iload                  1
+   if_icmplt              LABEL56
+   jump                   LABEL59
+LABEL56:
+   get_varbit             5799
+   istore                 4
+   jump                   LABEL63
+LABEL59:
+   load_int               0
+   get_varbit             5799
+   isub                  
+   istore                 4
+LABEL63:
+   load_int               10120
+   load_int               49220
+   iload                  3
+   iload                  4
+   iadd                  
+   invoke                 1425
+   istore                 5
+   iload                  5
+   widget_put_textureid  
+   iload                  5
+   put_varc               197
+LABEL74:
+   return                

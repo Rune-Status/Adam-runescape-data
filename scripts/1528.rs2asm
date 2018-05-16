@@ -1,0 +1,22 @@
+.int_stack_count    4
+.string_stack_count 1
+.int_var_count      4
+.string_var_count   1
+   iload                  0
+   iload                  1
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL6
+   jump                   LABEL8
+LABEL6:
+   iload                  2
+   widget_put_opacity    
+LABEL8:
+   iload                  0
+   load_int               -1
+   iload                  3
+   sload                  0
+   load_int               25
+   load_int               190
+   invoke                 837
+   return                

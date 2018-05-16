@@ -1,86 +1,90 @@
-   033                   
-   102                   
-   033                    1
-   102                   
-   033                   
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   1
+   iload                  0
+   widget_unset_children 
+   iload                  1
+   widget_unset_children 
+   iload                  0
    widget_get_width_widget
-   034                    2
-   033                    2
+   istore                 2
+   iload                  2
    load_int               7
    idiv                  
-   034                    3
-   033                    3
+   istore                 3
+   iload                  3
    load_int               36
    isub                  
    load_int               2
    idiv                  
-   034                    4
+   istore                 4
    load_int               32
    load_int               20
    iadd                  
-   034                    5
+   istore                 5
    load_int               0
-   034                    6
+   istore                 6
    load_int               105
    load_int               79
    load_int               709
-   033                    6
-   3408                  
-   034                    7
+   iload                  6
+   get_enum_value        
+   istore                 7
 LABEL29:
-   033                    7
+   iload                  7
    load_int               -1
    if_icmpne              LABEL33
    jump                   LABEL82
 LABEL33:
-   033                   
+   iload                  0
    load_int               5
-   033                    6
+   iload                  6
    load_int               2
    imul                  
-   100                   
-   033                   
+   widget_create_child   
+   iload                  0
    load_int               4
-   033                    6
+   iload                  6
    load_int               2
    imul                  
    load_int               1
    iadd                  
-   100                    1
-   033                    4
-   033                    6
+   widget_create_child    1
+   iload                  4
+   iload                  6
    load_int               7
    modulo                
-   033                    3
+   iload                  3
    imul                  
    iadd                  
-   033                    6
+   iload                  6
    load_int               7
    idiv                  
-   033                    5
+   iload                  5
    imul                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    widget_get_relativex  
    widget_get_relativey  
    load_int               32
    iadd                  
    load_int               0
    load_int               0
-   1000                   1
-   033                    7
-   040                    303
-   033                    6
+   widget_put_position    1
+   iload                  7
+   invoke                 303
+   iload                  6
    load_int               1
    iadd                  
-   034                    6
+   istore                 6
    load_int               105
    load_int               79
    load_int               709
-   033                    6
-   3408                  
-   034                    7
+   iload                  6
+   get_enum_value        
+   istore                 7
    jump                   LABEL29
 LABEL82:
    load_string            "These items will give you a benefit in future Nightmare Zone dreams, and cannot be used elsewhere."
@@ -94,156 +98,156 @@ LABEL82:
    load_string            "white"
    load_string            "</col>"
    load_string            " show the number of doses you've got stored already."
-   037                    11
-   036                   
-   033                    1
+   string_append          11
+   sstore                 0
+   iload                  1
    widget_get_width_widget
-   034                    2
-   035                   
-   033                    2
+   istore                 2
+   sload                  0
+   iload                  2
    load_int               495
-   4108                  
+   get_line_count        
    load_int               12
    imul                  
    load_int               5
    iadd                  
-   034                    8
-   033                    2
+   istore                 8
+   iload                  2
    load_int               7
    idiv                  
-   034                    3
-   033                    3
+   istore                 3
+   iload                  3
    load_int               36
    isub                  
    load_int               2
    idiv                  
-   034                    4
+   istore                 4
    load_int               32
    load_int               40
    iadd                  
-   034                    5
+   istore                 5
    load_int               0
-   034                    6
+   istore                 6
    load_int               105
    load_int               79
    load_int               814
-   033                    6
-   3408                  
-   034                    7
+   iload                  6
+   get_enum_value        
+   istore                 7
 LABEL129:
-   033                    7
+   iload                  7
    load_int               -1
    if_icmpne              LABEL133
    jump                   LABEL224
 LABEL133:
-   033                    1
+   iload                  1
    load_int               5
-   033                    6
+   iload                  6
    load_int               3
    imul                  
-   100                   
-   033                    1
+   widget_create_child   
+   iload                  1
    load_int               4
-   033                    6
+   iload                  6
    load_int               3
    imul                  
    load_int               1
    iadd                  
-   100                    1
-   033                    4
-   033                    6
+   widget_create_child    1
+   iload                  4
+   iload                  6
    load_int               7
    modulo                
-   033                    3
+   iload                  3
    imul                  
    iadd                  
-   033                    8
-   033                    6
+   iload                  8
+   iload                  6
    load_int               7
    idiv                  
-   033                    5
+   iload                  5
    imul                  
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    widget_get_relativex  
    widget_get_relativey  
    load_int               32
    iadd                  
    load_int               0
    load_int               0
-   1000                   1
-   033                    7
-   040                    303
-   033                    1
+   widget_put_position    1
+   iload                  7
+   invoke                 303
+   iload                  1
    load_int               4
-   033                    6
+   iload                  6
    load_int               3
    imul                  
    load_int               2
    iadd                  
-   100                   
+   widget_create_child   
    load_int               36
    load_int               20
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    widget_get_relativex   1
    widget_get_relativey   1
    widget_get_height      1
    iadd                  
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               495
    widget_put_fontid     
    load_int               16777215
    widget_put_textcolor  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
    load_int               0
    load_int               0
-   1114                  
-   033                    7
-   040                    304
+   widget_put_text_alignment
+   iload                  7
+   invoke                 304
    load_int               251
    load_int               -2147483645
    load_int               -2147483643
-   033                    7
+   iload                  7
    load_int               1066
    load_int               1
    load_string            "IioY"
-   1407                  
-   033                    6
+   widget_put_config_listener
+   iload                  6
    load_int               1
    iadd                  
-   034                    6
+   istore                 6
    load_int               105
    load_int               79
    load_int               814
-   033                    6
-   3408                  
-   034                    7
+   iload                  6
+   get_enum_value        
+   istore                 7
    jump                   LABEL129
 LABEL224:
-   033                    1
+   iload                  1
    load_int               4
-   033                    6
+   iload                  6
    load_int               3
    imul                  
-   100                   
-   033                    2
-   033                    8
+   widget_create_child   
+   iload                  2
+   iload                  8
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               495
    widget_put_fontid     
    load_int               16750623
@@ -251,9 +255,9 @@ LABEL224:
    load_int               0
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               1
-   1115                  
-   035                   
-   1112                  
+   widget_put_text_shadowed
+   sload                  0
+   widget_put_text       
    return                

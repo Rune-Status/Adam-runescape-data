@@ -1,0 +1,77 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
+   get_gamecycle         
+   iload                  1
+   isub                  
+   load_int               40
+   modulo                
+   istore                 2
+   load_int               0
+   istore                 3
+   iload                  2
+   load_int               20
+   if_icmple              LABEL12
+   jump                   LABEL22
+LABEL12:
+   load_int               120
+   load_int               0
+   iload                  2
+   load_int               0
+   load_int               20
+   load_int               100
+   interpolate           
+   iadd                  
+   istore                 3
+   jump                   LABEL35
+LABEL22:
+   load_int               120
+   load_int               100
+   load_int               0
+   iload                  2
+   load_int               20
+   isub                  
+   load_int               0
+   load_int               20
+   load_int               100
+   interpolate           
+   isub                  
+   iadd                  
+   istore                 3
+LABEL35:
+   iload                  3
+   load_int               30
+   iadd                  
+   istore                 4
+   iload                  0
+   load_int               1
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL45
+   jump                   LABEL47
+LABEL45:
+   iload                  4
+   widget_put_opacity    
+LABEL47:
+   iload                  0
+   load_int               2
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL53
+   jump                   LABEL55
+LABEL53:
+   iload                  3
+   widget_put_opacity    
+LABEL55:
+   iload                  0
+   load_int               3
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL61
+   jump                   LABEL63
+LABEL61:
+   iload                  4
+   widget_put_opacity    
+LABEL63:
+   return                

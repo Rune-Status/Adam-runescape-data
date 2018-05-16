@@ -1,0 +1,352 @@
+.int_stack_count    10
+.string_stack_count 0
+.int_var_count      25
+.string_var_count   0
+   iload                  9
+   load_int               1
+   iadd                  
+   istore                 10
+   iload                  9
+   load_int               2
+   iadd                  
+   istore                 11
+   load_int               0
+   istore                 12
+   load_int               0
+   istore                 13
+   iload                  0
+   iload                  2
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   invoke                 1752
+   istore                 13
+   istore                 12
+   load_int               0
+   istore                 14
+   load_int               0
+   istore                 15
+   iload                  1
+   iload                  2
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   invoke                 1752
+   istore                 15
+   istore                 14
+   iload                  12
+   iload                  14
+   iload                  12
+   isub                  
+   load_int               2
+   idiv                  
+   iadd                  
+   istore                 16
+   iload                  13
+   iload                  15
+   iload                  13
+   isub                  
+   load_int               2
+   idiv                  
+   iadd                  
+   istore                 17
+   iload                  14
+   iload                  12
+   isub                  
+   istore                 18
+   iload                  15
+   iload                  13
+   isub                  
+   istore                 19
+   load_int               0
+   istore                 20
+   iload                  18
+   load_int               0
+   if_icmplt              LABEL66
+   jump                   LABEL86
+LABEL66:
+   iload                  19
+   load_int               0
+   if_icmplt              LABEL70
+   jump                   LABEL79
+LABEL70:
+   load_int               0
+   iload                  18
+   isub                  
+   load_int               0
+   iload                  19
+   isub                  
+   istore                 19
+   istore                 18
+   jump                   LABEL85
+LABEL79:
+   load_int               0
+   iload                  18
+   isub                  
+   load_int               1
+   istore                 20
+   istore                 18
+LABEL85:
+   jump                   LABEL96
+LABEL86:
+   iload                  19
+   load_int               0
+   if_icmplt              LABEL90
+   jump                   LABEL96
+LABEL90:
+   load_int               0
+   iload                  19
+   isub                  
+   load_int               1
+   istore                 20
+   istore                 19
+LABEL96:
+   iload                  4
+   iload                  9
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL102
+   jump                   LABEL123
+LABEL102:
+   get_varbit             5640
+   load_int               1
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL108
+   jump                   LABEL111
+LABEL108:
+   load_int               1
+   widget_put_hidden     
+   jump                   LABEL113
+LABEL111:
+   load_int               0
+   widget_put_hidden     
+LABEL113:
+   iload                  12
+   load_int               1
+   iadd                  
+   iload                  13
+   load_int               1
+   iadd                  
+   load_int               1
+   load_int               1
+   widget_put_position   
+   jump                   LABEL156
+LABEL123:
+   iload                  4
+   load_int               3
+   iload                  9
+   widget_create_child   
+   get_varbit             5640
+   load_int               1
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL133
+   jump                   LABEL136
+LABEL133:
+   load_int               1
+   widget_put_hidden     
+   jump                   LABEL138
+LABEL136:
+   load_int               0
+   widget_put_hidden     
+LABEL138:
+   iload                  12
+   load_int               1
+   iadd                  
+   iload                  13
+   load_int               1
+   iadd                  
+   load_int               1
+   load_int               1
+   widget_put_position   
+   iload                  3
+   iload                  3
+   load_int               0
+   load_int               0
+   widget_put_size       
+   load_int               0
+   widget_put_textcolor  
+   load_int               1
+   widget_put_filled     
+LABEL156:
+   load_int               0
+   istore                 21
+   load_int               0
+   istore                 22
+   load_int               0
+   istore                 23
+   load_int               0
+   istore                 24
+   iload                  4
+   iload                  10
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL170
+   jump                   LABEL187
+LABEL170:
+   get_varbit             5640
+   load_int               1
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL176
+   jump                   LABEL179
+LABEL176:
+   load_int               1
+   widget_put_hidden     
+   jump                   LABEL181
+LABEL179:
+   load_int               0
+   widget_put_hidden     
+LABEL181:
+   iload                  12
+   iload                  13
+   load_int               1
+   load_int               1
+   widget_put_position   
+   jump                   LABEL271
+LABEL187:
+   load_int               16776960
+   invoke                 2
+   istore                 23
+   istore                 22
+   istore                 21
+   iload                  21
+   load_int               48
+   isub                  
+   load_int               0
+   invoke                 1045
+   iload                  22
+   load_int               48
+   isub                  
+   load_int               0
+   invoke                 1045
+   iload                  23
+   load_int               48
+   isub                  
+   load_int               0
+   invoke                 1045
+   istore                 23
+   istore                 22
+   istore                 21
+   iload                  21
+   iload                  22
+   iload                  23
+   invoke                 246
+   istore                 24
+   iload                  4
+   load_int               3
+   iload                  10
+   widget_create_child   
+   get_varbit             5640
+   load_int               1
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL225
+   jump                   LABEL228
+LABEL225:
+   load_int               1
+   widget_put_hidden     
+   jump                   LABEL230
+LABEL228:
+   load_int               0
+   widget_put_hidden     
+LABEL230:
+   iload                  12
+   iload                  13
+   load_int               1
+   load_int               1
+   widget_put_position   
+   iload                  3
+   iload                  3
+   load_int               0
+   load_int               0
+   widget_put_size       
+   iload                  24
+   widget_put_textcolor  
+   load_int               1
+   widget_put_filled     
+   load_int               1755
+   load_int               1
+   iload                  4
+   iload                  10
+   load_int               -1
+   iload                  11
+   load_int               16776960
+   load_string            "1Iiiii"
+   widget_put_mouse_enter_listener
+   load_int               1755
+   load_int               0
+   iload                  4
+   iload                  10
+   load_int               -1
+   iload                  11
+   iload                  24
+   load_string            "1Iiiii"
+   widget_put_mouse_exit_listener
+   load_int               1
+   load_string            "Scroll map"
+   widget_put_action     
+   load_int               1756
+   load_int               -2147483644
+   iload                  1
+   iload                  2
+   load_string            "ic1"
+   widget_put_option_click_listener
+LABEL271:
+   iload                  4
+   iload                  11
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL277
+   jump                   LABEL288
+LABEL277:
+   iload                  16
+   iload                  17
+   load_int               1
+   load_int               1
+   widget_put_position   
+   iload                  18
+   iload                  19
+   load_int               0
+   load_int               0
+   widget_put_size       
+   jump                   LABEL314
+LABEL288:
+   iload                  4
+   load_int               9
+   iload                  11
+   widget_create_child   
+   iload                  16
+   iload                  17
+   load_int               1
+   load_int               1
+   widget_put_position   
+   iload                  18
+   iload                  19
+   load_int               0
+   load_int               0
+   widget_put_size       
+   iload                  20
+   1126                  
+   load_int               1
+   iload                  3
+   load_int               5
+   idiv                  
+   iadd                  
+   widget_put_line_width 
+   load_int               16776960
+   widget_put_textcolor  
+   load_int               1
+   widget_put_hidden     
+LABEL314:
+   iload                  11
+   load_int               1
+   iadd                  
+   return                
+   load_int               0
+   return                

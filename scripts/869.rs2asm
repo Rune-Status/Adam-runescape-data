@@ -1,6 +1,10 @@
-   040                    900
-   034                    2
-   033                    2
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   invoke                 900
+   istore                 2
+   iload                  2
    load_int               -1
    if_icmpeq              LABEL6
    jump                   LABEL7
@@ -10,15 +14,15 @@ LABEL7:
    load_int               103
    load_int               105
    load_int               1135
-   033                    2
-   3408                  
+   iload                  2
+   get_enum_value        
    load_int               103
    load_int               105
    load_int               1136
-   033                    2
-   3408                  
+   iload                  2
+   get_enum_value        
    load_int               1
    load_int               1
-   033                    1
-   2001                  
+   iload                  1
+   widget_put_size_widget
    return                

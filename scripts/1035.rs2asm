@@ -1,18 +1,22 @@
-   033                    1
-   033                    2
-   200                   
+.int_stack_count    5
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
+   iload                  1
+   iload                  2
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL30
 LABEL6:
-   033                    1
-   033                    3
-   200                    1
+   iload                  1
+   iload                  3
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL12
    jump                   LABEL30
 LABEL12:
-   033                   
+   iload                  0
    load_int               1
    if_icmpeq              LABEL16
    jump                   LABEL26
@@ -25,10 +29,10 @@ LABEL16:
    widget_get_relativey  
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    jump                   LABEL30
 LABEL26:
-   033                    4
+   iload                  4
    widget_put_textcolor  
    load_int               1
    widget_put_hidden      1

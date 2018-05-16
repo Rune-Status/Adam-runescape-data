@@ -1,84 +1,88 @@
+.int_stack_count    8
+.string_stack_count 0
+.int_var_count      10
+.string_var_count   0
    load_int               0
    load_int               0
-   043                    71
-   043                    70
-   042                    76
+   put_varc               71
+   put_varc               70
+   get_varc               76
    load_int               0
    if_icmple              LABEL8
    jump                   LABEL10
 LABEL8:
    get_gamecycle         
-   043                    76
+   put_varc               76
 LABEL10:
    load_int               0
-   034                    8
+   istore                 8
    load_int               105
    load_int               73
    load_int               1163
-   033                    8
-   3408                  
-   034                    9
+   iload                  8
+   get_enum_value        
+   istore                 9
 LABEL18:
-   033                    9
+   iload                  9
    load_int               -1
    if_icmpne              LABEL22
    jump                   LABEL52
 LABEL22:
-   033                    9
-   102                   
-   033                    9
+   iload                  9
+   widget_unset_children 
+   iload                  9
    load_int               4
    load_int               0
-   100                   
+   widget_create_child   
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               2
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_string            ""
-   1112                  
+   widget_put_text       
    load_int               1
    widget_put_hidden     
    load_int               1
-   033                    9
+   iload                  9
    widget_put_hidden_widget
-   033                    8
+   iload                  8
    load_int               1
    iadd                  
-   034                    8
+   istore                 8
    load_int               105
    load_int               73
    load_int               1163
-   033                    8
-   3408                  
-   034                    9
+   iload                  8
+   get_enum_value        
+   istore                 9
    jump                   LABEL18
 LABEL52:
-   033                   
-   033                    1
-   033                    3
-   033                    4
-   033                    6
-   033                    7
-   040                    995
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   040                    999
+   iload                  0
+   iload                  1
+   iload                  3
+   iload                  4
+   iload                  6
+   iload                  7
+   invoke                 995
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   invoke                 999
    load_int               994
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
    load_int               1227
    load_int               1228
    load_int               1229
@@ -130,16 +134,16 @@ LABEL52:
    load_int               1275
    load_int               49
    load_string            "IIIIIIIIY"
-   033                   
-   2407                  
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   040                    1003
+   iload                  0
+   widget_put_config_listener_widget
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   invoke                 1003
    return                

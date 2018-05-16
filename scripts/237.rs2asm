@@ -1,89 +1,93 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      10
+.string_var_count   1
    load_int               0
-   034                    1
+   istore                 1
    load_string            ""
-   036                   
+   sstore                 0
    load_int               -1
-   034                    2
+   istore                 2
    load_int               0
-   034                    3
+   istore                 3
    load_int               -1
-   034                    4
+   istore                 4
    load_int               0
-   034                    5
+   istore                 5
    load_int               -1
-   034                    6
+   istore                 6
    load_int               0
-   034                    7
+   istore                 7
    load_int               -1
-   034                    8
+   istore                 8
    load_int               0
-   034                    9
-   033                   
-   040                    242
-   034                    9
-   034                    8
-   034                    7
-   034                    6
-   034                    5
-   034                    4
-   034                    3
-   034                    2
-   036                   
-   034                    1
+   istore                 9
+   iload                  0
+   invoke                 242
+   istore                 9
+   istore                 8
+   istore                 7
+   istore                 6
+   istore                 5
+   istore                 4
+   istore                 3
+   istore                 2
+   sstore                 0
+   istore                 1
    load_int               6
    get_boostedskilllevels
-   033                    1
+   iload                  1
    if_icmpge              LABEL37
    jump                   LABEL76
 LABEL37:
-   033                    2
+   iload                  2
    load_int               -1
    if_icmpeq              LABEL45
-   033                    2
-   040                    19
-   033                    3
+   iload                  2
+   invoke                 19
+   iload                  3
    if_icmpge              LABEL45
    jump                   LABEL76
 LABEL45:
-   033                    4
+   iload                  4
    load_int               -1
    if_icmpeq              LABEL53
-   033                    4
-   040                    19
-   033                    5
+   iload                  4
+   invoke                 19
+   iload                  5
    if_icmpge              LABEL53
    jump                   LABEL76
 LABEL53:
-   033                    6
+   iload                  6
    load_int               -1
    if_icmpeq              LABEL61
-   033                    6
-   040                    19
-   033                    7
+   iload                  6
+   invoke                 19
+   iload                  7
    if_icmpge              LABEL61
    jump                   LABEL76
 LABEL61:
-   033                    8
+   iload                  8
    load_int               -1
    if_icmpeq              LABEL69
-   033                    8
-   040                    19
-   033                    9
+   iload                  8
+   invoke                 19
+   iload                  9
    if_icmpge              LABEL69
    jump                   LABEL76
 LABEL69:
    load_int               105
    load_int               100
    load_int               796
-   033                   
-   3408                  
-   widget_put_textureid  
+   iload                  0
+   get_enum_value        
+   widget_put_spriteid   
    return                
 LABEL76:
    load_int               105
    load_int               100
    load_int               795
-   033                   
-   3408                  
-   widget_put_textureid  
+   iload                  0
+   get_enum_value        
+   widget_put_spriteid   
    return                

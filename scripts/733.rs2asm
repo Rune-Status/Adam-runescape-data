@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    8
+.string_stack_count 0
+.int_var_count      10
+.string_var_count   0
+   iload                  0
    load_int               0
    if_icmpgt              LABEL4
    jump                   LABEL12
@@ -6,25 +10,25 @@ LABEL4:
    load_int               0
    load_int               4259853
    widget_put_hidden_widget
-   033                   
+   iload                  0
    int_to_string         
    load_int               4259853
-   2112                  
+   widget_put_text_widget
    jump                   LABEL15
 LABEL12:
    load_int               1
    load_int               4259853
    widget_put_hidden_widget
 LABEL15:
-   033                    1
+   iload                  1
    int_to_string         
    load_int               4259857
-   2112                  
-   033                    2
+   widget_put_text_widget
+   iload                  2
    int_to_string         
    load_int               4259861
-   2112                  
-   033                    4
+   widget_put_text_widget
+   iload                  4
    load_int               0
    if_icmpgt              LABEL27
    jump                   LABEL35
@@ -32,45 +36,45 @@ LABEL27:
    load_int               0
    load_int               4259873
    widget_put_hidden_widget
-   033                    4
+   iload                  4
    int_to_string         
    load_int               4259873
-   2112                  
+   widget_put_text_widget
    jump                   LABEL38
 LABEL35:
    load_int               1
    load_int               4259873
    widget_put_hidden_widget
 LABEL38:
-   033                    5
+   iload                  5
    int_to_string         
    load_int               4259877
-   2112                  
-   033                    6
+   widget_put_text_widget
+   iload                  6
    int_to_string         
    load_int               4259881
-   2112                  
-   033                   
-   033                    1
+   widget_put_text_widget
+   iload                  0
+   iload                  1
    iadd                  
-   033                    2
+   iload                  2
    iadd                  
-   034                    8
-   033                    4
-   033                    5
+   istore                 8
+   iload                  4
+   iload                  5
    iadd                  
-   033                    6
+   iload                  6
    iadd                  
-   034                    9
-   033                    8
+   istore                 9
+   iload                  8
    int_to_string         
    load_int               4259850
-   2112                  
-   033                    9
+   widget_put_text_widget
+   iload                  9
    int_to_string         
    load_int               4259870
-   2112                  
-   033                   
+   widget_put_text_widget
+   iload                  0
    load_int               0
    if_icmpgt              LABEL70
    jump                   LABEL74
@@ -84,7 +88,7 @@ LABEL74:
    load_int               4259851
    widget_put_hidden_widget
 LABEL77:
-   033                    4
+   iload                  4
    load_int               0
    if_icmpgt              LABEL81
    jump                   LABEL85
@@ -98,7 +102,7 @@ LABEL85:
    load_int               4259871
    widget_put_hidden_widget
 LABEL88:
-   033                    9
+   iload                  9
    load_int               0
    if_icmpgt              LABEL92
    jump                   LABEL96
@@ -112,13 +116,13 @@ LABEL96:
    load_int               4259889
    widget_put_hidden_widget
 LABEL99:
-   033                    3
+   iload                  3
    load_int               0
    if_icmpgt              LABEL106
-   033                    7
+   iload                  7
    load_int               0
    if_icmpgt              LABEL106
-   jump                   LABEL119
+   jump                   LABEL131
 LABEL106:
    load_int               1
    load_int               4259895
@@ -128,19 +132,31 @@ LABEL106:
    widget_put_hidden_widget
    load_string            "Redemption in progress"
    load_int               4259899
-   2112                  
+   widget_put_text_widget
    load_int               16750623
    load_int               4259899
    widget_put_textcolor_widget
-   jump                   LABEL150
-LABEL119:
-   033                    8
-   033                    9
+   load_int               1
+   load_int               4259922
+   widget_put_hidden_widget
+   load_int               0
+   load_int               4259925
+   widget_put_hidden_widget
+   load_string            "Redemption in progress"
+   load_int               4259926
+   widget_put_text_widget
+   load_int               16750623
+   load_int               4259926
+   widget_put_textcolor_widget
+   jump                   LABEL186
+LABEL131:
+   iload                  8
+   iload                  9
    iadd                  
    load_int               0
-   if_icmpgt              LABEL125
-   jump                   LABEL138
-LABEL125:
+   if_icmpgt              LABEL137
+   jump                   LABEL162
+LABEL137:
    load_int               0
    load_int               4259895
    widget_put_hidden_widget
@@ -149,12 +165,24 @@ LABEL125:
    widget_put_hidden_widget
    load_string            "Redeem now..."
    load_int               4259899
-   2112                  
+   widget_put_text_widget
    load_int               16777215
    load_int               4259899
    widget_put_textcolor_widget
-   jump                   LABEL150
-LABEL138:
+   load_int               0
+   load_int               4259922
+   widget_put_hidden_widget
+   load_int               1
+   load_int               4259925
+   widget_put_hidden_widget
+   load_string            "Redeem now..."
+   load_int               4259926
+   widget_put_text_widget
+   load_int               16777215
+   load_int               4259926
+   widget_put_textcolor_widget
+   jump                   LABEL186
+LABEL162:
    load_int               1
    load_int               4259895
    widget_put_hidden_widget
@@ -163,9 +191,21 @@ LABEL138:
    widget_put_hidden_widget
    load_string            "Nothing to redeem"
    load_int               4259899
-   2112                  
+   widget_put_text_widget
    load_int               16750623
    load_int               4259899
    widget_put_textcolor_widget
-LABEL150:
+   load_int               1
+   load_int               4259922
+   widget_put_hidden_widget
+   load_int               0
+   load_int               4259925
+   widget_put_hidden_widget
+   load_string            "Nothing to redeem"
+   load_int               4259926
+   widget_put_text_widget
+   load_int               16750623
+   load_int               4259926
+   widget_put_textcolor_widget
+LABEL186:
    return                

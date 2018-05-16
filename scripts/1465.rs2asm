@@ -1,0 +1,133 @@
+.int_stack_count    10
+.string_stack_count 0
+.int_var_count      11
+.string_var_count   1
+   load_int               10
+   istore                 10
+   load_int               0
+   iload                  10
+   load_int               1
+   load_int               0
+   iload                  4
+   widget_put_position_widget
+   load_int               0
+   iload                  10
+   load_int               20
+   iadd                  
+   load_int               1
+   load_int               0
+   iload                  5
+   widget_put_position_widget
+   load_string            "Monster loot notifications may be displayed when you receive items exceeding the specified value."
+   sstore                 0
+   load_int               526
+   load_int               -2147483645
+   load_int               -1
+   iload                  3
+   sload                  0
+   load_int               25
+   load_int               165
+   load_string            "IiIsii"
+   iload                  4
+   widget_put_mouse_hover_listener_widget
+   load_int               40
+   iload                  3
+   load_string            "I"
+   iload                  4
+   widget_put_mouse_exit_listener_widget
+   iload                  10
+   load_int               40
+   iadd                  
+   istore                 10
+   iload                  10
+   iload                  6
+   load_string            "Untradeable loot notifications:"
+   load_string            "Off"
+   load_string            "On"
+   iload                  3
+   load_string            "If loot notifications are enabled above, you can choose whether they include untradeable loot."
+   iload                  6
+   iload                  7
+   invoke                 1466
+   istore                 10
+   iload                  10
+   iload                  7
+   load_string            "Boss kill-count updates:"
+   load_string            "Unfiltered"
+   load_string            "Filtered"
+   iload                  3
+   load_string            "Boss kill-count updates can be blocked by the game message spam-filter."
+   iload                  6
+   iload                  7
+   invoke                 1466
+   istore                 10
+   iload                  10
+   load_int               10
+   iadd                  
+   istore                 10
+   load_int               0
+   iload                  10
+   load_int               1
+   load_int               0
+   iload                  8
+   widget_put_position_widget
+   load_int               0
+   iload                  10
+   load_int               20
+   iadd                  
+   load_int               1
+   load_int               0
+   iload                  9
+   widget_put_position_widget
+   load_string            "A warning may be displayed if you attempt to drop items exceeding the specified value."
+   sstore                 0
+   load_int               526
+   load_int               -2147483645
+   load_int               -1
+   iload                  3
+   sload                  0
+   load_int               25
+   load_int               165
+   load_string            "IiIsii"
+   iload                  8
+   widget_put_mouse_hover_listener_widget
+   load_int               40
+   iload                  3
+   load_string            "I"
+   iload                  8
+   widget_put_mouse_exit_listener_widget
+   iload                  10
+   load_int               40
+   iadd                  
+   istore                 10
+   iload                  10
+   iload                  1
+   widget_get_height_widget
+   if_icmpgt              LABEL103
+   jump                   LABEL108
+LABEL103:
+   load_int               0
+   iload                  10
+   iload                  1
+   widget_put_scrollwidthheight_widget
+   jump                   LABEL112
+LABEL108:
+   load_int               0
+   load_int               0
+   iload                  1
+   widget_put_scrollwidthheight_widget
+LABEL112:
+   load_int               0
+   load_int               0
+   iload                  1
+   widget_put_scroll_widget
+   iload                  2
+   iload                  1
+   load_int               792
+   load_int               789
+   load_int               790
+   load_int               791
+   load_int               773
+   load_int               788
+   invoke                 31
+   return                

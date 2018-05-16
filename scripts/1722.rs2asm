@@ -1,0 +1,75 @@
+.int_stack_count    4
+.string_stack_count 1
+.int_var_count      4
+.string_var_count   2
+   load_string            "-"
+   sstore                 1
+   iload                  1
+   load_int               1
+   if_icmpeq              LABEL6
+   jump                   LABEL8
+LABEL6:
+   load_string            "+"
+   sstore                 1
+LABEL8:
+   sload                  0
+   string_length         
+   load_int               0
+   if_icmpgt              LABEL13
+   jump                   LABEL46
+LABEL13:
+   iload                  0
+   load_int               0
+   load_int               0
+   sload                  1
+   invoke                 1724
+   load_int               1723
+   iload                  0
+   load_int               1
+   load_int               0
+   sload                  1
+   load_string            "I1is"
+   iload                  0
+   widget_put_mouse_hover_listener_widget
+   load_int               1723
+   iload                  0
+   load_int               0
+   load_int               0
+   sload                  1
+   load_string            "I1is"
+   iload                  0
+   widget_put_mouse_exit_listener_widget
+   load_int               1
+   sload                  0
+   iload                  0
+   widget_put_action_widget
+   load_int               1726
+   iload                  1
+   iload                  2
+   iload                  3
+   load_string            "1II"
+   iload                  0
+   widget_put_option_click_listener_widget
+   jump                   LABEL65
+LABEL46:
+   iload                  0
+   load_int               1
+   load_int               16711680
+   sload                  1
+   invoke                 1724
+   load_int               -1
+   load_string            ""
+   iload                  0
+   widget_put_mouse_hover_listener_widget
+   load_int               -1
+   load_string            ""
+   iload                  0
+   widget_put_mouse_exit_listener_widget
+   iload                  0
+   widget_put_actions_null_widget
+   load_int               -1
+   load_string            ""
+   iload                  0
+   widget_put_option_click_listener_widget
+LABEL65:
+   return                

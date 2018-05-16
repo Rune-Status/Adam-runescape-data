@@ -1,46 +1,57 @@
-   042                    11
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   1
+   get_varc               11
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL5
 LABEL4:
-   3103                  
+   close_window          
 LABEL5:
-   040                    677
+   invoke                 677
    load_string            "Enter the player name whose channel you wish to join:"
-   load_int               10616864
-   2112                  
+   load_int               10616865
+   widget_put_text_widget
    load_int               10
-   043                    5
+   put_varc               5
    load_string            ""
-   040                    222
+   invoke                 222
    load_string            ""
-   036                   
+   sstore                 0
    load_int               112
    load_int               -2147483640
    load_int               -2147483639
-   035                   
+   sload                  0
    load_string            "izs"
-   load_int               10616865
-   2419                  
-   040                    680
-   047                    129
+   load_int               10616866
+   widget_put_key_listener_widget
+   invoke                 680
+   get_varc_string        129
    string_length         
    load_int               0
    if_icmpgt              LABEL28
    jump                   LABEL41
 LABEL28:
-   040                    678
+   invoke                 678
    load_string            "<col=000000>"
    load_string            "Last name:"
    load_string            "</col>"
    load_string            " "
-   047                    129
-   037                    5
-   1112                  
+   get_varc_string        129
+   string_append          5
+   widget_put_text       
    load_int               682
    load_int               10
-   047                    129
+   get_varc_string        129
    load_string            "is"
-   1400                  
+   widget_put_mouse_press_listener
 LABEL41:
+   invoke                 1972
+   load_int               1
+   if_icmpeq              LABEL45
+   jump                   LABEL46
+LABEL45:
+   invoke                 1983
+LABEL46:
    return                

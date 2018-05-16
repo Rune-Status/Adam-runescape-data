@@ -1,0 +1,58 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   load_int               0
+   iload                  2
+   widget_get_width_widget
+   load_int               0
+   load_int               255
+   get_varbit             3377
+   interpolate           
+   istore                 3
+   iload                  3
+   load_int               0
+   load_int               0
+   load_int               1
+   iload                  0
+   widget_put_size_widget
+   iload                  2
+   widget_get_width_widget
+   iload                  3
+   isub                  
+   load_int               0
+   load_int               0
+   load_int               1
+   iload                  1
+   widget_put_size_widget
+   iload                  3
+   iload                  2
+   widget_get_width_widget
+   load_int               4
+   idiv                  
+   if_icmplt              LABEL30
+   jump                   LABEL34
+LABEL30:
+   load_int               15601937
+   iload                  0
+   widget_put_textcolor_widget
+   jump                   LABEL48
+LABEL34:
+   iload                  3
+   iload                  2
+   widget_get_width_widget
+   load_int               2
+   idiv                  
+   if_icmplt              LABEL41
+   jump                   LABEL45
+LABEL41:
+   load_int               15658513
+   iload                  0
+   widget_put_textcolor_widget
+   jump                   LABEL48
+LABEL45:
+   load_int               1175057
+   iload                  0
+   widget_put_textcolor_widget
+LABEL48:
+   return                

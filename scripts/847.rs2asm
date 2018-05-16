@@ -1,5 +1,9 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
    get_isresized         
-   033                   
+   iload                  0
    if_icmpeq              LABEL4
    jump                   LABEL5
 LABEL4:
@@ -8,19 +12,19 @@ LABEL5:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
-   033                   
+   play_sound_effect     
+   iload                  0
    set_isresized         
-   5308                  
-   033                   
+   get_screentype        
+   iload                  0
    if_icmpne              LABEL15
    jump                   LABEL17
 LABEL15:
-   033                   
-   5309                  
+   iload                  0
+   set_screentype        
 LABEL17:
-   033                    1
-   033                    2
-   033                    3
-   040                    843
+   iload                  1
+   iload                  2
+   iload                  3
+   invoke                 843
    return                

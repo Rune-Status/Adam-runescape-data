@@ -1,0 +1,66 @@
+.int_stack_count    0
+.string_stack_count 3
+.int_var_count      3
+.string_var_count   3
+   sload                  1
+   sload                  2
+   string_compare        
+   load_int               0
+   if_icmpeq              LABEL6
+   jump                   LABEL8
+LABEL6:
+   sload                  0
+   return                
+LABEL8:
+   sload                  1
+   string_length         
+   istore                 0
+   iload                  0
+   load_int               0
+   if_icmple              LABEL15
+   jump                   LABEL17
+LABEL15:
+   sload                  0
+   return                
+LABEL17:
+   load_int               0
+   istore                 1
+   sload                  0
+   sload                  1
+   load_int               0
+   string_indexof_from   
+   istore                 2
+LABEL24:
+   iload                  2
+   load_int               -1
+   if_icmpne              LABEL28
+   jump                   LABEL51
+LABEL28:
+   sload                  0
+   string_length         
+   istore                 1
+   sload                  0
+   load_int               0
+   iload                  2
+   string_substring      
+   sload                  2
+   concat_string         
+   sload                  0
+   iload                  2
+   iload                  0
+   iadd                  
+   iload                  1
+   string_substring      
+   concat_string         
+   sstore                 0
+   sload                  0
+   sload                  1
+   load_int               0
+   string_indexof_from   
+   istore                 2
+   jump                   LABEL24
+LABEL51:
+   sload                  0
+   return                
+   load_string            ""
+   return                

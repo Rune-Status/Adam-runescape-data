@@ -1,0 +1,349 @@
+.int_stack_count    6
+.string_stack_count 0
+.int_var_count      15
+.string_var_count   2
+   load_int               0
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   invoke                 1695
+   load_int               1694
+   get_gamecycle         
+   load_int               8
+   iadd                  
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   load_string            "iIIIIII"
+   iload                  3
+   widget_put_render_listener_widget
+   iload                  3
+   widget_unset_children 
+   iload                  0
+   widget_get_width_widget
+   istore                 6
+   load_int               0
+   istore                 7
+   load_int               0
+   istore                 8
+   load_int               0
+   istore                 9
+   load_int               0
+   istore                 10
+   load_string            ""
+   sstore                 0
+   load_string            ""
+   sstore                 1
+   load_int               0
+   istore                 11
+   load_int               0
+   istore                 12
+   load_int               0
+   istore                 13
+   get_friendcount       
+   istore                 14
+   iload                  14
+   load_int               -2
+   if_icmple              LABEL50
+   jump                   LABEL82
+LABEL50:
+   iload                  3
+   load_int               4
+   load_int               0
+   widget_create_child   
+   load_int               0
+   load_int               0
+   load_int               0
+   load_int               1
+   widget_put_position   
+   iload                  6
+   load_int               16384
+   load_int               2
+   idiv                  
+   load_int               0
+   load_int               2
+   widget_put_size       
+   load_int               16777060
+   widget_put_textcolor  
+   load_int               496
+   widget_put_fontid     
+   load_int               1
+   load_int               1
+   load_int               0
+   widget_put_text_alignment
+   load_int               1
+   widget_put_text_shadowed
+   load_string            "Loading friend list"
+   load_string            "<br>"
+   load_string            "Please wait"
+   string_append          3
+   widget_put_text       
+   jump                   LABEL308
+LABEL82:
+   iload                  14
+   load_int               -1
+   if_icmpeq              LABEL86
+   jump                   LABEL118
+LABEL86:
+   iload                  3
+   load_int               4
+   load_int               0
+   widget_create_child   
+   load_int               0
+   load_int               0
+   load_int               0
+   load_int               1
+   widget_put_position   
+   iload                  6
+   load_int               16384
+   load_int               2
+   idiv                  
+   load_int               0
+   load_int               2
+   widget_put_size       
+   load_int               16777060
+   widget_put_textcolor  
+   load_int               496
+   widget_put_fontid     
+   load_int               1
+   load_int               1
+   load_int               0
+   widget_put_text_alignment
+   load_int               1
+   widget_put_text_shadowed
+   load_string            "Connecting to server"
+   load_string            "<br>"
+   load_string            "Please wait"
+   string_append          3
+   widget_put_text       
+   jump                   LABEL308
+LABEL118:
+   iload                  3
+   widget_get_width_widget
+   iload                  6
+   load_int               5
+   isub                  
+   iload                  1
+   widget_get_width_widget
+   load_int               5
+   isub                  
+   iload                  14
+   load_int               15
+   imul                  
+   load_int               5
+   iadd                  
+   istore                 13
+   istore                 8
+   istore                 7
+   istore                 9
+LABEL136:
+   iload                  12
+   iload                  14
+   if_icmplt              LABEL140
+   jump                   LABEL308
+LABEL140:
+   iload                  12
+   load_int               5
+   imul                  
+   istore                 10
+   iload                  12
+   get_friend            
+   sstore                 1
+   sstore                 0
+   iload                  3
+   load_int               3
+   iload                  10
+   widget_create_child   
+   load_int               0
+   iload                  13
+   load_int               1
+   load_int               0
+   widget_put_size       
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               0
+   widget_put_position   
+   load_int               16777215
+   widget_put_textcolor  
+   load_int               1
+   widget_put_filled     
+   load_int               255
+   widget_put_opacity    
+   load_string            "<col=ff9040>"
+   sload                  0
+   load_string            "</col>"
+   string_append          3
+   widget_put_name       
+   load_int               1693
+   get_gamecycle         
+   iload                  12
+   load_int               50
+   idiv                  
+   iadd                  
+   iload                  3
+   iload                  10
+   iload                  12
+   iload                  14
+   iload                  9
+   get_varc               186
+   load_string            "iIiiiii"
+   widget_put_render_listener
+   iload                  3
+   load_int               4
+   iload                  10
+   load_int               1
+   iadd                  
+   widget_create_child   
+   iload                  7
+   load_int               15
+   load_int               0
+   load_int               0
+   widget_put_size       
+   load_int               16777060
+   widget_put_textcolor  
+   load_int               496
+   widget_put_fontid     
+   load_int               0
+   load_int               0
+   load_int               0
+   widget_put_text_alignment
+   load_int               1
+   widget_put_text_shadowed
+   sload                  0
+   widget_put_text       
+   load_int               1
+   widget_put_hidden     
+   iload                  3
+   load_int               5
+   iload                  10
+   load_int               2
+   iadd                  
+   widget_create_child    1
+   load_int               14
+   load_int               14
+   load_int               0
+   load_int               0
+   widget_put_size        1
+   load_int               1093
+   widget_put_spriteid    1
+   load_int               3355443
+   widget_put_sprite2     1
+   sload                  1
+   string_length         
+   load_int               0
+   if_icmpgt              LABEL232
+   jump                   LABEL253
+LABEL232:
+   load_string            "Previous name:"
+   load_string            "<br>"
+   sload                  1
+   string_append          3
+   sstore                 1
+   load_int               526
+   load_int               -2147483645
+   load_int               -2147483643
+   iload                  5
+   sload                  1
+   load_int               25
+   iload                  9
+   load_string            "IiIsii"
+   widget_put_mouse_hover_listener
+   load_int               40
+   iload                  5
+   load_string            "I"
+   widget_put_mouse_exit_listener
+   load_int               0
+   widget_put_opacity     1
+   jump                   LABEL259
+LABEL253:
+   load_int               40
+   iload                  5
+   load_string            "I"
+   widget_put_mouse_enter_listener
+   load_int               255
+   widget_put_opacity     1
+LABEL259:
+   load_int               1
+   widget_put_hidden      1
+   iload                  3
+   load_int               4
+   iload                  10
+   load_int               3
+   iadd                  
+   widget_create_child   
+   iload                  12
+   get_friend_rank       
+   istore                 11
+   iload                  8
+   load_int               15
+   load_int               0
+   load_int               0
+   widget_put_size       
+   load_int               16777215
+   widget_put_textcolor  
+   load_int               1
+   widget_put_text_shadowed
+   load_int               0
+   load_int               0
+   load_int               0
+   widget_put_text_alignment
+   load_int               496
+   widget_put_fontid     
+   load_int               1
+   widget_put_hidden     
+   iload                  3
+   load_int               4
+   iload                  10
+   load_int               4
+   iadd                  
+   widget_create_child    1
+   load_int               0
+   load_int               0
+   load_int               0
+   load_int               0
+   widget_put_size        1
+   load_int               1
+   widget_put_hidden      1
+   iload                  11
+   iload                  12
+   invoke                 1668
+   iload                  12
+   load_int               1
+   iadd                  
+   istore                 12
+   jump                   LABEL136
+LABEL308:
+   iload                  13
+   iload                  3
+   widget_get_height_widget
+   if_icmpgt              LABEL313
+   jump                   LABEL323
+LABEL313:
+   load_int               0
+   iload                  13
+   iload                  3
+   widget_put_scrollwidthheight_widget
+   iload                  4
+   iload                  3
+   iload                  3
+   widget_get_scrolly_widget
+   invoke                 72
+   jump                   LABEL331
+LABEL323:
+   load_int               0
+   load_int               0
+   iload                  3
+   widget_put_scrollwidthheight_widget
+   iload                  4
+   iload                  3
+   load_int               0
+   invoke                 72
+LABEL331:
+   return                

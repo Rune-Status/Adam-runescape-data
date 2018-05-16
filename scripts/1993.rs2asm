@@ -1,0 +1,88 @@
+.int_stack_count    8
+.string_stack_count 0
+.int_var_count      8
+.string_var_count   0
+   load_int               1995
+   iload                  0
+   iload                  1
+   iload                  5
+   load_string            "Iii"
+   iload                  0
+   widget_put_render_listener_widget
+   iload                  5
+   load_int               0
+   if_icmpeq              LABEL11
+   jump                   LABEL21
+LABEL11:
+   load_int               0
+   iload                  2
+   widget_put_hidden_widget
+   load_int               1
+   iload                  3
+   widget_put_hidden_widget
+   load_int               1
+   iload                  4
+   widget_put_hidden_widget
+   jump                   LABEL48
+LABEL21:
+   iload                  5
+   load_int               1
+   if_icmpeq              LABEL25
+   jump                   LABEL35
+LABEL25:
+   load_int               1
+   iload                  2
+   widget_put_hidden_widget
+   load_int               0
+   iload                  3
+   widget_put_hidden_widget
+   load_int               1
+   iload                  4
+   widget_put_hidden_widget
+   jump                   LABEL48
+LABEL35:
+   iload                  5
+   load_int               2
+   if_icmpeq              LABEL39
+   jump                   LABEL48
+LABEL39:
+   load_int               1
+   iload                  2
+   widget_put_hidden_widget
+   load_int               1
+   iload                  3
+   widget_put_hidden_widget
+   load_int               0
+   iload                  4
+   widget_put_hidden_widget
+LABEL48:
+   iload                  7
+   load_int               1
+   if_icmpeq              LABEL52
+   jump                   LABEL56
+LABEL52:
+   load_int               44721
+   iload                  6
+   widget_put_textureid_widget
+   jump                   LABEL71
+LABEL56:
+   iload                  7
+   load_int               2
+   if_icmpeq              LABEL60
+   jump                   LABEL64
+LABEL60:
+   load_int               53722
+   iload                  6
+   widget_put_textureid_widget
+   jump                   LABEL71
+LABEL64:
+   iload                  7
+   load_int               0
+   if_icmpeq              LABEL68
+   jump                   LABEL71
+LABEL68:
+   load_int               49152
+   iload                  6
+   widget_put_textureid_widget
+LABEL71:
+   return                

@@ -1,12 +1,16 @@
-   042                    67
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   0
+   get_varc               67
    load_int               0
    if_icmpgt              LABEL4
    jump                   LABEL9
 LABEL4:
-   042                    67
+   get_varc               67
    load_int               1
    isub                  
-   043                    67
-   040                    729
+   put_varc               67
+   invoke                 729
 LABEL9:
    return                

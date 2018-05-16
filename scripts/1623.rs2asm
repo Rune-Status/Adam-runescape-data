@@ -1,0 +1,69 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
+   load_int               93
+   get_inventory_size    
+   istore                 3
+   iload                  1
+   load_int               0
+   if_icmplt              LABEL10
+   iload                  1
+   iload                  3
+   if_icmpge              LABEL10
+   jump                   LABEL11
+LABEL10:
+   return                
+LABEL11:
+   iload                  2
+   load_int               0
+   if_icmplt              LABEL18
+   iload                  2
+   iload                  3
+   if_icmpge              LABEL18
+   jump                   LABEL19
+LABEL18:
+   return                
+LABEL19:
+   load_int               93
+   iload                  1
+   get_itemcontainer_itemid
+   istore                 4
+   iload                  4
+   load_int               -1
+   if_icmpeq              LABEL27
+   jump                   LABEL28
+LABEL27:
+   return                
+LABEL28:
+   load_int               93
+   iload                  2
+   get_itemcontainer_itemid
+   istore                 5
+   iload                  0
+   iload                  2
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL38
+   jump                   LABEL43
+LABEL38:
+   iload                  4
+   load_int               93
+   iload                  1
+   get_itemcontainer_stacksize
+   invoke                 1622
+LABEL43:
+   iload                  0
+   iload                  1
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL49
+   jump                   LABEL54
+LABEL49:
+   iload                  5
+   load_int               93
+   iload                  2
+   get_itemcontainer_stacksize
+   invoke                 1622
+LABEL54:
+   return                

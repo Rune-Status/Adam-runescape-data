@@ -1,39 +1,43 @@
-   033                    1
-   033                   
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   iload                  1
+   iload                  0
    load_int               792
    load_int               789
    load_int               790
    load_int               791
    load_int               773
    load_int               788
-   040                    31
-   033                    1
+   invoke                 31
+   iload                  1
    load_int               1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL15
    jump                   LABEL31
 LABEL15:
-   042                    80
+   get_varc               80
    load_int               0
    if_icmplt              LABEL23
-   042                    80
-   033                   
+   get_varc               80
+   iload                  0
    widget_get_scrollheight_widget
    if_icmpge              LABEL23
    jump                   LABEL25
 LABEL23:
    load_int               0
-   043                    80
+   put_varc               80
 LABEL25:
-   033                    1
-   033                   
-   042                    80
+   iload                  1
+   iload                  0
+   get_varc               80
    load_int               1
-   040                    37
+   invoke                 37
    jump                   LABEL33
 LABEL31:
    load_int               0
-   043                    80
+   put_varc               80
 LABEL33:
    return                

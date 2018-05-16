@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    10
+.string_stack_count 0
+.int_var_count      10
+.string_var_count   0
+   iload                  0
    widget_get_hidden_widget
    load_int               0
    if_icmpeq              LABEL5
@@ -7,30 +11,30 @@ LABEL5:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
 LABEL9:
    load_int               1
-   033                   
+   iload                  0
    widget_put_hidden_widget
    load_int               0
-   033                    1
+   iload                  1
    widget_put_hidden_widget
-   033                    1
-   040                    41
-   033                    2
-   040                    1013
-   033                    3
-   040                    1013
-   033                    4
-   040                    1013
-   033                    5
-   040                    1013
-   033                    6
-   040                    1013
-   033                    7
-   040                    1013
-   033                    8
-   040                    1013
-   033                    9
-   040                    1013
+   iload                  1
+   invoke                 41
+   iload                  2
+   invoke                 1013
+   iload                  3
+   invoke                 1013
+   iload                  4
+   invoke                 1013
+   iload                  5
+   invoke                 1013
+   iload                  6
+   invoke                 1013
+   iload                  7
+   invoke                 1013
+   iload                  8
+   invoke                 1013
+   iload                  9
+   invoke                 1013
    return                

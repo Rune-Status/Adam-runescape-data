@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  0
    load_int               1
    if_icmpne              LABEL4
    jump                   LABEL5
@@ -8,10 +12,10 @@ LABEL5:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
-   033                    1
-   027                    4814
-   033                    2
-   033                    3
-   040                    1135
+   play_sound_effect     
+   iload                  1
+   set_varbit             4814
+   iload                  2
+   iload                  3
+   invoke                 1135
    return                

@@ -1,115 +1,119 @@
+.int_stack_count    0
+.string_stack_count 1
+.int_var_count      1
+.string_var_count   5
    load_string            ""
-   036                    1
+   sstore                 1
    load_string            ""
-   036                    2
+   sstore                 2
    load_string            ""
-   036                    3
+   sstore                 3
    load_string            ""
-   036                    4
-   035                   
-   040                    632
-   036                   
-   036                    1
-   035                   
-   040                    632
-   036                   
-   036                    2
-   035                   
-   040                    632
-   036                   
-   036                    3
-   035                   
-   040                    632
-   036                   
-   036                    4
-   035                    1
+   sstore                 4
+   sload                  0
+   invoke                 632
+   sstore                 0
+   sstore                 1
+   sload                  0
+   invoke                 632
+   sstore                 0
+   sstore                 2
+   sload                  0
+   invoke                 632
+   sstore                 0
+   sstore                 3
+   sload                  0
+   invoke                 632
+   sstore                 0
+   sstore                 4
+   sload                  1
    load_int               34209812
-   2112                  
-   035                    2
+   widget_put_text_widget
+   sload                  2
    load_int               34209814
-   2112                  
-   035                    3
+   widget_put_text_widget
+   sload                  3
    load_int               34209816
-   2112                  
-   035                    4
+   widget_put_text_widget
+   sload                  4
    load_int               34209818
-   2112                  
-   035                    1
+   widget_put_text_widget
+   sload                  1
    load_int               34209812
    widget_get_width_widget
    load_int               495
-   4108                  
+   get_line_count        
    load_int               12
    imul                  
-   034                   
-   033                   
+   istore                 0
+   iload                  0
    load_int               34209810
    widget_get_height_widget
    if_icmpgt              LABEL49
    jump                   LABEL53
 LABEL49:
    load_int               0
-   033                   
+   iload                  0
    load_int               34209811
    widget_put_scrollwidthheight_widget
 LABEL53:
-   035                    2
+   sload                  2
    load_int               34209814
    widget_get_width_widget
    load_int               495
-   4108                  
+   get_line_count        
    load_int               12
    imul                  
-   034                   
-   033                   
+   istore                 0
+   iload                  0
    load_int               34209810
    widget_get_height_widget
    if_icmpgt              LABEL66
    jump                   LABEL70
 LABEL66:
    load_int               0
-   033                   
+   iload                  0
    load_int               34209813
    widget_put_scrollwidthheight_widget
 LABEL70:
-   035                    3
+   sload                  3
    load_int               34209816
    widget_get_width_widget
    load_int               495
-   4108                  
+   get_line_count        
    load_int               12
    imul                  
-   034                   
-   033                   
+   istore                 0
+   iload                  0
    load_int               34209810
    widget_get_height_widget
    if_icmpgt              LABEL83
    jump                   LABEL87
 LABEL83:
    load_int               0
-   033                   
+   iload                  0
    load_int               34209815
    widget_put_scrollwidthheight_widget
 LABEL87:
-   035                    4
+   sload                  4
    load_int               34209818
    widget_get_width_widget
    load_int               495
-   4108                  
+   get_line_count        
    load_int               12
    imul                  
-   034                   
-   033                   
+   istore                 0
+   iload                  0
    load_int               34209810
    widget_get_height_widget
    if_icmpgt              LABEL100
    jump                   LABEL104
 LABEL100:
    load_int               0
-   033                   
+   iload                  0
    load_int               34209817
    widget_put_scrollwidthheight_widget
 LABEL104:
    load_int               34209797
-   040                    1181
+   invoke                 1181
    return                

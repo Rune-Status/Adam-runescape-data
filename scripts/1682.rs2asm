@@ -1,0 +1,40 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  0
+   widget_unset_children 
+   load_int               0
+   istore                 2
+   iload                  1
+   load_int               1
+   if_icmpeq              LABEL8
+   jump                   LABEL12
+LABEL8:
+   iload                  0
+   invoke                 198
+   istore                 2
+   jump                   LABEL15
+LABEL12:
+   iload                  0
+   invoke                 208
+   istore                 2
+LABEL15:
+   iload                  0
+   load_int               6
+   iload                  2
+   widget_create_child   
+   load_int               42
+   load_int               42
+   load_int               0
+   load_int               0
+   widget_put_size       
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   widget_put_position   
+   load_int               13190
+   load_int               1
+   1205                  
+   return                

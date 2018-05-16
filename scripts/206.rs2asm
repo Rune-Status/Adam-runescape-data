@@ -1,317 +1,321 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      7
+.string_var_count   4
    load_int               0
-   034                   
+   istore                 0
    load_int               0
-   034                    1
+   istore                 1
    load_int               -1
-   034                    2
+   istore                 2
    load_string            ""
-   036                   
+   sstore                 0
    load_string            ""
-   036                    1
+   sstore                 1
    load_int               28
-   044                    111
+   array_initialize       111
    load_int               28
-   044                    65641
+   array_initialize       65641
    load_int               0
-   034                    3
+   istore                 3
    load_int               99
-   034                    4
+   istore                 4
    load_int               0
-   034                    5
+   istore                 5
 LABEL20:
-   033                   
+   iload                  0
    load_int               28
    if_icmplt              LABEL24
    jump                   LABEL92
 LABEL24:
    load_int               134
-   033                   
-   3301                  
-   034                    2
+   iload                  0
+   get_itemcontainer_itemid
+   istore                 2
    load_int               134
-   033                   
-   3302                  
-   034                    1
-   033                    2
+   iload                  0
+   get_itemcontainer_stacksize
+   istore                 1
+   iload                  2
    load_int               -1
    if_icmpne              LABEL36
    jump                   LABEL87
 LABEL36:
    load_int               99
-   034                    4
+   istore                 4
    load_int               0
-   034                    5
+   istore                 5
 LABEL40:
-   033                    5
+   iload                  5
    load_int               28
    if_icmplt              LABEL44
    jump                   LABEL66
 LABEL44:
-   033                    5
-   045                   
+   iload                  5
+   array_load            
    load_int               -1
    if_icmpne              LABEL49
    jump                   LABEL63
 LABEL49:
-   033                    5
-   045                   
-   033                    2
+   iload                  5
+   array_load            
+   iload                  2
    if_icmpeq              LABEL54
    jump                   LABEL58
 LABEL54:
-   033                    5
-   034                    4
+   iload                  5
+   istore                 4
    load_int               28
-   034                    5
+   istore                 5
 LABEL58:
-   033                    5
+   iload                  5
    load_int               1
    iadd                  
-   034                    5
+   istore                 5
    jump                   LABEL65
 LABEL63:
    load_int               28
-   034                    5
+   istore                 5
 LABEL65:
    jump                   LABEL40
 LABEL66:
-   033                    4
+   iload                  4
    load_int               99
    if_icmpeq              LABEL70
    jump                   LABEL81
 LABEL70:
-   033                    3
-   033                    2
-   046                   
-   033                    3
-   033                    1
-   046                    1
-   033                    3
+   iload                  3
+   iload                  2
+   array_store           
+   iload                  3
+   iload                  1
+   array_store            1
+   iload                  3
    load_int               1
    iadd                  
-   034                    3
+   istore                 3
    jump                   LABEL87
 LABEL81:
-   033                    4
-   033                    4
-   045                    1
-   033                    1
+   iload                  4
+   iload                  4
+   array_load             1
+   iload                  1
    iadd                  
-   046                    1
+   array_store            1
 LABEL87:
-   033                   
+   iload                  0
    load_int               1
    iadd                  
-   034                   
+   istore                 0
    jump                   LABEL20
 LABEL92:
    load_int               0
-   034                    3
+   istore                 3
 LABEL94:
-   033                    3
+   iload                  3
    load_int               28
    if_icmplt              LABEL98
    jump                   LABEL123
 LABEL98:
-   033                    3
-   045                   
-   034                    2
-   033                    2
+   iload                  3
+   array_load            
+   istore                 2
+   iload                  2
    load_int               -1
    if_icmpne              LABEL105
    jump                   LABEL116
 LABEL105:
-   033                    3
-   045                    1
-   034                    1
-   035                   
+   iload                  3
+   array_load             1
+   istore                 1
+   sload                  0
    load_int               2
-   033                    1
-   033                    2
-   040                    207
+   iload                  1
+   iload                  2
+   invoke                 207
    concat_string         
-   036                   
+   sstore                 0
    jump                   LABEL118
 LABEL116:
    load_int               28
-   034                    3
+   istore                 3
 LABEL118:
-   033                    3
+   iload                  3
    load_int               1
    iadd                  
-   034                    3
+   istore                 3
    jump                   LABEL94
 LABEL123:
    load_int               0
-   034                   
+   istore                 0
    load_int               0
-   034                    3
+   istore                 3
 LABEL127:
-   033                    3
+   iload                  3
    load_int               28
    if_icmplt              LABEL131
    jump                   LABEL142
 LABEL131:
-   033                    3
+   iload                  3
    load_int               -1
-   046                   
-   033                    3
+   array_store           
+   iload                  3
    load_int               0
-   046                    1
-   033                    3
+   array_store            1
+   iload                  3
    load_int               1
    iadd                  
-   034                    3
+   istore                 3
    jump                   LABEL127
 LABEL142:
    load_int               0
-   034                    3
+   istore                 3
    load_int               0
-   034                    5
+   istore                 5
 LABEL146:
-   033                   
+   iload                  0
    load_int               28
    if_icmplt              LABEL150
    jump                   LABEL218
 LABEL150:
    load_int               134
-   033                   
-   3313                  
-   034                    2
+   iload                  0
+   get_itemcontainer_itemid_2
+   istore                 2
    load_int               134
-   033                   
-   3314                  
-   034                    1
-   033                    2
+   iload                  0
+   get_itemcontainer_stacksize_2
+   istore                 1
+   iload                  2
    load_int               -1
    if_icmpne              LABEL162
    jump                   LABEL213
 LABEL162:
    load_int               99
-   034                    4
+   istore                 4
    load_int               0
-   034                    5
+   istore                 5
 LABEL166:
-   033                    5
+   iload                  5
    load_int               28
    if_icmplt              LABEL170
    jump                   LABEL192
 LABEL170:
-   033                    5
-   045                   
+   iload                  5
+   array_load            
    load_int               -1
    if_icmpne              LABEL175
    jump                   LABEL189
 LABEL175:
-   033                    5
-   045                   
-   033                    2
+   iload                  5
+   array_load            
+   iload                  2
    if_icmpeq              LABEL180
    jump                   LABEL184
 LABEL180:
-   033                    5
-   034                    4
+   iload                  5
+   istore                 4
    load_int               28
-   034                    5
+   istore                 5
 LABEL184:
-   033                    5
+   iload                  5
    load_int               1
    iadd                  
-   034                    5
+   istore                 5
    jump                   LABEL191
 LABEL189:
    load_int               28
-   034                    5
+   istore                 5
 LABEL191:
    jump                   LABEL166
 LABEL192:
-   033                    4
+   iload                  4
    load_int               99
    if_icmpeq              LABEL196
    jump                   LABEL207
 LABEL196:
-   033                    3
-   033                    2
-   046                   
-   033                    3
-   033                    1
-   046                    1
-   033                    3
+   iload                  3
+   iload                  2
+   array_store           
+   iload                  3
+   iload                  1
+   array_store            1
+   iload                  3
    load_int               1
    iadd                  
-   034                    3
+   istore                 3
    jump                   LABEL213
 LABEL207:
-   033                    4
-   033                    4
-   045                    1
-   033                    1
+   iload                  4
+   iload                  4
+   array_load             1
+   iload                  1
    iadd                  
-   046                    1
+   array_store            1
 LABEL213:
-   033                   
+   iload                  0
    load_int               1
    iadd                  
-   034                   
+   istore                 0
    jump                   LABEL146
 LABEL218:
    load_int               0
-   034                    3
+   istore                 3
 LABEL220:
-   033                    3
+   iload                  3
    load_int               28
    if_icmplt              LABEL224
    jump                   LABEL249
 LABEL224:
-   033                    3
-   045                   
-   034                    2
-   033                    2
+   iload                  3
+   array_load            
+   istore                 2
+   iload                  2
    load_int               -1
    if_icmpne              LABEL231
    jump                   LABEL242
 LABEL231:
-   033                    3
-   045                    1
-   034                    1
-   035                    1
+   iload                  3
+   array_load             1
+   istore                 1
+   sload                  1
    load_int               2
-   033                    1
-   033                    2
-   040                    207
+   iload                  1
+   iload                  2
+   invoke                 207
    concat_string         
-   036                    1
+   sstore                 1
    jump                   LABEL244
 LABEL242:
    load_int               28
-   034                    3
+   istore                 3
 LABEL244:
-   033                    3
+   iload                  3
    load_int               1
    iadd                  
-   034                    3
+   istore                 3
    jump                   LABEL220
 LABEL249:
-   035                   
-   load_int               6946915
-   2112                  
-   035                    1
-   load_int               6946917
-   2112                  
+   sload                  0
+   load_int               31195193
+   widget_put_text_widget
+   sload                  1
+   load_int               31195201
+   widget_put_text_widget
    load_string            ""
-   036                    2
+   sstore                 2
    load_string            ""
-   036                    3
-   025                    642
+   sstore                 3
+   get_varbit             642
    load_int               0
    if_icmpgt              LABEL263
    jump                   LABEL268
 LABEL263:
-   035                    2
+   sload                  2
    load_string            "Some worn items will be taken off."
    load_string            "<br>"
-   037                    3
-   036                    2
+   string_append          3
+   sstore                 2
 LABEL268:
    get_settings           286
    load_int               7
@@ -325,11 +329,11 @@ LABEL268:
    if_icmpeq              LABEL279
    jump                   LABEL284
 LABEL279:
-   035                    2
+   sload                  2
    load_string            "Boosted stats will be restored."
    load_string            "<br>"
-   037                    3
-   036                    2
+   string_append          3
+   sstore                 2
 LABEL284:
    get_settings           286
    load_int               9
@@ -338,11 +342,11 @@ LABEL284:
    if_icmpeq              LABEL290
    jump                   LABEL295
 LABEL290:
-   035                    2
+   sload                  2
    load_string            "Existing prayers will be stopped."
    load_string            "<br>"
-   037                    3
-   036                    2
+   string_append          3
+   sstore                 2
 LABEL295:
    get_settings           286
    load_int               0
@@ -351,11 +355,11 @@ LABEL295:
    if_icmpeq              LABEL301
    jump                   LABEL306
 LABEL301:
-   035                    3
+   sload                  3
    load_string            "You cannot forfeit the duel."
    load_string            "<br>"
-   037                    3
-   036                    3
+   string_append          3
+   sstore                 3
 LABEL306:
    get_settings           286
    load_int               1
@@ -364,11 +368,11 @@ LABEL306:
    if_icmpeq              LABEL312
    jump                   LABEL317
 LABEL312:
-   035                    3
+   sload                  3
    load_string            "You cannot move."
    load_string            "<br>"
-   037                    3
-   036                    3
+   string_append          3
+   sstore                 3
 LABEL317:
    get_settings           286
    load_int               2
@@ -377,311 +381,330 @@ LABEL317:
    if_icmpeq              LABEL323
    jump                   LABEL328
 LABEL323:
-   035                    3
-   load_string            "You cannot use weapons."
+   sload                  3
+   load_string            "You cannot switch weapons."
    load_string            "<br>"
-   037                    3
-   036                    3
+   string_append          3
+   sstore                 3
 LABEL328:
-   get_settings           286
-   load_int               3
-   test_bit              
-   load_int               1
-   if_icmpeq              LABEL334
-   jump                   LABEL339
-LABEL334:
-   035                    3
-   load_string            "You cannot wear armour."
-   load_string            "<br>"
-   037                    3
-   036                    3
-LABEL339:
-   get_settings           286
-   load_int               11
-   test_bit              
-   load_int               1
-   if_icmpeq              LABEL345
-   jump                   LABEL350
-LABEL345:
-   035                    3
-   load_string            "You cannot wear jewellery."
-   load_string            "<br>"
-   037                    3
-   036                    3
-LABEL350:
    get_settings           286
    load_int               4
    test_bit              
    load_int               1
-   if_icmpeq              LABEL356
-   jump                   LABEL365
-LABEL356:
-   035                    3
+   if_icmpeq              LABEL334
+   jump                   LABEL343
+LABEL334:
+   sload                  3
    load_string            "You cannot use Ranged attacks "
    load_string            "<col=ff0000>"
    load_string            "or salamanders"
    load_string            "<col=ffffff>"
    load_string            "."
    load_string            "<br>"
-   037                    7
-   036                    3
-LABEL365:
+   string_append          7
+   sstore                 3
+LABEL343:
    get_settings           286
    load_int               5
    test_bit              
    load_int               1
-   if_icmpeq              LABEL371
-   jump                   LABEL380
-LABEL371:
-   035                    3
-   load_string            "You cannot use melee attacks "
+   if_icmpeq              LABEL349
+   jump                   LABEL358
+LABEL349:
+   sload                  3
+   load_string            "You cannot use Melee attacks "
    load_string            "<col=ff0000>"
    load_string            "or salamanders"
    load_string            "<col=ffffff>"
    load_string            "."
    load_string            "<br>"
-   037                    7
-   036                    3
-LABEL380:
+   string_append          7
+   sstore                 3
+LABEL358:
    get_settings           286
    load_int               6
    test_bit              
    load_int               1
-   if_icmpeq              LABEL386
-   jump                   LABEL395
-LABEL386:
-   035                    3
+   if_icmpeq              LABEL364
+   jump                   LABEL373
+LABEL364:
+   sload                  3
    load_string            "You cannot use Magic attacks "
    load_string            "<col=ff0000>"
    load_string            "or salamanders"
    load_string            "<col=ffffff>"
    load_string            "."
    load_string            "<br>"
-   037                    7
-   036                    3
-LABEL395:
+   string_append          7
+   sstore                 3
+LABEL373:
    get_settings           286
    load_int               13
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL379
+   jump                   LABEL384
+LABEL379:
+   sload                  3
+   load_string            "You cannot use special attacks."
+   load_string            "<br>"
+   string_append          3
+   sstore                 3
+LABEL384:
+   get_settings           286
+   load_int               12
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL390
+   jump                   LABEL395
+LABEL390:
+   sload                  3
+   load_string            "You can only attack with 'fun' weapons."
+   load_string            "<br>"
+   string_append          3
+   sstore                 3
+LABEL395:
+   get_settings           286
+   load_int               7
    test_bit              
    load_int               1
    if_icmpeq              LABEL401
    jump                   LABEL406
 LABEL401:
-   035                    3
-   load_string            "You cannot use special attacks."
+   sload                  3
+   load_string            "You cannot use potions or drinks."
    load_string            "<br>"
-   037                    3
-   036                    3
+   string_append          3
+   sstore                 3
 LABEL406:
    get_settings           286
-   load_int               12
+   load_int               8
    test_bit              
    load_int               1
    if_icmpeq              LABEL412
    jump                   LABEL417
 LABEL412:
-   035                    3
-   load_string            "You can only attack with 'fun' weapons."
+   sload                  3
+   load_string            "You cannot use food."
    load_string            "<br>"
-   037                    3
-   036                    3
+   string_append          3
+   sstore                 3
 LABEL417:
    get_settings           286
-   load_int               7
+   load_int               9
    test_bit              
    load_int               1
    if_icmpeq              LABEL423
    jump                   LABEL428
 LABEL423:
-   035                    3
-   load_string            "You cannot use drinks."
+   sload                  3
+   load_string            "You cannot use Prayer."
    load_string            "<br>"
-   037                    3
-   036                    3
+   string_append          3
+   sstore                 3
 LABEL428:
    get_settings           286
-   load_int               8
+   load_int               10
    test_bit              
    load_int               1
    if_icmpeq              LABEL434
    jump                   LABEL439
 LABEL434:
-   035                    3
-   load_string            "You cannot use food."
-   load_string            "<br>"
-   037                    3
-   036                    3
-LABEL439:
-   get_settings           286
-   load_int               9
-   test_bit              
-   load_int               1
-   if_icmpeq              LABEL445
-   jump                   LABEL450
-LABEL445:
-   035                    3
-   load_string            "You cannot use Prayer."
-   load_string            "<br>"
-   037                    3
-   036                    3
-LABEL450:
-   get_settings           286
-   load_int               10
-   test_bit              
-   load_int               1
-   if_icmpeq              LABEL456
-   jump                   LABEL461
-LABEL456:
-   035                    3
+   sload                  3
    load_string            "There will be obstacles in the arena."
    load_string            "<br>"
-   037                    3
-   036                    3
-LABEL461:
+   string_append          3
+   sstore                 3
+LABEL439:
    get_settings           286
    load_int               17
    test_bit              
    load_int               1
-   if_icmpeq              LABEL472
+   if_icmpeq              LABEL450
    get_settings           286
    load_int               19
    test_bit              
    load_int               1
-   if_icmpeq              LABEL472
-   jump                   LABEL477
-LABEL472:
-   035                    3
+   if_icmpeq              LABEL450
+   jump                   LABEL455
+LABEL450:
+   sload                  3
    load_string            "You can't use 2H weapons such as bows."
    load_string            "<br>"
-   037                    3
-   036                    3
-LABEL477:
-   035                    2
-   load_int               6946888
-   2112                  
-   035                    3
-   load_int               6946892
-   2112                  
-   load_int               36
+   string_append          3
+   sstore                 3
+LABEL455:
+   sload                  2
+   load_int               31195210
+   widget_put_text_widget
+   sload                  3
+   load_int               31195212
+   widget_put_text_widget
+   load_int               100
    load_int               11
-   035                    2
-   load_int               132
+   load_int               31195208
+   widget_get_text_widget
+   load_int               100
    load_int               494
-   4108                  
-   imul                  
-   iadd                  
-   load_int               11
-   035                    3
-   load_int               132
-   load_int               494
-   4108                  
-   imul                  
-   iadd                  
-   034                    6
-   033                    6
-   load_int               6946891
-   widget_get_height_widget
-   if_icmpgt              LABEL504
-   jump                   LABEL565
-LABEL504:
-   load_int               132
-   load_int               11
-   035                    2
-   load_int               132
-   load_int               494
-   4108                  
+   get_line_count        
    imul                  
    load_int               0
    load_int               0
-   load_int               6946888
-   2001                  
+   load_int               31195208
+   widget_put_size_widget
    load_int               132
    load_int               11
-   035                    3
+   sload                  2
    load_int               132
    load_int               494
-   4108                  
+   get_line_count        
    imul                  
    load_int               0
    load_int               0
-   load_int               6946892
-   2001                  
+   load_int               31195210
+   widget_put_size_widget
+   load_int               132
+   load_int               11
+   sload                  3
+   load_int               132
+   load_int               494
+   get_line_count        
+   imul                  
+   load_int               0
+   load_int               0
+   load_int               31195212
+   widget_put_size_widget
+   load_int               2
+   load_int               2
+   load_int               0
+   load_int               0
+   load_int               31195213
+   widget_put_position_widget
+   load_int               31195213
+   widget_get_hidden_widget
    load_int               1
-   load_int               6946888
+   if_icmpeq              LABEL506
+   jump                   LABEL513
+LABEL506:
+   load_int               2
+   load_int               2
+   load_int               0
+   load_int               0
+   load_int               31195207
+   widget_put_position_widget
+   jump                   LABEL525
+LABEL513:
+   load_int               2
+   load_int               31195213
    widget_get_relativey_widget
-   load_int               6946888
+   load_int               31195213
    widget_get_height_widget
    iadd                  
    load_int               2
    iadd                  
    load_int               0
    load_int               0
-   load_int               6946890
-   2000                  
+   load_int               31195207
+   widget_put_position_widget
+LABEL525:
    load_int               2
-   load_int               6946890
+   load_int               31195207
    widget_get_relativey_widget
-   load_int               6946890
+   load_int               31195207
    widget_get_height_widget
+   iadd                  
+   load_int               2
    iadd                  
    load_int               0
    load_int               0
-   load_int               6946892
-   2000                  
+   load_int               31195208
+   widget_put_position_widget
+   load_int               2
+   load_int               31195208
+   widget_get_relativey_widget
+   load_int               31195208
+   widget_get_height_widget
+   iadd                  
+   load_int               2
+   iadd                  
    load_int               0
-   033                    6
-   load_int               6946891
+   load_int               0
+   load_int               31195209
+   widget_put_position_widget
+   load_int               2
+   load_int               31195209
+   widget_get_relativey_widget
+   load_int               31195209
+   widget_get_height_widget
+   iadd                  
+   load_int               2
+   iadd                  
+   load_int               0
+   load_int               0
+   load_int               31195210
+   widget_put_position_widget
+   load_int               2
+   load_int               31195210
+   widget_get_relativey_widget
+   load_int               31195210
+   widget_get_height_widget
+   iadd                  
+   load_int               2
+   iadd                  
+   load_int               0
+   load_int               0
+   load_int               31195211
+   widget_put_position_widget
+   load_int               2
+   load_int               31195211
+   widget_get_relativey_widget
+   load_int               31195211
+   widget_get_height_widget
+   iadd                  
+   load_int               2
+   iadd                  
+   load_int               0
+   load_int               0
+   load_int               31195212
+   widget_put_position_widget
+   load_int               31195212
+   widget_get_relativey_widget
+   load_int               31195212
+   widget_get_height_widget
+   iadd                  
+   load_int               2
+   iadd                  
+   istore                 6
+   iload                  6
+   load_int               31195204
+   widget_get_height_widget
+   if_icmpgt              LABEL598
+   jump                   LABEL615
+LABEL598:
+   load_int               0
+   iload                  6
+   load_int               31195205
    widget_put_scrollwidthheight_widget
    load_int               0
-   load_int               6946889
+   load_int               31195206
    widget_put_hidden_widget
-   load_int               6946889
-   load_int               6946891
+   load_int               31195206
+   load_int               31195205
    load_int               792
    load_int               789
    load_int               790
    load_int               791
    load_int               773
    load_int               788
-   040                    31
-   jump                   LABEL602
-LABEL565:
+   invoke                 31
+   jump                   LABEL622
+LABEL615:
    load_int               1
-   load_int               6946889
+   load_int               31195206
    widget_put_hidden_widget
    load_int               0
    load_int               0
-   load_int               6946891
+   load_int               31195205
    widget_put_scroll_widget
-   load_int               132
-   load_int               85
-   load_int               0
-   load_int               0
-   load_int               6946888
-   2001                  
-   load_int               132
-   load_int               16
-   load_int               0
-   load_int               0
-   load_int               6946890
-   2001                  
-   load_int               132
-   load_int               145
-   load_int               0
-   load_int               0
-   load_int               6946892
-   2001                  
-   load_int               1
-   load_int               105
-   load_int               0
-   load_int               0
-   load_int               6946890
-   2000                  
-   load_int               2
-   load_int               120
-   load_int               0
-   load_int               0
-   load_int               6946892
-   2000                  
-LABEL602:
+LABEL622:
    return                

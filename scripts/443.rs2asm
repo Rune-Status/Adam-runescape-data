@@ -1,70 +1,96 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
    load_int               0
-   034                    1
+   istore                 1
+   load_int               0
+   istore                 2
    load_int               105
    load_int               79
    load_int               852
-   033                    1
-   3408                  
-   034                    2
-LABEL8:
-   033                    2
+   iload                  2
+   get_enum_value        
+   istore                 3
+LABEL10:
+   iload                  3
    load_int               -1
-   if_icmpne              LABEL12
-   jump                   LABEL66
-LABEL12:
-   033                   
+   if_icmpne              LABEL14
+   jump                   LABEL84
+LABEL14:
+   iload                  0
    load_int               5
-   033                    1
-   100                   
+   iload                  2
+   widget_create_child   
+   get_ismembers         
+   load_int               0
+   if_icmpeq              LABEL22
+   jump                   LABEL30
+LABEL22:
+   iload                  3
+   get_item_ismembers    
+   load_int               1
+   if_icmpeq              LABEL27
+   jump                   LABEL30
+LABEL27:
+   load_int               1
+   widget_put_hidden     
+   jump                   LABEL73
+LABEL30:
    load_int               36
    load_int               32
    load_int               0
    load_int               0
-   1001                  
-   033                    1
+   widget_put_size       
+   iload                  1
    load_int               8
    modulo                
    load_int               46
    imul                  
-   033                    1
+   iload                  1
    load_int               8
    idiv                  
    load_int               50
    imul                  
    load_int               0
    load_int               0
-   1000                  
-   033                    2
+   widget_put_position   
+   iload                  1
+   load_int               1
+   iadd                  
+   istore                 1
+   iload                  3
    load_int               1
    1200                  
    load_string            "<col=ff9040>"
-   033                    2
+   iload                  3
    get_item_name         
-   037                    2
+   string_append          2
    widget_put_name       
    load_int               1
    load_string            "Value"
-   1300                  
+   widget_put_action     
    load_int               2
    load_string            "Buy"
-   1300                  
+   widget_put_action     
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
-   033                    1
+LABEL73:
+   iload                  2
    load_int               1
    iadd                  
-   034                    1
+   istore                 2
    load_int               105
    load_int               79
    load_int               852
-   033                    1
-   3408                  
-   034                    2
-   jump                   LABEL8
-LABEL66:
+   iload                  2
+   get_enum_value        
+   istore                 3
+   jump                   LABEL10
+LABEL84:
    return                

@@ -1,31 +1,71 @@
+.int_stack_count    10
+.string_stack_count 0
+.int_var_count      10
+.string_var_count   0
    load_string            "Friends List - World "
-   get_world             
+   get_worldnum          
    int_to_string         
-   037                    2
-   033                   
-   2112                  
-   033                    2
-   102                   
-   033                    2
-   033                    1
+   string_append          2
+   iload                  1
+   widget_put_text_widget
+   iload                  7
+   widget_unset_children 
+   iload                  7
+   iload                  6
    load_int               792
    load_int               789
    load_int               790
    load_int               791
    load_int               773
    load_int               788
-   040                    31
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   040                    125
+   invoke                 31
+   get_varc               183
+   load_int               1
+   if_icmpne              LABEL21
+   jump                   LABEL39
+LABEL21:
+   get_varc               183
+   load_int               2
+   if_icmpne              LABEL25
+   jump                   LABEL39
+LABEL25:
+   get_varc               183
+   load_int               3
+   if_icmpne              LABEL29
+   jump                   LABEL39
+LABEL29:
+   get_varc               183
+   load_int               4
+   if_icmpne              LABEL33
+   jump                   LABEL39
+LABEL33:
+   get_varc               183
+   load_int               5
+   if_icmpne              LABEL37
+   jump                   LABEL39
+LABEL37:
+   load_int               0
+   put_varc               183
+LABEL39:
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   invoke                 125
    load_int               631
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   load_string            "IIII"
-   033                    1
-   2420                  
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   load_string            "IIIIIIII"
+   iload                  0
+   widget_put_friends_listener_widget
    return                

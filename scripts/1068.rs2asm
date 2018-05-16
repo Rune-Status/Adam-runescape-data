@@ -1,6 +1,10 @@
-   040                    900
-   034                   
-   033                   
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   invoke                 900
+   istore                 0
+   iload                  0
    load_int               -1
    if_icmpeq              LABEL6
    jump                   LABEL7
@@ -9,61 +13,61 @@ LABEL6:
 LABEL7:
    load_int               73
    load_int               73
-   033                   
+   iload                  0
    load_int               10551299
-   3408                  
-   034                    1
-   033                    1
+   get_enum_value        
+   istore                 1
+   iload                  1
    load_int               -1
    if_icmpeq              LABEL17
    jump                   LABEL18
 LABEL17:
    return                
 LABEL18:
-   033                    1
-   102                   
-   033                    1
+   iload                  1
+   widget_unset_children 
+   iload                  1
    load_int               6
    load_int               0
-   100                   
+   widget_create_child   
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                  
+   widget_put_position   
    load_int               29403
    widget_put_modelid_1  
-   033                    1
+   iload                  1
    load_int               3
    load_int               1
-   100                    1
+   widget_create_child    1
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1001                   1
+   widget_put_size        1
    load_int               0
    load_int               0
    load_int               1
    load_int               1
-   1000                   1
+   widget_put_position    1
    load_int               16777215
    widget_put_textcolor   1
    load_int               1
-   1102                   1
+   widget_put_filled      1
    load_int               1069
    load_int               -2147483645
    load_int               -2147483643
-   1702                   1
+   widget_get_index       1
    get_gamecycle         
    load_string            "Iiii"
-   1408                  
-   033                    1
+   widget_put_render_listener
+   iload                  1
    load_int               0
-   040                    1070
+   invoke                 1070
    return                

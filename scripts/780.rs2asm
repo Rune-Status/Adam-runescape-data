@@ -1,26 +1,30 @@
-   033                    2
-   040                    198
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  2
+   invoke                 198
    pop_int               
    load_int               -1
    load_string            ""
-   033                    2
-   2412                  
+   iload                  2
+   widget_put_mouse_hover_listener_widget
    load_int               -1
    load_string            ""
-   033                    2
-   2404                  
+   iload                  2
+   widget_put_mouse_exit_listener_widget
    load_int               -1
    load_string            ""
-   033                    2
-   2409                  
-   033                   
-   033                    1
-   200                   
+   iload                  2
+   widget_put_option_click_listener_widget
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL21
    jump                   LABEL23
 LABEL21:
    load_string            "---"
-   1112                  
+   widget_put_text       
 LABEL23:
    return                

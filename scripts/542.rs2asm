@@ -1,25 +1,29 @@
-   033                   
+.int_stack_count    2
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
+   iload                  0
    load_int               1
    if_icmpne              LABEL4
    jump                   LABEL5
 LABEL4:
    return                
 LABEL5:
-   033                    1
-   035                   
+   iload                  1
+   sload                  0
    load_int               1
-   040                    541
+   invoke                 541
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
    load_int               543
-   033                    1
-   035                   
+   iload                  1
+   sload                  0
    get_gamecycle         
    load_int               20
    iadd                  
    load_string            "Isi"
-   033                    1
-   2408                  
+   iload                  1
+   widget_put_render_listener_widget
    return                

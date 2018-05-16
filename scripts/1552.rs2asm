@@ -1,0 +1,26 @@
+.int_stack_count    0
+.string_stack_count 1
+.int_var_count      0
+.string_var_count   1
+   get_clanchatcount     
+   load_int               0
+   if_icmpgt              LABEL4
+   jump                   LABEL15
+LABEL4:
+   get_clanchat_rank     
+   clanchat_kick_rank    
+   if_icmpge              LABEL8
+   jump                   LABEL15
+LABEL8:
+   load_int               2266
+   load_int               1
+   load_int               0
+   play_sound_effect     
+   sload                  0
+   invoke                 215
+   jump                   LABEL17
+LABEL15:
+   load_string            "You don't have permission to do that."
+   send_game_message     
+LABEL17:
+   return                

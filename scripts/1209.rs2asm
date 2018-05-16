@@ -1,45 +1,49 @@
-   033                    6
+.int_stack_count    7
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   0
+   iload                  6
    load_int               4
-   033                    1
-   100                   
-   033                    1
+   iload                  1
+   widget_create_child   
+   iload                  1
    load_int               1
    iadd                  
-   034                    1
-   033                    6
+   istore                 1
+   iload                  6
    load_int               4
-   033                    1
-   100                    1
-   033                    1
+   iload                  1
+   widget_create_child    1
+   iload                  1
    load_int               1
    iadd                  
-   034                    1
+   istore                 1
    load_int               0
-   033                    2
+   iload                  2
    load_int               0
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               0
-   033                    2
+   iload                  2
    load_int               2
    load_int               0
-   1000                   1
-   033                   
+   widget_put_position    1
+   iload                  0
    load_int               20
    load_int               0
    load_int               0
-   1001                  
-   033                   
+   widget_put_size       
+   iload                  0
    load_int               10
    iadd                  
    load_int               20
    load_int               1
    load_int               0
-   1001                   1
-   033                    2
+   widget_put_size        1
+   iload                  2
    load_int               20
    iadd                  
-   034                    2
+   istore                 2
    load_int               495
    widget_put_fontid     
    load_int               495
@@ -47,62 +51,62 @@
    load_int               2
    load_int               0
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_int               0
    load_int               0
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               1
-   1115                   1
+   widget_put_text_shadowed 1
    load_int               105
    load_int               105
    load_int               1267
-   033                    4
-   3408                  
-   034                    7
+   iload                  4
+   get_enum_value        
+   istore                 7
    load_int               0
-   033                    7
+   iload                  7
    load_int               0
    load_int               1000
    load_int               1000
-   4006                  
-   034                    8
-   033                    8
+   interpolate           
+   istore                 8
+   iload                  8
    load_int               10
    idiv                  
    int_to_string         
    load_string            "."
-   033                    8
+   iload                  8
    load_int               10
    modulo                
    int_to_string         
    load_string            "%"
-   037                    4
-   1112                  
+   string_append          4
+   widget_put_text       
    load_int               105
    load_int               115
    load_int               1266
-   033                    4
-   3408                  
-   1112                   1
-   033                    7
-   033                    3
-   040                    1213
+   iload                  4
+   get_enum_value        
+   widget_put_text        1
+   iload                  7
+   iload                  3
+   invoke                 1213
    load_int               1212
    load_int               -2147483645
    load_int               -2147483643
-   1702                   1
-   033                    5
-   033                    7
+   widget_get_index       1
+   iload                  5
+   iload                  7
    load_int               1317
    load_int               1318
    load_int               2
    load_string            "IiiiiY"
-   1407                  
-   033                    1
-   033                    2
+   widget_put_config_listener
+   iload                  1
+   iload                  2
    return                
    load_int               0
    load_int               0

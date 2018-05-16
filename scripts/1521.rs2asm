@@ -1,0 +1,256 @@
+.int_stack_count    2
+.string_stack_count 2
+.int_var_count      9
+.string_var_count   4
+   load_int               0
+   istore                 2
+   load_int               0
+   istore                 3
+   load_int               0
+   istore                 4
+   load_int               0
+   istore                 5
+   load_int               0
+   istore                 6
+   load_int               1
+   istore                 7
+   load_int               -1
+   istore                 8
+   load_string            ""
+   sstore                 2
+   load_string            ""
+   sstore                 3
+   sload                  0
+   string_length         
+   load_int               0
+   if_icmpgt              LABEL23
+   jump                   LABEL238
+LABEL23:
+   iload                  0
+   load_int               6
+   if_icmpeq              LABEL27
+   jump                   LABEL45
+LABEL27:
+   get_clanchatcount     
+   load_int               0
+   if_icmpgt              LABEL31
+   jump                   LABEL42
+LABEL31:
+   get_clanchat_rank     
+   clanchat_kick_rank    
+   if_icmpge              LABEL35
+   jump                   LABEL42
+LABEL35:
+   load_int               2266
+   load_int               1
+   load_int               0
+   play_sound_effect     
+   sload                  0
+   invoke                 215
+   jump                   LABEL44
+LABEL42:
+   load_string            "You don't have permission to do that."
+   send_game_message     
+LABEL44:
+   return                
+LABEL45:
+   load_int               33226763
+   load_int               0
+   widget_load_child      1
+   load_int               0
+   if_icmpeq              LABEL51
+   jump                   LABEL52
+LABEL51:
+   return                
+LABEL52:
+   load_int               2266
+   load_int               1
+   load_int               0
+   play_sound_effect     
+   load_int               1
+   load_int               33226777
+   widget_put_hidden_widget
+   load_int               0
+   load_int               33226778
+   widget_put_hidden_widget
+   load_int               33226778
+   widget_unset_children 
+   load_int               33226778
+   load_int               0
+   invoke                 715
+   istore                 2
+   load_int               33226778
+   load_int               4
+   iload                  2
+   widget_create_child   
+   iload                  2
+   load_int               1
+   iadd                  
+   istore                 2
+   load_int               0
+   load_int               15
+   load_int               1
+   load_int               0
+   widget_put_size       
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               0
+   widget_put_position   
+   load_int               16750623
+   widget_put_textcolor  
+   load_int               494
+   widget_put_fontid     
+   load_int               1
+   load_int               2
+   load_int               0
+   widget_put_text_alignment
+   load_int               1
+   widget_put_text_shadowed
+   sload                  0
+   widget_put_text       
+   load_int               33226778
+   widget_get_width_widget
+   load_int               216
+   isub                  
+   load_int               2
+   idiv                  
+   istore                 3
+   load_int               105
+   load_int               83
+   load_int               681
+   iload                  7
+   get_enum_value        
+   istore                 8
+LABEL111:
+   iload                  8
+   load_int               -1
+   if_icmpne              LABEL115
+   jump                   LABEL232
+LABEL115:
+   iload                  3
+   iload                  4
+   load_int               5
+   idiv                  
+   load_int               44
+   imul                  
+   iadd                  
+   load_int               15
+   iload                  4
+   load_int               5
+   modulo                
+   load_int               25
+   imul                  
+   iadd                  
+   istore                 6
+   istore                 5
+   sload                  1
+   invoke                 632
+   sstore                 1
+   sstore                 2
+   load_int               33226778
+   load_int               5
+   iload                  2
+   widget_create_child   
+   iload                  2
+   load_int               1
+   iadd                  
+   istore                 2
+   load_int               33226778
+   load_int               4
+   iload                  2
+   widget_create_child    1
+   iload                  2
+   load_int               1
+   iadd                  
+   istore                 2
+   load_int               25
+   load_int               25
+   load_int               0
+   load_int               0
+   widget_put_size       
+   load_int               40
+   load_int               25
+   load_int               0
+   load_int               0
+   widget_put_size        1
+   iload                  5
+   iload                  6
+   load_int               0
+   load_int               0
+   widget_put_position   
+   iload                  5
+   iload                  6
+   load_int               0
+   load_int               0
+   widget_put_position    1
+   load_int               83
+   load_int               100
+   load_int               255
+   iload                  8
+   get_enum_value        
+   widget_put_spriteid   
+   load_int               16750623
+   widget_put_textcolor   1
+   load_int               494
+   widget_put_fontid      1
+   load_int               2
+   load_int               1
+   load_int               0
+   widget_put_text_alignment 1
+   load_int               1
+   widget_put_text_shadowed 1
+   sload                  2
+   widget_put_text        1
+   sload                  0
+   load_string            ":"
+   load_string            "<br>"
+   load_string            "Level "
+   load_string            "<col=7f0000>"
+   sload                  2
+   load_string            "</col>"
+   load_string            " "
+   load_int               83
+   load_int               115
+   load_int               680
+   iload                  8
+   get_enum_value        
+   string_append          9
+   sstore                 3
+   load_int               526
+   load_int               -2147483645
+   load_int               -2147483643
+   load_int               33226785
+   sload                  3
+   load_int               25
+   load_int               200
+   load_string            "IiIsii"
+   widget_put_mouse_hover_listener 1
+   load_int               40
+   load_int               33226785
+   load_string            "I"
+   widget_put_mouse_exit_listener 1
+   iload                  7
+   load_int               1
+   iadd                  
+   iload                  4
+   load_int               1
+   iadd                  
+   istore                 4
+   istore                 7
+   load_int               105
+   load_int               83
+   load_int               681
+   iload                  7
+   get_enum_value        
+   istore                 8
+   jump                   LABEL111
+LABEL232:
+   load_int               1522
+   load_string            ""
+   load_int               33226778
+   widget_put_mouse_press_listener_widget
+   iload                  1
+   invoke                 1525
+LABEL238:
+   return                

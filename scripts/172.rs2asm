@@ -1,43 +1,47 @@
-   033                    1
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  1
    load_int               -1
    if_icmpne              LABEL4
    jump                   LABEL40
 LABEL4:
    load_int               0
    widget_put_opacity    
-   033                    1
-   033                    2
+   iload                  1
+   iload                  2
    1200                  
    load_int               1
    load_string            "Deposit-1"
-   1300                  
+   widget_put_action     
    load_int               2
    load_string            "Deposit-5"
-   1300                  
+   widget_put_action     
    load_int               3
    load_string            "Deposit-10"
-   1300                  
+   widget_put_action     
    load_int               4
    load_string            "Deposit-All"
-   1300                  
+   widget_put_action     
    load_int               5
    load_string            "Deposit-X"
-   1300                  
+   widget_put_action     
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
-   033                    1
+   iload                  1
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    load_int               705
    load_int               -2147483645
    load_int               -2147483643
    load_int               -2147483641
    load_string            "Iii"
-   1410                  
+   widget_put_drag_release_listener
    jump                   LABEL48
 LABEL40:
    load_int               255
@@ -47,6 +51,6 @@ LABEL40:
    1200                  
    load_int               -1
    load_string            ""
-   1410                  
+   widget_put_drag_release_listener
 LABEL48:
    return                

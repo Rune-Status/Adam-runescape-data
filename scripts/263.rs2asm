@@ -1,30 +1,34 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      7
+.string_var_count   0
    load_int               50
    load_int               2
    pow                   
-   034                    4
+   istore                 4
    load_int               50
    load_int               2
    imul                  
-   034                    5
+   istore                 5
    get_gamecycle         
-   033                    3
+   iload                  3
    isub                  
-   034                    6
-   033                    6
+   istore                 6
+   iload                  6
    load_int               50
    if_icmplt              LABEL16
    jump                   LABEL67
 LABEL16:
-   033                    6
+   iload                  6
    load_int               0
    if_icmplt              LABEL20
    jump                   LABEL23
 LABEL20:
    load_int               0
-   034                    6
+   istore                 6
    jump                   LABEL31
 LABEL23:
-   033                    6
+   iload                  6
    load_int               1
    if_icmpeq              LABEL27
    jump                   LABEL31
@@ -32,130 +36,130 @@ LABEL27:
    load_int               2201
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
 LABEL31:
    load_int               50
-   033                    6
+   iload                  6
    isub                  
-   034                    6
-   033                   
-   033                    1
-   200                   
+   istore                 6
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL41
    jump                   LABEL48
 LABEL41:
    load_int               0
-   033                    6
+   iload                  6
    load_int               0
    load_int               50
    load_int               255
-   4006                  
+   interpolate           
    widget_put_opacity    
 LABEL48:
-   033                   
-   033                    2
-   200                   
+   iload                  0
+   iload                  2
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL54
    jump                   LABEL66
 LABEL54:
    load_int               0
-   033                    6
+   iload                  6
    load_int               2
    pow                   
    load_int               0
-   033                    4
+   iload                  4
    load_int               16384
-   4006                  
+   interpolate           
    widget_get_relativey  
    load_int               3
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL66:
    return                
 LABEL67:
-   033                    6
-   033                    5
+   iload                  6
+   iload                  5
    if_icmplt              LABEL71
    jump                   LABEL72
 LABEL71:
    return                
 LABEL72:
-   033                    6
+   iload                  6
    load_int               50
    load_int               3
    imul                  
    if_icmplt              LABEL78
    jump                   LABEL122
 LABEL78:
-   033                    6
-   033                    5
+   iload                  6
+   iload                  5
    if_icmpeq              LABEL82
    jump                   LABEL86
 LABEL82:
    load_int               2201
    load_int               1
    load_int               0
-   3200                  
+   play_sound_effect     
 LABEL86:
-   033                    6
-   033                    5
+   iload                  6
+   iload                  5
    isub                  
-   034                    6
-   033                   
-   033                    1
-   200                   
+   istore                 6
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL96
    jump                   LABEL103
 LABEL96:
    load_int               0
-   033                    6
+   iload                  6
    load_int               0
    load_int               50
    load_int               255
-   4006                  
+   interpolate           
    widget_put_opacity    
 LABEL103:
-   033                   
-   033                    2
-   200                   
+   iload                  0
+   iload                  2
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL109
    jump                   LABEL121
 LABEL109:
    load_int               0
-   033                    6
+   iload                  6
    load_int               2
    pow                   
    load_int               0
-   033                    4
+   iload                  4
    load_int               16384
-   4006                  
+   interpolate           
    widget_get_relativey  
    load_int               5
    load_int               0
-   1000                  
+   widget_put_position   
 LABEL121:
    return                
 LABEL122:
-   033                   
-   033                    1
-   200                   
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL128
    jump                   LABEL129
 LABEL128:
-   101                   
+   widget_destroy_child  
 LABEL129:
-   033                   
-   033                    2
-   200                   
+   iload                  0
+   iload                  2
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL135
    jump                   LABEL136
 LABEL135:
-   101                   
+   widget_destroy_child  
 LABEL136:
    return                

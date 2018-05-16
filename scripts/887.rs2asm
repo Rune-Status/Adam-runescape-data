@@ -1,28 +1,32 @@
-   025                    136
+.int_stack_count    10
+.string_stack_count 0
+.int_var_count      10
+.string_var_count   0
+   get_varbit             136
    load_int               0
    if_icmpgt              LABEL4
    jump                   LABEL12
 LABEL4:
    load_string            "Health "
-   025                    136
+   get_varbit             136
    int_to_string         
    load_string            "%"
-   037                    3
-   033                   
-   2112                  
+   string_append          3
+   iload                  0
+   widget_put_text_widget
    jump                   LABEL21
 LABEL12:
    load_string            "<col=ff0000>"
    load_string            "Health "
-   025                    136
+   get_varbit             136
    int_to_string         
    load_string            "%"
    load_string            "</col>"
-   037                    5
-   033                   
-   2112                  
+   string_append          5
+   iload                  0
+   widget_put_text_widget
 LABEL21:
-   025                    137
+   get_varbit             137
    load_int               1
    if_icmpeq              LABEL25
    jump                   LABEL32
@@ -30,16 +34,16 @@ LABEL25:
    load_string            "<col=ff0000>"
    load_string            "Unlocked"
    load_string            "</col>"
-   037                    3
-   033                    1
-   2112                  
+   string_append          3
+   iload                  1
+   widget_put_text_widget
    jump                   LABEL35
 LABEL32:
    load_string            "Locked"
-   033                    1
-   2112                  
+   iload                  1
+   widget_put_text_widget
 LABEL35:
-   025                    138
+   get_varbit             138
    load_int               1
    if_icmpeq              LABEL39
    jump                   LABEL46
@@ -47,16 +51,16 @@ LABEL39:
    load_string            "<col=ff0000>"
    load_string            "Cleared"
    load_string            "</col>"
-   037                    3
-   033                    2
-   2112                  
+   string_append          3
+   iload                  2
+   widget_put_text_widget
    jump                   LABEL49
 LABEL46:
    load_string            "Collapsed"
-   033                    2
-   2112                  
+   iload                  2
+   widget_put_text_widget
 LABEL49:
-   025                    139
+   get_varbit             139
    load_int               1
    if_icmpeq              LABEL53
    jump                   LABEL60
@@ -64,16 +68,16 @@ LABEL53:
    load_string            "<col=ff0000>"
    load_string            "Cleared"
    load_string            "</col>"
-   037                    3
-   033                    3
-   2112                  
+   string_append          3
+   iload                  3
+   widget_put_text_widget
    jump                   LABEL63
 LABEL60:
    load_string            "Collapsed"
-   033                    3
-   2112                  
+   iload                  3
+   widget_put_text_widget
 LABEL63:
-   025                    140
+   get_varbit             140
    load_int               1
    if_icmpeq              LABEL67
    jump                   LABEL74
@@ -81,26 +85,26 @@ LABEL67:
    load_string            "<col=ff0000>"
    load_string            "Destroyed"
    load_string            "</col>"
-   037                    3
-   033                    4
-   2112                  
+   string_append          3
+   iload                  4
+   widget_put_text_widget
    jump                   LABEL77
 LABEL74:
    load_string            "Operational"
-   033                    4
-   2112                  
+   iload                  4
+   widget_put_text_widget
 LABEL77:
-   025                    143
+   get_varbit             143
    load_int               0
    if_icmpeq              LABEL81
    jump                   LABEL85
 LABEL81:
    load_string            "Safe"
-   033                    5
-   2112                  
+   iload                  5
+   widget_put_text_widget
    jump                   LABEL110
 LABEL85:
-   025                    143
+   get_varbit             143
    load_int               1
    if_icmpeq              LABEL89
    jump                   LABEL96
@@ -108,12 +112,12 @@ LABEL89:
    load_string            "<col=ff0000>"
    load_string            "Taken"
    load_string            "</col>"
-   037                    3
-   033                    5
-   2112                  
+   string_append          3
+   iload                  5
+   widget_put_text_widget
    jump                   LABEL110
 LABEL96:
-   025                    143
+   get_varbit             143
    load_int               2
    if_icmpeq              LABEL100
    jump                   LABEL107
@@ -121,26 +125,26 @@ LABEL100:
    load_string            "<col=ffff00>"
    load_string            "Dropped"
    load_string            "</col>"
-   037                    3
-   033                    5
-   2112                  
+   string_append          3
+   iload                  5
+   widget_put_text_widget
    jump                   LABEL110
 LABEL107:
    load_string            ""
-   033                    5
-   2112                  
+   iload                  5
+   widget_put_text_widget
 LABEL110:
-   025                    153
+   get_varbit             153
    load_int               0
    if_icmpeq              LABEL114
    jump                   LABEL118
 LABEL114:
    load_string            "Safe"
-   033                    6
-   2112                  
+   iload                  6
+   widget_put_text_widget
    jump                   LABEL143
 LABEL118:
-   025                    153
+   get_varbit             153
    load_int               1
    if_icmpeq              LABEL122
    jump                   LABEL129
@@ -148,12 +152,12 @@ LABEL122:
    load_string            "<col=ff0000>"
    load_string            "Taken"
    load_string            "</col>"
-   037                    3
-   033                    6
-   2112                  
+   string_append          3
+   iload                  6
+   widget_put_text_widget
    jump                   LABEL143
 LABEL129:
-   025                    153
+   get_varbit             153
    load_int               2
    if_icmpeq              LABEL133
    jump                   LABEL140
@@ -161,31 +165,31 @@ LABEL133:
    load_string            "<col=ffff00>"
    load_string            "Dropped"
    load_string            "</col>"
-   037                    3
-   033                    6
-   2112                  
+   string_append          3
+   iload                  6
+   widget_put_text_widget
    jump                   LABEL143
 LABEL140:
    load_string            ""
-   033                    6
-   2112                  
+   iload                  6
+   widget_put_text_widget
 LABEL143:
-   025                    145
+   get_varbit             145
    int_to_string         
    load_string            " = Saradomin"
-   037                    2
-   033                    7
-   2112                  
+   string_append          2
+   iload                  7
+   widget_put_text_widget
    load_string            "Zamorak = "
-   025                    155
+   get_varbit             155
    int_to_string         
-   037                    2
-   033                    8
-   2112                  
+   string_append          2
+   iload                  8
+   widget_put_text_widget
    get_settings           380
    int_to_string         
    load_string            " Min"
-   037                    2
-   033                    9
-   2112                  
+   string_append          2
+   iload                  9
+   widget_put_text_widget
    return                

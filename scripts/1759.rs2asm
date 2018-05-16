@@ -1,0 +1,46 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
+   get_varbit             5640
+   load_int               4
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL6
+   jump                   LABEL8
+LABEL6:
+   load_int               0
+   return                
+LABEL8:
+   get_gamecycle         
+   load_int               40
+   modulo                
+   istore                 0
+   iload                  0
+   load_int               20
+   if_icmplt              LABEL16
+   jump                   LABEL23
+LABEL16:
+   iload                  0
+   load_int               2
+   pow                   
+   load_int               400
+   load_int               8192
+   scale                 
+   return                
+LABEL23:
+   load_int               40
+   iload                  0
+   isub                  
+   istore                 0
+   load_int               16384
+   iload                  0
+   load_int               2
+   pow                   
+   load_int               400
+   load_int               8192
+   scale                 
+   isub                  
+   return                
+   load_int               0
+   return                

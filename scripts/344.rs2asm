@@ -1,35 +1,39 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    get_gamecycle         
-   033                    1
+   iload                  1
    isub                  
-   034                    2
-   033                    2
+   istore                 2
+   iload                  2
    load_int               90
    if_icmplt              LABEL8
    jump                   LABEL19
 LABEL8:
    load_int               255
    load_int               0
-   033                    2
+   iload                  2
    load_int               0
    load_int               90
    load_int               255
-   4006                  
+   interpolate           
    isub                  
-   033                   
+   iload                  0
    widget_put_opacity_widget
    return                
 LABEL19:
-   033                    2
+   iload                  2
    load_int               195
    if_icmplt              LABEL23
    jump                   LABEL27
 LABEL23:
    load_int               0
-   033                   
+   iload                  0
    widget_put_opacity_widget
    return                
 LABEL27:
-   033                    2
+   iload                  2
    load_int               255
    if_icmplt              LABEL31
    jump                   LABEL44
@@ -37,22 +41,22 @@ LABEL31:
    load_int               255
    load_int               0
    load_int               255
-   033                    2
+   iload                  2
    isub                  
    load_int               0
    load_int               60
    load_int               255
-   4006                  
+   interpolate           
    isub                  
-   033                   
+   iload                  0
    widget_put_opacity_widget
    return                
 LABEL44:
    load_int               255
-   033                   
+   iload                  0
    widget_put_opacity_widget
    load_int               -1
    load_string            ""
-   033                   
-   2408                  
+   iload                  0
+   widget_put_render_listener_widget
    return                

@@ -1,38 +1,42 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
    load_int               0
-   034                    4
+   istore                 4
    load_int               0
-   034                    5
-   033                   
+   istore                 5
+   iload                  0
    load_int               1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL10
    jump                   LABEL64
 LABEL10:
-   033                   
+   iload                  0
    load_int               2
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL16
    jump                   LABEL23
 LABEL16:
    load_int               0
-   033                    2
+   iload                  2
    load_int               16
    iadd                  
    load_int               1
    load_int               0
-   1000                   1
+   widget_put_position    1
 LABEL23:
-   033                   
+   iload                  0
    load_int               3
-   200                    1
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL29
    jump                   LABEL40
 LABEL29:
    load_int               0
-   033                    2
+   iload                  2
    widget_get_height     
    iadd                  
    load_int               5
@@ -41,31 +45,31 @@ LABEL29:
    iadd                  
    load_int               1
    load_int               0
-   1000                   1
+   widget_put_position    1
 LABEL40:
-   033                   
+   iload                  0
    widget_get_height_widget
    load_int               32
    isub                  
    widget_get_height     
    isub                  
-   034                    4
-   033                    1
+   istore                 4
+   iload                  1
    widget_get_scrollheight_widget
-   033                    1
+   iload                  1
    widget_get_height_widget
    isub                  
-   034                    5
-   033                    2
-   033                    5
+   istore                 5
+   iload                  2
+   iload                  5
    imul                  
-   033                    4
+   iload                  4
    idiv                  
-   034                    2
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   040                    37
+   istore                 2
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   invoke                 37
 LABEL64:
    return                

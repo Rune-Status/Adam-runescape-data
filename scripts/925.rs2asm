@@ -1,5 +1,9 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
    load_int               1
-   040                    927
+   invoke                 927
    load_int               924
    load_int               1054
    load_int               1055
@@ -7,45 +11,45 @@
    load_int               3
    load_string            "Y"
    load_int               10616832
-   2407                  
+   widget_put_config_listener_widget
    load_int               80
    load_int               -2147483645
    get_isresized         
+   load_int               10617379
+   widget_get_index_widget
    load_int               10617378
-   2702                  
-   load_int               10617377
-   2702                  
-   040                    900
+   widget_get_index_widget
+   invoke                 900
    load_string            "Ii11g"
    load_int               10616832
-   2424                  
+   widget_put_openclose_listener_widget
    load_int               663
    load_string            ""
    load_int               10616832
-   2418                  
+   widget_put_msg_listener_widget
    load_int               663
    load_string            ""
    load_int               10616832
-   2420                  
+   widget_put_friends_listener_widget
    load_int               216
    load_string            ""
    load_int               10616832
-   2421                  
+   widget_put_clan_listener_widget
    load_int               664
    load_int               1
    load_string            "1"
    load_int               10616832
    2422                  
    load_string            ""
-   048                    1
+   put_varc_string        1
    load_int               0
    load_int               -1
-   043                    42
-   043                    41
+   put_varc               42
+   put_varc               41
    load_int               -1
    load_int               0
-   043                    4
-   043                    3
+   put_varc               4
+   put_varc               3
    load_string            ""
    load_string            ""
    load_string            ""
@@ -66,64 +70,64 @@
    load_string            ""
    load_string            ""
    load_string            ""
-   048                    21
-   048                    20
-   048                    19
-   048                    18
-   048                    17
-   048                    16
-   048                    15
-   048                    14
-   048                    13
-   048                    12
-   048                    11
-   048                    10
-   048                    9
-   048                    8
-   048                    7
-   048                    6
-   048                    5
-   048                    4
-   048                    3
-   048                    2
+   put_varc_string        21
+   put_varc_string        20
+   put_varc_string        19
+   put_varc_string        18
+   put_varc_string        17
+   put_varc_string        16
+   put_varc_string        15
+   put_varc_string        14
+   put_varc_string        13
+   put_varc_string        12
+   put_varc_string        11
+   put_varc_string        10
+   put_varc_string        9
+   put_varc_string        8
+   put_varc_string        7
+   put_varc_string        6
+   put_varc_string        5
+   put_varc_string        4
+   put_varc_string        3
+   put_varc_string        2
    load_string            ""
    load_string            ""
-   048                    25
-   048                   
+   put_varc_string        25
+   put_varc_string       
    load_int               -2147483648
-   043                    55
+   put_varc               55
    load_string            ""
    load_int               0
-   043                    62
-   048                    28
+   put_varc               62
+   put_varc_string        28
    load_int               0
-   034                   
+   istore                 0
    load_int               105
    load_int               73
    load_int               579
-   033                   
-   3408                  
-   034                    1
+   iload                  0
+   get_enum_value        
+   istore                 1
 LABEL106:
-   033                    1
+   iload                  1
    load_int               -1
    if_icmpne              LABEL110
    jump                   LABEL155
 LABEL110:
-   load_int               10616875
+   load_int               10616876
    load_int               4
-   033                   
+   iload                  0
    load_int               2
    imul                  
-   100                   
-   load_int               10616875
+   widget_create_child   
+   load_int               10616876
    load_int               4
-   033                   
+   iload                  0
    load_int               2
    imul                  
    load_int               1
    iadd                  
-   100                    1
+   widget_create_child    1
    load_int               0
    widget_put_textcolor  
    load_int               0
@@ -135,45 +139,100 @@ LABEL110:
    load_int               0
    load_int               0
    load_int               14
-   1114                  
+   widget_put_text_alignment
    load_int               0
    load_int               0
    load_int               14
-   1114                   1
+   widget_put_text_alignment 1
    load_int               1
    widget_put_hidden     
    load_int               1
    widget_put_hidden      1
-   033                   
+   iload                  0
    load_int               1
    iadd                  
-   034                   
+   istore                 0
    load_int               105
    load_int               73
    load_int               579
-   033                   
-   3408                  
-   034                    1
+   iload                  0
+   get_enum_value        
+   istore                 1
    jump                   LABEL106
 LABEL155:
    load_int               0
    load_int               0
-   load_int               10616875
+   load_int               10616876
    widget_put_scroll_widget
-   load_int               10617376
-   load_int               10616875
+   load_int               10617377
+   load_int               10616876
    load_int               -1
    load_int               -1
    load_int               -1
    load_int               -1
    load_int               -1
    load_int               -1
-   040                    31
-   040                    923
+   invoke                 31
+   invoke                 923
    load_string            ""
    5021                  
-   040                    223
-   040                    178
-   040                    553
-   040                    84
+   invoke                 223
+   invoke                 178
+   invoke                 553
+   invoke                 84
+   invoke                 900
+   load_int               1745
+   if_icmpeq              LABEL179
+   jump                   LABEL200
+LABEL179:
+   load_int               10616833
+   widget_load           
+   load_int               1
+   if_icmpeq              LABEL184
+   jump                   LABEL189
+LABEL184:
+   load_int               0
+   load_int               0
+   load_int               0
+   load_int               0
+   widget_put_position   
+LABEL189:
+   load_int               10616861
+   widget_load           
+   load_int               1
+   if_icmpeq              LABEL194
+   jump                   LABEL199
+LABEL194:
+   load_int               0
+   load_int               0
+   load_int               0
+   load_int               2
+   widget_put_position   
+LABEL199:
+   jump                   LABEL220
+LABEL200:
+   load_int               10616833
+   widget_load           
+   load_int               1
+   if_icmpeq              LABEL205
+   jump                   LABEL210
+LABEL205:
+   load_int               0
+   load_int               0
+   load_int               0
+   load_int               2
+   widget_put_position   
+LABEL210:
+   load_int               10616861
+   widget_load           
+   load_int               1
+   if_icmpeq              LABEL215
+   jump                   LABEL220
+LABEL215:
+   load_int               0
+   load_int               0
+   load_int               0
+   load_int               0
+   widget_put_position   
+LABEL220:
    return                

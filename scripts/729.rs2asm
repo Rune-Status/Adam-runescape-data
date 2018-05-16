@@ -1,59 +1,63 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      0
+.string_var_count   0
    load_int               93
    load_int               13192
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_string            ","
-   040                    46
+   invoke                 46
    load_int               4194310
-   2112                  
+   widget_put_text_widget
    load_int               93
    load_int               995
-   3303                  
+   get_itemcontainer_stacksizes_total
    load_string            ","
-   040                    46
+   invoke                 46
    load_int               4194317
-   2112                  
-   042                    67
+   widget_put_text_widget
+   get_varc               67
    int_to_string         
    load_int               4194330
-   2112                  
-   042                    68
+   widget_put_text_widget
+   get_varc               68
    load_string            ","
-   040                    46
+   invoke                 46
    load_int               4194336
-   2112                  
-   042                    67
-   042                    68
+   widget_put_text_widget
+   get_varc               67
+   get_varc               68
    imul                  
    load_string            ","
-   040                    46
+   invoke                 46
    load_int               4194341
-   2112                  
-   042                    67
-   042                    68
+   widget_put_text_widget
+   get_varc               67
+   get_varc               68
    imul                  
    load_int               93
    load_int               995
-   3303                  
+   get_itemcontainer_stacksizes_total
    if_icmpgt              LABEL38
    jump                   LABEL43
 LABEL38:
    load_string            "You do not have enough coins for this transaction."
    load_int               4194331
-   2112                  
-   040                    730
+   widget_put_text_widget
+   invoke                 730
    jump                   LABEL53
 LABEL43:
    load_string            ""
    load_int               4194331
-   2112                  
-   042                    67
+   widget_put_text_widget
+   get_varc               67
    load_int               0
    if_icmple              LABEL50
    jump                   LABEL52
 LABEL50:
-   040                    730
+   invoke                 730
    jump                   LABEL53
 LABEL52:
-   040                    731
+   invoke                 731
 LABEL53:
    return                

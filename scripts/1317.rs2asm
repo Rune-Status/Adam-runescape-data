@@ -1,0 +1,523 @@
+.int_stack_count    5
+.string_stack_count 0
+.int_var_count      12
+.string_var_count   2
+   load_int               95
+   iload                  0
+   get_itemcontainer_itemid
+   istore                 5
+   iload                  5
+   load_int               -1
+   if_icmpeq              LABEL8
+   jump                   LABEL9
+LABEL8:
+   return                
+LABEL9:
+   iload                  5
+   4209                  
+   iload                  5
+   if_icmpne              LABEL14
+   jump                   LABEL21
+LABEL14:
+   load_int               2277
+   load_int               1
+   load_int               0
+   play_sound_effect     
+   load_string            "You can release placeholders by clicking on them."
+   send_game_message     
+   return                
+LABEL21:
+   iload                  4
+   invoke                 41
+   iload                  2
+   load_int               1
+   widget_load_child      1
+   load_int               1
+   if_icmpeq              LABEL29
+   jump                   LABEL31
+LABEL29:
+   load_int               1
+   widget_put_hidden      1
+LABEL31:
+   load_int               0
+   iload                  3
+   widget_put_hidden_widget
+   iload                  3
+   widget_unset_children 
+   load_int               0
+   istore                 6
+   load_int               95
+   iload                  0
+   get_itemcontainer_stacksize
+   istore                 7
+   iload                  7
+   load_string            ","
+   invoke                 46
+   load_string            " "
+   load_string            "<col=ffffff>"
+   load_string            "x"
+   load_string            "</col>"
+   load_string            " "
+   iload                  5
+   get_item_name         
+   string_append          7
+   sstore                 0
+   load_string            "Are you "
+   load_string            "<col=ffffff>"
+   load_string            "sure"
+   load_string            "</col>"
+   load_string            " you"
+   load_string            "<br>"
+   load_string            "want to destroy it?"
+   string_append          7
+   sstore                 1
+   iload                  7
+   load_int               1
+   if_icmpgt              LABEL67
+   jump                   LABEL80
+LABEL67:
+   load_string            "Are you "
+   load_string            "<col=ffffff>"
+   load_string            "sure"
+   load_string            "</col>"
+   load_string            " you want"
+   load_string            "<br>"
+   load_string            "to destroy "
+   load_string            "<col=ffffff>"
+   load_string            "all of them"
+   load_string            "</col>"
+   load_string            "?"
+   string_append          11
+   sstore                 1
+LABEL80:
+   sload                  0
+   load_int               512
+   load_int               495
+   get_max_line_width    
+   load_int               67
+   iadd                  
+   istore                 8
+   sload                  1
+   load_int               512
+   load_int               495
+   get_max_line_width    
+   load_int               170
+   iadd                  
+   istore                 9
+   iload                  8
+   iload                  9
+   if_icmplt              LABEL98
+   jump                   LABEL100
+LABEL98:
+   iload                  9
+   istore                 8
+LABEL100:
+   iload                  1
+   widget_get_parentid_widget
+   widget_get_width_widget
+   istore                 9
+   iload                  8
+   iload                  9
+   if_icmpgt              LABEL108
+   jump                   LABEL110
+LABEL108:
+   iload                  9
+   istore                 8
+LABEL110:
+   iload                  3
+   load_int               5
+   iload                  6
+   widget_create_child   
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+   iload                  8
+   load_int               120
+   load_int               0
+   load_int               0
+   widget_put_size       
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   widget_put_position   
+   load_int               1040
+   widget_put_spriteid   
+   load_int               1
+   widget_put_sprite_tiling
+LABEL132:
+   iload                  6
+   iload                  0
+   if_icmple              LABEL136
+   jump                   LABEL147
+LABEL136:
+   iload                  3
+   load_int               3
+   iload                  6
+   widget_create_child   
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+   load_int               1
+   widget_put_hidden     
+   jump                   LABEL132
+LABEL147:
+   iload                  3
+   load_int               4
+   iload                  6
+   widget_create_child   
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+   load_int               85
+   load_int               22
+   load_int               0
+   load_int               0
+   widget_put_size       
+   load_int               0
+   load_int               40
+   load_int               1
+   load_int               1
+   widget_put_position   
+   iload                  5
+   iload                  7
+   1200                  
+   load_string            "<col=ff9040>"
+   iload                  5
+   get_item_name         
+   load_string            "</col>"
+   string_append          3
+   widget_put_name       
+   iload                  3
+   load_int               5
+   iload                  6
+   widget_create_child    1
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+   load_int               85
+   load_int               22
+   load_int               0
+   load_int               0
+   widget_put_size        1
+   load_int               0
+   load_int               40
+   load_int               1
+   load_int               1
+   widget_put_position    1
+   load_int               812
+   widget_put_spriteid    1
+   iload                  3
+   load_int               4
+   iload                  6
+   widget_create_child    1
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+   load_int               85
+   load_int               22
+   load_int               0
+   load_int               0
+   widget_put_size        1
+   load_int               0
+   load_int               40
+   load_int               1
+   load_int               1
+   widget_put_position    1
+   load_int               1
+   load_int               1
+   load_int               0
+   widget_put_text_alignment 1
+   load_int               494
+   widget_put_fontid      1
+   load_int               1
+   widget_put_text_shadowed 1
+   load_string            "Wait"
+   widget_put_text        1
+   load_int               9408399
+   widget_put_textcolor   1
+   load_int               1318
+   iload                  7
+   iload                  3
+   widget_get_index      
+   widget_get_index       1
+   get_gamecycle         
+   load_int               100
+   iadd                  
+   load_string            "iIiii"
+   widget_put_render_listener
+   iload                  3
+   load_int               4
+   iload                  6
+   widget_create_child   
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+   iload                  8
+   load_int               20
+   load_int               0
+   load_int               0
+   widget_put_size       
+   load_int               0
+   load_int               -45
+   load_int               1
+   load_int               1
+   widget_put_position   
+   load_int               16750623
+   widget_put_textcolor  
+   load_int               1
+   load_int               2
+   load_int               0
+   widget_put_text_alignment
+   load_int               495
+   widget_put_fontid     
+   load_int               1
+   widget_put_text_shadowed
+   sload                  0
+   widget_put_text       
+   iload                  3
+   load_int               5
+   iload                  6
+   widget_create_child   
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+   load_int               16
+   load_int               16
+   load_int               0
+   load_int               0
+   widget_put_size       
+   iload                  8
+   load_int               2
+   idiv                  
+   load_int               18
+   isub                  
+   load_int               -44
+   load_int               1
+   load_int               1
+   widget_put_position   
+   load_int               831
+   istore                 10
+   iload                  10
+   widget_put_spriteid   
+   load_int               229
+   load_int               -2147483645
+   load_int               -2147483643
+   iload                  10
+   load_int               -1
+   load_string            "IidI"
+   widget_put_mouse_exit_listener
+   load_int               832
+   istore                 10
+   load_int               229
+   load_int               -2147483645
+   load_int               -2147483643
+   iload                  10
+   load_int               -1
+   load_string            "IidI"
+   widget_put_mouse_enter_listener
+   load_int               1
+   load_string            "Close"
+   widget_put_action     
+   load_int               1319
+   load_int               1
+   iload                  3
+   load_string            "iI"
+   widget_put_option_click_listener
+   iload                  8
+   load_int               2
+   idiv                  
+   load_int               42
+   isub                  
+   istore                 11
+   iload                  3
+   load_int               6
+   iload                  6
+   widget_create_child   
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+   iload                  3
+   load_int               6
+   iload                  6
+   widget_create_child    1
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+   load_int               80
+   load_int               120
+   load_int               0
+   load_int               0
+   widget_put_size       
+   load_int               80
+   load_int               120
+   load_int               0
+   load_int               0
+   widget_put_size        1
+   iload                  11
+   load_int               0
+   load_int               1
+   load_int               1
+   widget_put_position   
+   iload                  11
+   load_int               0
+   load_int               1
+   load_int               1
+   widget_put_position    1
+   load_int               9037
+   widget_put_modelid_1  
+   load_int               9056
+   widget_put_modelid_1   1
+   load_int               15
+   load_int               400
+   load_int               141
+   load_int               220
+   load_int               0
+   load_int               2500
+   widget_put_3d_rotation
+   load_int               15
+   load_int               400
+   load_int               141
+   load_int               220
+   load_int               0
+   load_int               2500
+   widget_put_3d_rotation 1
+   load_int               2439
+   widget_put_animation   1
+   iload                  3
+   load_int               6
+   iload                  6
+   widget_create_child   
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+   load_int               40
+   load_int               40
+   load_int               0
+   load_int               0
+   widget_put_size       
+   load_int               0
+   iload                  8
+   load_int               2
+   idiv                  
+   load_int               42
+   isub                  
+   isub                  
+   load_int               0
+   load_int               1
+   load_int               1
+   widget_put_position   
+   iload                  5
+   load_int               995
+   if_icmpeq              LABEL407
+   iload                  5
+   load_int               10476
+   if_icmpeq              LABEL407
+   jump                   LABEL415
+LABEL407:
+   iload                  7
+   load_int               10
+   if_icmpgt              LABEL411
+   jump                   LABEL415
+LABEL411:
+   iload                  5
+   load_int               10
+   1200                  
+   jump                   LABEL419
+LABEL415:
+   iload                  5
+   get_item_note_2       
+   iload                  7
+   1200                  
+LABEL419:
+   iload                  3
+   load_int               4
+   iload                  6
+   widget_create_child   
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+   iload                  8
+   load_int               120
+   load_int               0
+   load_int               0
+   widget_put_size       
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   widget_put_position   
+   load_int               16750623
+   widget_put_textcolor  
+   load_int               1
+   load_int               1
+   load_int               0
+   widget_put_text_alignment
+   load_int               495
+   widget_put_fontid     
+   load_int               1
+   widget_put_text_shadowed
+   sload                  1
+   widget_put_text       
+   iload                  3
+   load_int               3
+   iload                  6
+   widget_create_child   
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+   iload                  8
+   load_int               120
+   load_int               0
+   load_int               0
+   widget_put_size       
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   widget_put_position   
+   load_int               921100
+   widget_put_textcolor  
+   load_int               0
+   widget_put_filled     
+   iload                  3
+   load_int               3
+   iload                  6
+   widget_create_child   
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+   iload                  8
+   load_int               2
+   isub                  
+   load_int               118
+   load_int               0
+   load_int               0
+   widget_put_size       
+   load_int               0
+   load_int               0
+   load_int               1
+   load_int               1
+   widget_put_position   
+   load_int               4671301
+   widget_put_textcolor  
+   load_int               0
+   widget_put_filled     
+   load_int               2266
+   load_int               1
+   load_int               0
+   play_sound_effect     
+   return                

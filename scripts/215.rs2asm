@@ -1,6 +1,19 @@
+.int_stack_count    0
+.string_stack_count 1
+.int_var_count      0
+.string_var_count   1
+   invoke                 1942
+   load_int               1
+   if_icmpeq              LABEL4
+   jump                   LABEL7
+LABEL4:
+   load_string            "You can't kick players from your team during Wilderness Wars."
+   send_game_message     
+   return                
+LABEL7:
    load_string            "-Attempting to kick player from friends chat..."
    load_int               2
-   040                    96
-   035                   
-   3617                  
+   invoke                 96
+   sload                  0
+   clanchat_kick_clanmember
    return                

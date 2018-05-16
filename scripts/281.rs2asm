@@ -1,4 +1,8 @@
-   033                   
+.int_stack_count    14
+.string_stack_count 0
+.int_var_count      14
+.string_var_count   0
+   iload                  0
    load_int               1
    if_icmpne              LABEL4
    jump                   LABEL5
@@ -6,49 +10,58 @@ LABEL4:
    return                
 LABEL5:
    load_int               0
-   027                    4150
-   040                    514
+   set_varbit             4150
+   invoke                 514
    load_int               1
    if_icmpeq              LABEL11
-   jump                   LABEL37
+   jump                   LABEL43
 LABEL11:
    load_int               1
    load_int               1
-   040                    299
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   040                    282
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   040                    277
+   invoke                 299
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   iload                  13
+   invoke                 282
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   iload                  13
+   invoke                 277
    return                
-LABEL37:
-   040                    300
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   040                    282
+LABEL43:
+   invoke                 300
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   iload                  13
+   invoke                 282
    return                

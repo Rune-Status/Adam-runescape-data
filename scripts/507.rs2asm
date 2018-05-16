@@ -1,45 +1,58 @@
+.int_stack_count    14
+.string_stack_count 0
+.int_var_count      14
+.string_var_count   0
    load_int               1
    load_string            "View tab"
-   1300                  
+   widget_put_action     
    load_int               6
    load_string            "Collapse tab"
-   1300                  
+   widget_put_action     
+   load_int               7
+   load_string            "Remove placeholders"
+   widget_put_action     
    load_string            "<col=ff9040>"
-   033                    10
+   iload                  13
    int_to_string         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    load_int               504
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
    load_int               -2147483644
-   033                    10
-   load_string            "IIIIIIIIIIii"
-   1409                  
+   iload                  13
+   load_string            "IIIIIIIIIIIIIii"
+   widget_put_option_click_listener
    load_int               5
    1303                  
    load_int               5
    1304                  
    load_int               515
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   load_string            "IIIIIIIIII"
-   1405                  
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   load_string            "IIIIIIIIIIIII"
+   widget_put_drag_start_listener
    return                

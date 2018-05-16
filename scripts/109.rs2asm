@@ -1,43 +1,54 @@
-   040                    677
-   035                   
-   load_int               10616864
-   2112                  
+.int_stack_count    0
+.string_stack_count 1
+.int_var_count      0
+.string_var_count   2
+   invoke                 677
+   sload                  0
+   load_int               10616865
+   widget_put_text_widget
    load_int               8
-   043                    5
+   put_varc               5
    load_string            ""
-   040                    222
+   invoke                 222
    load_string            ""
-   036                    1
+   sstore                 1
    load_int               112
    load_int               -2147483640
    load_int               -2147483639
-   035                    1
+   sload                  1
    load_string            "izs"
-   load_int               10616865
-   2419                  
+   load_int               10616866
+   widget_put_key_listener_widget
    load_int               138
    load_string            ""
-   load_int               10616865
-   2423                  
-   040                    680
-   047                    128
+   load_int               10616866
+   widget_put_dialog_abort_listener_widget
+   invoke                 680
+   get_varc_string        128
    string_length         
    load_int               0
    if_icmpgt              LABEL27
    jump                   LABEL40
 LABEL27:
-   040                    678
+   invoke                 678
    load_string            "<col=000000>"
    load_string            "Last name:"
    load_string            "</col>"
    load_string            " "
-   047                    128
-   037                    5
-   1112                  
+   get_varc_string        128
+   string_append          5
+   widget_put_text       
    load_int               682
    load_int               8
-   047                    128
+   get_varc_string        128
    load_string            "is"
-   1400                  
+   widget_put_mouse_press_listener
 LABEL40:
+   invoke                 1972
+   load_int               1
+   if_icmpeq              LABEL44
+   jump                   LABEL45
+LABEL44:
+   invoke                 1983
+LABEL45:
    return                

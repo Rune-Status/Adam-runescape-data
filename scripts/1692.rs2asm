@@ -1,0 +1,52 @@
+.int_stack_count    4
+.string_stack_count 3
+.int_var_count      4
+.string_var_count   3
+   get_gamecycle         
+   iload                  3
+   if_icmplt              LABEL4
+   jump                   LABEL5
+LABEL4:
+   return                
+LABEL5:
+   iload                  1
+   iload                  2
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL11
+   jump                   LABEL42
+LABEL11:
+   load_int               38666240
+   iload                  0
+   widget_load_child      1
+   load_int               1
+   if_icmpeq              LABEL17
+   jump                   LABEL42
+LABEL17:
+   load_int               -1
+   load_string            ""
+   widget_put_render_listener 1
+   sload                  0
+   widget_put_text       
+   load_int               1690
+   load_int               -2147483644
+   iload                  0
+   iload                  1
+   iload                  2
+   sload                  0
+   sload                  1
+   sload                  2
+   load_string            "iiIisss"
+   widget_put_option_click_listener
+   load_int               1689
+   load_int               -2147483639
+   iload                  0
+   iload                  1
+   iload                  2
+   sload                  0
+   sload                  1
+   sload                  2
+   load_string            "ziIisss"
+   widget_put_key_listener 1
+LABEL42:
+   return                

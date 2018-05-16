@@ -1,85 +1,89 @@
-   033                   
+.int_stack_count    9
+.string_stack_count 1
+.int_var_count      9
+.string_var_count   1
+   iload                  0
    load_int               5
-   033                    2
-   100                   
-   033                   
+   iload                  2
+   widget_create_child   
+   iload                  0
    load_int               4
-   033                    2
+   iload                  2
    load_int               1
    iadd                  
-   100                    1
+   widget_create_child    1
    load_int               85
    load_int               22
    load_int               0
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               85
    load_int               22
    load_int               0
    load_int               0
-   1001                   1
-   033                    3
+   widget_put_size        1
+   iload                  3
    load_int               0
    load_int               0
    load_int               0
-   1000                  
-   033                    3
+   widget_put_position   
+   iload                  3
    load_int               0
    load_int               0
    load_int               0
-   1000                   1
+   widget_put_position    1
    load_int               494
    widget_put_fontid      1
    load_int               1
    load_int               1
    load_int               0
-   1114                   1
+   widget_put_text_alignment 1
    load_int               16750623
    widget_put_textcolor   1
    load_int               1
-   1115                   1
-   035                   
-   1112                   1
-   033                    1
-   033                    8
+   widget_put_text_shadowed 1
+   sload                  0
+   widget_put_text        1
+   iload                  1
+   iload                  8
    if_icmpne              LABEL46
    jump                   LABEL73
 LABEL46:
    load_int               812
-   widget_put_textureid  
+   widget_put_spriteid   
    load_int               85
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               16777215
    load_string            "Iii"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               85
    load_int               -2147483645
-   1702                   1
+   widget_get_index       1
    load_int               16750623
    load_string            "Iii"
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               1
-   035                   
-   1300                  
+   sload                  0
+   widget_put_action     
    load_int               406
-   033                   
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    1
+   iload                  0
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  1
    load_string            "IIIIII"
-   1409                  
+   widget_put_option_click_listener
    jump                   LABEL75
 LABEL73:
    load_int               813
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL75:
-   033                    2
+   iload                  2
    load_int               2
    iadd                  
-   033                    3
+   iload                  3
    load_int               86
    iadd                  
    return                

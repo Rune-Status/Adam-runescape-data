@@ -1,16 +1,20 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
    load_string            "<col=ff9040>"
    load_string            "XP drops"
    load_string            "</col>"
-   037                    3
-   033                   
+   string_append          3
+   iload                  0
    widget_put_name_widget
-   033                   
-   040                    1042
+   iload                  0
+   invoke                 1042
    load_int               1041
    load_int               -2147483645
    load_int               1055
    load_int               1
    load_string            "IY"
-   033                   
-   2407                  
+   iload                  0
+   widget_put_config_listener_widget
    return                

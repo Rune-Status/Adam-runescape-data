@@ -1,11 +1,15 @@
+.int_stack_count    2
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
    get_gamecycle         
-   033                    1
+   iload                  1
    if_icmplt              LABEL4
    jump                   LABEL5
 LABEL4:
    return                
 LABEL5:
-   033                   
-   035                   
-   040                    1230
+   iload                  0
+   sload                  0
+   invoke                 1230
    return                

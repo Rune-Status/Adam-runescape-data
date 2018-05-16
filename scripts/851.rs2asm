@@ -1,19 +1,23 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   1
    load_string            "Resizable mode stone buttons:"
    load_string            "<br>"
    load_string            "'Old School Box'"
-   037                    3
-   036                   
-   025                    4607
+   string_append          3
+   sstore                 0
+   get_varbit             4607
    load_int               0
    if_icmpeq              LABEL9
    jump                   LABEL49
 LABEL9:
    load_int               761
-   033                   
-   widget_put_textureid_widget
-   033                    1
+   iload                  0
+   widget_put_spriteid_widget
+   iload                  1
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL18
    jump                   LABEL20
@@ -21,9 +25,9 @@ LABEL18:
    load_int               9408399
    widget_put_textcolor  
 LABEL20:
-   033                    1
+   iload                  1
    load_int               1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL26
    jump                   LABEL28
@@ -31,36 +35,36 @@ LABEL26:
    load_int               9408399
    widget_put_textcolor  
 LABEL28:
-   033                    1
+   iload                  1
    load_int               2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL34
    jump                   LABEL36
 LABEL34:
    load_int               697
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL36:
    load_int               -1
    load_string            ""
-   033                    1
-   2412                  
+   iload                  1
+   widget_put_mouse_hover_listener_widget
    load_int               -1
    load_string            ""
-   033                    1
-   2404                  
+   iload                  1
+   widget_put_mouse_exit_listener_widget
    load_int               -1
    load_string            ""
-   033                    1
-   2409                  
+   iload                  1
+   widget_put_option_click_listener_widget
    jump                   LABEL124
 LABEL49:
    load_int               762
-   033                   
-   widget_put_textureid_widget
-   033                    1
+   iload                  0
+   widget_put_spriteid_widget
+   iload                  1
    load_int               0
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL58
    jump                   LABEL60
@@ -68,9 +72,9 @@ LABEL58:
    load_int               16750623
    widget_put_textcolor  
 LABEL60:
-   033                    1
+   iload                  1
    load_int               1
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL66
    jump                   LABEL68
@@ -78,7 +82,7 @@ LABEL66:
    load_int               16750623
    widget_put_textcolor  
 LABEL68:
-   025                    4611
+   get_varbit             4611
    load_int               1
    if_icmpeq              LABEL72
    jump                   LABEL88
@@ -88,17 +92,17 @@ LABEL72:
    load_string            "'Bottom Line'"
    load_string            "<br>"
    load_string            "The hotkeys will not close the side-panels."
-   037                    5
-   036                   
-   033                    1
+   string_append          5
+   sstore                 0
+   iload                  1
    load_int               2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL85
    jump                   LABEL87
 LABEL85:
    load_int               698
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL87:
    jump                   LABEL103
 LABEL88:
@@ -107,50 +111,50 @@ LABEL88:
    load_string            "'Bottom Line'"
    load_string            "<br>"
    load_string            "The hotkeys can close the side-panels."
-   037                    5
-   036                   
-   033                    1
+   string_append          5
+   sstore                 0
+   iload                  1
    load_int               2
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL101
    jump                   LABEL103
 LABEL101:
    load_int               699
-   widget_put_textureid  
+   widget_put_spriteid   
 LABEL103:
    load_int               121
    load_int               1
    load_int               -2147483645
    load_string            "1I"
-   033                    1
-   2412                  
+   iload                  1
+   widget_put_mouse_hover_listener_widget
    load_int               121
    load_int               0
    load_int               -2147483645
    load_string            "1I"
-   033                    1
-   2404                  
+   iload                  1
+   widget_put_mouse_exit_listener_widget
    load_int               850
    load_int               -2147483644
    load_int               1
-   033                   
-   033                    1
-   033                    2
+   iload                  0
+   iload                  1
+   iload                  2
    load_string            "i1III"
-   033                    1
-   2409                  
+   iload                  1
+   widget_put_option_click_listener_widget
 LABEL124:
    load_int               526
-   033                   
+   iload                  0
    load_int               -1
-   033                    2
-   035                   
+   iload                  2
+   sload                  0
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   033                   
-   2412                  
+   iload                  0
+   widget_put_mouse_hover_listener_widget
    load_int               0
-   043                    2
+   put_varc               2
    return                

@@ -1,20 +1,24 @@
+.int_stack_count    21
+.string_stack_count 0
+.int_var_count      23
+.string_var_count   0
    load_int               16750623
-   034                    21
+   istore                 21
    load_int               0
-   034                    22
+   istore                 22
 LABEL4:
-   033                    22
-   033                    2
+   iload                  22
+   iload                  2
    if_icmplt              LABEL8
    jump                   LABEL64
 LABEL8:
-   033                   
+   iload                  0
    load_int               4
-   033                    22
+   iload                  22
    load_int               1
    iadd                  
-   100                   
-   033                    1
+   widget_create_child   
+   iload                  1
    load_int               1168
    if_icmpeq              LABEL18
    jump                   LABEL24
@@ -22,52 +26,52 @@ LABEL18:
    load_int               105
    load_int               105
    load_int               1169
-   033                    22
-   3408                  
-   034                    21
+   iload                  22
+   get_enum_value        
+   istore                 21
 LABEL24:
-   033                   
-   033                    2
-   033                    21
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    8
-   033                    9
-   033                    10
-   033                    11
-   033                    12
-   033                    13
-   033                    14
-   033                    15
-   033                    16
-   033                    17
-   033                    18
-   033                    19
-   033                    20
-   040                    1033
+   iload                  0
+   iload                  2
+   iload                  21
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iload                  10
+   iload                  11
+   iload                  12
+   iload                  13
+   iload                  14
+   iload                  15
+   iload                  16
+   iload                  17
+   iload                  18
+   iload                  19
+   iload                  20
+   invoke                 1033
    load_int               0
-   033                    22
+   iload                  22
    load_int               15
    imul                  
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               105
    load_int               115
-   033                    1
-   033                    22
-   3408                  
-   1112                  
-   033                    22
+   iload                  1
+   iload                  22
+   get_enum_value        
+   widget_put_text       
+   iload                  22
    load_int               1
    iadd                  
-   034                    22
+   istore                 22
    jump                   LABEL4
 LABEL64:
-   033                    2
+   iload                  2
    return                
    load_int               0
    return                

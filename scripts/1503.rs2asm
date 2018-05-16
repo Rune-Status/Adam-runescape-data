@@ -1,0 +1,21 @@
+.int_stack_count    1
+.string_stack_count 1
+.int_var_count      1
+.string_var_count   1
+LABEL0:
+   sload                  0
+   string_length         
+   iload                  0
+   if_icmplt              LABEL5
+   jump                   LABEL10
+LABEL5:
+   load_string            "0"
+   sload                  0
+   concat_string         
+   sstore                 0
+   jump                   LABEL0
+LABEL10:
+   sload                  0
+   return                
+   load_string            ""
+   return                

@@ -1,0 +1,166 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      7
+.string_var_count   0
+   load_int               0
+   istore                 2
+   load_int               0
+   istore                 3
+   load_int               -1
+   istore                 4
+   load_int               -1
+   istore                 5
+   load_int               0
+   istore                 6
+LABEL10:
+   iload                  6
+   iload                  1
+   if_icmplt              LABEL14
+   jump                   LABEL143
+LABEL14:
+   iload                  0
+   iload                  6
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL20
+   jump                   LABEL138
+LABEL20:
+   widget_put_actions_null
+   load_int               93
+   iload                  6
+   get_itemcontainer_itemid
+   istore                 5
+   get_varbit             3459
+   load_int               1
+   if_icmpeq              LABEL29
+   jump                   LABEL41
+LABEL29:
+   load_int               0
+   widget_put_hidden     
+   iload                  5
+   load_int               93
+   iload                  6
+   get_itemcontainer_stacksize
+   invoke                 1622
+   load_int               10
+   1303                  
+   load_int               10
+   1304                  
+   jump                   LABEL138
+LABEL41:
+   iload                  5
+   load_int               -1
+   if_icmpne              LABEL45
+   jump                   LABEL133
+LABEL45:
+   load_int               0
+   widget_put_hidden     
+   iload                  5
+   load_int               93
+   iload                  6
+   get_itemcontainer_stacksize
+   1200                  
+   load_string            "<col=ff9040>"
+   iload                  5
+   get_item_name         
+   load_string            "</col>"
+   string_append          3
+   widget_put_name       
+   load_int               0
+   load_int               0
+   istore                 3
+   istore                 2
+   load_int               105
+   load_int               111
+   load_int               1666
+   iload                  3
+   get_enum_value        
+   istore                 4
+LABEL68:
+   iload                  2
+   load_int               0
+   if_icmpeq              LABEL72
+   jump                   LABEL93
+LABEL72:
+   iload                  4
+   load_int               -1
+   if_icmpne              LABEL76
+   jump                   LABEL93
+LABEL76:
+   iload                  4
+   iload                  5
+   if_icmpeq              LABEL80
+   jump                   LABEL82
+LABEL80:
+   load_int               1
+   istore                 2
+LABEL82:
+   iload                  3
+   load_int               1
+   iadd                  
+   istore                 3
+   load_int               105
+   load_int               111
+   load_int               1666
+   iload                  3
+   get_enum_value        
+   istore                 4
+   jump                   LABEL68
+LABEL93:
+   iload                  2
+   load_int               1
+   if_icmpeq              LABEL97
+   jump                   LABEL124
+LABEL97:
+   load_int               1
+   load_string            "Donate"
+   widget_put_action     
+   load_int               2
+   load_string            "Donate-5"
+   widget_put_action     
+   load_int               3
+   load_string            "Donate-10"
+   widget_put_action     
+   load_int               4
+   load_string            "Donate-All"
+   widget_put_action     
+   load_int               5
+   load_string            "Donate-X"
+   widget_put_action     
+   load_int               10
+   load_string            "Examine"
+   widget_put_action     
+   load_int               0
+   widget_put_opacity    
+   load_int               177
+   load_int               -2147483644
+   load_int               -2147483645
+   load_int               -2147483643
+   load_string            "iIi"
+   widget_put_option_click_listener
+   jump                   LABEL132
+LABEL124:
+   load_int               10
+   load_string            "Donate"
+   widget_put_action     
+   load_int               150
+   widget_put_opacity    
+   load_int               -1
+   load_string            ""
+   widget_put_option_click_listener
+LABEL132:
+   jump                   LABEL138
+LABEL133:
+   load_int               1
+   widget_put_hidden     
+   load_int               -1
+   load_string            ""
+   widget_put_option_click_listener
+LABEL138:
+   iload                  6
+   load_int               1
+   iadd                  
+   istore                 6
+   jump                   LABEL10
+LABEL143:
+   return                

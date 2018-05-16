@@ -1,0 +1,34 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
+   get_gamecycle         
+   load_int               50
+   modulo                
+   load_int               0
+   if_icmpeq              LABEL6
+   jump                   LABEL7
+LABEL6:
+   return                
+LABEL7:
+   get_gamecycle         
+   iload                  3
+   isub                  
+   load_int               50
+   idiv                  
+   istore                 4
+   iload                  0
+   iload                  1
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL19
+   jump                   LABEL25
+LABEL19:
+   iload                  2
+   iload                  4
+   iadd                  
+   iload                  2
+   iload                  3
+   invoke                 1575
+LABEL25:
+   return                

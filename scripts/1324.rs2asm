@@ -1,0 +1,33 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
+   get_playermod         
+   load_int               1
+   if_icmpeq              LABEL7
+   get_rights            
+   load_int               0
+   if_icmpgt              LABEL7
+   jump                   LABEL20
+LABEL7:
+   get_varc               6
+   load_int               1
+   if_icmpeq              LABEL11
+   jump                   LABEL14
+LABEL11:
+   load_int               0
+   put_varc               6
+   jump                   LABEL16
+LABEL14:
+   load_int               1
+   put_varc               6
+LABEL16:
+   iload                  0
+   get_varc               6
+   invoke                 1326
+   jump                   LABEL22
+LABEL20:
+   load_string            "Only moderators may do that."
+   send_game_message     
+LABEL22:
+   return                

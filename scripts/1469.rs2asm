@@ -1,0 +1,39 @@
+.int_stack_count    7
+.string_stack_count 0
+.int_var_count      7
+.string_var_count   0
+   iload                  0
+   load_int               1
+   if_icmpne              LABEL4
+   jump                   LABEL5
+LABEL4:
+   return                
+LABEL5:
+   load_int               2266
+   load_int               1
+   load_int               0
+   play_sound_effect     
+   iload                  2
+   iload                  5
+   if_icmpeq              LABEL13
+   jump                   LABEL16
+LABEL13:
+   iload                  1
+   set_varbit             5402
+   jump                   LABEL22
+LABEL16:
+   iload                  2
+   iload                  6
+   if_icmpeq              LABEL20
+   jump                   LABEL22
+LABEL20:
+   iload                  1
+   set_varbit             4930
+LABEL22:
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   invoke                 1468
+   return                

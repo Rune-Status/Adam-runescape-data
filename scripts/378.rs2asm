@@ -1,31 +1,35 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   1
    load_string            "Accept Aid (currently off)"
-   036                   
-   025                    4180
+   sstore                 0
+   get_varbit             4180
    load_int               0
    if_icmpeq              LABEL6
    jump                   LABEL10
 LABEL6:
    load_int               761
-   033                   
-   widget_put_textureid_widget
+   iload                  0
+   widget_put_spriteid_widget
    jump                   LABEL15
 LABEL10:
    load_string            "Accept Aid (currently on)"
-   036                   
+   sstore                 0
    load_int               762
-   033                   
-   widget_put_textureid_widget
+   iload                  0
+   widget_put_spriteid_widget
 LABEL15:
    load_int               526
-   033                   
+   iload                  0
    load_int               -1
-   033                    1
-   035                   
+   iload                  1
+   sload                  0
    load_int               25
    load_int               190
    load_string            "IiIsii"
-   033                   
-   2412                  
+   iload                  0
+   widget_put_mouse_hover_listener_widget
    load_int               0
-   043                    2
+   put_varc               2
    return                

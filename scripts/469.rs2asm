@@ -1,46 +1,50 @@
-   033                   
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   iload                  0
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL37
 LABEL4:
-   033                    2
-   033                    3
-   200                    1
+   iload                  2
+   iload                  3
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL10
    jump                   LABEL37
 LABEL10:
-   025                    4102
-   033                    1
+   get_varbit             4102
+   iload                  1
    test_bit              
    load_int               1
    if_icmpeq              LABEL16
    jump                   LABEL21
 LABEL16:
-   025                    4102
-   033                    1
+   get_varbit             4102
+   iload                  1
    clear_bit             
-   027                    4102
+   set_varbit             4102
    jump                   LABEL31
 LABEL21:
-   033                    1
-   040                    464
+   iload                  1
+   invoke                 464
    load_int               0
    if_icmpeq              LABEL26
    jump                   LABEL27
 LABEL26:
    return                
 LABEL27:
-   025                    4102
-   033                    1
+   get_varbit             4102
+   iload                  1
    set_bit               
-   027                    4102
+   set_varbit             4102
 LABEL31:
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
-   033                    1
-   040                    471
+   play_sound_effect     
+   iload                  1
+   invoke                 471
 LABEL37:
    return                

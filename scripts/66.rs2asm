@@ -1,25 +1,29 @@
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
    load_int               0
    load_int               0
-   033                    3
+   iload                  3
    widget_get_rotationx_widget
-   033                   
+   iload                  0
    iadd                  
    load_int               2047
    and                   
-   033                    3
+   iload                  3
    widget_get_rotationz_widget
-   033                    1
+   iload                  1
    iadd                  
    load_int               2047
    and                   
-   033                    3
+   iload                  3
    widget_get_rotationy_widget
-   033                    2
+   iload                  2
    iadd                  
    load_int               2047
    and                   
-   033                    3
-   2605                  
-   033                    3
-   2109                  
+   iload                  3
+   widget_get_modelzoom_widget
+   iload                  3
+   widget_put_3d_rotation_widget
    return                

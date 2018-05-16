@@ -1,800 +1,829 @@
+.int_stack_count    28
+.string_stack_count 0
+.int_var_count      41
+.string_var_count   5
    load_int               -1
-   034                    28
+   istore                 28
    load_int               0
-   034                    29
+   istore                 29
    load_int               0
-   034                    30
+   istore                 30
    load_int               0
-   034                    31
+   istore                 31
    load_string            "Cancelled"
-   036                   
+   sstore                 0
    load_int               1108
-   034                    32
+   istore                 32
    load_int               1109
-   034                    33
+   istore                 33
    load_int               1106
-   034                    34
+   istore                 34
    load_int               1107
-   034                    35
+   istore                 35
    load_string            "Offer to BUY items."
-   036                    1
+   sstore                 1
    load_int               0
-   034                    36
-   033                    9
-   3910                  
+   istore                 36
+   load_int               0
+   istore                 37
+   invoke                 1138
    load_int               1
-   if_icmpeq              LABEL27
-   jump                   LABEL335
-LABEL27:
-   033                   
-   load_int               0
-   3301                  
-   034                    28
-   033                    28
-   load_int               -1
-   if_icmpeq              LABEL35
-   jump                   LABEL39
+   if_icmpeq              LABEL28
+   jump                   LABEL35
+LABEL28:
+   iload                  9
+   load_int               8
+   if_icmplt              LABEL32
+   jump                   LABEL34
+LABEL32:
+   load_int               1
+   istore                 37
+LABEL34:
+   jump                   LABEL44
 LABEL35:
-   033                   
+   iload                  9
+   load_int               3
+   if_icmplt              LABEL42
+   get_varc               103
    load_int               1
-   3301                  
-   034                    28
-LABEL39:
-   033                    28
-   load_int               -1
-   if_icmpeq              LABEL43
-   jump                   LABEL328
-LABEL43:
-   033                    8
-   033                    15
-   200                   
+   if_icmpeq              LABEL42
+   jump                   LABEL44
+LABEL42:
+   load_int               1
+   istore                 37
+LABEL44:
+   iload                  9
+   get_grandexchange_offer_not_started
    load_int               1
    if_icmpeq              LABEL49
-   jump                   LABEL51
+   jump                   LABEL354
 LABEL49:
-   load_string            "Empty"
-   1112                  
-LABEL51:
-   033                    8
-   033                    12
-   200                   
-   load_int               1
+   iload                  0
+   load_int               0
+   get_itemcontainer_itemid
+   istore                 28
+   iload                  28
+   load_int               -1
    if_icmpeq              LABEL57
-   jump                   LABEL59
+   jump                   LABEL61
 LABEL57:
+   iload                  0
    load_int               1
-   widget_put_hidden     
-LABEL59:
-   033                    8
-   033                    16
-   200                   
-   load_int               1
+   get_itemcontainer_itemid
+   istore                 28
+LABEL61:
+   iload                  28
+   load_int               -1
    if_icmpeq              LABEL65
-   jump                   LABEL67
+   jump                   LABEL347
 LABEL65:
+   iload                  8
+   iload                  15
+   widget_load_child     
    load_int               1
-   widget_put_hidden     
-LABEL67:
-   033                    8
-   033                    17
-   200                   
-   load_int               1
-   if_icmpeq              LABEL73
-   jump                   LABEL75
+   if_icmpeq              LABEL71
+   jump                   LABEL73
+LABEL71:
+   load_string            "Empty"
+   widget_put_text       
 LABEL73:
+   iload                  8
+   iload                  12
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL79
+   jump                   LABEL81
+LABEL79:
    load_int               1
    widget_put_hidden     
-LABEL75:
-   033                    8
-   033                    18
-   200                   
-   load_int               1
-   if_icmpeq              LABEL81
-   jump                   LABEL83
 LABEL81:
+   iload                  8
+   iload                  16
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL87
+   jump                   LABEL89
+LABEL87:
    load_int               1
    widget_put_hidden     
-LABEL83:
-   033                    8
-   033                    19
-   200                   
-   load_int               1
-   if_icmpeq              LABEL89
-   jump                   LABEL91
 LABEL89:
+   iload                  8
+   iload                  17
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL95
+   jump                   LABEL97
+LABEL95:
    load_int               1
    widget_put_hidden     
-LABEL91:
-   033                    8
-   033                    20
-   200                   
-   load_int               1
-   if_icmpeq              LABEL97
-   jump                   LABEL99
 LABEL97:
+   iload                  8
+   iload                  18
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL103
+   jump                   LABEL105
+LABEL103:
    load_int               1
    widget_put_hidden     
-LABEL99:
-   033                    8
-   033                    21
-   200                   
-   load_int               1
-   if_icmpeq              LABEL105
-   jump                   LABEL107
 LABEL105:
+   iload                  8
+   iload                  19
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL111
+   jump                   LABEL113
+LABEL111:
    load_int               1
    widget_put_hidden     
-LABEL107:
-   033                    8
-   033                    22
-   200                   
-   load_int               1
-   if_icmpeq              LABEL113
-   jump                   LABEL115
 LABEL113:
+   iload                  8
+   iload                  20
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL119
+   jump                   LABEL121
+LABEL119:
    load_int               1
    widget_put_hidden     
-LABEL115:
-   033                    8
-   033                    23
-   200                   
-   load_int               1
-   if_icmpeq              LABEL121
-   jump                   LABEL123
 LABEL121:
+   iload                  8
+   iload                  21
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL127
+   jump                   LABEL129
+LABEL127:
    load_int               1
    widget_put_hidden     
-LABEL123:
-   033                    8
-   033                    24
-   200                   
-   load_int               1
-   if_icmpeq              LABEL129
-   jump                   LABEL131
 LABEL129:
+   iload                  8
+   iload                  22
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL135
+   jump                   LABEL137
+LABEL135:
    load_int               1
    widget_put_hidden     
-LABEL131:
-   033                    8
-   033                    10
-   200                   
-   load_int               1
-   if_icmpeq              LABEL137
-   jump                   LABEL139
 LABEL137:
-   load_int               0
-   widget_put_hidden     
-LABEL139:
-   033                    8
-   033                    11
-   200                   
+   iload                  8
+   iload                  23
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL145
-   jump                   LABEL147
+   if_icmpeq              LABEL143
+   jump                   LABEL145
+LABEL143:
+   load_int               1
+   widget_put_hidden     
 LABEL145:
-   load_int               0
-   widget_put_hidden     
-LABEL147:
-   033                    8
-   033                    13
-   200                   
+   iload                  8
+   iload                  24
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL153
-   jump                   LABEL327
+   if_icmpeq              LABEL151
+   jump                   LABEL153
+LABEL151:
+   load_int               1
+   widget_put_hidden     
 LABEL153:
-   033                    8
-   033                    14
-   200                    1
+   iload                  8
+   iload                  10
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL159
-   jump                   LABEL327
+   jump                   LABEL161
 LABEL159:
+   load_int               0
+   widget_put_hidden     
+LABEL161:
+   iload                  8
+   iload                  11
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL167
+   jump                   LABEL169
+LABEL167:
+   load_int               0
+   widget_put_hidden     
+LABEL169:
+   iload                  8
+   iload                  13
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL175
+   jump                   LABEL346
+LABEL175:
+   iload                  8
+   iload                  14
+   widget_load_child      1
+   load_int               1
+   if_icmpeq              LABEL181
+   jump                   LABEL346
+LABEL181:
    load_int               0
    widget_put_hidden     
    load_int               0
    widget_put_hidden      1
-   033                    9
-   load_int               3
-   if_icmplt              LABEL170
-   042                    103
+   iload                  37
    load_int               1
-   if_icmpeq              LABEL170
-   jump                   LABEL281
-LABEL170:
+   if_icmpeq              LABEL189
+   jump                   LABEL300
+LABEL189:
    load_int               1
    load_string            "Create "
    load_string            "<col=ff9040>"
    load_string            "Buy"
    load_string            "</col>"
    load_string            " offer"
-   037                    5
-   1300                  
+   string_append          5
+   widget_put_action     
    load_int               1
    load_string            "Create "
    load_string            "<col=ff9040>"
    load_string            "Sell"
    load_string            "</col>"
    load_string            " offer"
-   037                    5
-   1300                   1
+   string_append          5
+   widget_put_action      1
    load_int               805
    load_int               -2147483644
-   033                    9
+   iload                  9
    load_int               0
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    27
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  27
    load_string            "iiiIiIIIII"
-   1409                  
+   widget_put_option_click_listener
    load_int               805
    load_int               -2147483644
-   033                    9
+   iload                  9
    load_int               1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   033                    27
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  27
    load_string            "iiiIiIIIII"
-   1409                   1
+   widget_put_option_click_listener 1
    load_int               229
-   033                    8
-   033                    25
-   033                    33
+   iload                  8
+   iload                  25
+   iload                  33
    load_int               -1
    load_string            "IidI"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               229
-   033                    8
-   033                    26
-   033                    35
+   iload                  8
+   iload                  26
+   iload                  35
    load_int               -1
    load_string            "IidI"
-   1403                   1
+   widget_put_mouse_enter_listener 1
    load_int               229
-   033                    8
-   033                    25
-   033                    32
-   033                    27
+   iload                  8
+   iload                  25
+   iload                  32
+   iload                  27
    load_string            "IidI"
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               229
-   033                    8
-   033                    26
-   033                    34
-   033                    27
+   iload                  8
+   iload                  26
+   iload                  34
+   iload                  27
    load_string            "IidI"
-   1404                   1
+   widget_put_mouse_exit_listener 1
    load_int               526
    load_int               -2147483645
    load_int               -2147483643
-   033                    27
-   035                    1
+   iload                  27
+   sload                  1
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   1412                  
+   widget_put_mouse_hover_listener
    load_string            "Offer to SELL items."
-   036                    1
+   sstore                 1
    load_int               526
    load_int               -2147483645
    load_int               -2147483643
-   033                    27
-   035                    1
+   iload                  27
+   sload                  1
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   1412                   1
-   033                    8
-   033                    25
-   200                   
+   widget_put_mouse_hover_listener 1
+   iload                  8
+   iload                  25
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL266
-   jump                   LABEL280
-LABEL266:
-   033                    8
-   033                    26
-   200                    1
+   if_icmpeq              LABEL285
+   jump                   LABEL299
+LABEL285:
+   iload                  8
+   iload                  26
+   widget_load_child      1
    load_int               1
-   if_icmpeq              LABEL272
-   jump                   LABEL280
-LABEL272:
+   if_icmpeq              LABEL291
+   jump                   LABEL299
+LABEL291:
    load_int               0
    widget_put_hidden     
    load_int               0
    widget_put_hidden      1
-   033                    32
-   widget_put_textureid  
-   033                    34
-   widget_put_textureid   1
-LABEL280:
-   jump                   LABEL327
-LABEL281:
+   iload                  32
+   widget_put_spriteid   
+   iload                  34
+   widget_put_spriteid    1
+LABEL299:
+   jump                   LABEL346
+LABEL300:
    widget_put_actions_null
    widget_put_actions_null 1
    load_int               -1
    load_string            ""
-   1409                  
+   widget_put_option_click_listener
    load_int               -1
    load_string            ""
-   1409                   1
+   widget_put_option_click_listener 1
    load_int               -1
    load_string            ""
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               -1
    load_string            ""
-   1403                   1
+   widget_put_mouse_enter_listener 1
    load_int               -1
    load_string            ""
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               -1
    load_string            ""
-   1404                   1
+   widget_put_mouse_exit_listener 1
    load_int               -1
    load_string            ""
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               -1
    load_string            ""
-   1412                   1
-   033                    8
-   033                    25
-   200                   
+   widget_put_mouse_hover_listener 1
+   iload                  8
+   iload                  25
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL313
-   jump                   LABEL327
-LABEL313:
-   033                    8
-   033                    26
-   200                    1
+   if_icmpeq              LABEL332
+   jump                   LABEL346
+LABEL332:
+   iload                  8
+   iload                  26
+   widget_load_child      1
    load_int               1
-   if_icmpeq              LABEL319
-   jump                   LABEL327
-LABEL319:
+   if_icmpeq              LABEL338
+   jump                   LABEL346
+LABEL338:
    load_int               0
    widget_put_hidden     
    load_int               0
    widget_put_hidden      1
-   033                    33
-   widget_put_textureid  
-   033                    35
-   widget_put_textureid   1
-LABEL327:
+   iload                  33
+   widget_put_spriteid   
+   iload                  35
+   widget_put_spriteid    1
+LABEL346:
    return                
-LABEL328:
+LABEL347:
    load_int               1
-   033                   
-   033                    28
-   3303                  
-   034                    29
-   034                    36
-   jump                   LABEL357
-LABEL335:
-   033                    9
+   iload                  0
+   iload                  28
+   get_itemcontainer_stacksizes_total
+   istore                 29
+   istore                 36
+   jump                   LABEL376
+LABEL354:
+   iload                  9
    get_grandexchange_offer_itemid
-   033                    9
+   iload                  9
    get_grandexchange_offer_totalquantity
-   034                    29
-   034                    28
-   033                    9
+   istore                 29
+   istore                 28
+   iload                  9
    get_grandexchange_offer_quantitysold
-   033                    9
+   iload                  9
    get_grandexchange_offer_price
-   034                    31
-   034                    30
-   033                    9
-   3903                  
-   load_int               1
-   if_icmpeq              LABEL352
-   jump                   LABEL355
-LABEL352:
-   load_string            "Sell"
-   036                   
-   jump                   LABEL357
-LABEL355:
-   load_string            "Buy"
-   036                   
-LABEL357:
-   033                    8
-   033                    15
-   200                   
-   load_int               1
-   if_icmpeq              LABEL363
-   jump                   LABEL365
-LABEL363:
-   035                   
-   1112                  
-LABEL365:
-   033                    8
-   033                    10
-   200                   
+   istore                 31
+   istore                 30
+   iload                  9
+   get_grandexchange_offer_is_selling
    load_int               1
    if_icmpeq              LABEL371
-   jump                   LABEL373
+   jump                   LABEL374
 LABEL371:
+   load_string            "Sell"
+   sstore                 0
+   jump                   LABEL376
+LABEL374:
+   load_string            "Buy"
+   sstore                 0
+LABEL376:
+   iload                  8
+   iload                  15
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL382
+   jump                   LABEL384
+LABEL382:
+   sload                  0
+   widget_put_text       
+LABEL384:
+   iload                  8
+   iload                  10
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL390
+   jump                   LABEL392
+LABEL390:
    load_int               1
    widget_put_hidden     
-LABEL373:
-   033                    8
-   033                    11
-   200                   
+LABEL392:
+   iload                  8
+   iload                  11
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL379
-   jump                   LABEL381
-LABEL379:
-   load_int               1
-   widget_put_hidden     
-LABEL381:
-   033                    8
-   033                    13
-   200                   
-   load_int               1
-   if_icmpeq              LABEL387
-   jump                   LABEL389
-LABEL387:
+   if_icmpeq              LABEL398
+   jump                   LABEL400
+LABEL398:
    load_int               1
    widget_put_hidden     
-LABEL389:
-   033                    8
-   033                    14
-   200                   
+LABEL400:
+   iload                  8
+   iload                  13
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL395
-   jump                   LABEL397
-LABEL395:
-   load_int               1
-   widget_put_hidden     
-LABEL397:
-   033                    8
-   033                    25
-   200                   
-   load_int               1
-   if_icmpeq              LABEL403
-   jump                   LABEL405
-LABEL403:
+   if_icmpeq              LABEL406
+   jump                   LABEL408
+LABEL406:
    load_int               1
    widget_put_hidden     
-LABEL405:
-   033                    8
-   033                    26
-   200                   
+LABEL408:
+   iload                  8
+   iload                  14
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL411
-   jump                   LABEL413
-LABEL411:
+   if_icmpeq              LABEL414
+   jump                   LABEL416
+LABEL414:
    load_int               1
    widget_put_hidden     
-LABEL413:
+LABEL416:
+   iload                  8
+   iload                  25
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL422
+   jump                   LABEL424
+LABEL422:
+   load_int               1
+   widget_put_hidden     
+LABEL424:
+   iload                  8
+   iload                  26
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL430
+   jump                   LABEL432
+LABEL430:
+   load_int               1
+   widget_put_hidden     
+LABEL432:
    load_string            ","
-   036                    2
-   033                    8
-   033                    12
-   200                   
+   sstore                 2
+   iload                  8
+   iload                  12
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL421
-   jump                   LABEL535
-LABEL421:
+   if_icmpeq              LABEL440
+   jump                   LABEL554
+LABEL440:
    load_int               0
    widget_put_hidden     
    load_int               255
    widget_put_opacity    
    load_int               244
-   033                    8
-   033                    12
+   iload                  8
+   iload                  12
    load_int               245
    load_int               -1
    load_string            "IiiI"
-   1403                  
+   widget_put_mouse_enter_listener
    load_int               244
-   033                    8
-   033                    12
+   iload                  8
+   iload                  12
    load_int               255
-   033                    27
+   iload                  27
    load_string            "IiiI"
-   1404                  
+   widget_put_mouse_exit_listener
    widget_put_actions_null
    load_int               1
    load_string            "View offer"
-   1300                  
-   033                    36
+   widget_put_action     
+   iload                  36
    load_int               1
-   if_icmpeq              LABEL447
-   jump                   LABEL450
-LABEL447:
+   if_icmpeq              LABEL466
+   jump                   LABEL469
+LABEL466:
    load_string            "Collect your items."
-   036                    1
-   jump                   LABEL526
-LABEL450:
-   033                    9
-   3903                  
+   sstore                 1
+   jump                   LABEL545
+LABEL469:
+   iload                  9
+   get_grandexchange_offer_is_selling
    load_int               1
-   if_icmpeq              LABEL455
-   jump                   LABEL491
-LABEL455:
-   033                    9
-   3912                  
-   load_int               1
-   if_icmpeq              LABEL460
-   jump                   LABEL474
-LABEL460:
-   load_string            "Sold: "
-   033                    28
-   get_item_name         
-   load_string            "<br>"
-   033                    30
-   035                    2
-   040                    46
-   load_string            " / "
-   033                    29
-   035                    2
-   040                    46
-   037                    6
-   036                    1
-   jump                   LABEL490
-LABEL474:
-   load_string            "Selling: "
-   033                    28
-   get_item_name         
-   load_string            "<br>"
-   033                    30
-   035                    2
-   040                    46
-   load_string            " / "
-   033                    29
-   035                    2
-   040                    46
-   037                    6
-   036                    1
-   load_int               2
-   load_string            "Abort offer"
-   1300                  
-LABEL490:
-   jump                   LABEL526
-LABEL491:
-   033                    9
-   3912                  
-   load_int               1
-   if_icmpeq              LABEL496
+   if_icmpeq              LABEL474
    jump                   LABEL510
-LABEL496:
-   load_string            "Bought: "
-   033                    28
+LABEL474:
+   iload                  9
+   get_grandexchange_offer_done
+   load_int               1
+   if_icmpeq              LABEL479
+   jump                   LABEL493
+LABEL479:
+   load_string            "Sold: "
+   iload                  28
    get_item_name         
    load_string            "<br>"
-   033                    30
-   035                    2
-   040                    46
+   iload                  30
+   sload                  2
+   invoke                 46
    load_string            " / "
-   033                    29
-   035                    2
-   040                    46
-   037                    6
-   036                    1
-   jump                   LABEL526
-LABEL510:
-   load_string            "Buying: "
-   033                    28
+   iload                  29
+   sload                  2
+   invoke                 46
+   string_append          6
+   sstore                 1
+   jump                   LABEL509
+LABEL493:
+   load_string            "Selling: "
+   iload                  28
    get_item_name         
    load_string            "<br>"
-   033                    30
-   035                    2
-   040                    46
+   iload                  30
+   sload                  2
+   invoke                 46
    load_string            " / "
-   033                    29
-   035                    2
-   040                    46
-   037                    6
-   036                    1
+   iload                  29
+   sload                  2
+   invoke                 46
+   string_append          6
+   sstore                 1
    load_int               2
    load_string            "Abort offer"
-   1300                  
-LABEL526:
+   widget_put_action     
+LABEL509:
+   jump                   LABEL545
+LABEL510:
+   iload                  9
+   get_grandexchange_offer_done
+   load_int               1
+   if_icmpeq              LABEL515
+   jump                   LABEL529
+LABEL515:
+   load_string            "Bought: "
+   iload                  28
+   get_item_name         
+   load_string            "<br>"
+   iload                  30
+   sload                  2
+   invoke                 46
+   load_string            " / "
+   iload                  29
+   sload                  2
+   invoke                 46
+   string_append          6
+   sstore                 1
+   jump                   LABEL545
+LABEL529:
+   load_string            "Buying: "
+   iload                  28
+   get_item_name         
+   load_string            "<br>"
+   iload                  30
+   sload                  2
+   invoke                 46
+   load_string            " / "
+   iload                  29
+   sload                  2
+   invoke                 46
+   string_append          6
+   sstore                 1
+   load_int               2
+   load_string            "Abort offer"
+   widget_put_action     
+LABEL545:
    load_int               526
    load_int               -2147483645
    load_int               -2147483643
-   033                    27
-   035                    1
+   iload                  27
+   sload                  1
    load_int               25
    load_int               512
    load_string            "IiIsii"
-   1412                  
-LABEL535:
-   033                    8
-   033                    16
-   200                   
-   load_int               1
-   if_icmpeq              LABEL541
-   jump                   LABEL543
-LABEL541:
-   load_int               0
-   widget_put_hidden     
-LABEL543:
-   033                    8
-   033                    17
-   200                   
-   load_int               1
-   if_icmpeq              LABEL549
-   jump                   LABEL554
-LABEL549:
-   load_int               0
-   widget_put_hidden     
-   033                    28
-   033                    29
-   1200                  
+   widget_put_mouse_hover_listener
 LABEL554:
-   load_int               0
-   034                    37
-   load_string            ""
-   036                    3
-   load_int               0
-   034                    38
-   load_int               0
-   034                    39
-   load_string            ""
-   036                    4
-   033                    8
-   033                    18
-   200                   
+   iload                  8
+   iload                  16
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL570
-   jump                   LABEL624
-LABEL570:
+   if_icmpeq              LABEL560
+   jump                   LABEL562
+LABEL560:
+   load_int               0
+   widget_put_hidden     
+LABEL562:
+   iload                  8
+   iload                  17
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL568
+   jump                   LABEL573
+LABEL568:
+   load_int               0
+   widget_put_hidden     
+   iload                  28
+   iload                  29
+   1200                  
+LABEL573:
+   load_int               0
+   istore                 38
+   load_string            ""
+   sstore                 3
+   load_int               0
+   istore                 39
+   load_int               0
+   istore                 40
+   load_string            ""
+   sstore                 4
+   iload                  8
+   iload                  18
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL589
+   jump                   LABEL643
+LABEL589:
    load_int               0
    widget_put_hidden     
    widget_get_width      
-   033                    28
+   iload                  28
    get_item_name         
-   036                    3
-   034                    37
-   035                    3
+   sstore                 3
+   istore                 38
+   sload                  3
    string_length         
-   034                    38
-   033                    38
+   istore                 39
+   iload                  39
    load_int               0
-   if_icmpgt              LABEL584
-   jump                   LABEL622
-LABEL584:
-   035                    3
-   033                    37
+   if_icmpgt              LABEL603
+   jump                   LABEL641
+LABEL603:
+   sload                  3
+   iload                  38
    load_int               494
-   4109                  
-   033                    37
-   if_icmpgt              LABEL591
-   jump                   LABEL622
-LABEL591:
-   033                    38
+   get_max_line_width    
+   iload                  38
+   if_icmpgt              LABEL610
+   jump                   LABEL641
+LABEL610:
+   iload                  39
    load_int               1
-   if_icmpgt              LABEL595
-   jump                   LABEL622
-LABEL595:
-   033                    39
+   if_icmpgt              LABEL614
+   jump                   LABEL641
+LABEL614:
+   iload                  40
    load_int               0
-   if_icmpeq              LABEL599
-   jump                   LABEL622
-LABEL599:
-   033                    38
+   if_icmpeq              LABEL618
+   jump                   LABEL641
+LABEL618:
+   iload                  39
    load_int               1
    isub                  
-   034                    38
-   035                    3
+   istore                 39
+   sload                  3
    load_int               0
-   033                    38
+   iload                  39
    string_substring      
    load_string            "..."
    concat_string         
-   036                    4
-   035                    4
-   033                    37
+   sstore                 4
+   sload                  4
+   iload                  38
    load_int               494
-   4109                  
-   033                    37
-   if_icmple              LABEL617
-   jump                   LABEL621
-LABEL617:
-   035                    4
+   get_max_line_width    
+   iload                  38
+   if_icmple              LABEL636
+   jump                   LABEL640
+LABEL636:
+   sload                  4
    load_int               1
-   034                    39
-   036                    3
-LABEL621:
-   jump                   LABEL591
-LABEL622:
-   035                    3
-   1112                  
-LABEL624:
-   033                    8
-   033                    19
-   200                   
-   load_int               1
-   if_icmpeq              LABEL630
-   jump                   LABEL652
-LABEL630:
-   033                    31
-   load_int               0
-   if_icmpgt              LABEL634
-   jump                   LABEL650
-LABEL634:
-   load_int               0
-   widget_put_hidden     
-   033                    31
-   load_int               1
-   if_icmpeq              LABEL640
-   jump                   LABEL643
+   istore                 40
+   sstore                 3
 LABEL640:
-   load_string            "1 coin"
-   1112                  
-   jump                   LABEL649
+   jump                   LABEL610
+LABEL641:
+   sload                  3
+   widget_put_text       
 LABEL643:
-   033                    31
-   load_string            ","
-   040                    46
-   load_string            " coins"
-   037                    2
-   1112                  
+   iload                  8
+   iload                  19
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL649
+   jump                   LABEL671
 LABEL649:
-   jump                   LABEL652
-LABEL650:
-   load_int               1
-   widget_put_hidden     
-LABEL652:
-   033                    8
-   033                    20
-   200                   
-   load_int               1
-   if_icmpeq              LABEL658
-   jump                   LABEL660
-LABEL658:
+   iload                  31
+   load_int               0
+   if_icmpgt              LABEL653
+   jump                   LABEL669
+LABEL653:
    load_int               0
    widget_put_hidden     
-LABEL660:
-   033                    8
-   033                    21
-   200                   
+   iload                  31
    load_int               1
-   if_icmpeq              LABEL666
+   if_icmpeq              LABEL659
+   jump                   LABEL662
+LABEL659:
+   load_string            "1 coin"
+   widget_put_text       
    jump                   LABEL668
-LABEL666:
-   load_int               0
-   widget_put_hidden     
+LABEL662:
+   iload                  31
+   load_string            ","
+   invoke                 46
+   load_string            " coins"
+   string_append          2
+   widget_put_text       
 LABEL668:
-   033                    8
-   033                    23
-   200                   
+   jump                   LABEL671
+LABEL669:
    load_int               1
-   if_icmpeq              LABEL674
-   jump                   LABEL676
-LABEL674:
+   widget_put_hidden     
+LABEL671:
+   iload                  8
+   iload                  20
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL677
+   jump                   LABEL679
+LABEL677:
    load_int               0
    widget_put_hidden     
-LABEL676:
-   033                    8
-   033                    24
-   200                   
+LABEL679:
+   iload                  8
+   iload                  21
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL682
-   jump                   LABEL684
-LABEL682:
+   if_icmpeq              LABEL685
+   jump                   LABEL687
+LABEL685:
    load_int               0
    widget_put_hidden     
-LABEL684:
-   033                    8
-   033                    22
-   200                   
+LABEL687:
+   iload                  8
+   iload                  23
+   widget_load_child     
    load_int               1
-   if_icmpeq              LABEL690
-   jump                   LABEL698
-LABEL690:
+   if_icmpeq              LABEL693
+   jump                   LABEL695
+LABEL693:
    load_int               0
    widget_put_hidden     
-   033                    9
-   033                    29
-   033                    30
-   033                    36
-   033                    1
-   040                    812
-LABEL698:
+LABEL695:
+   iload                  8
+   iload                  24
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL701
+   jump                   LABEL703
+LABEL701:
+   load_int               0
+   widget_put_hidden     
+LABEL703:
+   iload                  8
+   iload                  22
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL709
+   jump                   LABEL717
+LABEL709:
+   load_int               0
+   widget_put_hidden     
+   iload                  9
+   iload                  29
+   iload                  30
+   iload                  36
+   iload                  1
+   invoke                 812
+LABEL717:
    return                

@@ -1,0 +1,22 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
+   iload                  0
+   load_int               1
+   if_icmpeq              LABEL4
+   jump                   LABEL9
+LABEL4:
+   load_string            "<col=ff0000>"
+   load_string            "Blocked"
+   load_string            "</col>"
+   string_append          3
+   return                
+LABEL9:
+   load_string            "<col=00ff00>"
+   load_string            "Unblocked"
+   load_string            "</col>"
+   string_append          3
+   return                
+   load_string            ""
+   return                

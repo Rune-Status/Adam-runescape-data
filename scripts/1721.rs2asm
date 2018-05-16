@@ -1,0 +1,47 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   iload                  0
+   6604                  
+   iload                  0
+   load_int               200
+   if_icmpge              LABEL6
+   jump                   LABEL13
+LABEL6:
+   iload                  2
+   load_string            ""
+   load_int               1
+   iload                  1
+   iload                  2
+   invoke                 1722
+   jump                   LABEL19
+LABEL13:
+   iload                  2
+   load_string            "Zoom in"
+   load_int               1
+   iload                  1
+   iload                  2
+   invoke                 1722
+LABEL19:
+   iload                  0
+   load_int               25
+   if_icmple              LABEL23
+   jump                   LABEL30
+LABEL23:
+   iload                  1
+   load_string            ""
+   load_int               0
+   iload                  1
+   iload                  2
+   invoke                 1722
+   jump                   LABEL36
+LABEL30:
+   iload                  1
+   load_string            "Zoom out"
+   load_int               0
+   iload                  1
+   iload                  2
+   invoke                 1722
+LABEL36:
+   return                

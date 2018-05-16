@@ -1,57 +1,61 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
    load_int               512
    load_int               0
    load_int               0
    load_int               1
-   033                   
-   2001                  
+   iload                  0
+   widget_put_size_widget
    load_int               512
-   033                    1
+   iload                  1
    imul                  
    load_int               0
    load_int               0
    load_int               1
-   033                   
-   2000                  
-   033                   
-   102                   
-   033                   
+   iload                  0
+   widget_put_position_widget
+   iload                  0
+   widget_unset_children 
+   iload                  0
    load_int               6
    load_int               0
-   100                   
-   033                   
+   widget_create_child   
+   iload                  0
    load_int               6
    load_int               1
-   100                    1
+   widget_create_child    1
    load_int               0
    load_int               1
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               1
    load_int               1
    load_int               0
-   1001                   1
+   widget_put_size        1
    load_int               0
    load_int               0
    load_int               1
    load_int               2
-   1000                  
+   widget_put_position   
    load_int               0
    load_int               0
    load_int               1
    load_int               2
-   1000                   1
+   widget_put_position    1
    load_int               4961
    widget_put_modelid_1  
    load_int               4962
    widget_put_modelid_1   1
-   033                   
-   033                   
+   iload                  0
+   iload                  0
    widget_get_height_widget
-   040                    933
+   invoke                 933
    load_int               1489
-   1110                  
+   widget_put_animation  
    load_int               1490
-   1110                   1
+   widget_put_animation   1
    return                

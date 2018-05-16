@@ -1,17 +1,21 @@
-   035                   
-   048                    25
+.int_stack_count    0
+.string_stack_count 1
+.int_var_count      1
+.string_var_count   1
+   sload                  0
+   put_varc_string        25
    load_int               -1
-   034                   
-   042                    41
+   istore                 0
+   get_varc               41
    load_int               5
    if_icmpeq              LABEL8
    jump                   LABEL14
 LABEL8:
-   040                    553
-   034                   
-   033                   
-   040                    84
-   033                   
-   040                    192
+   invoke                 553
+   istore                 0
+   iload                  0
+   invoke                 84
+   iload                  0
+   invoke                 192
 LABEL14:
    return                

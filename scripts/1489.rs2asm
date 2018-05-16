@@ -1,0 +1,63 @@
+.int_stack_count    6
+.string_stack_count 0
+.int_var_count      11
+.string_var_count   0
+   iload                  0
+   widget_get_width_widget
+   istore                 6
+   iload                  0
+   widget_get_height_widget
+   istore                 7
+   iload                  6
+   iload                  4
+   if_icmpeq              LABEL10
+   jump                   LABEL15
+LABEL10:
+   iload                  7
+   iload                  5
+   if_icmpeq              LABEL14
+   jump                   LABEL15
+LABEL14:
+   return                
+LABEL15:
+   iload                  7
+   load_int               10
+   isub                  
+   istore                 8
+   load_int               800
+   istore                 9
+   iload                  9
+   iload                  8
+   if_icmpgt              LABEL25
+   jump                   LABEL27
+LABEL25:
+   iload                  8
+   istore                 9
+LABEL27:
+   iload                  2
+   widget_get_scrollheight_widget
+   istore                 10
+   load_int               500
+   iload                  9
+   load_int               0
+   load_int               0
+   iload                  1
+   widget_put_size_widget
+   iload                  3
+   iload                  2
+   invoke                 231
+   iload                  3
+   iload                  2
+   get_varc               63
+   invoke                 72
+   load_int               1488
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  6
+   iload                  7
+   load_string            "IIIIii"
+   iload                  0
+   widget_put_render_listener_widget
+   return                

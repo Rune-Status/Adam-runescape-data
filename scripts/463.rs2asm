@@ -1,5 +1,9 @@
-   025                    4101
-   033                   
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
+   get_varbit             4101
+   iload                  0
    test_bit              
    load_int               1
    if_icmpeq              LABEL6
@@ -7,21 +11,21 @@
 LABEL6:
    load_int               1
    load_string            "Deactivate"
-   033                    1
-   2300                  
+   iload                  1
+   widget_put_action_widget
    load_int               0
    widget_put_hidden     
    jump                   LABEL19
 LABEL13:
    load_int               1
    load_string            "Activate"
-   033                    1
-   2300                  
+   iload                  1
+   widget_put_action_widget
    load_int               1
    widget_put_hidden     
 LABEL19:
-   033                   
-   040                    464
+   iload                  0
+   invoke                 464
    load_int               1
    if_icmpeq              LABEL24
    jump                   LABEL31
@@ -29,16 +33,20 @@ LABEL24:
    load_int               105
    load_int               100
    load_int               865
-   033                   
-   3408                  
-   widget_put_textureid   1
+   iload                  0
+   get_enum_value        
+   widget_put_spriteid    1
    jump                   LABEL37
 LABEL31:
    load_int               105
    load_int               100
    load_int               864
-   033                   
-   3408                  
-   widget_put_textureid   1
+   iload                  0
+   get_enum_value        
+   widget_put_spriteid    1
 LABEL37:
+   iload                  2
+   iload                  1
+   iload                  0
+   invoke                 1966
    return                

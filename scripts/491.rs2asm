@@ -1,21 +1,25 @@
-   025                    4139
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   0
+   get_varbit             4139
    load_int               1
    if_icmpeq              LABEL4
    jump                   LABEL11
 LABEL4:
    load_int               1
-   033                   
+   iload                  0
    widget_put_hidden_widget
    load_int               0
-   033                    1
+   iload                  1
    widget_put_hidden_widget
    jump                   LABEL17
 LABEL11:
    load_int               0
-   033                   
+   iload                  0
    widget_put_hidden_widget
    load_int               1
-   033                    1
+   iload                  1
    widget_put_hidden_widget
 LABEL17:
    return                

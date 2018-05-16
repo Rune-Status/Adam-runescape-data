@@ -1,42 +1,60 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    load_int               40
-   033                    2
+   iload                  2
    load_string            "I"
-   033                   
-   2404                  
+   iload                  0
+   widget_put_mouse_exit_listener_widget
    load_int               1
    load_string            "Transparent Chatbox"
-   033                   
-   2300                  
+   iload                  0
+   widget_put_action_widget
    load_int               1
-   load_string            "Click through chatbox"
-   033                    1
-   2300                  
-   033                    1
+   load_string            "Click"
+   load_string            "Tap"
+   invoke                 1971
+   load_string            " through chatbox"
+   string_append          2
+   iload                  1
+   widget_put_action_widget
+   iload                  1
    load_string            "Transparent chatbox..."
-   load_string            "Can be clicked through."
-   load_string            "In resizable mode, if the chatbox is transparent, should it be possible to click through the chatbox on the ground beneath?"
-   033                    2
-   040                    120
-   033                   
-   033                    1
-   033                    2
-   040                    855
+   load_string            "Can be "
+   load_string            "clicked"
+   load_string            "tapped"
+   invoke                 1971
+   load_string            " through."
+   string_append          3
+   load_string            "In resizable mode, if the chatbox is transparent, should it be possible to "
+   load_string            "click"
+   load_string            "tap"
+   invoke                 1971
+   load_string            " through the chatbox on the ground beneath?"
+   string_append          3
+   iload                  2
+   invoke                 120
+   iload                  0
+   iload                  1
+   iload                  2
+   invoke                 855
    load_int               853
-   033                   
-   033                    1
-   033                    2
+   iload                  0
+   iload                  1
+   iload                  2
    load_int               1055
    load_int               1
    load_string            "IIIY"
-   033                   
-   2407                  
+   iload                  0
+   widget_put_config_listener_widget
    load_int               854
    load_int               -2147483644
    load_int               0
-   033                   
-   033                    1
-   033                    2
+   iload                  0
+   iload                  1
+   iload                  2
    load_string            "i1III"
-   033                   
-   2409                  
+   iload                  0
+   widget_put_option_click_listener_widget
    return                

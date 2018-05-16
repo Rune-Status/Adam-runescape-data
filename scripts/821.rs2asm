@@ -1,35 +1,39 @@
-   025                    4439
+.int_stack_count    13
+.string_stack_count 0
+.int_var_count      25
+.string_var_count   1
+   get_varbit             4439
    load_int               1
    isub                  
-   034                    13
+   istore                 13
    load_int               105
    load_int               118
    load_int               150
-   033                    13
-   3408                  
-   034                    14
-   033                    14
+   iload                  13
+   get_enum_value        
+   istore                 14
+   iload                  14
    load_int               -1
    if_icmpeq              LABEL18
-   033                    13
-   3910                  
+   iload                  13
+   get_grandexchange_offer_not_started
    load_int               1
    if_icmpeq              LABEL18
    jump                   LABEL104
 LABEL18:
-   033                   
-   033                    1
-   200                   
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL24
    jump                   LABEL26
 LABEL24:
    load_string            "No offer"
-   1112                  
+   widget_put_text       
 LABEL26:
-   033                   
-   033                    2
-   200                   
+   iload                  0
+   iload                  2
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL32
    jump                   LABEL34
@@ -37,9 +41,9 @@ LABEL32:
    load_int               1
    widget_put_hidden     
 LABEL34:
-   033                   
-   033                    3
-   200                   
+   iload                  0
+   iload                  3
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL40
    jump                   LABEL43
@@ -48,49 +52,49 @@ LABEL40:
    load_int               1
    1205                  
 LABEL43:
-   033                   
-   033                    4
-   200                   
+   iload                  0
+   iload                  4
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL49
    jump                   LABEL51
 LABEL49:
    load_string            "No offer"
-   1112                  
+   widget_put_text       
 LABEL51:
-   033                   
-   033                    5
-   200                   
+   iload                  0
+   iload                  5
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL57
    jump                   LABEL59
 LABEL57:
    load_string            ""
-   1112                  
+   widget_put_text       
 LABEL59:
-   033                   
-   033                    6
-   200                   
+   iload                  0
+   iload                  6
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL65
    jump                   LABEL67
 LABEL65:
    load_string            ""
-   1112                  
+   widget_put_text       
 LABEL67:
-   033                   
-   033                    7
-   200                   
+   iload                  0
+   iload                  7
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL73
    jump                   LABEL75
 LABEL73:
    load_string            ""
-   1112                  
+   widget_put_text       
 LABEL75:
-   033                    8
-   033                    9
-   200                   
+   iload                  8
+   iload                  9
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL81
    jump                   LABEL83
@@ -98,19 +102,19 @@ LABEL81:
    load_int               1
    widget_put_hidden     
 LABEL83:
-   033                    8
-   033                    10
-   200                   
+   iload                  8
+   iload                  10
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL89
    jump                   LABEL91
 LABEL89:
    load_string            "No offer found for this slot."
-   1112                  
+   widget_put_text       
 LABEL91:
-   033                    8
-   033                    11
-   200                   
+   iload                  8
+   iload                  11
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL97
    jump                   LABEL103
@@ -119,210 +123,210 @@ LABEL97:
    load_int               -1
    load_int               -1
    load_int               1
-   033                    12
-   040                    812
+   iload                  12
+   invoke                 812
 LABEL103:
    return                
 LABEL104:
-   033                    13
-   3903                  
-   034                    15
-   033                    13
+   iload                  13
+   get_grandexchange_offer_is_selling
+   istore                 15
+   iload                  13
    get_grandexchange_offer_itemid
-   034                    16
-   033                    16
+   istore                 16
+   iload                  16
    load_int               -1
    if_icmpeq              LABEL114
    jump                   LABEL116
 LABEL114:
    load_int               6512
-   034                    16
+   istore                 16
 LABEL116:
-   033                    13
+   iload                  13
    get_grandexchange_offer_totalquantity
-   034                    17
-   033                    17
+   istore                 17
+   iload                  17
    load_int               0
    if_icmple              LABEL123
    jump                   LABEL125
 LABEL123:
    load_int               1
-   034                    17
+   istore                 17
 LABEL125:
-   033                    13
+   iload                  13
    get_grandexchange_offer_quantitysold
-   034                    18
-   033                    13
+   istore                 18
+   iload                  13
    get_grandexchange_offer_price
-   034                    19
-   033                    13
+   istore                 19
+   iload                  13
    get_grandexchange_offer_spent
-   034                    20
-   033                    13
-   3912                  
-   034                    21
+   istore                 20
+   iload                  13
+   get_grandexchange_offer_done
+   istore                 21
    load_string            ","
-   036                   
-   033                   
-   033                    1
-   200                   
+   sstore                 0
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL145
    jump                   LABEL166
 LABEL145:
-   033                   
-   033                    2
-   200                    1
+   iload                  0
+   iload                  2
+   widget_load_child      1
    load_int               1
    if_icmpeq              LABEL151
    jump                   LABEL166
 LABEL151:
    load_int               0
    widget_put_hidden      1
-   033                    15
+   iload                  15
    load_int               1
    if_icmpeq              LABEL157
    jump                   LABEL162
 LABEL157:
    load_string            "Sell offer"
-   1112                  
+   widget_put_text       
    load_int               1119
-   widget_put_textureid   1
+   widget_put_spriteid    1
    jump                   LABEL166
 LABEL162:
    load_string            "Buy offer"
-   1112                  
+   widget_put_text       
    load_int               1118
-   widget_put_textureid   1
+   widget_put_spriteid    1
 LABEL166:
-   033                   
-   033                    3
-   200                   
+   iload                  0
+   iload                  3
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL172
    jump                   LABEL175
 LABEL172:
-   033                    16
-   033                    17
+   iload                  16
+   iload                  17
    1205                  
 LABEL175:
-   033                   
-   033                    4
-   200                   
+   iload                  0
+   iload                  4
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL181
    jump                   LABEL184
 LABEL181:
-   033                    16
+   iload                  16
    get_item_name         
-   1112                  
+   widget_put_text       
 LABEL184:
-   033                   
-   033                    5
-   200                   
+   iload                  0
+   iload                  5
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL190
    jump                   LABEL194
 LABEL190:
-   033                    17
-   035                   
-   040                    46
-   1112                  
+   iload                  17
+   sload                  0
+   invoke                 46
+   widget_put_text       
 LABEL194:
-   033                   
-   033                    6
-   200                   
+   iload                  0
+   iload                  6
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL200
    jump                   LABEL213
 LABEL200:
-   033                    19
+   iload                  19
    load_int               1
    if_icmpeq              LABEL204
    jump                   LABEL207
 LABEL204:
    load_string            "1 coin"
-   1112                  
+   widget_put_text       
    jump                   LABEL213
 LABEL207:
-   033                    19
-   035                   
-   040                    46
+   iload                  19
+   sload                  0
+   invoke                 46
    load_string            " coins"
-   037                    2
-   1112                  
+   string_append          2
+   widget_put_text       
 LABEL213:
    load_int               0
-   034                    22
-   033                   
-   033                    7
-   200                   
+   istore                 22
+   iload                  0
+   iload                  7
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL221
    jump                   LABEL247
 LABEL221:
    load_int               2147483647
-   033                    17
+   iload                  17
    idiv                  
-   033                    19
+   iload                  19
    if_icmplt              LABEL227
    jump                   LABEL230
 LABEL227:
    load_string            "Lots of money"
-   1112                  
+   widget_put_text       
    jump                   LABEL247
 LABEL230:
-   033                    17
-   033                    19
+   iload                  17
+   iload                  19
    imul                  
-   034                    22
-   033                    22
+   istore                 22
+   iload                  22
    load_int               1
    if_icmpeq              LABEL238
    jump                   LABEL241
 LABEL238:
    load_string            "1 coin"
-   1112                  
+   widget_put_text       
    jump                   LABEL247
 LABEL241:
-   033                    22
-   035                   
-   040                    46
+   iload                  22
+   sload                  0
+   invoke                 46
    load_string            " coins"
-   037                    2
-   1112                  
+   string_append          2
+   widget_put_text       
 LABEL247:
    load_int               1126
-   034                    23
+   istore                 23
    load_int               1127
-   034                    24
-   033                    8
-   033                    10
-   200                   
+   istore                 24
+   iload                  8
+   iload                  10
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL257
    jump                   LABEL474
 LABEL257:
-   033                    21
+   iload                  21
    load_int               1
    if_icmpeq              LABEL261
    jump                   LABEL345
 LABEL261:
-   033                    15
+   iload                  15
    load_int               1
    if_icmpeq              LABEL265
    jump                   LABEL301
 LABEL265:
-   033                    20
+   iload                  20
    load_int               1
    if_icmpeq              LABEL269
    jump                   LABEL284
 LABEL269:
    load_string            "You sold a total of "
    load_string            "<col=ffb83f>"
-   033                    18
-   035                   
-   040                    46
+   iload                  18
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    load_string            "<br>"
    load_string            "for a total price of "
@@ -330,39 +334,39 @@ LABEL269:
    load_string            "one"
    load_string            "</col>"
    load_string            " coin."
-   037                    10
-   1112                  
+   string_append          10
+   widget_put_text       
    jump                   LABEL300
 LABEL284:
    load_string            "You sold a total of "
    load_string            "<col=ffb83f>"
-   033                    18
-   035                   
-   040                    46
+   iload                  18
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    load_string            "<br>"
    load_string            "for a total price of "
    load_string            "<col=ffb83f>"
-   033                    20
-   035                   
-   040                    46
+   iload                  20
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    load_string            " coins."
-   037                    10
-   1112                  
+   string_append          10
+   widget_put_text       
 LABEL300:
    jump                   LABEL336
 LABEL301:
-   033                    20
+   iload                  20
    load_int               1
    if_icmpeq              LABEL305
    jump                   LABEL320
 LABEL305:
    load_string            "You bought a total of "
    load_string            "<col=ffb83f>"
-   033                    18
-   035                   
-   040                    46
+   iload                  18
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    load_string            "<br>"
    load_string            "for a total price of "
@@ -370,30 +374,30 @@ LABEL305:
    load_string            "one"
    load_string            "</col>"
    load_string            " coin."
-   037                    10
-   1112                  
+   string_append          10
+   widget_put_text       
    jump                   LABEL336
 LABEL320:
    load_string            "You bought a total of "
    load_string            "<col=ffb83f>"
-   033                    18
-   035                   
-   040                    46
+   iload                  18
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    load_string            "<br>"
    load_string            "for a total price of "
    load_string            "<col=ffb83f>"
-   033                    20
-   035                   
-   040                    46
+   iload                  20
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    load_string            " coins."
-   037                    10
-   1112                  
+   string_append          10
+   widget_put_text       
 LABEL336:
-   033                    8
-   033                    9
-   200                   
+   iload                  8
+   iload                  9
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL342
    jump                   LABEL344
@@ -403,21 +407,21 @@ LABEL342:
 LABEL344:
    jump                   LABEL474
 LABEL345:
-   033                    15
+   iload                  15
    load_int               1
    if_icmpeq              LABEL349
    jump                   LABEL387
 LABEL349:
-   033                    20
+   iload                  20
    load_int               1
    if_icmpeq              LABEL353
    jump                   LABEL369
 LABEL353:
    load_string            "You have sold a total of "
    load_string            "<col=ffb83f>"
-   033                    18
-   035                   
-   040                    46
+   iload                  18
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    load_string            " so far"
    load_string            "<br>"
@@ -426,40 +430,40 @@ LABEL353:
    load_string            "one"
    load_string            "</col>"
    load_string            " coin."
-   037                    11
-   1112                  
+   string_append          11
+   widget_put_text       
    jump                   LABEL386
 LABEL369:
    load_string            "You have sold a total of "
    load_string            "<col=ffb83f>"
-   033                    18
-   035                   
-   040                    46
+   iload                  18
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    load_string            " so far"
    load_string            "<br>"
    load_string            "for a total price of "
    load_string            "<col=ffb83f>"
-   033                    20
-   035                   
-   040                    46
+   iload                  20
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    load_string            " coins."
-   037                    11
-   1112                  
+   string_append          11
+   widget_put_text       
 LABEL386:
    jump                   LABEL424
 LABEL387:
-   033                    20
+   iload                  20
    load_int               1
    if_icmpeq              LABEL391
    jump                   LABEL407
 LABEL391:
    load_string            "You have bought a total of "
    load_string            "<col=ffb83f>"
-   033                    18
-   035                   
-   040                    46
+   iload                  18
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    load_string            " so far"
    load_string            "<br>"
@@ -468,96 +472,96 @@ LABEL391:
    load_string            "one"
    load_string            "</col>"
    load_string            " coin."
-   037                    11
-   1112                  
+   string_append          11
+   widget_put_text       
    jump                   LABEL424
 LABEL407:
    load_string            "You have bought a total of "
    load_string            "<col=ffb83f>"
-   033                    18
-   035                   
-   040                    46
+   iload                  18
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    load_string            " so far"
    load_string            "<br>"
    load_string            "for a total price of "
    load_string            "<col=ffb83f>"
-   033                    20
-   035                   
-   040                    46
+   iload                  20
+   sload                  0
+   invoke                 46
    load_string            "</col>"
    load_string            " coins."
-   037                    11
-   1112                  
+   string_append          11
+   widget_put_text       
 LABEL424:
-   033                    8
-   033                    9
-   200                   
+   iload                  8
+   iload                  9
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL430
    jump                   LABEL474
 LABEL430:
    load_int               0
    widget_put_hidden     
-   033                    13
-   3911                  
+   iload                  13
+   get_grandexchange_offer_status_2
    load_int               1
    if_icmpeq              LABEL437
    jump                   LABEL461
 LABEL437:
    load_int               0
    widget_put_opacity    
-   033                    23
-   widget_put_textureid  
+   iload                  23
+   widget_put_spriteid   
    load_int               229
    load_int               -2147483645
    load_int               -2147483643
-   033                    24
+   iload                  24
    load_int               -1
    load_string            "IidI"
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               229
    load_int               -2147483645
    load_int               -2147483643
-   033                    23
+   iload                  23
    load_int               -1
    load_string            "IidI"
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               489
    load_int               -2147483644
    load_int               2
    load_string            "ii"
-   1409                  
+   widget_put_option_click_listener
    jump                   LABEL474
 LABEL461:
    load_int               120
    widget_put_opacity    
-   033                    24
-   widget_put_textureid  
+   iload                  24
+   widget_put_spriteid   
    load_int               -1
    load_string            ""
-   1412                  
+   widget_put_mouse_hover_listener
    load_int               -1
    load_string            ""
-   1404                  
+   widget_put_mouse_exit_listener
    load_int               -1
    load_string            ""
-   1409                  
+   widget_put_option_click_listener
 LABEL474:
-   033                    8
-   033                    11
-   200                   
+   iload                  8
+   iload                  11
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL480
    jump                   LABEL488
 LABEL480:
    load_int               0
    widget_put_hidden     
-   033                    13
-   033                    17
-   033                    18
+   iload                  13
+   iload                  17
+   iload                  18
    load_int               0
-   033                    12
-   040                    812
+   iload                  12
+   invoke                 812
 LABEL488:
    return                

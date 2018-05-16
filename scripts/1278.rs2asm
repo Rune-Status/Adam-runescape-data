@@ -1,28 +1,32 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
    load_int               105
    load_int               73
    load_int               1302
-   033                   
-   3408                  
-   034                    1
+   iload                  0
+   get_enum_value        
+   istore                 1
    load_int               0
-   034                    2
+   istore                 2
    load_int               0
-   034                    3
+   istore                 3
    load_int               0
-   034                    4
-   033                   
-   040                    1279
-   034                    4
-   034                    3
-   034                    2
-   033                    4
+   istore                 4
+   iload                  0
+   invoke                 1279
+   istore                 4
+   istore                 3
+   istore                 2
+   iload                  4
    load_int               0
    if_icmple              LABEL21
    jump                   LABEL47
 LABEL21:
-   033                    1
+   iload                  1
    load_int               3
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL27
    jump                   LABEL29
@@ -30,20 +34,20 @@ LABEL27:
    load_int               1
    widget_put_hidden     
 LABEL29:
-   033                    1
+   iload                  1
    load_int               6
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL35
    jump                   LABEL38
 LABEL35:
-   033                    2
+   iload                  2
    int_to_string         
-   1112                  
+   widget_put_text       
 LABEL38:
-   033                    1
+   iload                  1
    load_int               7
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL44
    jump                   LABEL46
@@ -53,33 +57,33 @@ LABEL44:
 LABEL46:
    jump                   LABEL75
 LABEL47:
-   033                    1
+   iload                  1
    load_int               3
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL53
    jump                   LABEL58
 LABEL53:
    load_int               0
    widget_put_hidden     
-   033                    2
+   iload                  2
    int_to_string         
-   1112                  
+   widget_put_text       
 LABEL58:
-   033                    1
+   iload                  1
    load_int               6
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL64
    jump                   LABEL67
 LABEL64:
-   033                    3
+   iload                  3
    int_to_string         
-   1112                  
+   widget_put_text       
 LABEL67:
-   033                    1
+   iload                  1
    load_int               7
-   200                   
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL73
    jump                   LABEL75

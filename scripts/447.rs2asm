@@ -1,103 +1,107 @@
-   033                   
+.int_stack_count    7
+.string_stack_count 0
+.int_var_count      8
+.string_var_count   0
+   iload                  0
    load_int               -1
    if_icmpne              LABEL4
    jump                   LABEL50
 LABEL4:
    load_int               1
-   033                    5
-   2005                  
+   iload                  5
+   widget_put_no_click_through_widget
    load_int               447
    load_int               -1
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
    load_string            "IIIIIII"
-   033                   
+   iload                  0
    2422                  
    load_int               447
    load_int               -1
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
    load_int               173
    load_int               638
    load_int               2
    load_string            "IIIIIIIY"
-   033                   
-   2407                  
+   iload                  0
+   widget_put_config_listener_widget
    load_int               447
    load_int               -1
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
    load_string            "IIIIIII"
-   033                   
-   2424                  
+   iload                  0
+   widget_put_openclose_listener_widget
    load_int               457
    load_int               -2147483644
-   033                    3
-   033                    4
+   iload                  3
+   iload                  4
    load_string            "iII"
-   033                    6
-   2409                  
+   iload                  6
+   widget_put_option_click_listener_widget
 LABEL50:
    load_int               1072
-   034                    7
+   istore                 7
    load_int               11
-   040                    918
+   invoke                 918
    load_int               1
    if_icmpeq              LABEL57
    jump                   LABEL75
 LABEL57:
    load_int               44
-   033                    5
-   033                    7
+   iload                  5
+   iload                  7
    load_string            "Id"
-   033                    6
-   2412                  
+   iload                  6
+   widget_put_mouse_hover_listener_widget
    load_int               1071
-   034                    7
+   istore                 7
    load_int               44
-   033                    5
-   033                    7
+   iload                  5
+   iload                  7
    load_string            "Id"
-   033                    6
-   2404                  
+   iload                  6
+   widget_put_mouse_exit_listener_widget
    load_int               0
-   033                    6
+   iload                  6
    widget_put_hidden_widget
    jump                   LABEL89
 LABEL75:
    load_int               1071
-   033                    5
-   widget_put_textureid_widget
+   iload                  5
+   widget_put_spriteid_widget
    load_int               -1
    load_string            ""
-   033                    6
-   2412                  
+   iload                  6
+   widget_put_mouse_hover_listener_widget
    load_int               -1
    load_string            ""
-   033                    6
-   2404                  
+   iload                  6
+   widget_put_mouse_exit_listener_widget
    load_int               1
-   033                    6
+   iload                  6
    widget_put_hidden_widget
 LABEL89:
-   033                    1
-   033                    2
+   iload                  1
+   iload                  2
    get_energy            
    load_int               100
-   040                    449
-   033                    3
-   033                    4
-   040                    454
+   invoke                 449
+   iload                  3
+   iload                  4
+   invoke                 454
    return                

@@ -1,5 +1,9 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   1
    load_string            ""
-   036                   
+   sstore                 0
    get_settings           173
    load_int               0
    if_icmple              LABEL6
@@ -9,39 +13,39 @@ LABEL6:
    get_energy            
    int_to_string         
    load_string            "%"
-   037                    3
-   036                   
+   string_append          3
+   sstore                 0
    load_int               761
-   033                   
-   widget_put_textureid_widget
+   iload                  0
+   widget_put_spriteid_widget
    jump                   LABEL25
 LABEL16:
    load_string            "Run (currently on) Energy "
    get_energy            
    int_to_string         
    load_string            "%"
-   037                    3
-   036                   
+   string_append          3
+   sstore                 0
    load_int               762
-   033                   
-   widget_put_textureid_widget
+   iload                  0
+   widget_put_spriteid_widget
 LABEL25:
    load_int               526
-   033                   
+   iload                  0
    load_int               -1
-   033                    2
-   035                   
+   iload                  2
+   sload                  0
    load_int               25
    load_int               190
    load_string            "IiIsii"
-   033                   
-   2412                  
+   iload                  0
+   widget_put_mouse_hover_listener_widget
    get_energy            
    int_to_string         
    load_string            "%"
-   037                    2
-   033                    1
-   2112                  
+   string_append          2
+   iload                  1
+   widget_put_text_widget
    load_int               0
-   043                    2
+   put_varc               2
    return                

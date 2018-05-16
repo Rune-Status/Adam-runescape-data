@@ -1,8 +1,12 @@
-   033                    1
-   102                   
-   033                    2
-   102                   
-   033                    1
+.int_stack_count    4
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   0
+   iload                  1
+   widget_unset_children 
+   iload                  2
+   widget_unset_children 
+   iload                  1
    widget_get_width_widget
    load_int               10
    load_int               36
@@ -12,68 +16,78 @@
    load_int               1
    isub                  
    idiv                  
-   034                    4
+   istore                 4
    load_int               32
    load_int               10
    iadd                  
-   034                    5
+   istore                 5
    load_int               0
-   034                    6
+   istore                 6
+   load_int               1124
+   istore                 7
+   invoke                 1942
+   load_int               1
+   if_icmpeq              LABEL27
+   jump                   LABEL29
+LABEL27:
+   load_int               1735
+   istore                 7
+LABEL29:
    load_int               105
    load_int               79
-   load_int               1124
-   033                    6
-   3408                  
-   034                    7
-LABEL27:
-   033                    7
+   iload                  7
+   iload                  6
+   get_enum_value        
+   istore                 8
+LABEL35:
+   iload                  8
    load_int               -1
-   if_icmpne              LABEL31
-   jump                   LABEL93
-LABEL31:
-   033                    1
+   if_icmpne              LABEL39
+   jump                   LABEL101
+LABEL39:
+   iload                  1
    load_int               5
-   033                    6
-   100                   
+   iload                  6
+   widget_create_child   
    load_int               36
    load_int               32
    load_int               0
    load_int               0
-   1001                  
-   033                    7
+   widget_put_size       
+   iload                  8
    load_int               10000
    1205                  
    load_int               3355443
-   1117                  
+   widget_put_sprite2    
    load_int               1
    widget_put_borderthickness
    load_int               1
    load_string            "Take"
-   1300                  
-   033                    7
+   widget_put_action     
+   iload                  8
    get_item_stackable    
    load_int               0
-   if_icmpeq              LABEL55
-   jump                   LABEL61
-LABEL55:
+   if_icmpeq              LABEL63
+   jump                   LABEL69
+LABEL63:
    load_int               2
    load_string            "Take-5"
-   1300                  
+   widget_put_action     
    load_int               3
    load_string            "Take-10"
-   1300                  
-LABEL61:
+   widget_put_action     
+LABEL69:
    load_int               4
    load_string            "Take-X"
-   1300                  
+   widget_put_action     
    load_int               10
    load_string            "Examine"
-   1300                  
+   widget_put_action     
    load_string            "<col=ff9040>"
-   033                    7
+   iload                  8
    get_item_name         
    load_string            "</col>"
-   037                    3
+   string_append          3
    widget_put_name       
    load_int               487
    load_int               -2147483645
@@ -81,71 +95,71 @@ LABEL61:
    load_int               100
    load_int               0
    load_string            "Iiii"
-   1409                  
+   widget_put_option_click_listener
    load_int               1
    widget_put_hidden     
-   033                    6
+   iload                  6
    load_int               1
    iadd                  
-   034                    6
+   istore                 6
    load_int               105
    load_int               79
-   load_int               1124
-   033                    6
-   3408                  
-   034                    7
-   jump                   LABEL27
-LABEL93:
-   033                    1
+   iload                  7
+   iload                  6
+   get_enum_value        
+   istore                 8
+   jump                   LABEL35
+LABEL101:
+   iload                  1
    load_int               4
-   033                    6
-   100                   
+   iload                  6
+   widget_create_child   
    load_int               0
    load_int               50
    load_int               1
    load_int               0
-   1001                  
+   widget_put_size       
    load_int               0
    load_int               0
    load_int               1
    load_int               0
-   1000                  
+   widget_put_position   
    load_int               16750623
    widget_put_textcolor  
    load_int               1
-   1115                  
+   widget_put_text_shadowed
    load_int               495
    widget_put_fontid     
    load_int               1
    load_int               1
    load_int               0
-   1114                  
+   widget_put_text_alignment
    load_string            "No matching items found."
-   1112                  
+   widget_put_text       
    load_int               1
    widget_put_hidden     
-   033                    2
-   033                    1
+   iload                  2
+   iload                  1
    load_int               792
    load_int               789
    load_int               790
    load_int               791
    load_int               773
    load_int               788
-   040                    31
-   040                    514
+   invoke                 31
+   invoke                 514
    load_int               1
-   if_icmpeq              LABEL134
-   jump                   LABEL137
-LABEL134:
+   if_icmpeq              LABEL142
+   jump                   LABEL145
+LABEL142:
    load_int               1
    load_int               1
-   040                    299
-LABEL137:
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   040                    965
+   invoke                 299
+LABEL145:
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   invoke                 965
    return                

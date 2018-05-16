@@ -1,45 +1,49 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      5
+.string_var_count   0
    load_int               73
    load_int               73
-   040                    900
-   load_int               10551308
-   3408                  
-   2702                  
+   invoke                 900
+   load_int               10551309
+   get_enum_value        
+   widget_get_index_widget
    load_int               0
    if_icmpeq              LABEL9
    jump                   LABEL10
 LABEL9:
    return                
 LABEL10:
-   033                   
+   iload                  0
    load_int               256
    idiv                  
-   034                    2
-   033                   
+   istore                 2
+   iload                  0
    load_int               1
    test_bit              
-   040                    633
-   034                    3
-   033                   
+   invoke                 633
+   istore                 3
+   iload                  0
    load_int               252
    and                   
    load_int               4
    idiv                  
-   034                    4
-   033                   
+   istore                 4
+   iload                  0
    load_int               0
    test_bit              
    load_int               1
    if_icmpeq              LABEL31
    jump                   LABEL33
 LABEL31:
-   042                    49
-   043                    63
+   get_varc               49
+   put_varc               63
 LABEL33:
-   033                    2
-   033                    3
-   033                    2
-   040                    602
-   033                    4
-   033                    1
-   040                    621
+   iload                  2
+   iload                  3
+   iload                  2
+   invoke                 602
+   iload                  4
+   iload                  1
+   invoke                 621
    return                

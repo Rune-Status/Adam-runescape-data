@@ -1,10 +1,14 @@
+.int_stack_count    3
+.string_stack_count 1
+.int_var_count      3
+.string_var_count   1
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
-   033                   
-   033                    2
-   200                   
+   play_sound_effect     
+   iload                  0
+   iload                  2
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL10
    jump                   LABEL24
@@ -12,25 +16,25 @@ LABEL10:
    load_string            "<col=ffffff>"
    load_string            "Loading..."
    load_string            "</col>"
-   037                    3
-   1112                  
+   string_append          3
+   widget_put_text       
    load_int               629
    load_int               -2147483645
    load_int               -2147483643
-   035                   
+   sload                  0
    get_gamecycle         
    load_int               30
    iadd                  
    load_string            "Iisi"
-   1408                  
+   widget_put_render_listener
 LABEL24:
-   033                   
-   033                    1
-   200                   
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL30
    jump                   LABEL31
 LABEL30:
-   1121                  
+   widget_advance_dialogue
 LABEL31:
    return                

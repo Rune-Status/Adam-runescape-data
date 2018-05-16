@@ -1,0 +1,61 @@
+.int_stack_count    4
+.string_stack_count 1
+.int_var_count      6
+.string_var_count   1
+   load_int               105
+   load_int               99
+   iload                  1
+   iload                  0
+   get_enum_value        
+   istore                 4
+   load_int               99
+   load_int               111
+   iload                  2
+   iload                  4
+   get_enum_value        
+   istore                 5
+   iload                  5
+   load_int               8245
+   if_icmpne              LABEL16
+   jump                   LABEL46
+LABEL16:
+   iload                  3
+   load_int               0
+   if_icmpgt              LABEL20
+   jump                   LABEL31
+LABEL20:
+   sload                  0
+   load_string            ", "
+   iload                  5
+   get_item_name         
+   load_string            " "
+   load_string            "?"
+   invoke                 1299
+   string_append          2
+   concat_string         
+   sstore                 0
+   jump                   LABEL42
+LABEL31:
+   sload                  0
+   load_string            "<br>"
+   load_string            "<col=4f4f4f>"
+   iload                  5
+   get_item_name         
+   load_string            " "
+   load_string            "?"
+   invoke                 1299
+   string_append          3
+   concat_string         
+   sstore                 0
+LABEL42:
+   iload                  3
+   load_int               1
+   iadd                  
+   istore                 3
+LABEL46:
+   sload                  0
+   iload                  3
+   return                
+   load_string            ""
+   load_int               0
+   return                

@@ -1,23 +1,27 @@
+.int_stack_count    3
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
    load_int               0
-   034                    3
+   istore                 3
    load_int               0
-   034                    4
+   istore                 4
    load_int               0
-   034                    5
-   033                   
-   033                    1
-   200                   
+   istore                 5
+   iload                  0
+   iload                  1
+   widget_load_child     
    load_int               1
    if_icmpeq              LABEL12
    jump                   LABEL44
 LABEL12:
    get_gamecycle         
-   034                    4
-   033                    4
-   033                    2
+   istore                 4
+   iload                  4
+   iload                  2
    isub                  
-   034                    5
-   033                    5
+   istore                 5
+   iload                  5
    load_int               750
    if_icmpge              LABEL22
    jump                   LABEL28
@@ -26,10 +30,10 @@ LABEL22:
    widget_put_opacity    
    load_int               -1
    load_string            ""
-   1408                  
+   widget_put_render_listener
    return                
 LABEL28:
-   033                    4
+   iload                  4
    load_int               40
    modulo                
    load_int               20
@@ -41,11 +45,11 @@ LABEL34:
    return                
 LABEL37:
    load_int               0
-   033                    5
+   iload                  5
    load_int               0
    load_int               750
    load_int               255
-   4006                  
+   interpolate           
    widget_put_opacity    
 LABEL44:
    return                

@@ -1,177 +1,181 @@
+.int_stack_count    6
+.string_stack_count 0
+.int_var_count      9
+.string_var_count   0
    load_int               0
-   034                    6
-   033                   
+   istore                 6
+   iload                  0
    load_int               1
    if_icmpeq              LABEL6
    jump                   LABEL13
 LABEL6:
    load_int               2048
-   025                    3985
+   get_varbit             3985
    load_int               512
    imul                  
    isub                  
-   034                    6
+   istore                 6
    jump                   LABEL36
 LABEL13:
-   033                   
+   iload                  0
    load_int               2
    if_icmpeq              LABEL17
    jump                   LABEL24
 LABEL17:
    load_int               2048
-   025                    3986
+   get_varbit             3986
    load_int               512
    imul                  
    isub                  
-   034                    6
+   istore                 6
    jump                   LABEL36
 LABEL24:
-   033                   
+   iload                  0
    load_int               3
    if_icmpeq              LABEL28
    jump                   LABEL35
 LABEL28:
    load_int               2048
-   025                    3987
+   get_varbit             3987
    load_int               512
    imul                  
    isub                  
-   034                    6
+   istore                 6
    jump                   LABEL36
 LABEL35:
    return                
 LABEL36:
-   033                    1
+   iload                  1
    widget_get_rotationy_widget
-   034                    7
-   033                    7
+   istore                 7
+   iload                  7
    load_int               0
    if_icmplt              LABEL46
-   033                    7
+   iload                  7
    load_int               2048
    if_icmpge              LABEL46
    jump                   LABEL48
 LABEL46:
    load_int               0
-   034                    7
+   istore                 7
 LABEL48:
    load_int               0
-   034                    8
-   033                    7
-   033                    6
+   istore                 8
+   iload                  7
+   iload                  6
    if_icmpne              LABEL54
    jump                   LABEL93
 LABEL54:
-   033                    6
-   033                    7
+   iload                  6
+   iload                  7
    if_icmplt              LABEL58
    jump                   LABEL62
 LABEL58:
-   033                    6
+   iload                  6
    load_int               2048
    iadd                  
-   034                    6
+   istore                 6
 LABEL62:
-   033                    6
-   033                    7
+   iload                  6
+   iload                  7
    isub                  
-   034                    8
-   033                    8
+   istore                 8
+   iload                  8
    load_int               1024
    if_icmplt              LABEL70
    jump                   LABEL82
 LABEL70:
-   033                    8
+   iload                  8
    load_int               10
    if_icmpgt              LABEL74
    jump                   LABEL79
 LABEL74:
-   033                    7
+   iload                  7
    load_int               10
    iadd                  
-   034                    7
+   istore                 7
    jump                   LABEL81
 LABEL79:
-   033                    6
-   034                    7
+   iload                  6
+   istore                 7
 LABEL81:
    jump                   LABEL93
 LABEL82:
-   033                    8
+   iload                  8
    load_int               2038
    if_icmplt              LABEL86
    jump                   LABEL91
 LABEL86:
-   033                    7
+   iload                  7
    load_int               2038
    iadd                  
-   034                    7
+   istore                 7
    jump                   LABEL93
 LABEL91:
-   033                    6
-   034                    7
+   iload                  6
+   istore                 7
 LABEL93:
-   033                    7
+   iload                  7
    load_int               2048
    modulo                
-   034                    7
-   033                    7
+   istore                 7
+   iload                  7
    load_int               0
    if_icmplt              LABEL101
    jump                   LABEL112
 LABEL101:
-   033                    7
+   iload                  7
    load_int               -2048
    if_icmplt              LABEL105
    jump                   LABEL108
 LABEL105:
    load_int               0
-   034                    7
+   istore                 7
    jump                   LABEL112
 LABEL108:
-   033                    7
+   iload                  7
    load_int               2048
    iadd                  
-   034                    7
+   istore                 7
 LABEL112:
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   033                    7
+   iload                  7
    load_int               1000
-   033                    1
-   2109                  
+   iload                  1
+   widget_put_3d_rotation_widget
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   033                    7
+   iload                  7
    load_int               1000
-   033                    2
-   2109                  
+   iload                  2
+   widget_put_3d_rotation_widget
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   033                    7
+   iload                  7
    load_int               1000
-   033                    3
-   2109                  
+   iload                  3
+   widget_put_3d_rotation_widget
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   033                    7
+   iload                  7
    load_int               1000
-   033                    4
-   2109                  
+   iload                  4
+   widget_put_3d_rotation_widget
    load_int               0
    load_int               0
    load_int               0
    load_int               0
-   033                    7
+   iload                  7
    load_int               1000
-   033                    5
-   2109                  
+   iload                  5
+   widget_put_3d_rotation_widget
    return                

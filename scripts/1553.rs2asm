@@ -1,0 +1,67 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
+   load_int               73
+   load_int               73
+   invoke                 900
+   load_int               10551366
+   get_enum_value        
+   widget_get_index_widget
+   load_int               0
+   if_icmpeq              LABEL9
+   jump                   LABEL10
+LABEL9:
+   return                
+LABEL10:
+   load_int               0
+   load_int               32768010
+   widget_put_hidden_widget
+   load_int               0
+   load_int               32768011
+   widget_put_hidden_widget
+   load_int               0
+   load_int               32768002
+   widget_put_hidden_widget
+   load_int               0
+   load_int               32768006
+   widget_put_hidden_widget
+   load_int               1
+   load_int               32768005
+   widget_put_hidden_widget
+   get_varc               181
+   load_int               0
+   if_icmpne              LABEL29
+   jump                   LABEL51
+LABEL29:
+   get_varc               181
+   load_int               1
+   if_icmpne              LABEL33
+   jump                   LABEL51
+LABEL33:
+   get_varc               181
+   load_int               2
+   if_icmpne              LABEL37
+   jump                   LABEL51
+LABEL37:
+   get_varc               181
+   load_int               3
+   if_icmpne              LABEL41
+   jump                   LABEL51
+LABEL41:
+   get_varc               181
+   load_int               4
+   if_icmpne              LABEL45
+   jump                   LABEL51
+LABEL45:
+   get_varc               181
+   load_int               5
+   if_icmpne              LABEL49
+   jump                   LABEL51
+LABEL49:
+   load_int               0
+   put_varc               181
+LABEL51:
+   iload                  0
+   invoke                 1554
+   return                

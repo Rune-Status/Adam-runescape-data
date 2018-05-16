@@ -1,45 +1,54 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 1
+.int_var_count      1
+.string_var_count   1
+   iload                  0
    load_int               6
    if_icmpeq              LABEL4
-   jump                   LABEL7
+   jump                   LABEL11
 LABEL4:
-   035                   
-   040                    215
-   jump                   LABEL34
-LABEL7:
-   033                   
-   load_int               7
-   if_icmpeq              LABEL11
-   jump                   LABEL14
+   invoke                 1942
+   load_int               0
+   if_icmpeq              LABEL8
+   jump                   LABEL11
+LABEL8:
+   sload                  0
+   invoke                 215
+   jump                   LABEL38
 LABEL11:
-   035                   
+   iload                  0
+   load_int               7
+   if_icmpeq              LABEL15
+   jump                   LABEL18
+LABEL15:
+   sload                  0
    add_friend            
-   jump                   LABEL34
-LABEL14:
-   033                   
-   load_int               8
-   if_icmpeq              LABEL18
-   jump                   LABEL21
+   jump                   LABEL38
 LABEL18:
-   035                   
+   iload                  0
+   load_int               8
+   if_icmpeq              LABEL22
+   jump                   LABEL25
+LABEL22:
+   sload                  0
    add_ignore            
-   jump                   LABEL34
-LABEL21:
-   033                   
-   load_int               9
-   if_icmpeq              LABEL25
-   jump                   LABEL28
+   jump                   LABEL38
 LABEL25:
-   035                   
+   iload                  0
+   load_int               9
+   if_icmpeq              LABEL29
+   jump                   LABEL32
+LABEL29:
+   sload                  0
    remove_friend         
-   jump                   LABEL34
-LABEL28:
-   033                   
-   load_int               10
-   if_icmpeq              LABEL32
-   jump                   LABEL34
+   jump                   LABEL38
 LABEL32:
-   035                   
+   iload                  0
+   load_int               10
+   if_icmpeq              LABEL36
+   jump                   LABEL38
+LABEL36:
+   sload                  0
    remove_ignore         
-LABEL34:
+LABEL38:
    return                

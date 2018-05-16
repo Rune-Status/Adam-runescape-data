@@ -1,61 +1,122 @@
+.int_stack_count    6
+.string_stack_count 1
+.int_var_count      6
+.string_var_count   1
+   iload                  0
+   load_int               32
+   if_icmplt              LABEL4
+   jump                   LABEL9
+LABEL4:
    get_settings           1076
-   033                   
+   iload                  0
    test_bit              
    load_int               1
-   if_icmpeq              LABEL6
-   jump                   LABEL38
-LABEL6:
-   load_int               181
-   widget_put_textureid  
+   if_icmpeq              LABEL21
+LABEL9:
+   iload                  0
+   load_int               32
+   if_icmpge              LABEL13
+   jump                   LABEL86
+LABEL13:
+   get_settings           1344
+   iload                  0
+   load_int               32
+   modulo                
+   test_bit              
+   load_int               1
+   if_icmpeq              LABEL21
+   jump                   LABEL86
+LABEL21:
+   iload                  0
+   load_int               35
+   if_icmpeq              LABEL25
+   jump                   LABEL53
+LABEL25:
+   get_varbit             5362
+   load_int               1
+   if_icmpeq              LABEL29
+   jump                   LABEL35
+LABEL29:
+   load_int               1212
+   widget_put_spriteid   
+   load_int               1
+   load_string            "Enable"
+   widget_put_action      1
+   jump                   LABEL40
+LABEL35:
+   load_int               1213
+   widget_put_spriteid   
+   load_int               1
+   load_string            "Disable"
+   widget_put_action      1
+LABEL40:
+   load_int               414
+   load_int               0
+   iload                  0
+   sload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   load_int               -1
+   load_string            "1isIIIIIi"
+   widget_put_option_click_listener 1
+   return                
+LABEL53:
+   load_int               1213
+   widget_put_spriteid   
    load_int               105
    load_int               49
    load_int               854
-   033                   
-   3408                  
+   iload                  0
+   get_enum_value        
    load_int               1
-   if_icmpeq              LABEL16
-   jump                   LABEL31
-LABEL16:
+   if_icmpeq              LABEL63
+   jump                   LABEL79
+LABEL63:
    load_int               1
    load_string            "Disable"
-   1300                   1
+   widget_put_action      1
    load_int               414
    load_int               0
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
+   iload                  0
+   sload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
    load_int               -1
-   load_string            "1iIIIIIi"
-   1409                   1
-   jump                   LABEL37
-LABEL31:
+   load_string            "1isIIIIIi"
+   widget_put_option_click_listener 1
+   jump                   LABEL85
+LABEL79:
    load_int               1
    load_string            ""
-   1300                   1
+   widget_put_action      1
    load_int               -1
    load_string            ""
-   1409                   1
-LABEL37:
-   jump                   LABEL54
-LABEL38:
-   load_int               180
-   widget_put_textureid  
+   widget_put_option_click_listener 1
+LABEL85:
+   jump                   LABEL103
+LABEL86:
+   load_int               1211
+   widget_put_spriteid   
    load_int               1
    load_string            "Unlock"
-   1300                   1
+   widget_put_action      1
    load_int               414
    load_int               1
-   033                   
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
+   iload                  0
+   sload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
    load_int               -1
-   load_string            "1iIIIIIi"
-   1409                   1
-LABEL54:
+   load_string            "1isIIIIIi"
+   widget_put_option_click_listener 1
+LABEL103:
    return                

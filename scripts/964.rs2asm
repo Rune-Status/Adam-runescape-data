@@ -1,35 +1,39 @@
+.int_stack_count    6
+.string_stack_count 0
+.int_var_count      6
+.string_var_count   0
    load_int               2266
    load_int               1
    load_int               0
-   3200                  
-   033                   
+   play_sound_effect     
+   iload                  0
    load_int               1
    if_icmpeq              LABEL8
    jump                   LABEL16
 LABEL8:
-   040                    300
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   040                    966
+   invoke                 300
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   invoke                 966
    jump                   LABEL29
 LABEL16:
-   042                    5
+   get_varc               5
    load_int               11
    if_icmpeq              LABEL20
    jump                   LABEL23
 LABEL20:
    load_int               1
    load_int               1
-   040                    299
+   invoke                 299
 LABEL23:
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   040                    965
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   invoke                 965
 LABEL29:
    return                

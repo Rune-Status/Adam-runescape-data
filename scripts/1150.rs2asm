@@ -1,54 +1,58 @@
-   033                    2
+.int_stack_count    4
+.string_stack_count 1
+.int_var_count      6
+.string_var_count   1
+   iload                  2
    get_gamecycle         
-   033                    1
+   iload                  1
    isub                  
    isub                  
-   034                    4
+   istore                 4
    load_int               49
-   033                    4
+   iload                  4
    iadd                  
    load_int               50
    idiv                  
-   034                    5
-   033                    4
+   istore                 5
+   iload                  4
    load_int               0
    if_icmple              LABEL16
    jump                   LABEL28
 LABEL16:
    load_int               -1
    load_string            ""
-   033                   
-   2408                  
-   033                    3
+   iload                  0
+   widget_put_render_listener_widget
+   iload                  3
    load_int               1
    if_icmpeq              LABEL24
    jump                   LABEL25
 LABEL24:
-   5630                  
+   cancel_login          
 LABEL25:
    load_int               14942212
-   2121                  
+   widget_advance_dialogue_window
    jump                   LABEL46
 LABEL28:
-   033                    5
+   iload                  5
    load_int               1
    if_icmpeq              LABEL32
    jump                   LABEL38
 LABEL32:
    load_string            "There is 1 second remaining "
-   035                   
-   037                    2
+   sload                  0
+   string_append          2
    load_int               14942210
-   2112                  
+   widget_put_text_widget
    jump                   LABEL46
 LABEL38:
    load_string            "There are "
-   033                    5
+   iload                  5
    int_to_string         
    load_string            " seconds remaining "
-   035                   
-   037                    4
+   sload                  0
+   string_append          4
    load_int               14942210
-   2112                  
+   widget_put_text_widget
 LABEL46:
    return                

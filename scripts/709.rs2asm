@@ -1,44 +1,39 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      4
+.string_var_count   0
+   load_int               11
+   array_initialize       105
    load_int               0
-   034                    1
-   load_int               10
-   034                    2
+   istore                 2
 LABEL4:
-   033                    1
+   iload                  2
    load_int               11
    if_icmplt              LABEL8
-   jump                   LABEL58
+   jump                   LABEL52
 LABEL8:
-   033                   
+   iload                  0
    load_int               4
-   033                    1
-   100                   
+   iload                  2
+   widget_create_child   
    load_int               1
    load_string            "Open Journal"
-   1300                  
+   widget_put_action     
    load_int               105
    load_int               115
    load_int               595
-   033                    1
-   3408                  
-   1112                  
+   iload                  2
+   get_enum_value        
+   widget_put_text       
    load_int               494
    widget_put_fontid     
    load_int               1
-   1115                  
-   load_int               152
+   widget_put_text_shadowed
    load_int               15
-   load_int               0
-   load_int               0
-   1001                  
-   load_int               10
-   033                    2
-   load_int               0
-   load_int               0
-   1000                  
-   033                    2
    load_int               15
-   iadd                  
-   034                    2
+   load_int               1
+   load_int               0
+   widget_put_size       
    load_int               710
    load_int               -2147483645
    load_int               -2147483643
@@ -49,31 +44,92 @@ LABEL8:
    load_int               1002
    load_int               5
    load_string            "IiY"
-   1407                  
-   033                   
-   033                    1
-   040                    716
-   033                    1
+   widget_put_config_listener
+   iload                  0
+   iload                  2
+   invoke                 716
+   iload                  2
+   iload                  2
+   array_store           
+   iload                  2
    load_int               1
    iadd                  
-   034                    1
+   istore                 2
    jump                   LABEL4
-LABEL58:
+LABEL52:
    load_int               0
    load_int               0
-   033                   
+   load_int               11
+   load_int               1
+   isub                  
+   load_int               595
+   invoke                 1360
+   load_int               10
+   istore                 3
+   load_int               0
+   istore                 2
+LABEL63:
+   iload                  2
+   load_int               11
+   if_icmplt              LABEL67
+   jump                   LABEL88
+LABEL67:
+   iload                  0
+   iload                  2
+   array_load            
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL74
+   jump                   LABEL79
+LABEL74:
+   load_int               10
+   iload                  3
+   load_int               0
+   load_int               0
+   widget_put_position   
+LABEL79:
+   iload                  2
+   load_int               1
+   iadd                  
+   iload                  3
+   load_int               15
+   iadd                  
+   istore                 3
+   istore                 2
+   jump                   LABEL63
+LABEL88:
+   iload                  3
+   load_int               10
+   iadd                  
+   istore                 3
+   load_int               0
+   load_int               0
+   iload                  0
    widget_put_scroll_widget
+   iload                  3
+   iload                  0
+   widget_get_height_widget
+   if_icmpgt              LABEL101
+   jump                   LABEL106
+LABEL101:
    load_int               0
-   033                    2
-   033                   
+   iload                  3
+   iload                  0
    widget_put_scrollwidthheight_widget
-   load_int               16973838
-   033                   
+   jump                   LABEL110
+LABEL106:
+   load_int               0
+   load_int               0
+   iload                  0
+   widget_put_scrollwidthheight_widget
+LABEL110:
+   iload                  1
+   iload                  0
    load_int               792
    load_int               789
    load_int               790
    load_int               791
    load_int               773
    load_int               788
-   040                    31
+   invoke                 31
    return                

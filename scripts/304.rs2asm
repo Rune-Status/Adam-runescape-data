@@ -1,56 +1,60 @@
-   033                   
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
+   iload                  0
    load_int               11725
    if_icmpeq              LABEL4
    jump                   LABEL11
 LABEL4:
    load_string            "("
-   025                    3951
+   get_varbit             3951
    int_to_string         
    load_string            ")"
-   037                    3
-   1112                  
+   string_append          3
+   widget_put_text       
    jump                   LABEL46
 LABEL11:
-   033                   
+   iload                  0
    load_int               11729
    if_icmpeq              LABEL15
    jump                   LABEL22
 LABEL15:
    load_string            "("
-   025                    3952
+   get_varbit             3952
    int_to_string         
    load_string            ")"
-   037                    3
-   1112                  
+   string_append          3
+   widget_put_text       
    jump                   LABEL46
 LABEL22:
-   033                   
+   iload                  0
    load_int               11733
    if_icmpeq              LABEL26
    jump                   LABEL33
 LABEL26:
    load_string            "("
-   025                    3953
+   get_varbit             3953
    int_to_string         
    load_string            ")"
-   037                    3
-   1112                  
+   string_append          3
+   widget_put_text       
    jump                   LABEL46
 LABEL33:
-   033                   
+   iload                  0
    load_int               11737
    if_icmpeq              LABEL37
    jump                   LABEL44
 LABEL37:
    load_string            "("
-   025                    3954
+   get_varbit             3954
    int_to_string         
    load_string            ")"
-   037                    3
-   1112                  
+   string_append          3
+   widget_put_text       
    jump                   LABEL46
 LABEL44:
    load_string            ""
-   1112                  
+   widget_put_text       
 LABEL46:
    return                

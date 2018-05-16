@@ -1,0 +1,658 @@
+.int_stack_count    10
+.string_stack_count 0
+.int_var_count      21
+.string_var_count   1
+   iload                  2
+   load_int               6
+   load_int               7
+   load_string            "Sort by rank"
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   invoke                 1659
+   iload                  3
+   load_int               2
+   load_int               3
+   load_string            "Sort by name"
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   invoke                 1659
+   iload                  4
+   load_int               4
+   load_int               5
+   load_string            "Sort by world"
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   invoke                 1659
+   iload                  5
+   load_int               0
+   load_int               1
+   load_string            "Legacy sort"
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   invoke                 1659
+   iload                  6
+   widget_unset_children 
+   load_int               0
+   istore                 10
+   load_string            ""
+   sstore                 0
+   load_int               -1
+   istore                 11
+   load_int               -1
+   istore                 12
+   get_clanchat_rank     
+   istore                 13
+   clanchat_kick_rank    
+   istore                 14
+   get_clanchatcount     
+   istore                 15
+   iload                  15
+   load_int               1
+   invoke                 1045
+   array_initialize       105
+   iload                  2
+   widget_get_width_widget
+   istore                 16
+   iload                  16
+   load_int               9
+   isub                  
+   load_int               2
+   idiv                  
+   istore                 17
+   load_int               3
+   istore                 18
+   load_int               0
+   istore                 19
+   load_int               0
+   istore                 20
+LABEL95:
+   iload                  20
+   iload                  15
+   if_icmplt              LABEL99
+   jump                   LABEL320
+LABEL99:
+   iload                  20
+   load_int               5
+   imul                  
+   istore                 10
+   iload                  20
+   iload                  10
+   array_store           
+   iload                  20
+   get_clan_member_name  
+   sstore                 0
+   iload                  20
+   get_clan_member_world 
+   istore                 11
+   iload                  20
+   get_clan_member_rank  
+   istore                 12
+   iload                  6
+   load_int               4
+   iload                  10
+   widget_create_child   
+   load_int               494
+   widget_put_fontid     
+   load_int               0
+   load_int               1
+   load_int               0
+   widget_put_text_alignment
+   sload                  0
+   widget_put_text       
+   iload                  16
+   load_int               15
+   load_int               1
+   load_int               0
+   widget_put_size       
+   load_int               16777215
+   widget_put_textcolor  
+   load_int               0
+   widget_put_text_shadowed
+   iload                  6
+   load_int               4
+   iload                  10
+   load_int               1
+   iadd                  
+   widget_create_child    1
+   load_int               494
+   widget_put_fontid      1
+   load_int               2
+   load_int               1
+   load_int               0
+   widget_put_text_alignment 1
+   load_string            "World "
+   iload                  11
+   int_to_string         
+   string_append          2
+   widget_put_text        1
+   iload                  16
+   load_int               15
+   load_int               1
+   load_int               0
+   widget_put_size        1
+   iload                  11
+   get_worldnum          
+   if_icmpeq              LABEL162
+   jump                   LABEL165
+LABEL162:
+   load_int               901389
+   widget_put_textcolor   1
+   jump                   LABEL167
+LABEL165:
+   load_int               16777060
+   widget_put_textcolor   1
+LABEL167:
+   load_int               0
+   widget_put_text_shadowed 1
+   iload                  6
+   load_int               5
+   iload                  10
+   load_int               2
+   iadd                  
+   widget_create_child    1
+   load_int               9
+   load_int               9
+   load_int               0
+   load_int               0
+   widget_put_size        1
+   load_int               105
+   load_int               100
+   load_int               706
+   iload                  12
+   get_enum_value        
+   widget_put_spriteid    1
+   iload                  20
+   clanmember_isme       
+   load_int               0
+   if_icmpeq              LABEL191
+   jump                   LABEL243
+LABEL191:
+   sload                  0
+   is_friend             
+   load_int               1
+   if_icmpeq              LABEL196
+   jump                   LABEL207
+LABEL196:
+   load_int               9
+   load_string            "Remove friend "
+   sload                  0
+   string_append          2
+   widget_put_action     
+   load_int               9
+   load_string            "Remove friend "
+   sload                  0
+   string_append          2
+   widget_put_action      1
+   jump                   LABEL243
+LABEL207:
+   sload                  0
+   is_ignore             
+   load_int               1
+   if_icmpeq              LABEL212
+   jump                   LABEL223
+LABEL212:
+   load_int               10
+   load_string            "Remove ignore "
+   sload                  0
+   string_append          2
+   widget_put_action     
+   load_int               10
+   load_string            "Remove ignore "
+   sload                  0
+   string_append          2
+   widget_put_action      1
+   jump                   LABEL243
+LABEL223:
+   load_int               7
+   load_string            "Add friend "
+   sload                  0
+   string_append          2
+   widget_put_action     
+   load_int               7
+   load_string            "Add friend "
+   sload                  0
+   string_append          2
+   widget_put_action      1
+   load_int               8
+   load_string            "Add ignore "
+   sload                  0
+   string_append          2
+   widget_put_action     
+   load_int               8
+   load_string            "Add ignore "
+   sload                  0
+   string_append          2
+   widget_put_action      1
+LABEL243:
+   invoke                 1942
+   load_int               0
+   if_icmpeq              LABEL247
+   jump                   LABEL265
+LABEL247:
+   iload                  13
+   iload                  14
+   if_icmpge              LABEL251
+   jump                   LABEL265
+LABEL251:
+   iload                  13
+   iload                  12
+   if_icmpgt              LABEL255
+   jump                   LABEL265
+LABEL255:
+   load_int               6
+   load_string            "Kick user "
+   sload                  0
+   string_append          2
+   widget_put_action     
+   load_int               6
+   load_string            "Kick user "
+   sload                  0
+   string_append          2
+   widget_put_action      1
+LABEL265:
+   load_int               214
+   sload                  0
+   load_int               -2147483644
+   load_string            "si"
+   widget_put_option_click_listener
+   load_int               214
+   sload                  0
+   load_int               -2147483644
+   load_string            "si"
+   widget_put_option_click_listener 1
+   iload                  6
+   load_int               4
+   iload                  10
+   load_int               3
+   iadd                  
+   widget_create_child   
+   load_int               0
+   load_int               0
+   load_int               0
+   load_int               0
+   widget_put_size       
+   load_int               1
+   widget_put_hidden     
+   iload                  11
+   int_to_string         
+   load_int               5
+   invoke                 1503
+   iload                  20
+   concat_int            
+   widget_put_text       
+   iload                  6
+   load_int               4
+   iload                  10
+   load_int               4
+   iadd                  
+   widget_create_child   
+   load_int               0
+   load_int               0
+   load_int               0
+   load_int               0
+   widget_put_size       
+   load_int               1
+   widget_put_hidden     
+   iload                  12
+   int_to_string         
+   load_int               3
+   invoke                 1503
+   iload                  20
+   concat_int            
+   widget_put_text       
+   iload                  20
+   load_int               1
+   iadd                  
+   istore                 20
+   jump                   LABEL95
+LABEL320:
+   iload                  15
+   load_int               2
+   if_icmpge              LABEL324
+   jump                   LABEL371
+LABEL324:
+   get_varc               185
+   load_int               2
+   if_icmpeq              LABEL331
+   get_varc               185
+   load_int               3
+   if_icmpeq              LABEL331
+   jump                   LABEL340
+LABEL331:
+   load_int               0
+   load_int               0
+   iload                  15
+   load_int               1
+   isub                  
+   load_int               0
+   iload                  6
+   invoke                 1661
+   jump                   LABEL371
+LABEL340:
+   get_varc               185
+   load_int               4
+   if_icmpeq              LABEL347
+   get_varc               185
+   load_int               5
+   if_icmpeq              LABEL347
+   jump                   LABEL356
+LABEL347:
+   load_int               0
+   load_int               0
+   iload                  15
+   load_int               1
+   isub                  
+   load_int               3
+   iload                  6
+   invoke                 1661
+   jump                   LABEL371
+LABEL356:
+   get_varc               185
+   load_int               6
+   if_icmpeq              LABEL363
+   get_varc               185
+   load_int               7
+   if_icmpeq              LABEL363
+   jump                   LABEL371
+LABEL363:
+   load_int               0
+   load_int               0
+   iload                  15
+   load_int               1
+   isub                  
+   load_int               4
+   iload                  6
+   invoke                 1661
+LABEL371:
+   iload                  15
+   load_int               1
+   if_icmpge              LABEL375
+   jump                   LABEL507
+LABEL375:
+   get_varc               185
+   load_int               3
+   if_icmpeq              LABEL388
+   get_varc               185
+   load_int               5
+   if_icmpeq              LABEL388
+   get_varc               185
+   load_int               7
+   if_icmpeq              LABEL388
+   get_varc               185
+   load_int               1
+   if_icmpeq              LABEL388
+   jump                   LABEL446
+LABEL388:
+   iload                  15
+   istore                 20
+LABEL390:
+   iload                  20
+   load_int               0
+   if_icmpgt              LABEL394
+   jump                   LABEL445
+LABEL394:
+   iload                  20
+   load_int               1
+   isub                  
+   istore                 20
+   iload                  6
+   iload                  20
+   array_load            
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL405
+   jump                   LABEL410
+LABEL405:
+   load_int               0
+   iload                  19
+   load_int               2
+   load_int               0
+   widget_put_position   
+LABEL410:
+   iload                  6
+   iload                  20
+   array_load            
+   load_int               1
+   iadd                  
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL419
+   jump                   LABEL424
+LABEL419:
+   load_int               0
+   iload                  19
+   load_int               2
+   load_int               0
+   widget_put_position   
+LABEL424:
+   iload                  6
+   iload                  20
+   array_load            
+   load_int               2
+   iadd                  
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL433
+   jump                   LABEL440
+LABEL433:
+   load_int               1
+   iload                  19
+   load_int               1
+   iadd                  
+   load_int               0
+   load_int               0
+   widget_put_position   
+LABEL440:
+   iload                  19
+   load_int               15
+   iadd                  
+   istore                 19
+   jump                   LABEL390
+LABEL445:
+   jump                   LABEL503
+LABEL446:
+   load_int               0
+   istore                 20
+LABEL448:
+   iload                  20
+   iload                  15
+   if_icmplt              LABEL452
+   jump                   LABEL503
+LABEL452:
+   iload                  6
+   iload                  20
+   array_load            
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL459
+   jump                   LABEL464
+LABEL459:
+   load_int               0
+   iload                  19
+   load_int               2
+   load_int               0
+   widget_put_position   
+LABEL464:
+   iload                  6
+   iload                  20
+   array_load            
+   load_int               1
+   iadd                  
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL473
+   jump                   LABEL478
+LABEL473:
+   load_int               0
+   iload                  19
+   load_int               2
+   load_int               0
+   widget_put_position   
+LABEL478:
+   iload                  6
+   iload                  20
+   array_load            
+   load_int               2
+   iadd                  
+   widget_load_child     
+   load_int               1
+   if_icmpeq              LABEL487
+   jump                   LABEL494
+LABEL487:
+   load_int               1
+   iload                  19
+   load_int               1
+   iadd                  
+   load_int               0
+   load_int               0
+   widget_put_position   
+LABEL494:
+   iload                  19
+   load_int               15
+   iadd                  
+   iload                  20
+   load_int               1
+   iadd                  
+   istore                 20
+   istore                 19
+   jump                   LABEL448
+LABEL503:
+   iload                  19
+   load_int               5
+   iadd                  
+   istore                 19
+LABEL507:
+   iload                  8
+   widget_put_actions_null_widget
+   iload                  15
+   load_int               0
+   if_icmpgt              LABEL513
+   jump                   LABEL557
+LABEL513:
+   load_string            "<col=ffff64>"
+   get_clanchat_owner    
+   load_string            "</col>"
+   string_append          3
+   iload                  0
+   widget_put_text_widget
+   load_string            "<col=ffffff>"
+   get_clanchatowner     
+   load_string            "</col>"
+   string_append          3
+   iload                  1
+   widget_put_text_widget
+   load_string            "Leave Chat"
+   iload                  8
+   widget_put_text_widget
+   get_varbit             5432
+   load_int               1
+   if_icmpeq              LABEL535
+   get_varbit             4289
+   load_int               0
+   if_icmpne              LABEL535
+   jump                   LABEL546
+LABEL535:
+   load_int               6
+   load_string            "Leave Chat"
+   iload                  8
+   widget_put_action_widget
+   load_int               194
+   load_int               -2147483644
+   load_int               6
+   load_string            "ii"
+   iload                  8
+   widget_put_option_click_listener_widget
+   jump                   LABEL556
+LABEL546:
+   load_int               1
+   load_string            "Leave Chat"
+   iload                  8
+   widget_put_action_widget
+   load_int               194
+   load_int               -2147483644
+   load_int               1
+   load_string            "ii"
+   iload                  8
+   widget_put_option_click_listener_widget
+LABEL556:
+   jump                   LABEL576
+LABEL557:
+   load_string            "Not in chat"
+   iload                  0
+   widget_put_text_widget
+   load_string            "None"
+   iload                  1
+   widget_put_text_widget
+   load_string            "Join Chat"
+   iload                  8
+   widget_put_text_widget
+   load_int               1
+   load_string            "Join Chat"
+   iload                  8
+   widget_put_action_widget
+   load_int               194
+   load_int               -2147483644
+   load_int               1
+   load_string            "ii"
+   iload                  8
+   widget_put_option_click_listener_widget
+LABEL576:
+   iload                  19
+   iload                  6
+   widget_get_height_widget
+   if_icmpgt              LABEL581
+   jump                   LABEL591
+LABEL581:
+   load_int               0
+   iload                  19
+   iload                  6
+   widget_put_scrollwidthheight_widget
+   iload                  7
+   iload                  6
+   iload                  6
+   widget_get_scrolly_widget
+   invoke                 72
+   jump                   LABEL599
+LABEL591:
+   load_int               0
+   load_int               0
+   iload                  6
+   widget_put_scrollwidthheight_widget
+   iload                  7
+   iload                  6
+   load_int               0
+   invoke                 72
+LABEL599:
+   return                

@@ -1,88 +1,92 @@
-   033                    3
+.int_stack_count    5
+.string_stack_count 0
+.int_var_count      10
+.string_var_count   0
+   iload                  3
    widget_get_width_widget
-   034                    5
-   033                    5
+   istore                 5
+   iload                  5
    load_int               2
    imul                  
-   034                    6
-   033                    5
+   istore                 6
+   iload                  5
    load_int               2
    idiv                  
-   034                    7
-   033                    6
-   033                    1
+   istore                 7
+   iload                  6
+   iload                  1
    widget_get_height_widget
    load_int               0
    load_int               0
-   033                    1
-   2001                  
-   033                    6
-   033                    2
+   iload                  1
+   widget_put_size_widget
+   iload                  6
+   iload                  2
    widget_get_height_widget
    load_int               0
    load_int               0
-   033                    2
-   2001                  
-   033                    3
+   iload                  2
+   widget_put_size_widget
+   iload                  3
    widget_get_relativex_widget
-   034                    8
-   033                    8
-   033                    7
+   istore                 8
+   iload                  8
+   iload                  7
    isub                  
-   033                    2
+   iload                  2
    widget_get_relativey_widget
    load_int               0
    load_int               0
-   033                    2
-   2000                  
-   033                    8
-   033                    5
+   iload                  2
+   widget_put_position_widget
+   iload                  8
+   iload                  5
    load_int               6
    iadd                  
    isub                  
-   033                    7
+   iload                  7
    isub                  
-   033                    1
+   iload                  1
    widget_get_relativey_widget
    load_int               0
    load_int               0
-   033                    1
-   2000                  
+   iload                  1
+   widget_put_position_widget
    load_int               90
-   3304                  
-   034                    9
-   033                    9
-   033                    5
-   033                    7
-   033                    1
-   033                    2
-   033                    3
-   033                    4
-   040                    768
+   get_inventory_size    
+   istore                 9
+   iload                  9
+   iload                  5
+   iload                  7
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   invoke                 768
    load_int               767
-   033                    9
-   033                    5
-   033                    7
-   033                    1
-   033                    2
-   033                    3
-   033                    4
+   iload                  9
+   iload                  5
+   iload                  7
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
    load_int               90
    load_int               1
    load_string            "iiiIIIIY"
-   033                   
-   2414                  
+   iload                  0
+   widget_put_table_listener_widget
    load_int               767
-   033                    9
-   033                    5
-   033                    7
-   033                    1
-   033                    2
-   033                    3
-   033                    4
+   iload                  9
+   iload                  5
+   iload                  7
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
    load_int               1042
    load_int               1
    load_string            "iiiIIIIY"
-   033                   
-   2407                  
+   iload                  0
+   widget_put_config_listener_widget
    return                

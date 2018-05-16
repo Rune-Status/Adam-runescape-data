@@ -1,34 +1,38 @@
+.int_stack_count    0
+.string_stack_count 0
+.int_var_count      1
+.string_var_count   0
    load_int               0
-   034                   
-   025                    4286
+   istore                 0
+   get_varbit             4286
    load_int               0
    if_icmpgt              LABEL6
    jump                   LABEL14
 LABEL6:
-   025                    4577
+   get_varbit             4577
    load_int               30
    imul                  
-   034                   
+   istore                 0
    load_int               -1
    load_string            ""
-   1408                  
+   widget_put_render_listener
    jump                   LABEL26
 LABEL14:
-   025                    4577
+   get_varbit             4577
    load_int               30
    imul                  
    load_int               10
    isub                  
-   034                   
+   istore                 0
    load_int               743
    load_int               -2147483645
    load_int               -2147483643
-   033                   
+   iload                  0
    load_string            "Iii"
-   1408                  
+   widget_put_render_listener
 LABEL26:
-   033                   
-   040                    744
+   iload                  0
+   invoke                 744
    return                
    load_string            ""
    return                

@@ -1,52 +1,56 @@
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      2
+.string_var_count   1
    load_string            ""
-   036                   
-   025                    4820
-   025                    4821
+   sstore                 0
+   get_varbit             4820
+   get_varbit             4821
    if_icmpgt              LABEL6
    jump                   LABEL18
 LABEL6:
    load_string            "<col=ffffff>"
-   025                    4820
+   get_varbit             4820
    load_string            ","
-   040                    46
+   invoke                 46
    load_string            "</col>"
    load_string            "<br>"
-   025                    4821
+   get_varbit             4821
    load_string            ","
-   040                    46
-   037                    5
-   036                   
+   invoke                 46
+   string_append          5
+   sstore                 0
    jump                   LABEL43
 LABEL18:
-   025                    4820
-   025                    4821
+   get_varbit             4820
+   get_varbit             4821
    if_icmplt              LABEL22
    jump                   LABEL34
 LABEL22:
-   025                    4820
+   get_varbit             4820
    load_string            ","
-   040                    46
+   invoke                 46
    load_string            "<br>"
    load_string            "<col=ffffff>"
-   025                    4821
+   get_varbit             4821
    load_string            ","
-   040                    46
+   invoke                 46
    load_string            "</col>"
-   037                    5
-   036                   
+   string_append          5
+   sstore                 0
    jump                   LABEL43
 LABEL34:
-   025                    4820
+   get_varbit             4820
    load_string            ","
-   040                    46
+   invoke                 46
    load_string            "<br>"
-   025                    4821
+   get_varbit             4821
    load_string            ","
-   040                    46
-   037                    3
-   036                   
+   invoke                 46
+   string_append          3
+   sstore                 0
 LABEL43:
-   025                    4822
+   get_varbit             4822
    load_int               2147483647
    if_icmpge              LABEL47
    jump                   LABEL60
@@ -56,16 +60,16 @@ LABEL47:
    load_string            "Opponents:"
    load_string            "<br>"
    load_string            "Starting soon..."
-   037                    5
-   033                   
-   2112                  
-   035                   
+   string_append          5
+   iload                  0
+   widget_put_text_widget
+   sload                  0
    load_string            "<br>"
    concat_string         
-   036                   
+   sstore                 0
    jump                   LABEL130
 LABEL60:
-   025                    4822
+   get_varbit             4822
    load_int               1
    if_icmpgt              LABEL64
    jump                   LABEL81
@@ -75,20 +79,20 @@ LABEL64:
    load_string            "Opponents:"
    load_string            "<br>"
    load_string            "Time:"
-   037                    5
-   033                   
-   2112                  
-   035                   
+   string_append          5
+   iload                  0
+   widget_put_text_widget
+   sload                  0
    load_string            "<br>"
-   025                    4822
+   get_varbit             4822
    int_to_string         
    load_string            " mins"
-   037                    3
+   string_append          3
    concat_string         
-   036                   
+   sstore                 0
    jump                   LABEL130
 LABEL81:
-   025                    4822
+   get_varbit             4822
    load_int               1
    if_icmpeq              LABEL85
    jump                   LABEL100
@@ -98,19 +102,19 @@ LABEL85:
    load_string            "Opponents:"
    load_string            "<br>"
    load_string            "Time:"
-   037                    5
-   033                   
-   2112                  
-   035                   
+   string_append          5
+   iload                  0
+   widget_put_text_widget
+   sload                  0
    load_string            "<br>"
    load_string            "1 min"
-   037                    2
+   string_append          2
    concat_string         
-   036                   
+   sstore                 0
    jump                   LABEL130
 LABEL100:
-   025                    4820
-   025                    4821
+   get_varbit             4820
+   get_varbit             4821
    if_icmpeq              LABEL104
    jump                   LABEL118
 LABEL104:
@@ -118,15 +122,15 @@ LABEL104:
    load_string            "<br>"
    load_string            "Opponents:"
    load_string            "<br>"
-   037                    4
-   033                   
-   2112                  
-   035                   
+   string_append          4
+   iload                  0
+   widget_put_text_widget
+   sload                  0
    load_string            "<br>"
    load_string            "Next kill wins!"
-   037                    2
+   string_append          2
    concat_string         
-   036                   
+   sstore                 0
    jump                   LABEL130
 LABEL118:
    load_string            "Your clan:"
@@ -134,15 +138,15 @@ LABEL118:
    load_string            "Opponents:"
    load_string            "<br>"
    load_string            "Ending..."
-   037                    5
-   033                   
-   2112                  
-   035                   
+   string_append          5
+   iload                  0
+   widget_put_text_widget
+   sload                  0
    load_string            "<br>"
    concat_string         
-   036                   
+   sstore                 0
 LABEL130:
-   035                   
-   033                    1
-   2112                  
+   sload                  0
+   iload                  1
+   widget_put_text_widget
    return                

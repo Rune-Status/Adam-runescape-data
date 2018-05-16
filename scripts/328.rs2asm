@@ -1,3 +1,7 @@
+.int_stack_count    8
+.string_stack_count 0
+.int_var_count      8
+.string_var_count   0
    load_string            "You may spend points to "
    load_string            "<col=ffffff>"
    load_string            "Cancel"
@@ -36,29 +40,29 @@
    load_string            "Neither"
    load_string            "</col>"
    load_string            " option will reset your current tally of completed Slayer tasks."
-   037                    36
-   033                    1
-   2112                  
-   033                   
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
-   040                    422
+   string_append          36
+   iload                  1
+   widget_put_text_widget
+   iload                  0
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   invoke                 422
    load_int               421
-   033                   
-   033                    2
-   033                    3
-   033                    4
-   033                    5
-   033                    6
-   033                    7
+   iload                  0
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
    load_int               261
    load_int               262
    load_int               2
    load_string            "IIIIIIIY"
-   033                   
-   2407                  
+   iload                  0
+   widget_put_config_listener_widget
    return                

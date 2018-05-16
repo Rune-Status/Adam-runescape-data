@@ -1,0 +1,98 @@
+.int_stack_count    4
+.string_stack_count 1
+.int_var_count      8
+.string_var_count   2
+   load_int               0
+   istore                 4
+   load_int               15
+   istore                 5
+   load_int               20
+   istore                 6
+   sload                  0
+   load_string            "|"
+   load_int               0
+   string_indexof_from   
+   istore                 7
+   load_string            ""
+   sstore                 1
+LABEL13:
+   iload                  7
+   load_int               -1
+   if_icmpne              LABEL17
+   jump                   LABEL47
+LABEL17:
+   sload                  0
+   load_int               0
+   iload                  7
+   string_substring      
+   sstore                 1
+   sload                  1
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  4
+   iload                  5
+   iload                  6
+   invoke                 1329
+   istore                 6
+   istore                 5
+   istore                 4
+   sload                  0
+   iload                  7
+   load_int               1
+   iadd                  
+   sload                  0
+   string_length         
+   string_substring      
+   sstore                 0
+   sload                  0
+   load_string            "|"
+   load_int               0
+   string_indexof_from   
+   istore                 7
+   jump                   LABEL13
+LABEL47:
+   sload                  0
+   iload                  0
+   iload                  1
+   iload                  2
+   iload                  4
+   iload                  5
+   iload                  6
+   invoke                 1329
+   istore                 6
+   istore                 5
+   istore                 4
+   iload                  6
+   load_int               38
+   iadd                  
+   iload                  0
+   widget_get_height_widget
+   if_icmpgt              LABEL65
+   jump                   LABEL85
+LABEL65:
+   load_int               0
+   iload                  6
+   load_int               50
+   iadd                  
+   iload                  0
+   widget_put_scrollwidthheight_widget
+   load_int               0
+   load_int               0
+   iload                  0
+   widget_put_scroll_widget
+   iload                  3
+   iload                  0
+   load_int               798
+   load_int               795
+   load_int               796
+   load_int               797
+   load_int               793
+   load_int               794
+   invoke                 31
+   jump                   LABEL87
+LABEL85:
+   iload                  3
+   widget_unset_children 
+LABEL87:
+   return                

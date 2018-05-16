@@ -1,40 +1,44 @@
+.int_stack_count    1
+.string_stack_count 0
+.int_var_count      3
+.string_var_count   0
    get_gamecycle         
-   034                    1
+   istore                 1
    load_int               -1
-   034                    2
-   033                   
+   istore                 2
+   iload                  0
    load_int               1
    if_icmpeq              LABEL16
-   033                    1
-   042                    65
+   iload                  1
+   get_varc               65
    if_icmpeq              LABEL16
-   033                    1
+   iload                  1
    load_int               25
    modulo                
    load_int               0
    if_icmpeq              LABEL16
    jump                   LABEL48
 LABEL16:
-   040                    553
-   034                    2
-   033                    1
-   042                    65
+   invoke                 553
+   istore                 2
+   iload                  1
+   get_varc               65
    if_icmpeq              LABEL22
    jump                   LABEL24
 LABEL22:
-   033                    2
-   040                    84
+   iload                  2
+   invoke                 84
 LABEL24:
-   033                    2
-   040                    89
-   042                    65
-   033                    1
+   iload                  2
+   invoke                 89
+   get_varc               65
+   iload                  1
    if_icmpgt              LABEL38
-   3317                  
+   get_system_update_timer
    load_int               0
    if_icmpgt              LABEL38
-   042                    55
-   033                    1
+   get_varc               55
+   iload                  1
    load_int               3000
    isub                  
    if_icmpgt              LABEL38
@@ -44,12 +48,12 @@ LABEL38:
    load_int               0
    load_string            "1"
    load_int               10616832
-   2408                  
+   widget_put_render_listener_widget
    jump                   LABEL48
 LABEL44:
    load_int               -1
    load_string            ""
    load_int               10616832
-   2408                  
+   widget_put_render_listener_widget
 LABEL48:
    return                

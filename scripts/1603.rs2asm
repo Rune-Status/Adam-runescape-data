@@ -1,0 +1,56 @@
+.int_stack_count    2
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   2
+   load_string            "<col=0000ff>"
+   iload                  1
+   load_string            ","
+   invoke                 46
+   load_string            " x "
+   sload                  0
+   load_string            "</col>"
+   load_string            " - "
+   string_append          6
+   sstore                 1
+   iload                  1
+   load_int               1
+   if_icmpgt              LABEL14
+   jump                   LABEL28
+LABEL14:
+   iload                  0
+   load_int               1
+   if_icmpeq              LABEL18
+   jump                   LABEL23
+LABEL18:
+   sload                  1
+   load_string            "You will keep these items should you die."
+   concat_string         
+   sstore                 1
+   jump                   LABEL27
+LABEL23:
+   sload                  1
+   load_string            "You will lose these items should you die."
+   concat_string         
+   sstore                 1
+LABEL27:
+   jump                   LABEL41
+LABEL28:
+   iload                  0
+   load_int               1
+   if_icmpeq              LABEL32
+   jump                   LABEL37
+LABEL32:
+   sload                  1
+   load_string            "You will keep this item should you die."
+   concat_string         
+   sstore                 1
+   jump                   LABEL41
+LABEL37:
+   sload                  1
+   load_string            "You will lose this item should you die."
+   concat_string         
+   sstore                 1
+LABEL41:
+   sload                  1
+   send_game_message     
+   return                
